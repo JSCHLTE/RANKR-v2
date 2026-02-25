@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { signIn, signInWithGoogle } from "@/lib/auth";
 
 export default function LoginPage() {
@@ -74,7 +75,7 @@ export default function LoginPage() {
       </form>
 
       <p>
-        Don&apos;t have an account? <a href="/signup">Sign up</a>
+        Don&apos;t have an account? <Link href="/signup">Sign up</Link>
       </p>
     </main>
   );
