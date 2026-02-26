@@ -24,7 +24,7 @@ export default function CreateRankingPage() {
           placeholder="e.g. My Week 10 PPR Rankings"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full px-4 py-2 rounded-lg border border-white/10 bg-white/5 focus:outline-none focus:border-[var(--accent)]"
+          className="w-full px-4 py-2 rounded-lg border border-[var(--gray-subtle)] bg-white/5 focus:outline-none focus:border-[var(--accent)]"
         />
       </section>
 
@@ -46,11 +46,11 @@ export default function CreateRankingPage() {
               className={`text-left p-4 rounded-xl border transition-all ${
                 positionGroup === option.value
                   ? "border-[var(--accent)] bg-[var(--accent)]/10 cursor-default"
-                  : "border-white/10 bg-white/5 hover:border-white/30 hover:cursor-pointer"
+                  : "border-[var(--gray-subtle)] bg-white/5 hover:border-white/30 hover:cursor-pointer"
               }`}
             >
               <p className="font-semibold">{option.label}</p>
-              <p className="text-xs text-white/50 mt-1">{option.description}</p>
+              <p className="text-xs text-[var(--gray-muted)] mt-1">{option.description}</p>
             </button>
           ))}
         </div>

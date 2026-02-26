@@ -4,12 +4,16 @@
   --background: #F7F9FB;
   --foreground: #0E1116;
   --accent: #2DFF57;
+  --gray-muted: #6b7280;   /* ~ gray-500 */
+  --gray-subtle: #9ca3af; /* ~ gray-400 */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0E1116;
     --foreground: #F7F9FB;
+    --gray-muted: #ffffff80;  /* white / 50% */
+    --gray-subtle: #ffffff1a; /* white / 10% */
   }
 }
 
