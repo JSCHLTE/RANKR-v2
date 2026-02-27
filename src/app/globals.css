@@ -3,17 +3,24 @@
 :root {
   --background: #F7F9FB;
   --foreground: #0E1116;
-  --accent: #2DFF57;
-  --gray-muted: #6b7280;   /* ~ gray-500 */
-  --gray-subtle: #9ca3af; /* ~ gray-400 */
+  --accent: #16a34a;
+  --text-muted: #6b7280;      /* secondary/muted text */
+  --border: #d1d5db;          /* card and input borders */
+  --border-hover: #9ca3af;    /* border on hover */
+  --surface: #ffffff;         /* card and input backgrounds */
+  --surface-hover: #f3f4f6;   /* surface on hover */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0E1116;
     --foreground: #F7F9FB;
-    --gray-muted: #ffffff80;  /* white / 50% */
-    --gray-subtle: #ffffff1a; /* white / 10% */
+    --accent: #2DFF57;
+    --text-muted: #ffffff80;    /* white/50 */
+    --border: #ffffff1a;        /* white/10 */
+    --border-hover: #ffffff4d;  /* white/30 */
+    --surface: #ffffff0d;       /* white/5 */
+    --surface-hover: #ffffff1a; /* white/10 */
   }
 }
 
