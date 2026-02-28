@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import PositionGroupSelector from "./_components/PositionGroupSelector";
+import CustomFormatSection from "./_components/CustomFormatSection";
 
 export default function CreateRankingPage() {
   const [name, setName] = useState("");
@@ -73,69 +75,14 @@ export default function CreateRankingPage() {
       {/* Position Group */}
       <section className="mb-8">
         <label className="block text-sm font-medium mb-2">Position Group</label>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-          {[
-            { value: "ALL", label: "All", description: "Rank every offensive skill position" },
-            { value: "QB", label: "QB", description: "Quarterbacks only" },
-            { value: "RB", label: "RB", description: "Running backs only" },
-            { value: "WR", label: "WR", description: "Wide receivers only" },
-            { value: "TE", label: "TE", description: "Tight ends only" },
-            { value: "K", label: "Kickers", description: "Kickers only" },
-            { value: "Defense", label: "Team Defenses", description: "Team defenses only", disabled: allowRookies },
-            { value: "Custom", label: "Custom", description: "Choose your own position groups" },
-          ].map((option) => (
-            <button
-              key={option.value}
-              disabled={option.disabled}
-              onClick={() => {
-                setPositionGroup(option.value);
-                if (option.value !== "Custom") setCustomPositions([]);
-              }}
-              className={`text-left p-4 rounded-xl border transition-all ${
-                option.disabled
-                  ? "border-[var(--border)] bg-[var(--surface)] opacity-40 cursor-not-allowed"
-                  : positionGroup === option.value
-                  ? "border-[var(--accent)] bg-[var(--accent)]/10 cursor-default"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] hover:cursor-pointer"
-              }`}
-            >
-              <p className="font-semibold">{option.label}</p>
-              <p className="text-xs text-[var(--text-muted)] mt-1">{option.description}</p>
-            </button>
-          ))}
-        </div>
-
-        {/* Custom position picker */}
-        {positionGroup === "Custom" && (
-          <div className="mt-3">
-            <p className="text-xs text-[var(--text-muted)] mb-2">Select one or more positions</p>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { value: "QB", label: "QB" },
-                { value: "WR", label: "WR" },
-                { value: "RB", label: "RB" },
-                { value: "TE", label: "TE" },
-                { value: "K", label: "K" },
-                { value: "DEF", label: "DEF", disabled: allowRookies },
-              ].map((pos) => (
-                <button
-                  key={pos.value}
-                  disabled={pos.disabled}
-                  onClick={() => toggleCustomPosition(pos.value)}
-                  className={`w-[65px] h-[65px] rounded-xl border font-semibold text-sm transition-all ${
-                    pos.disabled
-                      ? "border-[var(--border)] bg-[var(--surface)] opacity-40 cursor-not-allowed"
-                      : customPositions.includes(pos.value)
-                      ? "border-[var(--accent)] bg-[var(--accent)]/10 cursor-pointer"
-                      : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] cursor-pointer"
-                  }`}
-                >
-                  {pos.label}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
+        <PositionGroupSelector 
+          toggleCustomPosition={toggleCustomPosition}
+          customPositions={customPositions}
+          setCustomPositions={setCustomPositions}
+          setPositionGroup={setPositionGroup}
+          positionGroup={positionGroup}
+          allowRookies={allowRookies}
+        />
       </section>
 
       {/* Scoring */}
@@ -166,26 +113,7 @@ export default function CreateRankingPage() {
       {/* Format */}
       <section className="mb-8">
         <label className="block text-sm font-medium mb-2">Format</label>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {[
-            { value: "STANDARD", label: "Standard", description: "Classic single QB league" },
-            { value: "SUPERFLEX", label: "Superflex", description: "Start a QB, WR, RB, or TE in the flex spot" },
-            { value: "CUSTOM", label: "Custom", description: "Define your own roster settings" },
-          ].map((option) => (
-            <button
-              key={option.value}
-              onClick={() => setFormat(option.value)}
-              className={`text-left p-4 rounded-xl border transition-all ${
-                format === option.value
-                  ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] hover:cursor-pointer"
-              }`}
-            >
-              <p className="font-semibold">{option.label}</p>
-              <p className="text-xs text-[var(--text-muted)] mt-1">{option.description}</p>
-            </button>
-          ))}
-        </div>
+        <CustomFormatSection format={format} setFormat={setFormat} />
       </section>
 
       {/* League Type */}
