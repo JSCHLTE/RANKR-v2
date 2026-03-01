@@ -4,6 +4,14 @@ import { useState } from "react";
 import PositionGroupSelector from "./_components/PositionGroupSelector";
 import CustomFormatSection from "./_components/CustomFormatSection";
 
+const Required = () => (
+  <span className="text-[var(--accent)] ml-0.5">*</span>
+);
+
+const Optional = () => (
+  <span className="text-[var(--text-muted)] font-normal"> — optional</span>
+);
+
 export default function CreateRankingPage() {
   const [name, setName] = useState("");
   const [allowRookies, setAllowRookies] = useState(false);
@@ -24,16 +32,30 @@ export default function CreateRankingPage() {
     );
   };
 
+  // Required: name, positionGroup, mode, visibility
+  const canSubmit =
+    name.trim() !== "" &&
+    (positionGroup !== "" || customPositions.length > 0) &&
+    mode !== "" &&
+    visibility !== "";
+
+  // Toggle helper for single-select card groups
+  const toggle = (current: string, value: string, setter: (v: string) => void) => {
+    setter(current === value ? "" : value);
+  };
+
   return (
     <main className="max-w-3xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold mb-4">Create a Ranking</h1>
+      <h1 className="text-3xl font-bold mb-2">Create a Ranking</h1>
       <p className="text-sm text-[var(--text-muted)] mb-8">
         This isn&apos;t a league — it&apos;s a player ranking. Some fields below (like scoring, format, and league type) appear on your ranking&apos;s thumbnail so others can instantly see what context it&apos;s built for.
       </p>
 
-      {/* Ranking Name */}
+      {/* Ranking Name — REQUIRED */}
       <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">Ranking Name</label>
+        <label className="block text-sm font-medium mb-2">
+          Ranking Name<Required />
+        </label>
         <input
           type="text"
           placeholder="e.g. My Week 10 PPR Rankings"
@@ -43,11 +65,13 @@ export default function CreateRankingPage() {
         />
       </section>
 
-      {/* Allow Rookies */}
+      {/* Allow Rookies — OPTIONAL */}
       <section className="mb-8">
         <div className="flex items-center justify-between p-4 rounded-xl border border-[var(--border)] bg-[var(--surface)]">
           <div>
-            <p className="font-semibold">Rookies Only</p>
+            <p className="font-semibold">
+              Rookies Only<span className="text-[var(--text-muted)] font-normal text-sm"> — optional</span>
+            </p>
             <p className="text-xs text-[var(--text-muted)] mt-0.5">
               Only include rookie players in your rankings
             </p>
@@ -57,7 +81,6 @@ export default function CreateRankingPage() {
               const next = !allowRookies;
               setAllowRookies(next);
               if (next) {
-                // Turning rookies ON — clear DEF from custom, deselect Defense
                 setCustomPositions((prev) => prev.filter((p) => p !== "DEF"));
                 if (positionGroup === "Defense") setPositionGroup("");
               }
@@ -68,17 +91,19 @@ export default function CreateRankingPage() {
           >
             <span
               className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform duration-200 ${
-                allowRookies ? "translate-x-6 bg-[var(--accent)" : "translate-x-0"
+                allowRookies ? "translate-x-6" : "translate-x-0"
               }`}
             />
           </button>
         </div>
       </section>
 
-      {/* Position Group */}
+      {/* Position Group — REQUIRED */}
       <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">Position Group</label>
-        <PositionGroupSelector 
+        <label className="block text-sm font-medium mb-2">
+          Position Group<Required />
+        </label>
+        <PositionGroupSelector
           toggleCustomPosition={toggleCustomPosition}
           customPositions={customPositions}
           setCustomPositions={setCustomPositions}
@@ -86,24 +111,32 @@ export default function CreateRankingPage() {
           positionGroup={positionGroup}
           allowRookies={allowRookies}
         />
+        <p className="mt-2 text-xs text-[var(--text-muted)] flex items-center gap-1.5">
+          <svg className="w-3.5 h-3.5 shrink-0 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 110 20A10 10 0 0112 2z" />
+          </svg>
+          This determines which players appear in your ranking. You won&apos;t be able to change it after creation.
+        </p>
       </section>
 
-      {/* Scoring */}
+      {/* Scoring — OPTIONAL */}
       <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">Scoring</label>
+        <label className="block text-sm font-medium mb-2">
+          Scoring<Optional />
+        </label>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {[
-            { value: "PPR", label: "PPR", description: "1 point per reception" },
+            { value: "PPR",      label: "PPR",      description: "1 point per reception" },
             { value: "HALF_PPR", label: "Half PPR", description: "0.5 points per reception" },
-            { value: "NO_PPR", label: "No PPR", description: "Receptions don't score points" },
+            { value: "NO_PPR",   label: "No PPR",   description: "Receptions don't score points" },
           ].map((option) => (
             <button
               key={option.value}
-              onClick={() => setScoring(option.value)}
-              className={`text-left p-4 rounded-xl border transition-all ${
+              onClick={() => toggle(scoring, option.value, setScoring)}
+              className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
                 scoring === option.value
                   ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] hover:cursor-pointer"
+                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
               }`}
             >
               <p className="font-semibold">{option.label}</p>
@@ -113,28 +146,32 @@ export default function CreateRankingPage() {
         </div>
       </section>
 
-      {/* Format */}
+      {/* Format — OPTIONAL */}
       <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">Format</label>
+        <label className="block text-sm font-medium mb-2">
+          Format<Optional />
+        </label>
         <CustomFormatSection format={format} setFormat={setFormat} />
       </section>
 
-      {/* League Type */}
+      {/* League Type — OPTIONAL */}
       <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">League Type</label>
+        <label className="block text-sm font-medium mb-2">
+          League Type<Optional />
+        </label>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
           {[
             { value: "REDRAFT", label: "Redraft", description: "Rosters clear each season, and all players are redrafted." },
-            { value: "KEEPER", label: "Keeper", description: "Carry players into next season with customizable keepers." },
+            { value: "KEEPER",  label: "Keeper",  description: "Carry players into next season with customizable keepers." },
             { value: "DYNASTY", label: "Dynasty", description: "Keep your roster each year. Add rookies and free agents." },
           ].map((option) => (
             <button
               key={option.value}
-              onClick={() => setLeagueType(option.value)}
-              className={`text-left p-4 rounded-xl border transition-all ${
+              onClick={() => toggle(leagueType, option.value, setLeagueType)}
+              className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
                 leagueType === option.value
                   ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] hover:cursor-pointer"
+                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
               }`}
             >
               <p className="font-semibold">{option.label}</p>
@@ -144,18 +181,20 @@ export default function CreateRankingPage() {
         </div>
       </section>
 
-      {/* League Size */}
+      {/* League Size — OPTIONAL */}
       <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">League Size</label>
+        <label className="block text-sm font-medium mb-2">
+          League Size<Optional />
+        </label>
         <div className="flex flex-wrap gap-2">
           {["4","6","8","10","12","14","16","18","20","22","24","32"].map((size) => (
             <button
               key={size}
-              onClick={() => setLeagueSize(size)}
-              className={`w-[65px] h-[65px] rounded-xl border font-semibold transition-all ${
+              onClick={() => toggle(leagueSize, size, setLeagueSize)}
+              className={`w-[65px] h-[65px] rounded-xl border font-semibold transition-all cursor-pointer ${
                 leagueSize === size
                   ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] hover:cursor-pointer"
+                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
               }`}
             >
               {size}
@@ -164,9 +203,11 @@ export default function CreateRankingPage() {
         </div>
       </section>
 
-      {/* Rank Type */}
+      {/* Rank Type — OPTIONAL */}
       <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">Rank Type</label>
+        <label className="block text-sm font-medium mb-2">
+          Rank Type<Optional />
+        </label>
         <div className="grid grid-cols-2 gap-3">
           {[
             { value: "SEASON", label: "Season", description: "Overall rankings for the full season" },
@@ -174,11 +215,11 @@ export default function CreateRankingPage() {
           ].map((option) => (
             <button
               key={option.value}
-              onClick={() => setRankType(option.value)}
-              className={`text-left p-4 rounded-xl border transition-all ${
+              onClick={() => toggle(rankType, option.value, setRankType)}
+              className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
                 rankType === option.value
                   ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] hover:cursor-pointer"
+                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
               }`}
             >
               <p className="font-semibold">{option.label}</p>
@@ -188,9 +229,11 @@ export default function CreateRankingPage() {
         </div>
       </section>
 
-      {/* Mode */}
+      {/* Mode — REQUIRED */}
       <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">Mode</label>
+        <label className="block text-sm font-medium mb-2">
+          Mode<Required />
+        </label>
         <div className="grid grid-cols-2 gap-3">
           {[
             { value: "LIST", label: "List", description: "Drag players into a ranked order" },
@@ -198,11 +241,11 @@ export default function CreateRankingPage() {
           ].map((option) => (
             <button
               key={option.value}
-              onClick={() => setMode(option.value)}
-              className={`text-left p-4 rounded-xl border transition-all ${
+              onClick={() => toggle(mode, option.value, setMode)}
+              className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
                 mode === option.value
                   ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] hover:cursor-pointer"
+                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
               }`}
             >
               <div className="flex items-center gap-2">
@@ -219,10 +262,10 @@ export default function CreateRankingPage() {
         </div>
       </section>
 
-      {/* Description */}
+      {/* Description — OPTIONAL */}
       <section className="mb-8">
         <label className="block text-sm font-medium mb-2">
-          Description <span className="text-[var(--text-muted)] font-normal">— optional</span>
+          Description<Optional />
         </label>
         <textarea
           placeholder="e.g. Post-week 10 update targeting handcuffs..."
@@ -233,21 +276,23 @@ export default function CreateRankingPage() {
         />
       </section>
 
-      {/* Visibility */}
+      {/* Visibility — REQUIRED */}
       <section className="mb-10">
-        <label className="block text-sm font-medium mb-2">Visibility</label>
+        <label className="block text-sm font-medium mb-2">
+          Visibility<Required />
+        </label>
         <div className="grid grid-cols-2 gap-3">
           {[
-            { value: "PUBLIC", label: "Public", description: "Anyone can discover and view this ranking" },
-            { value: "DRAFT", label: "Draft", description: "Only visible to you" },
+            { value: "PUBLIC",  label: "Public",  description: "Anyone can discover and view this ranking" },
+            { value: "PRIVATE", label: "Private", description: "Only visible to you" },
           ].map((option) => (
             <button
               key={option.value}
-              onClick={() => setVisibility(option.value)}
-              className={`text-left p-4 rounded-xl border transition-all ${
+              onClick={() => toggle(visibility, option.value, setVisibility)}
+              className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
                 visibility === option.value
                   ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] hover:cursor-pointer"
+                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
               }`}
             >
               <p className="font-semibold">{option.label}</p>
@@ -258,7 +303,14 @@ export default function CreateRankingPage() {
       </section>
 
       {/* Submit */}
-      <button className="w-full py-3 rounded-xl bg-[var(--accent)] text-[var(--background)] font-semibold text-lg hover:opacity-90 transition-opacity hover:cursor-pointer">
+      <button
+        disabled={!canSubmit}
+        className={`w-full py-3 rounded-xl font-semibold text-lg transition-all ${
+          canSubmit
+            ? "bg-[var(--accent)] text-[var(--background)] hover:opacity-90 cursor-pointer"
+            : "bg-[var(--border)] text-[var(--text-muted)] cursor-not-allowed opacity-50"
+        }`}
+      >
         Create Ranking
       </button>
     </main>

@@ -84,7 +84,6 @@ const CustomFormatSection = ({ format, setFormat }: CustomFormatSectionProps) =>
   const updateRoster = (pos: string, val: number) => {
     const next = { ...roster, [pos]: val };
     setRoster(next);
-    // Auto-detect and update the parent format
     setFormat(detectPreset(next));
   };
 
@@ -94,67 +93,103 @@ const CustomFormatSection = ({ format, setFormat }: CustomFormatSectionProps) =>
   };
 
   const detectedFormat = detectPreset(roster);
+  const isNone = format === "";
+  const showCustomCard = format === "CUSTOM";
 
   return (
     <div>
-      {/* Preset cards — clicking one loads those roster values */}
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-        {[
-          { value: "STANDARD",  label: "Standard",  description: "Classic single QB league" },
-          { value: "SUPERFLEX", label: "Superflex", description: "Start a QB, WR, RB, or TE in the flex spot" },
-          { value: "CUSTOM",    label: "Custom",    description: "Define your own roster settings" },
-        ].map((option) => (
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+
+        {/* Standard */}
+        <button
+          onClick={() => {
+            if (!isNone && detectedFormat === "STANDARD") {
+              setFormat("");
+            } else {
+              applyPreset("STANDARD");
+            }
+          }}
+          className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
+            !isNone && detectedFormat === "STANDARD"
+              ? "border-[var(--accent)] bg-[var(--accent)]/10"
+              : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
+          }`}
+        >
+          <p className="font-semibold">Standard</p>
+          <p className="text-xs text-[var(--text-muted)] mt-1">Classic single QB league</p>
+        </button>
+
+        {/* Superflex */}
+        <button
+          onClick={() => {
+            if (!isNone && detectedFormat === "SUPERFLEX") {
+              setFormat("");
+            } else {
+              applyPreset("SUPERFLEX");
+            }
+          }}
+          className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
+            !isNone && detectedFormat === "SUPERFLEX"
+              ? "border-[var(--accent)] bg-[var(--accent)]/10"
+              : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
+          }`}
+        >
+          <p className="font-semibold">Superflex</p>
+          <p className="text-xs text-[var(--text-muted)] mt-1">Start a QB, WR, RB, or TE in the flex spot</p>
+        </button>
+
+        {/* Custom — auto-appears when roster diverges, grayed out, not clickable */}
+        {showCustomCard && (
           <button
-            key={option.value}
-            onClick={() => {
-              if (option.value === "CUSTOM") {
-                // Just mark as custom without changing roster
-                setFormat("CUSTOM");
-              } else {
-                applyPreset(option.value);
-              }
-            }}
-            className={`text-left p-4 rounded-xl border transition-all ${
-              detectedFormat === option.value
+          onClick={() => {
+            setFormat("");
+          }}
+            className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
+              !isNone && detectedFormat === "CUSTOM"
                 ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] hover:cursor-pointer"
+                : "border-[var(--border)] bg-[var(--surface)]"
             }`}
           >
-            <p className="font-semibold">{option.label}</p>
-            <p className="text-xs text-[var(--text-muted)] mt-1">{option.description}</p>
+            <p className="font-semibold">Custom</p>
+            <p className="text-xs text-[var(--text-muted)] mt-1">Your roster doesn&apos;t match a standard format</p>
           </button>
-        ))}
+        )}
       </div>
 
-      {/* Roster spots — always visible */}
-      <div className="mt-4 p-5 rounded-2xl border border-[var(--border)] bg-[var(--surface)]">
-        <p className="text-sm font-semibold mb-4 text-[var(--text-muted)] uppercase tracking-wide">
-          Roster Spots
-        </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-3">
-          {POSITIONS.map((pos) => (
-            <PositionCounter
-              key={pos}
-              pos={pos}
-              value={roster[pos]}
-              onChange={(val) => updateRoster(pos, val)}
-            />
-          ))}
+      {/* Roster panel — hidden when Don't Specify */}
+      {!isNone && (
+        <div className="mt-4 p-5 rounded-2xl border border-[var(--border)] bg-[var(--surface)]">
+          <p className="text-sm font-semibold mb-4 text-[var(--text-muted)] uppercase tracking-wide">
+            Roster Spots
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-3">
+            {POSITIONS.map((pos) => (
+              <PositionCounter
+                key={pos}
+                pos={pos}
+                value={roster[pos]}
+                onChange={(val) => updateRoster(pos, val)}
+              />
+            ))}
+          </div>
+          <div className="mt-5 pt-4 border-t border-[var(--border)] flex flex-wrap gap-2">
+            {POSITIONS.filter((p) => roster[p] > 0).map((pos) => {
+              const colors = POSITION_COLORS[pos];
+              return (
+                <span
+                  key={pos}
+                  className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${colors.bg} ${colors.text} ${colors.border}`}
+                >
+                  {roster[pos]}× {pos}
+                </span>
+              );
+            })}
+            {POSITIONS.every((p) => roster[p] === 0) && (
+              <span className="text-xs text-[var(--text-muted)]">No roster spots selected</span>
+            )}
+          </div>
         </div>
-        <div className="mt-5 pt-4 border-t border-[var(--border)] flex flex-wrap gap-2">
-          {POSITIONS.filter((p) => roster[p] > 0).map((pos) => {
-            const colors = POSITION_COLORS[pos];
-            return (
-              <span key={pos} className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${colors.bg} ${colors.text} ${colors.border}`}>
-                {roster[pos]}× {pos}
-              </span>
-            );
-          })}
-          {POSITIONS.every((p) => roster[p] === 0) && (
-            <span className="text-xs text-[var(--text-muted)]">No roster spots selected</span>
-          )}
-        </div>
-      </div>
+      )}
     </div>
   );
 };
