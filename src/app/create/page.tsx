@@ -26,7 +26,10 @@ export default function CreateRankingPage() {
 
   return (
     <main className="max-w-3xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold mb-8">Create a Ranking</h1>
+      <h1 className="text-3xl font-bold mb-4">Create a Ranking</h1>
+      <p className="text-sm text-[var(--text-muted)] mb-8">
+        This isn&apos;t a league — it&apos;s a player ranking. Some fields below (like scoring, format, and league type) appear on your ranking&apos;s thumbnail so others can instantly see what context it&apos;s built for.
+      </p>
 
       {/* Ranking Name */}
       <section className="mb-8">

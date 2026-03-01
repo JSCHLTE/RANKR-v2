@@ -15,9 +15,17 @@ const POSITION_COLORS: Record<string, { bg: string; text: string; border: string
 
 const POSITIONS = ["QB", "WR", "RB", "TE", "FLEX", "SFLEX", "K", "DEF"];
 
-const DEFAULTS: Record<string, number> = {
-  QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 1, SFLEX: 0, K: 1, DEF: 1,
+const PRESETS: Record<string, Record<string, number>> = {
+  STANDARD:  { QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 1, SFLEX: 0, K: 1, DEF: 1 },
+  SUPERFLEX: { QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 0, SFLEX: 1, K: 1, DEF: 1 },
 };
+
+function detectPreset(roster: Record<string, number>): string {
+  for (const [key, preset] of Object.entries(PRESETS)) {
+    if (POSITIONS.every((p) => roster[p] === preset[p])) return key;
+  }
+  return "CUSTOM";
+}
 
 function PositionCounter({
   pos,
@@ -71,13 +79,25 @@ type CustomFormatSectionProps = {
 };
 
 const CustomFormatSection = ({ format, setFormat }: CustomFormatSectionProps) => {
-  const [roster, setRoster] = useState<Record<string, number>>({ ...DEFAULTS });
+  const [roster, setRoster] = useState<Record<string, number>>({ ...PRESETS.STANDARD });
 
-  const updateRoster = (pos: string, val: number) =>
-    setRoster((prev) => ({ ...prev, [pos]: val }));
+  const updateRoster = (pos: string, val: number) => {
+    const next = { ...roster, [pos]: val };
+    setRoster(next);
+    // Auto-detect and update the parent format
+    setFormat(detectPreset(next));
+  };
+
+  const applyPreset = (presetKey: string) => {
+    setRoster({ ...PRESETS[presetKey] });
+    setFormat(presetKey);
+  };
+
+  const detectedFormat = detectPreset(roster);
 
   return (
     <div>
+      {/* Preset cards — clicking one loads those roster values */}
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
         {[
           { value: "STANDARD",  label: "Standard",  description: "Classic single QB league" },
@@ -86,9 +106,16 @@ const CustomFormatSection = ({ format, setFormat }: CustomFormatSectionProps) =>
         ].map((option) => (
           <button
             key={option.value}
-            onClick={() => setFormat(option.value)}
+            onClick={() => {
+              if (option.value === "CUSTOM") {
+                // Just mark as custom without changing roster
+                setFormat("CUSTOM");
+              } else {
+                applyPreset(option.value);
+              }
+            }}
             className={`text-left p-4 rounded-xl border transition-all ${
-              format === option.value
+              detectedFormat === option.value
                 ? "border-[var(--accent)] bg-[var(--accent)]/10"
                 : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] hover:cursor-pointer"
             }`}
@@ -99,36 +126,35 @@ const CustomFormatSection = ({ format, setFormat }: CustomFormatSectionProps) =>
         ))}
       </div>
 
-      {format === "CUSTOM" && (
-        <div className="mt-4 p-5 rounded-2xl border border-[var(--border)] bg-[var(--surface)]">
-          <p className="text-sm font-semibold mb-4 text-[var(--text-muted)] uppercase tracking-wide">
-            Roster Spots
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-3">
-            {POSITIONS.map((pos) => (
-              <PositionCounter
-                key={pos}
-                pos={pos}
-                value={roster[pos]}
-                onChange={(val) => updateRoster(pos, val)}
-              />
-            ))}
-          </div>
-          <div className="mt-5 pt-4 border-t border-[var(--border)] flex flex-wrap gap-2">
-            {POSITIONS.filter((p) => roster[p] > 0).map((pos) => {
-              const colors = POSITION_COLORS[pos];
-              return (
-                <span key={pos} className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${colors.bg} ${colors.text} ${colors.border}`}>
-                  {roster[pos]}× {pos}
-                </span>
-              );
-            })}
-            {POSITIONS.every((p) => roster[p] === 0) && (
-              <span className="text-xs text-[var(--text-muted)]">No roster spots selected</span>
-            )}
-          </div>
+      {/* Roster spots — always visible */}
+      <div className="mt-4 p-5 rounded-2xl border border-[var(--border)] bg-[var(--surface)]">
+        <p className="text-sm font-semibold mb-4 text-[var(--text-muted)] uppercase tracking-wide">
+          Roster Spots
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-3">
+          {POSITIONS.map((pos) => (
+            <PositionCounter
+              key={pos}
+              pos={pos}
+              value={roster[pos]}
+              onChange={(val) => updateRoster(pos, val)}
+            />
+          ))}
         </div>
-      )}
+        <div className="mt-5 pt-4 border-t border-[var(--border)] flex flex-wrap gap-2">
+          {POSITIONS.filter((p) => roster[p] > 0).map((pos) => {
+            const colors = POSITION_COLORS[pos];
+            return (
+              <span key={pos} className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${colors.bg} ${colors.text} ${colors.border}`}>
+                {roster[pos]}× {pos}
+              </span>
+            );
+          })}
+          {POSITIONS.every((p) => roster[p] === 0) && (
+            <span className="text-xs text-[var(--text-muted)]">No roster spots selected</span>
+          )}
+        </div>
+      </div>
     </div>
   );
 };
