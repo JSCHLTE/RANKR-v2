@@ -8,7 +8,9 @@ import { signUp, signInWithGoogle } from "@/lib/auth";
 export default function SignUpPage() {
   const router = useRouter();
   const [email, setEmail] = useState("");
+  const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -86,12 +88,34 @@ export default function SignUpPage() {
             />
           </div>
           <div>
+            <label className="block text-xs font-medium text-white/50 mb-1.5">Username</label>
+            <input
+              type="text"
+              placeholder="Username"
+              value={user}
+              onChange={(e) => setUser(e.target.value)}
+              required
+              className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
+            />
+          </div>
+          <div>
             <label className="block text-xs font-medium text-white/50 mb-1.5">Password</label>
             <input
               type="password"
               placeholder="Min. 8 characters"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              required
+              className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-medium text-white/50 mb-1.5">Confirm Password</label>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
               required
               className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
