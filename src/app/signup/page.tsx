@@ -9,7 +9,6 @@ export default function SignUpPage() {
   const router = useRouter();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-
   const [formInfo, setFormInfo] = useState({
     email: "",
     username: "",

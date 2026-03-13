@@ -7,17 +7,28 @@ import { signIn, signInWithGoogle } from "@/lib/auth";
 
 export default function LoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [formInfo, setFormInfo] = useState({
+    email: "",
+    password: ""
+  });
+
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+
+    setFormInfo(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
     setError("");
     setLoading(true);
     try {
-      await signIn(email, password);
+      await signIn(formInfo.email, formInfo.password);
       router.push("/");
     } catch (err: unknown) {
       if (err instanceof Error) setError(err.message);
@@ -79,8 +90,9 @@ export default function LoginPage() {
             <input
               type="email"
               placeholder="you@example.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={formInfo.email}
+              name="email"
+              onChange={handleInput}
               required
               className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
@@ -95,8 +107,9 @@ export default function LoginPage() {
             <input
               type="password"
               placeholder="Your password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value={formInfo.password}
+              name="password"
+              onChange={handleInput}
               required
               className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
