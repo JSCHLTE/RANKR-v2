@@ -7,19 +7,38 @@ import { signUp, signInWithGoogle } from "@/lib/auth";
 
 export default function SignUpPage() {
   const router = useRouter();
-  const [email, setEmail] = useState("");
-  const [user, setUser] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+
+  const [formInfo, setFormInfo] = useState({
+    email: "",
+    username: "",
+    password: "",
+    confirmPassword: "",
+  })
+
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+
+    setFormInfo(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
 
   async function handleSignUp(e: React.FormEvent) {
     e.preventDefault();
     setError("");
     setLoading(true);
+
+    if(formInfo.password !== formInfo.confirmPassword) {
+      setError("Passwords don't match!");
+      setLoading(false);
+      return;
+    }
+
     try {
-      await signUp(email, password);
+      await signUp(formInfo.email, formInfo.password);
       router.push("/");
     } catch (err: unknown) {
       if (err instanceof Error) setError(err.message);
@@ -80,9 +99,10 @@ export default function SignUpPage() {
             <label className="block text-xs font-medium text-white/50 mb-1.5">Email</label>
             <input
               type="email"
+              name="email"
               placeholder="you@example.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={formInfo.email}
+              onChange={handleInput}
               required
               className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
@@ -92,8 +112,9 @@ export default function SignUpPage() {
             <input
               type="text"
               placeholder="Username"
-              value={user}
-              onChange={(e) => setUser(e.target.value)}
+              name="username"
+              value={formInfo.username}
+              onChange={handleInput}
               required
               className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
@@ -103,8 +124,9 @@ export default function SignUpPage() {
             <input
               type="password"
               placeholder="Min. 8 characters"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value={formInfo.password}
+              name="password"
+              onChange={handleInput}
               required
               className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
@@ -114,8 +136,9 @@ export default function SignUpPage() {
             <input
               type="password"
               placeholder="Confirm Password"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
+              value={formInfo.confirmPassword}
+              name="confirmPassword"
+              onChange={handleInput}
               required
               className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
