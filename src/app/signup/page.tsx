@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { signUp, signInWithGoogle } from "@/lib/auth";
@@ -14,23 +14,32 @@ export default function SignUpPage() {
     username: "",
     password: "",
     confirmPassword: "",
-  })
+  });
+  const [seededPfp, setSeededPFP] = useState("");
+  const [pfpReroll, setPfpReroll] = useState(0);
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+    setFormInfo(prev => ({ ...prev, [name]: value }));
+  };
 
-    setFormInfo(prev => ({
-      ...prev,
-      [name]: value
-    }))
-  }
+  useEffect(() => {
+    const pfpDebounce = setTimeout(() => {
+      setSeededPFP(formInfo.username);
+    }, 750);
+    return () => clearTimeout(pfpDebounce);
+  }, [formInfo.username]);
+
+  const reroll = () => {
+    setPfpReroll(prev => prev + 1);
+  };
 
   async function handleSignUp(e: React.FormEvent) {
     e.preventDefault();
     setError("");
     setLoading(true);
 
-    if(formInfo.password !== formInfo.confirmPassword) {
+    if (formInfo.password !== formInfo.confirmPassword) {
       setError("Passwords don't match!");
       setLoading(false);
       return;
@@ -58,6 +67,10 @@ export default function SignUpPage() {
       setLoading(false);
     }
   }
+
+  const avatarSrc = `https://api.dicebear.com/9.x/initials/svg?seed=${
+    seededPfp ? `${seededPfp}${pfpReroll ? `-reroll-${pfpReroll}` : ""}` : "RANKR"
+  }&backgroundType=gradientLinear`;
 
   return (
     <main className="min-h-screen flex items-center justify-center px-4">
@@ -110,8 +123,8 @@ export default function SignUpPage() {
             <label className="block text-xs font-medium text-white/50 mb-1.5">Username</label>
             <input
               type="text"
-              placeholder="Username"
               name="username"
+              placeholder="Username"
               value={formInfo.username}
               onChange={handleInput}
               required
@@ -122,9 +135,9 @@ export default function SignUpPage() {
             <label className="block text-xs font-medium text-white/50 mb-1.5">Password</label>
             <input
               type="password"
+              name="password"
               placeholder="Min. 8 characters"
               value={formInfo.password}
-              name="password"
               onChange={handleInput}
               required
               className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
@@ -134,13 +147,53 @@ export default function SignUpPage() {
             <label className="block text-xs font-medium text-white/50 mb-1.5">Confirm Password</label>
             <input
               type="password"
-              placeholder="Confirm Password"
-              value={formInfo.confirmPassword}
               name="confirmPassword"
+              placeholder="Confirm password"
+              value={formInfo.confirmPassword}
               onChange={handleInput}
               required
               className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
+          </div>
+
+          {/* PFP Section */}
+          <div>
+            <label className="block text-xs font-medium text-white/50 mb-3">Profile Picture</label>
+            <div className="flex items-start gap-4">
+
+              {/* Avatar preview */}
+              <div className="flex flex-col items-center gap-2">
+                <img
+                  src={avatarSrc}
+                  alt="Profile picture preview"
+                  className="w-16 h-16 rounded-full object-cover"
+                />
+                <button
+                  type="button"
+                  onClick={reroll}
+                  disabled={!seededPfp}
+                  className="text-xs text-white/30 hover:text-white/60 transition-colors disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
+                >
+                  Regenerate
+                </button>
+              </div>
+
+              {/* Custom gradient button */}
+              <div className="flex flex-col items-center gap-2">
+                <button
+                  type="button"
+                  className="w-16 h-16 rounded-full border border-dashed border-[var(--accent)]/50 bg-transparent hover:border-[var(--accent)] hover:bg-[var(--accent)]/5 transition-all flex items-center justify-center cursor-pointer"
+                >
+                  {/* Settings cog icon */}
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--accent)]/60">
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                    <path d="M19.622 10.395l-1.097-2.65L20 6l-2-2-1.735 1.483-2.707-1.113L12.935 2h-1.954l-.632 2.401-2.645 1.115L6 4 4 6l1.453 1.789-1.08 2.657L2 11v2l2.401.655L5.516 16.3 4 18l2 2 1.791-1.46 2.606 1.072L11 22h2l.604-2.387 2.651-1.098C16.697 19.distributed 18 20 18 20l2-2-1.484-1.75 1.098-2.652L22 13v-2l-2.378-.605Z"/>
+                  </svg>
+                </button>
+                <span className="text-xs text-white/30">Custom gradient</span>
+              </div>
+
+            </div>
           </div>
 
           {error && (
