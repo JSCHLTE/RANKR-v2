@@ -69,7 +69,7 @@ export default function SignUpPage() {
   }
 
   const avatarSrc = `https://api.dicebear.com/9.x/initials/svg?seed=${
-    seededPfp ? `${seededPfp}${pfpReroll ? `-reroll-${pfpReroll}` : ""}` : "RANKR"
+    seededPfp ? `${seededPfp}${pfpReroll ? `-${pfpReroll}` : ""}` : "RANKR"
   }&backgroundType=gradientLinear`;
 
   return (
