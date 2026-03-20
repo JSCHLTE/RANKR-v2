@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { signUp, signInWithGoogle } from "@/lib/auth";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRotate } from "@fortawesome/free-solid-svg-icons";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -73,7 +75,7 @@ export default function SignUpPage() {
   }&backgroundType=gradientLinear`;
 
   return (
-    <main className="min-h-screen flex items-center justify-center px-4">
+    <main className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="w-full max-w-md">
 
         {/* Header */}
@@ -142,6 +144,21 @@ export default function SignUpPage() {
               required
               className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
+          <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 flex flex-col gap-1.5 mt-5">
+            <p className="text-xs font-medium text-white/40 mb-0.5">Password requirements</p>
+            {[
+              "Minimum 8 characters",
+              "One uppercase character",
+              "One lowercase character",
+              "One special character",
+              "One numeric character",
+            ].map((req) => (
+              <div key={req} className="flex items-center gap-2">
+                <div className="w-1 h-1 rounded-full bg-white/20 shrink-0" />
+                <p className="text-xs text-white/40">{req}</p>
+              </div>
+            ))}
+          </div>
           </div>
           <div>
             <label className="block text-xs font-medium text-white/50 mb-1.5">Confirm Password</label>
@@ -168,29 +185,19 @@ export default function SignUpPage() {
                   alt="Profile picture preview"
                   className="w-16 h-16 rounded-full object-cover"
                 />
-                <button
-                  type="button"
-                  onClick={reroll}
-                  disabled={!seededPfp}
-                  className="text-xs text-white/30 hover:text-white/60 transition-colors disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
-                >
-                  Regenerate
-                </button>
+                <span className="text-xs text-white/30">Preview</span>
               </div>
 
-              {/* Custom gradient button */}
+              {/* Regenerate button */}
               <div className="flex flex-col items-center gap-2">
                 <button
                   type="button"
-                  className="w-16 h-16 rounded-full border border-dashed border-[var(--accent)]/50 bg-transparent hover:border-[var(--accent)] hover:bg-[var(--accent)]/5 transition-all flex items-center justify-center cursor-pointer"
+                  className="w-16 h-16 rounded-full border border-dashed border-[var(--accent)]/50 bg-transparent hover:border-[var(--accent)] hover:bg-[var(--accent)]/5 transition-all flex items-center justify-center cursor-pointer text-[1.5rem]"
+                  onClick={reroll}
                 >
-                  {/* Settings cog icon */}
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--accent)]/60">
-                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                    <path d="M19.622 10.395l-1.097-2.65L20 6l-2-2-1.735 1.483-2.707-1.113L12.935 2h-1.954l-.632 2.401-2.645 1.115L6 4 4 6l1.453 1.789-1.08 2.657L2 11v2l2.401.655L5.516 16.3 4 18l2 2 1.791-1.46 2.606 1.072L11 22h2l.604-2.387 2.651-1.098C16.697 19.distributed 18 20 18 20l2-2-1.484-1.75 1.098-2.652L22 13v-2l-2.378-.605Z"/>
-                  </svg>
+                  <FontAwesomeIcon icon={faRotate} className="text-[var(--accent)]"/>
                 </button>
-                <span className="text-xs text-white/30">Custom gradient</span>
+                <span className="text-xs text-white/30">Reroll gradient</span>
               </div>
 
             </div>
