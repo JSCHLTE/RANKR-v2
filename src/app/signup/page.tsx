@@ -147,15 +147,15 @@ export default function SignUpPage() {
           <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 flex flex-col gap-1.5 mt-5">
             <p className="text-xs font-medium text-white/40 mb-0.5">Password requirements</p>
             {[
-              "Minimum 8 characters",
-              "One uppercase character",
-              "One lowercase character",
-              "One special character",
-              "One numeric character",
+              {text: "Minimum 8 characters", check: () => formInfo.password.length >= 8},
+              {text: "One uppercase character", check: () => /[A-Z]/.test(formInfo.password)},
+              {text: "One lowercase character", check: () => /[a-z]/.test(formInfo.password)},
+              {text: "One special character", check: () => /[!@#$%^&*(),.?":{}|<>]/.test(formInfo.password)},
+              {text: "One numeric character", check: () => /[0-9]/.test(formInfo.password)},
             ].map((req) => (
-              <div key={req} className="flex items-center gap-2">
-                <div className="w-1 h-1 rounded-full bg-white/20 shrink-0" />
-                <p className="text-xs text-white/40">{req}</p>
+              <div key={req.text} className="flex items-center gap-2">
+                <div className={`w-1 h-1 rounded-full ${req.check() ? "bg-[var(--accent)]" : "bg-white/20"} shrink-0`}/>
+                <p className={`text-xs ${req.check() ? "text-[var(--accent)]" : "text-white/40"}`}>{req.text}</p>
               </div>
             ))}
           </div>
