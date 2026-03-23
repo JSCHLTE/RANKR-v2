@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { signUp, signInWithGoogle } from "@/lib/auth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRotate } from "@fortawesome/free-solid-svg-icons";
+import { faRotate, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -17,6 +17,7 @@ export default function SignUpPage() {
     password: "",
     confirmPassword: "",
   });
+  const [showPassword, setShowPassword] = useState(false);
   const [seededPfp, setSeededPFP] = useState("");
   const [pfpReroll, setPfpReroll] = useState(0);
 
@@ -134,36 +135,45 @@ export default function SignUpPage() {
             />
           </div>
           <div>
-            <label className="block text-xs font-medium text-white/50 mb-1.5">Password</label>
+          <label className="block text-xs font-medium text-white/50 mb-1.5">Password</label>
+          <div className="relative">
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               name="password"
               placeholder="Min. 8 characters"
               value={formInfo.password}
               onChange={handleInput}
               required
-              className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
+              className="w-full px-4 py-2.5 pr-10 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
+            <button
+              type="button"
+              onClick={() => setShowPassword(prev => !prev)}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--accent)]/50 cursor-pointer transition duration-300 ease-in-out hover:text-[var(--accent)]"
+            >
+              <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+            </button>
+          </div>
           <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 flex flex-col gap-1.5 mt-5">
             <p className="text-xs font-medium text-white/40 mb-0.5">Password requirements</p>
             {[
-              {text: "Minimum 8 characters", check: () => formInfo.password.length >= 8},
-              {text: "One uppercase character", check: () => /[A-Z]/.test(formInfo.password)},
-              {text: "One lowercase character", check: () => /[a-z]/.test(formInfo.password)},
-              {text: "One special character", check: () => /[!@#$%^&*(),.?":{}|<>]/.test(formInfo.password)},
-              {text: "One numeric character", check: () => /[0-9]/.test(formInfo.password)},
+              { text: "Minimum 8 characters", check: () => formInfo.password.length >= 8 },
+              { text: "One uppercase character", check: () => /[A-Z]/.test(formInfo.password) },
+              { text: "One lowercase character", check: () => /[a-z]/.test(formInfo.password) },
+              { text: "One special character", check: () => /[!@#$%^&*(),.?":{}|<>]/.test(formInfo.password) },
+              { text: "One numeric character", check: () => /[0-9]/.test(formInfo.password) },
             ].map((req) => (
               <div key={req.text} className="flex items-center gap-2">
-                <div className={`w-1 h-1 rounded-full ${req.check() ? "bg-[var(--accent)]" : "bg-white/20"} shrink-0`}/>
+                <div className={`w-1 h-1 rounded-full ${req.check() ? "bg-[var(--accent)]" : "bg-white/20"} shrink-0`} />
                 <p className={`text-xs ${req.check() ? "text-[var(--accent)]" : "text-white/40"}`}>{req.text}</p>
               </div>
             ))}
           </div>
-          </div>
+        </div>
           <div>
             <label className="block text-xs font-medium text-white/50 mb-1.5">Confirm Password</label>
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               name="confirmPassword"
               placeholder="Confirm password"
               value={formInfo.confirmPassword}
