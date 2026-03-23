@@ -43,7 +43,7 @@ export default function SignUpPage() {
     setLoading(true);
 
     if (formInfo.password !== formInfo.confirmPassword) {
-      setError("Passwords don't match!");
+      setError("Passwords don't match");
       setLoading(false);
       return;
     }
@@ -52,7 +52,24 @@ export default function SignUpPage() {
       await signUp(formInfo.email, formInfo.password);
       router.push("/");
     } catch (err: unknown) {
-      if (err instanceof Error) setError(err.message);
+      if (err instanceof Error) {
+
+        const passwordRequirements = [
+          { key: "8 characters", message: "Your password must be a minimum of 8 characters" },
+          { key: "upper case", message: "Your password must include at least one uppercase letter" },
+          { key: "lower case", message: "Your password must include at least one lowercase letter" },
+          { key: " numeric character", message: "Your password must include at least one number" },
+          { key: "non-alphanumeric", message: 'Your password must include at least one special character (!@#$%^&*(),.?":{}|<>)'  },
+        ];
+        const match = passwordRequirements.find(req => err.message.includes(req.key));
+
+        if(match) {
+          setError(match.message)
+        } else {
+          setError(err.message)
+        }
+
+      };
     } finally {
       setLoading(false);
     }
