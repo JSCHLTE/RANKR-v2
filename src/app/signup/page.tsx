@@ -43,17 +43,30 @@ export default function SignUpPage() {
     e.preventDefault();
     setError("");
     setLoading(true);
-
+  
     if (formInfo.password !== formInfo.confirmPassword) {
       setError("Passwords don't match");
       setLoading(false);
       return;
     }
-
+  
     try {
-      await signUp(formInfo.email, formInfo.password);
+      const user = await signUp(formInfo.email, formInfo.password); // get uid first
+  
+      const res = await fetch("/api/set-username", {
+        method: "POST",
+        body: JSON.stringify({ username: formInfo.username, uid: user.uid }),
+        headers: { "Content-Type": "application/json" },
+      });
+  
+      const data = await res.json();
+      if (!res.ok) {
+        await user.delete(); // rollback the auth account
+        throw new Error(data.error);
+      }
+  
       router.push("/");
-    } catch (err: unknown) {
+    }  catch (err: unknown) {
       if (err instanceof Error) {
 
         const passwordRequirements = [
@@ -147,14 +160,11 @@ export default function SignUpPage() {
           </div>
           <div>
             <label className="block text-xs font-medium text-white/50 mb-1.5">Username</label>
-            <div className="relative">
-            <UsernameInput 
-              value={formInfo.username}
-              onChange={handleInput}
-              setIsUsernameValid={setIsUsernameValid}
-            />
-              <span className="absolute right-3 bottom-0 -translate-y-1/2 text-white/20 text-xs select-none">{`${formInfo.username.length}/16`}</span>
-            </div>
+              <UsernameInput 
+                value={formInfo.username}
+                onChange={handleInput}
+                onValidChange={setIsUsernameValid}
+              />
           </div>
           <div>
           <label className="block text-xs font-medium text-white/50 mb-1.5">Password</label>
@@ -243,7 +253,7 @@ export default function SignUpPage() {
 
           <button
             type="submit"
-            disabled={loading}
+            disabled={loading || !isUsernameValid}
             className="w-full py-2.5 rounded-xl bg-[var(--accent)] text-[var(--background)] text-sm font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 cursor-pointer"
           >
             {loading ? "Creating account..." : "Sign Up"}
