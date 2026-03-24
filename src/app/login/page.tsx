@@ -56,7 +56,11 @@ export default function LoginPage() {
 
         {/* Header */}
         <div className="mb-8">
-          <p className="text-xs font-medium tracking-widest text-white/40 uppercase mb-2">RANKR</p>
+        <img 
+          src="lion-green-t.svg"
+          className="w-20 h-20"
+          draggable="false"
+          />
           <h1 className="text-3xl font-medium mb-1">Welcome back</h1>
           <p className="text-sm text-white/50">Sign in to your account to continue</p>
         </div>

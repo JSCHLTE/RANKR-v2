@@ -6,6 +6,7 @@ import Link from "next/link";
 import { signUp, signInWithGoogle } from "@/lib/auth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRotate, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import UsernameInput from "./_components/UsernameInput";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -17,6 +18,7 @@ export default function SignUpPage() {
     password: "",
     confirmPassword: "",
   });
+  const [isUsernameValid, setIsUsernameValid] = useState(false)
   const [showPassword, setShowPassword] = useState(false);
   const [seededPfp, setSeededPFP] = useState("");
   const [pfpReroll, setPfpReroll] = useState(0);
@@ -98,7 +100,11 @@ export default function SignUpPage() {
 
         {/* Header */}
         <div className="mb-8">
-          <p className="text-xs font-medium tracking-widest text-white/40 uppercase mb-2">RANKR</p>
+          <img 
+          src="lion-green-t.svg"
+          className="w-20 h-20"
+          draggable="false"
+          />
           <h1 className="text-3xl font-medium mb-1">Create your account</h1>
           <p className="text-sm text-white/50">Start building and sharing your rankings</p>
         </div>
@@ -141,15 +147,14 @@ export default function SignUpPage() {
           </div>
           <div>
             <label className="block text-xs font-medium text-white/50 mb-1.5">Username</label>
-            <input
-              type="text"
-              name="username"
-              placeholder="Username"
+            <div className="relative">
+            <UsernameInput 
               value={formInfo.username}
               onChange={handleInput}
-              required
-              className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
+              onValidChange={setIsUsernameValid}
             />
+              <span className="absolute right-3 bottom-0 -translate-y-1/2 text-white/20 text-xs select-none">{`${formInfo.username.length}/16`}</span>
+            </div>
           </div>
           <div>
           <label className="block text-xs font-medium text-white/50 mb-1.5">Password</label>
