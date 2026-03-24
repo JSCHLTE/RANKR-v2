@@ -151,7 +151,7 @@ export default function SignUpPage() {
             <UsernameInput 
               value={formInfo.username}
               onChange={handleInput}
-              onValidChange={setIsUsernameValid}
+              setIsUsernameValid={setIsUsernameValid}
             />
               <span className="absolute right-3 bottom-0 -translate-y-1/2 text-white/20 text-xs select-none">{`${formInfo.username.length}/16`}</span>
             </div>
