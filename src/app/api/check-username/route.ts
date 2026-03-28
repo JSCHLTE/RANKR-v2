@@ -6,7 +6,7 @@ export async function GET(req: NextRequest) {
     const username = req.nextUrl.searchParams.get("username");
     if (!username) return Response.json({ error: "No username" }, { status: 400 });
 
-    const doc = await db.collection("usernames").doc(username).get();
+    const doc = await db.collection("usernames").doc(username.toLowerCase()).get();
     return Response.json({ available: !doc.exists });
   } catch (err) {
     console.error("check-username error:", err);

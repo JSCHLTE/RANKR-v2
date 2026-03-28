@@ -23,6 +23,10 @@ export default function SignUpPage() {
   const [seededPfp, setSeededPFP] = useState("");
   const [pfpReroll, setPfpReroll] = useState(0);
 
+  const avatarSrc = `https://api.dicebear.com/9.x/initials/svg?seed=${
+    seededPfp ? `${seededPfp}${pfpReroll ? `-${pfpReroll}` : ""}` : "RANKR"
+  }&backgroundType=gradientLinear`;
+
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormInfo(prev => ({ ...prev, [name]: value }));
@@ -31,7 +35,7 @@ export default function SignUpPage() {
   useEffect(() => {
     const pfpDebounce = setTimeout(() => {
       setSeededPFP(formInfo.username);
-    }, 750);
+    }, 250);
     return () => clearTimeout(pfpDebounce);
   }, [formInfo.username]);
 
@@ -55,7 +59,7 @@ export default function SignUpPage() {
   
       const res = await fetch("/api/set-username", {
         method: "POST",
-        body: JSON.stringify({ username: formInfo.username, uid: user.uid }),
+        body: JSON.stringify({ username: formInfo.username, pfp: avatarSrc, uid: user.uid }),
         headers: { "Content-Type": "application/json" },
       });
   
@@ -102,10 +106,6 @@ export default function SignUpPage() {
       setLoading(false);
     }
   }
-
-  const avatarSrc = `https://api.dicebear.com/9.x/initials/svg?seed=${
-    seededPfp ? `${seededPfp}${pfpReroll ? `-${pfpReroll}` : ""}` : "RANKR"
-  }&backgroundType=gradientLinear`;
 
   return (
     <main className="min-h-screen flex items-center justify-center px-4 py-20">
