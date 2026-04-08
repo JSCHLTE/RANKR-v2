@@ -5,8 +5,7 @@ import { type User } from "firebase/auth";
 import { onAuthChange } from "@/lib/auth";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 interface AuthContextType {
   user: User | null;
@@ -31,9 +30,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if(user) {
         const userDoc = await getDoc(doc(db, "users", user.uid))
 
+        if(pathname == "/set-username" && userDoc.exists()) {
+          router.push("/")
+        }
+
         if(!userDoc.exists() && pathname !== "/set-username") {
           router.push("/set-username")
-          console.log("test")
         }
 
       }
@@ -41,7 +43,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [pathname]);
 
   return (
     <AuthContext.Provider value={{ user, loading }}>
