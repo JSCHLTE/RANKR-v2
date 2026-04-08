@@ -1,17 +1,78 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import UsernameInput from '../signup/_components/UsernameInput';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRotate } from "@fortawesome/free-solid-svg-icons";
+import { useAuth } from '@/context/AuthContext';
+import { useRouter } from 'next/navigation';
 
 export default function SetUsername() {
     const [isUsernameValid, setIsUsernameValid] = useState(false);
     const [usernameValue, setUsernameValue] = useState("");
+    const [seededPfp, setSeededPFP] = useState("");
+    const [pfpReroll, setPfpReroll] = useState(0);
+    const [error, setError] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    const { user } = useAuth();
+    const router = useRouter();
+
+    useEffect(() => {
+      if(!user) router.push("/signup");
+    }, [user, router])
 
     const handleUsername = (e: React.ChangeEvent<HTMLInputElement>) => {
         setUsernameValue(e.target.value);
     };
+  
+    const avatarSrc = `https://api.dicebear.com/9.x/initials/svg?seed=${
+      seededPfp ? `${seededPfp}${pfpReroll ? `-${pfpReroll}` : ""}` : "RANKR"
+    }&backgroundType=gradientLinear`;
 
-  return (
+    const reroll = () => {
+      setPfpReroll(prev => prev + 1);
+    };
+
+    useEffect(() => {
+      const pfpDebounce = setTimeout(() => {
+        setSeededPFP(usernameValue);
+      }, 250);
+      return () => clearTimeout(pfpDebounce);
+    }, [usernameValue]);
+
+    async function handleSignUp(e: React.FormEvent) {
+      e.preventDefault();
+      setError("");
+      setLoading(true);
+
+      if(!user) {
+        router.push("/signup");
+        return;
+      }
+    
+      try {    
+        const res = await fetch("/api/set-username", {
+          method: "POST",
+          body: JSON.stringify({ username: usernameValue, pfp: avatarSrc, uid: user.uid }),
+          headers: { "Content-Type": "application/json" },
+        });
+
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error);
+        router.push("/");
+
+      }  catch (err: unknown) {
+        if (err instanceof Error) {
+          setError(err.message)
+        };
+      } finally {
+        setLoading(false);
+      }
+    }
+
+
+  return ( user &&
     <main className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="w-full max-w-md">
           <img 
@@ -21,13 +82,50 @@ export default function SetUsername() {
           />
         <h1 className="text-3xl font-medium mb-1">Set your username</h1>
         <p className="text-sm text-white/50 mb-5">To continue using RANKR please set a username below</p>
+        <form onSubmit={handleSignUp}>
         <UsernameInput onChange={handleUsername} value={usernameValue} onValidChange={setIsUsernameValid} />
+                  {/* PFP Section */}
+            <div className='mt-5'>
+              <label className="block text-xs font-medium text-white/50 mb-3">Profile Picture</label>
+              <div className="flex items-start gap-4">
+
+                {/* Avatar preview */}
+                <div className="flex flex-col items-center gap-2">
+                  <img
+                    src={avatarSrc}
+                    alt="Profile picture preview"
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
+                  <span className="text-xs text-white/30">Preview</span>
+                </div>
+
+                {/* Regenerate button */}
+                <div className="flex flex-col items-center gap-2">
+                  <button
+                    type="button"
+                    className="w-16 h-16 rounded-full border border-dashed border-[var(--accent)]/50 bg-transparent hover:border-[var(--accent)] hover:bg-[var(--accent)]/5 transition-all flex items-center justify-center cursor-pointer text-[1.5rem]"
+                    onClick={reroll}
+                  >
+                    <FontAwesomeIcon icon={faRotate} className="text-[var(--accent)]"/>
+                  </button>
+                  <span className="text-xs text-white/30">Reroll gradient</span>
+                </div>
+
+              </div>
+          </div>
+          {error && (
+            <p className="text-sm text-red-400 bg-red-400/10 border border-red-400/20 rounded-lg px-4 py-2.5">
+              {error}
+            </p>
+          )}
         <button
+            type='submit'
             disabled={!isUsernameValid}
             className="mt-5 py-2.5 px-2.5 rounded-xl bg-[var(--accent)] text-[var(--background)] text-sm font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 cursor-pointer"
           >
-            Finish creating account
+            {loading ? "Finishing account..." : "Finish Sign Up"}
           </button>
+          </form>
       </div>
     </main>
   );
