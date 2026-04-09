@@ -10,18 +10,30 @@ import { useRouter, usePathname } from "next/navigation";
 interface AuthContextType {
   user: User | null;
   hasProfile: boolean;
+  profile: UserProfile | null;
   loading: boolean;
 }
 
 const AuthContext = createContext<AuthContextType>({
   user: null,
   hasProfile: false,
+  profile: null,
   loading: true,
 });
+
+interface UserProfile {
+  username: string,
+  displayName: string,
+  pfp: string,
+  isPaid: boolean;
+}
+
+
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [hasProfile, setHasProfile] = useState(false);
+  const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
   const pathname = usePathname();
   const router = useRouter();
@@ -34,6 +46,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         const userDoc = await getDoc(doc(db, "users", user.uid))
         const profileExists = userDoc.exists();
         setHasProfile(profileExists);
+
+        if(profileExists) {
+          setProfile(userDoc.data() as UserProfile);
+        }
 
         if(pathname === "/set-username" && profileExists) {
           router.push("/")
@@ -61,7 +77,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, [pathname]);
 
   return (
-    <AuthContext.Provider value={{ user, loading, hasProfile }}>
+    <AuthContext.Provider value={{ user, loading, hasProfile, profile }}>
       {children}
     </AuthContext.Provider>
   );
