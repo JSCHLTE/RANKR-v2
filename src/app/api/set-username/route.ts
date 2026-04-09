@@ -26,7 +26,10 @@ export async function POST(req: NextRequest) {
   try {
     await db.runTransaction(async (t) => {
       const usernameDoc = await t.get(usernameRef);
+      const userDoc = await t.get(userRef);
+
       if (usernameDoc.exists) throw new Error("Username taken");
+      if (userDoc.exists) throw new Error("Username already set");
 
       t.set(usernameRef, { uid });
       t.set(userRef, { username: username.toLowerCase(), displayName: username, pfp }, { merge: true });

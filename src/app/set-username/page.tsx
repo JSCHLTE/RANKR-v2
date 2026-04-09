@@ -8,19 +8,15 @@ import { useAuth } from '@/context/AuthContext';
 import { useRouter } from 'next/navigation';
 
 export default function SetUsername() {
+    const { user, loading, hasProfile } = useAuth();
+    const router = useRouter();
     const [isUsernameValid, setIsUsernameValid] = useState(false);
     const [usernameValue, setUsernameValue] = useState("");
     const [seededPfp, setSeededPFP] = useState("");
     const [pfpReroll, setPfpReroll] = useState(0);
     const [error, setError] = useState("");
-    const [loading, setLoading] = useState(false);
+    const [process, setProcess] = useState(false);
 
-    const { user } = useAuth();
-    const router = useRouter();
-
-    useEffect(() => {
-      if(!user) router.push("/signup");
-    }, [user, router])
 
     const handleUsername = (e: React.ChangeEvent<HTMLInputElement>) => {
         setUsernameValue(e.target.value);
@@ -44,7 +40,7 @@ export default function SetUsername() {
     async function handleSignUp(e: React.FormEvent) {
       e.preventDefault();
       setError("");
-      setLoading(true);
+      setProcess(true);
 
       if(!user) {
         router.push("/signup");
@@ -67,10 +63,11 @@ export default function SetUsername() {
           setError(err.message)
         };
       } finally {
-        setLoading(false);
+        setProcess(false);
       }
     }
 
+    if(loading || hasProfile) return null;
 
   return ( user &&
     <main className="min-h-screen flex items-center justify-center px-4 py-20">
@@ -114,7 +111,7 @@ export default function SetUsername() {
               </div>
           </div>
           {error && (
-            <p className="text-sm text-red-400 bg-red-400/10 border border-red-400/20 rounded-lg px-4 py-2.5">
+            <p className="mt-5 text-sm text-red-400 bg-red-400/10 border border-red-400/20 rounded-lg px-4 py-2.5">
               {error}
             </p>
           )}
@@ -123,7 +120,7 @@ export default function SetUsername() {
             disabled={!isUsernameValid}
             className="mt-5 py-2.5 px-2.5 rounded-xl bg-[var(--accent)] text-[var(--background)] text-sm font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 cursor-pointer"
           >
-            {loading ? "Finishing account..." : "Finish Sign Up"}
+            {process ? "Finishing account..." : "Finish Sign Up"}
           </button>
           </form>
       </div>

@@ -7,18 +7,20 @@ import { signUp, signInWithGoogle } from "@/lib/auth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRotate, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import UsernameInput from "./_components/UsernameInput";
+import { useAuth } from "@/context/AuthContext";
 
 export default function SignUpPage() {
+  const { user, loading } = useAuth();
   const router = useRouter();
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [process, setProcess] = useState(false);
   const [formInfo, setFormInfo] = useState({
     email: "",
     username: "",
     password: "",
     confirmPassword: "",
   });
-  const [isUsernameValid, setIsUsernameValid] = useState(false)
+  const [isUsernameValid, setIsUsernameValid] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [seededPfp, setSeededPFP] = useState("");
   const [pfpReroll, setPfpReroll] = useState(0);
@@ -46,11 +48,11 @@ export default function SignUpPage() {
   async function handleSignUp(e: React.FormEvent) {
     e.preventDefault();
     setError("");
-    setLoading(true);
+    setProcess(true);
   
     if (formInfo.password !== formInfo.confirmPassword) {
       setError("Passwords don't match");
-      setLoading(false);
+      setProcess(false);
       return;
     }
   
@@ -90,24 +92,26 @@ export default function SignUpPage() {
 
       };
     } finally {
-      setLoading(false);
+      setProcess(false);
     }
   }
 
   async function handleGoogleSignUp() {
     setError("");
-    setLoading(true);
+    setProcess(true);
     try {
       await signInWithGoogle();
-      router.push("/");
+      router.push("/set-username");
     } catch (err: unknown) {
       if (err instanceof Error) setError(err.message);
     } finally {
-      setLoading(false);
+      setProcess(false);
     }
   }
 
-  return (
+  if(loading) return null;
+
+  return (!user &&
     <main className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="w-full max-w-md">
 
@@ -125,7 +129,7 @@ export default function SignUpPage() {
         {/* Google */}
         <button
           onClick={handleGoogleSignUp}
-          disabled={loading}
+          disabled={process}
           className="w-full flex items-center justify-center gap-3 px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-colors text-sm font-medium mb-6 disabled:opacity-50 cursor-pointer"
         >
           <svg width="16" height="16" viewBox="0 0 24 24">
@@ -253,10 +257,10 @@ export default function SignUpPage() {
 
           <button
             type="submit"
-            disabled={loading || !isUsernameValid}
+            disabled={process || !isUsernameValid}
             className="w-full py-2.5 rounded-xl bg-[var(--accent)] text-[var(--background)] text-sm font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 cursor-pointer"
           >
-            {loading ? "Creating account..." : "Sign Up"}
+            {process ? "Creating account..." : "Sign Up"}
           </button>
         </form>
 
