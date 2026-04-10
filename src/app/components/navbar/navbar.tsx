@@ -15,13 +15,13 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full px-6 py-3 border-b border-white/10">
+    <nav className="w-full px-6 py-4 border-b border-white/10">
     <div className="flex items-center justify-between max-w-200 mx-auto">
       {/* Logo */}
       <Link href="/">
         <img
-          src="lion-green-t.svg"
-          className="w-15 h-15"
+          src="lion-green-long.svg"
+          className="w-35 hover:opacity-80"
           draggable="false"
           alt="RANKR"
         />
@@ -37,7 +37,7 @@ export default function Navbar() {
             href={link.href}
             className={`text-md transition-colors ${
               pathname === link.href
-                ? "text-white font-medium"
+                ? "text-white font-medium cursor-default"
                 : "text-white/40 hover:text-white/70"
             }`}
           >

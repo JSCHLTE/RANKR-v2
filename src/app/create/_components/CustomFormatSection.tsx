@@ -18,6 +18,7 @@ const POSITIONS = ["QB", "WR", "RB", "TE", "FLEX", "SFLEX", "K", "DEF"];
 const PRESETS: Record<string, Record<string, number>> = {
   STANDARD:  { QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 1, SFLEX: 0, K: 1, DEF: 1 },
   SUPERFLEX: { QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 0, SFLEX: 1, K: 1, DEF: 1 },
+  THREEWR: { QB: 1, WR: 3, RB: 2, TE: 1, FLEX: 0, SFLEX: 0, K: 1, DEF: 1 }
 };
 
 function detectPreset(roster: Record<string, number>): string {
@@ -136,6 +137,25 @@ const CustomFormatSection = ({ format, setFormat }: CustomFormatSectionProps) =>
         >
           <p className="font-semibold">Superflex</p>
           <p className="text-xs text-[var(--text-muted)] mt-1">Start a QB, WR, RB, or TE in the flex spot</p>
+        </button>
+
+        {/* Three WR */}
+                <button
+          onClick={() => {
+            if (!isNone && detectedFormat === "THREEWR") {
+              setFormat("");
+            } else {
+              applyPreset("THREEWR");
+            }
+          }}
+          className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
+            !isNone && detectedFormat === "THREEWR"
+              ? "border-[var(--accent)] bg-[var(--accent)]/10"
+              : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
+          }`}
+        >
+          <p className="font-semibold">3 WR</p>
+          <p className="text-xs text-[var(--text-muted)] mt-1">Standard just with an additional WR</p>
         </button>
 
         {/* Custom — auto-appears when roster diverges, grayed out, not clickable */}
