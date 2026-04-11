@@ -10,7 +10,7 @@ import UsernameInput from "./_components/UsernameInput";
 import { useAuth } from "@/context/AuthContext";
 
 export default function SignUpPage() {
-  const { user, loading } = useAuth();
+  const { user, loading, refreshProfile } = useAuth();
   const router = useRouter();
   const [error, setError] = useState("");
   const [process, setProcess] = useState(false);
@@ -70,7 +70,7 @@ export default function SignUpPage() {
         await user.delete(); // rollback the auth account
         throw new Error(data.error);
       }
-  
+      await refreshProfile(user!)
       router.push("/");
     }  catch (err: unknown) {
       if (err instanceof Error) {

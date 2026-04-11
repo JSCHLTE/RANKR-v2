@@ -1,10 +1,8 @@
-"use client";
-
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useRef } from "react";
+import { logOut } from "@/lib/auth";
 
 interface UserProfile {
   username: string;
@@ -15,9 +13,10 @@ interface UserProfile {
 
 type UserMenuProps = {
   profile: UserProfile;
+  setUserMenu: (mode: boolean) => void;
 };
 
-export const UserMenu = ({ profile }: UserMenuProps) => {
+export const UserMenu = ({ profile, setUserMenu }: UserMenuProps) => {
 
   return (
     <div className="absolute right-0 top-full mt-2 w-56 rounded-2xl border border-white/10 bg-[var(--background)] shadow-xl overflow-hidden z-50">
@@ -48,6 +47,10 @@ export const UserMenu = ({ profile }: UserMenuProps) => {
 
         <button
           className="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-red-400/70 hover:text-red-400 hover:bg-red-400/5 transition-all w-full cursor-pointer"
+          onClick={async () => {
+              await logOut();
+              setUserMenu(false);
+          }}
         >
           <FontAwesomeIcon icon={faRightFromBracket} className="w-3.5 h-3.5 shrink-0" />
           Log out

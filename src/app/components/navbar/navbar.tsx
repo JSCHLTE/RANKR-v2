@@ -19,6 +19,10 @@ export default function Navbar() {
   const dropDownRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    setUserMenu(false);
+  }, [user]);
+
+  useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
         if(!dropDownRef.current) return;
 
@@ -76,7 +80,7 @@ export default function Navbar() {
               draggable="false"
               onClick={() => setUserMenu(prev => !prev)}
             />
-            {userMenu && <UserMenu profile={profile} /> }
+            {userMenu && <UserMenu profile={profile} setUserMenu={setUserMenu}/> }
           </div>
         ) : !user ? (
           <div className="flex items-center gap-3">

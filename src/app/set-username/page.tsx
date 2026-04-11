@@ -8,7 +8,7 @@ import { useAuth } from '@/context/AuthContext';
 import { useRouter } from 'next/navigation';
 
 export default function SetUsername() {
-    const { user, loading, hasProfile } = useAuth();
+    const { user, loading, hasProfile, refreshProfile } = useAuth();
     const router = useRouter();
     const [isUsernameValid, setIsUsernameValid] = useState(false);
     const [usernameValue, setUsernameValue] = useState("");
@@ -56,6 +56,7 @@ export default function SetUsername() {
 
         const data = await res.json();
         if (!res.ok) throw new Error(data.error);
+        await refreshProfile(user!);
         router.push("/");
 
       }  catch (err: unknown) {
@@ -69,7 +70,7 @@ export default function SetUsername() {
 
     if(loading || hasProfile) return null;
 
-  return ( user &&
+  return ( user && !hasProfile &&
     <main className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="w-full max-w-md">
           <img 
