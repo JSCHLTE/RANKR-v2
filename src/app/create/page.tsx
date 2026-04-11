@@ -3,6 +3,7 @@
 import { useState } from "react";
 import PositionGroupSelector from "./_components/PositionGroupSelector";
 import CustomFormatSection from "./_components/CustomFormatSection";
+import { useAuth } from "@/context/AuthContext";
 
 const Required = () => (
   <span className="text-[var(--accent)] ml-0.5">*</span>
@@ -13,6 +14,7 @@ const Optional = () => (
 );
 
 export default function CreateRankingPage() {
+  const { profile } = useAuth();
   const [name, setName] = useState("");
   const [allowRookies, setAllowRookies] = useState(false);
   const [positionGroup, setPositionGroup] = useState("");
@@ -22,9 +24,9 @@ export default function CreateRankingPage() {
   const [leagueType, setLeagueType] = useState("");
   const [leagueSize, setLeagueSize] = useState("");
   const [rankType, setRankType] = useState("");
-  const [mode, setMode] = useState("");
+  const [mode, setMode] = useState("LIST");
   const [description, setDescription] = useState("");
-  const [visibility, setVisibility] = useState("");
+  const [visibility, setVisibility] = useState("PUBLIC");
 
   const toggleCustomPosition = (value: string) => {
     setCustomPositions((prev) =>
@@ -65,6 +67,20 @@ export default function CreateRankingPage() {
         />
       </section>
 
+      {/* Description — OPTIONAL */}
+            <section className="mb-8">
+        <label className="block text-sm font-medium mb-2">
+          Description<Optional />
+        </label>
+        <textarea
+          placeholder="e.g. Post-week 10 update targeting handcuffs..."
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          rows={3}
+          className="w-full px-4 py-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] focus:outline-none focus:border-[var(--accent)] resize-none"
+        />
+      </section>
+
       {/* Allow Rookies — OPTIONAL */}
       <section className="mb-8">
         <div className="flex items-center justify-between p-4 rounded-xl border border-[var(--border)] bg-[var(--surface)]">
@@ -95,6 +111,40 @@ export default function CreateRankingPage() {
               }`}
             />
           </button>
+        </div>
+      </section>
+
+            {/* Mode — REQUIRED */}
+            <section className="mb-8">
+        <label className="block text-sm font-medium mb-2">
+          Mode<Required />
+        </label>
+        <div className="grid grid-cols-2 gap-3">
+          {[
+            { value: "LIST", label: "List", description: "Drag players into a ranked order" },
+            { value: "TIER", label: "Tier", description: "Sort players into S through F tiers", paid: true },
+          ].map((option) => (
+            <button
+              key={option.value}
+              onClick={() => setMode(option.value)}
+              disabled={!profile?.isPaid}
+              className={`text-left p-4 rounded-xl border transition-all ${
+                mode === option.value
+                  ? "border-[var(--accent)] bg-[var(--accent)]/10 cursor-default"
+                  : `${profile?.isPaid ? "border-[var(--border)] bg-[var(--surface)] cursor-pointer hover:border-[var(--border-hover)]" : "border-[var(--border)]/30 bg-[var(--surface)]/30"}`
+              }`}
+            >
+              <div className="flex items-center gap-2">
+                <p className={`${option.paid && !profile?.isPaid ? "text-[var(--text-muted)]" : ""} font-semibold`}>{option.label}</p>
+                {option.paid && (
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-[var(--accent)]/20 text-[var(--accent)] font-medium">
+                    Pro
+                  </span>
+                )}
+              </div>
+              <p className="text-xs text-[var(--text-muted)] mt-1">{option.description}</p>
+            </button>
+          ))}
         </div>
       </section>
 
@@ -229,53 +279,6 @@ export default function CreateRankingPage() {
         </div>
       </section>
 
-      {/* Mode — REQUIRED */}
-      <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">
-          Mode<Required />
-        </label>
-        <div className="grid grid-cols-2 gap-3">
-          {[
-            { value: "LIST", label: "List", description: "Drag players into a ranked order" },
-            { value: "TIER", label: "Tier", description: "Sort players into S through F tiers", paid: true },
-          ].map((option) => (
-            <button
-              key={option.value}
-              onClick={() => toggle(mode, option.value, setMode)}
-              className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
-                mode === option.value
-                  ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
-              }`}
-            >
-              <div className="flex items-center gap-2">
-                <p className="font-semibold">{option.label}</p>
-                {option.paid && (
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-[var(--accent)]/20 text-[var(--accent)] font-medium">
-                    Pro
-                  </span>
-                )}
-              </div>
-              <p className="text-xs text-[var(--text-muted)] mt-1">{option.description}</p>
-            </button>
-          ))}
-        </div>
-      </section>
-
-      {/* Description — OPTIONAL */}
-      <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">
-          Description<Optional />
-        </label>
-        <textarea
-          placeholder="e.g. Post-week 10 update targeting handcuffs..."
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          rows={3}
-          className="w-full px-4 py-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] focus:outline-none focus:border-[var(--accent)] resize-none"
-        />
-      </section>
-
       {/* Visibility — REQUIRED */}
       <section className="mb-10">
         <label className="block text-sm font-medium mb-2">
@@ -288,11 +291,11 @@ export default function CreateRankingPage() {
           ].map((option) => (
             <button
               key={option.value}
-              onClick={() => toggle(visibility, option.value, setVisibility)}
-              className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
+              onClick={() => setVisibility(option.value)}
+              className={`text-left p-4 rounded-xl border transition-all ${
                 visibility === option.value
-                  ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
+                  ? "border-[var(--accent)] bg-[var(--accent)]/10 cursor-default"
+                  : "border-[var(--border)] bg-[var(--surface)] cursor-pointer hover:border-[var(--border-hover)]"
               }`}
             >
               <p className="font-semibold">{option.label}</p>

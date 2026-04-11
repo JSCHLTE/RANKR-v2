@@ -18,7 +18,7 @@ const POSITIONS = ["QB", "WR", "RB", "TE", "FLEX", "SFLEX", "K", "DEF"];
 const PRESETS: Record<string, Record<string, number>> = {
   STANDARD:  { QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 1, SFLEX: 0, K: 1, DEF: 1 },
   SUPERFLEX: { QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 0, SFLEX: 1, K: 1, DEF: 1 },
-  THREEWR: { QB: 1, WR: 3, RB: 2, TE: 1, FLEX: 0, SFLEX: 0, K: 1, DEF: 1 }
+  THREEWR: { QB: 1, WR: 3, RB: 2, TE: 1, FLEX: 1, SFLEX: 0, K: 1, DEF: 1 }
 };
 
 function detectPreset(roster: Record<string, number>): string {
