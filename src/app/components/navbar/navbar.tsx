@@ -13,7 +13,7 @@ const links = [
 ];
 
 export default function Navbar() {
-  const { user, profile } = useAuth();
+  const { user, profile, loading } = useAuth();
   const pathname = usePathname();
   const [userMenu, setUserMenu] = useState(false);
   const dropDownRef = useRef<HTMLDivElement | null>(null);
@@ -71,27 +71,30 @@ export default function Navbar() {
         ))}
 
         {/* PFP or auth buttons */}
-        {user && profile ? (
-          <div className="relative" ref={dropDownRef}>
-            <img
-              src={profile.pfp}
-              alt={`${profile.displayName} profile picture`}
-              className="w-10 h-10 rounded-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
-              draggable="false"
-              onClick={() => setUserMenu(prev => !prev)}
-            />
-            {userMenu && <UserMenu profile={profile} setUserMenu={setUserMenu}/> }
-          </div>
-        ) : !user ? (
-          <div className="flex items-center gap-3">
-            <Link href="/login" className="text-sm text-white/40 hover:text-white/70 transition-colors">
-              Log in
-            </Link>
-            <Link href="/signup" className="text-sm px-4 py-1.5 rounded-lg bg-[var(--accent)] text-[var(--background)] font-medium hover:opacity-90 transition-opacity">
-              Sign up
-            </Link>
-          </div>
-        ) : null}
+
+        {loading ? (
+  <div className="w-10 h-10 rounded-full bg-white/20 animate-pulse" />
+) : user && profile ? (
+  <div className="relative" ref={dropDownRef}>
+    <img
+      src={profile.pfp}
+      alt={`${profile.displayName} profile picture`}
+      className="w-10 h-10 rounded-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+      draggable="false"
+      onClick={() => setUserMenu(prev => !prev)}
+    />
+    {userMenu && <UserMenu profile={profile} setUserMenu={setUserMenu} />}
+  </div>
+) : (
+  <div className="flex items-center gap-3">
+    <Link href="/login" className="text-sm text-white/40 hover:text-white/70 transition-colors">
+      Log in
+    </Link>
+    <Link href="/signup" className="text-sm px-4 py-1.5 rounded-lg bg-[var(--accent)] text-[var(--background)] font-medium hover:opacity-90 transition-opacity">
+      Sign up
+    </Link>
+  </div>
+)}
 
       </div>
       </div>

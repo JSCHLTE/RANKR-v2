@@ -8,7 +8,7 @@ import { db } from "@/lib/firebase";
 import { useRouter, usePathname } from "next/navigation";
 
 interface AuthContextType {
-  user: User | null;
+  user: User | false | null;
   hasProfile: boolean | null;
   profile: UserProfile | null;
   loading: boolean;
@@ -33,7 +33,7 @@ interface UserProfile {
 
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<User | false | null>(null);
   const [hasProfile, setHasProfile] = useState<boolean | null>(null);
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
@@ -51,6 +51,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         const profileExists = userDoc.exists();
         setHasProfile(profileExists);
         if (profileExists) setProfile(userDoc.data() as UserProfile);
+      } else {
+        setUser(false);
       }
 
       setLoading(false);
