@@ -123,14 +123,14 @@ export default function SignUpPage() {
           draggable="false"
           />
           <h1 className="text-3xl font-medium mb-1">Create your account</h1>
-          <p className="text-sm text-white/50">Start building and sharing your rankings</p>
+          <p className="text-sm text-[var(--white)]/50">Start building and sharing your rankings</p>
         </div>
 
         {/* Google */}
         <button
           onClick={handleGoogleSignUp}
           disabled={process}
-          className="w-full flex items-center justify-center gap-3 px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-colors text-sm font-medium mb-6 disabled:opacity-50 cursor-pointer"
+          className="w-full flex items-center justify-center gap-3 px-4 py-2.5 rounded-xl border border-[var(--white)]/10 bg-[var(--white)]/5 hover:bg-[var(--white)]/10 transition-colors text-sm font-medium mb-6 disabled:opacity-50 cursor-pointer"
         >
           <svg width="16" height="16" viewBox="0 0 24 24">
             <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -143,15 +143,15 @@ export default function SignUpPage() {
 
         {/* Divider */}
         <div className="flex items-center gap-3 mb-6">
-          <div className="flex-1 h-px bg-white/10" />
-          <span className="text-xs text-white/30">or</span>
-          <div className="flex-1 h-px bg-white/10" />
+          <div className="flex-1 h-px bg-[var(--white)]/10" />
+          <span className="text-xs text-[var(--white)]/30">or</span>
+          <div className="flex-1 h-px bg-[var(--white)]/10" />
         </div>
 
         {/* Form */}
         <form onSubmit={handleSignUp} className="flex flex-col gap-4 mb-6">
           <div>
-            <label className="block text-xs font-medium text-white/50 mb-1.5">Email</label>
+            <label className="block text-xs font-medium text-[var(--white)]/50 mb-1.5">Email</label>
             <input
               type="email"
               name="email"
@@ -159,11 +159,11 @@ export default function SignUpPage() {
               value={formInfo.email}
               onChange={handleInput}
               required
-              className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
+              className="w-full px-4 py-2.5 rounded-xl border border-[var(--white)]/10 bg-[var(--white)]/5 text-sm placeholder:text-[var(--white)]/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
           </div>
           <div>
-            <label className="block text-xs font-medium text-white/50 mb-1.5">Username</label>
+            <label className="block text-xs font-medium text-[var(--white)]/50 mb-1.5">Username</label>
               <UsernameInput 
                 value={formInfo.username}
                 onChange={handleInput}
@@ -171,7 +171,7 @@ export default function SignUpPage() {
               />
           </div>
           <div>
-          <label className="block text-xs font-medium text-white/50 mb-1.5">Password</label>
+          <label className="block text-xs font-medium text-[var(--white)]/50 mb-1.5">Password</label>
           <div className="relative">
             <input
               type={showPassword ? "text" : "password"}
@@ -180,7 +180,7 @@ export default function SignUpPage() {
               value={formInfo.password}
               onChange={handleInput}
               required
-              className="w-full px-4 py-2.5 pr-10 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
+              className="w-full px-4 py-2.5 pr-10 rounded-xl border border-[var(--white)]/10 bg-[var(--white)]/5 text-sm placeholder:text-[var(--white)]/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
             <button
               type="button"
@@ -190,8 +190,8 @@ export default function SignUpPage() {
               <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
             </button>
           </div>
-          <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 flex flex-col gap-1.5 mt-5">
-            <p className="text-xs font-medium text-white/40 mb-0.5">Password requirements</p>
+          <div className="rounded-xl border border-[var(--white)]/10 bg-[var(--white)]/5 px-4 py-3 flex flex-col gap-1.5 mt-5">
+            <p className="text-xs font-medium text-[var(--white)]/40 mb-0.5">Password requirements</p>
             {[
               { text: "Minimum 8 characters", check: () => formInfo.password.length >= 8 },
               { text: "One uppercase character", check: () => /[A-Z]/.test(formInfo.password) },
@@ -200,14 +200,14 @@ export default function SignUpPage() {
               { text: "One numeric character", check: () => /[0-9]/.test(formInfo.password) },
             ].map((req) => (
               <div key={req.text} className="flex items-center gap-2">
-                <div className={`w-1 h-1 rounded-full ${req.check() ? "bg-[var(--accent)]" : "bg-white/20"} shrink-0`} />
-                <p className={`text-xs ${req.check() ? "text-[var(--accent)]" : "text-white/40"}`}>{req.text}</p>
+                <div className={`w-1 h-1 rounded-full ${req.check() ? "bg-[var(--accent)]" : "bg-[var(--white)]/20"} shrink-0`} />
+                <p className={`text-xs ${req.check() ? "text-[var(--accent)]" : "text-[var(--white)]/40"}`}>{req.text}</p>
               </div>
             ))}
           </div>
         </div>
           <div>
-            <label className="block text-xs font-medium text-white/50 mb-1.5">Confirm Password</label>
+            <label className="block text-xs font-medium text-[var(--white)]/50 mb-1.5">Confirm Password</label>
             <input
               type={showPassword ? "text" : "password"}
               name="confirmPassword"
@@ -215,13 +215,13 @@ export default function SignUpPage() {
               value={formInfo.confirmPassword}
               onChange={handleInput}
               required
-              className="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm placeholder:text-white/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
+              className="w-full px-4 py-2.5 rounded-xl border border-[var(--white)]/10 bg-[var(--white)]/5 text-sm placeholder:text-[var(--white)]/20 focus:outline-none focus:border-[var(--accent)] transition-colors"
             />
           </div>
 
           {/* PFP Section */}
           <div>
-            <label className="block text-xs font-medium text-white/50 mb-3">Profile Picture</label>
+            <label className="block text-xs font-medium text-[var(--white)]/50 mb-3">Profile Picture</label>
             <div className="flex items-start gap-4">
 
               {/* Avatar preview */}
@@ -231,7 +231,7 @@ export default function SignUpPage() {
                   alt="Profile picture preview"
                   className="w-16 h-16 rounded-full object-cover"
                 />
-                <span className="text-xs text-white/30">Preview</span>
+                <span className="text-xs text-[var(--white)]/30">Preview</span>
               </div>
 
               {/* Regenerate button */}
@@ -243,7 +243,7 @@ export default function SignUpPage() {
                 >
                   <FontAwesomeIcon icon={faRotate} className="text-[var(--accent)]"/>
                 </button>
-                <span className="text-xs text-white/30">Reroll gradient</span>
+                <span className="text-xs text-[var(--white)]/30">Reroll gradient</span>
               </div>
 
             </div>
@@ -265,9 +265,9 @@ export default function SignUpPage() {
         </form>
 
         {/* Footer */}
-        <p className="text-center text-sm text-white/40">
+        <p className="text-center text-sm text-[var(--white)]/40">
           Already have an account?{" "}
-          <Link href="/login" className="text-white font-medium hover:text-[var(--accent)] transition-colors">
+          <Link href="/login" className="text-[var(--white)] font-medium hover:text-[var(--accent)] transition-colors">
             Log in
           </Link>
         </p>

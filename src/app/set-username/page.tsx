@@ -79,12 +79,12 @@ export default function SetUsername() {
           draggable="false"
           />
         <h1 className="text-3xl font-medium mb-1">Set your username</h1>
-        <p className="text-sm text-white/50 mb-5">To continue using RANKR please set a username below</p>
+        <p className="text-sm text-[var(--white)]/50 mb-5">To continue using RANKR please set a username below</p>
         <form onSubmit={handleSignUp}>
         <UsernameInput onChange={handleUsername} value={usernameValue} onValidChange={setIsUsernameValid} />
                   {/* PFP Section */}
             <div className='mt-5'>
-              <label className="block text-xs font-medium text-white/50 mb-3">Profile Picture</label>
+              <label className="block text-xs font-medium text-[var(--white)]/50 mb-3">Profile Picture</label>
               <div className="flex items-start gap-4">
 
                 {/* Avatar preview */}
@@ -94,7 +94,7 @@ export default function SetUsername() {
                     alt="Profile picture preview"
                     className="w-16 h-16 rounded-full object-cover"
                   />
-                  <span className="text-xs text-white/30">Preview</span>
+                  <span className="text-xs text-[var(--white)]/30">Preview</span>
                 </div>
 
                 {/* Regenerate button */}
@@ -106,13 +106,13 @@ export default function SetUsername() {
                   >
                     <FontAwesomeIcon icon={faRotate} className="text-[var(--accent)]"/>
                   </button>
-                  <span className="text-xs text-white/30">Reroll gradient</span>
+                  <span className="text-xs text-[var(--white)]/30">Reroll gradient</span>
                 </div>
 
               </div>
           </div>
           {error && (
-            <p className="mt-5 text-sm text-red-400 bg-red-400/10 border border-red-400/20 rounded-lg px-4 py-2.5">
+            <p className="mt-5 text-sm text-[var(--danger)] bg-[var(--danger)]/10 border border-[var(--danger)]/20 rounded-lg px-4 py-2.5">
               {error}
             </p>
           )}

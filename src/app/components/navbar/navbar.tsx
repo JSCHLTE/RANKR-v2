@@ -61,7 +61,7 @@ export default function Navbar() {
           <Link
             key={link.href}
             href={link.href}
-            className={`text-xl transition-colors ${
+            className={`text-md transition-colors ${
               pathname === link.href
                 ? "text-[var(--accent)] font-medium cursor-default"
                 : "text-[var(--white)]/50 hover:text-[var(--white)]/80"
@@ -74,7 +74,7 @@ export default function Navbar() {
         {/* PFP or auth buttons */}
 
         {loading ? (
-  <div className="w-10 h-10 rounded-full bg-white/20 animate-pulse" />
+  <div className="w-10 h-10 rounded-full bg-[var(--white)]/20 animate-pulse" />
 ) : user && profile ? (
   <div className="relative" ref={dropDownRef}>
     <img
@@ -88,10 +88,14 @@ export default function Navbar() {
   </div>
 ) : (
   <div className="flex items-center gap-3">
-    <Link href="/login" className="text-sm text-white/40 hover:text-white/70 transition-colors">
+    <Link href="/login" className={`text-md transition-colors ${
+              pathname === "/login"
+                ? "text-[var(--accent)] font-medium cursor-default"
+                : "text-[var(--white)]/50 hover:text-[var(--white)]/80"
+            }`}>
       Log in
     </Link>
-    <Link href="/signup" className="text-sm px-4 py-1.5 rounded-lg bg-[var(--accent)] text-[var(--background)] font-medium hover:opacity-90 transition-opacity">
+    <Link href="/signup" className="text-md px-4 py-1.5 rounded-lg bg-[var(--accent)] text-[var(--background)] font-medium hover:opacity-90 transition-opacity">
       Sign up
     </Link>
   </div>
