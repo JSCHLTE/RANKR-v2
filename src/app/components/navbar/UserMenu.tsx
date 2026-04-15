@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
-import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import { faRightFromBracket, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { logOut } from "@/lib/auth";
+import { useTheme } from "@/context/ThemeProvider";
 
 interface UserProfile {
   username: string;
@@ -18,11 +19,13 @@ type UserMenuProps = {
 
 export const UserMenu = ({ profile, setUserMenu }: UserMenuProps) => {
 
+  const { theme, toggleTheme } = useTheme();
+
   return (
-    <div className="absolute right-0 top-full mt-2 w-56 rounded-2xl border border-white/10 bg-[var(--background)] shadow-xl overflow-hidden z-50">
+    <div className="absolute right-0 top-full mt-2 w-56 rounded-2xl border border-[var(--white)]/10 bg-[var(--background)] shadow-xl overflow-hidden z-50">
       
       {/* User info header */}
-      <div className="flex items-center gap-3 px-4 py-3 border-b border-white/10">
+      <div className="flex items-center gap-3 px-4 py-3 border-b border-[var(--white)]/10">
         <img
           src={profile.pfp}
           alt={`${profile.displayName} profile picture`}
@@ -30,8 +33,8 @@ export const UserMenu = ({ profile, setUserMenu }: UserMenuProps) => {
           draggable="false"
         />
         <div className="flex flex-col min-w-0">
-          <span className="text-sm font-medium text-white truncate">{profile.displayName}</span>
-          <span className="text-xs text-white/40 truncate">@{profile.username}</span>
+          <span className="text-sm font-medium text-[var(--white)] truncate">{profile.displayName}</span>
+          <span className="text-xs text-[var(--white)]/40 truncate">@{profile.username}</span>
         </div>
       </div>
 
@@ -39,14 +42,19 @@ export const UserMenu = ({ profile, setUserMenu }: UserMenuProps) => {
       <div className="px-2 py-2 flex flex-col gap-0.5">
         <Link
           href={`/user/${profile.username}`}
-          className="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-white/60 hover:text-white hover:bg-white/5 transition-all"
+          className="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-[var(--white)]/70 hover:text-[var(--white)] hover:bg-[var(--white)]/5 transition-all"
         >
           <FontAwesomeIcon icon={faUser} className="w-3.5 h-3.5 shrink-0" />
           Your profile
         </Link>
 
+        <button onClick={toggleTheme} className="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-[var(--white)]/70 hover:text-[var(--white)] hover:bg-[var(--white)]/5 transition-all w-full cursor-pointer">
+          <FontAwesomeIcon icon={theme === "dark" ? faSun : faMoon} />
+          Toggle {theme === "dark" ? "light" : "dark"} mode
+        </button>
+
         <button
-          className="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-red-400/70 hover:text-red-400 hover:bg-red-400/5 transition-all w-full cursor-pointer"
+          className="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-[var(--danger)] hover:bg-[var(--danger)]/5 transition-all w-full cursor-pointer"
           onClick={async () => {
               await logOut();
               setUserMenu(false);

@@ -6,6 +6,7 @@ import { useAuth } from "@/context/AuthContext";
 import { usePathname } from "next/navigation";
 import { UserMenu } from "./UserMenu";
 
+
 const links = [
   { label: "Home", href: "/" },
   { label: "Create", href: "/create" },
@@ -40,7 +41,7 @@ export default function Navbar() {
 }, [setUserMenu])
 
   return (
-    <nav className="w-full px-6 py-4 border-b border-white/10">
+    <nav className="w-full px-6 py-4 border-b border-[var(--white)]/10">
     <div className="flex items-center justify-between max-w-200 mx-auto">
       {/* Logo */}
       <Link href="/">
@@ -60,10 +61,10 @@ export default function Navbar() {
           <Link
             key={link.href}
             href={link.href}
-            className={`text-md transition-colors ${
+            className={`text-xl transition-colors ${
               pathname === link.href
-                ? "text-white font-medium cursor-default"
-                : "text-white/40 hover:text-white/70"
+                ? "text-[var(--accent)] font-medium cursor-default"
+                : "text-[var(--white)]/50 hover:text-[var(--white)]/80"
             }`}
           >
             {link.label}
@@ -95,7 +96,6 @@ export default function Navbar() {
     </Link>
   </div>
 )}
-
       </div>
       </div>
     </nav>

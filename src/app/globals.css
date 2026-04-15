@@ -3,28 +3,30 @@
 :root {
   --background: #F7F9FB;
   --foreground: #0E1116;
+  --white: #000;
   --accent: #16a34a;
-  --text-muted: #6b7280;      /* secondary/muted text */
-  --border: #d1d5db;          /* card and input borders */
-  --border-hover: #9ca3af;    /* border on hover */
-  --surface: #ffffff;         /* card and input backgrounds */
-  --surface-hover: #f3f4f6;   /* surface on hover */
+  --text-muted: #6b7280;
+  --border: #d1d5db;
+  --border-hover: #9ca3af;
+  --surface: #ffffff;
+  --surface-hover: #f3f4f6;
+  --danger: #AA0000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0E1116;
-    --foreground: #F7F9FB;
-    --accent: #2DFF57;
-    --text-muted: #ffffff80;    /* white/50 */
-    --border: #ffffff1a;        /* white/10 */
-    --border-hover: #ffffff4d;  /* white/30 */
-    --surface: #ffffff0d;       /* white/5 */
-    --surface-hover: #ffffff1a; /* white/10 */
-  }
+.dark {
+  --background: #0E1116;
+  --foreground: #F7F9FB;
+  --white: #fff;
+  --accent: #2DFF57;
+  --text-muted: #ffffff80;
+  --border: #ffffff1a;
+  --border-hover: #ffffff4d;
+  --surface: #ffffff0d;
+  --surface-hover: #ffffff1a;
+  --danger: #FF5555;
 }
 
-body {
+html {
   background: var(--background);
   color: var(--foreground);
 }
