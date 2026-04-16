@@ -21,19 +21,18 @@ export default function RootLayout({
       <script
           dangerouslySetInnerHTML={{
             __html: `
-              (function() {
+              (function () {
                 try {
                   const theme = localStorage.getItem("theme");
-                  if (theme === "dark") {
-                    document.documentElement.classList.add("dark");
-                  } else if (theme === "light") {
-                    document.documentElement.classList.add("light");
-                  } else {
-                    // fallback to system preference
-                    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                      document.documentElement.classList.add("dark");
-                    }
-                  }
+
+                  const systemDark =
+                    window.matchMedia &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+                  const finalTheme = theme ?? (systemDark ? "dark" : "light");
+
+                  document.documentElement.classList.remove("light", "dark");
+                  document.documentElement.classList.add(finalTheme);
                 } catch (e) {}
               })();
             `,
