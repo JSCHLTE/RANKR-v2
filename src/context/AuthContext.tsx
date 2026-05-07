@@ -30,8 +30,6 @@ interface UserProfile {
   isPaid: boolean;
 }
 
-
-
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | false | null>(null);
   const [hasProfile, setHasProfile] = useState<boolean | null>(null);
@@ -59,7 +57,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
 
     return () => unsubscribe();
-  }, [])
+  }, []);
 
   const refreshProfile = async (currentUser: User) => {
     const userDoc = await getDoc(doc(db, "users", currentUser.uid));

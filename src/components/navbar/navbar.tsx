@@ -11,6 +11,7 @@ const links = [
   { label: "Home", href: "/" },
   { label: "Create", href: "/create" },
   { label: "Rankings", href: "/rankings" },
+  { label: "Players", href: "/players" }
 ];
 
 export default function Navbar() {

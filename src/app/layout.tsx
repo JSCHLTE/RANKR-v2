@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 import { AuthProvider } from "@/context/AuthContext";
-import Navbar from "./components/navbar/navbar";
+import Navbar from "@/components/navbar/navbar";
 import { ThemeProvider } from "@/context/ThemeProvider";
 
 export default function RootLayout({
