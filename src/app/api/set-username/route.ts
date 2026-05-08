@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
       if (userDoc.exists) throw new Error("Username already set");
 
       t.set(usernameRef, { uid });
-      t.set(userRef, { username: username.toLowerCase(), displayName: username, pfp, isPaid: false }, { merge: true });
+      t.set(userRef, { username: username.toLowerCase(), displayName: username, pfp }, { merge: true });
     });
 
     return Response.json({ success: true });

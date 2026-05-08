@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
 import { usePathname } from "next/navigation";
 import { UserMenu } from "./UserMenu";
+import ProfilePicture from "../profile/ProfilePicture";
 
 
 const links = [
@@ -78,11 +79,10 @@ export default function Navbar() {
   <div className="w-10 h-10 rounded-full bg-[var(--white)]/20 animate-pulse" />
 ) : user && profile ? (
   <div className="relative" ref={dropDownRef}>
-    <img
+    <ProfilePicture 
       src={profile.pfp}
       alt={`${profile.displayName} profile picture`}
-      className="w-10 h-10 rounded-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
-      draggable="false"
+      className="w-10 h-10 hover:opacity-80 transition-opacity cursor-pointer"
       onClick={() => setUserMenu(prev => !prev)}
     />
     {userMenu && <UserMenu profile={profile} setUserMenu={setUserMenu} />}

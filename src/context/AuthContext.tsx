@@ -27,7 +27,6 @@ interface UserProfile {
   username: string,
   displayName: string,
   pfp: string,
-  isPaid: boolean;
 }
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {

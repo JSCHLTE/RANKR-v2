@@ -4,12 +4,12 @@ import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
 import { faRightFromBracket, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { logOut } from "@/lib/auth";
 import { useTheme } from "@/context/ThemeProvider";
+import ProfilePicture from "../profile/ProfilePicture";
 
 interface UserProfile {
   username: string;
   displayName: string;
   pfp: string;
-  isPaid: boolean;
 }
 
 type UserMenuProps = {
@@ -26,11 +26,10 @@ export const UserMenu = ({ profile, setUserMenu }: UserMenuProps) => {
       
       {/* User info header */}
       <div className="flex items-center gap-3 px-4 py-3 border-b border-[var(--white)]/10">
-        <img
-          src={profile.pfp}
+        <ProfilePicture 
+          src={profile?.pfp}
           alt={`${profile.displayName} profile picture`}
-          className="w-9 h-9 rounded-full object-cover shrink-0"
-          draggable="false"
+          className="w-9 h-9"
         />
         <div className="flex flex-col min-w-0">
           <span className="text-sm font-medium text-[var(--white)] truncate">{profile.displayName}</span>
