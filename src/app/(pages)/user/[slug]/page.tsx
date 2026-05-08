@@ -3,15 +3,18 @@
 import useUserByUsername from "@/hooks/useUserByUsername";
 import ProfilePicture from "@/components/profile/ProfilePicture";
 import { useParams } from "next/navigation";
+import { PageNotFound } from "@/components/pageNotFound/PageNotFound";
 
 const User = () => {
 
     const pathname = useParams();
     const { user, loading } = useUserByUsername(pathname.slug);
 
+    if(!user && !loading) return <PageNotFound />
+
   return (
 <main className="max-w-5xl mx-auto px-4 py-10">
-  <div className="flex flex-col sm:flex-row items-center gap-6 border-b border-[var(--accent)]/50 pb-8">
+  <div className="flex flex-col sm:flex-row items-center gap-6 pb-8">
     
     {/* Profile Image */}
     <ProfilePicture 

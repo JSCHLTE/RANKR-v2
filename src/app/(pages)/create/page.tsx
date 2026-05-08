@@ -17,7 +17,7 @@ export default function CreateRankingPage() {
   const { profile } = useAuth();
   const [name, setName] = useState("");
   const [allowRookies, setAllowRookies] = useState(false);
-  const [positionGroup, setPositionGroup] = useState("");
+  const [positionGroup, setPositionGroup] = useState("ALL");
   const [customPositions, setCustomPositions] = useState<string[]>([]);
   const [scoring, setScoring] = useState("");
   const [format, setFormat] = useState("");
@@ -121,8 +121,8 @@ export default function CreateRankingPage() {
         </label>
         <div className="grid grid-cols-2 gap-3">
           {[
-            { value: "LIST", label: "List", description: "Drag players into a ranked order" },
-            { value: "TIER", label: "Tier", description: "Sort players into S through F tiers", paid: true },
+            { value: "LIST", label: "List", description: "Drag and rank players up and down a list" },
+            { value: "TIER", label: "Tier", description: "Sort players into tiers", paid: true },
           ].map((option) => (
             <button
               key={option.value}
