@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PositionGroupSelector from "./_components/PositionGroupSelector";
 import CustomFormatSection from "./_components/CustomFormatSection";
 import { useAuth } from "@/context/AuthContext";
@@ -15,6 +15,31 @@ const Optional = () => (
 
 export default function CreateRankingPage() {
   const { profile } = useAuth();
+
+  interface RankObj {
+    name: string,
+    allowRookies: boolean,
+    positionGroup: string,
+    customPositions: string[],
+    scoring: string,
+    format: string,
+  }
+
+  const [rankObj, setRankObj] = useState({
+      name: "",
+      allowRookies: false,
+      positionGroup: "ALL",
+      customPositions: [],
+      scoring: "",
+      format: "",
+      leagueType: "",
+      leagueSize: "",
+      rankType: "",
+      mode: "LIST",
+      description: "",
+      visibility: "PUBLIC"
+  });
+
   const [name, setName] = useState("");
   const [allowRookies, setAllowRookies] = useState(false);
   const [positionGroup, setPositionGroup] = useState("ALL");
@@ -33,6 +58,17 @@ export default function CreateRankingPage() {
       prev.includes(value) ? prev.filter((p) => p !== value) : [...prev, value]
     );
   };
+
+  const handleObjChange = (name: string, value: string) => {
+    setRankObj((prev) => ({
+      ...prev,
+      [name]: value
+    }))
+  }
+
+  useEffect(() => {
+    console.log(customPositions)
+  }, [customPositions])
 
   // Required: name, positionGroup, mode, visibility
   const canSubmit =
@@ -61,8 +97,9 @@ export default function CreateRankingPage() {
         <input
           type="text"
           placeholder="e.g. My Week 10 PPR Rankings"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={rankObj.name}
+          name="name"
+          onChange={(e) => handleObjChange(e.target.name, e.target.value)}
           className="w-full px-4 py-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] focus:outline-none focus:border-[var(--accent)]"
         />
       </section>
@@ -308,6 +345,7 @@ export default function CreateRankingPage() {
       {/* Submit */}
       <button
         disabled={!canSubmit}
+        onSubmit={() => console.log()}
         className={`w-full py-3 rounded-xl font-semibold text-lg transition-all ${
           canSubmit
             ? "bg-[var(--accent)] text-[var(--background)] hover:opacity-90 cursor-pointer"
