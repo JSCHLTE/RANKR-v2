@@ -43,7 +43,7 @@ export default function Navbar() {
 }, [setUserMenu])
 
   return (
-    <nav className="w-full px-6 py-4 border-b border-[var(--white)]/10 sticky top-0 z-50">
+    <nav className="w-full px-6 py-4 border-b bg-[var(--background)]/80 backdrop-blur-xs border-[var(--white)]/10 sticky top-0 z-50">
     <div className="flex items-center justify-between max-w-200 mx-auto">
       {/* Logo */}
       <Link href="/">
