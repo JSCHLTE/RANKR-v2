@@ -23,6 +23,12 @@ export default function CreateRankingPage() {
     customPositions: string[],
     scoring: string,
     format: string,
+    leagueType: string,
+    leagueSize: string,
+    rankType: string,
+    mode: string,
+    description: string,
+    visibility: string
   }
 
   const [rankObj, setRankObj] = useState({
