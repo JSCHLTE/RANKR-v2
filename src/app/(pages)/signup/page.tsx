@@ -120,7 +120,7 @@ export default function SignUpPage() {
         {/* Header */}
         <div className="mb-8">
           <img 
-          src={theme === "dark" ? "/lion-green-t.svg" : "/lion-green-t-dark.svg"}
+          src="/lion-green-t.svg"
           className="w-20 h-20"
           draggable="false"
           />

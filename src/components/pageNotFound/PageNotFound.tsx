@@ -10,7 +10,7 @@ export const PageNotFound = () => {
   return (
 <div className="flex min-h-screen flex-col items-center justify-center gap-4 text-center mt-[-80px]">
   <img
-    src={theme === "dark" ? "/lion-green-t.svg" : "/lion-green-t-dark.svg"}
+    src="/lion-green-t.svg"
     alt="Logo"
     className="w-50 h-50"
   />

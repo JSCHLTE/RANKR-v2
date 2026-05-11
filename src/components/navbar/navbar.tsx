@@ -50,7 +50,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link href="/">
         <img
-          src={theme === "dark" ? "/lion-green-long.svg" : "/lion-green-long-dark.svg"}
+          src="/lion-green-long.svg"
           className="w-35 hover:opacity-80"
           draggable="false"
           alt="RANKR"
