@@ -1,10 +1,16 @@
-import Link from "next/link"
+"use client";
+
+import Link from "next/link";
+import { useTheme } from "@/context/ThemeProvider";
 
 export const PageNotFound = () => {
+
+  const { theme } = useTheme();
+
   return (
 <div className="flex min-h-screen flex-col items-center justify-center gap-4 text-center mt-[-80px]">
   <img
-    src="/lion-green-t.svg"
+    src={theme === "dark" ? "/lion-green-t.svg" : "/lion-green-t-dark.svg"}
     alt="Logo"
     className="w-50 h-50"
   />
@@ -20,5 +26,5 @@ export const PageNotFound = () => {
     Return Home
   </Link>
 </div>
-  )
-}
+  );
+};

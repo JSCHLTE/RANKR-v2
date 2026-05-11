@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
 import { usePathname } from "next/navigation";
 import { UserMenu } from "./UserMenu";
+import { useTheme } from "@/context/ThemeProvider";
 import ProfilePicture from "../profile/ProfilePicture";
 
 
@@ -17,6 +18,7 @@ const links = [
 
 export default function Navbar() {
   const { user, profile, loading } = useAuth();
+  const { theme, toggleTheme } = useTheme();
   const pathname = usePathname();
   const [userMenu, setUserMenu] = useState(false);
   const dropDownRef = useRef<HTMLDivElement | null>(null);
@@ -48,7 +50,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link href="/">
         <img
-          src="/lion-green-long.svg"
+          src={theme === "dark" ? "/lion-green-long.svg" : "/lion-green-long-dark.svg"}
           className="w-35 hover:opacity-80"
           draggable="false"
           alt="RANKR"
@@ -85,7 +87,7 @@ export default function Navbar() {
       className="w-10 h-10 hover:opacity-80 transition-opacity cursor-pointer"
       onClick={() => setUserMenu(prev => !prev)}
     />
-    {userMenu && <UserMenu profile={profile} setUserMenu={setUserMenu} />}
+    {userMenu && <UserMenu profile={profile} setUserMenu={setUserMenu} theme={theme} toggleTheme={toggleTheme }/>}
   </div>
 ) : (
   <div className="flex items-center gap-3">

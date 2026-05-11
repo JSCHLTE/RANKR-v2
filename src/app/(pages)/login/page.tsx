@@ -5,9 +5,11 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { signIn, signInWithGoogle } from "@/lib/auth";
 import { useAuth } from "@/context/AuthContext";
+import { useTheme } from "@/context/ThemeProvider";
 
 export default function LoginPage() {
   const { user, loading } = useAuth();
+  const { theme } = useTheme();
   const router = useRouter();
   const [error, setError] = useState("");
   const [process, setProcess] = useState(false);
@@ -61,7 +63,7 @@ export default function LoginPage() {
         {/* Header */}
         <div className="mb-8">
         <img 
-          src="lion-green-t.svg"
+          src={theme === "dark" ? "/lion-green-t.svg" : "/lion-green-t-dark.svg"}
           className="w-20 h-20"
           draggable="false"
           />

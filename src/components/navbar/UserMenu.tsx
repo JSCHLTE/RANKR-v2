@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
 import { faRightFromBracket, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { logOut } from "@/lib/auth";
-import { useTheme } from "@/context/ThemeProvider";
 import ProfilePicture from "../profile/ProfilePicture";
 
 interface UserProfile {
@@ -15,11 +14,11 @@ interface UserProfile {
 type UserMenuProps = {
   profile: UserProfile;
   setUserMenu: (mode: boolean) => void;
+  theme: string,
+  toggleTheme: () => void;
 };
 
-export const UserMenu = ({ profile, setUserMenu }: UserMenuProps) => {
-
-  const { theme, toggleTheme } = useTheme();
+export const UserMenu = ({ profile, setUserMenu, theme, toggleTheme }: UserMenuProps) => {
 
   return (
     <div className="absolute right-0 top-full mt-2 w-56 rounded-2xl border border-[var(--white)]/10 bg-[var(--background)] shadow-xl overflow-hidden z-50">

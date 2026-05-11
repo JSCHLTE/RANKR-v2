@@ -8,9 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRotate, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import UsernameInput from "./_components/UsernameInput";
 import { useAuth } from "@/context/AuthContext";
+import { useTheme } from "@/context/ThemeProvider";
 
 export default function SignUpPage() {
   const { user, loading, refreshProfile } = useAuth();
+  const { theme } = useTheme();
   const router = useRouter();
   const [error, setError] = useState("");
   const [process, setProcess] = useState(false);
@@ -118,7 +120,7 @@ export default function SignUpPage() {
         {/* Header */}
         <div className="mb-8">
           <img 
-          src="lion-green-t.svg"
+          src={theme === "dark" ? "/lion-green-t.svg" : "/lion-green-t-dark.svg"}
           className="w-20 h-20"
           draggable="false"
           />
