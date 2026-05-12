@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import PositionGroupSelector from "./_components/PositionGroupSelector";
 import CustomFormatSection from "./_components/CustomFormatSection";
 import { useAuth } from "@/context/AuthContext";
+import { RankObj, ScoringFormat } from "@/types/rank";
 
 const Required = () => (
   <span className="text-[var(--accent)] ml-0.5">*</span>
@@ -16,28 +17,13 @@ const Optional = () => (
 export default function CreateRankingPage() {
   const { profile } = useAuth();
 
-  interface RankObj {
-    name: string,
-    allowRookies: boolean,
-    positionGroup: string,
-    customPositions: string[],
-    scoring: string,
-    format: string,
-    leagueType: string,
-    leagueSize: string,
-    rankType: string,
-    mode: string,
-    description: string,
-    visibility: string
-  }
-
-  const [rankObj, setRankObj] = useState({
+  const [rankObj, setRankObj] = useState<RankObj>({
       name: "",
       allowRookies: false,
       positionGroup: "ALL",
       customPositions: [],
       scoring: "",
-      format: "",
+      format: null,
       leagueType: "",
       leagueSize: "",
       rankType: "",
@@ -46,47 +32,34 @@ export default function CreateRankingPage() {
       visibility: "PUBLIC"
   });
 
-  const [name, setName] = useState("");
-  const [allowRookies, setAllowRookies] = useState(false);
-  const [positionGroup, setPositionGroup] = useState("ALL");
-  const [customPositions, setCustomPositions] = useState<string[]>([]);
-  const [scoring, setScoring] = useState("");
-  const [format, setFormat] = useState("");
-  const [leagueType, setLeagueType] = useState("");
-  const [leagueSize, setLeagueSize] = useState("");
-  const [rankType, setRankType] = useState("");
-  const [mode, setMode] = useState("LIST");
-  const [description, setDescription] = useState("");
-  const [visibility, setVisibility] = useState("PUBLIC");
+  useEffect(() => {
+    console.log(rankObj);
+  }, [rankObj])
 
   const toggleCustomPosition = (value: string) => {
-    setCustomPositions((prev) =>
-      prev.includes(value) ? prev.filter((p) => p !== value) : [...prev, value]
-    );
-  };
-
-  const handleObjChange = (name: string, value: string) => {
     setRankObj((prev) => ({
       ...prev,
-      [name]: value
-    }))
-  }
-
-  useEffect(() => {
-    console.log(customPositions)
-  }, [customPositions])
-
-  // Required: name, positionGroup, mode, visibility
-  const canSubmit =
-    name.trim() !== "" &&
-    (positionGroup !== "" || customPositions.length > 0) &&
-    mode !== "" &&
-    visibility !== "";
-
-  // Toggle helper for single-select card groups
-  const toggle = (current: string, value: string, setter: (v: string) => void) => {
-    setter(current === value ? "" : value);
+      customPositions: prev.customPositions.includes(value)
+        ? prev.customPositions.filter((p) => p !== value)
+        : [...prev.customPositions, value]
+    }));
   };
+
+const updateField = <K extends keyof RankObj>(
+  key: K,
+  value: RankObj[K]
+) => {
+  setRankObj((prev) => ({
+    ...prev,
+    [key]: value
+  }))
+}
+
+  const canSubmit =
+    rankObj.name.trim() !== "" &&
+    (rankObj.positionGroup !== "" || rankObj.customPositions.length > 0) &&
+    rankObj.mode !== "" &&
+    rankObj.visibility !== "";
 
   return (
     <main className="max-w-3xl mx-auto px-4 py-20">
@@ -104,8 +77,7 @@ export default function CreateRankingPage() {
           type="text"
           placeholder="e.g. My Week 10 PPR Rankings"
           value={rankObj.name}
-          name="name"
-          onChange={(e) => handleObjChange(e.target.name, e.target.value)}
+          onChange={(e) => updateField("name", e.target.value)}
           className="w-full px-4 py-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] focus:outline-none focus:border-[var(--accent)]"
         />
       </section>
@@ -117,8 +89,8 @@ export default function CreateRankingPage() {
         </label>
         <textarea
           placeholder="e.g. Post-week 10 update targeting handcuffs..."
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
+          value={rankObj.description}
+          onChange={(e) => updateField("description", e.target.value)}
           rows={3}
           className="w-full px-4 py-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] focus:outline-none focus:border-[var(--accent)] resize-none"
         />
@@ -137,20 +109,29 @@ export default function CreateRankingPage() {
           </div>
           <button
             onClick={() => {
-              const next = !allowRookies;
-              setAllowRookies(next);
-              if (next) {
-                setCustomPositions((prev) => prev.filter((p) => p !== "DEF"));
-                if (positionGroup === "Defense") setPositionGroup("");
-              }
+              setRankObj((prev) => {
+                const next = !prev.allowRookies;
+
+                return {
+                  ...prev,
+                  allowRookies: next,
+                  customPositions: next
+                    ? prev.customPositions.filter((p) => p !== "DEF")
+                    : prev.customPositions,
+                  positionGroup:
+                    next && rankObj.positionGroup === "Defense"
+                      ? ""
+                      : prev.positionGroup,
+                };
+              });
             }}
             className={`relative w-12 h-6 rounded-full transition-colors duration-200 cursor-pointer focus:outline-none ${
-              allowRookies ? "bg-[var(--accent)]" : "bg-[var(--border)]"
+              rankObj.allowRookies ? "bg-[var(--accent)]" : "bg-[var(--border)]"
             }`}
           >
             <span
               className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform duration-200 ${
-                allowRookies ? "translate-x-6" : "translate-x-0"
+                rankObj.allowRookies ? "translate-x-6" : "translate-x-0"
               }`}
             />
           </button>
@@ -169,10 +150,10 @@ export default function CreateRankingPage() {
           ].map((option) => (
             <button
               key={option.value}
-              onClick={() => setMode(option.value)}
+              onClick={() => updateField("mode", option.value)}
               disabled={!profile?.isPaid}
               className={`text-left p-4 rounded-xl border transition-all ${
-                mode === option.value
+                rankObj.mode === option.value
                   ? "border-[var(--accent)] bg-[var(--accent)]/10 cursor-default"
                   : `${profile?.isPaid ? "border-[var(--border)] bg-[var(--surface)] cursor-pointer hover:border-[var(--border-hover)]" : "border-[var(--border)]/30 bg-[var(--surface)]/30"}`
               }`}
@@ -197,12 +178,11 @@ export default function CreateRankingPage() {
           Position Group<Required />
         </label>
         <PositionGroupSelector
+          updateField={updateField}
           toggleCustomPosition={toggleCustomPosition}
-          customPositions={customPositions}
-          setCustomPositions={setCustomPositions}
-          setPositionGroup={setPositionGroup}
-          positionGroup={positionGroup}
-          allowRookies={allowRookies}
+          customPositions={rankObj.customPositions}
+          positionGroup={rankObj.positionGroup}
+          allowRookies={rankObj.allowRookies}
         />
         <p className="mt-2 text-xs text-[var(--text-muted)] flex items-center gap-1.5">
           <svg className="w-3.5 h-3.5 shrink-0 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -225,9 +205,15 @@ export default function CreateRankingPage() {
           ].map((option) => (
             <button
               key={option.value}
-              onClick={() => toggle(scoring, option.value, setScoring)}
+              onClick={() => {
+                if(rankObj.scoring === option.value) {
+                  updateField("scoring", "");
+                } else {
+                  updateField("scoring", option.value);
+                }
+              }}
               className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
-                scoring === option.value
+                rankObj.scoring === option.value
                   ? "border-[var(--accent)] bg-[var(--accent)]/10"
                   : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
               }`}
@@ -244,7 +230,7 @@ export default function CreateRankingPage() {
         <label className="block text-sm font-medium mb-2">
           Format<Optional />
         </label>
-        <CustomFormatSection format={format} setFormat={setFormat} />
+        <CustomFormatSection format={rankObj.format} updateField={updateField} />
       </section>
 
       {/* League Type — OPTIONAL */}
@@ -260,9 +246,15 @@ export default function CreateRankingPage() {
           ].map((option) => (
             <button
               key={option.value}
-              onClick={() => toggle(leagueType, option.value, setLeagueType)}
+              onClick={() => {
+                if(rankObj.leagueType === option.value) {
+                  updateField("leagueType", "");
+                } else {
+                  updateField("leagueType", option.value);
+                }
+              }}
               className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
-                leagueType === option.value
+                rankObj.leagueType === option.value
                   ? "border-[var(--accent)] bg-[var(--accent)]/10"
                   : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
               }`}
@@ -283,9 +275,15 @@ export default function CreateRankingPage() {
           {["4","6","8","10","12","14","16","18","20","22","24","32"].map((size) => (
             <button
               key={size}
-              onClick={() => toggle(leagueSize, size, setLeagueSize)}
+              onClick={() => {
+                if(rankObj.leagueSize === size) {
+                  updateField("leagueSize", "");
+                } else {
+                  updateField("leagueSize", size);
+                }
+              }}
               className={`w-[65px] h-[65px] rounded-xl border font-semibold transition-all cursor-pointer ${
-                leagueSize === size
+                rankObj.leagueSize === size
                   ? "border-[var(--accent)] bg-[var(--accent)]/10"
                   : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
               }`}
@@ -308,9 +306,15 @@ export default function CreateRankingPage() {
           ].map((option) => (
             <button
               key={option.value}
-              onClick={() => toggle(rankType, option.value, setRankType)}
+              onClick={() => {
+                if(rankObj.rankType === option.value) {
+                  updateField("rankType", "");
+                } else {
+                  updateField("rankType", option.value);
+                }
+              }}
               className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
-                rankType === option.value
+                rankObj.rankType === option.value
                   ? "border-[var(--accent)] bg-[var(--accent)]/10"
                   : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
               }`}
@@ -334,9 +338,9 @@ export default function CreateRankingPage() {
           ].map((option) => (
             <button
               key={option.value}
-              onClick={() => setVisibility(option.value)}
+              onClick={() => updateField("visibility", option.value)}
               className={`text-left p-4 rounded-xl border transition-all ${
-                visibility === option.value
+                rankObj.visibility === option.value
                   ? "border-[var(--accent)] bg-[var(--accent)]/10 cursor-default"
                   : "border-[var(--border)] bg-[var(--surface)] cursor-pointer hover:border-[var(--border-hover)]"
               }`}

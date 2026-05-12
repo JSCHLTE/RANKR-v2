@@ -1,25 +1,30 @@
+import { RankObj } from "@/types/rank";
+
 type PositionGroupSelectorProps = {
     toggleCustomPosition: (value: string) => void;
     customPositions: string[];
-    setCustomPositions: (positions: string[]) => void;
     positionGroup: string;
-    setPositionGroup: (option: string) => void;
     allowRookies: boolean;
+    updateField: <K extends keyof RankObj>(
+      key: K,
+      value: RankObj[K]
+    ) => void;
   };
 
 const PositionGroupSelector = ({ 
     toggleCustomPosition,
     customPositions,
-    setCustomPositions,
     positionGroup,
-    setPositionGroup,
+    updateField,
     allowRookies
 }: PositionGroupSelectorProps) => {
   return (
     <>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {[
-            { value: "ALL", label: "All", description: "Rank every offensive skill position" },
+            { value: "ALL", label: "All", description: "Rank every position" },
+            { value: "SKILL", label: "Skill", description: `Rank every skill position
+              (QB, WR, RB, TE)` },
             { value: "QB", label: "QB", description: "Quarterbacks only" },
             { value: "RB", label: "RB", description: "Running backs only" },
             { value: "WR", label: "WR", description: "Wide receivers only" },
@@ -32,8 +37,8 @@ const PositionGroupSelector = ({
               key={option.value}
               disabled={option.disabled}
               onClick={() => {
-                setPositionGroup(option.value);
-                if (option.value !== "Custom") setCustomPositions([]);
+                updateField("positionGroup", option.value);
+                if (option.value !== "Custom") updateField("customPositions", []);
               }}
               className={`text-left p-4 rounded-xl border transition-all ${
                 option.disabled
@@ -44,7 +49,9 @@ const PositionGroupSelector = ({
               }`}
             >
               <p className="font-semibold">{option.label}</p>
-              <p className="text-xs text-[var(--text-muted)] mt-1">{option.description}</p>
+              <p className="text-xs text-[var(--text-muted)] mt-1" style={{ whiteSpace: 'pre-line' }}>
+  {option.description}
+</p>   
             </button>
           ))}
         </div>
