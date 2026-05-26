@@ -1,5 +1,4 @@
-// app/api/set-username/route.ts
-import { db } from "@/lib/firebase-admin";
+import { db, auth } from "@/lib/firebase-admin";
 import { NextRequest } from "next/server";
 
 const isValidFormat = (username: string) => {
@@ -9,10 +8,10 @@ const isValidFormat = (username: string) => {
 };
 
 export async function POST(req: NextRequest) {
-  let username, uid, pfp
+  let username, pfp
 
   try {
-    ({ username, uid, pfp } = await req.json());
+    ({ username, pfp } = await req.json());
   } catch(e: any) {
     return Response.json({ error: e.message }, { status: 400 })
   }
@@ -20,8 +19,26 @@ export async function POST(req: NextRequest) {
   if (!isValidFormat(username))
     return Response.json({ error: "Invalid format" }, { status: 400 });
 
+  const authHeader = req.headers.get("authorization");
+
+  if (!authHeader?.startsWith("Bearer ")) {
+    return Response.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  const token = authHeader.split("Bearer ")[1];
+
+  let decodedToken;
+
+  try {
+    decodedToken = await auth.verifyIdToken(token);
+  } catch {
+    return Response.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  const userUid = decodedToken.uid;
+
   const usernameRef = db.collection("usernames").doc(username.toLowerCase());
-  const userRef = db.collection("users").doc(uid);
+  const userRef = db.collection("users").doc(userUid);
 
   try {
     await db.runTransaction(async (t) => {
@@ -31,7 +48,7 @@ export async function POST(req: NextRequest) {
       if (usernameDoc.exists) throw new Error("Username taken");
       if (userDoc.exists) throw new Error("Username already set");
 
-      t.set(usernameRef, { uid });
+      t.set(usernameRef, { userUid });
       t.set(userRef, { username: username.toLowerCase(), displayName: username, pfp }, { merge: true });
     });
 

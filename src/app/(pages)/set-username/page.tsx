@@ -46,12 +46,17 @@ export default function SetUsername() {
         router.push("/signup");
         return;
       }
+
+      const token = await user.getIdToken();
     
       try {    
         const res = await fetch("/api/set-username", {
           method: "POST",
-          body: JSON.stringify({ username: usernameValue, pfp: avatarSrc, uid: user.uid }),
-          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username: usernameValue, pfp: avatarSrc }),
+          headers: { 
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+           },
         });
 
         const data = await res.json();

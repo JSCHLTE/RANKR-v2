@@ -57,19 +57,26 @@ export default function SignUpPage() {
       setProcess(false);
       return;
     }
+
+    
   
     try {
-      const user = await signUp(formInfo.email, formInfo.password); // get uid first
+      const user = await signUp(formInfo.email, formInfo.password);
+
+      const token = await user.getIdToken();
   
       const res = await fetch("/api/set-username", {
         method: "POST",
-        body: JSON.stringify({ username: formInfo.username, pfp: avatarSrc, uid: user.uid }),
-        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username: formInfo.username, pfp: avatarSrc }),
+        headers: { 
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
       });
   
       const data = await res.json();
       if (!res.ok) {
-        await user.delete(); // rollback the auth account
+        await user.delete();
         throw new Error(data.error);
       }
       await refreshProfile(user!)

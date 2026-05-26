@@ -15,7 +15,8 @@ const Optional = () => (
 );
 
 export default function CreateRankingPage() {
-  const { profile } = useAuth();
+  const { profile, user } = useAuth();
+
 
   const [rankObj, setRankObj] = useState<RankObj>({
       name: "",
@@ -32,9 +33,35 @@ export default function CreateRankingPage() {
       visibility: "PUBLIC"
   });
 
+  const handleCreate = async () => {
+    if(!user) {
+      alert("You must be signed in to create a ranking");
+      return;
+    }
+
+    const token = await user.getIdToken();
+
+    try {
+      const res = await fetch("/api/create-ranking", {
+        method: "POST",
+        body: JSON.stringify({ rankObj: rankObj }),
+        headers: { 
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+         },
+      });
+    } catch(e: unknown) {
+      console.log(e);
+    } finally {
+      console.log("done")
+    }
+
+  }
+
   useEffect(() => {
     console.log(rankObj);
-  }, [rankObj])
+    console.log(profile)
+  }, [rankObj]);
 
   const toggleCustomPosition = (value: string) => {
     setRankObj((prev) => ({
@@ -355,7 +382,7 @@ const updateField = <K extends keyof RankObj>(
       {/* Submit */}
       <button
         disabled={!canSubmit}
-        onSubmit={() => console.log()}
+        onClick={handleCreate}
         className={`w-full py-3 rounded-xl font-semibold text-lg transition-all ${
           canSubmit
             ? "bg-[var(--accent)] text-[var(--background)] hover:opacity-90 cursor-pointer"
