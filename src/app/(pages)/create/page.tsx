@@ -20,7 +20,7 @@ export default function CreateRankingPage() {
 
   const [rankObj, setRankObj] = useState<RankObj>({
       name: "",
-      allowRookies: false,
+      onlyRookies: false,
       positionGroup: "ALL",
       customPositions: [],
       scoring: "",
@@ -57,11 +57,6 @@ export default function CreateRankingPage() {
     }
 
   }
-
-  useEffect(() => {
-    console.log(rankObj);
-    console.log(profile)
-  }, [rankObj]);
 
   const toggleCustomPosition = (value: string) => {
     setRankObj((prev) => ({
@@ -137,11 +132,11 @@ const updateField = <K extends keyof RankObj>(
           <button
             onClick={() => {
               setRankObj((prev) => {
-                const next = !prev.allowRookies;
+                const next = !prev.onlyRookies;
 
                 return {
                   ...prev,
-                  allowRookies: next,
+                  onlyRookies: next,
                   customPositions: next
                     ? prev.customPositions.filter((p) => p !== "DEF")
                     : prev.customPositions,
@@ -153,12 +148,12 @@ const updateField = <K extends keyof RankObj>(
               });
             }}
             className={`relative w-12 h-6 rounded-full transition-colors duration-200 cursor-pointer focus:outline-none ${
-              rankObj.allowRookies ? "bg-[var(--accent)]" : "bg-[var(--border)]"
+              rankObj.onlyRookies ? "bg-[var(--accent)]" : "bg-[var(--border)]"
             }`}
           >
             <span
               className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform duration-200 ${
-                rankObj.allowRookies ? "translate-x-6" : "translate-x-0"
+                rankObj.onlyRookies ? "translate-x-6" : "translate-x-0"
               }`}
             />
           </button>
@@ -209,7 +204,7 @@ const updateField = <K extends keyof RankObj>(
           toggleCustomPosition={toggleCustomPosition}
           customPositions={rankObj.customPositions}
           positionGroup={rankObj.positionGroup}
-          allowRookies={rankObj.allowRookies}
+          onlyRookies={rankObj.onlyRookies}
         />
         <p className="mt-2 text-xs text-[var(--text-muted)] flex items-center gap-1.5">
           <svg className="w-3.5 h-3.5 shrink-0 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

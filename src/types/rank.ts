@@ -11,7 +11,7 @@ export interface ScoringFormat {
 
 export interface RankObj {
     name: string,
-    allowRookies: boolean,
+    onlyRookies: boolean,
     positionGroup: string,
     customPositions: string[],
     scoring: string,

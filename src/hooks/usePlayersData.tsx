@@ -14,7 +14,7 @@ export function usePlayersData() {
         setLoading(true);
   
         try {
-          const ref = collection(db, "fantasy-players");
+          const ref = collection(db, "players");
           const snapshot = await getDocs(ref);
   
           const data = snapshot.docs.map((doc) => ({

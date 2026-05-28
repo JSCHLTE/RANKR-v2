@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
 
   try {
     body = await req.json();
-  } catch (e: any) {
+  } catch {
     return Response.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
@@ -38,10 +38,36 @@ export async function POST(req: NextRequest) {
   const rankingId = rankingRef.id;
 
   try {
+    const templateSnap = await db.collection("rankr-template").get();
+
+    if (templateSnap.empty) {
+      return Response.json(
+        { error: "Ranking template is empty" },
+        { status: 500 }
+      );
+    }
+
+    const playerRanks = templateSnap.docs
+      .map((templateDoc) => {
+        const templateData = templateDoc.data();
+
+        const playerId = templateData.player_id;
+        const rank = templateData.rank;
+
+        if (!playerId || rank == null) return null;
+
+        return {
+          player_id: playerId,
+          rank,
+        };
+      })
+      .filter(Boolean);
+
     await rankingRef.set({
       rankingId,
       authorUid,
       rankObj,
+      playerRanks,
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });

@@ -4,7 +4,7 @@ type PositionGroupSelectorProps = {
     toggleCustomPosition: (value: string) => void;
     customPositions: string[];
     positionGroup: string;
-    allowRookies: boolean;
+    onlyRookies: boolean;
     updateField: <K extends keyof RankObj>(
       key: K,
       value: RankObj[K]
@@ -16,7 +16,7 @@ const PositionGroupSelector = ({
     customPositions,
     positionGroup,
     updateField,
-    allowRookies
+    onlyRookies
 }: PositionGroupSelectorProps) => {
   return (
     <>
@@ -30,7 +30,7 @@ const PositionGroupSelector = ({
             { value: "WR", label: "WR", description: "Wide receivers only" },
             { value: "TE", label: "TE", description: "Tight ends only" },
             { value: "K", label: "Kickers", description: "Kickers only" },
-            { value: "Defense", label: "Team Defenses", description: "Team defenses only", disabled: allowRookies },
+            { value: "Defense", label: "Team Defenses", description: "Team defenses only", disabled: onlyRookies },
             { value: "Custom", label: "Custom", description: "Choose your own position groups" },
           ].map((option) => (
             <button
@@ -67,7 +67,7 @@ const PositionGroupSelector = ({
                 { value: "RB", label: "RB" },
                 { value: "TE", label: "TE" },
                 { value: "K", label: "K" },
-                { value: "DEF", label: "DEF", disabled: allowRookies },
+                { value: "DEF", label: "DEF", disabled: onlyRookies },
               ].map((pos) => (
                 <button
                   key={pos.value}

@@ -22,7 +22,6 @@ export const ThemeProvider = ({ children, }: { children: React.ReactNode }) => {
   useEffect(() => {
     document.documentElement.classList.remove("light", "dark");
     document.documentElement.classList.add(theme);
-    console.log(theme);
   }, [theme]);
 
   const toggleTheme = () => {
