@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+filtered_players.json
+player_rankings.json
+
+uploadPlayers.ts
+uploadRankings.ts

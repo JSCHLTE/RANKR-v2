@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePlayersData } from "../../../hooks/usePlayersData";
+
 
 const positionColors: Record<string, string> = {
   QB: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
@@ -13,12 +13,20 @@ const positionColors: Record<string, string> = {
 };
 
 const Players = () => {
-  const { players, loading } = usePlayersData();
-  const [allPlayers, setAllPlayers] = useState(players);
+  const [players, setPlayers] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setAllPlayers(players);
-  }, [players]);
+    async function loadPlayers() {
+      setLoading(true)
+      const res = await fetch("data/players_lite.json");
+      const data = await res.json();
+
+      setPlayers(data);
+      setLoading(false);
+    }
+    loadPlayers();
+  }, []);
 
   if (loading) {
     return (
@@ -41,8 +49,8 @@ const Players = () => {
 
   return (
     <div className="flex flex-col divide-y divide-gray-100 dark:divide-white/5">
-      {allPlayers.map((player, index) => {
-        const pos = player.fantasy_positions?.[0];
+      {players.map((player, index) => {
+        const pos = player?.fantasy_positions?.[0];
         const posClass = positionColors[pos] ?? "bg-gray-100 text-gray-600 dark:bg-white/10 dark:text-gray-300";
 
         return (
@@ -76,7 +84,7 @@ const Players = () => {
                   </span>
                 )}
                 {player.team ? (
-                  <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 dark:bg-white/10 dark:text-gray-300">
+                  <span className={`text-xs font-medium px-2 py-0.5 rounded-full text-gray-600 dark:text-gray-300`} style={{ backgroundColor: `var(--${player.team.toLowerCase()})` }}>
                     {player.team}
                   </span>
                 ) :                   <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 dark:bg-white/10 dark:text-gray-300">

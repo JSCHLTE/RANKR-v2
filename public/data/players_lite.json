@@ -1,0 +1,3953 @@
+[
+  {
+    "search_full_name": "jamarrchase",
+    "first_name": "Ja'Marr",
+    "last_name": "Chase",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CIN",
+    "player_id": "7564"
+  },
+  {
+    "search_full_name": "bijanrobinson",
+    "first_name": "Bijan",
+    "last_name": "Robinson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "ATL",
+    "player_id": "9509"
+  },
+  {
+    "search_full_name": "pukanacua",
+    "first_name": "Puka",
+    "last_name": "Nacua",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LAR",
+    "player_id": "9493"
+  },
+  {
+    "search_full_name": "jaxonsmithnjigba",
+    "first_name": "Jaxon",
+    "last_name": "Smith-Njigba",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SEA",
+    "player_id": "9488"
+  },
+  {
+    "search_full_name": "jahmyrgibbs",
+    "first_name": "Jahmyr",
+    "last_name": "Gibbs",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DET",
+    "player_id": "9221"
+  },
+  {
+    "search_full_name": "amonrastbrown",
+    "first_name": "Amon-Ra",
+    "last_name": "St. Brown",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DET",
+    "player_id": "7547"
+  },
+  {
+    "search_full_name": "ceedeelamb",
+    "first_name": "CeeDee",
+    "last_name": "Lamb",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DAL",
+    "player_id": "6786"
+  },
+  {
+    "search_full_name": "christianmccaffrey",
+    "first_name": "Christian",
+    "last_name": "McCaffrey",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SF",
+    "player_id": "4034"
+  },
+  {
+    "search_full_name": "justinjefferson",
+    "first_name": "Justin",
+    "last_name": "Jefferson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIN",
+    "player_id": "6794"
+  },
+  {
+    "search_full_name": "jonathantaylor",
+    "first_name": "Jonathan",
+    "last_name": "Taylor",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "IND",
+    "player_id": "6813"
+  },
+  {
+    "search_full_name": "drakelondon",
+    "first_name": "Drake",
+    "last_name": "London",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "ATL",
+    "player_id": "8112"
+  },
+  {
+    "search_full_name": "nicocollins",
+    "first_name": "Nico",
+    "last_name": "Collins",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "HOU",
+    "player_id": "7569"
+  },
+  {
+    "search_full_name": "devonachane",
+    "first_name": "De'Von",
+    "last_name": "Achane",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "MIA",
+    "player_id": "9226"
+  },
+  {
+    "search_full_name": "maliknabers",
+    "first_name": "Malik",
+    "last_name": "Nabers",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYG",
+    "player_id": "11632"
+  },
+  {
+    "search_full_name": "rasheerice",
+    "first_name": "Rashee",
+    "last_name": "Rice",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "KC",
+    "player_id": "10229"
+  },
+  {
+    "search_full_name": "treymcbride",
+    "first_name": "Trey",
+    "last_name": "McBride",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "ARI",
+    "player_id": "8130"
+  },
+  {
+    "search_full_name": "georgepickens",
+    "first_name": "George",
+    "last_name": "Pickens",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DAL",
+    "player_id": "8137"
+  },
+  {
+    "search_full_name": "ashtonjeanty",
+    "first_name": "Ashton",
+    "last_name": "Jeanty",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "LV",
+    "player_id": "12527"
+  },
+  {
+    "search_full_name": "jamescook",
+    "first_name": "James",
+    "last_name": "Cook",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "BUF",
+    "player_id": "8138"
+  },
+  {
+    "search_full_name": "chrisolave",
+    "first_name": "Chris",
+    "last_name": "Olave",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NO",
+    "player_id": "8144"
+  },
+  {
+    "search_full_name": "brockbowers",
+    "first_name": "Brock",
+    "last_name": "Bowers",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LV",
+    "player_id": "11604"
+  },
+  {
+    "search_full_name": "chasebrown",
+    "first_name": "Chase",
+    "last_name": "Brown",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CIN",
+    "player_id": "9224"
+  },
+  {
+    "search_full_name": "ajbrown",
+    "first_name": "A.J.",
+    "last_name": "Brown",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "PHI",
+    "player_id": "5859"
+  },
+  {
+    "search_full_name": "joshallen",
+    "first_name": "Josh",
+    "last_name": "Allen",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "BUF",
+    "player_id": "4984"
+  },
+  {
+    "search_full_name": "omarionhampton",
+    "first_name": "Omarion",
+    "last_name": "Hampton",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "LAC",
+    "player_id": "12507"
+  },
+  {
+    "search_full_name": "tetairoamcmillan",
+    "first_name": "Tetairoa",
+    "last_name": "McMillan",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CAR",
+    "player_id": "12526"
+  },
+  {
+    "search_full_name": "saquonbarkley",
+    "first_name": "Saquon",
+    "last_name": "Barkley",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PHI",
+    "player_id": "4866"
+  },
+  {
+    "search_full_name": "lamarjackson",
+    "first_name": "Lamar",
+    "last_name": "Jackson",
+    "fantasy_positions": [
+      "DB"
+    ],
+    "team": null,
+    "player_id": "6994"
+  },
+  {
+    "search_full_name": "garrettwilson",
+    "first_name": "Garrett",
+    "last_name": "Wilson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYJ",
+    "player_id": "8146"
+  },
+  {
+    "search_full_name": "devontasmith",
+    "first_name": "DeVonta",
+    "last_name": "Smith",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "PHI",
+    "player_id": "7525"
+  },
+  {
+    "search_full_name": "kennethwalker",
+    "first_name": "Kenneth",
+    "last_name": "Walker",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "KC",
+    "player_id": "8151"
+  },
+  {
+    "search_full_name": "teehiggins",
+    "first_name": "Tee",
+    "last_name": "Higgins",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CIN",
+    "player_id": "6801"
+  },
+  {
+    "search_full_name": "drakemaye",
+    "first_name": "Drake",
+    "last_name": "Maye",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "NE",
+    "player_id": "11564"
+  },
+  {
+    "search_full_name": "jeremiyahlove",
+    "first_name": "Jeremiyah",
+    "last_name": "Love",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "ARI",
+    "player_id": "13287"
+  },
+  {
+    "search_full_name": "laddmcconkey",
+    "first_name": "Ladd",
+    "last_name": "McConkey",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LAC",
+    "player_id": "11635"
+  },
+  {
+    "search_full_name": "joshjacobs",
+    "first_name": "Josh",
+    "last_name": "Jacobs",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "GB",
+    "player_id": "5850"
+  },
+  {
+    "search_full_name": "colstonloveland",
+    "first_name": "Colston",
+    "last_name": "Loveland",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "CHI",
+    "player_id": "12517"
+  },
+  {
+    "search_full_name": "zayflowers",
+    "first_name": "Zay",
+    "last_name": "Flowers",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BAL",
+    "player_id": "9997"
+  },
+  {
+    "search_full_name": "lutherburden",
+    "first_name": "Luther",
+    "last_name": "Burden",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CHI",
+    "player_id": "12519"
+  },
+  {
+    "search_full_name": "jaylenwaddle",
+    "first_name": "Jaylen",
+    "last_name": "Waddle",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DEN",
+    "player_id": "7526"
+  },
+  {
+    "search_full_name": "derrickhenry",
+    "first_name": "Derrick",
+    "last_name": "Henry",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "BAL",
+    "player_id": "3198"
+  },
+  {
+    "search_full_name": "breecehall",
+    "first_name": "Breece",
+    "last_name": "Hall",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NYJ",
+    "player_id": "8155"
+  },
+  {
+    "search_full_name": "joeburrow",
+    "first_name": "Joe",
+    "last_name": "Burrow",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "CIN",
+    "player_id": "6770"
+  },
+  {
+    "search_full_name": "terrymclaurin",
+    "first_name": "Terry",
+    "last_name": "McLaurin",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "WAS",
+    "player_id": "5927"
+  },
+  {
+    "search_full_name": "davanteadams",
+    "first_name": "Davante",
+    "last_name": "Adams",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LAR",
+    "player_id": "2133"
+  },
+  {
+    "search_full_name": "emekaegbuka",
+    "first_name": "Emeka",
+    "last_name": "Egbuka",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TB",
+    "player_id": "12514"
+  },
+  {
+    "search_full_name": "travisetienne",
+    "first_name": "Travis",
+    "last_name": "Etienne",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NO",
+    "player_id": "7543"
+  },
+  {
+    "search_full_name": "kyrenwilliams",
+    "first_name": "Kyren",
+    "last_name": "Williams",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "LAR",
+    "player_id": "8150"
+  },
+  {
+    "search_full_name": "javontewilliams",
+    "first_name": "Javonte",
+    "last_name": "Williams",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DAL",
+    "player_id": "7588"
+  },
+  {
+    "search_full_name": "mikeevans",
+    "first_name": "Mike",
+    "last_name": "Evans",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SF",
+    "player_id": "2216"
+  },
+  {
+    "search_full_name": "jaydendaniels",
+    "first_name": "Jayden",
+    "last_name": "Daniels",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "WAS",
+    "player_id": "11566"
+  },
+  {
+    "search_full_name": "jamesonwilliams",
+    "first_name": "Jameson",
+    "last_name": "Williams",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DET",
+    "player_id": "8148"
+  },
+  {
+    "search_full_name": "buckyirving",
+    "first_name": "Bucky",
+    "last_name": "Irving",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "TB",
+    "player_id": "11584"
+  },
+  {
+    "search_full_name": "tylerwarren",
+    "first_name": "Tyler",
+    "last_name": "Warren",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "IND",
+    "player_id": "12518"
+  },
+  {
+    "search_full_name": "jalenhurts",
+    "first_name": "Jalen",
+    "last_name": "Hurts",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "PHI",
+    "player_id": "6904"
+  },
+  {
+    "search_full_name": "djmoore",
+    "first_name": "DJ",
+    "last_name": "Moore",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BUF",
+    "player_id": "4983"
+  },
+  {
+    "search_full_name": "camskattebo",
+    "first_name": "Cam",
+    "last_name": "Skattebo",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NYG",
+    "player_id": "12481"
+  },
+  {
+    "search_full_name": "christianwatson",
+    "first_name": "Christian",
+    "last_name": "Watson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "GB",
+    "player_id": "8167"
+  },
+  {
+    "search_full_name": "treveyonhenderson",
+    "first_name": "TreVeyon",
+    "last_name": "Henderson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NE",
+    "player_id": "12529"
+  },
+  {
+    "search_full_name": "romeodunze",
+    "first_name": "Rome",
+    "last_name": "Odunze",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CHI",
+    "player_id": "11620"
+  },
+  {
+    "search_full_name": "davidmontgomery",
+    "first_name": "David",
+    "last_name": "Montgomery",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "HOU",
+    "player_id": "5892"
+  },
+  {
+    "search_full_name": "dandreswift",
+    "first_name": "D'Andre",
+    "last_name": "Swift",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CHI",
+    "player_id": "6790"
+  },
+  {
+    "search_full_name": "quinshonjudkins",
+    "first_name": "Quinshon",
+    "last_name": "Judkins",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CLE",
+    "player_id": "12512"
+  },
+  {
+    "search_full_name": "carnelltate",
+    "first_name": "Carnell",
+    "last_name": "Tate",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TEN",
+    "player_id": "13279"
+  },
+  {
+    "search_full_name": "tuckerkraft",
+    "first_name": "Tucker",
+    "last_name": "Kraft",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "GB",
+    "player_id": "9484"
+  },
+  {
+    "search_full_name": "courtlandsutton",
+    "first_name": "Courtland",
+    "last_name": "Sutton",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DEN",
+    "player_id": "5045"
+  },
+  {
+    "search_full_name": "marvinharrison",
+    "first_name": "Marvin",
+    "last_name": "Harrison",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "ARI",
+    "player_id": "11628"
+  },
+  {
+    "search_full_name": "justinherbert",
+    "first_name": "Justin",
+    "last_name": "Herbert",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "LAC",
+    "player_id": "6797"
+  },
+  {
+    "search_full_name": "jaxsondart",
+    "first_name": "Jaxson",
+    "last_name": "Dart",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "NYG",
+    "player_id": "12508"
+  },
+  {
+    "search_full_name": "chrisgodwin",
+    "first_name": "Chris",
+    "last_name": "Godwin",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TB",
+    "player_id": "4037"
+  },
+  {
+    "search_full_name": "jaylenwarren",
+    "first_name": "Jaylen",
+    "last_name": "Warren",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PIT",
+    "player_id": "8228"
+  },
+  {
+    "search_full_name": "michaelwilson",
+    "first_name": "Michael",
+    "last_name": "Wilson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "ARI",
+    "player_id": "10232"
+  },
+  {
+    "search_full_name": "haroldfannin",
+    "first_name": "Harold",
+    "last_name": "Fannin",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "CLE",
+    "player_id": "12506"
+  },
+  {
+    "search_full_name": "rjharvey",
+    "first_name": "RJ",
+    "last_name": "Harvey",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DEN",
+    "player_id": "12489"
+  },
+  {
+    "search_full_name": "dkmetcalf",
+    "first_name": "DK",
+    "last_name": "Metcalf",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "PIT",
+    "player_id": "5846"
+  },
+  {
+    "search_full_name": "calebwilliams",
+    "first_name": "Caleb",
+    "last_name": "Williams",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "CHI",
+    "player_id": "11560"
+  },
+  {
+    "search_full_name": "bhayshultuten",
+    "first_name": "Bhayshul",
+    "last_name": "Tuten",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "JAX",
+    "player_id": "12490"
+  },
+  {
+    "search_full_name": "chubahubbard",
+    "first_name": "Chuba",
+    "last_name": "Hubbard",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CAR",
+    "player_id": "7594"
+  },
+  {
+    "search_full_name": "jadarianprice",
+    "first_name": "Jadarian",
+    "last_name": "Price",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SEA",
+    "player_id": "13286"
+  },
+  {
+    "search_full_name": "trevorlawrence",
+    "first_name": "Trevor",
+    "last_name": "Lawrence",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "JAX",
+    "player_id": "7523"
+  },
+  {
+    "search_full_name": "alecpierce",
+    "first_name": "Alec",
+    "last_name": "Pierce",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "IND",
+    "player_id": "8142"
+  },
+  {
+    "search_full_name": "jakobimeyers",
+    "first_name": "Jakobi",
+    "last_name": "Meyers",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "JAX",
+    "player_id": "5947"
+  },
+  {
+    "search_full_name": "kylepitts",
+    "first_name": "Kyle",
+    "last_name": "Pitts",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "ATL",
+    "player_id": "7553"
+  },
+  {
+    "search_full_name": "jordyntyson",
+    "first_name": "Jordyn",
+    "last_name": "Tyson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NO",
+    "player_id": "13281"
+  },
+  {
+    "search_full_name": "samlaporta",
+    "first_name": "Sam",
+    "last_name": "LaPorta",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "DET",
+    "player_id": "10859"
+  },
+  {
+    "search_full_name": "dakprescott",
+    "first_name": "Dak",
+    "last_name": "Prescott",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "DAL",
+    "player_id": "3294"
+  },
+  {
+    "search_full_name": "ricodowdle",
+    "first_name": "Rico",
+    "last_name": "Dowdle",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PIT",
+    "player_id": "7021"
+  },
+  {
+    "search_full_name": "rhamondrestevenson",
+    "first_name": "Rhamondre",
+    "last_name": "Stevenson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NE",
+    "player_id": "7611"
+  },
+  {
+    "search_full_name": "michaelpittman",
+    "first_name": "Michael",
+    "last_name": "Pittman",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "PIT",
+    "player_id": "6819"
+  },
+  {
+    "search_full_name": "brianthomas",
+    "first_name": "Brian",
+    "last_name": "Thomas",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "JAX",
+    "player_id": "11631"
+  },
+  {
+    "search_full_name": "tonypollard",
+    "first_name": "Tony",
+    "last_name": "Pollard",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "TEN",
+    "player_id": "5967"
+  },
+  {
+    "search_full_name": "wandalerobinson",
+    "first_name": "Wan'Dale",
+    "last_name": "Robinson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TEN",
+    "player_id": "8126"
+  },
+  {
+    "search_full_name": "makailemon",
+    "first_name": "Makai",
+    "last_name": "Lemon",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "PHI",
+    "player_id": "13294"
+  },
+  {
+    "search_full_name": "kylemonangai",
+    "first_name": "Kyle",
+    "last_name": "Monangai",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CHI",
+    "player_id": "12534"
+  },
+  {
+    "search_full_name": "brockpurdy",
+    "first_name": "Brock",
+    "last_name": "Purdy",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "SF",
+    "player_id": "8183"
+  },
+  {
+    "search_full_name": "rickypearsall",
+    "first_name": "Ricky",
+    "last_name": "Pearsall",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SF",
+    "player_id": "11638"
+  },
+  {
+    "search_full_name": "parkerwashington",
+    "first_name": "Parker",
+    "last_name": "Washington",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "JAX",
+    "player_id": "9487"
+  },
+  {
+    "search_full_name": "patrickmahomes",
+    "first_name": "Patrick",
+    "last_name": "Mahomes",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "KC",
+    "player_id": "4046"
+  },
+  {
+    "search_full_name": "jordanaddison",
+    "first_name": "Jordan",
+    "last_name": "Addison",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIN",
+    "player_id": "9756"
+  },
+  {
+    "search_full_name": "matthewstafford",
+    "first_name": "Matthew",
+    "last_name": "Stafford",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "LAR",
+    "player_id": "421"
+  },
+  {
+    "search_full_name": "aaronjones",
+    "first_name": "Aaron",
+    "last_name": "Jones",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "MIN",
+    "player_id": "4199"
+  },
+  {
+    "search_full_name": "bonix",
+    "first_name": "Bo",
+    "last_name": "Nix",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "DEN",
+    "player_id": "11563"
+  },
+  {
+    "search_full_name": "joshdowns",
+    "first_name": "Josh",
+    "last_name": "Downs",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "IND",
+    "player_id": "9500"
+  },
+  {
+    "search_full_name": "jakeferguson",
+    "first_name": "Jake",
+    "last_name": "Ferguson",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "DAL",
+    "player_id": "8110"
+  },
+  {
+    "search_full_name": "daltonkincaid",
+    "first_name": "Dalton",
+    "last_name": "Kincaid",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "BUF",
+    "player_id": "10236"
+  },
+  {
+    "search_full_name": "kennethgainwell",
+    "first_name": "Kenneth",
+    "last_name": "Gainwell",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "TB",
+    "player_id": "7567"
+  },
+  {
+    "search_full_name": "jaydenreed",
+    "first_name": "Jayden",
+    "last_name": "Reed",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "GB",
+    "player_id": "10222"
+  },
+  {
+    "search_full_name": "blakecorum",
+    "first_name": "Blake",
+    "last_name": "Corum",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "LAR",
+    "player_id": "11586"
+  },
+  {
+    "search_full_name": "jkdobbins",
+    "first_name": "J.K.",
+    "last_name": "Dobbins",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DEN",
+    "player_id": "6806"
+  },
+  {
+    "search_full_name": "traviskelce",
+    "first_name": "Travis",
+    "last_name": "Kelce",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "KC",
+    "player_id": "1466"
+  },
+  {
+    "search_full_name": "jaredgoff",
+    "first_name": "Jared",
+    "last_name": "Goff",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "DET",
+    "player_id": "3163"
+  },
+  {
+    "search_full_name": "kylermurray",
+    "first_name": "Kyler",
+    "last_name": "Murray",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "MIN",
+    "player_id": "5849"
+  },
+  {
+    "search_full_name": "khalilshakir",
+    "first_name": "Khalil",
+    "last_name": "Shakir",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BUF",
+    "player_id": "8134"
+  },
+  {
+    "search_full_name": "orondegadsden",
+    "first_name": "Oronde",
+    "last_name": "Gadsden",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LAC",
+    "player_id": "12493"
+  },
+  {
+    "search_full_name": "jordanlove",
+    "first_name": "Jordan",
+    "last_name": "Love",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "GB",
+    "player_id": "6804"
+  },
+  {
+    "search_full_name": "quentinjohnston",
+    "first_name": "Quentin",
+    "last_name": "Johnston",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LAC",
+    "player_id": "9754"
+  },
+  {
+    "search_full_name": "isaiahlikely",
+    "first_name": "Isaiah",
+    "last_name": "Likely",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NYG",
+    "player_id": "8131"
+  },
+  {
+    "search_full_name": "rachaadwhite",
+    "first_name": "Rachaad",
+    "last_name": "White",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "WAS",
+    "player_id": "8136"
+  },
+  {
+    "search_full_name": "tylershough",
+    "first_name": "Tyler",
+    "last_name": "Shough",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "NO",
+    "player_id": "12545"
+  },
+  {
+    "search_full_name": "malikwillis",
+    "first_name": "Malik",
+    "last_name": "Willis",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "MIA",
+    "player_id": "8161"
+  },
+  {
+    "search_full_name": "georgekittle",
+    "first_name": "George",
+    "last_name": "Kittle",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "SF",
+    "player_id": "4217"
+  },
+  {
+    "search_full_name": "jacorycroskeymerritt",
+    "first_name": "Jacory",
+    "last_name": "Croskey-Merritt",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "WAS",
+    "player_id": "12533"
+  },
+  {
+    "search_full_name": "jaydenhiggins",
+    "first_name": "Jayden",
+    "last_name": "Higgins",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "HOU",
+    "player_id": "12484"
+  },
+  {
+    "search_full_name": "bakermayfield",
+    "first_name": "Baker",
+    "last_name": "Mayfield",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "TB",
+    "player_id": "4892"
+  },
+  {
+    "search_full_name": "xavierworthy",
+    "first_name": "Xavier",
+    "last_name": "Worthy",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "KC",
+    "player_id": "11624"
+  },
+  {
+    "search_full_name": "romeodoubs",
+    "first_name": "Romeo",
+    "last_name": "Doubs",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NE",
+    "player_id": "8121"
+  },
+  {
+    "search_full_name": "dallasgoedert",
+    "first_name": "Dallas",
+    "last_name": "Goedert",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "PHI",
+    "player_id": "5022"
+  },
+  {
+    "search_full_name": "tylerallgeier",
+    "first_name": "Tyler",
+    "last_name": "Allgeier",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "ARI",
+    "player_id": "8132"
+  },
+  {
+    "search_full_name": "zachcharbonnet",
+    "first_name": "Zach",
+    "last_name": "Charbonnet",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SEA",
+    "player_id": "9753"
+  },
+  {
+    "search_full_name": "woodymarks",
+    "first_name": "Woody",
+    "last_name": "Marks",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "HOU",
+    "player_id": "12474"
+  },
+  {
+    "search_full_name": "jalencoker",
+    "first_name": "Jalen",
+    "last_name": "Coker",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CAR",
+    "player_id": "11646"
+  },
+  {
+    "search_full_name": "jordanmason",
+    "first_name": "Jordan",
+    "last_name": "Mason",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "MIN",
+    "player_id": "8408"
+  },
+  {
+    "search_full_name": "tyronetracy",
+    "first_name": "Tyrone",
+    "last_name": "Tracy",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NYG",
+    "player_id": "11655"
+  },
+  {
+    "search_full_name": "cjstroud",
+    "first_name": "C.J.",
+    "last_name": "Stroud",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "HOU",
+    "player_id": "9758"
+  },
+  {
+    "search_full_name": "juwanjohnson",
+    "first_name": "Juwan",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NO",
+    "player_id": "7002"
+  },
+  {
+    "search_full_name": "kcconcepcion",
+    "first_name": "KC",
+    "last_name": "Concepcion",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CLE",
+    "player_id": "13298"
+  },
+  {
+    "search_full_name": "samdarnold",
+    "first_name": "Sam",
+    "last_name": "Darnold",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "SEA",
+    "player_id": "4943"
+  },
+  {
+    "search_full_name": "matthewgolden",
+    "first_name": "Matthew",
+    "last_name": "Golden",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "GB",
+    "player_id": "12501"
+  },
+  {
+    "search_full_name": "tyjaespears",
+    "first_name": "Tyjae",
+    "last_name": "Spears",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "TEN",
+    "player_id": "9508"
+  },
+  {
+    "search_full_name": "brentonstrange",
+    "first_name": "Brenton",
+    "last_name": "Strange",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "JAX",
+    "player_id": "9480"
+  },
+  {
+    "search_full_name": "dylansampson",
+    "first_name": "Dylan",
+    "last_name": "Sampson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CLE",
+    "player_id": "12469"
+  },
+  {
+    "search_full_name": "alvinkamara",
+    "first_name": "Alvin",
+    "last_name": "Kamara",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NO",
+    "player_id": "4035"
+  },
+  {
+    "search_full_name": "bryceyoung",
+    "first_name": "Bryce",
+    "last_name": "Young",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "CAR",
+    "player_id": "9228"
+  },
+  {
+    "search_full_name": "markandrews",
+    "first_name": "Mark",
+    "last_name": "Andrews",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "BAL",
+    "player_id": "5012"
+  },
+  {
+    "search_full_name": "isiahpacheco",
+    "first_name": "Isiah",
+    "last_name": "Pacheco",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DET",
+    "player_id": "8205"
+  },
+  {
+    "search_full_name": "rashidshaheed",
+    "first_name": "Rashid",
+    "last_name": "Shaheed",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SEA",
+    "player_id": "8676"
+  },
+  {
+    "search_full_name": "jamesconner",
+    "first_name": "James",
+    "last_name": "Conner",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "ARI",
+    "player_id": "4137"
+  },
+  {
+    "search_full_name": "chrisrodriguez",
+    "first_name": "Chris",
+    "last_name": "Rodriguez",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "JAX",
+    "player_id": "10219"
+  },
+  {
+    "search_full_name": "camward",
+    "first_name": "Cam",
+    "last_name": "Ward",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "TEN",
+    "player_id": "12522"
+  },
+  {
+    "search_full_name": "jerryjeudy",
+    "first_name": "Jerry",
+    "last_name": "Jeudy",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CLE",
+    "player_id": "6783"
+  },
+  {
+    "search_full_name": "hunterhenry",
+    "first_name": "Hunter",
+    "last_name": "Henry",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NE",
+    "player_id": "3214"
+  },
+  {
+    "search_full_name": "jonathonbrooks",
+    "first_name": "Jonathon",
+    "last_name": "Brooks",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CAR",
+    "player_id": "11583"
+  },
+  {
+    "search_full_name": "deebosamuel",
+    "first_name": "Deebo",
+    "last_name": "Samuel",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": null,
+    "player_id": "5872"
+  },
+  {
+    "search_full_name": "travishunter",
+    "first_name": "Travis",
+    "last_name": "Hunter",
+    "fantasy_positions": [
+      "DB",
+      "WR"
+    ],
+    "team": "JAX",
+    "player_id": "12530"
+  },
+  {
+    "search_full_name": "braelonallen",
+    "first_name": "Braelon",
+    "last_name": "Allen",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NYJ",
+    "player_id": "11576"
+  },
+  {
+    "search_full_name": "jonahcoleman",
+    "first_name": "Jonah",
+    "last_name": "Coleman",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DEN",
+    "player_id": "13345"
+  },
+  {
+    "search_full_name": "jauanjennings",
+    "first_name": "Jauan",
+    "last_name": "Jennings",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIN",
+    "player_id": "7049"
+  },
+  {
+    "search_full_name": "danieljones",
+    "first_name": "Daniel",
+    "last_name": "Jones",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "IND",
+    "player_id": "5870"
+  },
+  {
+    "search_full_name": "keatonmitchell",
+    "first_name": "Keaton",
+    "last_name": "Mitchell",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "LAC",
+    "player_id": "9511"
+  },
+  {
+    "search_full_name": "denzelboston",
+    "first_name": "Denzel",
+    "last_name": "Boston",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CLE",
+    "player_id": "13346"
+  },
+  {
+    "search_full_name": "stefondiggs",
+    "first_name": "Stefon",
+    "last_name": "Diggs",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": null,
+    "player_id": "2449"
+  },
+  {
+    "search_full_name": "omarcooper",
+    "first_name": "Omar",
+    "last_name": "Cooper",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYJ",
+    "player_id": "13276"
+  },
+  {
+    "search_full_name": "adonaimitchell",
+    "first_name": "Adonai",
+    "last_name": "Mitchell",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYJ",
+    "player_id": "11625"
+  },
+  {
+    "search_full_name": "daltonschultz",
+    "first_name": "Dalton",
+    "last_name": "Schultz",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "HOU",
+    "player_id": "5001"
+  },
+  {
+    "search_full_name": "brandonaiyuk",
+    "first_name": "Brandon",
+    "last_name": "Aiyuk",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SF",
+    "player_id": "6803"
+  },
+  {
+    "search_full_name": "brianrobinson",
+    "first_name": "Brian",
+    "last_name": "Robinson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "ATL",
+    "player_id": "8154"
+  },
+  {
+    "search_full_name": "jalenmcmillan",
+    "first_name": "Jalen",
+    "last_name": "McMillan",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TB",
+    "player_id": "11618"
+  },
+  {
+    "search_full_name": "kayshonboutte",
+    "first_name": "Kayshon",
+    "last_name": "Boutte",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NE",
+    "player_id": "9504"
+  },
+  {
+    "search_full_name": "emanuelwilson",
+    "first_name": "Emanuel",
+    "last_name": "Wilson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SEA",
+    "player_id": "11435"
+  },
+  {
+    "search_full_name": "tankbigsby",
+    "first_name": "Tank",
+    "last_name": "Bigsby",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PHI",
+    "player_id": "9225"
+  },
+  {
+    "search_full_name": "chigokonkwo",
+    "first_name": "Chig",
+    "last_name": "Okonkwo",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "WAS",
+    "player_id": "8210"
+  },
+  {
+    "search_full_name": "treharris",
+    "first_name": "Tre'",
+    "last_name": "Harris",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LAC",
+    "player_id": "12509"
+  },
+  {
+    "search_full_name": "troyfranklin",
+    "first_name": "Troy",
+    "last_name": "Franklin",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DEN",
+    "player_id": "11627"
+  },
+  {
+    "search_full_name": "mikewashington",
+    "first_name": "Mike",
+    "last_name": "Washington",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "LV",
+    "player_id": "13305"
+  },
+  {
+    "search_full_name": "jacobybrissett",
+    "first_name": "Jacoby",
+    "last_name": "Brissett",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "ARI",
+    "player_id": "3257"
+  },
+  {
+    "search_full_name": "tjhockenson",
+    "first_name": "T.J.",
+    "last_name": "Hockenson",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "MIN",
+    "player_id": "5844"
+  },
+  {
+    "search_full_name": "kimanividal",
+    "first_name": "Kimani",
+    "last_name": "Vidal",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "LAC",
+    "player_id": "11647"
+  },
+  {
+    "search_full_name": "antoniowilliams",
+    "first_name": "Antonio",
+    "last_name": "Williams",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": null,
+    "player_id": "7203"
+  },
+  {
+    "search_full_name": "emmettjohnson",
+    "first_name": "Emmett",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "KC",
+    "player_id": "13337"
+  },
+  {
+    "search_full_name": "tretucker",
+    "first_name": "Tre",
+    "last_name": "Tucker",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LV",
+    "player_id": "10213"
+  },
+  {
+    "search_full_name": "jaylinnoel",
+    "first_name": "Jaylin",
+    "last_name": "Noel",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "HOU",
+    "player_id": "12536"
+  },
+  {
+    "search_full_name": "tyreekhill",
+    "first_name": "Tyreek",
+    "last_name": "Hill",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": null,
+    "player_id": "3321"
+  },
+  {
+    "search_full_name": "nicholassingleton",
+    "first_name": "Nicholas",
+    "last_name": "Singleton",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "TEN",
+    "player_id": "13288"
+  },
+  {
+    "search_full_name": "kenyonsadiq",
+    "first_name": "Kenyon",
+    "last_name": "Sadiq",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NYJ",
+    "player_id": "13330"
+  },
+  {
+    "search_full_name": "patbryant",
+    "first_name": "Pat",
+    "last_name": "Bryant",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DEN",
+    "player_id": "12492"
+  },
+  {
+    "search_full_name": "raydavis",
+    "first_name": "Ray",
+    "last_name": "Davis",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "BUF",
+    "player_id": "11575"
+  },
+  {
+    "search_full_name": "calvinridley",
+    "first_name": "Calvin",
+    "last_name": "Ridley",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TEN",
+    "player_id": "4981"
+  },
+  {
+    "search_full_name": "kaytronallen",
+    "first_name": "Kaytron",
+    "last_name": "Allen",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "WAS",
+    "player_id": "13405"
+  },
+  {
+    "search_full_name": "brandonaubrey",
+    "first_name": "Brandon",
+    "last_name": "Aubrey",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "DAL",
+    "player_id": "11533"
+  },
+  {
+    "search_full_name": "ajbarner",
+    "first_name": "AJ",
+    "last_name": "Barner",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "SEA",
+    "player_id": "11603"
+  },
+  {
+    "search_full_name": "chimeredike",
+    "first_name": "Chimere",
+    "last_name": "Dike",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TEN",
+    "player_id": "12540"
+  },
+  {
+    "search_full_name": "darnellmooney",
+    "first_name": "Darnell",
+    "last_name": "Mooney",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYG",
+    "player_id": "7090"
+  },
+  {
+    "search_full_name": "seantucker",
+    "first_name": "Sean",
+    "last_name": "Tucker",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "TB",
+    "player_id": "9506"
+  },
+  {
+    "search_full_name": "ryanflournoy",
+    "first_name": "Ryan",
+    "last_name": "Flournoy",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DAL",
+    "player_id": "11783"
+  },
+  {
+    "search_full_name": "isaacteslaa",
+    "first_name": "Isaac",
+    "last_name": "TeSlaa",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DET",
+    "player_id": "12535"
+  },
+  {
+    "search_full_name": "kaimifairbairn",
+    "first_name": "Ka'imi",
+    "last_name": "Fairbairn",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "HOU",
+    "player_id": "3451"
+  },
+  {
+    "search_full_name": "camlittle",
+    "first_name": "Cam",
+    "last_name": "Little",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "JAX",
+    "player_id": "11786"
+  },
+  {
+    "search_full_name": "camerondicker",
+    "first_name": "Cameron",
+    "last_name": "Dicker",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "LAC",
+    "player_id": "8259"
+  },
+  {
+    "search_full_name": "jaylenwright",
+    "first_name": "Jaylen",
+    "last_name": "Wright",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "MIA",
+    "player_id": "11643"
+  },
+  {
+    "search_full_name": "jasonmyers",
+    "first_name": "Jason",
+    "last_name": "Myers",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "SEA",
+    "player_id": "2747"
+  },
+  {
+    "search_full_name": "dontayvionwicks",
+    "first_name": "Dontayvion",
+    "last_name": "Wicks",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "PHI",
+    "player_id": "9486"
+  },
+  {
+    "search_full_name": "fernandomendoza",
+    "first_name": "Fernando",
+    "last_name": "Mendoza",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "LV",
+    "player_id": "13269"
+  },
+  {
+    "search_full_name": "chrisbell",
+    "first_name": "Chris",
+    "last_name": "Bell",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIA",
+    "player_id": "13311"
+  },
+  {
+    "search_full_name": "elicayomanor",
+    "first_name": "Elic",
+    "last_name": "Ayomanor",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TEN",
+    "player_id": "12499"
+  },
+  {
+    "search_full_name": "germiebernard",
+    "first_name": "Germie",
+    "last_name": "Bernard",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "PIT",
+    "player_id": "13274"
+  },
+  {
+    "search_full_name": "eddypineiro",
+    "first_name": "Eddy",
+    "last_name": "Pineiro",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "SF",
+    "player_id": "5189"
+  },
+  {
+    "search_full_name": "gunnarhelm",
+    "first_name": "Gunnar",
+    "last_name": "Helm",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "TEN",
+    "player_id": "12502"
+  },
+  {
+    "search_full_name": "evanmcpherson",
+    "first_name": "Evan",
+    "last_name": "McPherson",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "CIN",
+    "player_id": "7839"
+  },
+  {
+    "search_full_name": "tylerloop",
+    "first_name": "Tyler",
+    "last_name": "Loop",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "BAL",
+    "player_id": "12711"
+  },
+  {
+    "search_full_name": "cairosantos",
+    "first_name": "Cairo",
+    "last_name": "Santos",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "CHI",
+    "player_id": "2020"
+  },
+  {
+    "search_full_name": "terranceferguson",
+    "first_name": "Terrance",
+    "last_name": "Ferguson",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LAR",
+    "player_id": "12487"
+  },
+  {
+    "search_full_name": "davidnjoku",
+    "first_name": "David",
+    "last_name": "Njoku",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LAC",
+    "player_id": "4033"
+  },
+  {
+    "search_full_name": "andyborregales",
+    "first_name": "Andy",
+    "last_name": "Borregales",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "NE",
+    "player_id": "12713"
+  },
+  {
+    "search_full_name": "chasemclaughlin",
+    "first_name": "Chase",
+    "last_name": "McLaughlin",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "TB",
+    "player_id": "6650"
+  },
+  {
+    "search_full_name": "demondclaiborne",
+    "first_name": "Demond",
+    "last_name": "Claiborne",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "MIN",
+    "player_id": "13347"
+  },
+  {
+    "search_full_name": "dezhaunstribling",
+    "first_name": "De'Zhaun",
+    "last_name": "Stribling",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SF",
+    "player_id": "13417"
+  },
+  {
+    "search_full_name": "treybenson",
+    "first_name": "Trey",
+    "last_name": "Benson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "ARI",
+    "player_id": "11589"
+  },
+  {
+    "search_full_name": "genosmith",
+    "first_name": "Geno",
+    "last_name": "Smith",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "NYJ",
+    "player_id": "1373"
+  },
+  {
+    "search_full_name": "olliegordon",
+    "first_name": "Ollie",
+    "last_name": "Gordon",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "MIA",
+    "player_id": "12495"
+  },
+  {
+    "search_full_name": "devinneal",
+    "first_name": "Devin",
+    "last_name": "Neal",
+    "fantasy_positions": [
+      "DB"
+    ],
+    "team": "JAX",
+    "player_id": "13649"
+  },
+  {
+    "search_full_name": "jalennailor",
+    "first_name": "Jalen",
+    "last_name": "Nailor",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LV",
+    "player_id": "8180"
+  },
+  {
+    "search_full_name": "zachariahbranch",
+    "first_name": "Zachariah",
+    "last_name": "Branch",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "ATL",
+    "player_id": "13320"
+  },
+  {
+    "search_full_name": "tankdell",
+    "first_name": "Tank",
+    "last_name": "Dell",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "HOU",
+    "player_id": "9502"
+  },
+  {
+    "search_full_name": "masontaylor",
+    "first_name": "Mason",
+    "last_name": "Taylor",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NYJ",
+    "player_id": "12498"
+  },
+  {
+    "search_full_name": "malikwashington",
+    "first_name": "Malik",
+    "last_name": "Washington",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIA",
+    "player_id": "11610"
+  },
+  {
+    "search_full_name": "cadeotton",
+    "first_name": "Cade",
+    "last_name": "Otton",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "TB",
+    "player_id": "8111"
+  },
+  {
+    "search_full_name": "jakebates",
+    "first_name": "Jake",
+    "last_name": "Bates",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "DET",
+    "player_id": "11539"
+  },
+  {
+    "search_full_name": "malachifields",
+    "first_name": "Malachi",
+    "last_name": "Fields",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYG",
+    "player_id": "13285"
+  },
+  {
+    "search_full_name": "harrisonbutker",
+    "first_name": "Harrison",
+    "last_name": "Butker",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "KC",
+    "player_id": "4227"
+  },
+  {
+    "search_full_name": "michaelpenix",
+    "first_name": "Michael",
+    "last_name": "Penix",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "ATL",
+    "player_id": "11559"
+  },
+  {
+    "search_full_name": "chrisbrazzell",
+    "first_name": "Chris",
+    "last_name": "Brazzell",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CAR",
+    "player_id": "13353"
+  },
+  {
+    "search_full_name": "rashodbateman",
+    "first_name": "Rashod",
+    "last_name": "Bateman",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BAL",
+    "player_id": "7571"
+  },
+  {
+    "search_full_name": "kalebjohnson",
+    "first_name": "Kaleb",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PIT",
+    "player_id": "12504"
+  },
+  {
+    "search_full_name": "elijahsarratt",
+    "first_name": "Elijah",
+    "last_name": "Sarratt",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BAL",
+    "player_id": "13268"
+  },
+  {
+    "search_full_name": "patfreiermuth",
+    "first_name": "Pat",
+    "last_name": "Freiermuth",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "PIT",
+    "player_id": "7600"
+  },
+  {
+    "search_full_name": "jakobilane",
+    "first_name": "Ja'Kobi",
+    "last_name": "Lane",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BAL",
+    "player_id": "13293"
+  },
+  {
+    "search_full_name": "elistowers",
+    "first_name": "Eli",
+    "last_name": "Stowers",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "PHI",
+    "player_id": "13349"
+  },
+  {
+    "search_full_name": "theojohnson",
+    "first_name": "Theo",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NYG",
+    "player_id": "11597"
+  },
+  {
+    "search_full_name": "marvinmims",
+    "first_name": "Marvin",
+    "last_name": "Mims",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DEN",
+    "player_id": "9494"
+  },
+  {
+    "search_full_name": "colbyparkinson",
+    "first_name": "Colby",
+    "last_name": "Parkinson",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LAR",
+    "player_id": "6865"
+  },
+  {
+    "search_full_name": "kylewilliams",
+    "first_name": "Kyle",
+    "last_name": "Williams",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": null,
+    "player_id": "638"
+  },
+  {
+    "search_full_name": "skylerbell",
+    "first_name": "Skyler",
+    "last_name": "Bell",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BUF",
+    "player_id": "13402"
+  },
+  {
+    "search_full_name": "chrisboswell",
+    "first_name": "Chris",
+    "last_name": "Boswell",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "PIT",
+    "player_id": "1945"
+  },
+  {
+    "search_full_name": "evanengram",
+    "first_name": "Evan",
+    "last_name": "Engram",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "DEN",
+    "player_id": "4066"
+  },
+  {
+    "search_full_name": "cooperkupp",
+    "first_name": "Cooper",
+    "last_name": "Kupp",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SEA",
+    "player_id": "4039"
+  },
+  {
+    "search_full_name": "kendremiller",
+    "first_name": "Kendre",
+    "last_name": "Miller",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NO",
+    "player_id": "9757"
+  },
+  {
+    "search_full_name": "keoncoleman",
+    "first_name": "Keon",
+    "last_name": "Coleman",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BUF",
+    "player_id": "11637"
+  },
+  {
+    "search_full_name": "adamrandall",
+    "first_name": "Adam",
+    "last_name": "Randall",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "BAL",
+    "player_id": "13302"
+  },
+  {
+    "search_full_name": "christiankirk",
+    "first_name": "Christian",
+    "last_name": "Kirk",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SF",
+    "player_id": "4950"
+  },
+  {
+    "search_full_name": "aaronrodgers",
+    "first_name": "Aaron",
+    "last_name": "Rodgers",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "PIT",
+    "player_id": "96"
+  },
+  {
+    "search_full_name": "toryhorton",
+    "first_name": "Tory",
+    "last_name": "Horton",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SEA",
+    "player_id": "12497"
+  },
+  {
+    "search_full_name": "harrisonmevis",
+    "first_name": "Harrison",
+    "last_name": "Mevis",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "LAR",
+    "player_id": "12015"
+  },
+  {
+    "search_full_name": "jackbech",
+    "first_name": "Jack",
+    "last_name": "Bech",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LV",
+    "player_id": "12483"
+  },
+  {
+    "search_full_name": "isaiahdavis",
+    "first_name": "Isaiah",
+    "last_name": "Davis",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NYJ",
+    "player_id": "11571"
+  },
+  {
+    "search_full_name": "tedhurst",
+    "first_name": "Ted",
+    "last_name": "Hurst",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TB",
+    "player_id": "13317"
+  },
+  {
+    "search_full_name": "najeeharris",
+    "first_name": "Najee",
+    "last_name": "Harris",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": null,
+    "player_id": "7528"
+  },
+  {
+    "search_full_name": "mackhollins",
+    "first_name": "Mack",
+    "last_name": "Hollins",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NE",
+    "player_id": "4177"
+  },
+  {
+    "search_full_name": "brashardsmith",
+    "first_name": "Brashard",
+    "last_name": "Smith",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "KC",
+    "player_id": "12455"
+  },
+  {
+    "search_full_name": "shedeursanders",
+    "first_name": "Shedeur",
+    "last_name": "Sanders",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "CLE",
+    "player_id": "12524"
+  },
+  {
+    "search_full_name": "keenanallen",
+    "first_name": "Keenan",
+    "last_name": "Allen",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": null,
+    "player_id": "1479"
+  },
+  {
+    "search_full_name": "dariusslayton",
+    "first_name": "Darius",
+    "last_name": "Slayton",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYG",
+    "player_id": "6149"
+  },
+  {
+    "search_full_name": "xavierlegette",
+    "first_name": "Xavier",
+    "last_name": "Legette",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CAR",
+    "player_id": "11626"
+  },
+  {
+    "search_full_name": "tyjohnson",
+    "first_name": "Ty",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "BUF",
+    "player_id": "6039"
+  },
+  {
+    "search_full_name": "willutz",
+    "first_name": "Wil",
+    "last_name": "Lutz",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "DEN",
+    "player_id": "3678"
+  },
+  {
+    "search_full_name": "tuatagovailoa",
+    "first_name": "Tua",
+    "last_name": "Tagovailoa",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "ATL",
+    "player_id": "6768"
+  },
+  {
+    "search_full_name": "devaughnvele",
+    "first_name": "Devaughn",
+    "last_name": "Vele",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NO",
+    "player_id": "11834"
+  },
+  {
+    "search_full_name": "jaydonblue",
+    "first_name": "Jaydon",
+    "last_name": "Blue",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DAL",
+    "player_id": "12457"
+  },
+  {
+    "search_full_name": "jaketonges",
+    "first_name": "Jake",
+    "last_name": "Tonges",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "SF",
+    "player_id": "8698"
+  },
+  {
+    "search_full_name": "lequintallen",
+    "first_name": "LeQuint",
+    "last_name": "Allen",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "JAX",
+    "player_id": "12544"
+  },
+  {
+    "search_full_name": "justicehill",
+    "first_name": "Justice",
+    "last_name": "Hill",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "BAL",
+    "player_id": "5995"
+  },
+  {
+    "search_full_name": "jeromeford",
+    "first_name": "Jerome",
+    "last_name": "Ford",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "WAS",
+    "player_id": "8143"
+  },
+  {
+    "search_full_name": "willreichard",
+    "first_name": "Will",
+    "last_name": "Reichard",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "MIN",
+    "player_id": "11792"
+  },
+  {
+    "search_full_name": "charliesmyth",
+    "first_name": "Charlie",
+    "last_name": "Smyth",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "NO",
+    "player_id": "11653"
+  },
+  {
+    "search_full_name": "georgeholani",
+    "first_name": "George",
+    "last_name": "Holani",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SEA",
+    "player_id": "12048"
+  },
+  {
+    "search_full_name": "djgiddens",
+    "first_name": "DJ",
+    "last_name": "Giddens",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "IND",
+    "player_id": "12471"
+  },
+  {
+    "search_full_name": "tyquanthornton",
+    "first_name": "Tyquan",
+    "last_name": "Thornton",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "KC",
+    "player_id": "8188"
+  },
+  {
+    "search_full_name": "devinsingletary",
+    "first_name": "Devin",
+    "last_name": "Singletary",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NYG",
+    "player_id": "6130"
+  },
+  {
+    "search_full_name": "chrisbrooks",
+    "first_name": "Chris",
+    "last_name": "Brooks",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "GB",
+    "player_id": "11370"
+  },
+  {
+    "search_full_name": "jaleelmclaughlin",
+    "first_name": "Jaleel",
+    "last_name": "McLaughlin",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DEN",
+    "player_id": "11439"
+  },
+  {
+    "search_full_name": "jordanjames",
+    "first_name": "Jordan",
+    "last_name": "James",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SF",
+    "player_id": "12467"
+  },
+  {
+    "search_full_name": "sethmcgowan",
+    "first_name": "Seth",
+    "last_name": "McGowan",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "IND",
+    "player_id": "13424"
+  },
+  {
+    "search_full_name": "maxklare",
+    "first_name": "Max",
+    "last_name": "Klare",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LAR",
+    "player_id": "13278"
+  },
+  {
+    "search_full_name": "mikegesicki",
+    "first_name": "Mike",
+    "last_name": "Gesicki",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "CIN",
+    "player_id": "4993"
+  },
+  {
+    "search_full_name": "isaacguerendo",
+    "first_name": "Isaac",
+    "last_name": "Guerendo",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SF",
+    "player_id": "11651"
+  },
+  {
+    "search_full_name": "samajeperine",
+    "first_name": "Samaje",
+    "last_name": "Perine",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CIN",
+    "player_id": "4147"
+  },
+  {
+    "search_full_name": "joemixon",
+    "first_name": "Joe",
+    "last_name": "Mixon",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": null,
+    "player_id": "4018"
+  },
+  {
+    "search_full_name": "marshawnlloyd",
+    "first_name": "MarShawn",
+    "last_name": "Lloyd",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "GB",
+    "player_id": "11581"
+  },
+  {
+    "search_full_name": "deshaunwatson",
+    "first_name": "Deshaun",
+    "last_name": "Watson",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "CLE",
+    "player_id": "4017"
+  },
+  {
+    "search_full_name": "malikdavis",
+    "first_name": "Malik",
+    "last_name": "Davis",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DAL",
+    "player_id": "8800"
+  },
+  {
+    "search_full_name": "kirkcousins",
+    "first_name": "Kirk",
+    "last_name": "Cousins",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "LV",
+    "player_id": "1166"
+  },
+  {
+    "search_full_name": "emaridemercado",
+    "first_name": "Emari",
+    "last_name": "Demercado",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "KC",
+    "player_id": "11199"
+  },
+  {
+    "search_full_name": "tysimpson",
+    "first_name": "Ty",
+    "last_name": "Simpson",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "LAR",
+    "player_id": "13275"
+  },
+  {
+    "search_full_name": "gregdulcich",
+    "first_name": "Greg",
+    "last_name": "Dulcich",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "MIA",
+    "player_id": "8172"
+  },
+  {
+    "search_full_name": "jmaritaylor",
+    "first_name": "J'Mari",
+    "last_name": "Taylor",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "JAX",
+    "player_id": "13348"
+  },
+  {
+    "search_full_name": "isaiahbond",
+    "first_name": "Isaiah",
+    "last_name": "Bond",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CLE",
+    "player_id": "12503"
+  },
+  {
+    "search_full_name": "tahjbrooks",
+    "first_name": "Tahj",
+    "last_name": "Brooks",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CIN",
+    "player_id": "12543"
+  },
+  {
+    "search_full_name": "andreiiosivas",
+    "first_name": "Andrei",
+    "last_name": "Iosivas",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CIN",
+    "player_id": "10226"
+  },
+  {
+    "search_full_name": "jarquezhunter",
+    "first_name": "Jarquez",
+    "last_name": "Hunter",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "LAR",
+    "player_id": "11569"
+  },
+  {
+    "search_full_name": "trevoretienne",
+    "first_name": "Trevor",
+    "last_name": "Etienne",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CAR",
+    "player_id": "12531"
+  },
+  {
+    "search_full_name": "jjmccarthy",
+    "first_name": "J.J.",
+    "last_name": "McCarthy",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "MIN",
+    "player_id": "11565"
+  },
+  {
+    "search_full_name": "oscardelp",
+    "first_name": "Oscar",
+    "last_name": "Delp",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NO",
+    "player_id": "13319"
+  },
+  {
+    "search_full_name": "audricestime",
+    "first_name": "Audric",
+    "last_name": "Estime",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NO",
+    "player_id": "11579"
+  },
+  {
+    "search_full_name": "cedrictillman",
+    "first_name": "Cedric",
+    "last_name": "Tillman",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CLE",
+    "player_id": "10444"
+  },
+  {
+    "search_full_name": "konatamumpfield",
+    "first_name": "Konata",
+    "last_name": "Mumpfield",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LAR",
+    "player_id": "12718"
+  },
+  {
+    "search_full_name": "calvinaustin",
+    "first_name": "Calvin",
+    "last_name": "Austin",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYG",
+    "player_id": "8125"
+  },
+  {
+    "search_full_name": "kareemhunt",
+    "first_name": "Kareem",
+    "last_name": "Hunt",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": null,
+    "player_id": "4098"
+  },
+  {
+    "search_full_name": "lukemccaffrey",
+    "first_name": "Luke",
+    "last_name": "McCaffrey",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "WAS",
+    "player_id": "11650"
+  },
+  {
+    "search_full_name": "tezjohnson",
+    "first_name": "Tez",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TB",
+    "player_id": "12485"
+  },
+  {
+    "search_full_name": "jalenroyals",
+    "first_name": "Jalen",
+    "last_name": "Royals",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "KC",
+    "player_id": "12505"
+  },
+  {
+    "search_full_name": "macjones",
+    "first_name": "Mac",
+    "last_name": "Jones",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "SF",
+    "player_id": "7527"
+  },
+  {
+    "search_full_name": "willshipley",
+    "first_name": "Will",
+    "last_name": "Shipley",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PHI",
+    "player_id": "11577"
+  },
+  {
+    "search_full_name": "kaelonblack",
+    "first_name": "Kaelon",
+    "last_name": "Black",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SF",
+    "player_id": "13414"
+  },
+  {
+    "search_full_name": "jahandotson",
+    "first_name": "Jahan",
+    "last_name": "Dotson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "ATL",
+    "player_id": "8119"
+  },
+  {
+    "search_full_name": "darnellwashington",
+    "first_name": "Darnell",
+    "last_name": "Washington",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "PIT",
+    "player_id": "9479"
+  },
+  {
+    "search_full_name": "tylerhigbee",
+    "first_name": "Tyler",
+    "last_name": "Higbee",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LAR",
+    "player_id": "3271"
+  },
+  {
+    "search_full_name": "noahgray",
+    "first_name": "Noah",
+    "last_name": "Gray",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "KC",
+    "player_id": "7828"
+  },
+  {
+    "search_full_name": "nickchubb",
+    "first_name": "Nick",
+    "last_name": "Chubb",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": null,
+    "player_id": "4988"
+  },
+  {
+    "search_full_name": "michaelcarter",
+    "first_name": "Michael",
+    "last_name": "Carter",
+    "fantasy_positions": [
+      "DB"
+    ],
+    "team": "PHI",
+    "player_id": "7835"
+  },
+  {
+    "search_full_name": "zanegonzalez",
+    "first_name": "Zane",
+    "last_name": "Gonzalez",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "MIA",
+    "player_id": "4233"
+  },
+  {
+    "search_full_name": "olamidezaccheaus",
+    "first_name": "Olamide",
+    "last_name": "Zaccheaus",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "ATL",
+    "player_id": "6271"
+  },
+  {
+    "search_full_name": "austinekeler",
+    "first_name": "Austin",
+    "last_name": "Ekeler",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": null,
+    "player_id": "4663"
+  },
+  {
+    "search_full_name": "justinfields",
+    "first_name": "Justin",
+    "last_name": "Fields",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "KC",
+    "player_id": "7591"
+  },
+  {
+    "search_full_name": "dontethornton",
+    "first_name": "Dont'e",
+    "last_name": "Thornton",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LV",
+    "player_id": "12541"
+  },
+  {
+    "search_full_name": "brycelance",
+    "first_name": "Bryce",
+    "last_name": "Lance",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NO",
+    "player_id": "13420"
+  },
+  {
+    "search_full_name": "jalentolbert",
+    "first_name": "Jalen",
+    "last_name": "Tolbert",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIA",
+    "player_id": "8117"
+  },
+  {
+    "search_full_name": "joshuapalmer",
+    "first_name": "Joshua",
+    "last_name": "Palmer",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BUF",
+    "player_id": "7670"
+  },
+  {
+    "search_full_name": "elijaharroyo",
+    "first_name": "Elijah",
+    "last_name": "Arroyo",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "SEA",
+    "player_id": "12521"
+  },
+  {
+    "search_full_name": "demariodouglas",
+    "first_name": "DeMario",
+    "last_name": "Douglas",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NE",
+    "player_id": "9501"
+  },
+  {
+    "search_full_name": "carsonbeck",
+    "first_name": "Carson",
+    "last_name": "Beck",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "ARI",
+    "player_id": "13272"
+  },
+  {
+    "search_full_name": "nickfolk",
+    "first_name": "Nick",
+    "last_name": "Folk",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "ATL",
+    "player_id": "650"
+  },
+  {
+    "search_full_name": "blakegrupe",
+    "first_name": "Blake",
+    "last_name": "Grupe",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "IND",
+    "player_id": "11058"
+  },
+  {
+    "search_full_name": "anthonyrichardson",
+    "first_name": "Anthony",
+    "last_name": "Richardson",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "IND",
+    "player_id": "9229"
+  },
+  {
+    "search_full_name": "calebdouglas",
+    "first_name": "Caleb",
+    "last_name": "Douglas",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIA",
+    "player_id": "13296"
+  },
+  {
+    "search_full_name": "eliheidenreich",
+    "first_name": "Eli",
+    "last_name": "Heidenreich",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PIT",
+    "player_id": "13423"
+  },
+  {
+    "search_full_name": "jakeelliott",
+    "first_name": "Jake",
+    "last_name": "Elliott",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "PHI",
+    "player_id": "4195"
+  },
+  {
+    "search_full_name": "ryanfitzgerald",
+    "first_name": "Ryan",
+    "last_name": "Fitzgerald",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "CAR",
+    "player_id": "12961"
+  },
+  {
+    "search_full_name": "johnmetchie",
+    "first_name": "John",
+    "last_name": "Metchie",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CAR",
+    "player_id": "8147"
+  },
+  {
+    "search_full_name": "jatavionsanders",
+    "first_name": "Ja'Tavion",
+    "last_name": "Sanders",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "CAR",
+    "player_id": "11600"
+  },
+  {
+    "search_full_name": "chadryland",
+    "first_name": "Chad",
+    "last_name": "Ryland",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "ARI",
+    "player_id": "10955"
+  },
+  {
+    "search_full_name": "bensauls",
+    "first_name": "Ben",
+    "last_name": "Sauls",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "NYG",
+    "player_id": "13066"
+  },
+  {
+    "search_full_name": "xavierhutchinson",
+    "first_name": "Xavier",
+    "last_name": "Hutchinson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "HOU",
+    "player_id": "10218"
+  },
+  {
+    "search_full_name": "brenenthompson",
+    "first_name": "Brenen",
+    "last_name": "Thompson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LAC",
+    "player_id": "13380"
+  },
+  {
+    "search_full_name": "michaelmayer",
+    "first_name": "Michael",
+    "last_name": "Mayer",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LV",
+    "player_id": "9482"
+  },
+  {
+    "search_full_name": "jaylinlane",
+    "first_name": "Jaylin",
+    "last_name": "Lane",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "WAS",
+    "player_id": "12641"
+  },
+  {
+    "search_full_name": "savionwilliams",
+    "first_name": "Savion",
+    "last_name": "Williams",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "GB",
+    "player_id": "12482"
+  },
+  {
+    "search_full_name": "joeyslye",
+    "first_name": "Joey",
+    "last_name": "Slye",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "TEN",
+    "player_id": "6528"
+  },
+  {
+    "search_full_name": "treylonburks",
+    "first_name": "Treylon",
+    "last_name": "Burks",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "WAS",
+    "player_id": "8135"
+  },
+  {
+    "search_full_name": "justinjoly",
+    "first_name": "Justin",
+    "last_name": "Joly",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "DEN",
+    "player_id": "13400"
+  },
+  {
+    "search_full_name": "johnbates",
+    "first_name": "John",
+    "last_name": "Bates",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "WAS",
+    "player_id": "7716"
+  },
+  {
+    "search_full_name": "brandonmcmanus",
+    "first_name": "Brandon",
+    "last_name": "McManus",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": null,
+    "player_id": "1433"
+  },
+  {
+    "search_full_name": "raheimsanders",
+    "first_name": "Raheim",
+    "last_name": "Sanders",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CLE",
+    "player_id": "12472"
+  },
+  {
+    "search_full_name": "darrenwaller",
+    "first_name": "Darren",
+    "last_name": "Waller",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": null,
+    "player_id": "2505"
+  },
+  {
+    "search_full_name": "kevincoleman",
+    "first_name": "Kevin",
+    "last_name": "Coleman",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIA",
+    "player_id": "13338"
+  },
+  {
+    "search_full_name": "tutuatwell",
+    "first_name": "Tutu",
+    "last_name": "Atwell",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIA",
+    "player_id": "7562"
+  },
+  {
+    "search_full_name": "jawharjordan",
+    "first_name": "Jawhar",
+    "last_name": "Jordan",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "HOU",
+    "player_id": "11588"
+  },
+  {
+    "search_full_name": "bensinnott",
+    "first_name": "Ben",
+    "last_name": "Sinnott",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "WAS",
+    "player_id": "11596"
+  },
+  {
+    "search_full_name": "jameiswinston",
+    "first_name": "Jameis",
+    "last_name": "Winston",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "NYG",
+    "player_id": "2306"
+  },
+  {
+    "search_full_name": "kavontaeturpin",
+    "first_name": "KaVontae",
+    "last_name": "Turpin",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DAL",
+    "player_id": "8917"
+  },
+  {
+    "search_full_name": "danielcarlson",
+    "first_name": "Daniel",
+    "last_name": "Carlson",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": null,
+    "player_id": "5095"
+  },
+  {
+    "search_full_name": "colekmet",
+    "first_name": "Cole",
+    "last_name": "Kmet",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "CHI",
+    "player_id": "6826"
+  },
+  {
+    "search_full_name": "kendrickbourne",
+    "first_name": "Kendrick",
+    "last_name": "Bourne",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "ARI",
+    "player_id": "4454"
+  },
+  {
+    "search_full_name": "cyrusallen",
+    "first_name": "Cyrus",
+    "last_name": "Allen",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "KC",
+    "player_id": "13413"
+  },
+  {
+    "search_full_name": "antoniogibson",
+    "first_name": "Antonio",
+    "last_name": "Gibson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": null,
+    "player_id": "6945"
+  },
+  {
+    "search_full_name": "kalifraymond",
+    "first_name": "Kalif",
+    "last_name": "Raymond",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CHI",
+    "player_id": "3634"
+  },
+  {
+    "search_full_name": "terrelljennings",
+    "first_name": "Terrell",
+    "last_name": "Jennings",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NE",
+    "player_id": "12412"
+  },
+  {
+    "search_full_name": "malikbenson",
+    "first_name": "Malik",
+    "last_name": "Benson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LV",
+    "player_id": "13329"
+  },
+  {
+    "search_full_name": "joemilton",
+    "first_name": "Joe",
+    "last_name": "Milton",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "DAL",
+    "player_id": "11557"
+  },
+  {
+    "search_full_name": "nickwestbrookikhine",
+    "first_name": "Nick",
+    "last_name": "Westbrook-Ikhine",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "IND",
+    "player_id": "7496"
+  },
+  {
+    "search_full_name": "taifelton",
+    "first_name": "Tai",
+    "last_name": "Felton",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIN",
+    "player_id": "12496"
+  },
+  {
+    "search_full_name": "dawsonknox",
+    "first_name": "Dawson",
+    "last_name": "Knox",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "BUF",
+    "player_id": "5906"
+  },
+  {
+    "search_full_name": "tylerbass",
+    "first_name": "Tyler",
+    "last_name": "Bass",
+    "fantasy_positions": [
+      "K"
+    ],
+    "team": "BUF",
+    "player_id": "7042"
+  },
+  {
+    "search_full_name": "zachertz",
+    "first_name": "Zach",
+    "last_name": "Ertz",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": null,
+    "player_id": "1339"
+  },
+  {
+    "search_full_name": "noahfant",
+    "first_name": "Noah",
+    "last_name": "Fant",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NO",
+    "player_id": "5857"
+  },
+  {
+    "search_full_name": "cjdaniels",
+    "first_name": "CJ",
+    "last_name": "Daniels",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LAR",
+    "player_id": "13270"
+  },
+  {
+    "search_full_name": "dameonpierce",
+    "first_name": "Dameon",
+    "last_name": "Pierce",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PHI",
+    "player_id": "8129"
+  },
+  {
+    "search_full_name": "zavionthomas",
+    "first_name": "Zavion",
+    "last_name": "Thomas",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CHI",
+    "player_id": "13411"
+  },
+  {
+    "search_full_name": "damienmartinez",
+    "first_name": "Damien",
+    "last_name": "Martinez",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "GB",
+    "player_id": "12462"
+  },
+  {
+    "search_full_name": "deionburks",
+    "first_name": "Deion",
+    "last_name": "Burks",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "IND",
+    "player_id": "13333"
+  },
+  {
+    "search_full_name": "lukemusgrave",
+    "first_name": "Luke",
+    "last_name": "Musgrave",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "GB",
+    "player_id": "9481"
+  },
+  {
+    "search_full_name": "danielbellinger",
+    "first_name": "Daniel",
+    "last_name": "Bellinger",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "TEN",
+    "player_id": "8225"
+  },
+  {
+    "search_full_name": "eliraridon",
+    "first_name": "Eli",
+    "last_name": "Raridon",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NE",
+    "player_id": "13421"
+  },
+  {
+    "search_full_name": "jonnusmith",
+    "first_name": "Jonnu",
+    "last_name": "Smith",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": null,
+    "player_id": "4144"
+  },
+  {
+    "search_full_name": "marcusmariota",
+    "first_name": "Marcus",
+    "last_name": "Mariota",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "WAS",
+    "player_id": "2307"
+  },
+  {
+    "search_full_name": "jammiller",
+    "first_name": "Jam",
+    "last_name": "Miller",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NE",
+    "player_id": "13403"
+  },
+  {
+    "search_full_name": "gardnerminshew",
+    "first_name": "Gardner",
+    "last_name": "Minshew",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "ARI",
+    "player_id": "6011"
+  },
+  {
+    "search_full_name": "joeflacco",
+    "first_name": "Joe",
+    "last_name": "Flacco",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "CIN",
+    "player_id": "19"
+  },
+  {
+    "search_full_name": "marlinklein",
+    "first_name": "Marlin",
+    "last_name": "Klein",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "HOU",
+    "player_id": "13307"
+  },
+  {
+    "search_full_name": "elijahhiggins",
+    "first_name": "Elijah",
+    "last_name": "Higgins",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "ARI",
+    "player_id": "10231"
+  },
+  {
+    "search_full_name": "samroush",
+    "first_name": "Sam",
+    "last_name": "Roush",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "CHI",
+    "player_id": "13322"
+  },
+  {
+    "search_full_name": "demarcusrobinson",
+    "first_name": "Demarcus",
+    "last_name": "Robinson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SF",
+    "player_id": "3286"
+  },
+  {
+    "search_full_name": "roberthenry",
+    "first_name": "Robert",
+    "last_name": "Henry",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "WAS",
+    "player_id": "13418"
+  },
+  {
+    "search_full_name": "philmafah",
+    "first_name": "Phil",
+    "last_name": "Mafah",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DAL",
+    "player_id": "12738"
+  },
+  {
+    "search_full_name": "devontezwalker",
+    "first_name": "Devontez",
+    "last_name": "Walker",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BAL",
+    "player_id": "11629"
+  },
+  {
+    "search_full_name": "tylerbadie",
+    "first_name": "Tyler",
+    "last_name": "Badie",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DEN",
+    "player_id": "8208"
+  },
+  {
+    "search_full_name": "rileyleonard",
+    "first_name": "Riley",
+    "last_name": "Leonard",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "IND",
+    "player_id": "12470"
+  }
+]

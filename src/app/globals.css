@@ -11,6 +11,72 @@
   --surface: #ffffff;
   --surface-hover: #f3f4f6;
   --danger: #AA0000;
+
+    /*NFL Team Colors*/
+    --ari: #97233F;
+    /* Arizona Cardinals (Cardinal Red) */
+    --atl: #000;
+    /* Atlanta Falcons (Falcons Red) */
+    --bal: #241773;
+    /* Baltimore Ravens (Ravens Purple) */
+    --buf: #00338D;
+    /* Buffalo Bills (Royal Blue) */
+    --car: #0085CA;
+    /* Carolina Panthers (Panthers Blue) */
+    --chi: #0B162A;
+    /* Chicago Bears (Bears Navy) */
+    --cin: #FB4F14;
+    /* Cincinnati Bengals (Bengals Orange) */
+    --cle: #311D00;
+    /* Cleveland Browns (Brown) */
+    --dal: #003594;
+    /* Dallas Cowboys (Cowboys Blue) */
+    --den: #FB4F14;
+    /* Denver Broncos (Broncos Orange) */
+    --det: #0076B6;
+    /* Detroit Lions (Honolulu Blue) */
+    --gb: #203731;
+    /* Green Bay Packers (Dark Green) */
+    --hou: #03202F;
+    /* Houston Texans (Deep Steel Blue) */
+    --ind: #003DA5;
+    /* Indianapolis Colts (Colts Blue) */
+    --jax: #006778;
+    /* Jacksonville Jaguars (Teal) */
+    --kc: #E31837;
+    /* Kansas City Chiefs (Red) */
+    --lv: #000000;
+    /* Las Vegas Raiders (Black) */
+    --lac: #0080C6;
+    /* Los Angeles Chargers (Powder Blue) */
+    --lar: #003594;
+    /* Los Angeles Rams (Royal Blue) */
+    --mia: #008E97;
+    /* Miami Dolphins (Aqua) */
+    --min: #4F2683;
+    /* Minnesota Vikings (Purple) */
+    --ne: #002244;
+    /* New England Patriots (Navy Blue) */
+    --no: #D3BC8D;
+    /* New Orleans Saints (Old Gold) */
+    --nyg: #0B2265;
+    /* New York Giants (Giants Blue) */
+    --nyj: #125740;
+    /* New York Jets (Gotham Green) */
+    --phi: #004C54;
+    /* Philadelphia Eagles (Midnight Green) */
+    --pit: #FFB612;
+    /* Pittsburgh Steelers (Gold) */
+    --sf: #AA0000;
+    /* San Francisco 49ers (49ers Red) */
+    --sea: #002244;
+    /* Seattle Seahawks (College Navy) */
+    --tb: #D50A0A;
+    /* Tampa Bay Buccaneers (Red) */
+    --ten: #4B92DB;
+    /* Tennessee Titans (Titans Blue) */
+    --was: #5A1414;
+    /* Washington Commanders (Burgundy) */
 }
 
 .dark {

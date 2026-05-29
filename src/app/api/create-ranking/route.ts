@@ -1,5 +1,7 @@
 import { db, auth, admin } from "@/lib/firebase-admin";
 import { NextRequest } from "next/server";
+import fs from "fs";
+import path from "path";
 
 export async function POST(req: NextRequest) {
   let body;
@@ -37,37 +39,16 @@ export async function POST(req: NextRequest) {
   const rankingRef = db.collection("rankings").doc();
   const rankingId = rankingRef.id;
 
+  const filePath = path.join(process.cwd(), "public", "data", "player_rankings.json");
+  const fileContents = fs.readFileSync(filePath, "utf-8");
+  const playerRanksData = JSON.parse(fileContents);
+
   try {
-    const templateSnap = await db.collection("rankr-template").get();
-
-    if (templateSnap.empty) {
-      return Response.json(
-        { error: "Ranking template is empty" },
-        { status: 500 }
-      );
-    }
-
-    const playerRanks = templateSnap.docs
-      .map((templateDoc) => {
-        const templateData = templateDoc.data();
-
-        const playerId = templateData.player_id;
-        const rank = templateData.rank;
-
-        if (!playerId || rank == null) return null;
-
-        return {
-          player_id: playerId,
-          rank,
-        };
-      })
-      .filter(Boolean);
-
     await rankingRef.set({
       rankingId,
       authorUid,
       rankObj,
-      playerRanks,
+      playerRanks: playerRanksData,
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
