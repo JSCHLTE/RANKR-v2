@@ -3,6 +3,9 @@ import { NextRequest } from "next/server";
 import fs from "fs";
 import path from "path";
 
+const filePath = path.join(process.cwd(), "public", "data", "player_rankings.json");
+const playerRanksData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+
 export async function POST(req: NextRequest) {
   let body;
 
@@ -36,25 +39,46 @@ export async function POST(req: NextRequest) {
 
   const authorUid = decodedToken.uid;
 
-  const rankingRef = db.collection("rankings").doc();
+  const rankingRef = db.collection("rankings-meta").doc();
   const rankingId = rankingRef.id;
 
-  const filePath = path.join(process.cwd(), "public", "data", "player_rankings.json");
-  const fileContents = fs.readFileSync(filePath, "utf-8");
-  const playerRanksData = JSON.parse(fileContents);
+  const profileSnap = await db.collection("users").doc(authorUid).get();
+  const profile = profileSnap.data();
+
+  if (!profileSnap.exists || !profile) {
+    return Response.json({ error: "User profile not found" }, { status: 404 });
+  }
+
+  if (!rankObj.name || !rankObj.positionGroup || !rankObj.mode || !rankObj.visibility) {
+    return Response.json({ error: "Missing required ranking fields" }, { status: 400 });
+  }
 
   try {
-    await rankingRef.set({
+
+    const batch = db.batch();
+
+    batch.set(rankingRef, {
       rankingId,
-      authorUid,
+      author: {
+        uid: authorUid,
+        username: profile.username,
+        displayName: profile.displayName,
+        pfp: profile.pfp,
+      },
       rankObj,
-      playerRanks: playerRanksData,
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
+    
+    batch.set(db.collection("rankings-ranks").doc(rankingId), {
+      ranks: playerRanksData,
+    });
+    
+    await batch.commit();
 
     return Response.json({ rankingId }, { status: 201 });
-  } catch (e: any) {
-    return Response.json({ error: e.message }, { status: 500 });
+  } catch (e) {
+      console.error(e);
+      return Response.json({ error: "Internal server error" }, { status: 500 });
   }
 }

@@ -274,10 +274,10 @@
     "first_name": "Lamar",
     "last_name": "Jackson",
     "fantasy_positions": [
-      "DB"
+      "QB"
     ],
-    "team": null,
-    "player_id": "6994"
+    "team": "BAL",
+    "player_id": "4881"
   },
   {
     "search_full_name": "garrettwilson",

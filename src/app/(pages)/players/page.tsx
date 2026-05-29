@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { RookieSvg } from "@/components/rookieIcon/RookieSvg";
 
 
 const positionColors: Record<string, string> = {
@@ -63,7 +64,7 @@ const Players = () => {
               <img
                 src={`https://sleepercdn.com/content/nfl/players/${player.player_id}.jpg`}
                 alt={`${player.first_name} ${player.last_name}`}
-                className="w-12 h-12 rounded-full object-cover object-top bg-gray-200 dark:bg-white/10 ring-2 ring-white dark:ring-gray-900"
+                className="w-17 h-17 rounded-full object-cover object-top bg-gray-200 dark:bg-white/10 ring-2 ring-white dark:ring-gray-900"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =
                     "https://sleepercdn.com/images/v2/icons/player_default.webp";
@@ -73,21 +74,33 @@ const Players = () => {
 
             {/* Player info */}
             <div className="flex flex-col gap-1 min-w-0 flex-1">
-              <span className="font-semibold text-gray-900 dark:text-white text-sm leading-tight truncate">
-                {player.first_name} {player.last_name}
-              </span>
+              <div className="flex">
+                <span className="flex font-semibold text-gray-900 dark:text-white text-md leading-tight truncate">
+                  {player.first_name} {player.last_name}
+                </span>
+                {/* <RookieSvg color="#ffffff" width="20" height="20" /> */}
+              </div>
 
               <div className="flex items-center gap-1.5 flex-wrap">
                 {pos && (
-                  <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${posClass}`}>
+                  <span className={`text-sm font-semibold px-2 py-0.5 rounded-[5px] ${posClass}`}>
                     {pos}
                   </span>
                 )}
                 {player.team ? (
-                  <span className={`text-xs font-medium px-2 py-0.5 rounded-full text-gray-600 dark:text-gray-300`} style={{ backgroundColor: `var(--${player.team.toLowerCase()})` }}>
-                    {player.team}
+                  <span className={`text-sm font-medium px-2 py-0.5 rounded-[5px] text-gray-600 dark:text-gray-300`} style={{ backgroundColor: `var(--${player.team.toLowerCase()})` }}>
+                    {/* {player.team} */}
+                    <img
+                src={`https://sleepercdn.com/images/team_logos/nfl/${player.team.toLowerCase()}.png`}
+                alt={`${player.first_name} ${player.last_name}`}
+                className="w-5 h-5"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src =
+                    "https://sleepercdn.com/images/v2/icons/player_default.webp";
+                }}
+              />
                   </span>
-                ) :                   <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 dark:bg-white/10 dark:text-gray-300">
+                ) :                   <span className="text-sm font-medium px-2 py-0.5 rounded-[5px] bg-gray-100 text-gray-600 dark:bg-white/10 dark:text-gray-300">
                 FA
               </span> }
               </div>

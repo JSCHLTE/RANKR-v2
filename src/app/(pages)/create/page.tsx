@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import PositionGroupSelector from "./_components/PositionGroupSelector";
 import CustomFormatSection from "./_components/CustomFormatSection";
 import { useAuth } from "@/context/AuthContext";
-import { RankObj, ScoringFormat } from "@/types/rank";
+import { RankObj } from "@/types/rank";
 
 const Required = () => (
   <span className="text-[var(--accent)] ml-0.5">*</span>
@@ -15,8 +15,7 @@ const Optional = () => (
 );
 
 export default function CreateRankingPage() {
-  const { profile, user } = useAuth();
-
+  const { user, profile } = useAuth();
 
   const [rankObj, setRankObj] = useState<RankObj>({
       name: "",
@@ -44,7 +43,7 @@ export default function CreateRankingPage() {
     try {
       const res = await fetch("/api/create-ranking", {
         method: "POST",
-        body: JSON.stringify({ rankObj: rankObj }),
+        body: JSON.stringify({ rankObj }),
         headers: { 
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
@@ -323,7 +322,7 @@ const updateField = <K extends keyof RankObj>(
         </label>
         <div className="grid grid-cols-2 gap-3">
           {[
-            { value: "SEASON", label: "Season", description: "Overall rankings for the full season" },
+            { value: "SEASONAL", label: "Seasonal", description: "Overall rankings for the full season" },
             { value: "WEEKLY", label: "Weekly", description: "Rankings for a specific upcoming week" },
           ].map((option) => (
             <button
