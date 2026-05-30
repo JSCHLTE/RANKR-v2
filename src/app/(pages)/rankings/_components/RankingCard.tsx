@@ -81,7 +81,7 @@ function formatTimestamp(ts: Timestamp | undefined): string {
   };
 
 export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
-    const { rankObj, createdAt, updatedAt, author } = ranking;
+    const { rankObj, createdAt, updatedAt, author, rankingId } = ranking;
     const positionLabels = getPositionLabels(rankObj);
     const tags = buildTags(rankObj);
     const formatEntries = rankObj.format
@@ -93,7 +93,7 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
     const isPrivate = rankObj.visibility === "PRIVATE";
   
     return (
-      <Link href="#" className="block group h-full rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
+      <Link href={`/rankings/${rankingId}`} className="block group h-full rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
         <article className="flex flex-col h-full rounded-xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden transition-all duration-200 group-hover:border-[var(--border-hover)] group-hover:bg-[var(--surface-hover)] group-hover:-translate-y-0.5 group-hover:shadow-lg">
   
           {/* ── Header ── */}
