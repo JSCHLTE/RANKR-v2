@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Timestamp } from "firebase/firestore";
-import { RankObj, RankingMeta } from "@/types/rank";
+import { RankFormat, RankObj, RankingMeta } from "@/types/rank";
 
 const POSITION_COLORS: Record<string, { bg: string; text: string; border: string; }> = {
     QB:    { bg: "bg-red-500/10",     text: "text-red-400",     border: "border-red-500/30"     },
@@ -32,30 +32,30 @@ function formatTimestamp(ts: Timestamp | undefined): string {
       year: "numeric",
     });
   }
+
+  const POSITION_ORDER = ["QB", "RB", "WR", "TE", "FLEX", "SFLEX", "K", "DEF"];
   
   function getPositionLabels(rankObj: RankObj): string[] {
     if (
       rankObj.positionGroup?.toLowerCase() === "custom" &&
       rankObj.customPositions?.length
     ) {
-      return rankObj.customPositions;
+      return [...rankObj.customPositions].sort(
+        (a, b) => POSITION_ORDER.indexOf(a) - POSITION_ORDER.indexOf(b)
+      );
     }
     return [rankObj.positionGroup ?? "ALL"];
   }
+
   
-  interface Tag {
-    label: string;
-    value: string;
-  }
-  
-  function buildTags(rankObj: RankObj): Tag[] {
-    const tags: Tag[] = [];
-    if (rankObj.leagueSize) tags.push({ label: "League",   value: `${rankObj.leagueSize} Teams` });
-    if (rankObj.leagueType) tags.push({ label: "Type",     value: rankObj.leagueType });
-    if (rankObj.scoring)    tags.push({ label: "Scoring",  value: rankObj.scoring });
-    if (rankObj.rankType)   tags.push({ label: "Period",   value: rankObj.rankType });
-    if (rankObj.mode)       tags.push({ label: "Mode",     value: rankObj.mode });
-    if (rankObj.onlyRookies) tags.push({ label: "",        value: "Rookies Only" });
+  function buildTags(rankObj: RankObj) {
+    const tags: string[] = [];
+    if (rankObj.leagueSize) tags.push(`${rankObj.leagueSize} TEAMS`);
+    if (rankObj.leagueType) tags.push(rankObj.leagueType);
+    if (rankObj.scoring)    tags.push(rankObj.scoring);
+    if (rankObj.rankType)   tags.push(rankObj.rankType);
+    if (rankObj.mode)       tags.push(rankObj.mode);
+    if (rankObj.onlyRookies) tags.push("Rookies Only");
     return tags;
   }
   
@@ -85,8 +85,10 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
     const positionLabels = getPositionLabels(rankObj);
     const tags = buildTags(rankObj);
     const formatEntries = rankObj.format
-      ? Object.entries(rankObj.format).filter(([, v]) => v && v > 0)
-      : [];
+      ? Object.entries(rankObj.format)
+      .filter(([, v]) => v && v > 0)
+      .sort(([a], [b]) => POSITION_ORDER.indexOf(a) - POSITION_ORDER.indexOf(b))
+  : [];
     const wasEdited = updatedAt && createdAt && updatedAt.seconds !== createdAt.seconds;
     const isPrivate = rankObj.visibility === "PRIVATE";
   
@@ -161,10 +163,7 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
                     key={i}
                     className="text-[11px] text-[var(--text-muted)] bg-[var(--surface-hover)] border border-[var(--border)] rounded-md px-2 py-1 leading-none"
                   >
-                    {tag.label && (
-                      <span className="opacity-60">{tag.label}: </span>
-                    )}
-                    {tag.value}
+                    {tag}
                   </span>
                 ))}
               </div>
