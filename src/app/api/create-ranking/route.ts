@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
     return Response.json({ error: "User profile not found" }, { status: 404 });
   }
 
-  if (!rankObj.name || !rankObj.positionGroup || !rankObj.mode || !rankObj.visibility) {
+  if (!rankObj.name || !rankObj.positionGroup || rankObj.positionGroup <= 0 || !rankObj.mode || !rankObj.visibility) {
     return Response.json({ error: "Missing required ranking fields" }, { status: 400 });
   }
 

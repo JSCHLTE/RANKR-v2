@@ -89,16 +89,7 @@ const Players = () => {
                 )}
                 {player.team ? (
                   <span className={`text-sm font-medium px-2 py-0.5 rounded-[5px] text-gray-600 dark:text-gray-300`} style={{ backgroundColor: `var(--${player.team.toLowerCase()})` }}>
-                    {/* {player.team} */}
-                    <img
-                src={`https://sleepercdn.com/images/team_logos/nfl/${player.team.toLowerCase()}.png`}
-                alt={`${player.first_name} ${player.last_name}`}
-                className="w-5 h-5"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src =
-                    "https://sleepercdn.com/images/v2/icons/player_default.webp";
-                }}
-              />
+                    {player.team}
                   </span>
                 ) :                   <span className="text-sm font-medium px-2 py-0.5 rounded-[5px] bg-gray-100 text-gray-600 dark:bg-white/10 dark:text-gray-300">
                 FA

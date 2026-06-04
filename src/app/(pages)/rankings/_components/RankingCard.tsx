@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Timestamp } from "firebase/firestore";
-import { RankFormat, RankObj, RankingMeta } from "@/types/rank";
+import { RankObj, RankingMeta } from "@/types/rank";
 
 const POSITION_COLORS: Record<string, { bg: string; text: string; border: string; }> = {
     QB:    { bg: "bg-red-500/10",     text: "text-red-400",     border: "border-red-500/30"     },
@@ -36,15 +36,9 @@ function formatTimestamp(ts: Timestamp | undefined): string {
   const POSITION_ORDER = ["QB", "RB", "WR", "TE", "FLEX", "SFLEX", "K", "DEF"];
   
   function getPositionLabels(rankObj: RankObj): string[] {
-    if (
-      rankObj.positionGroup?.toLowerCase() === "custom" &&
-      rankObj.customPositions?.length
-    ) {
-      return [...rankObj.customPositions].sort(
+    return [...rankObj.positionGroup].sort(
         (a, b) => POSITION_ORDER.indexOf(a) - POSITION_ORDER.indexOf(b)
       );
-    }
-    return [rankObj.positionGroup ?? "ALL"];
   }
 
   
@@ -55,7 +49,7 @@ function formatTimestamp(ts: Timestamp | undefined): string {
     if (rankObj.scoring)    tags.push(rankObj.scoring);
     if (rankObj.rankType)   tags.push(rankObj.rankType);
     if (rankObj.mode)       tags.push(rankObj.mode);
-    if (rankObj.onlyRookies) tags.push("Rookies Only");
+    if (rankObj.onlyRookies) tags.push("ROOKIES");
     return tags;
   }
   

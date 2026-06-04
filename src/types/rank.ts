@@ -1,16 +1,5 @@
 import { Timestamp } from "firebase/firestore";
 
-export interface ScoringFormat {
-    QB: number;
-    WR: number;
-    RB: number;
-    TE: number;
-    FLEX: number;
-    SFLEX: number;
-    K: number;
-    DEF: number;
-  };
-
   export interface RankFormat {
     QB?: number;
     RB?: number;
@@ -34,16 +23,16 @@ export interface ScoringFormat {
   export interface RankObj {
     name: string;
     description?: string;
-    positionGroup: string;
-    customPositions?: string[];
+    isCustomPositionGroup: boolean;
+    positionGroup: string[];
     visibility: "PUBLIC" | "PRIVATE";
-    format?: RankFormat | null;
+    format: RankFormat | null;
     leagueSize?: string;
     leagueType?: string;
     mode?: string;
     rankType?: string;
     scoring?: string;
-    onlyRookies?: boolean;
+    onlyRookies: boolean;
   }
   
   export interface RankingMeta {

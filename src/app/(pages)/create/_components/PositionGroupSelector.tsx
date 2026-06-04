@@ -1,9 +1,8 @@
 import { RankObj } from "@/types/rank";
 
 type PositionGroupSelectorProps = {
-    toggleCustomPosition: (value: string) => void;
-    customPositions: string[];
-    positionGroup: string;
+    isCustomPositionGroup: boolean;
+    positionGroup: string[];
     onlyRookies: boolean;
     updateField: <K extends keyof RankObj>(
       key: K,
@@ -12,38 +11,45 @@ type PositionGroupSelectorProps = {
   };
 
 const PositionGroupSelector = ({ 
-    toggleCustomPosition,
-    customPositions,
+    isCustomPositionGroup,
     positionGroup,
     updateField,
     onlyRookies
 }: PositionGroupSelectorProps) => {
+
   return (
     <>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {[
-            { value: "ALL", label: "All", description: "Rank every position" },
-            { value: "SKILL", label: "Skill", description: `Rank every skill position
-              (QB, WR, RB, TE)` },
-            { value: "QB", label: "QB", description: "Quarterbacks only" },
-            { value: "RB", label: "RB", description: "Running backs only" },
-            { value: "WR", label: "WR", description: "Wide receivers only" },
-            { value: "TE", label: "TE", description: "Tight ends only" },
-            { value: "K", label: "Kickers", description: "Kickers only" },
-            { value: "Defense", label: "Team Defenses", description: "Team defenses only", disabled: onlyRookies },
-            { value: "Custom", label: "Custom", description: "Choose your own position groups" },
+            { value: ["QB", "RB", "WR", "TE", "K", "DEF"], label: "All", description: "Rank every position" },
+            { value: ["QB", "RB", "WR", "TE"], label: "Skill", description: `Rank every skill position
+              (QB, RB, WR, TE)` },
+            { value: ["QB"], label: "QB", description: "Quarterbacks only" },
+            { value: ["RB"], label: "RB", description: "Running backs only" },
+            { value: ["WR"], label: "WR", description: "Wide receivers only" },
+            { value: ["TE"], label: "TE", description: "Tight ends only" },
+            { value: ["K"], label: "Kickers", description: "Kickers only" },
+            { value: ["DEF"], label: "Team Defenses", description: "Team defenses only", disabled: onlyRookies },
+            { value: ["Custom"], label: "Custom", description: "Choose your own position groups" },
           ].map((option) => (
             <button
-              key={option.value}
+              key={option.label}
               disabled={option.disabled}
               onClick={() => {
-                updateField("positionGroup", option.value);
-                if (option.value !== "Custom") updateField("customPositions", []);
+                if(option.value.includes("Custom")) {
+                  updateField("isCustomPositionGroup", true);
+                  updateField("positionGroup", []);
+                  return;
+                } else {
+                  updateField("isCustomPositionGroup", false);
+                  updateField("positionGroup", option.value);
+
+                }
               }}
               className={`text-left p-4 rounded-xl border transition-all ${
                 option.disabled
                   ? "border-[var(--border)] bg-[var(--surface)] opacity-40 cursor-not-allowed"
-                  : positionGroup === option.value
+                  : isCustomPositionGroup && option.value.includes("Custom") || !isCustomPositionGroup && positionGroup.length === option.value.length && positionGroup.every((item, index) => item === option.value[index])
                   ? "border-[var(--accent)] bg-[var(--accent)]/10 cursor-default"
                   : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] hover:cursor-pointer"
               }`}
@@ -57,14 +63,14 @@ const PositionGroupSelector = ({
         </div>
 
         {/* Custom position picker */}
-        {positionGroup === "Custom" && (
+        {isCustomPositionGroup && (
           <div className="mt-3">
             <p className="text-xs text-[var(--text-muted)] mb-2">Select one or more positions</p>
             <div className="flex flex-wrap gap-2">
               {[
                 { value: "QB", label: "QB" },
-                { value: "WR", label: "WR" },
                 { value: "RB", label: "RB" },
+                { value: "WR", label: "WR" },
                 { value: "TE", label: "TE" },
                 { value: "K", label: "K" },
                 { value: "DEF", label: "DEF", disabled: onlyRookies },
@@ -72,11 +78,17 @@ const PositionGroupSelector = ({
                 <button
                   key={pos.value}
                   disabled={pos.disabled}
-                  onClick={() => toggleCustomPosition(pos.value)}
+                  onClick={() => {
+                    if(!positionGroup.includes(pos.value)) {
+                      updateField("positionGroup", [...positionGroup, pos.value])
+                    } else {
+                      updateField("positionGroup", positionGroup.filter(item => item !== pos.value))
+                    }
+                  }}
                   className={`w-[65px] h-[65px] rounded-xl border font-semibold text-sm transition-all ${
                     pos.disabled
                       ? "border-[var(--border)] bg-[var(--surface)] opacity-40 cursor-not-allowed"
-                      : customPositions.includes(pos.value)
+                      : positionGroup.includes(pos.value)
                       ? "border-[var(--accent)] bg-[var(--accent)]/10 cursor-pointer"
                       : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] cursor-pointer"
                   }`}

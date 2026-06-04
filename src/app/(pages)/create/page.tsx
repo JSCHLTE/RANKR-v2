@@ -20,8 +20,8 @@ export default function CreateRankingPage() {
   const [rankObj, setRankObj] = useState<RankObj>({
       name: "",
       onlyRookies: false,
-      positionGroup: "ALL",
-      customPositions: [],
+      isCustomPositionGroup: false,
+      positionGroup: [],
       scoring: "",
       format: null,
       leagueType: "",
@@ -57,15 +57,6 @@ export default function CreateRankingPage() {
 
   }
 
-  const toggleCustomPosition = (value: string) => {
-    setRankObj((prev) => ({
-      ...prev,
-      customPositions: prev.customPositions.includes(value)
-        ? prev.customPositions.filter((p) => p !== value)
-        : [...prev.customPositions, value]
-    }));
-  };
-
 const updateField = <K extends keyof RankObj>(
   key: K,
   value: RankObj[K]
@@ -78,9 +69,9 @@ const updateField = <K extends keyof RankObj>(
 
   const canSubmit =
     rankObj.name.trim() !== "" &&
-    (rankObj.positionGroup !== "" || rankObj.customPositions.length > 0) &&
+    rankObj.positionGroup.length > 0 &&
     rankObj.mode !== "" &&
-    rankObj.visibility !== "";
+    rankObj.visibility;
 
   return (
     <main className="max-w-3xl mx-auto px-4 py-20">
@@ -130,18 +121,15 @@ const updateField = <K extends keyof RankObj>(
           </div>
           <button
             onClick={() => {
-              setRankObj((prev) => {
+              setRankObj((prev):RankObj => {
                 const next = !prev.onlyRookies;
 
                 return {
                   ...prev,
                   onlyRookies: next,
-                  customPositions: next
-                    ? prev.customPositions.filter((p) => p !== "DEF")
-                    : prev.customPositions,
                   positionGroup:
-                    next && rankObj.positionGroup === "Defense"
-                      ? ""
+                    next && rankObj.positionGroup.includes("DEF")
+                      ? []
                       : prev.positionGroup,
                 };
               });
@@ -200,8 +188,7 @@ const updateField = <K extends keyof RankObj>(
         </label>
         <PositionGroupSelector
           updateField={updateField}
-          toggleCustomPosition={toggleCustomPosition}
-          customPositions={rankObj.customPositions}
+          isCustomPositionGroup={rankObj.isCustomPositionGroup}
           positionGroup={rankObj.positionGroup}
           onlyRookies={rankObj.onlyRookies}
         />
@@ -353,10 +340,10 @@ const updateField = <K extends keyof RankObj>(
           Visibility<Required />
         </label>
         <div className="grid grid-cols-2 gap-3">
-          {[
-            { value: "PUBLIC",  label: "Public",  description: "Anyone can discover and view this ranking" },
-            { value: "PRIVATE", label: "Private", description: "Only visible to you" },
-          ].map((option) => (
+        {([
+          { value: "PUBLIC", label: "Public", description: "Anyone can discover and view this ranking" },
+          { value: "PRIVATE", label: "Private", description: "Only visible to you" },
+        ] as const).map((option) => (
             <button
               key={option.value}
               onClick={() => updateField("visibility", option.value)}

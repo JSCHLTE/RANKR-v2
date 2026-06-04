@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { RankObj, ScoringFormat } from "@/types/rank";
+import { RankObj, RankFormat } from "@/types/rank";
 
-type Position = keyof ScoringFormat;
+type Position = keyof RankFormat;
 
 const POSITION_COLORS: Record<
   Position,
@@ -21,13 +21,13 @@ const POSITION_COLORS: Record<
 
 const POSITIONS: Position[] = ["QB", "WR", "RB", "TE", "FLEX", "SFLEX", "K", "DEF"];
 
-const PRESETS: Record<string, ScoringFormat> = {
+const PRESETS: Record<string, RankFormat> = {
   STANDARD: { QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 1, SFLEX: 0, K: 1, DEF: 1 },
   SUPERFLEX: { QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 0, SFLEX: 1, K: 1, DEF: 1 },
   THREEWR: { QB: 1, WR: 3, RB: 2, TE: 1, FLEX: 1, SFLEX: 0, K: 1, DEF: 1 },
 };
 
-function detectPreset(roster: ScoringFormat): string {
+function detectPreset(roster: RankFormat): string {
   for (const [key, preset] of Object.entries(PRESETS)) {
     if (POSITIONS.every((p) => roster[p] === preset[p])) {
       return key;
@@ -87,12 +87,12 @@ function PositionCounter({
 }
 
 type CustomFormatSectionProps = {
-  format: ScoringFormat | null;
+  format: RankFormat | null;
   updateField: <K extends keyof RankObj>(key: K, value: RankObj[K]) => void;
 };
 
 const CustomFormatSection = ({ format, updateField }: CustomFormatSectionProps) => {
-  const [roster, setRoster] = useState<ScoringFormat>({ ...PRESETS.STANDARD });
+  const [roster, setRoster] = useState<RankFormat>({ ...PRESETS.STANDARD });
 
   const detectedFormat = detectPreset(roster);
 
@@ -211,7 +211,7 @@ const CustomFormatSection = ({ format, updateField }: CustomFormatSectionProps) 
               <PositionCounter
                 key={pos}
                 pos={pos}
-                value={roster[pos]}
+                value={roster[pos] ?? 0}
                 onChange={(val) => updateRoster(pos, val)}
               />
             ))}
