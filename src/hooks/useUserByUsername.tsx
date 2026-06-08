@@ -11,7 +11,7 @@ interface User {
     pfp?: string;
 }
 
-const useUserByUsername = (username: string) => {
+const useUserByUsername = (username: string[] | undefined | string) => {
 
     const [user, setUser] = useState<User | null>(null);
     const [loading, setLoading] = useState(true);

@@ -1,6 +1,4 @@
-"use client";
-
-import { SkeletonCard } from "../_components/SkeletonCard";
+import SkeletonCard from "../_components/SkeletonCard";
 import { RankingCard } from "../_components/RankingCard";
 import { RankingMeta } from "@/types/rank";
 
