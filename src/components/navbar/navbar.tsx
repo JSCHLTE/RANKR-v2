@@ -24,10 +24,6 @@ export default function Navbar() {
   const dropDownRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    setUserMenu(false);
-  }, [user]);
-
-  useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
         if(!dropDownRef.current) return;
 

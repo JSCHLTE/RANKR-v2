@@ -1,7 +1,6 @@
 import { RankObj } from "@/types/rank";
 
 type PositionGroupSelectorProps = {
-    isCustomPositionGroup: boolean;
     positionGroup: string[];
     onlyRookies: boolean;
     updateField: <K extends keyof RankObj>(
@@ -10,8 +9,9 @@ type PositionGroupSelectorProps = {
     ) => void;
   };
 
+  let isCustomPositionGroup = false;
+
 const PositionGroupSelector = ({ 
-    isCustomPositionGroup,
     positionGroup,
     updateField,
     onlyRookies
@@ -37,11 +37,11 @@ const PositionGroupSelector = ({
               disabled={option.disabled}
               onClick={() => {
                 if(option.value.includes("Custom")) {
-                  updateField("isCustomPositionGroup", true);
+                  isCustomPositionGroup = true;
                   updateField("positionGroup", []);
                   return;
                 } else {
-                  updateField("isCustomPositionGroup", false);
+                  isCustomPositionGroup = false;
                   updateField("positionGroup", option.value);
 
                 }

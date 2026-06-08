@@ -23,7 +23,6 @@ import { Timestamp } from "firebase/firestore";
   export interface RankObj {
     name: string;
     description?: string;
-    isCustomPositionGroup: boolean;
     positionGroup: string[];
     visibility: "PUBLIC" | "PRIVATE";
     format: RankFormat | null;
@@ -39,7 +38,7 @@ import { Timestamp } from "firebase/firestore";
     id: string;
     rankingId: string;
     author: author;
-    createdAt: Timestamp;
-    updatedAt: Timestamp;
+    createdAt: string;
+    updatedAt: string;
     rankObj: RankObj;
   }

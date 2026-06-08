@@ -2,6 +2,7 @@ import { db, auth, admin } from "@/lib/firebase-admin";
 import { NextRequest } from "next/server";
 import fs from "fs";
 import path from "path";
+import { revalidatePath } from "next/cache";
 
 const filePath = path.join(process.cwd(), "public", "data", "player_rankings.json");
 const playerRanksData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
@@ -49,7 +50,7 @@ export async function POST(req: NextRequest) {
     return Response.json({ error: "User profile not found" }, { status: 404 });
   }
 
-  if (!rankObj.name || !rankObj.positionGroup || rankObj.positionGroup <= 0 || !rankObj.mode || !rankObj.visibility) {
+  if (!rankObj.name || !rankObj.positionGroup?.length || !rankObj.mode || !rankObj.visibility) {
     return Response.json({ error: "Missing required ranking fields" }, { status: 400 });
   }
 
@@ -75,6 +76,7 @@ export async function POST(req: NextRequest) {
     });
     
     await batch.commit();
+    revalidatePath("/rankings");
 
     return Response.json({ rankingId }, { status: 201 });
   } catch (e) {

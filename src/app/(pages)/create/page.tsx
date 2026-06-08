@@ -20,8 +20,7 @@ export default function CreateRankingPage() {
   const [rankObj, setRankObj] = useState<RankObj>({
       name: "",
       onlyRookies: false,
-      isCustomPositionGroup: false,
-      positionGroup: [],
+      positionGroup: ["QB", "RB", "WR", "TE", "K", "DEF"],
       scoring: "",
       format: null,
       leagueType: "",
@@ -188,7 +187,6 @@ const updateField = <K extends keyof RankObj>(
         </label>
         <PositionGroupSelector
           updateField={updateField}
-          isCustomPositionGroup={rankObj.isCustomPositionGroup}
           positionGroup={rankObj.positionGroup}
           onlyRookies={rankObj.onlyRookies}
         />

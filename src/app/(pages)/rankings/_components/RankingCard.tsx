@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Timestamp } from "firebase/firestore";
 import { RankObj, RankingMeta } from "@/types/rank";
 
 const POSITION_COLORS: Record<string, { bg: string; text: string; border: string; }> = {
@@ -22,15 +21,6 @@ const POSITION_COLORS: Record<string, { bg: string; text: string; border: string
   
   function getPositionColors(pos: string) {
     return POSITION_COLORS[pos.toUpperCase()] ?? DEFAULT_POSITION_COLORS;
-  }
-
-function formatTimestamp(ts: Timestamp | undefined): string {
-    if (!ts) return "—";
-    return ts.toDate().toLocaleDateString("en-US", {
-      month: "short",
-      day: "numeric",
-      year: "numeric",
-    });
   }
 
   const POSITION_ORDER = ["QB", "RB", "WR", "TE", "FLEX", "SFLEX", "K", "DEF"];
@@ -83,7 +73,7 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
       .filter(([, v]) => v && v > 0)
       .sort(([a], [b]) => POSITION_ORDER.indexOf(a) - POSITION_ORDER.indexOf(b))
   : [];
-    const wasEdited = updatedAt && createdAt && updatedAt.seconds !== createdAt.seconds;
+    const wasEdited = updatedAt && createdAt && updatedAt !== createdAt;
     const isPrivate = rankObj.visibility === "PRIVATE";
   
     return (
@@ -102,9 +92,9 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
                 @{author.username}
               </span>
               <span className="text-[11px] text-[var(--text-muted)] leading-none">
-                {formatTimestamp(createdAt)}
+                {createdAt}
                 {wasEdited && (
-                  <span className="italic"> · edited</span>
+                  <span className="italic"> · updated</span>
                 )}
               </span>
             </div>
