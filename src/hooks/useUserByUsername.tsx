@@ -5,46 +5,47 @@ import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
 interface User {
-    uid: string;
-    username: string;
-    displayName: string;
-    pfp?: string;
+  uid: string;
+  username: string;
+  displayName: string;
+  pfp?: string;
 }
 
-const useUserByUsername = (username: string[] | undefined | string) => {
+const useUserByUsername = (username: string | undefined) => {
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(false);
 
-    const [user, setUser] = useState<User | null>(null);
-    const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    if (!username) return;
 
-    useEffect(() => {
+    const fetchUser = async () => {
+      setLoading(true);
 
-        if(!username) return;
-        
-        const fetchUser = async () => {
-            setLoading(true);
+      try {
+        const q = query(
+          collection(db, "users"),
+          where("username", "==", username)
+        );
 
-            const q = query(
-                collection(db, "users"),
-                where("username", "==", username)
-            );
+        const snapshot = await getDocs(q);
 
-            const snapshot = await getDocs(q);
+        if (!snapshot.empty) {
+          setUser(snapshot.docs[0].data() as User);
+        } else {
+          setUser(null);
+        }
+      } catch (error) {
+        console.error(error);
+        setUser(null);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-            if(!snapshot.empty) {
-                setUser(snapshot.docs[0].data() as User);
-            } else {
-                setUser(null);
-            }
+    fetchUser();
+  }, [username]);
 
-            setLoading(false);
+  return { user, loading };
+};
 
-        };
-
-        fetchUser();
-
-    }, [username]);
-
-    return { user, loading };
-}
-
-export default useUserByUsername
+export default useUserByUsername;

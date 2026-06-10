@@ -7,8 +7,8 @@ import { PageNotFound } from "@/components/pageNotFound/PageNotFound";
 
 const User = () => {
 
-    const pathname = useParams();
-    const { user, loading } = useUserByUsername(pathname.slug);
+  const { slug } = useParams<{ slug: string }>();
+    const { user, loading } = useUserByUsername(slug);
 
     if(!user && !loading) return <PageNotFound />
 

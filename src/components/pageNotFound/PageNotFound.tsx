@@ -16,7 +16,7 @@ export const PageNotFound = () => {
   />
 
   <p className="text-lg text-[var(--text-muted)]">
-    The page you're searching for is not available.
+    The page you&apos;re searching for is not available.
   </p>
 
   <Link

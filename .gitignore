@@ -40,7 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-filtered_players.json
+players_lite.json
 player_rankings.json
 
 uploadPlayers.ts

@@ -1,17 +1,8 @@
 import { db } from "@/lib/firebase-admin";
-import { Timestamp } from "firebase-admin/firestore";
+import formatTimestamp from "@/hooks/formatTimeStamp";
 import RankingFeed from "./_components/RankingFeed";
 
 export const revalidate = 60;
-
-function formatTimestamp(ts: Timestamp | undefined): string {
-  if (!ts) return "—";
-  return ts.toDate().toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  });
-}
 
 const Rankings = async () => {
   let loading = true;

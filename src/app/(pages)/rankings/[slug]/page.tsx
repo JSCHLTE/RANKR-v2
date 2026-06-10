@@ -1,7 +1,5 @@
-const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+const RankingsPage = () => {
+  return <p>Rankings page</p>;
+};
 
-export default page
+export default RankingsPage
