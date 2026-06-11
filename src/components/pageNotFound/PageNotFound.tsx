@@ -1,11 +1,6 @@
-"use client";
-
 import Link from "next/link";
-import { useTheme } from "@/context/ThemeProvider";
 
 export const PageNotFound = () => {
-
-  const { theme } = useTheme();
 
   return (
 <div className="flex min-h-screen flex-col items-center justify-center gap-4 text-center mt-[-80px]">
