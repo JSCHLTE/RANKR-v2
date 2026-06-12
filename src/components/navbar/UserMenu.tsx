@@ -41,6 +41,7 @@ export const UserMenu = ({ profile, setUserMenu, theme, toggleTheme }: UserMenuP
         <Link
           href={`/user/${profile.username}`}
           className="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-[var(--white)]/70 hover:text-[var(--white)] hover:bg-[var(--white)]/5 transition-all"
+          onClick={() => setUserMenu(false)}
         >
           <FontAwesomeIcon icon={faUser} className="w-3.5 h-3.5 shrink-0" />
           Your profile
