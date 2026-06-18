@@ -17,7 +17,6 @@ import { getPositionColors } from "@/constants/positions";
     if (rankObj.leagueType) tags.push(rankObj.leagueType);
     if (rankObj.scoring)    tags.push(rankObj.scoring);
     if (rankObj.rankType)   tags.push(rankObj.rankType);
-    if (rankObj.mode)       tags.push(rankObj.mode);
     if (rankObj.onlyRookies) tags.push("ROOKIES");
     return tags;
   }

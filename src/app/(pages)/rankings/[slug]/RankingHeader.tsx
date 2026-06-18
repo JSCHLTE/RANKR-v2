@@ -17,7 +17,6 @@ function buildTags(meta: RankingMeta): Tag[] {
   if (rankObj.leagueType) tags.push({ value: rankObj.leagueType });
   if (rankObj.leagueSize) tags.push({ value: `${rankObj.leagueSize} Teams` });
   if (rankObj.rankType)   tags.push({ value: rankObj.rankType });
-  if (rankObj.mode)       tags.push({ value: rankObj.mode });
   if (rankObj.onlyRookies) tags.push({ value: "Rookies Only" });
   return tags;
 }

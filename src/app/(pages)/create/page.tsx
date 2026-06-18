@@ -26,7 +26,6 @@ export default function CreateRankingPage() {
       leagueType: "",
       leagueSize: "",
       rankType: "",
-      mode: "LIST",
       description: "",
       visibility: "PUBLIC"
   });
@@ -69,7 +68,6 @@ const updateField = <K extends keyof RankObj>(
   const canSubmit =
     rankObj.name.trim() !== "" &&
     rankObj.positionGroup.length > 0 &&
-    rankObj.mode !== "" &&
     rankObj.visibility;
 
   return (
@@ -143,40 +141,6 @@ const updateField = <K extends keyof RankObj>(
               }`}
             />
           </button>
-        </div>
-      </section>
-
-            {/* Mode — REQUIRED */}
-            <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">
-          Mode<Required />
-        </label>
-        <div className="grid grid-cols-2 gap-3">
-          {[
-            { value: "LIST", label: "List", description: "Drag and rank players up and down a list" },
-            { value: "TIER", label: "Tier", description: "Sort players into tiers", paid: true },
-          ].map((option) => (
-            <button
-              key={option.value}
-              onClick={() => updateField("mode", option.value)}
-              disabled={!profile?.isPaid}
-              className={`text-left p-4 rounded-xl border transition-all ${
-                rankObj.mode === option.value
-                  ? "border-[var(--accent)] bg-[var(--accent)]/10 cursor-default"
-                  : `${profile?.isPaid ? "border-[var(--border)] bg-[var(--surface)] cursor-pointer hover:border-[var(--border-hover)]" : "border-[var(--border)]/30 bg-[var(--surface)]/30"}`
-              }`}
-            >
-              <div className="flex items-center gap-2">
-                <p className={`${option.paid && !profile?.isPaid ? "text-[var(--text-muted)]" : ""} font-semibold`}>{option.label}</p>
-                {option.paid && (
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-[var(--accent)]/20 text-[var(--accent)] font-medium">
-                    Pro
-                  </span>
-                )}
-              </div>
-              <p className="text-xs text-[var(--text-muted)] mt-1">{option.description}</p>
-            </button>
-          ))}
         </div>
       </section>
 

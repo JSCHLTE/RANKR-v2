@@ -26,7 +26,6 @@
     format: RankFormat | null;
     leagueSize?: string;
     leagueType?: string;
-    mode?: string;
     rankType?: string;
     scoring?: string;
     onlyRookies: boolean;
