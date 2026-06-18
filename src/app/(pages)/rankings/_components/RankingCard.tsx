@@ -1,27 +1,6 @@
 import Link from "next/link";
 import { RankObj, RankingMeta } from "@/types/rank";
-
-const POSITION_COLORS: Record<string, { bg: string; text: string; border: string; }> = {
-    QB:    { bg: "bg-red-500/10",     text: "text-red-400",     border: "border-red-500/30"     },
-    WR:    { bg: "bg-sky-500/10",     text: "text-sky-400",     border: "border-sky-500/30"     },
-    RB:    { bg: "bg-emerald-500/10", text: "text-emerald-400", border: "border-emerald-500/30" },
-    TE:    { bg: "bg-orange-500/10",  text: "text-orange-400",  border: "border-orange-500/30"  },
-    FLEX:  { bg: "bg-violet-500/10",  text: "text-violet-400",  border: "border-violet-500/30"  },
-    SFLEX: { bg: "bg-pink-500/10",    text: "text-pink-400",    border: "border-pink-500/30"    },
-    K:     { bg: "bg-yellow-500/10",  text: "text-yellow-400",  border: "border-yellow-500/30"  },
-    DEF:   { bg: "bg-slate-500/10",   text: "text-slate-400",   border: "border-slate-500/30"   },
-    DST:   { bg: "bg-slate-500/10",   text: "text-slate-400",   border: "border-slate-500/30"   },
-  };
-  
-  const DEFAULT_POSITION_COLORS = {
-    bg: "bg-[var(--surface-hover)]",
-    text: "text-[var(--foreground)]",
-    border: "border-[var(--border)]",
-  };
-  
-  function getPositionColors(pos: string) {
-    return POSITION_COLORS[pos.toUpperCase()] ?? DEFAULT_POSITION_COLORS;
-  }
+import { getPositionColors } from "@/constants/positions";
 
   const POSITION_ORDER = ["QB", "RB", "WR", "TE", "FLEX", "SFLEX", "K", "DEF"];
   
@@ -93,9 +72,6 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
               </span>
               <span className="text-[11px] text-[var(--text-muted)] leading-none">
                 {createdAt}
-                {wasEdited && (
-                  <span className="italic"> · updated</span>
-                )}
               </span>
             </div>
           </div>

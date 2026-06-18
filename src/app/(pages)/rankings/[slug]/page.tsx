@@ -2,6 +2,7 @@ import { db } from "@/lib/firebase-admin";
 import { notFound } from "next/navigation";
 import RankingHeader from "./RankingHeader";
 import formatTimestamp from "@/hooks/formatTimeStamp";
+import { RankingMeta } from "@/types/rank";
 
 export default async function RankingsPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -13,12 +14,17 @@ export default async function RankingsPage({ params }: { params: Promise<{ slug:
 
   if (!metaDoc.exists || !ranksDoc.exists) notFound();
 
-  const meta = {
+  const data = metaDoc.data();
+
+  const meta: RankingMeta = {
     id: metaDoc.id,
-    ...metaDoc.data(),
-    createdAt: formatTimestamp(metaDoc.data()?.createdAt),
-    updatedAt: formatTimestamp(metaDoc.data()?.updatedAt),
+    rankingId: data?.rankingId,
+    author: data?.author,
+    rankObj: data?.rankObj,
+    createdAt: formatTimestamp(data?.createdAt),
+    updatedAt: formatTimestamp(data?.updatedAt),
   };
+  
   const ranks = ranksDoc.data();
 
   return (

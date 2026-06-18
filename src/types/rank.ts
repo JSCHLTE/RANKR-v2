@@ -1,5 +1,3 @@
-import { Timestamp } from "firebase/firestore";
-
   export interface RankFormat {
     QB?: number;
     RB?: number;

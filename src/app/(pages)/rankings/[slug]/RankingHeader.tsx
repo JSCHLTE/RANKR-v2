@@ -2,32 +2,8 @@
 
 import { RankingMeta } from "@/types/rank";
 import { useAuth } from "@/context/AuthContext";
-import formatTimestamp from "@/hooks/formatTimeStamp";
-
-// ─── Position Colors ──────────────────────────────────────────────────────────
-
-const POSITION_COLORS: Record<string, { bg: string; text: string; border: string; dot: string }> = {
-  QB:    { bg: "bg-red-500/10",     text: "text-red-400",     border: "border-red-500/30",     dot: "bg-red-400"     },
-  WR:    { bg: "bg-sky-500/10",     text: "text-sky-400",     border: "border-sky-500/30",     dot: "bg-sky-400"     },
-  RB:    { bg: "bg-emerald-500/10", text: "text-emerald-400", border: "border-emerald-500/30", dot: "bg-emerald-400" },
-  TE:    { bg: "bg-orange-500/10",  text: "text-orange-400",  border: "border-orange-500/30",  dot: "bg-orange-400"  },
-  FLEX:  { bg: "bg-violet-500/10",  text: "text-violet-400",  border: "border-violet-500/30",  dot: "bg-violet-400"  },
-  SFLEX: { bg: "bg-pink-500/10",    text: "text-pink-400",    border: "border-pink-500/30",    dot: "bg-pink-400"    },
-  K:     { bg: "bg-yellow-500/10",  text: "text-yellow-400",  border: "border-yellow-500/30",  dot: "bg-yellow-400"  },
-  DEF:   { bg: "bg-slate-500/10",   text: "text-slate-400",   border: "border-slate-500/30",   dot: "bg-slate-400"   },
-  DST:   { bg: "bg-slate-500/10",   text: "text-slate-400",   border: "border-slate-500/30",   dot: "bg-slate-400"   },
-};
-
-const DEFAULT_POSITION_COLORS = {
-  bg: "bg-[var(--surface-hover)]",
-  text: "text-[var(--foreground)]",
-  border: "border-[var(--border)]",
-  dot: "bg-[var(--text-muted)]",
-};
-
-function getPositionColors(pos: string) {
-  return POSITION_COLORS[pos.toUpperCase()] ?? DEFAULT_POSITION_COLORS;
-}
+import { getPositionColors } from "@/constants/positions";
+import Link from "next/link";
 
 interface Tag {
   label?: string;
@@ -52,7 +28,6 @@ const PositionBadge = ({ pos }: { pos: string }) => {
   const colors = getPositionColors(pos);
   return (
     <span className={`inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide px-2.5 py-1 rounded-full border ${colors.bg} ${colors.text} ${colors.border}`}>
-      <span className={`w-1.5 h-1.5 rounded-full ${colors.dot}`} />
       {pos}
     </span>
   );
@@ -125,7 +100,7 @@ const RankingHeader = ({ meta, onEdit, onDelete }: Props) => {
       <div className="flex items-center flex-wrap gap-2">
 
         {/* Author */}
-        <div className="flex items-center gap-2 mr-1">
+        <Link href ={`/user/${author.username}`} className="flex items-center gap-2 mr-1">
           <div className="w-7 h-7 rounded-full overflow-hidden border border-[var(--border)] shrink-0">
             {author.pfp ? (
               <img src={author.pfp} alt={author.username} className="w-full h-full object-cover" />
@@ -138,7 +113,7 @@ const RankingHeader = ({ meta, onEdit, onDelete }: Props) => {
           <span className="text-sm font-medium text-[var(--foreground)]">
             {author.displayName ?? author.username}
           </span>
-        </div>
+        </Link>
 
         {/* Dot */}
         <span className="w-1 h-1 rounded-full bg-[var(--border-hover)]" />
