@@ -51,6 +51,7 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
       .filter(([, v]) => v && v > 0)
       .sort(([a], [b]) => POSITION_ORDER.indexOf(a) - POSITION_ORDER.indexOf(b))
   : [];
+
     const wasEdited = updatedAt && createdAt && updatedAt !== createdAt;
     const isPrivate = rankObj.visibility === "PRIVATE";
   
@@ -131,22 +132,13 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
   
           {/* ── Footer ── */}
           <div className="flex items-center justify-end px-4 py-2.5 border-t border-[var(--border)]">
-            {isPrivate ? (
-              <span className="inline-flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/30">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <rect x="3" y="11" width="18" height="11" rx="2" />
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                </svg>
-                Private
+            {!wasEdited ? (
+              <span className="text-[11px] font-medium px-2.5 py-1 rounded-full text-[var(--text-muted)] bg-[var(--surface-hover)] border border-[var(--border)]">
+                Created {createdAt}
               </span>
             ) : (
-              <span className="inline-flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="2" y1="12" x2="22" y2="12" />
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-                Public
+              <span className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                Updated {updatedAt}
               </span>
             )}
           </div>
