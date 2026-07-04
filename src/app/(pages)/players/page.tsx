@@ -20,7 +20,7 @@ const Players = () => {
   useEffect(() => {
     async function loadPlayers() {
       setLoading(true)
-      const res = await fetch("data/players_lite.json");
+      const res = await fetch("data/player_lite.json");
       const data = await res.json();
 
       setPlayers(data);
@@ -28,6 +28,10 @@ const Players = () => {
     }
     loadPlayers();
   }, []);
+
+  useEffect(() => {
+    console.log(players)
+  }, [players])
 
   if (loading) {
     return (
@@ -62,8 +66,8 @@ const Players = () => {
             {/* Player image */}
             <div className="relative shrink-0">
               <img
-                src={`https://sleepercdn.com/content/nfl/players/${player.player_id}.jpg`}
-                alt={`${player.first_name} ${player.last_name}`}
+                src={`https://sleepercdn.com/content/nfl/players/${player.id}.jpg`}
+                alt={`${player.fullName}`}
                 className="w-17 h-17 rounded-full object-cover object-top bg-gray-200 dark:bg-white/10 ring-2 ring-white dark:ring-gray-900"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =
@@ -76,7 +80,8 @@ const Players = () => {
             <div className="flex flex-col gap-1 min-w-0 flex-1">
               <div className="flex">
                 <span className="flex font-semibold text-gray-900 dark:text-white text-md leading-tight truncate">
-                  {player.first_name} {player.last_name}
+                  {player.fullName}
+                  {player.yearsExp == 0 ? <img src="rookie.png" alt="Rookie icon" width={20} height={20} className="ml-2" /> : ""}
                 </span>
                 {/* <RookieSvg color="#ffffff" width="20" height="20" /> */}
               </div>
