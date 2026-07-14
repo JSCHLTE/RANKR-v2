@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { RookieSvg } from "@/components/rookieIcon/RookieSvg";
+import { usePlayers } from "@/hooks/usePlayers";
 
 
 const positionColors: Record<string, string> = {
@@ -14,24 +15,7 @@ const positionColors: Record<string, string> = {
 };
 
 const Players = () => {
-  const [players, setPlayers] = useState([]);
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    async function loadPlayers() {
-      setLoading(true)
-      const res = await fetch("data/player_lite.json");
-      const data = await res.json();
-
-      setPlayers(data);
-      setLoading(false);
-    }
-    loadPlayers();
-  }, []);
-
-  useEffect(() => {
-    console.log(players)
-  }, [players])
+  const { players, loading, error } = usePlayers();
 
   if (loading) {
     return (
