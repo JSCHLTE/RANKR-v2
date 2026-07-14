@@ -19,7 +19,7 @@ const RankingFeed = ({ rankings, loading }: Props) => {
           Community Rankings
         </h1>
         <p className="mt-1 text-sm text-[var(--text-muted)]">
-          Browse rankings shared by the community
+          Browse rankings shared by the community.
         </p>
       </div>
 

@@ -68,10 +68,10 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
             {/* Author info */}
             <div className="flex flex-col gap-0.5 flex-1 min-w-0">
               <span className="text-[13px] font-medium text-[var(--foreground)] leading-none">
-                @{author.username}
+                {author.displayName}
               </span>
               <span className="text-[11px] text-[var(--text-muted)] leading-none">
-                {createdAt}
+                @{author.username}
               </span>
             </div>
           </div>
@@ -96,9 +96,11 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
               <span className="text-[10px] font-semibold uppercase tracking-widest text-[var(--text-muted)] mr-0.5">
                 Ranking
               </span>
-              {positionLabels.map((pos) => (
-                <PositionBadge key={pos} pos={pos} />
-              ))}
+              <div className="flex flex-wrap gap-1.5">
+                {positionLabels.map((pos) => (
+                  <PositionBadge key={pos} pos={pos} />
+                ))}
+              </div>
             </div>
   
             {/* Format */}

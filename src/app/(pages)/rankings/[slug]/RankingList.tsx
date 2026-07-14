@@ -2,6 +2,8 @@
 
 import { useState, useMemo } from "react";
 import { usePlayers } from "@/hooks/usePlayers";
+import { getPositionColors } from "@/constants/positions";
+import { RankingMeta } from "@/types/rank";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -28,40 +30,7 @@ interface ResolvedPlayer {
 
 interface Props {
   ranks: RankEntry[];
-}
-
-// ─── Position Colors ──────────────────────────────────────────────────────────
-
-const POSITION_COLORS: Record<string, { bg: string; text: string; border: string }> = {
-  QB:    { bg: "bg-red-500/10",     text: "text-red-400",     border: "border-red-500/30"     },
-  WR:    { bg: "bg-sky-500/10",     text: "text-sky-400",     border: "border-sky-500/30"     },
-  RB:    { bg: "bg-emerald-500/10", text: "text-emerald-400", border: "border-emerald-500/30" },
-  TE:    { bg: "bg-orange-500/10",  text: "text-orange-400",  border: "border-orange-500/30"  },
-  K:     { bg: "bg-yellow-500/10",  text: "text-yellow-400",  border: "border-yellow-500/30"  },
-  DEF:   { bg: "bg-slate-500/10",   text: "text-slate-400",   border: "border-slate-500/30"   },
-  DST:   { bg: "bg-slate-500/10",   text: "text-slate-400",   border: "border-slate-500/30"   },
-  FLEX:  { bg: "bg-violet-500/10",  text: "text-violet-400",  border: "border-violet-500/30"  },
-  SFLEX: { bg: "bg-pink-500/10",    text: "text-pink-400",    border: "border-pink-500/30"    },
-};
-
-const DEFAULT_COLORS = {
-  bg: "bg-[var(--surface-hover)]",
-  text: "text-[var(--text-muted)]",
-  border: "border-[var(--border)]",
-};
-
-function getPositionColors(pos: string) {
-  return POSITION_COLORS[pos?.toUpperCase()] ?? DEFAULT_COLORS;
-}
-
-// ─── Rank Number Color ────────────────────────────────────────────────────────
-
-function getRankColor(rank: number): string {
-  if (rank === 1) return "text-yellow-400";
-  if (rank === 2) return "text-slate-300";
-  if (rank === 3) return "text-orange-400";
-  if (rank <= 10) return "text-[var(--foreground)]";
-  return "text-[var(--text-muted)]";
+  meta: RankingMeta;
 }
 
 // ─── Skeleton ─────────────────────────────────────────────────────────────────
@@ -90,7 +59,7 @@ const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
 
       {/* Rank number */}
       <div className="w-7 shrink-0 text-right">
-        <span className={`text-sm font-semibold tabular-nums ${getRankColor(rank)}`}>
+        <span className="text-sm font-semibold tabular-nums">
           {rank}
         </span>
       </div>
@@ -128,12 +97,10 @@ const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
 };
 
 // ─── Component ────────────────────────────────────────────────────────────────
-
-const POSITIONS = ["ALL", "QB", "RB", "WR", "TE", "K", "DEF"];
-
-const RankingList = ({ ranks }: Props) => {
+const RankingList = ({ ranks, meta }: Props) => {
   const { players, loading, error } = usePlayers();
   const [search, setSearch] = useState("");
+  const POSITIONS = meta.rankObj.positionGroup.length > 1 ? ["ALL", ...meta.rankObj.positionGroup] : meta.rankObj.positionGroup;   
   const [posFilter, setPosFilter] = useState("ALL");
 
   // Merge ranks with player metadata, sorted by rank
@@ -188,6 +155,7 @@ const RankingList = ({ ranks }: Props) => {
         </div>
 
         {/* Position filter */}
+        {meta.rankObj.positionGroup.length > 1 &&
         <div className="flex items-center gap-1.5 flex-wrap">
           {POSITIONS.map((pos) => {
             const active = posFilter === pos;
@@ -208,7 +176,7 @@ const RankingList = ({ ranks }: Props) => {
               </button>
             );
           })}
-        </div>
+        </div>}
       </div>
 
       {/* Count */}

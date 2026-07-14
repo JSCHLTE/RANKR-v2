@@ -31,7 +31,7 @@ export default async function RankingsPage({ params }: { params: Promise<{ slug:
   return (
     <main className="max-w-5xl mx-auto px-4">
       <RankingHeader meta={meta} />
-      <RankingList ranks={ranks?.ranks ?? []} />
+      <RankingList ranks={ranks?.ranks ?? []} meta={meta} />
     </main>
   );
 }
