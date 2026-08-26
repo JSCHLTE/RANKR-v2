@@ -21,11 +21,9 @@
   export interface RankObj {
     name: string;
     description?: string;
-    positionGroup: string[];
     visibility: "PUBLIC" | "PRIVATE";
     format: RankFormat | null;
     leagueSize?: string;
-    leagueType?: string;
     rankType?: string;
     scoring?: string;
     onlyRookies: boolean;
@@ -37,5 +35,6 @@
     author: author;
     createdAt: string;
     updatedAt: string;
+    positionGroup: string[];
     rankObj: RankObj;
   }

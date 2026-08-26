@@ -24,6 +24,7 @@ export default async function RankingsPage({ params }: { params: Promise<{ slug:
     rankObj: data?.rankObj,
     createdAt: formatTimestamp(data?.createdAt),
     updatedAt: formatTimestamp(data?.updatedAt),
+    positionGroup: ["QB", "RB", "WR", "TE", "K", "DEF"],
   };
   
   const ranks = ranksDoc.data();

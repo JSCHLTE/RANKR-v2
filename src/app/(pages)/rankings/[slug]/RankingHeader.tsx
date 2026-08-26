@@ -14,7 +14,6 @@ function buildTags(meta: RankingMeta): Tag[] {
   const { rankObj } = meta;
   const tags: Tag[] = [];
   if (rankObj.scoring)    tags.push({ value: rankObj.scoring });
-  if (rankObj.leagueType) tags.push({ value: rankObj.leagueType });
   if (rankObj.leagueSize) tags.push({ value: `${rankObj.leagueSize} Teams` });
   if (rankObj.rankType)   tags.push({ value: rankObj.rankType });
   if (rankObj.onlyRookies) tags.push({ value: "Rookies Only" });
@@ -124,11 +123,6 @@ const RankingHeader = ({ meta, onEdit, onDelete }: Props) => {
 
         {/* Dot */}
         <span className="w-1 h-1 rounded-full bg-[var(--border-hover)]" />
-
-        {/* Position badges */}
-        {rankObj.positionGroup.map((pos) => (
-          <PositionBadge key={pos} pos={pos} />
-        ))}
 
         {/* Neutral tags */}
         {tags.map((tag, i) => (

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import PositionGroupSelector from "./_components/PositionGroupSelector";
 import CustomFormatSection from "./_components/CustomFormatSection";
 import { useAuth } from "@/context/AuthContext";
 import { RankObj } from "@/types/rank";
@@ -20,10 +19,8 @@ export default function CreateRankingPage() {
   const [rankObj, setRankObj] = useState<RankObj>({
       name: "",
       onlyRookies: false,
-      positionGroup: ["QB", "RB", "WR", "TE", "K", "DEF"],
       scoring: "",
       format: null,
-      leagueType: "",
       leagueSize: "",
       rankType: "",
       description: "",
@@ -67,7 +64,6 @@ const updateField = <K extends keyof RankObj>(
 
   const canSubmit =
     rankObj.name.trim() !== "" &&
-    rankObj.positionGroup.length > 0 &&
     rankObj.visibility;
 
   return (
@@ -123,11 +119,7 @@ const updateField = <K extends keyof RankObj>(
 
                 return {
                   ...prev,
-                  onlyRookies: next,
-                  positionGroup:
-                    next && rankObj.positionGroup.includes("DEF")
-                      ? []
-                      : prev.positionGroup,
+                  onlyRookies: next
                 };
               });
             }}
@@ -142,24 +134,6 @@ const updateField = <K extends keyof RankObj>(
             />
           </button>
         </div>
-      </section>
-
-      {/* Position Group — REQUIRED */}
-      <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">
-          Position Group<Required />
-        </label>
-        <PositionGroupSelector
-          updateField={updateField}
-          positionGroup={rankObj.positionGroup}
-          onlyRookies={rankObj.onlyRookies}
-        />
-        <p className="mt-2 text-xs text-[var(--text-muted)] flex items-center gap-1.5">
-          <svg className="w-3.5 h-3.5 shrink-0 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 110 20A10 10 0 0112 2z" />
-          </svg>
-          This determines which players appear in your ranking. You won&apos;t be able to change it after creation.
-        </p>
       </section>
 
       {/* Scoring — OPTIONAL */}
@@ -201,39 +175,6 @@ const updateField = <K extends keyof RankObj>(
           Format<Optional />
         </label>
         <CustomFormatSection format={rankObj.format} updateField={updateField} />
-      </section>
-
-      {/* League Type — OPTIONAL */}
-      <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">
-          League Type<Optional />
-        </label>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {[
-            { value: "REDRAFT", label: "Redraft", description: "Rosters clear each season, and all players are redrafted." },
-            { value: "KEEPER",  label: "Keeper",  description: "Carry players into next season with customizable keepers." },
-            { value: "DYNASTY", label: "Dynasty", description: "Keep your roster each year. Add rookies and free agents." },
-          ].map((option) => (
-            <button
-              key={option.value}
-              onClick={() => {
-                if(rankObj.leagueType === option.value) {
-                  updateField("leagueType", "");
-                } else {
-                  updateField("leagueType", option.value);
-                }
-              }}
-              className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
-                rankObj.leagueType === option.value
-                  ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
-              }`}
-            >
-              <p className="font-semibold">{option.label}</p>
-              <p className="text-xs text-[var(--text-muted)] mt-1">{option.description}</p>
-            </button>
-          ))}
-        </div>
       </section>
 
       {/* League Size — OPTIONAL */}

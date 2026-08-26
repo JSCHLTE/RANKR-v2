@@ -100,7 +100,7 @@ const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
 const RankingList = ({ ranks, meta }: Props) => {
   const { players, loading, error } = usePlayers();
   const [search, setSearch] = useState("");
-  const POSITIONS = meta.rankObj.positionGroup.length > 1 ? ["ALL", ...meta.rankObj.positionGroup] : meta.rankObj.positionGroup;   
+  const POSITIONS = meta.positionGroup.length > 1 ? ["ALL", ...meta.positionGroup] : meta.positionGroup;   
   const [posFilter, setPosFilter] = useState("ALL");
 
   // Merge ranks with player metadata, sorted by rank
@@ -155,7 +155,7 @@ const RankingList = ({ ranks, meta }: Props) => {
         </div>
 
         {/* Position filter */}
-        {meta.rankObj.positionGroup.length > 1 &&
+        {meta.positionGroup.length > 1 &&
         <div className="flex items-center gap-1.5 flex-wrap">
           {POSITIONS.map((pos) => {
             const active = posFilter === pos;

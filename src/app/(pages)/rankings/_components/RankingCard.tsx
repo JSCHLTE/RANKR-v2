@@ -3,18 +3,11 @@ import { RankObj, RankingMeta } from "@/types/rank";
 import { getPositionColors } from "@/constants/positions";
 
   const POSITION_ORDER = ["QB", "RB", "WR", "TE", "FLEX", "SFLEX", "K", "DEF"];
-  
-  function getPositionLabels(rankObj: RankObj): string[] {
-    return [...rankObj.positionGroup].sort(
-        (a, b) => POSITION_ORDER.indexOf(a) - POSITION_ORDER.indexOf(b)
-      );
-  }
 
   
   function buildTags(rankObj: RankObj) {
     const tags: string[] = [];
     if (rankObj.leagueSize) tags.push(`${rankObj.leagueSize} TEAMS`);
-    if (rankObj.leagueType) tags.push(rankObj.leagueType);
     if (rankObj.scoring)    tags.push(rankObj.scoring);
     if (rankObj.rankType)   tags.push(rankObj.rankType);
     if (rankObj.onlyRookies) tags.push("ROOKIES");
@@ -44,7 +37,6 @@ import { getPositionColors } from "@/constants/positions";
 
 export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
     const { rankObj, createdAt, updatedAt, author, rankingId } = ranking;
-    const positionLabels = getPositionLabels(rankObj);
     const tags = buildTags(rankObj);
     const formatEntries = rankObj.format
       ? Object.entries(rankObj.format)
@@ -90,18 +82,6 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
                 {rankObj.description}
               </p>
             )}
-  
-            {/* Position group — most important */}
-            <div className="flex items-center flex-wrap gap-1.5">
-              <span className="text-[10px] font-semibold uppercase tracking-widest text-[var(--text-muted)] mr-0.5">
-                Ranking
-              </span>
-              <div className="flex flex-wrap gap-1.5">
-                {positionLabels.map((pos) => (
-                  <PositionBadge key={pos} pos={pos} />
-                ))}
-              </div>
-            </div>
   
             {/* Format */}
             {formatEntries.length > 0 && (

@@ -10,8 +10,8 @@ const POSITIONS: Position[] = ["QB", "WR", "RB", "TE", "FLEX", "SFLEX", "K", "DE
 
 const PRESETS: Record<string, RankFormat> = {
   STANDARD: { QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 1, SFLEX: 0, K: 1, DEF: 1 },
+  TWOFLEX: { QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 2, SFLEX: 0, K: 1, DEF: 1 },
   SUPERFLEX: { QB: 1, WR: 2, RB: 2, TE: 1, FLEX: 0, SFLEX: 1, K: 1, DEF: 1 },
-  THREEWR: { QB: 1, WR: 3, RB: 2, TE: 1, FLEX: 1, SFLEX: 0, K: 1, DEF: 1 },
 };
 
 function detectPreset(roster: RankFormat): string {
@@ -126,6 +126,27 @@ const CustomFormatSection = ({ format, updateField }: CustomFormatSectionProps) 
           <p className="text-xs text-[var(--text-muted)] mt-1">Classic single QB league</p>
         </button>
 
+          {/* TWO FLEX */}
+                <button
+          onClick={() => {
+            if (!isNone && detectedFormat === "TWOFLEX") {
+              clearFormat();
+            } else {
+              applyPreset("TWOFLEX");
+            }
+          }}
+          className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
+            !isNone && detectedFormat === "TWOFLEX"
+              ? "border-[var(--accent)] bg-[var(--accent)]/10"
+              : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
+          }`}
+        >
+          <p className="font-semibold">2 FLEX</p>
+          <p className="text-xs text-[var(--text-muted)] mt-1">
+            Additional FLEX
+          </p>
+        </button>
+
         {/* SUPERFLEX */}
         <button
           onClick={() => {
@@ -144,27 +165,6 @@ const CustomFormatSection = ({ format, updateField }: CustomFormatSectionProps) 
           <p className="font-semibold">Superflex</p>
           <p className="text-xs text-[var(--text-muted)] mt-1">
             Start a QB, WR, RB, or TE in flex
-          </p>
-        </button>
-
-        {/* THREE WR */}
-        <button
-          onClick={() => {
-            if (!isNone && detectedFormat === "THREEWR") {
-              clearFormat();
-            } else {
-              applyPreset("THREEWR");
-            }
-          }}
-          className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
-            !isNone && detectedFormat === "THREEWR"
-              ? "border-[var(--accent)] bg-[var(--accent)]/10"
-              : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
-          }`}
-        >
-          <p className="font-semibold">3 WR</p>
-          <p className="text-xs text-[var(--text-muted)] mt-1">
-            Standard plus extra WR
           </p>
         </button>
 
