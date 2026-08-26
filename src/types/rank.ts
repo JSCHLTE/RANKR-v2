@@ -24,9 +24,7 @@
     visibility: "PUBLIC" | "PRIVATE";
     format: RankFormat | null;
     leagueSize?: string;
-    rankType?: string;
     scoring?: string;
-    onlyRookies: boolean;
   }
   
   export interface RankingMeta {

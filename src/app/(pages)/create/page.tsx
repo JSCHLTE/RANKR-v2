@@ -18,11 +18,9 @@ export default function CreateRankingPage() {
 
   const [rankObj, setRankObj] = useState<RankObj>({
       name: "",
-      onlyRookies: false,
       scoring: "",
       format: null,
       leagueSize: "",
-      rankType: "",
       description: "",
       visibility: "PUBLIC"
   });
@@ -101,41 +99,6 @@ const updateField = <K extends keyof RankObj>(
         />
       </section>
 
-      {/* Allow Rookies — OPTIONAL */}
-      <section className="mb-8">
-        <div className="flex items-center justify-between p-4 rounded-xl border border-[var(--border)] bg-[var(--surface)]">
-          <div>
-            <p className="font-semibold">
-              Rookies Only<span className="text-[var(--text-muted)] font-normal text-sm"> — optional</span>
-            </p>
-            <p className="text-xs text-[var(--text-muted)] mt-0.5">
-              Only include rookie players in your rankings
-            </p>
-          </div>
-          <button
-            onClick={() => {
-              setRankObj((prev):RankObj => {
-                const next = !prev.onlyRookies;
-
-                return {
-                  ...prev,
-                  onlyRookies: next
-                };
-              });
-            }}
-            className={`relative w-12 h-6 rounded-full transition-colors duration-200 cursor-pointer focus:outline-none ${
-              rankObj.onlyRookies ? "bg-[var(--accent)]" : "bg-[var(--border)]"
-            }`}
-          >
-            <span
-              className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform duration-200 ${
-                rankObj.onlyRookies ? "translate-x-6" : "translate-x-0"
-              }`}
-            />
-          </button>
-        </div>
-      </section>
-
       {/* Scoring — OPTIONAL */}
       <section className="mb-8">
         <label className="block text-sm font-medium mb-2">
@@ -200,38 +163,6 @@ const updateField = <K extends keyof RankObj>(
               }`}
             >
               {size}
-            </button>
-          ))}
-        </div>
-      </section>
-
-      {/* Rank Type — OPTIONAL */}
-      <section className="mb-8">
-        <label className="block text-sm font-medium mb-2">
-          Rank Type<Optional />
-        </label>
-        <div className="grid grid-cols-2 gap-3">
-          {[
-            { value: "SEASONAL", label: "Seasonal", description: "Overall rankings for the full season" },
-            { value: "WEEKLY", label: "Weekly", description: "Rankings for a specific upcoming week" },
-          ].map((option) => (
-            <button
-              key={option.value}
-              onClick={() => {
-                if(rankObj.rankType === option.value) {
-                  updateField("rankType", "");
-                } else {
-                  updateField("rankType", option.value);
-                }
-              }}
-              className={`text-left p-4 rounded-xl border transition-all cursor-pointer ${
-                rankObj.rankType === option.value
-                  ? "border-[var(--accent)] bg-[var(--accent)]/10"
-                  : "border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)]"
-              }`}
-            >
-              <p className="font-semibold">{option.label}</p>
-              <p className="text-xs text-[var(--text-muted)] mt-1">{option.description}</p>
             </button>
           ))}
         </div>
