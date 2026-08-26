@@ -55,10 +55,10 @@ const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
   const colors = getPositionColors(primaryPos);
 
   return (
-    <div className="group flex items-center gap-4 px-4 py-3 border-b border-[var(--border)] hover:bg-[var(--surface-hover)] transition-colors duration-100">
+    <div className="group flex items-center gap-4 px-5 py-2 border-b border-[var(--border)] hover:bg-[var(--surface-hover)] transition-colors duration-100 cursor-pointer">
 
       {/* Rank number */}
-      <div className="w-7 shrink-0 text-right">
+      <div className="w-5 shrink-0 text-right">
         <span className="text-sm font-semibold tabular-nums">
           {rank}
         </span>
@@ -69,7 +69,7 @@ const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
               <img
                 src={`https://sleepercdn.com/content/nfl/players/${player.id}.jpg`}
                 alt={`${player.fullName}`}
-                className="w-15 h-15 rounded-full object-cover object-top bg-gray-200 dark:bg-white/10"
+                className="w-10 h-10 rounded-md object-cover object-top bg-[var(--surface-hover)]"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =
                     "https://sleepercdn.com/images/v2/icons/player_default.webp";
