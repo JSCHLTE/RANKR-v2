@@ -80,7 +80,7 @@ const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
       {/* Player info */}
       <div className="flex-1 flex items-center gap-[5px] min-w-0">
         <span className="flex text-sm font-medium text-[var(--foreground)] truncate">
-          {player.firstName} {player.lastName} {player.yearsExp == 0 ? <img src="/rookie.png" alt="Rookie icon" width={20} height={20} className="ml-[5px]" /> : ""}
+          {player.firstName} {player.lastName} {player.yearsExp == 0 ? <img src="/rookie.png" alt="Rookie icon" className="ml-[5px] w-[20px] h-[20px]" /> : ""}
         </span>
         {/* Position badge */}
         <span className={`inline-flex items-center text-[10px] font-bold tracking-wide px-2 py-0.5 rounded-full border shrink-0 ${colors.bg} ${colors.text} ${colors.border}`}>
@@ -123,6 +123,7 @@ const RankingList = ({ ranks, meta }: Props) => {
       const matchesSearch = fullName.includes(search.toLowerCase()) ||
         player.team?.toLowerCase().includes(search.toLowerCase());
       const matchesPos =
+        posFilter === "ROOKIE" ? player.yearsExp === 0 :
         posFilter === "ALL" ||
         player.position?.includes(posFilter);
       return matchesSearch && matchesPos;
@@ -176,6 +177,12 @@ const RankingList = ({ ranks, meta }: Props) => {
               </button>
             );
           })}
+              <button
+                onClick={() => setPosFilter("ROOKIE")}
+                className={`text-[11px] font-semibold px-3 py-1.5 rounded-full border transition-all cursor-pointer`}
+              >
+                ROOKIE
+              </button>
         </div>}
       </div>
 

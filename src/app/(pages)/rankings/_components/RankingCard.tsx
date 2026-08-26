@@ -9,8 +9,6 @@ import { getPositionColors } from "@/constants/positions";
     const tags: string[] = [];
     if (rankObj.leagueSize) tags.push(`${rankObj.leagueSize} TEAMS`);
     if (rankObj.scoring)    tags.push(rankObj.scoring);
-    if (rankObj.rankType)   tags.push(rankObj.rankType);
-    if (rankObj.onlyRookies) tags.push("ROOKIES");
     return tags;
   }
   
