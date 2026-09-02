@@ -3,104 +3,24 @@
 import { useState, useMemo } from "react";
 import { usePlayers } from "@/hooks/usePlayers";
 import { getPositionColors } from "@/constants/positions";
-import { RankingMeta } from "@/types/rank";
+import SkeletonRow from "../_components/SkeletonRow";
+import PlayerRow from "../_components/PlayerRow";
+import { PlayerLite, ResolvedPlayer } from "@/types/player";
 
-// ─── Types ────────────────────────────────────────────────────────────────────
-
+//Types
 interface RankEntry {
   player_id: string;
   rank: number;
 }
 
-interface Player {
-    id: string;
-    fullName: string;
-    firstName: string;
-    lastName: string;
-    team: string;
-    position: string;
-    fantasyPositions: string[];
-    yearsExp: number
-  }
-
-interface ResolvedPlayer {
-  rank: number;
-  player: Player;
-}
-
-interface Props {
+interface Ranks {
   ranks: RankEntry[];
-  meta: RankingMeta;
 }
 
-// ─── Skeleton ─────────────────────────────────────────────────────────────────
-
-const SkeletonRow = () => (
-  <div className="flex items-center gap-4 px-4 py-3 border-b border-[var(--border)] animate-pulse">
-    <div className="w-7 shrink-0">
-      <div className="h-3.5 w-5 rounded bg-[var(--surface-hover)]" />
-    </div>
-    <div className="flex-1 flex items-center gap-3">
-      <div className="h-3.5 w-32 rounded bg-[var(--surface-hover)]" />
-      <div className="h-5 w-10 rounded-full bg-[var(--surface-hover)]" />
-    </div>
-    <div className="h-3 w-10 rounded bg-[var(--surface-hover)]" />
-  </div>
-);
-
-// ─── Player Row ───────────────────────────────────────────────────────────────
-
-const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
-  const primaryPos = player.fantasyPositions?.[0] ?? "—";
-  const colors = getPositionColors(primaryPos);
-
-  return (
-    <div className="group flex items-center gap-4 px-5 py-2 border-b border-[var(--border)] hover:bg-[var(--surface-hover)] transition-colors duration-100 cursor-pointer">
-
-      {/* Rank number */}
-      <div className="w-5 shrink-0 text-right">
-        <span className="text-sm font-semibold tabular-nums">
-          {rank}
-        </span>
-      </div>
-
-                  {/* Player image */}
-                  <div className="relative shrink-0">
-              <img
-                src={`https://sleepercdn.com/content/nfl/players/${player.id}.jpg`}
-                alt={`${player.fullName}`}
-                className="w-10 h-10 rounded-md object-cover object-top bg-[var(--surface-hover)]"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src =
-                    "https://sleepercdn.com/images/v2/icons/player_default.webp";
-                }}
-              />
-            </div>
-
-      {/* Player info */}
-      <div className="flex-1 flex items-center gap-[5px] min-w-0">
-        <span className="flex text-sm font-medium text-[var(--foreground)] truncate">
-          {player.firstName} {player.lastName} {player.yearsExp == 0 ? <img src="/rookie.png" alt="Rookie icon" className="ml-[5px] w-[20px] h-[20px]" /> : ""}
-        </span>
-        {/* Position badge */}
-        <span className={`inline-flex items-center text-[10px] font-bold tracking-wide px-2 py-0.5 rounded-lg border shrink-0 ${colors.bg} ${colors.text} ${colors.border}`}>
-          {primaryPos}
-        </span>
-      </div>
-
-      {/* Team */}
-      <span className="text-xs text-[var(--text-muted)] shrink-0 uppercase tracking-wide">
-        {player.team ?? "FA"}
-      </span>
-    </div>
-  );
-};
-
-// ─── Component ────────────────────────────────────────────────────────────────
-const RankingList = ({ ranks, meta }: Props) => {
+const RankingList = ({ ranks }: Ranks) => {
   const { players, loading, error } = usePlayers();
   const [search, setSearch] = useState("");
-  const POSITIONS = meta.positionGroup.length > 1 ? ["ALL", ...meta.positionGroup] : meta.positionGroup;   
+  const POSITIONS = ["ALL", "QB", "RB", "WR", "TE", "K", "DEF", "ROOKIE"];
   const [posFilter, setPosFilter] = useState("ALL");
 
   // Merge ranks with player metadata, sorted by rank
@@ -110,7 +30,7 @@ const RankingList = ({ ranks, meta }: Props) => {
     return ranks
       .map((entry) => ({
         rank: entry.rank,
-        player: players[entry.player_id] as Player | undefined,
+        player: players[entry.player_id] as PlayerLite | undefined,
       }))
       .filter((e): e is ResolvedPlayer => !!e.player)
       .sort((a, b) => a.rank - b.rank);
@@ -156,7 +76,6 @@ const RankingList = ({ ranks, meta }: Props) => {
         </div>
 
         {/* Position filter */}
-        {meta.positionGroup.length > 1 &&
         <div className="flex items-center gap-1.5 flex-wrap">
           {POSITIONS.map((pos) => {
             const active = posFilter === pos;
@@ -177,13 +96,7 @@ const RankingList = ({ ranks, meta }: Props) => {
               </button>
             );
           })}
-              <button
-                onClick={() => setPosFilter("ROOKIE")}
-                className={`text-[11px] font-semibold px-3 py-1.5 rounded-lg border transition-all cursor-pointer ${colors.bg}`}
-              >
-                ROOKIE
-              </button>
-        </div>}
+        </div>
       </div>
 
       {/* Count */}

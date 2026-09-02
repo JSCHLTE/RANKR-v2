@@ -24,7 +24,6 @@ export default async function RankingsPage({ params }: { params: Promise<{ slug:
     rankObj: data?.rankObj,
     createdAt: formatTimestamp(data?.createdAt),
     updatedAt: formatTimestamp(data?.updatedAt),
-    positionGroup: ["QB", "RB", "WR", "TE", "K", "DEF"],
   };
   
   const ranks = ranksDoc.data();
@@ -32,7 +31,7 @@ export default async function RankingsPage({ params }: { params: Promise<{ slug:
   return (
     <main className="max-w-5xl mx-auto px-4 mb-10">
       <RankingHeader meta={meta} />
-      <RankingList ranks={ranks?.ranks ?? []} meta={meta} />
+      <RankingList ranks={ranks?.ranks ?? []} />
     </main>
   );
 }

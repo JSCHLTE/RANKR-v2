@@ -33,6 +33,5 @@
     author: author;
     createdAt: string;
     updatedAt: string;
-    positionGroup: string[];
     rankObj: RankObj;
   }

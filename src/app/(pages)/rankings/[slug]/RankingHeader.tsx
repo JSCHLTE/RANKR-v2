@@ -2,7 +2,6 @@
 
 import { RankingMeta } from "@/types/rank";
 import { useAuth } from "@/context/AuthContext";
-import { getPositionColors } from "@/constants/positions";
 import Link from "next/link";
 
 interface Tag {
@@ -15,23 +14,10 @@ function buildTags(meta: RankingMeta): Tag[] {
   const tags: Tag[] = [];
   if (rankObj.scoring)    tags.push({ value: rankObj.scoring });
   if (rankObj.leagueSize) tags.push({ value: `${rankObj.leagueSize} Teams` });
-  if (rankObj.rankType)   tags.push({ value: rankObj.rankType });
-  if (rankObj.onlyRookies) tags.push({ value: "Rookies Only" });
   return tags;
 }
 
-// ─── Position Badge ───────────────────────────────────────────────────────────
-
-const PositionBadge = ({ pos }: { pos: string }) => {
-  const colors = getPositionColors(pos);
-  return (
-    <span className={`inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide px-2.5 py-1 rounded-full border ${colors.bg} ${colors.text} ${colors.border}`}>
-      {pos}
-    </span>
-  );
-};
-
-// ─── Props ────────────────────────────────────────────────────────────────────
+//Props
 
 interface Props {
   meta: RankingMeta;
@@ -39,7 +25,7 @@ interface Props {
   onDelete?: () => void;
 }
 
-// ─── Component ────────────────────────────────────────────────────────────────
+//Component
 
 const RankingHeader = ({ meta, onEdit, onDelete }: Props) => {
   const { user } = useAuth();
@@ -63,10 +49,18 @@ const RankingHeader = ({ meta, onEdit, onDelete }: Props) => {
           )}
         </div>
 
+        <div className="flex items-center gap-2 shrink-0 pt-1">
+        <button
+              title="Download as CSV"
+              className="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border border-[var(--border)] bg-transparent text-[var(--text-muted)] hover:bg-[var(--surface-hover)] hover:border-[var(--border-hover)] transition-all cursor-pointer"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 15C3 17.8284 3 19.2426 3.87868 20.1213C4.75736 21 6.17157 21 9 21H15C17.8284 21 19.2426 21 20.1213 20.1213C21 19.2426 21 17.8284 21 15" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" /><path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" /></svg>     
+            </button>
         {isOwner && (
-          <div className="flex items-center gap-2 shrink-0 pt-1">
+          <>
             <button
               onClick={onEdit}
+              title="Edit ranking"
               className="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border border-[var(--border)] bg-transparent text-[var(--text-muted)] hover:bg-[var(--surface-hover)] hover:border-[var(--border-hover)] transition-all cursor-pointer"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -77,6 +71,7 @@ const RankingHeader = ({ meta, onEdit, onDelete }: Props) => {
             </button>
             <button
               onClick={onDelete}
+              title="Delete ranking"
               className="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border border-red-500/30 bg-transparent text-red-400 hover:bg-red-500/10 transition-all cursor-pointer"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -87,9 +82,10 @@ const RankingHeader = ({ meta, onEdit, onDelete }: Props) => {
               </svg>
               Delete
             </button>
-          </div>
+            </>
         )}
-      </div>
+        </div>
+        </div>
 
       {/* Divider */}
       <div className="border-t border-[var(--border)] mb-4" />

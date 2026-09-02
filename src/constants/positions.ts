@@ -7,7 +7,8 @@ export type Position =
   | "SFLEX"
   | "K"
   | "DEF"
-  | "DST";
+  | "DST"
+  | "ROOKIE";
 
 export interface PositionColors {
     bg: string;
@@ -26,6 +27,7 @@ export const POSITION_COLORS: Record<Position, PositionColors> = {
     K:     { bg: "bg-yellow-500/10",  text: "text-yellow-400",  border: "border-yellow-500/30",  dot: "bg-yellow-400"  },
     DEF:   { bg: "bg-slate-500/10",   text: "text-slate-400",   border: "border-slate-500/30",   dot: "bg-slate-400"   },
     DST:   { bg: "bg-slate-500/10",   text: "text-slate-400",   border: "border-slate-500/30",   dot: "bg-slate-400"   },
+    ROOKIE:{ bg: "bg-[#FF00F7]/10",   text: "text-[#FF00F7]",   border: "border-[#FF00F7]/30",   dot: "bg-[#FF00F7]"   },
 };
 
 export const DEFAULT_POSITION_COLORS: PositionColors = {
