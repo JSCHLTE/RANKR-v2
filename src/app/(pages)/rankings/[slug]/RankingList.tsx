@@ -83,7 +83,7 @@ const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
           {player.firstName} {player.lastName} {player.yearsExp == 0 ? <img src="/rookie.png" alt="Rookie icon" className="ml-[5px] w-[20px] h-[20px]" /> : ""}
         </span>
         {/* Position badge */}
-        <span className={`inline-flex items-center text-[10px] font-bold tracking-wide px-2 py-0.5 rounded-full border shrink-0 ${colors.bg} ${colors.text} ${colors.border}`}>
+        <span className={`inline-flex items-center text-[10px] font-bold tracking-wide px-2 py-0.5 rounded-lg border shrink-0 ${colors.bg} ${colors.text} ${colors.border}`}>
           {primaryPos}
         </span>
       </div>
@@ -131,7 +131,7 @@ const RankingList = ({ ranks, meta }: Props) => {
   }, [resolved, search, posFilter]);
 
   return (
-    <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden">
+    <div className="rounded-lg border border-[var(--border)] bg-[var(--surface)] overflow-hidden">
 
       {/* Toolbar */}
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 p-3 border-b border-[var(--border)]">
@@ -165,7 +165,7 @@ const RankingList = ({ ranks, meta }: Props) => {
               <button
                 key={pos}
                 onClick={() => setPosFilter(pos)}
-                className={`text-[11px] font-semibold px-3 py-1.5 rounded-full border transition-all cursor-pointer ${
+                className={`text-[11px] font-semibold px-3 py-1.5 rounded-lg border transition-all cursor-pointer ${
                   active
                     ? pos === "ALL"
                       ? "bg-[var(--accent)]/10 text-[var(--accent)] border-[var(--accent)]/30"
@@ -179,7 +179,7 @@ const RankingList = ({ ranks, meta }: Props) => {
           })}
               <button
                 onClick={() => setPosFilter("ROOKIE")}
-                className={`text-[11px] font-semibold px-3 py-1.5 rounded-full border transition-all cursor-pointer`}
+                className={`text-[11px] font-semibold px-3 py-1.5 rounded-lg border transition-all cursor-pointer ${colors.bg}`}
               >
                 ROOKIE
               </button>
