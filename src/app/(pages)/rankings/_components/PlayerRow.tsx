@@ -21,7 +21,7 @@ const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
     const colors = getPositionColors(primaryPos);
   
     return (
-      <div className="group flex items-center gap-4 px-5 py-2 border-b border-[var(--border)] hover:bg-[var(--surface-hover)] transition-colors duration-100 cursor-pointer">
+      <div className="group flex items-center gap-4 p-[0.4rem] border-b border-[var(--border)] hover:bg-[var(--surface-hover)] transition-colors duration-100 cursor-pointer">
   
         {/* Rank number */}
         <div className="w-5 shrink-0 text-right">
