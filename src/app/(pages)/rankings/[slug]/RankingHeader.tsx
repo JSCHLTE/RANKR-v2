@@ -23,11 +23,12 @@ interface Props {
   meta: RankingMeta;
   onEdit?: () => void;
   onDelete?: () => void;
+  isEditing: boolean;
 }
 
 //Component
 
-const RankingHeader = ({ meta, onEdit, onDelete }: Props) => {
+const RankingHeader = ({ meta, onEdit, onDelete, isEditing }: Props) => {
   const { user } = useAuth();
   const { rankObj, author, createdAt } = meta;
   const isOwner = user?.uid === author.uid;

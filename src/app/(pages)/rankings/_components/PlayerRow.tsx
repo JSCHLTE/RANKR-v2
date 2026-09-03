@@ -45,11 +45,11 @@ const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
   
         {/* Player info */}
         <div className="flex-1 flex items-center gap-[5px] min-w-0">
-          <span className="flex items-center text-md text-[var(--foreground)] truncate">
+          <span className="flex items-center text-sm text-[var(--foreground)] truncate">
             {player.firstName} {player.lastName} {player.yearsExp == 0 ? <img src="/rookie.png" alt="Rookie icon" className="ml-[5px] w-[15px] h-[15px]" title="Rookie"/> : ""}
           </span>
           {/* Position badge */}
-          <span className={`inline-flex items-center text-[12px] font-bold tracking-wide px-2 py-0.5 rounded-lg border shrink-0 ${colors.bg} ${colors.text} ${colors.border}`}>
+          <span className={`inline-flex items-center text-[10px] font-bold tracking-wide px-2 py-0.5 rounded-lg border shrink-0 ${colors.bg} ${colors.text} ${colors.border}`}>
             {primaryPos}
           </span>
         </div>

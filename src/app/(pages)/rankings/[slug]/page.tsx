@@ -1,9 +1,8 @@
 import { db } from "@/lib/firebase-admin";
 import { notFound } from "next/navigation";
-import RankingHeader from "./RankingHeader";
 import formatTimestamp from "@/hooks/formatTimeStamp";
 import { RankingMeta } from "@/types/rank";
-import RankingList from "./RankingList";
+import RankingView from "./RankingView";
 
 export default async function RankingsPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -30,8 +29,7 @@ export default async function RankingsPage({ params }: { params: Promise<{ slug:
 
   return (
     <main className="max-w-5xl mx-auto px-4 mb-10">
-      <RankingHeader meta={meta} />
-      <RankingList ranks={ranks?.ranks ?? []} />
+        <RankingView meta={meta} ranks={ranks?.ranks ?? []} />
     </main>
   );
 }

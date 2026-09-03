@@ -6,6 +6,8 @@ import { getPositionColors } from "@/constants/positions";
 import SkeletonRow from "../_components/SkeletonRow";
 import PlayerRow from "../_components/PlayerRow";
 import { PlayerLite, ResolvedPlayer } from "@/types/player";
+import { useAuth } from "@/context/AuthContext";
+import { author } from "@/types/rank";
 
 //Types
 interface RankEntry {
@@ -13,15 +15,19 @@ interface RankEntry {
   rank: number;
 }
 
-interface Ranks {
+interface Props {
   ranks: RankEntry[];
+  author: author;
+  isEditing: boolean;
 }
 
-const RankingList = ({ ranks }: Ranks) => {
+const RankingList = ({ ranks, author, isEditing }: Props) => {
   const { players, loading, error } = usePlayers();
   const [search, setSearch] = useState("");
   const POSITIONS = ["ALL", "QB", "RB", "WR", "TE", "K", "DEF", "ROOKIE"];
   const [posFilter, setPosFilter] = useState("ALL");
+  const { user } = useAuth();
+  const isOwner = user?.uid === author.uid;
 
   // Merge ranks with player metadata, sorted by rank
   const resolved = useMemo<ResolvedPlayer[]>(() => {
