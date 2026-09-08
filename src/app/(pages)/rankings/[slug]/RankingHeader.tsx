@@ -3,6 +3,7 @@
 import { RankingMeta } from "@/types/rank";
 import { useAuth } from "@/context/AuthContext";
 import Link from "next/link";
+import RosterTags from "../_components/RosterTags";
 
 interface Tag {
   label?: string;
@@ -126,8 +127,9 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, on
         </div>
         </div>
 
+      <div className="mt-5 space-y-4">
       {/* Ranking details */}
-      <div className="mt-5 flex flex-wrap items-center gap-2">
+      <div className="flex flex-wrap items-center gap-2">
         {/* Neutral tags */}
         {tags.map((tag, i) => (
           <span
@@ -157,6 +159,8 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, on
             Private
           </span>
         )}
+      </div>
+        <RosterTags format={rankObj.format} />
       </div>
     </div>
   );
