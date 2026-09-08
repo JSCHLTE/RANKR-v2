@@ -34,16 +34,17 @@ interface Props {
 
 const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, onCancel, onChange }: Props) => {
   const { user } = useAuth();
-  const { rankObj, author, createdAt } = meta;
+  const { rankObj, author, createdAt, updatedAt } = meta;
   const isOwner = user?.uid === author.uid;
   const tags = buildTags(meta);
+  const badgeClass = "inline-flex h-7 items-center gap-1.5 rounded-full border px-2.5 text-[11px] font-medium leading-none";
 
   return (
     <div className="py-8">
 
       {/* Top row: title + actions */}
-      <div className="flex flex-wrap items-start justify-between gap-4 mb-5">
-        <div className="flex-1 min-w-0">
+      <div className="flex flex-col sm:flex-row items-start justify-between gap-5">
+        <div className="w-full flex-1 min-w-0">
           {isEditing && isOwner ? <div className="space-y-2">
             <input aria-label="Ranking title" value={rankObj.name} maxLength={200} disabled={isSaving}
               onChange={event => onChange("name", event.target.value)}
@@ -52,7 +53,7 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, on
               onChange={event => onChange("description", event.target.value)}
               className="w-full text-sm leading-relaxed rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text-muted)] px-3 py-2 focus:outline-none focus:border-[var(--accent)]" />
           </div> : <>
-          <h1 className="text-2xl font-semibold text-[var(--foreground)] leading-tight tracking-tight mb-1.5">
+          <h1 className="text-2xl font-semibold text-[var(--foreground)] leading-tight tracking-tight mb-2">
             {rankObj.name}
           </h1>
           {rankObj.description && (
@@ -61,6 +62,27 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, on
             </p>
           )}
           </>}
+          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+            {/* Author */}
+            <Link href={`/user/${author.username}`} className="inline-flex items-center gap-2 text-sm hover:opacity-80 transition-opacity">
+              <div className="w-6 h-6 rounded-full overflow-hidden border border-[var(--border)] shrink-0">
+                {author.pfp ? (
+                  <img src={author.pfp} alt={author.username} className="w-full h-full object-cover" />
+                ) : (
+                  <div className="w-full h-full bg-[var(--surface-hover)] flex items-center justify-center text-[10px] font-medium text-[var(--text-muted)]">
+                    {author.username?.[0]?.toUpperCase() ?? "?"}
+                  </div>
+                )}
+              </div>
+              <span className="text-sm font-medium text-[var(--foreground)]">
+                {author.displayName || author.username}
+              </span>
+            </Link>
+
+            <span className="text-xs text-[var(--text-muted)]" title={`Created ${createdAt}`}>
+              {updatedAt && updatedAt !== "—" ? `Updated ${updatedAt}` : `Created ${createdAt}`}
+            </span>
+          </div>
         </div>
 
         <div className="flex items-center gap-2 shrink-0 pt-1">
@@ -104,44 +126,13 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, on
         </div>
         </div>
 
-      {/* Divider */}
-      <div className="border-t border-[var(--border)] mb-4" />
-
-      {/* Meta row: avatar + author + date + tags */}
-      <div className="flex items-center flex-wrap gap-2">
-
-        {/* Author */}
-        <Link href ={`/user/${author.username}`} className="flex items-center gap-2 mr-1">
-          <div className="w-7 h-7 rounded-full overflow-hidden border border-[var(--border)] shrink-0">
-            {author.pfp ? (
-              <img src={author.pfp} alt={author.username} className="w-full h-full object-cover" />
-            ) : (
-              <div className="w-full h-full bg-[var(--surface-hover)] flex items-center justify-center text-[10px] font-medium text-[var(--text-muted)]">
-                {author.username?.[0]?.toUpperCase() ?? "?"}
-              </div>
-            )}
-          </div>
-          <span className="text-sm font-medium text-[var(--foreground)]">
-            {author.displayName ?? author.username}
-          </span>
-        </Link>
-
-        {/* Dot */}
-        <span className="w-1 h-1 rounded-full bg-[var(--border-hover)]" />
-
-        {/* Date */}
-        <span className="text-xs text-[var(--text-muted)]">
-          {createdAt}
-        </span>
-
-        {/* Dot */}
-        <span className="w-1 h-1 rounded-full bg-[var(--border-hover)]" />
-
+      {/* Ranking details */}
+      <div className="mt-5 flex flex-wrap items-center gap-2">
         {/* Neutral tags */}
         {tags.map((tag, i) => (
           <span
             key={i}
-            className="text-[11px] text-[var(--text-muted)] bg-[var(--surface)] border border-[var(--border)] rounded-full px-2.5 py-1 leading-none"
+            className={`${badgeClass} text-[var(--text-muted)] bg-[var(--surface)] border-[var(--border)]`}
           >
             {tag.value}
           </span>
@@ -149,7 +140,7 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, on
 
         {/* Visibility */}
         {rankObj.visibility === "PUBLIC" ? (
-          <span className="inline-flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+          <span className={`${badgeClass} bg-emerald-500/10 text-emerald-400 border-emerald-500/30`}>
             <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <circle cx="12" cy="12" r="10" />
               <line x1="2" y1="12" x2="22" y2="12" />
@@ -158,7 +149,7 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, on
             Public
           </span>
         ) : (
-          <span className="inline-flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/30">
+          <span className={`${badgeClass} bg-amber-500/10 text-amber-400 border-amber-500/30`}>
             <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <rect x="3" y="11" width="18" height="11" rx="2" />
               <path d="M7 11V7a5 5 0 0 1 10 0v4" />
