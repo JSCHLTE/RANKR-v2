@@ -11,10 +11,11 @@ import { rankBelowPlayer } from "@/lib/ranking-reorder";
 
 interface SortableRowProps extends ResolvedPlayer {
   selected: boolean;
+  canInsertBelow: boolean;
   onSelect: (playerId: string) => void;
 }
 
-const SortableRow = memo(function SortableRow({ rank, player, positionalRank, selected, onSelect }: SortableRowProps) {
+const SortableRow = memo(function SortableRow({ rank, player, positionalRank, selected, canInsertBelow, onSelect }: SortableRowProps) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
     id: player.id,
     transition: { duration: 100, easing: "ease-out" },
@@ -39,9 +40,10 @@ const SortableRow = memo(function SortableRow({ rank, player, positionalRank, se
       }}
       onDragStart={event => event.preventDefault()}
       style={{ transform: CSS.Transform.toString(transform), transition, opacity: isDragging ? 0.3 : 1 }}
-      className={`select-none cursor-grab [&_*]:cursor-grab active:cursor-grabbing active:[&_*]:cursor-grabbing focus-visible:outline-2 focus-visible:outline-[var(--accent)] focus-visible:-outline-offset-2 ${selected ? "bg-[var(--accent)]/10 ring-1 ring-inset ring-[var(--accent)]" : ""}`}
+      className={`group/reorder relative select-none cursor-grab [&_*]:cursor-grab active:cursor-grabbing active:[&_*]:cursor-grabbing focus-visible:outline-2 focus-visible:outline-[var(--accent)] focus-visible:-outline-offset-2 ${selected ? "bg-[var(--accent)]/10 ring-1 ring-inset ring-[var(--accent)]" : ""}`}
     >
       <PlayerRow rank={rank} player={player} positionalRank={positionalRank} />
+      {canInsertBelow && <span aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-0 h-0.5 bg-[var(--accent)] opacity-0 group-hover/reorder:opacity-100 group-focus-visible/reorder:opacity-100" />}
     </div>
   );
 });
@@ -103,7 +105,7 @@ export default function SortableRankingRows({ players, onMove }: Props) {
       }}
     >
       <SortableContext items={itemIds} strategy={verticalListSortingStrategy}>
-        {players.map(entry => <SortableRow key={entry.player.id} {...entry} selected={selectedId === entry.player.id} onSelect={selectPlayer} />)}
+        {players.map(entry => <SortableRow key={entry.player.id} {...entry} selected={selectedId === entry.player.id} canInsertBelow={selectedId !== null && selectedId !== entry.player.id && activeId === null} onSelect={selectPlayer} />)}
       </SortableContext>
       <DragOverlay dropAnimation={null}>
         {activePlayer && <div className="bg-[var(--surface)] shadow-lg ring-1 ring-[var(--accent)] cursor-grabbing [&_*]:cursor-grabbing select-none">
