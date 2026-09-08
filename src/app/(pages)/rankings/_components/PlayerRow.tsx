@@ -1,5 +1,6 @@
 import { getPositionColors } from "@/constants/positions";
 import { ResolvedPlayer } from "@/types/player";
+import { memo } from "react";
 
 const PlayerRow = ({ rank, player, positionalRank }: ResolvedPlayer) => {
     const primaryPos = player.fantasyPositions?.[0] ?? player.position ?? "—";
@@ -20,6 +21,7 @@ const PlayerRow = ({ rank, player, positionalRank }: ResolvedPlayer) => {
                 <img
                   src={`https://sleepercdn.com/content/nfl/players/${player.id}.jpg`}
                   alt={`${player.fullName}`}
+                  draggable={false}
                   className="w-10 h-10 rounded-md object-cover object-top bg-[var(--surface-hover)]"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src =
@@ -47,4 +49,4 @@ const PlayerRow = ({ rank, player, positionalRank }: ResolvedPlayer) => {
     );
   };
 
-export default PlayerRow;
+export default memo(PlayerRow);

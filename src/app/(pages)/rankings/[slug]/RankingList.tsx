@@ -137,7 +137,6 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
       </div>
 
       {/* List */}
-      {isEditing && isOwner && <p className="px-4 py-2 text-xs text-[var(--text-muted)]">Drag any player row to reorder (press and hold on touch screens). Moves update overall ranks, even with filters applied.</p>}
       <div>
         {loading ? (
           Array.from({ length: 10 }).map((_, i) => <SkeletonRow key={i} />)
