@@ -24,11 +24,15 @@ interface Props {
   onEdit?: () => void;
   onDelete?: () => void;
   isEditing: boolean;
+  isSaving: boolean;
+  onSave: () => void;
+  onCancel: () => void;
+  onChange: (field: "name" | "description", value: string) => void;
 }
 
 //Component
 
-const RankingHeader = ({ meta, onEdit, onDelete, isEditing }: Props) => {
+const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, onCancel, onChange }: Props) => {
   const { user } = useAuth();
   const { rankObj, author, createdAt } = meta;
   const isOwner = user?.uid === author.uid;
@@ -38,8 +42,16 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing }: Props) => {
     <div className="py-8">
 
       {/* Top row: title + actions */}
-      <div className="flex items-start justify-between gap-4 mb-5">
+      <div className="flex flex-wrap items-start justify-between gap-4 mb-5">
         <div className="flex-1 min-w-0">
+          {isEditing && isOwner ? <div className="space-y-2">
+            <input aria-label="Ranking title" value={rankObj.name} maxLength={200} disabled={isSaving}
+              onChange={event => onChange("name", event.target.value)}
+              className="w-full text-2xl font-semibold leading-tight tracking-tight rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--foreground)] px-3 py-2 focus:outline-none focus:border-[var(--accent)]" />
+            <textarea aria-label="Ranking description" placeholder="Add a description..." value={rankObj.description ?? ""} maxLength={5000} rows={3} disabled={isSaving}
+              onChange={event => onChange("description", event.target.value)}
+              className="w-full text-sm leading-relaxed rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text-muted)] px-3 py-2 focus:outline-none focus:border-[var(--accent)]" />
+          </div> : <>
           <h1 className="text-2xl font-semibold text-[var(--foreground)] leading-tight tracking-tight mb-1.5">
             {rankObj.name}
           </h1>
@@ -48,6 +60,7 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing }: Props) => {
               {rankObj.description}
             </p>
           )}
+          </>}
         </div>
 
         <div className="flex items-center gap-2 shrink-0 pt-1">
@@ -57,7 +70,10 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing }: Props) => {
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 15C3 17.8284 3 19.2426 3.87868 20.1213C4.75736 21 6.17157 21 9 21H15C17.8284 21 19.2426 21 20.1213 20.1213C21 19.2426 21 17.8284 21 15" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" /><path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" /></svg>     
             </button>
-        {isOwner && (
+        {isOwner && (isEditing ? <>
+          <button onClick={onSave} disabled={isSaving || !rankObj.name.trim()} className="text-sm px-3 py-1.5 rounded-lg border border-[var(--accent)]/30 text-[var(--accent)] hover:bg-[var(--surface-hover)] disabled:opacity-50 cursor-pointer">{isSaving ? "Saving..." : "Save"}</button>
+          <button onClick={onCancel} disabled={isSaving} className="text-sm px-3 py-1.5 rounded-lg border border-[var(--border)] text-[var(--text-muted)] hover:bg-[var(--surface-hover)] disabled:opacity-50 cursor-pointer">Cancel</button>
+        </> : (
           <>
             <button
               onClick={onEdit}
@@ -84,7 +100,7 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing }: Props) => {
               Delete
             </button>
             </>
-        )}
+        ))}
         </div>
         </div>
 

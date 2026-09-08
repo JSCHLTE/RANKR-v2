@@ -19,9 +19,11 @@ interface Props {
   ranks: RankEntry[];
   author: author;
   isEditing: boolean;
+  isSaving: boolean;
+  onMove: (playerId: string, targetRank: number) => void;
 }
 
-const RankingList = ({ ranks, author, isEditing }: Props) => {
+const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
   const { players, loading, error } = usePlayers();
   const [search, setSearch] = useState("");
   const POSITIONS = ["ALL", "QB", "RB", "WR", "TE", "K", "DEF", "ROOKIE"];
@@ -113,6 +115,7 @@ const RankingList = ({ ranks, author, isEditing }: Props) => {
       </div>
 
       {/* List */}
+      {isEditing && isOwner && <p className="px-4 py-2 text-xs text-[var(--text-muted)]">Use the arrows or enter an overall rank to move a player. Filters do not change overall ranks.</p>}
       <div>
         {loading ? (
           Array.from({ length: 10 }).map((_, i) => <SkeletonRow key={i} />)
@@ -134,7 +137,17 @@ const RankingList = ({ ranks, author, isEditing }: Props) => {
           </div>
         ) : (
           filtered.map(({ rank, player }) => (
-            <PlayerRow key={player.id} rank={rank} player={player} />
+            isEditing && isOwner ? <div key={player.id} className="flex items-center">
+              <div className="flex-1 min-w-0"><PlayerRow rank={rank} player={player} /></div>
+              <div className="flex items-center gap-1 px-2 text-xs text-[var(--text-muted)]">
+                <button aria-label={`Move ${player.fullName} up`} disabled={isSaving || rank === 1} onClick={() => onMove(player.id, rank - 1)} className="p-2 rounded border border-[var(--border)] hover:bg-[var(--surface-hover)] disabled:opacity-30">↑</button>
+                <input key={`${player.id}-${rank}`} aria-label={`Overall rank for ${player.fullName}`} type="number" min={1} max={ranks.length} defaultValue={rank} disabled={isSaving}
+                  onBlur={event => { onMove(player.id, Number(event.target.value)); event.target.value = String(rank); }}
+                  onKeyDown={event => { if (event.key === "Enter") event.currentTarget.blur(); }}
+                  className="w-14 p-1.5 rounded border border-[var(--border)] bg-[var(--surface)] text-[var(--foreground)]" />
+                <button aria-label={`Move ${player.fullName} down`} disabled={isSaving || rank === ranks.length} onClick={() => onMove(player.id, rank + 1)} className="p-2 rounded border border-[var(--border)] hover:bg-[var(--surface-hover)] disabled:opacity-30">↓</button>
+              </div>
+            </div> : <PlayerRow key={player.id} rank={rank} player={player} />
           ))
         )}
       </div>
