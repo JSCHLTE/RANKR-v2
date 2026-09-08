@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import CustomFormatSection from "./_components/CustomFormatSection";
 import { useAuth } from "@/context/AuthContext";
 import { RankObj } from "@/types/rank";
@@ -14,7 +15,11 @@ const Optional = () => (
 );
 
 export default function CreateRankingPage() {
-  const { user, profile } = useAuth();
+  const { user } = useAuth();
+  const router = useRouter();
+  const submitting = useRef(false);
+  const [isCreating, setIsCreating] = useState(false);
+  const [error, setError] = useState("");
 
   const [rankObj, setRankObj] = useState<RankObj>({
       name: "",
@@ -26,14 +31,17 @@ export default function CreateRankingPage() {
   });
 
   const handleCreate = async () => {
+    if (submitting.current) return;
     if(!user) {
-      alert("You must be signed in to create a ranking");
+      setError("You must be signed in to create a ranking.");
       return;
     }
 
-    const token = await user.getIdToken();
-
+    submitting.current = true;
+    setIsCreating(true);
+    setError("");
     try {
+      const token = await user.getIdToken();
       const res = await fetch("/api/create-ranking", {
         method: "POST",
         body: JSON.stringify({ rankObj }),
@@ -42,10 +50,14 @@ export default function CreateRankingPage() {
           Authorization: `Bearer ${token}`,
          },
       });
+      const result = await res.json();
+      if (!res.ok) throw new Error(result.error || "Unable to create ranking.");
+      if (typeof result.rankingId !== "string" || !result.rankingId) throw new Error("The server did not return a ranking ID.");
+      router.push(`/rankings/${encodeURIComponent(result.rankingId)}`);
     } catch(e: unknown) {
-      console.log(e);
-    } finally {
-      console.log("done")
+      setError(e instanceof Error ? e.message : "Unable to create ranking. Please try again.");
+      submitting.current = false;
+      setIsCreating(false);
     }
 
   }
@@ -80,6 +92,7 @@ const updateField = <K extends keyof RankObj>(
           type="text"
           placeholder="e.g. My Week 10 PPR Rankings"
           value={rankObj.name}
+          maxLength={200}
           onChange={(e) => updateField("name", e.target.value)}
           className="w-full px-4 py-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] focus:outline-none focus:border-[var(--accent)]"
         />
@@ -93,6 +106,7 @@ const updateField = <K extends keyof RankObj>(
         <textarea
           placeholder="e.g. Post-week 10 update targeting handcuffs..."
           value={rankObj.description}
+          maxLength={5000}
           onChange={(e) => updateField("description", e.target.value)}
           rows={3}
           className="w-full px-4 py-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] focus:outline-none focus:border-[var(--accent)] resize-none"
@@ -195,16 +209,17 @@ const updateField = <K extends keyof RankObj>(
       </section>
 
       {/* Submit */}
+      {error && <p role="alert" className="mb-4 text-sm text-red-400">{error}</p>}
       <button
-        disabled={!canSubmit}
+        disabled={!canSubmit || isCreating}
         onClick={handleCreate}
         className={`w-full py-3 rounded-xl font-semibold text-lg transition-all ${
-          canSubmit
+          canSubmit && !isCreating
             ? "bg-[var(--accent)] text-[var(--background)] hover:opacity-90 cursor-pointer"
             : "bg-[var(--border)] text-[var(--text-muted)] cursor-not-allowed opacity-50"
         }`}
       >
-        Create Ranking
+        {isCreating ? "Creating..." : "Create Ranking"}
       </button>
     </main>
   );

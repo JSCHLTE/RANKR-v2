@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
     return Response.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const rankObj = body.rankObj;
+  const rankObj = body?.rankObj;
 
   if (!rankObj) {
     return Response.json({ error: "Missing rankObj" }, { status: 400 });
@@ -50,8 +50,12 @@ export async function POST(req: NextRequest) {
     return Response.json({ error: "User profile not found" }, { status: 404 });
   }
 
-  if (!rankObj.name || !rankObj.positionGroup?.length || !rankObj.visibility) {
-    return Response.json({ error: "Missing required ranking fields" }, { status: 400 });
+  if (typeof rankObj.name !== "string" || !rankObj.name.trim() || rankObj.name.length > 200 ||
+      !["PUBLIC", "PRIVATE"].includes(rankObj.visibility)) {
+    return Response.json({ error: "A ranking name (up to 200 characters) and valid visibility are required." }, { status: 400 });
+  }
+  if (rankObj.description !== undefined && (typeof rankObj.description !== "string" || rankObj.description.length > 5000)) {
+    return Response.json({ error: "Description must be text with at most 5000 characters." }, { status: 400 });
   }
 
   try {
@@ -66,7 +70,7 @@ export async function POST(req: NextRequest) {
         displayName: profile.displayName,
         pfp: profile.pfp,
       },
-      rankObj,
+      rankObj: { ...rankObj, name: rankObj.name.trim() },
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });

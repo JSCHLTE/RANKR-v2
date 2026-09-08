@@ -17,6 +17,7 @@ const RankingView = ({ meta, ranks }: Props) => {
   const [draft, setDraft] = useState(saved);
   const [isEditing, setIsEditing] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
   const saving = useRef(false);
   const [error, setError] = useState("");
   const canEdit = user?.uid === saved.meta.author.uid;
@@ -59,9 +60,33 @@ const RankingView = ({ meta, ranks }: Props) => {
     }
   }
 
+  async function deleteRanking() {
+    if (!canEdit || !user || editing || saving.current) return;
+    if (!window.confirm(`Are you sure you want to permanently delete "${saved.meta.rankObj.name}"?`)) return;
+    saving.current = true;
+    setIsDeleting(true);
+    setError("");
+    try {
+      const response = await fetch("/api/delete-ranking", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${await user.getIdToken()}` },
+        body: JSON.stringify({ rankingId: saved.meta.id }),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || "Unable to delete ranking.");
+      router.replace("/rankings");
+      router.refresh();
+    } catch (error) {
+      setError(error instanceof Error ? error.message : "Unable to delete ranking. Please try again.");
+      saving.current = false;
+      setIsDeleting(false);
+    }
+  }
+
   return <>
-    <RankingHeader meta={current.meta} isEditing={editing} isSaving={isSaving}
-      onEdit={() => { if (canEdit) { setDraft(saved); setError(""); setIsEditing(true); } }}
+    <RankingHeader meta={current.meta} isEditing={editing} isSaving={isSaving} isDeleting={isDeleting}
+      onEdit={() => { if (canEdit && !saving.current) { setDraft(saved); setError(""); setIsEditing(true); } }}
+      onDelete={deleteRanking}
       onCancel={() => { setDraft(saved); setError(""); setIsEditing(false); }}
       onSave={save}
       onChange={(field, value) => setDraft(previous => ({ ...previous, meta: { ...previous.meta, rankObj: { ...previous.meta.rankObj, [field]: value } } }))}

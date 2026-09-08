@@ -6,6 +6,8 @@ const PlayerRow = ({ rank, player, positionalRank }: ResolvedPlayer) => {
     const primaryPos = player.fantasyPositions?.[0] ?? player.position ?? "—";
     const colors = getPositionColors(primaryPos);
   
+  console.log(player)
+
     return (
       <div className="group flex items-center gap-4 p-[0.4rem] border-b border-[var(--border)] hover:bg-[var(--surface-hover)] transition-colors duration-100 cursor-pointer">
   
@@ -19,7 +21,7 @@ const PlayerRow = ({ rank, player, positionalRank }: ResolvedPlayer) => {
                     {/* Player image */}
                     <div className="relative shrink-0">
                 <img
-                  src={`https://sleepercdn.com/content/nfl/players/${player.id}.jpg`}
+                  src={player.fantasyPositions.includes("DEF") ? `https://sleepercdn.com/images/team_logos/nfl/${player.id.toLowerCase()}.png` : `https://sleepercdn.com/content/nfl/players/${player.id}.jpg`}
                   alt={`${player.fullName}`}
                   draggable={false}
                   className="w-10 h-10 rounded-md object-cover object-top bg-[var(--surface-hover)]"

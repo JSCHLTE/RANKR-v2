@@ -26,6 +26,7 @@ interface Props {
   onDelete?: () => void;
   isEditing: boolean;
   isSaving: boolean;
+  isDeleting: boolean;
   onSave: () => void;
   onCancel: () => void;
   onChange: (field: "name" | "description", value: string) => void;
@@ -33,7 +34,7 @@ interface Props {
 
 //Component
 
-const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, onCancel, onChange }: Props) => {
+const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, isDeleting, onSave, onCancel, onChange }: Props) => {
   const { user } = useAuth();
   const { rankObj, author, createdAt, updatedAt } = meta;
   const isOwner = user?.uid === author.uid;
@@ -100,6 +101,7 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, on
           <>
             <button
               onClick={onEdit}
+              disabled={isDeleting}
               title="Edit ranking"
               className="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border border-[var(--border)] bg-transparent text-[var(--text-muted)] hover:bg-[var(--surface-hover)] hover:border-[var(--border-hover)] transition-all cursor-pointer"
             >
@@ -111,6 +113,8 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, on
             </button>
             <button
               onClick={onDelete}
+              disabled={isDeleting}
+              aria-busy={isDeleting}
               title="Delete ranking"
               className="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border border-red-500/30 bg-transparent text-red-400 hover:bg-red-500/10 transition-all cursor-pointer"
             >
@@ -120,7 +124,7 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, onSave, on
                 <path d="M10 11v6M14 11v6" />
                 <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" />
               </svg>
-              Delete
+              {isDeleting ? "Deleting..." : "Delete"}
             </button>
             </>
         ))}
