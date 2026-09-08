@@ -27,5 +27,6 @@ export interface PlayerLite {
 
 export interface ResolvedPlayer {
   rank: number;
+  positionalRank?: number;
   player: PlayerLite;
 }

@@ -8,6 +8,7 @@ import PlayerRow from "../_components/PlayerRow";
 import { PlayerLite, ResolvedPlayer } from "@/types/player";
 import { useAuth } from "@/context/AuthContext";
 import { author } from "@/types/rank";
+import SortableRankingRows from "./SortableRankingRows";
 
 //Types
 interface RankEntry {
@@ -27,7 +28,20 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
   const { players, loading, error } = usePlayers();
   const [search, setSearch] = useState("");
   const POSITIONS = ["ALL", "QB", "RB", "WR", "TE", "K", "DEF", "ROOKIE"];
-  const [posFilter, setPosFilter] = useState("ALL");
+  const [posFilters, setPosFilters] = useState<string[]>([]);
+  const [rookiesOnly, setRookiesOnly] = useState(false);
+  function toggleFilter(position: string) {
+    if (position === "ALL") {
+      setPosFilters([]);
+      setRookiesOnly(false);
+    } else if (position === "ROOKIE") {
+      setRookiesOnly(previous => !previous);
+    } else {
+      setPosFilters(previous => previous.includes(position)
+        ? previous.filter(value => value !== position)
+        : [...previous, position]);
+    }
+  }
   const { user } = useAuth();
   const isOwner = user?.uid === author.uid;
 
@@ -35,13 +49,21 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
   const resolved = useMemo<ResolvedPlayer[]>(() => {
     if (!players || !ranks) return [];
   
+    const positionCounts = new Map<string, number>();
     return ranks
       .map((entry) => ({
         rank: entry.rank,
         player: players[entry.player_id] as PlayerLite | undefined,
       }))
       .filter((e): e is ResolvedPlayer => !!e.player)
-      .sort((a, b) => a.rank - b.rank);
+      .sort((a, b) => a.rank - b.rank)
+      .map(entry => {
+        // Count the full ranking before filtering; draft reorders recalculate these badges.
+        const position = entry.player.fantasyPositions?.[0] ?? entry.player.position ?? "—";
+        const positionalRank = (positionCounts.get(position) ?? 0) + 1;
+        positionCounts.set(position, positionalRank);
+        return { ...entry, positionalRank };
+      });
   }, [players, ranks]);
 
   // Apply search + position filter
@@ -50,13 +72,11 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
       const fullName = `${player.firstName.replace(/[.,'’-]/g, "")} ${player.lastName.replace(/[.,'’-]/g, "")}`.toLowerCase();
       const matchesSearch = fullName.includes(search.toLowerCase()) ||
         player.team?.toLowerCase().includes(search.toLowerCase());
-      const matchesPos =
-        posFilter === "ROOKIE" ? player.yearsExp === 0 :
-        posFilter === "ALL" ||
-        player.position?.includes(posFilter);
-      return matchesSearch && matchesPos;
+      const matchesPos = posFilters.length === 0 || posFilters.some(position =>
+        player.position === position || player.fantasyPositions?.includes(position));
+      return matchesSearch && matchesPos && (!rookiesOnly || player.yearsExp === 0);
     });
-  }, [resolved, search, posFilter]);
+  }, [resolved, search, posFilters, rookiesOnly]);
 
   return (
     <div className="rounded-lg border border-[var(--border)] bg-[var(--surface)] overflow-hidden">
@@ -86,12 +106,14 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
         {/* Position filter */}
         <div className="flex items-center gap-1.5 flex-wrap">
           {POSITIONS.map((pos) => {
-            const active = posFilter === pos;
+            const active = pos === "ALL" ? posFilters.length === 0 && !rookiesOnly
+              : pos === "ROOKIE" ? rookiesOnly : posFilters.includes(pos);
             const colors = pos !== "ALL" ? getPositionColors(pos) : null;
             return (
               <button
                 key={pos}
-                onClick={() => setPosFilter(pos)}
+                onClick={() => toggleFilter(pos)}
+                aria-pressed={active}
                 className={`text-[11px] font-semibold px-3 py-1.5 rounded-lg border transition-all cursor-pointer ${
                   active
                     ? pos === "ALL"
@@ -115,7 +137,7 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
       </div>
 
       {/* List */}
-      {isEditing && isOwner && <p className="px-4 py-2 text-xs text-[var(--text-muted)]">Use the arrows or enter an overall rank to move a player. Filters do not change overall ranks.</p>}
+      {isEditing && isOwner && <p className="px-4 py-2 text-xs text-[var(--text-muted)]">Drag any player row to reorder (press and hold on touch screens). Moves update overall ranks, even with filters applied.</p>}
       <div>
         {loading ? (
           Array.from({ length: 10 }).map((_, i) => <SkeletonRow key={i} />)
@@ -126,9 +148,9 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
         ) : filtered.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-16 gap-2">
             <span className="text-sm text-[var(--text-muted)]">No players found</span>
-            {(search || posFilter !== "ALL") && (
+            {(search || posFilters.length > 0 || rookiesOnly) && (
               <button
-                onClick={() => { setSearch(""); setPosFilter("ALL"); }}
+                onClick={() => { setSearch(""); toggleFilter("ALL"); }}
                 className="text-xs text-[var(--accent)] hover:underline cursor-pointer"
               >
                 Clear filters
@@ -136,18 +158,10 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
             )}
           </div>
         ) : (
-          filtered.map(({ rank, player }) => (
-            isEditing && isOwner ? <div key={player.id} className="flex items-center">
-              <div className="flex-1 min-w-0"><PlayerRow rank={rank} player={player} /></div>
-              <div className="flex items-center gap-1 px-2 text-xs text-[var(--text-muted)]">
-                <button aria-label={`Move ${player.fullName} up`} disabled={isSaving || rank === 1} onClick={() => onMove(player.id, rank - 1)} className="p-2 rounded border border-[var(--border)] hover:bg-[var(--surface-hover)] disabled:opacity-30">↑</button>
-                <input key={`${player.id}-${rank}`} aria-label={`Overall rank for ${player.fullName}`} type="number" min={1} max={ranks.length} defaultValue={rank} disabled={isSaving}
-                  onBlur={event => { onMove(player.id, Number(event.target.value)); event.target.value = String(rank); }}
-                  onKeyDown={event => { if (event.key === "Enter") event.currentTarget.blur(); }}
-                  className="w-14 p-1.5 rounded border border-[var(--border)] bg-[var(--surface)] text-[var(--foreground)]" />
-                <button aria-label={`Move ${player.fullName} down`} disabled={isSaving || rank === ranks.length} onClick={() => onMove(player.id, rank + 1)} className="p-2 rounded border border-[var(--border)] hover:bg-[var(--surface-hover)] disabled:opacity-30">↓</button>
-              </div>
-            </div> : <PlayerRow key={player.id} rank={rank} player={player} />
+          isEditing && isOwner && !isSaving ? (
+            <SortableRankingRows key={JSON.stringify([search, posFilters, rookiesOnly])} players={filtered} onMove={onMove} />
+          ) : filtered.map(entry => (
+            <PlayerRow key={entry.player.id} {...entry} />
           ))
         )}
       </div>

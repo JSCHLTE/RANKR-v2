@@ -1,23 +1,8 @@
 import { getPositionColors } from "@/constants/positions";
+import { ResolvedPlayer } from "@/types/player";
 
-interface Player {
-    id: string;
-    fullName: string;
-    firstName: string;
-    lastName: string;
-    team: string;
-    position: string;
-    fantasyPositions: string[];
-    yearsExp: number
-  }
-
-interface ResolvedPlayer {
-    rank: number;
-    player: Player;
-}
-
-const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
-    const primaryPos = player.fantasyPositions?.[0] ?? "—";
+const PlayerRow = ({ rank, player, positionalRank }: ResolvedPlayer) => {
+    const primaryPos = player.fantasyPositions?.[0] ?? player.position ?? "—";
     const colors = getPositionColors(primaryPos);
   
     return (
@@ -50,7 +35,7 @@ const PlayerRow = ({ rank, player }: ResolvedPlayer) => {
           </span>
           {/* Position badge */}
           <span className={`inline-flex items-center text-[10px] font-bold tracking-wide px-2 py-0.5 rounded-lg border shrink-0 ${colors.bg} ${colors.text} ${colors.border}`}>
-            {primaryPos}
+            {primaryPos}{positionalRank !== undefined ? ` ${positionalRank}` : ""}
           </span>
         </div>
   
