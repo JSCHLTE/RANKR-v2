@@ -1,17 +1,23 @@
 import { useEffect, useState } from "react";
 
-interface Player {
-    id: string;
-    fullName: string;
-    firstName: string;
-    lastName: string;
-    team: string;
-    position: string;
-    fantasyPositions: string[];
+import { PlayerLite } from "@/types/player";
+import { normalizePlayers } from "@/lib/normalize-players";
+
+async function loadExperience(): Promise<Record<string, number>> {
+  try {
+    // The older file supplies experience only; it must never decide which players appear.
+    const response = await fetch("/data/player_lite.json");
+    if (!response.ok) return {};
+    const players: PlayerLite[] = await response.json();
+    return Object.fromEntries(players.filter(player => typeof player.yearsExp === "number")
+      .map(player => [player.id, player.yearsExp as number]));
+  } catch {
+    return {};
   }
+}
 
 export function usePlayers() {
-  const [players, setPlayers] = useState<Record<string, Player>>({});
+  const [players, setPlayers] = useState<Record<string, PlayerLite>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -21,15 +27,17 @@ export function usePlayers() {
         setLoading(true);
         setError(null);
 
-        const res = await fetch("/data/player_lite.json");
+        const [res, experience] = await Promise.all([
+          fetch("/data/players_lite.json"),
+          loadExperience(),
+        ]);
 
         if (!res.ok) {
           throw new Error(`Failed to load players: ${res.status}`);
         }
 
-        const data: Player[] = await res.json();
-        const map = Object.fromEntries(data.map((p) => [p.id, p]));
-        setPlayers(map);
+        const data = await res.json();
+        setPlayers(normalizePlayers(data, experience));
       } catch (error) {
         setError(
           error instanceof Error ? error.message : "Failed to load players"

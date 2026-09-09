@@ -22,7 +22,7 @@ export interface PlayerLite {
   team: string;
   position: string;
   fantasyPositions: string[];
-  yearsExp: number
+  yearsExp: number | null
 }
 
 export interface ResolvedPlayer {
