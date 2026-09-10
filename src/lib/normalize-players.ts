@@ -9,6 +9,9 @@ interface SourcePlayer {
   injury?: boolean;
   injury_severity?: string;
   injury_note?: string;
+  injury_name?: string;
+  injury_expected_return?: string;
+  injury_reinjury_risk?: string;
 }
 
 export function normalizePlayers(source: SourcePlayer[], experience: Record<string, number> = {}): Record<string, PlayerLite> {
@@ -27,6 +30,9 @@ export function normalizePlayers(source: SourcePlayer[], experience: Record<stri
       injury: player.injury === true,
       injurySeverity: player.injury_severity === "low" || player.injury_severity === "medium" || player.injury_severity === "high" ? player.injury_severity : null,
       injuryNote: player.injury_note ?? "",
+      injuryName: player.injury_name ?? "",
+      injuryExpectedReturn: player.injury_expected_return ?? "",
+      injuryReinjuryRisk: player.injury_reinjury_risk ?? "",
     }];
   }));
 }

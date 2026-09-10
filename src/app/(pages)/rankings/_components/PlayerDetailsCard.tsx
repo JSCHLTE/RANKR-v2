@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { PlayerLite } from "@/types/player";
 import { getPositionColors } from "@/constants/positions";
+import InjuryInfo from "./InjuryInfo";
 
 interface Details {
   full_name?: string;
@@ -75,5 +76,6 @@ export default function PlayerDetailsCard({ player, onClose }: { player: PlayerL
         <dd className="text-sm font-medium">{value}</dd>
       </div>)}
     </dl>}
+    {player.injury && <div className="mt-6"><InjuryInfo player={player} /></div>}
   </dialog>;
 }

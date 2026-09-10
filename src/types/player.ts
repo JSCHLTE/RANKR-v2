@@ -26,6 +26,9 @@ export interface PlayerLite {
   injury?: boolean;
   injurySeverity?: "low" | "medium" | "high" | null;
   injuryNote?: string;
+  injuryName?: string;
+  injuryExpectedReturn?: string;
+  injuryReinjuryRisk?: string;
 }
 
 export interface ResolvedPlayer {

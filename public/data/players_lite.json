@@ -10,7 +10,10 @@
     "player_id": "9221",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "bijanrobinson",
@@ -23,7 +26,10 @@
     "player_id": "9509",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jamarrchase",
@@ -36,7 +42,10 @@
     "player_id": "7564",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "pukanacua",
@@ -49,7 +58,10 @@
     "player_id": "9493",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaxonsmithnjigba",
@@ -62,7 +74,10 @@
     "player_id": "9488",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "christianmccaffrey",
@@ -75,7 +90,10 @@
     "player_id": "4034",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "amonrastbrown",
@@ -88,7 +106,10 @@
     "player_id": "7547",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jonathantaylor",
@@ -101,7 +122,10 @@
     "player_id": "6813",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "ceedeelamb",
@@ -114,7 +138,10 @@
     "player_id": "6786",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jamescook",
@@ -127,7 +154,10 @@
     "player_id": "8138",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "justinjefferson",
@@ -140,7 +170,10 @@
     "player_id": "6794",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chasebrown",
@@ -153,7 +186,10 @@
     "player_id": "9224",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "devonachane",
@@ -166,7 +202,10 @@
     "player_id": "9226",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "omarionhampton",
@@ -179,7 +218,10 @@
     "player_id": "12507",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "saquonbarkley",
@@ -192,7 +234,10 @@
     "player_id": "4866",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kennethwalker",
@@ -205,7 +250,10 @@
     "player_id": "8151",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "ashtonjeanty",
@@ -218,7 +266,10 @@
     "player_id": "12527",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "derrickhenry",
@@ -231,7 +282,10 @@
     "player_id": "3198",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "drakelondon",
@@ -244,7 +298,10 @@
     "player_id": "8112",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "ajbrown",
@@ -255,9 +312,12 @@
     ],
     "team": "NE",
     "player_id": "5859",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": ""
+    "injury": true,
+    "injury_severity": "medium",
+    "injury_note": "High-ankle (syndesmosis) sprain, right ankle. No fracture on X-ray; MRI pending to grade severity.",
+    "injury_name": "High-ankle (syndesmosis) sprain",
+    "injury_expected_return": "TBD",
+    "injury_reinjury_risk": "Medium"
   },
   {
     "search_full_name": "brockbowers",
@@ -270,7 +330,10 @@
     "player_id": "11604",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "maliknabers",
@@ -283,7 +346,10 @@
     "player_id": "11632",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": "Surgery"
+    "injury_note": "Surgery",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "nicocollins",
@@ -296,7 +362,10 @@
     "player_id": "7569",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "georgepickens",
@@ -309,7 +378,10 @@
     "player_id": "8137",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "rasheerice",
@@ -322,7 +394,10 @@
     "player_id": "10229",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chrisolave",
@@ -335,7 +410,10 @@
     "player_id": "8144",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "treymcbride",
@@ -348,7 +426,10 @@
     "player_id": "8130",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jeremiyahlove",
@@ -361,7 +442,10 @@
     "player_id": "13287",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "breecehall",
@@ -374,7 +458,10 @@
     "player_id": "8155",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "devontasmith",
@@ -387,7 +474,10 @@
     "player_id": "7525",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kyrenwilliams",
@@ -400,7 +490,10 @@
     "player_id": "8150",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "javontewilliams",
@@ -413,7 +506,10 @@
     "player_id": "7588",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "zayflowers",
@@ -426,7 +522,10 @@
     "player_id": "9997",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaylenwaddle",
@@ -439,7 +538,10 @@
     "player_id": "7526",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "teehiggins",
@@ -452,7 +554,10 @@
     "player_id": "6801",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "laddmcconkey",
@@ -465,7 +570,10 @@
     "player_id": "11635",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "joshallen",
@@ -478,7 +586,10 @@
     "player_id": "4984",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "travisetienne",
@@ -491,7 +602,10 @@
     "player_id": "7543",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "emekaegbuka",
@@ -504,7 +618,10 @@
     "player_id": "12514",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "colstonloveland",
@@ -517,7 +634,10 @@
     "player_id": "12517",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "garrettwilson",
@@ -530,7 +650,10 @@
     "player_id": "8146",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tetairoamcmillan",
@@ -543,7 +666,10 @@
     "player_id": "12526",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "buckyirving",
@@ -556,7 +682,10 @@
     "player_id": "11584",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dandreswift",
@@ -569,7 +698,10 @@
     "player_id": "6790",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": "Cramps"
+    "injury_note": "Cramps",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "camskattebo",
@@ -582,7 +714,10 @@
     "player_id": "12481",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "lutherburden",
@@ -595,7 +730,10 @@
     "player_id": "12519",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "quinshonjudkins",
@@ -608,7 +746,10 @@
     "player_id": "12512",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "davidmontgomery",
@@ -621,7 +762,10 @@
     "player_id": "5892",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "davanteadams",
@@ -634,7 +778,10 @@
     "player_id": "2133",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "bhayshultuten",
@@ -647,7 +794,10 @@
     "player_id": "12490",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jamesonwilliams",
@@ -660,7 +810,10 @@
     "player_id": "8148",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jadarianprice",
@@ -673,7 +826,10 @@
     "player_id": "13286",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "terrymclaurin",
@@ -686,7 +842,10 @@
     "player_id": "5927",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "romeodunze",
@@ -699,7 +858,10 @@
     "player_id": "11620",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "lamarjackson",
@@ -712,7 +874,10 @@
     "player_id": "4881",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "christianwatson",
@@ -725,7 +890,10 @@
     "player_id": "8167",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tylerwarren",
@@ -738,7 +906,10 @@
     "player_id": "12518",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "carnelltate",
@@ -751,7 +922,10 @@
     "player_id": "13279",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "djmoore",
@@ -764,7 +938,10 @@
     "player_id": "4983",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "brianthomas",
@@ -777,7 +954,10 @@
     "player_id": "11631",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "mikeevans",
@@ -790,7 +970,10 @@
     "player_id": "2216",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "parkerwashington",
@@ -803,7 +986,10 @@
     "player_id": "9487",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "marvinharrison",
@@ -816,7 +1002,10 @@
     "player_id": "11628",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "rhamondrestevenson",
@@ -829,7 +1018,10 @@
     "player_id": "7611",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "treveyonhenderson",
@@ -842,7 +1034,10 @@
     "player_id": "12529",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaylenwarren",
@@ -855,7 +1050,10 @@
     "player_id": "8228",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "drakemaye",
@@ -868,7 +1066,10 @@
     "player_id": "11564",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "joeburrow",
@@ -881,7 +1082,10 @@
     "player_id": "6770",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaydendaniels",
@@ -894,7 +1098,10 @@
     "player_id": "11566",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chrisgodwin",
@@ -907,7 +1114,10 @@
     "player_id": "4037",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jonathonbrooks",
@@ -920,7 +1130,10 @@
     "player_id": "11583",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "calebwilliams",
@@ -933,7 +1146,10 @@
     "player_id": "11560",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tuckerkraft",
@@ -946,7 +1162,10 @@
     "player_id": "9484",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": "Surgery"
+    "injury_note": "Surgery",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tonypollard",
@@ -959,7 +1178,10 @@
     "player_id": "5967",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jalenhurts",
@@ -972,7 +1194,10 @@
     "player_id": "6904",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "michaelpittman",
@@ -985,7 +1210,10 @@
     "player_id": "6819",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "marshawnlloyd",
@@ -998,7 +1226,10 @@
     "player_id": "11581",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jordanaddison",
@@ -1011,7 +1242,10 @@
     "player_id": "9756",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "makailemon",
@@ -1024,7 +1258,10 @@
     "player_id": "13294",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "quentinjohnston",
@@ -1037,7 +1274,10 @@
     "player_id": "9754",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "ricodowdle",
@@ -1050,7 +1290,10 @@
     "player_id": "7021",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dkmetcalf",
@@ -1063,7 +1306,10 @@
     "player_id": "5846",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "samlaporta",
@@ -1076,7 +1322,10 @@
     "player_id": "10859",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jkdobbins",
@@ -1089,7 +1338,10 @@
     "player_id": "6806",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "rjharvey",
@@ -1102,7 +1354,10 @@
     "player_id": "12489",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "trevorlawrence",
@@ -1115,7 +1370,10 @@
     "player_id": "7523",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "stefondiggs",
@@ -1128,7 +1386,10 @@
     "player_id": "2449",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "courtlandsutton",
@@ -1141,7 +1402,10 @@
     "player_id": "5045",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chubahubbard",
@@ -1154,7 +1418,10 @@
     "player_id": "7594",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "michaelwilson",
@@ -1167,7 +1434,10 @@
     "player_id": "10232",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jordanmason",
@@ -1180,7 +1450,10 @@
     "player_id": "8408",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "justinherbert",
@@ -1193,7 +1466,10 @@
     "player_id": "6797",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "alecpierce",
@@ -1206,7 +1482,10 @@
     "player_id": "8142",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jacorycroskeymerritt",
@@ -1219,7 +1498,10 @@
     "player_id": "12533",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "haroldfannin",
@@ -1232,7 +1514,10 @@
     "player_id": "12506",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kylepitts",
@@ -1245,7 +1530,10 @@
     "player_id": "7553",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dakprescott",
@@ -1258,7 +1546,10 @@
     "player_id": "3294",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "georgekittle",
@@ -1271,7 +1562,10 @@
     "player_id": "4217",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": "Surgery"
+    "injury_note": "Surgery",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "joshdowns",
@@ -1284,7 +1578,10 @@
     "player_id": "9500",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "blakecorum",
@@ -1297,7 +1594,10 @@
     "player_id": "11586",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kcconcepcion",
@@ -1310,7 +1610,10 @@
     "player_id": "13298",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "wandalerobinson",
@@ -1323,7 +1626,10 @@
     "player_id": "8126",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "rachaadwhite",
@@ -1336,7 +1642,10 @@
     "player_id": "8136",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "matthewgolden",
@@ -1349,7 +1658,10 @@
     "player_id": "12501",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dezhaunstribling",
@@ -1362,7 +1674,10 @@
     "player_id": "13417",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaydenreed",
@@ -1375,7 +1690,10 @@
     "player_id": "10222",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "brockpurdy",
@@ -1388,7 +1706,10 @@
     "player_id": "8183",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kylemonangai",
@@ -1401,7 +1722,10 @@
     "player_id": "12534",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jordyntyson",
@@ -1414,7 +1738,10 @@
     "player_id": "13281",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": "Strain"
+    "injury_note": "Strain",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kennygainwell",
@@ -1427,7 +1754,10 @@
     "player_id": "7567",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "bonix",
@@ -1440,7 +1770,10 @@
     "player_id": "11563",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "xavierworthy",
@@ -1453,7 +1786,10 @@
     "player_id": "11624",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaxsondart",
@@ -1466,7 +1802,10 @@
     "player_id": "12508",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "patrickmahomes",
@@ -1479,7 +1818,10 @@
     "player_id": "4046",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": "Surgery"
+    "injury_note": "Surgery",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "joshjacobs",
@@ -1492,7 +1834,10 @@
     "player_id": "5850",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "deebosamuel",
@@ -1505,7 +1850,10 @@
     "player_id": "5872",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "matthewstafford",
@@ -1518,7 +1866,10 @@
     "player_id": "421",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaredgoff",
@@ -1531,7 +1882,10 @@
     "player_id": "3163",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "aaronjones",
@@ -1544,7 +1898,10 @@
     "player_id": "4199",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kylermurray",
@@ -1557,7 +1914,10 @@
     "player_id": "5849",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "romeodoubs",
@@ -1570,7 +1930,10 @@
     "player_id": "8121",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jakobimeyers",
@@ -1583,7 +1946,10 @@
     "player_id": "5947",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jalencoker",
@@ -1596,7 +1962,10 @@
     "player_id": "11646",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "denzelboston",
@@ -1609,7 +1978,10 @@
     "player_id": "13346",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "traviskelce",
@@ -1622,7 +1994,10 @@
     "player_id": "1466",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "mikewashington",
@@ -1635,7 +2010,10 @@
     "player_id": "13305",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chrisrodriguez",
@@ -1648,7 +2026,10 @@
     "player_id": "10219",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jakeferguson",
@@ -1661,7 +2042,10 @@
     "player_id": "8110",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dallasgoedert",
@@ -1674,7 +2058,10 @@
     "player_id": "5022",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "daltonkincaid",
@@ -1687,7 +2074,10 @@
     "player_id": "10236",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "bakermayfield",
@@ -1700,7 +2090,10 @@
     "player_id": "4892",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "woodymarks",
@@ -1713,7 +2106,10 @@
     "player_id": "12474",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jonahcoleman",
@@ -1726,7 +2122,10 @@
     "player_id": "13345",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "keenanallen",
@@ -1739,7 +2138,10 @@
     "player_id": "1479",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "travishunter",
@@ -1753,7 +2155,10 @@
     "player_id": "12530",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "isaiahlikely",
@@ -1766,7 +2171,10 @@
     "player_id": "8131",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jordanlove",
@@ -1779,7 +2187,10 @@
     "player_id": "6804",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "khalilshakir",
@@ -1792,7 +2203,10 @@
     "player_id": "8134",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "rashidshaheed",
@@ -1805,7 +2219,10 @@
     "player_id": "8676",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "markandrews",
@@ -1818,7 +2235,10 @@
     "player_id": "5012",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tylerallgeier",
@@ -1831,7 +2251,10 @@
     "player_id": "8132",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "keatonmitchell",
@@ -1844,7 +2267,10 @@
     "player_id": "9511",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "malikwillis",
@@ -1857,7 +2283,10 @@
     "player_id": "8161",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tylershough",
@@ -1870,7 +2299,10 @@
     "player_id": "12545",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "juwanjohnson",
@@ -1883,7 +2315,10 @@
     "player_id": "7002",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tankbigsby",
@@ -1896,7 +2331,10 @@
     "player_id": "9225",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jalenmcmillan",
@@ -1909,7 +2347,10 @@
     "player_id": "11618",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "brentonstrange",
@@ -1922,7 +2363,10 @@
     "player_id": "9480",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chigokonkwo",
@@ -1935,7 +2379,10 @@
     "player_id": "8210",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "emmettjohnson",
@@ -1948,7 +2395,10 @@
     "player_id": "13337",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jakobilane",
@@ -1961,7 +2411,10 @@
     "player_id": "13293",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "cjstroud",
@@ -1974,7 +2427,10 @@
     "player_id": "9758",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tretucker",
@@ -1987,7 +2443,10 @@
     "player_id": "10213",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "omarcooper",
@@ -2000,7 +2459,10 @@
     "player_id": "13276",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "samdarnold",
@@ -2013,7 +2475,10 @@
     "player_id": "4943",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "hunterhenry",
@@ -2026,7 +2491,10 @@
     "player_id": "3214",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kayshonboutte",
@@ -2039,7 +2507,10 @@
     "player_id": "9504",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "danieljones",
@@ -2052,7 +2523,10 @@
     "player_id": "5870",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dylansampson",
@@ -2065,7 +2539,10 @@
     "player_id": "12469",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "brianrobinson",
@@ -2078,7 +2555,10 @@
     "player_id": "8154",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "daltonschultz",
@@ -2091,7 +2571,10 @@
     "player_id": "5001",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tyjaespears",
@@ -2104,7 +2587,10 @@
     "player_id": "9508",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "camward",
@@ -2117,7 +2603,10 @@
     "player_id": "12522",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tjhockenson",
@@ -2130,7 +2619,10 @@
     "player_id": "5844",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kalebjohnson",
@@ -2143,7 +2635,10 @@
     "player_id": "12504",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kenyonsadiq",
@@ -2156,7 +2651,10 @@
     "player_id": "13330",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": "Surgery"
+    "injury_note": "Surgery",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "bryceyoung",
@@ -2169,7 +2667,10 @@
     "player_id": "9228",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "terranceferguson",
@@ -2182,7 +2683,10 @@
     "player_id": "12487",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "calebdouglas",
@@ -2195,7 +2699,10 @@
     "player_id": "13296",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "isiahpacheco",
@@ -2208,7 +2715,10 @@
     "player_id": "8205",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "treharris",
@@ -2221,7 +2731,10 @@
     "player_id": "12509",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chrisbrooks",
@@ -2234,7 +2747,10 @@
     "player_id": "11370",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "roschonjohnson",
@@ -2247,7 +2763,10 @@
     "player_id": "10235",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "zachcharbonnet",
@@ -2260,7 +2779,10 @@
     "player_id": "9753",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": "Surgery"
+    "injury_note": "Surgery",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jalennailor",
@@ -2273,7 +2795,10 @@
     "player_id": "8180",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "ajbarner",
@@ -2286,7 +2811,10 @@
     "player_id": "11603",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kaelonblack",
@@ -2299,7 +2827,10 @@
     "player_id": "13414",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "orondegadsden",
@@ -2312,7 +2843,10 @@
     "player_id": "12493",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "darnellmooney",
@@ -2325,7 +2859,10 @@
     "player_id": "7090",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "najeeharris",
@@ -2338,7 +2875,10 @@
     "player_id": "7528",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "nicholassingleton",
@@ -2351,7 +2891,10 @@
     "player_id": "13288",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "malikwashington",
@@ -2364,7 +2907,10 @@
     "player_id": "11610",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tyronetracy",
@@ -2377,7 +2923,10 @@
     "player_id": "11655",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kaytronallen",
@@ -2390,7 +2939,10 @@
     "player_id": "13405",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "alvinkamara",
@@ -2403,7 +2955,10 @@
     "player_id": "4035",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "antoniowilliams",
@@ -2416,7 +2971,10 @@
     "player_id": "13301",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "braelonallen",
@@ -2429,7 +2987,10 @@
     "player_id": "11576",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "raydavis",
@@ -2442,7 +3003,10 @@
     "player_id": "11575",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "cyrusallen",
@@ -2455,7 +3019,10 @@
     "player_id": "13413",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "ryanflournoy",
@@ -2468,7 +3035,10 @@
     "player_id": "11783",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tankdell",
@@ -2481,7 +3051,10 @@
     "player_id": "9502",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": "Surgery"
+    "injury_note": "Surgery",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "calvinridley",
@@ -2494,7 +3067,10 @@
     "player_id": "4981",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chrisbell",
@@ -2507,7 +3083,10 @@
     "player_id": "13311",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "devinsingletary",
@@ -2520,7 +3099,10 @@
     "player_id": "6130",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "aaronrodgers",
@@ -2533,7 +3115,10 @@
     "player_id": "96",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "germiebernard",
@@ -2546,7 +3131,10 @@
     "player_id": "13274",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "davidnjoku",
@@ -2559,7 +3147,10 @@
     "player_id": "4033",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "malikdavis",
@@ -2572,7 +3163,10 @@
     "player_id": "8800",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "seantucker",
@@ -2585,7 +3179,10 @@
     "player_id": "9506",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "gunnarhelm",
@@ -2598,7 +3195,10 @@
     "player_id": "12502",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "zachariahbranch",
@@ -2611,7 +3211,10 @@
     "player_id": "13320",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jerryjeudy",
@@ -2624,7 +3227,10 @@
     "player_id": "6783",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jacobybrissett",
@@ -2637,7 +3243,10 @@
     "player_id": "3257",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jauanjennings",
@@ -2650,7 +3259,10 @@
     "player_id": "7049",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kimanividal",
@@ -2663,7 +3275,10 @@
     "player_id": "11647",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "isaacteslaa",
@@ -2676,7 +3291,10 @@
     "player_id": "12535",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "malachifields",
@@ -2689,7 +3307,10 @@
     "player_id": "13285",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "adonaimitchell",
@@ -2702,7 +3323,10 @@
     "player_id": "11625",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "patfreiermuth",
@@ -2715,7 +3339,10 @@
     "player_id": "7600",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "gregdulcich",
@@ -2728,7 +3355,10 @@
     "player_id": "8172",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "troyfranklin",
@@ -2741,7 +3371,10 @@
     "player_id": "11627",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "demondclaiborne",
@@ -2754,7 +3387,10 @@
     "player_id": "13347",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "genosmith",
@@ -2767,7 +3403,10 @@
     "player_id": "1373",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "cadeotton",
@@ -2780,7 +3419,10 @@
     "player_id": "8111",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "patbryant",
@@ -2793,7 +3435,10 @@
     "player_id": "12492",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dontayvionwicks",
@@ -2806,7 +3451,10 @@
     "player_id": "9486",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "elijahsarratt",
@@ -2819,7 +3467,10 @@
     "player_id": "13268",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "brashardsmith",
@@ -2832,7 +3483,10 @@
     "player_id": "12455",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "elicayomanor",
@@ -2845,7 +3499,10 @@
     "player_id": "12499",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dariusslayton",
@@ -2858,7 +3515,10 @@
     "player_id": "6149",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tedhurst",
@@ -2871,7 +3531,10 @@
     "player_id": "13317",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "olliegordon",
@@ -2884,7 +3547,10 @@
     "player_id": "12495",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "elistowers",
@@ -2897,7 +3563,10 @@
     "player_id": "13349",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "calvinaustin",
@@ -2910,7 +3579,10 @@
     "player_id": "8125",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "keoncoleman",
@@ -2923,7 +3595,10 @@
     "player_id": "11637",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": "Sprain"
+    "injury_note": "Sprain",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "lukemccaffrey",
@@ -2936,7 +3611,10 @@
     "player_id": "11650",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "fernandomendoza",
@@ -2949,7 +3627,10 @@
     "player_id": "13269",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jackbech",
@@ -2962,7 +3643,10 @@
     "player_id": "12483",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chimeredike",
@@ -2975,7 +3659,10 @@
     "player_id": "12540",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "samajeperine",
@@ -2988,7 +3675,10 @@
     "player_id": "4147",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaylinnoel",
@@ -3001,7 +3691,10 @@
     "player_id": "12536",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "christiankirk",
@@ -3014,7 +3707,10 @@
     "player_id": "4950",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jamesconner",
@@ -3027,7 +3723,10 @@
     "player_id": "4137",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "charliekolar",
@@ -3040,7 +3739,10 @@
     "player_id": "8127",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jordanjames",
@@ -3053,7 +3755,10 @@
     "player_id": "12467",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "sethmcgowan",
@@ -3066,7 +3771,10 @@
     "player_id": "13424",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tezjohnson",
@@ -3079,7 +3787,10 @@
     "player_id": "12485",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "brycelance",
@@ -3092,7 +3803,10 @@
     "player_id": "13420",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "devaughnvele",
@@ -3105,7 +3819,10 @@
     "player_id": "11834",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "georgeholani",
@@ -3118,7 +3835,10 @@
     "player_id": "12048",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tyjohnson",
@@ -3131,7 +3851,10 @@
     "player_id": "6039",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tyquanthornton",
@@ -3144,7 +3867,10 @@
     "player_id": "8188",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "toryhorton",
@@ -3157,7 +3883,10 @@
     "player_id": "12497",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kylewilliams",
@@ -3170,7 +3899,10 @@
     "player_id": "12547",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kendremiller",
@@ -3183,7 +3915,10 @@
     "player_id": "9757",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "cedrictillman",
@@ -3196,7 +3931,10 @@
     "player_id": "10444",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaydonblue",
@@ -3209,7 +3947,10 @@
     "player_id": "12457",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "maxklare",
@@ -3222,7 +3963,10 @@
     "player_id": "13278",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "skylerbell",
@@ -3235,7 +3979,10 @@
     "player_id": "13402",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "adamrandall",
@@ -3248,7 +3995,10 @@
     "player_id": "13302",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "justicehill",
@@ -3261,7 +4011,10 @@
     "player_id": "5995",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "mikegesicki",
@@ -3274,7 +4027,10 @@
     "player_id": "4993",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tuatagovailoa",
@@ -3287,7 +4043,10 @@
     "player_id": "6768",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "rashodbateman",
@@ -3300,7 +4059,10 @@
     "player_id": "7571",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "eliraridon",
@@ -3313,7 +4075,10 @@
     "player_id": "13421",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "isaiahdavis",
@@ -3326,7 +4091,10 @@
     "player_id": "11571",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "andreiiosivas",
@@ -3339,7 +4107,10 @@
     "player_id": "10226",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "isaacguerendo",
@@ -3352,7 +4123,10 @@
     "player_id": "11651",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": "Surgery"
+    "injury_note": "Surgery",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "emanuelwilson",
@@ -3365,7 +4139,10 @@
     "player_id": "11435",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "cooperkupp",
@@ -3378,7 +4155,10 @@
     "player_id": "4039",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "evanengram",
@@ -3391,7 +4171,10 @@
     "player_id": "4066",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "michaelpenix",
@@ -3404,7 +4187,10 @@
     "player_id": "11559",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": "Surgery"
+    "injury_note": "Surgery",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "djgiddens",
@@ -3417,7 +4203,10 @@
     "player_id": "12471",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "xavierlegette",
@@ -3430,7 +4219,10 @@
     "player_id": "11626",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "colbyparkinson",
@@ -3443,7 +4235,10 @@
     "player_id": "6865",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "brandonaiyuk",
@@ -3456,7 +4251,10 @@
     "player_id": "6803",
     "injury": true,
     "injury_severity": "medium",
-    "injury_note": "Surgery"
+    "injury_note": "Surgery",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "marquisebrown",
@@ -3469,7 +4267,10 @@
     "player_id": "5848",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kirkcousins",
@@ -3482,7 +4283,10 @@
     "player_id": "1166",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "deshaunwatson",
@@ -3495,7 +4299,10 @@
     "player_id": "4017",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "shedeursanders",
@@ -3508,7 +4315,10 @@
     "player_id": "12524",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaylenwright",
@@ -3521,7 +4331,10 @@
     "player_id": "11643",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "devinneal",
@@ -3534,7 +4347,10 @@
     "player_id": "12476",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "mackhollins",
@@ -3547,7 +4363,10 @@
     "player_id": "4177",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "konatamumpfield",
@@ -3560,7 +4379,10 @@
     "player_id": "12718",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaketonges",
@@ -3573,7 +4395,10 @@
     "player_id": "8698",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "olamidezaccheaus",
@@ -3586,7 +4411,10 @@
     "player_id": "6271",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "treybenson",
@@ -3599,7 +4427,10 @@
     "player_id": "11589",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "darnellwashington",
@@ -3612,7 +4443,10 @@
     "player_id": "9479",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tyreekhill",
@@ -3625,7 +4459,10 @@
     "player_id": "3321",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": "Surgery"
+    "injury_note": "Surgery",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "darrenwaller",
@@ -3638,7 +4475,10 @@
     "player_id": "2505",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "carsonbeck",
@@ -3651,7 +4491,10 @@
     "player_id": "13272",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "theojohnson",
@@ -3664,7 +4507,10 @@
     "player_id": "11597",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "masontaylor",
@@ -3677,7 +4523,10 @@
     "player_id": "12498",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "lequintallen",
@@ -3690,7 +4539,10 @@
     "player_id": "12544",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "joshuapalmer",
@@ -3703,7 +4555,10 @@
     "player_id": "7670",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "anthonyrichardson",
@@ -3716,7 +4571,10 @@
     "player_id": "9229",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "michaelmayer",
@@ -3729,7 +4587,10 @@
     "player_id": "9482",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jjmccarthy",
@@ -3742,7 +4603,10 @@
     "player_id": "11565",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "macjones",
@@ -3755,7 +4619,10 @@
     "player_id": "7527",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaylinlane",
@@ -3768,7 +4635,10 @@
     "player_id": "12641",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "justinfields",
@@ -3781,7 +4651,10 @@
     "player_id": "7591",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "trevoretienne",
@@ -3794,7 +4667,10 @@
     "player_id": "12531",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tysimpson",
@@ -3807,7 +4683,10 @@
     "player_id": "13275",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "elijaharroyo",
@@ -3820,7 +4699,10 @@
     "player_id": "12521",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dawsonknox",
@@ -3833,7 +4715,10 @@
     "player_id": "5906",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "colekmet",
@@ -3846,7 +4731,10 @@
     "player_id": "6826",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dontethornton",
@@ -3859,7 +4747,10 @@
     "player_id": "12541",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "oscardelp",
@@ -3872,7 +4763,10 @@
     "player_id": "13319",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "isaiahbond",
@@ -3885,7 +4779,10 @@
     "player_id": "12503",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jarquezhunter",
@@ -3898,7 +4795,10 @@
     "player_id": "11569",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jatavionsanders",
@@ -3911,7 +4811,10 @@
     "player_id": "11600",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "zavionthomas",
@@ -3924,7 +4827,10 @@
     "player_id": "13411",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "demariodouglas",
@@ -3937,7 +4843,10 @@
     "player_id": "9501",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jalentolbert",
@@ -3950,7 +4859,10 @@
     "player_id": "8117",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "treylonburks",
@@ -3963,7 +4875,10 @@
     "player_id": "8135",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "noahgray",
@@ -3976,7 +4891,10 @@
     "player_id": "7828",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "marvinmims",
@@ -3989,7 +4907,10 @@
     "player_id": "9494",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "emaridemercado",
@@ -4002,7 +4923,10 @@
     "player_id": "11199",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "justinjoly",
@@ -4015,7 +4939,10 @@
     "player_id": "13400",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jeromeford",
@@ -4028,7 +4955,10 @@
     "player_id": "8143",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tahjbrooks",
@@ -4041,7 +4971,10 @@
     "player_id": "12543",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "drewallar",
@@ -4054,7 +4987,10 @@
     "player_id": "13289",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jahandotson",
@@ -4067,7 +5003,10 @@
     "player_id": "8119",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "noahfant",
@@ -4080,7 +5019,10 @@
     "player_id": "5857",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "cadeklubnik",
@@ -4093,7 +5035,10 @@
     "player_id": "13303",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jaleelmclaughlin",
@@ -4106,7 +5051,10 @@
     "player_id": "11439",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "audricestime",
@@ -4119,7 +5067,10 @@
     "player_id": "11579",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "lukemusgrave",
@@ -4132,7 +5083,10 @@
     "player_id": "9481",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kendrickbourne",
@@ -4145,7 +5099,10 @@
     "player_id": "4454",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "willshipley",
@@ -4158,7 +5115,10 @@
     "player_id": "11577",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tutuatwell",
@@ -4171,7 +5131,10 @@
     "player_id": "7562",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kareemhunt",
@@ -4184,7 +5147,10 @@
     "player_id": "4098",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jameiswinston",
@@ -4197,7 +5163,10 @@
     "player_id": "2306",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tylerhigbee",
@@ -4210,7 +5179,10 @@
     "player_id": "3271",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jordanwhittington",
@@ -4223,7 +5195,10 @@
     "player_id": "11623",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "marcusmariota",
@@ -4236,7 +5211,10 @@
     "player_id": "2307",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "lukeschoonmaker",
@@ -4249,7 +5227,10 @@
     "player_id": "10871",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "eliheidenreich",
@@ -4262,7 +5243,10 @@
     "player_id": "13423",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "brenenthompson",
@@ -4275,7 +5259,10 @@
     "player_id": "13380",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jawharjordan",
@@ -4288,7 +5275,10 @@
     "player_id": "11588",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "savionwilliams",
@@ -4301,7 +5291,10 @@
     "player_id": "12482",
     "injury": true,
     "injury_severity": "high",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "xavierhutchinson",
@@ -4314,7 +5307,10 @@
     "player_id": "10218",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kevincoleman",
@@ -4327,7 +5323,10 @@
     "player_id": "13338",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kavontaeturpin",
@@ -4340,7 +5339,10 @@
     "player_id": "8917",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kalifraymond",
@@ -4353,7 +5355,10 @@
     "player_id": "3634",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "joeflacco",
@@ -4366,7 +5371,10 @@
     "player_id": "19",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "nickwestbrookikhine",
@@ -4379,7 +5387,10 @@
     "player_id": "7496",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "ashtondulin",
@@ -4392,7 +5403,10 @@
     "player_id": "6427",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "devontezwalker",
@@ -4405,7 +5419,10 @@
     "player_id": "11629",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dameonpierce",
@@ -4418,7 +5435,10 @@
     "player_id": "8129",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "romanwilson",
@@ -4431,7 +5451,10 @@
     "player_id": "11630",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dyamibrown",
@@ -4444,7 +5467,10 @@
     "player_id": "7587",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "gregdortch",
@@ -4457,7 +5483,10 @@
     "player_id": "5970",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "demarcusrobinson",
@@ -4470,7 +5499,10 @@
     "player_id": "3286",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "theowease",
@@ -4483,7 +5515,10 @@
     "player_id": "12860",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "rileyleonard",
@@ -4496,7 +5531,10 @@
     "player_id": "12470",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "moaliecox",
@@ -4509,7 +5547,10 @@
     "player_id": "4054",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "gardnerminshew",
@@ -4522,7 +5563,10 @@
     "player_id": "6011",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "deandrehopkins",
@@ -4535,7 +5579,10 @@
     "player_id": "1426",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "taysomhill",
@@ -4548,7 +5595,10 @@
     "player_id": "4381",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tyrodtaylor",
@@ -4561,7 +5611,10 @@
     "player_id": "827",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jujusmithschuster",
@@ -4574,7 +5627,10 @@
     "player_id": "4040",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "zonovanknight",
@@ -4587,7 +5643,10 @@
     "player_id": "8122",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "raheimsanders",
@@ -4600,7 +5659,10 @@
     "player_id": "12472",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "brandonaubrey",
@@ -4613,7 +5675,10 @@
     "player_id": "11533",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kaimifairbairn",
@@ -4626,7 +5691,10 @@
     "player_id": "3451",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "camerondicker",
@@ -4639,7 +5707,10 @@
     "player_id": "8259",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "camlittle",
@@ -4652,7 +5723,10 @@
     "player_id": "11786",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jasonmyers",
@@ -4665,7 +5739,10 @@
     "player_id": "2747",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "eddypineiro",
@@ -4678,7 +5755,10 @@
     "player_id": "5189",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tylerloop",
@@ -4691,7 +5771,10 @@
     "player_id": "12711",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jakebates",
@@ -4704,7 +5787,10 @@
     "player_id": "11539",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "evanmcpherson",
@@ -4717,7 +5803,10 @@
     "player_id": "7839",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chasemclaughlin",
@@ -4730,7 +5819,10 @@
     "player_id": "6650",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "andyborregales",
@@ -4743,7 +5835,10 @@
     "player_id": "12713",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "cairosantos",
@@ -4756,7 +5851,10 @@
     "player_id": "2020",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "harrisonmevis",
@@ -4769,7 +5867,10 @@
     "player_id": "12015",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chrisboswell",
@@ -4782,7 +5883,10 @@
     "player_id": "1945",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "harrisonbutker",
@@ -4795,7 +5899,10 @@
     "player_id": "4227",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "willreichard",
@@ -4808,7 +5915,10 @@
     "player_id": "11792",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "willutz",
@@ -4821,7 +5931,10 @@
     "player_id": "3678",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jakeelliott",
@@ -4834,7 +5947,10 @@
     "player_id": "4195",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tylerbass",
@@ -4847,7 +5963,10 @@
     "player_id": "7042",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "joeyslye",
@@ -4860,7 +5979,10 @@
     "player_id": "6528",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "chadryland",
@@ -4873,7 +5995,10 @@
     "player_id": "10955",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "treysmack",
@@ -4886,7 +6011,10 @@
     "player_id": "13545",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "danielcarlson",
@@ -4899,7 +6027,10 @@
     "player_id": "5095",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "ryanfitzgerald",
@@ -4912,7 +6043,10 @@
     "player_id": "12961",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "nickfolk",
@@ -4925,7 +6059,10 @@
     "player_id": "650",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "blakegrupe",
@@ -4938,7 +6075,10 @@
     "player_id": "11058",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "charliesmyth",
@@ -4951,7 +6091,10 @@
     "player_id": "11653",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "spencershrader",
@@ -4964,7 +6107,10 @@
     "player_id": "12185",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "drewstevens",
@@ -4977,7 +6123,10 @@
     "player_id": "13968",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "zanegonzalez",
@@ -4990,7 +6139,10 @@
     "player_id": "4233",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "mattgay",
@@ -5003,7 +6155,10 @@
     "player_id": "6083",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "andreszmyt",
@@ -5016,7 +6171,10 @@
     "player_id": "11261",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "bensauls",
@@ -5029,7 +6187,10 @@
     "player_id": "13066",
     "injury": true,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dominiczvada",
@@ -5042,7 +6203,10 @@
     "player_id": "13833",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "rileypatterson",
@@ -5055,7 +6219,10 @@
     "player_id": "7922",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jasonsanders",
@@ -5068,7 +6235,10 @@
     "player_id": "5119",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "brandonmcmanus",
@@ -5081,7 +6251,10 @@
     "player_id": "1433",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "jakemoody",
@@ -5094,7 +6267,10 @@
     "player_id": "10937",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "younghoekoo",
@@ -5107,7 +6283,10 @@
     "player_id": "4666",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "cadeyork",
@@ -5120,7 +6299,10 @@
     "player_id": "8258",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "kanseimatsuzawa",
@@ -5133,7 +6315,10 @@
     "player_id": "13804",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "dustinhopkins",
@@ -5146,7 +6331,10 @@
     "player_id": "1348",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "tannerbrown",
@@ -5159,7 +6347,10 @@
     "player_id": "11145",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "btpotter",
@@ -5172,7 +6363,10 @@
     "player_id": "11092",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "laithmarjan",
@@ -5185,7 +6379,10 @@
     "player_id": "13813",
     "injury": false,
     "injury_severity": "low",
-    "injury_note": ""
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Houston",
@@ -5194,7 +6391,10 @@
     "player_id": "HOU",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Los Angeles",
@@ -5203,7 +6403,10 @@
     "player_id": "LAR",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Denver",
@@ -5212,7 +6415,10 @@
     "player_id": "DEN",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Seattle",
@@ -5221,7 +6427,10 @@
     "player_id": "SEA",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Philadelphia",
@@ -5230,7 +6439,10 @@
     "player_id": "PHI",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Minnesota",
@@ -5239,7 +6451,10 @@
     "player_id": "MIN",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "New England",
@@ -5248,7 +6463,10 @@
     "player_id": "NE",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Pittsburgh",
@@ -5257,7 +6475,10 @@
     "player_id": "PIT",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Jacksonville",
@@ -5266,7 +6487,10 @@
     "player_id": "JAX",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Los Angeles",
@@ -5275,7 +6499,10 @@
     "player_id": "LAC",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Baltimore",
@@ -5284,7 +6511,10 @@
     "player_id": "BAL",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Kansas City",
@@ -5293,7 +6523,10 @@
     "player_id": "KC",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Green Bay",
@@ -5302,7 +6535,10 @@
     "player_id": "GB",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Buffalo",
@@ -5311,7 +6547,10 @@
     "player_id": "BUF",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Detroit",
@@ -5320,7 +6559,10 @@
     "player_id": "DET",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Cleveland",
@@ -5329,7 +6571,10 @@
     "player_id": "CLE",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "New Orleans",
@@ -5338,7 +6583,10 @@
     "player_id": "NO",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Indianapolis",
@@ -5347,7 +6595,10 @@
     "player_id": "IND",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "San Francisco",
@@ -5356,7 +6607,10 @@
     "player_id": "SF",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Atlanta",
@@ -5365,7 +6619,10 @@
     "player_id": "ATL",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Chicago",
@@ -5374,7 +6631,10 @@
     "player_id": "CHI",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Dallas",
@@ -5383,7 +6643,10 @@
     "player_id": "DAL",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "New York",
@@ -5392,7 +6655,10 @@
     "player_id": "NYG",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Tampa Bay",
@@ -5401,7 +6667,10 @@
     "player_id": "TB",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Carolina",
@@ -5410,7 +6679,10 @@
     "player_id": "CAR",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Tennessee",
@@ -5419,7 +6691,10 @@
     "player_id": "TEN",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Cincinnati",
@@ -5428,7 +6703,10 @@
     "player_id": "CIN",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Washington",
@@ -5437,7 +6715,10 @@
     "player_id": "WAS",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Miami",
@@ -5446,7 +6727,10 @@
     "player_id": "MIA",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Las Vegas",
@@ -5455,7 +6739,10 @@
     "player_id": "LV",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "New York",
@@ -5464,7 +6751,10 @@
     "player_id": "NYJ",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "first_name": "Arizona",
@@ -5473,6 +6763,9 @@
     "player_id": "ARI",
     "fantasy_positions": [
       "DEF"
-    ]
+    ],
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   }
 ]
