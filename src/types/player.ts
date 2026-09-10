@@ -23,6 +23,9 @@ export interface PlayerLite {
   position: string;
   fantasyPositions: string[];
   yearsExp: number | null
+  injury?: boolean;
+  injurySeverity?: "low" | "medium" | "high" | null;
+  injuryNote?: string;
 }
 
 export interface ResolvedPlayer {

@@ -6,6 +6,9 @@ interface SourcePlayer {
   last_name?: string;
   team?: string;
   fantasy_positions?: string[];
+  injury?: boolean;
+  injury_severity?: string;
+  injury_note?: string;
 }
 
 export function normalizePlayers(source: SourcePlayer[], experience: Record<string, number> = {}): Record<string, PlayerLite> {
@@ -21,6 +24,9 @@ export function normalizePlayers(source: SourcePlayer[], experience: Record<stri
       position: player.fantasy_positions?.[0] ?? "",
       fantasyPositions: player.fantasy_positions ?? [],
       yearsExp: experience[player.player_id] ?? null,
+      injury: player.injury === true,
+      injurySeverity: player.injury_severity === "low" || player.injury_severity === "medium" || player.injury_severity === "high" ? player.injury_severity : null,
+      injuryNote: player.injury_note ?? "",
     }];
   }));
 }
