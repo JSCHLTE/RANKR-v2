@@ -1,0 +1,17 @@
+{
+  "5870": {
+    "years_exp": 7,
+    "last_name": "Jones",
+    "search_full_name": "danieljones",
+    "full_name": "Daniel Jones",
+    "position": "QB",
+    "first_name": "Daniel",
+    "college": "Duke",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "age": 29,
+    "player_id": "5870",
+    "team": "IND"
+  }
+}

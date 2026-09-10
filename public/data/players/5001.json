@@ -1,0 +1,17 @@
+{
+  "5001": {
+    "years_exp": 8,
+    "last_name": "Schultz",
+    "search_full_name": "daltonschultz",
+    "full_name": "Dalton Schultz",
+    "position": "TE",
+    "first_name": "Dalton",
+    "college": "Stanford",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "age": 30,
+    "player_id": "5001",
+    "team": "HOU"
+  }
+}

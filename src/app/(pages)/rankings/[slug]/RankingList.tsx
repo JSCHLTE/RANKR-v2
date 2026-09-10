@@ -9,6 +9,7 @@ import { PlayerLite, ResolvedPlayer } from "@/types/player";
 import { useAuth } from "@/context/AuthContext";
 import { author } from "@/types/rank";
 import SortableRankingRows from "./SortableRankingRows";
+import PlayerDetailsCard from "../_components/PlayerDetailsCard";
 
 //Types
 interface RankEntry {
@@ -27,6 +28,7 @@ interface Props {
 const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
   const { players, loading, error } = usePlayers();
   const [search, setSearch] = useState("");
+  const [selectedPlayer, setSelectedPlayer] = useState<PlayerLite | null>(null);
   const POSITIONS = ["ALL", "QB", "RB", "WR", "TE", "K", "DEF", "ROOKIE"];
   const [posFilters, setPosFilters] = useState<string[]>([]);
   const [rookiesOnly, setRookiesOnly] = useState(false);
@@ -159,11 +161,19 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
         ) : (
           isEditing && isOwner && !isSaving ? (
             <SortableRankingRows key={JSON.stringify([search, posFilters, rookiesOnly])} players={filtered} onMove={onMove} />
-          ) : filtered.map(entry => (
-            <PlayerRow key={entry.player.id} {...entry} />
-          ))
+          ) : filtered.map(entry => {
+            const canOpen = !isEditing && !["DEF", "DST"].includes(entry.player.position)
+              && !entry.player.fantasyPositions?.some(position => ["DEF", "DST"].includes(position));
+            return canOpen ? <div key={entry.player.id} role="button" tabIndex={0} aria-label={`View ${entry.player.fullName} details`}
+              onClick={() => setSelectedPlayer(entry.player)}
+              onKeyDown={event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); setSelectedPlayer(entry.player); } }}
+              className="focus-visible:outline-2 focus-visible:outline-[var(--accent)] focus-visible:-outline-offset-2">
+              <PlayerRow {...entry} />
+            </div> : <PlayerRow key={entry.player.id} {...entry} />;
+          })
         )}
       </div>
+      {selectedPlayer && !isEditing && <PlayerDetailsCard key={selectedPlayer.id} player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />}
     </div>
   );
 };
