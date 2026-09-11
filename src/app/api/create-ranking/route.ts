@@ -1,11 +1,8 @@
 import { db, auth, admin } from "@/lib/firebase-admin";
 import { NextRequest } from "next/server";
-import fs from "fs";
-import path from "path";
+import { readTemplate } from "@/lib/template-files";
 import { revalidatePath } from "next/cache";
 
-const filePath = path.join(process.cwd(), "public", "data", "player_rankings.json");
-const playerRanksData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
 export async function POST(req: NextRequest) {
   let body;
@@ -60,6 +57,7 @@ export async function POST(req: NextRequest) {
 
   try {
 
+    const { ranks: playerRanksData } = await readTemplate();
     const batch = db.batch();
 
     batch.set(rankingRef, {

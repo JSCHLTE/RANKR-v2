@@ -28,7 +28,7 @@ export function usePlayers() {
         setError(null);
 
         const [res, experience] = await Promise.all([
-          fetch("/data/players_lite.json"),
+          fetch("/api/players", { cache: "no-store" }),
           loadExperience(),
         ]);
 

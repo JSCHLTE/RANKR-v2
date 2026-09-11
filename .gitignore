@@ -39,6 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.template-edit.lock
+.template-backups/
 
 players_lite.json
 !public/data/players_lite.json

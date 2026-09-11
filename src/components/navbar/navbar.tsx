@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { UserMenu } from "./UserMenu";
 import { useTheme } from "@/context/ThemeProvider";
 import ProfilePicture from "../profile/ProfilePicture";
+import { isAdmin } from "@/lib/admin-access";
 
 
 const links = [
@@ -58,7 +59,7 @@ export default function Navbar() {
       <div className="flex items-center gap-6">
 
         {/* Links */}
-        {links.map((link) => (
+        {(isAdmin(user?.uid) ? [...links, { label: "Admin", href: "/admin" }] : links).map((link) => (
           <Link
             key={link.href}
             href={link.href}

@@ -4,7 +4,7 @@ interface SourcePlayer {
   player_id: string;
   first_name?: string;
   last_name?: string;
-  team?: string;
+  team?: string | null;
   fantasy_positions?: string[];
   injury?: boolean;
   injury_severity?: string;

@@ -13,6 +13,7 @@ function setup() {
   vm.runInNewContext(code, {
     exports, Response, console, process: { cwd: () => "/test" },
     require: (name: string) => {
+      if (name === "@/lib/template-files") return { readTemplate: async () => ({ ranks: [{ player_id: "a", rank: 1 }] }) };
       if (name === "fs") return { default: { readFileSync: () => '[{"player_id":"a","rank":1}]' } };
       if (name === "path") return { default: { join: (...parts: string[]) => parts.join("/") } };
       if (name === "next/cache") return { revalidatePath: () => {} };
