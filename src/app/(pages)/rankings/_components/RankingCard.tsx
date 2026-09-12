@@ -19,12 +19,11 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
               {rankObj.description}
             </p>}
           </div>
-          {tags.length > 0 && <div className="flex flex-wrap gap-1.5">
-            {tags.map((tag, index) => <span key={index} className="inline-flex h-7 items-center rounded-full border border-[var(--border)] px-2.5 text-[11px] font-medium leading-none text-[var(--text-muted)]">
+          <RosterTags format={rankObj.format}>
+            {tags.length > 0 && tags.map((tag, index) => <span key={index} className="inline-flex h-7 items-center rounded-md border border-[var(--border)] px-2.5 text-[11px] font-medium leading-none text-[var(--text-muted)]">
               {tag}
             </span>)}
-          </div>}
-          <RosterTags format={rankObj.format} />
+          </RosterTags>
         </div>
 
         <footer className="mt-5 flex flex-wrap items-center justify-between gap-x-3 gap-y-3 border-t border-[var(--border)] pt-4">

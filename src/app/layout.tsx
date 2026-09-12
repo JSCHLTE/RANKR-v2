@@ -45,7 +45,7 @@ export default function RootLayout({
         <AuthProvider>
           <ThemeProvider>
             <Navbar />
-            {children}
+            <div id="page-content">{children}</div>
           </ThemeProvider>
         </AuthProvider>
       </body>

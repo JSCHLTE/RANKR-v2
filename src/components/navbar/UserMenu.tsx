@@ -21,7 +21,7 @@ type UserMenuProps = {
 export const UserMenu = ({ profile, setUserMenu, theme, toggleTheme }: UserMenuProps) => {
 
   return (
-    <div className="absolute right-0 top-full mt-2 w-56 rounded-2xl border border-[var(--white)]/10 bg-[var(--background)] shadow-xl overflow-hidden z-50">
+    <div id="account-options" aria-label="Account options" className="account-dropdown absolute right-0 top-full mt-4 w-64 rounded-2xl border border-[var(--border)] bg-[var(--background)]/75 backdrop-blur-xl shadow-xl overflow-hidden z-50">
       
       {/* User info header */}
       <div className="flex items-center gap-3 px-4 py-3 border-b border-[var(--white)]/10">

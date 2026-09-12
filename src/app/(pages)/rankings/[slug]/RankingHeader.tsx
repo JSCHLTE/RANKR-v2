@@ -134,16 +134,6 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, isDeleting
       <div className="mt-5 space-y-4">
       {/* Ranking details */}
       <div className="flex flex-wrap items-center gap-2">
-        {/* Neutral tags */}
-        {tags.map((tag, i) => (
-          <span
-            key={i}
-            className={`${badgeClass} text-[var(--text-muted)] bg-[var(--surface)] border-[var(--border)]`}
-          >
-            {tag.value}
-          </span>
-        ))}
-
         {/* Visibility */}
         {rankObj.visibility === "PUBLIC" ? (
           <span className={`${badgeClass} bg-emerald-500/10 text-emerald-400 border-emerald-500/30`}>
@@ -164,7 +154,13 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, isDeleting
           </span>
         )}
       </div>
-        <RosterTags format={rankObj.format} />
+        <RosterTags format={rankObj.format}>
+          {tags.length > 0 && tags.map((tag, i) => (
+            <span key={i} className="inline-flex h-7 items-center gap-1.5 rounded-md border px-2.5 text-[11px] font-medium leading-none text-[var(--text-muted)] bg-[var(--surface)] border-[var(--border)]">
+              {tag.value}
+            </span>
+          ))}
+        </RosterTags>
       </div>
     </div>
   );

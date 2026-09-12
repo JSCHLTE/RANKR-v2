@@ -1,9 +1,10 @@
 import { RankFormat } from "@/types/rank";
+import { ReactNode } from "react";
 import { getPositionColors } from "@/constants/positions";
 
 const POSITION_ORDER = ["QB", "RB", "WR", "TE", "FLEX", "SFLEX", "K", "DEF", "DST"];
 
-export default function RosterTags({ format }: { format: RankFormat | null }) {
+export default function RosterTags({ format, children }: { format: RankFormat | null; children?: ReactNode }) {
   const entries = Object.entries(format ?? {})
     .filter((entry): entry is [string, number] => typeof entry[1] === "number" && entry[1] > 0)
     .sort(([a], [b]) => {
@@ -14,10 +15,10 @@ export default function RosterTags({ format }: { format: RankFormat | null }) {
       return order(a) - order(b);
     });
 
-  if (!entries.length) return null;
+  if (!entries.length && !children) return null;
 
   return <div className="space-y-2">
-    <p className="text-[10px] font-semibold uppercase tracking-widest text-[var(--text-muted)]">Roster</p>
+    {entries.length > 0 && <p className="text-[10px] font-semibold uppercase tracking-widest text-[var(--text-muted)]">Roster</p>}
     <div className="flex flex-wrap gap-1.5">
       {entries.map(([position, count]) => {
         const colors = getPositionColors(position);
@@ -26,6 +27,7 @@ export default function RosterTags({ format }: { format: RankFormat | null }) {
           <span className="font-semibold tabular-nums text-[var(--foreground)]">{count}</span>
         </span>;
       })}
+      {children}
     </div>
   </div>;
 }
