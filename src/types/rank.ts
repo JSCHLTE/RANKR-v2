@@ -28,6 +28,7 @@
   }
   
   export interface RankingMeta {
+    likeCount?: number;
     id: string;
     rankingId: string;
     author: author;

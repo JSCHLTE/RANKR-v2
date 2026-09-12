@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
-import { faRightFromBracket, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { faRightFromBracket, faMoon, faSun, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { logOut } from "@/lib/auth";
 import ProfilePicture from "../profile/ProfilePicture";
 
@@ -45,6 +45,10 @@ export const UserMenu = ({ profile, setUserMenu, theme, toggleTheme }: UserMenuP
         >
           <FontAwesomeIcon icon={faUser} className="w-3.5 h-3.5 shrink-0" />
           Your profile
+        </Link>
+        <Link href="/likes" onClick={() => setUserMenu(false)} className="flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-[var(--white)]/70 transition-all hover:bg-[var(--white)]/5 hover:text-[var(--white)]">
+          <FontAwesomeIcon icon={faHeart} className="h-3.5 w-3.5 shrink-0" />
+          Likes
         </Link>
 
         <button onClick={toggleTheme} className="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-[var(--white)]/70 hover:text-[var(--white)] hover:bg-[var(--white)]/5 transition-all w-full cursor-pointer">

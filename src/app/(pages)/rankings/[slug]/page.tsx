@@ -21,6 +21,7 @@ export default async function RankingsPage({ params }: { params: Promise<{ slug:
     rankingId: data?.rankingId,
     author: data?.author,
     rankObj: data?.rankObj,
+    likeCount: data?.likeCount ?? 0,
     createdAt: formatTimestamp(data?.createdAt),
     updatedAt: formatTimestamp(data?.updatedAt),
   };
@@ -33,3 +34,4 @@ export default async function RankingsPage({ params }: { params: Promise<{ slug:
     </main>
   );
 }
+

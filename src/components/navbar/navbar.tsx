@@ -99,7 +99,7 @@ export default function Navbar() {
           <button autoFocus type="button" onClick={closeMobile} aria-label="Close navigation menu" className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] hover:bg-[var(--surface-hover)]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="m6 6 12 12M18 6 6 18" /></svg></button>
         </div>
         <nav aria-label="Mobile navigation" className="flex flex-col gap-2">
-          {navigation.map(link => <Link key={link.href} href={link.href} onClick={closeMobile} aria-current={pathname === link.href ? "page" : undefined} className={`group flex items-center gap-4 rounded-2xl px-4 py-4 transition-colors ${pathname === link.href ? "bg-[var(--accent)]/10 text-[var(--accent)]" : "hover:bg-[var(--surface-hover)]"}`}><span className="text-xl font-medium tracking-tight">{link.label}</span></Link>)}
+          {[...links, { label: "Likes", href: "/likes" }, ...(isAdmin(user?.uid) ? [{ label: "Admin", href: "/admin" }] : [])].map(link => <Link key={link.href} href={link.href} onClick={closeMobile} aria-current={pathname === link.href ? "page" : undefined} className={`group flex items-center gap-4 rounded-2xl px-4 py-4 transition-colors ${pathname === link.href ? "bg-[var(--accent)]/10 text-[var(--accent)]" : "hover:bg-[var(--surface-hover)]"}`}><span className="text-xl font-medium tracking-tight">{link.label}</span></Link>)}
         </nav>
         <div className="mt-auto pt-10">
           <div className="border-t border-[var(--border)] pt-5">
@@ -114,4 +114,5 @@ export default function Navbar() {
     </dialog>
   </>;
 }
+
 

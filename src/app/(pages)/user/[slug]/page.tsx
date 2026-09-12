@@ -31,6 +31,7 @@ export default async function UserPage({ params }: { params: Promise<{ slug: str
         rankingId: data.rankingId ?? doc.id,
         author: data.author,
         rankObj: data.rankObj,
+        likeCount: data.likeCount ?? 0,
         createdAt: formatTimestamp(data.createdAt),
         updatedAt: formatTimestamp(data.updatedAt),
       };
@@ -69,3 +70,4 @@ export default async function UserPage({ params }: { params: Promise<{ slug: str
     </main>
   );
 }
+

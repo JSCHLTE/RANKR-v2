@@ -3,6 +3,7 @@
 import { RankingMeta } from "@/types/rank";
 import { useAuth } from "@/context/AuthContext";
 import Link from "next/link";
+import RankingLikes from "@/components/RankingLikes";
 import RosterTags from "../_components/RosterTags";
 
 interface Tag {
@@ -131,6 +132,7 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, isDeleting
         </div>
         </div>
 
+      <RankingLikes meta={meta} />
       <div className="mt-5 space-y-4">
       {/* Ranking details */}
       <div className="flex flex-wrap items-center gap-2">
@@ -167,3 +169,4 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, isDeleting
 };
 
 export default RankingHeader;
+

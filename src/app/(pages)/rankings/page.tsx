@@ -16,6 +16,7 @@ const Rankings = async () => {
       rankingId: raw.rankingId ?? doc.id,
       author: raw.author ?? null,
       rankObj: raw.rankObj ?? null,
+      likeCount: raw.likeCount ?? 0,
       createdAt: formatTimestamp(raw.createdAt),
       updatedAt: formatTimestamp(raw.updatedAt),
     };

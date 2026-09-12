@@ -26,6 +26,10 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
           </RosterTags>
         </div>
 
+        <div className="mt-4 flex items-center gap-1.5 text-xs text-[var(--text-muted)]" aria-label={`${ranking.likeCount ?? 0} likes`}>
+          <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" /></svg>
+          <span>{ranking.likeCount ?? 0}</span>
+        </div>
         <footer className="mt-5 flex flex-wrap items-center justify-between gap-x-3 gap-y-3 border-t border-[var(--border)] pt-4">
           <div className="flex min-w-0 flex-1 items-center gap-2.5">
             <div className="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[var(--border)] bg-[var(--surface-hover)] text-xs font-medium text-[var(--text-muted)]">
