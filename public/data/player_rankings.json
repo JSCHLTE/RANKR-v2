@@ -1,6 +1,10 @@
 [
   {
+<<<<<<< HEAD
+    "player_id": "9221",
+=======
     "player_id": "7564",
+>>>>>>> f7571778e73d89e2d504d6ecab84972fb823e666
     "rank": 1
   },
   {
@@ -8,6 +12,273 @@
     "rank": 2
   },
   {
+<<<<<<< HEAD
+    "player_id": "7564",
+    "rank": 3
+  },
+  {
+    "player_id": "9493",
+    "rank": 4
+  },
+  {
+    "player_id": "9488",
+    "rank": 5
+  },
+  {
+    "player_id": "4034",
+    "rank": 6
+  },
+  {
+    "player_id": "7547",
+    "rank": 7
+  },
+  {
+    "player_id": "6813",
+    "rank": 8
+  },
+  {
+    "player_id": "6786",
+    "rank": 9
+  },
+  {
+    "player_id": "8138",
+    "rank": 10
+  },
+  {
+    "player_id": "6794",
+    "rank": 11
+  },
+  {
+    "player_id": "9224",
+    "rank": 12
+  },
+  {
+    "player_id": "12527",
+    "rank": 13
+  },
+  {
+    "player_id": "9226",
+    "rank": 14
+  },
+  {
+    "player_id": "12507",
+    "rank": 15
+  },
+  {
+    "player_id": "4866",
+    "rank": 16
+  },
+  {
+    "player_id": "8151",
+    "rank": 17
+  },
+  {
+    "player_id": "3198",
+    "rank": 18
+  },
+  {
+    "player_id": "8112",
+    "rank": 19
+  },
+  {
+    "player_id": "11632",
+    "rank": 20
+  },
+  {
+    "player_id": "7569",
+    "rank": 21
+  },
+  {
+    "player_id": "8137",
+    "rank": 22
+  },
+  {
+    "player_id": "10229",
+    "rank": 23
+  },
+  {
+    "player_id": "8144",
+    "rank": 24
+  },
+  {
+    "player_id": "8130",
+    "rank": 25
+  },
+  {
+    "player_id": "13287",
+    "rank": 26
+  },
+  {
+    "player_id": "8155",
+    "rank": 27
+  },
+  {
+    "player_id": "7525",
+    "rank": 28
+  },
+  {
+    "player_id": "7588",
+    "rank": 29
+  },
+  {
+    "player_id": "8150",
+    "rank": 30
+  },
+  {
+    "player_id": "9997",
+    "rank": 31
+  },
+  {
+    "player_id": "7526",
+    "rank": 32
+  },
+  {
+    "player_id": "6801",
+    "rank": 33
+  },
+  {
+    "player_id": "11635",
+    "rank": 34
+  },
+  {
+    "player_id": "4984",
+    "rank": 35
+  },
+  {
+    "player_id": "7543",
+    "rank": 36
+  },
+  {
+    "player_id": "12514",
+    "rank": 37
+  },
+  {
+    "player_id": "12517",
+    "rank": 38
+  },
+  {
+    "player_id": "8146",
+    "rank": 39
+  },
+  {
+    "player_id": "2216",
+    "rank": 40
+  },
+  {
+    "player_id": "12526",
+    "rank": 41
+  },
+  {
+    "player_id": "11604",
+    "rank": 42
+  },
+  {
+    "player_id": "6790",
+    "rank": 43
+  },
+  {
+    "player_id": "12481",
+    "rank": 44
+  },
+  {
+    "player_id": "12519",
+    "rank": 45
+  },
+  {
+    "player_id": "12512",
+    "rank": 46
+  },
+  {
+    "player_id": "11584",
+    "rank": 47
+  },
+  {
+    "player_id": "5892",
+    "rank": 48
+  },
+  {
+    "player_id": "2133",
+    "rank": 49
+  },
+  {
+    "player_id": "12490",
+    "rank": 50
+  },
+  {
+    "player_id": "8148",
+    "rank": 51
+  },
+  {
+    "player_id": "13286",
+    "rank": 52
+  },
+  {
+    "player_id": "5927",
+    "rank": 53
+  },
+  {
+    "player_id": "11620",
+    "rank": 54
+  },
+  {
+    "player_id": "4881",
+    "rank": 55
+  },
+  {
+    "player_id": "5859",
+    "rank": 56
+  },
+  {
+    "player_id": "8167",
+    "rank": 57
+  },
+  {
+    "player_id": "12518",
+    "rank": 58
+  },
+  {
+    "player_id": "13279",
+    "rank": 59
+  },
+  {
+    "player_id": "4983",
+    "rank": 60
+  },
+  {
+    "player_id": "11631",
+    "rank": 61
+  },
+  {
+    "player_id": "9487",
+    "rank": 62
+  },
+  {
+    "player_id": "11628",
+    "rank": 63
+  },
+  {
+    "player_id": "7611",
+    "rank": 64
+  },
+  {
+    "player_id": "12529",
+    "rank": 65
+  },
+  {
+    "player_id": "8228",
+    "rank": 66
+  },
+  {
+    "player_id": "11564",
+    "rank": 67
+  },
+  {
+    "player_id": "6770",
+    "rank": 68
+  },
+  {
+    "player_id": "11566",
+=======
     "player_id": "9493",
     "rank": 3
   },
@@ -273,6 +544,7 @@
   },
   {
     "player_id": "12508",
+>>>>>>> f7571778e73d89e2d504d6ecab84972fb823e666
     "rank": 69
   },
   {
@@ -280,6 +552,353 @@
     "rank": 70
   },
   {
+<<<<<<< HEAD
+    "player_id": "11583",
+    "rank": 71
+  },
+  {
+    "player_id": "11560",
+    "rank": 72
+  },
+  {
+    "player_id": "9484",
+    "rank": 73
+  },
+  {
+    "player_id": "5967",
+    "rank": 74
+  },
+  {
+    "player_id": "6904",
+    "rank": 75
+  },
+  {
+    "player_id": "6819",
+    "rank": 76
+  },
+  {
+    "player_id": "11581",
+    "rank": 77
+  },
+  {
+    "player_id": "9756",
+    "rank": 78
+  },
+  {
+    "player_id": "13294",
+    "rank": 79
+  },
+  {
+    "player_id": "9754",
+    "rank": 80
+  },
+  {
+    "player_id": "7021",
+    "rank": 81
+  },
+  {
+    "player_id": "5846",
+    "rank": 82
+  },
+  {
+    "player_id": "10859",
+    "rank": 83
+  },
+  {
+    "player_id": "6806",
+    "rank": 84
+  },
+  {
+    "player_id": "12489",
+    "rank": 85
+  },
+  {
+    "player_id": "7523",
+    "rank": 86
+  },
+  {
+    "player_id": "2449",
+    "rank": 87
+  },
+  {
+    "player_id": "5045",
+    "rank": 88
+  },
+  {
+    "player_id": "7594",
+    "rank": 89
+  },
+  {
+    "player_id": "10232",
+    "rank": 90
+  },
+  {
+    "player_id": "8408",
+    "rank": 91
+  },
+  {
+    "player_id": "6797",
+    "rank": 92
+  },
+  {
+    "player_id": "8142",
+    "rank": 93
+  },
+  {
+    "player_id": "12533",
+    "rank": 94
+  },
+  {
+    "player_id": "12506",
+    "rank": 95
+  },
+  {
+    "player_id": "7553",
+    "rank": 96
+  },
+  {
+    "player_id": "3294",
+    "rank": 97
+  },
+  {
+    "player_id": "4217",
+    "rank": 98
+  },
+  {
+    "player_id": "9500",
+    "rank": 99
+  },
+  {
+    "player_id": "11586",
+    "rank": 100
+  },
+  {
+    "player_id": "13298",
+    "rank": 101
+  },
+  {
+    "player_id": "8126",
+    "rank": 102
+  },
+  {
+    "player_id": "8136",
+    "rank": 103
+  },
+  {
+    "player_id": "12501",
+    "rank": 104
+  },
+  {
+    "player_id": "13417",
+    "rank": 105
+  },
+  {
+    "player_id": "10222",
+    "rank": 106
+  },
+  {
+    "player_id": "8183",
+    "rank": 107
+  },
+  {
+    "player_id": "12534",
+    "rank": 108
+  },
+  {
+    "player_id": "13281",
+    "rank": 109
+  },
+  {
+    "player_id": "7567",
+    "rank": 110
+  },
+  {
+    "player_id": "11563",
+    "rank": 111
+  },
+  {
+    "player_id": "11624",
+    "rank": 112
+  },
+  {
+    "player_id": "12508",
+    "rank": 113
+  },
+  {
+    "player_id": "4046",
+    "rank": 114
+  },
+  {
+    "player_id": "5850",
+    "rank": 115
+  },
+  {
+    "player_id": "5872",
+    "rank": 116
+  },
+  {
+    "player_id": "421",
+    "rank": 117
+  },
+  {
+    "player_id": "3163",
+    "rank": 118
+  },
+  {
+    "player_id": "4199",
+    "rank": 119
+  },
+  {
+    "player_id": "5849",
+    "rank": 120
+  },
+  {
+    "player_id": "8121",
+    "rank": 121
+  },
+  {
+    "player_id": "5947",
+    "rank": 122
+  },
+  {
+    "player_id": "11646",
+    "rank": 123
+  },
+  {
+    "player_id": "13346",
+    "rank": 124
+  },
+  {
+    "player_id": "1466",
+    "rank": 125
+  },
+  {
+    "player_id": "13305",
+    "rank": 126
+  },
+  {
+    "player_id": "10219",
+    "rank": 127
+  },
+  {
+    "player_id": "8110",
+    "rank": 128
+  },
+  {
+    "player_id": "5022",
+    "rank": 129
+  },
+  {
+    "player_id": "10236",
+    "rank": 130
+  },
+  {
+    "player_id": "4892",
+    "rank": 131
+  },
+  {
+    "player_id": "12474",
+    "rank": 132
+  },
+  {
+    "player_id": "13345",
+    "rank": 133
+  },
+  {
+    "player_id": "1479",
+    "rank": 134
+  },
+  {
+    "player_id": "12530",
+    "rank": 135
+  },
+  {
+    "player_id": "8131",
+    "rank": 136
+  },
+  {
+    "player_id": "6804",
+    "rank": 137
+  },
+  {
+    "player_id": "8134",
+    "rank": 138
+  },
+  {
+    "player_id": "8676",
+    "rank": 139
+  },
+  {
+    "player_id": "5012",
+    "rank": 140
+  },
+  {
+    "player_id": "8132",
+    "rank": 141
+  },
+  {
+    "player_id": "9511",
+    "rank": 142
+  },
+  {
+    "player_id": "8161",
+    "rank": 143
+  },
+  {
+    "player_id": "12545",
+    "rank": 144
+  },
+  {
+    "player_id": "7002",
+    "rank": 145
+  },
+  {
+    "player_id": "9225",
+    "rank": 146
+  },
+  {
+    "player_id": "11618",
+    "rank": 147
+  },
+  {
+    "player_id": "9480",
+    "rank": 148
+  },
+  {
+    "player_id": "8210",
+    "rank": 149
+  },
+  {
+    "player_id": "13337",
+    "rank": 150
+  },
+  {
+    "player_id": "13293",
+    "rank": 151
+  },
+  {
+    "player_id": "9758",
+    "rank": 152
+  },
+  {
+    "player_id": "10213",
+    "rank": 153
+  },
+  {
+    "player_id": "13276",
+    "rank": 154
+  },
+  {
+    "player_id": "4943",
+    "rank": 155
+  },
+  {
+    "player_id": "3214",
+    "rank": 156
+  },
+  {
+    "player_id": "9504",
+=======
     "player_id": "8228",
     "rank": 71
   },
@@ -625,6 +1244,7 @@
   },
   {
     "player_id": "7049",
+>>>>>>> f7571778e73d89e2d504d6ecab84972fb823e666
     "rank": 157
   },
   {
@@ -632,6 +1252,621 @@
     "rank": 158
   },
   {
+<<<<<<< HEAD
+    "player_id": "12469",
+    "rank": 159
+  },
+  {
+    "player_id": "8154",
+    "rank": 160
+  },
+  {
+    "player_id": "5001",
+    "rank": 161
+  },
+  {
+    "player_id": "9508",
+    "rank": 162
+  },
+  {
+    "player_id": "12522",
+    "rank": 163
+  },
+  {
+    "player_id": "5844",
+    "rank": 164
+  },
+  {
+    "player_id": "12504",
+    "rank": 165
+  },
+  {
+    "player_id": "13330",
+    "rank": 166
+  },
+  {
+    "player_id": "9228",
+    "rank": 167
+  },
+  {
+    "player_id": "12487",
+    "rank": 168
+  },
+  {
+    "player_id": "13296",
+    "rank": 169
+  },
+  {
+    "player_id": "8205",
+    "rank": 170
+  },
+  {
+    "player_id": "12509",
+    "rank": 171
+  },
+  {
+    "player_id": "11370",
+    "rank": 172
+  },
+  {
+    "player_id": "10235",
+    "rank": 173
+  },
+  {
+    "player_id": "9753",
+    "rank": 174
+  },
+  {
+    "player_id": "8180",
+    "rank": 175
+  },
+  {
+    "player_id": "11603",
+    "rank": 176
+  },
+  {
+    "player_id": "13414",
+    "rank": 177
+  },
+  {
+    "player_id": "12493",
+    "rank": 178
+  },
+  {
+    "player_id": "7090",
+    "rank": 179
+  },
+  {
+    "player_id": "7528",
+    "rank": 180
+  },
+  {
+    "player_id": "13288",
+    "rank": 181
+  },
+  {
+    "player_id": "11610",
+    "rank": 182
+  },
+  {
+    "player_id": "11655",
+    "rank": 183
+  },
+  {
+    "player_id": "13405",
+    "rank": 184
+  },
+  {
+    "player_id": "4035",
+    "rank": 185
+  },
+  {
+    "player_id": "13301",
+    "rank": 186
+  },
+  {
+    "player_id": "11576",
+    "rank": 187
+  },
+  {
+    "player_id": "11575",
+    "rank": 188
+  },
+  {
+    "player_id": "13413",
+    "rank": 189
+  },
+  {
+    "player_id": "11783",
+    "rank": 190
+  },
+  {
+    "player_id": "9502",
+    "rank": 191
+  },
+  {
+    "player_id": "4981",
+    "rank": 192
+  },
+  {
+    "player_id": "13311",
+    "rank": 193
+  },
+  {
+    "player_id": "6130",
+    "rank": 194
+  },
+  {
+    "player_id": "96",
+    "rank": 195
+  },
+  {
+    "player_id": "13274",
+    "rank": 196
+  },
+  {
+    "player_id": "4033",
+    "rank": 197
+  },
+  {
+    "player_id": "8800",
+    "rank": 198
+  },
+  {
+    "player_id": "9506",
+    "rank": 199
+  },
+  {
+    "player_id": "12502",
+    "rank": 200
+  },
+  {
+    "player_id": "13320",
+    "rank": 201
+  },
+  {
+    "player_id": "6783",
+    "rank": 202
+  },
+  {
+    "player_id": "3257",
+    "rank": 203
+  },
+  {
+    "player_id": "7049",
+    "rank": 204
+  },
+  {
+    "player_id": "11647",
+    "rank": 205
+  },
+  {
+    "player_id": "12535",
+    "rank": 206
+  },
+  {
+    "player_id": "13285",
+    "rank": 207
+  },
+  {
+    "player_id": "11625",
+    "rank": 208
+  },
+  {
+    "player_id": "7600",
+    "rank": 209
+  },
+  {
+    "player_id": "8172",
+    "rank": 210
+  },
+  {
+    "player_id": "11627",
+    "rank": 211
+  },
+  {
+    "player_id": "13347",
+    "rank": 212
+  },
+  {
+    "player_id": "1373",
+    "rank": 213
+  },
+  {
+    "player_id": "8111",
+    "rank": 214
+  },
+  {
+    "player_id": "12492",
+    "rank": 215
+  },
+  {
+    "player_id": "9486",
+    "rank": 216
+  },
+  {
+    "player_id": "13268",
+    "rank": 217
+  },
+  {
+    "player_id": "12455",
+    "rank": 218
+  },
+  {
+    "player_id": "12499",
+    "rank": 219
+  },
+  {
+    "player_id": "6149",
+    "rank": 220
+  },
+  {
+    "player_id": "13317",
+    "rank": 221
+  },
+  {
+    "player_id": "12495",
+    "rank": 222
+  },
+  {
+    "player_id": "13349",
+    "rank": 223
+  },
+  {
+    "player_id": "8125",
+    "rank": 224
+  },
+  {
+    "player_id": "11637",
+    "rank": 225
+  },
+  {
+    "player_id": "11650",
+    "rank": 226
+  },
+  {
+    "player_id": "13269",
+    "rank": 227
+  },
+  {
+    "player_id": "12483",
+    "rank": 228
+  },
+  {
+    "player_id": "12540",
+    "rank": 229
+  },
+  {
+    "player_id": "4147",
+    "rank": 230
+  },
+  {
+    "player_id": "12536",
+    "rank": 231
+  },
+  {
+    "player_id": "4950",
+    "rank": 232
+  },
+  {
+    "player_id": "4137",
+    "rank": 233
+  },
+  {
+    "player_id": "8127",
+    "rank": 234
+  },
+  {
+    "player_id": "12467",
+    "rank": 235
+  },
+  {
+    "player_id": "13424",
+    "rank": 236
+  },
+  {
+    "player_id": "12485",
+    "rank": 237
+  },
+  {
+    "player_id": "13420",
+    "rank": 238
+  },
+  {
+    "player_id": "11834",
+    "rank": 239
+  },
+  {
+    "player_id": "12048",
+    "rank": 240
+  },
+  {
+    "player_id": "6039",
+    "rank": 241
+  },
+  {
+    "player_id": "8188",
+    "rank": 242
+  },
+  {
+    "player_id": "12497",
+    "rank": 243
+  },
+  {
+    "player_id": "12547",
+    "rank": 244
+  },
+  {
+    "player_id": "9757",
+    "rank": 245
+  },
+  {
+    "player_id": "10444",
+    "rank": 246
+  },
+  {
+    "player_id": "12457",
+    "rank": 247
+  },
+  {
+    "player_id": "13278",
+    "rank": 248
+  },
+  {
+    "player_id": "13402",
+    "rank": 249
+  },
+  {
+    "player_id": "13302",
+    "rank": 250
+  },
+  {
+    "player_id": "5995",
+    "rank": 251
+  },
+  {
+    "player_id": "4993",
+    "rank": 252
+  },
+  {
+    "player_id": "6768",
+    "rank": 253
+  },
+  {
+    "player_id": "7571",
+    "rank": 254
+  },
+  {
+    "player_id": "13421",
+    "rank": 255
+  },
+  {
+    "player_id": "11571",
+    "rank": 256
+  },
+  {
+    "player_id": "10226",
+    "rank": 257
+  },
+  {
+    "player_id": "11651",
+    "rank": 258
+  },
+  {
+    "player_id": "11435",
+    "rank": 259
+  },
+  {
+    "player_id": "4039",
+    "rank": 260
+  },
+  {
+    "player_id": "4066",
+    "rank": 261
+  },
+  {
+    "player_id": "11559",
+    "rank": 262
+  },
+  {
+    "player_id": "12471",
+    "rank": 263
+  },
+  {
+    "player_id": "11626",
+    "rank": 264
+  },
+  {
+    "player_id": "6865",
+    "rank": 265
+  },
+  {
+    "player_id": "6803",
+    "rank": 266
+  },
+  {
+    "player_id": "5848",
+    "rank": 267
+  },
+  {
+    "player_id": "1166",
+    "rank": 268
+  },
+  {
+    "player_id": "4017",
+    "rank": 269
+  },
+  {
+    "player_id": "12524",
+    "rank": 270
+  },
+  {
+    "player_id": "11643",
+    "rank": 271
+  },
+  {
+    "player_id": "12476",
+    "rank": 272
+  },
+  {
+    "player_id": "4177",
+    "rank": 273
+  },
+  {
+    "player_id": "12718",
+    "rank": 274
+  },
+  {
+    "player_id": "8698",
+    "rank": 275
+  },
+  {
+    "player_id": "6271",
+    "rank": 276
+  },
+  {
+    "player_id": "11589",
+    "rank": 277
+  },
+  {
+    "player_id": "9479",
+    "rank": 278
+  },
+  {
+    "player_id": "3321",
+    "rank": 279
+  },
+  {
+    "player_id": "2505",
+    "rank": 280
+  },
+  {
+    "player_id": "13272",
+    "rank": 281
+  },
+  {
+    "player_id": "11597",
+    "rank": 282
+  },
+  {
+    "player_id": "12498",
+    "rank": 283
+  },
+  {
+    "player_id": "12544",
+    "rank": 284
+  },
+  {
+    "player_id": "7670",
+    "rank": 285
+  },
+  {
+    "player_id": "9229",
+    "rank": 286
+  },
+  {
+    "player_id": "9482",
+    "rank": 287
+  },
+  {
+    "player_id": "11565",
+    "rank": 288
+  },
+  {
+    "player_id": "7527",
+    "rank": 289
+  },
+  {
+    "player_id": "12641",
+    "rank": 290
+  },
+  {
+    "player_id": "7591",
+    "rank": 291
+  },
+  {
+    "player_id": "12531",
+    "rank": 292
+  },
+  {
+    "player_id": "13275",
+    "rank": 293
+  },
+  {
+    "player_id": "12521",
+    "rank": 294
+  },
+  {
+    "player_id": "5906",
+    "rank": 295
+  },
+  {
+    "player_id": "6826",
+    "rank": 296
+  },
+  {
+    "player_id": "12541",
+    "rank": 297
+  },
+  {
+    "player_id": "13319",
+    "rank": 298
+  },
+  {
+    "player_id": "12503",
+    "rank": 299
+  },
+  {
+    "player_id": "11569",
+    "rank": 300
+  },
+  {
+    "player_id": "11600",
+    "rank": 301
+  },
+  {
+    "player_id": "13411",
+    "rank": 302
+  },
+  {
+    "player_id": "9501",
+    "rank": 303
+  },
+  {
+    "player_id": "8117",
+    "rank": 304
+  },
+  {
+    "player_id": "8135",
+    "rank": 305
+  },
+  {
+    "player_id": "7828",
+    "rank": 306
+  },
+  {
+    "player_id": "9494",
+    "rank": 307
+  },
+  {
+    "player_id": "11199",
+    "rank": 308
+  },
+  {
+    "player_id": "13400",
+    "rank": 309
+  },
+  {
+    "player_id": "8143",
+    "rank": 310
+  },
+  {
+    "player_id": "12543",
+    "rank": 311
+  },
+  {
+    "player_id": "13289",
+=======
     "player_id": "9511",
     "rank": 159
   },
@@ -1245,6 +2480,7 @@
   },
   {
     "player_id": "13414",
+>>>>>>> f7571778e73d89e2d504d6ecab84972fb823e666
     "rank": 312
   },
   {
@@ -1252,6 +2488,480 @@
     "rank": 313
   },
   {
+<<<<<<< HEAD
+    "player_id": "5857",
+    "rank": 314
+  },
+  {
+    "player_id": "13303",
+    "rank": 315
+  },
+  {
+    "player_id": "11439",
+    "rank": 316
+  },
+  {
+    "player_id": "11579",
+    "rank": 317
+  },
+  {
+    "player_id": "9481",
+    "rank": 318
+  },
+  {
+    "player_id": "4454",
+    "rank": 319
+  },
+  {
+    "player_id": "11577",
+    "rank": 320
+  },
+  {
+    "player_id": "7562",
+    "rank": 321
+  },
+  {
+    "player_id": "4098",
+    "rank": 322
+  },
+  {
+    "player_id": "2306",
+    "rank": 323
+  },
+  {
+    "player_id": "3271",
+    "rank": 324
+  },
+  {
+    "player_id": "11623",
+    "rank": 325
+  },
+  {
+    "player_id": "2307",
+    "rank": 326
+  },
+  {
+    "player_id": "10871",
+    "rank": 327
+  },
+  {
+    "player_id": "13423",
+    "rank": 328
+  },
+  {
+    "player_id": "13380",
+    "rank": 329
+  },
+  {
+    "player_id": "11588",
+    "rank": 330
+  },
+  {
+    "player_id": "12482",
+    "rank": 331
+  },
+  {
+    "player_id": "10218",
+    "rank": 332
+  },
+  {
+    "player_id": "13338",
+    "rank": 333
+  },
+  {
+    "player_id": "8917",
+    "rank": 334
+  },
+  {
+    "player_id": "3634",
+    "rank": 335
+  },
+  {
+    "player_id": "19",
+    "rank": 336
+  },
+  {
+    "player_id": "7496",
+    "rank": 337
+  },
+  {
+    "player_id": "6427",
+    "rank": 338
+  },
+  {
+    "player_id": "11629",
+    "rank": 339
+  },
+  {
+    "player_id": "8129",
+    "rank": 340
+  },
+  {
+    "player_id": "11630",
+    "rank": 341
+  },
+  {
+    "player_id": "7587",
+    "rank": 342
+  },
+  {
+    "player_id": "5970",
+    "rank": 343
+  },
+  {
+    "player_id": "3286",
+    "rank": 344
+  },
+  {
+    "player_id": "12860",
+    "rank": 345
+  },
+  {
+    "player_id": "12470",
+    "rank": 346
+  },
+  {
+    "player_id": "4054",
+    "rank": 347
+  },
+  {
+    "player_id": "6011",
+    "rank": 348
+  },
+  {
+    "player_id": "1426",
+    "rank": 349
+  },
+  {
+    "player_id": "4381",
+    "rank": 350
+  },
+  {
+    "player_id": "827",
+    "rank": 351
+  },
+  {
+    "player_id": "4040",
+    "rank": 352
+  },
+  {
+    "player_id": "8122",
+    "rank": 353
+  },
+  {
+    "player_id": "12472",
+    "rank": 354
+  },
+  {
+    "player_id": "11533",
+    "rank": 355
+  },
+  {
+    "player_id": "3451",
+    "rank": 356
+  },
+  {
+    "player_id": "8259",
+    "rank": 357
+  },
+  {
+    "player_id": "11786",
+    "rank": 358
+  },
+  {
+    "player_id": "2747",
+    "rank": 359
+  },
+  {
+    "player_id": "5189",
+    "rank": 360
+  },
+  {
+    "player_id": "12711",
+    "rank": 361
+  },
+  {
+    "player_id": "11539",
+    "rank": 362
+  },
+  {
+    "player_id": "7839",
+    "rank": 363
+  },
+  {
+    "player_id": "6650",
+    "rank": 364
+  },
+  {
+    "player_id": "12713",
+    "rank": 365
+  },
+  {
+    "player_id": "2020",
+    "rank": 366
+  },
+  {
+    "player_id": "12015",
+    "rank": 367
+  },
+  {
+    "player_id": "1945",
+    "rank": 368
+  },
+  {
+    "player_id": "4227",
+    "rank": 369
+  },
+  {
+    "player_id": "11792",
+    "rank": 370
+  },
+  {
+    "player_id": "3678",
+    "rank": 371
+  },
+  {
+    "player_id": "4195",
+    "rank": 372
+  },
+  {
+    "player_id": "7042",
+    "rank": 373
+  },
+  {
+    "player_id": "6528",
+    "rank": 374
+  },
+  {
+    "player_id": "10955",
+    "rank": 375
+  },
+  {
+    "player_id": "13545",
+    "rank": 376
+  },
+  {
+    "player_id": "5095",
+    "rank": 377
+  },
+  {
+    "player_id": "12961",
+    "rank": 378
+  },
+  {
+    "player_id": "650",
+    "rank": 379
+  },
+  {
+    "player_id": "11058",
+    "rank": 380
+  },
+  {
+    "player_id": "11653",
+    "rank": 381
+  },
+  {
+    "player_id": "12185",
+    "rank": 382
+  },
+  {
+    "player_id": "13968",
+    "rank": 383
+  },
+  {
+    "player_id": "4233",
+    "rank": 384
+  },
+  {
+    "player_id": "6083",
+    "rank": 385
+  },
+  {
+    "player_id": "11261",
+    "rank": 386
+  },
+  {
+    "player_id": "13066",
+    "rank": 387
+  },
+  {
+    "player_id": "13833",
+    "rank": 388
+  },
+  {
+    "player_id": "7922",
+    "rank": 389
+  },
+  {
+    "player_id": "5119",
+    "rank": 390
+  },
+  {
+    "player_id": "1433",
+    "rank": 391
+  },
+  {
+    "player_id": "10937",
+    "rank": 392
+  },
+  {
+    "player_id": "4666",
+    "rank": 393
+  },
+  {
+    "player_id": "8258",
+    "rank": 394
+  },
+  {
+    "player_id": "13804",
+    "rank": 395
+  },
+  {
+    "player_id": "1348",
+    "rank": 396
+  },
+  {
+    "player_id": "11145",
+    "rank": 397
+  },
+  {
+    "player_id": "11092",
+    "rank": 398
+  },
+  {
+    "player_id": "13813",
+    "rank": 399
+  },
+  {
+    "player_id": "HOU",
+    "rank": 400
+  },
+  {
+    "player_id": "LAR",
+    "rank": 401
+  },
+  {
+    "player_id": "DEN",
+    "rank": 402
+  },
+  {
+    "player_id": "SEA",
+    "rank": 403
+  },
+  {
+    "player_id": "PHI",
+    "rank": 404
+  },
+  {
+    "player_id": "MIN",
+    "rank": 405
+  },
+  {
+    "player_id": "NE",
+    "rank": 406
+  },
+  {
+    "player_id": "PIT",
+    "rank": 407
+  },
+  {
+    "player_id": "JAX",
+    "rank": 408
+  },
+  {
+    "player_id": "LAC",
+    "rank": 409
+  },
+  {
+    "player_id": "BAL",
+    "rank": 410
+  },
+  {
+    "player_id": "KC",
+    "rank": 411
+  },
+  {
+    "player_id": "GB",
+    "rank": 412
+  },
+  {
+    "player_id": "BUF",
+    "rank": 413
+  },
+  {
+    "player_id": "DET",
+    "rank": 414
+  },
+  {
+    "player_id": "CLE",
+    "rank": 415
+  },
+  {
+    "player_id": "NO",
+    "rank": 416
+  },
+  {
+    "player_id": "IND",
+    "rank": 417
+  },
+  {
+    "player_id": "SF",
+    "rank": 418
+  },
+  {
+    "player_id": "ATL",
+    "rank": 419
+  },
+  {
+    "player_id": "CHI",
+    "rank": 420
+  },
+  {
+    "player_id": "DAL",
+    "rank": 421
+  },
+  {
+    "player_id": "NYG",
+    "rank": 422
+  },
+  {
+    "player_id": "TB",
+    "rank": 423
+  },
+  {
+    "player_id": "CAR",
+    "rank": 424
+  },
+  {
+    "player_id": "TEN",
+    "rank": 425
+  },
+  {
+    "player_id": "CIN",
+    "rank": 426
+  },
+  {
+    "player_id": "WAS",
+    "rank": 427
+  },
+  {
+    "player_id": "MIA",
+    "rank": 428
+  },
+  {
+    "player_id": "LV",
+    "rank": 429
+  },
+  {
+    "player_id": "NYJ",
+    "rank": 430
+  },
+  {
+    "player_id": "ARI",
+    "rank": 431
+  }
+]
+=======
     "player_id": "9479",
     "rank": 314
   },
@@ -1580,3 +3290,4 @@
     "rank": 395
   }
 ]
+>>>>>>> f7571778e73d89e2d504d6ecab84972fb823e666
