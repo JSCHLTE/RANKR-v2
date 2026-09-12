@@ -23,3 +23,16 @@ test("experience supplements metadata without hiding players or inventing rookie
   assert.equal(players.rookie.yearsExp, 0);
   assert.equal(players.stale, undefined);
 });
+
+ test("current detail files supply rookie status to the rankings player list", async () => {
+  const { withPlayerExperience } = await import("./player-experience");
+  const source = JSON.parse(readFileSync("public/data/players_lite.json", "utf8"));
+  const enriched = await withPlayerExperience(source);
+  const players = normalizePlayers(enriched);
+  const rookies = enriched.filter(player => player.years_exp === 0);
+  assert.ok(rookies.length > 0, "The current dataset must resolve rookies");
+  for (const rookie of rookies) assert.equal(players[rookie.player_id].yearsExp, 0);
+  assert.ok(Object.values(players).some(player => (player.yearsExp ?? 0) > 0));
+  const missing = normalizePlayers(await withPlayerExperience([{ player_id: "missing-test-player" }]));
+  assert.equal(missing["missing-test-player"].yearsExp, null);
+});

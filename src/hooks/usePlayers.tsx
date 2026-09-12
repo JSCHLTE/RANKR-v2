@@ -3,19 +3,6 @@ import { useEffect, useState } from "react";
 import { PlayerLite } from "@/types/player";
 import { normalizePlayers } from "@/lib/normalize-players";
 
-async function loadExperience(): Promise<Record<string, number>> {
-  try {
-    // The older file supplies experience only; it must never decide which players appear.
-    const response = await fetch("/data/player_lite.json");
-    if (!response.ok) return {};
-    const players: PlayerLite[] = await response.json();
-    return Object.fromEntries(players.filter(player => typeof player.yearsExp === "number")
-      .map(player => [player.id, player.yearsExp as number]));
-  } catch {
-    return {};
-  }
-}
-
 export function usePlayers() {
   const [players, setPlayers] = useState<Record<string, PlayerLite>>({});
   const [loading, setLoading] = useState(true);
@@ -27,17 +14,14 @@ export function usePlayers() {
         setLoading(true);
         setError(null);
 
-        const [res, experience] = await Promise.all([
-          fetch("/api/players", { cache: "no-store" }),
-          loadExperience(),
-        ]);
+        const res = await fetch("/api/players", { cache: "no-store" });
 
         if (!res.ok) {
           throw new Error(`Failed to load players: ${res.status}`);
         }
 
         const data = await res.json();
-        setPlayers(normalizePlayers(data, experience));
+        setPlayers(normalizePlayers(data));
       } catch (error) {
         setError(
           error instanceof Error ? error.message : "Failed to load players"
@@ -52,3 +36,4 @@ export function usePlayers() {
 
   return { players, loading, error };
 }
+

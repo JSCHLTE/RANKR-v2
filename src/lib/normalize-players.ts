@@ -2,6 +2,7 @@ import { PlayerLite } from "@/types/player";
 
 interface SourcePlayer {
   player_id: string;
+  years_exp?: number | null;
   first_name?: string;
   last_name?: string;
   team?: string | null;
@@ -26,7 +27,8 @@ export function normalizePlayers(source: SourcePlayer[], experience: Record<stri
       team: player.team || "FA",
       position: player.fantasy_positions?.[0] ?? "",
       fantasyPositions: player.fantasy_positions ?? [],
-      yearsExp: experience[player.player_id] ?? null,
+      yearsExp: typeof player.years_exp === "number" && Number.isInteger(player.years_exp) && player.years_exp >= 0
+        ? player.years_exp : experience[player.player_id] ?? null,
       injury: player.injury === true,
       injurySeverity: player.injury_severity === "low" || player.injury_severity === "medium" || player.injury_severity === "high" ? player.injury_severity : null,
       injuryNote: player.injury_note ?? "",
