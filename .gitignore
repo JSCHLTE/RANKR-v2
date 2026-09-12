@@ -42,9 +42,7 @@ next-env.d.ts
 .template-edit.lock
 .template-backups/
 
-players_lite.json
 !public/data/players_lite.json
-player_rankings.json
 
 uploadPlayers.ts
 uploadRankings.ts
