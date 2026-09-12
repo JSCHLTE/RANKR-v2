@@ -13,7 +13,6 @@ export default function Home() {
   return <main className={styles.home}>
     <section className={styles.hero} aria-labelledby="hero-title">
       <div className={styles.heroCopy}>
-        <p className={styles.eyebrow}><span className={styles.statusDot} /> FANTASY FOOTBALL. PERSONALIZED.</p>
         <h1 id="hero-title">Your rankings.<br /><span>Your way.</span></h1>
         <p className={styles.heroDescription}>You have your favorites. Your sleepers. Your gut calls. Build a fantasy football ranking that actually reflects them.</p>
         <div className={styles.actions}><Link href="/create" className={styles.primary}>Build your rankings <span aria-hidden="true">→</span></Link><Link href="/rankings" className={styles.secondary}>Explore rankings <span aria-hidden="true">→</span></Link></div>
