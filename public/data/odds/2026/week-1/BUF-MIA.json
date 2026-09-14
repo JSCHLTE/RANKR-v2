@@ -1,0 +1,285 @@
+{
+  "eventId": "mock-2026-1-1",
+  "season": 2026,
+  "week": 1,
+  "slug": "buf-mia",
+  "updatedAt": "2026-09-14T12:00:00Z",
+  "isMock": true,
+  "away": {
+    "teamId": "BUF",
+    "name": "Buffalo Bills",
+    "abbr": "BUF"
+  },
+  "home": {
+    "teamId": "MIA",
+    "name": "Miami Dolphins",
+    "abbr": "MIA"
+  },
+  "startTime": "2026-09-20T17:00:00Z",
+  "gameOdds": {
+    "draftkings": {
+      "spread": {
+        "awayLine": -3.5,
+        "homeLine": 3.5,
+        "awayOdds": -115,
+        "homeOdds": -105
+      },
+      "total": {
+        "line": 48.5,
+        "overOdds": -110,
+        "underOdds": -110
+      },
+      "moneyline": {
+        "awayOdds": -170,
+        "homeOdds": 145
+      }
+    },
+    "fanduel": {
+      "spread": {
+        "awayLine": -3,
+        "homeLine": 3,
+        "awayOdds": -110,
+        "homeOdds": -110
+      },
+      "total": {
+        "line": 48.5,
+        "overOdds": -105,
+        "underOdds": -115
+      },
+      "moneyline": {
+        "awayOdds": -168,
+        "homeOdds": 143
+      }
+    },
+    "betmgm": {
+      "spread": {
+        "awayLine": -3.5,
+        "homeLine": 3.5,
+        "awayOdds": -105,
+        "homeOdds": -115
+      },
+      "total": {
+        "line": 48.5,
+        "overOdds": -110,
+        "underOdds": -110
+      },
+      "moneyline": {
+        "awayOdds": -166,
+        "homeOdds": 141
+      }
+    },
+    "caesars": {
+      "spread": {
+        "awayLine": -3.5,
+        "homeLine": 3.5,
+        "awayOdds": -115,
+        "homeOdds": -105
+      },
+      "total": {
+        "line": 49.5,
+        "overOdds": -105,
+        "underOdds": -115
+      },
+      "moneyline": {
+        "awayOdds": -164,
+        "homeOdds": 139
+      }
+    },
+    "espnbet": {
+      "spread": {
+        "awayLine": -3.5,
+        "homeLine": 3.5,
+        "awayOdds": -110,
+        "homeOdds": -110
+      },
+      "total": {
+        "line": 48.5,
+        "overOdds": -110,
+        "underOdds": -110
+      },
+      "moneyline": {
+        "awayOdds": -162,
+        "homeOdds": 137
+      }
+    },
+    "bet365": {
+      "spread": {
+        "awayLine": -3.5,
+        "homeLine": 3.5,
+        "awayOdds": -105,
+        "homeOdds": -115
+      },
+      "total": {
+        "line": 48.5,
+        "overOdds": -105,
+        "underOdds": -115
+      },
+      "moneyline": {
+        "awayOdds": -160,
+        "homeOdds": 135
+      }
+    }
+  },
+  "playerProps": [
+    {
+      "playerId": "josh-allen",
+      "playerName": "Josh Allen",
+      "team": "BUF",
+      "category": "passing",
+      "market": "passing_yards",
+      "displayName": "Passing Yards",
+      "sportsbooks": {
+        "draftkings": {
+          "line": 264.5,
+          "overOdds": -115,
+          "underOdds": -105
+        },
+        "fanduel": {
+          "line": 265.5,
+          "overOdds": -110,
+          "underOdds": -110
+        },
+        "betmgm": {
+          "line": 266.5,
+          "overOdds": -105,
+          "underOdds": -115
+        },
+        "caesars": {
+          "line": 267.5,
+          "overOdds": -115,
+          "underOdds": -105
+        },
+        "espnbet": {
+          "line": 268.5,
+          "overOdds": -110,
+          "underOdds": -110
+        },
+        "bet365": {
+          "line": 278.5,
+          "overOdds": -105,
+          "underOdds": -115
+        }
+      }
+    },
+    {
+      "playerId": "james-cook",
+      "playerName": "James Cook",
+      "team": "BUF",
+      "category": "rushing",
+      "market": "rushing_yards",
+      "displayName": "Rushing Yards",
+      "sportsbooks": {
+        "draftkings": {
+          "line": 72.5,
+          "overOdds": -115,
+          "underOdds": -105
+        },
+        "fanduel": {
+          "line": 72.5,
+          "overOdds": -110,
+          "underOdds": -110
+        },
+        "betmgm": {
+          "line": 72.5,
+          "overOdds": -105,
+          "underOdds": -115
+        },
+        "caesars": {
+          "line": 72.5,
+          "overOdds": -115,
+          "underOdds": -105
+        },
+        "espnbet": {
+          "line": 72.5,
+          "overOdds": -110,
+          "underOdds": -110
+        },
+        "bet365": {
+          "line": 72.5,
+          "overOdds": -105,
+          "underOdds": -115
+        }
+      }
+    },
+    {
+      "playerId": "jaylen-waddle",
+      "playerName": "Jaylen Waddle",
+      "team": "MIA",
+      "category": "receiving",
+      "market": "receiving_yards",
+      "displayName": "Receiving Yards",
+      "sportsbooks": {
+        "draftkings": {
+          "line": 64.5,
+          "overOdds": -115,
+          "underOdds": -105
+        },
+        "fanduel": {
+          "line": 64.5,
+          "overOdds": -110,
+          "underOdds": -110
+        },
+        "betmgm": {
+          "line": 64.5,
+          "overOdds": -105,
+          "underOdds": -115
+        },
+        "caesars": {
+          "line": 64.5,
+          "overOdds": -115,
+          "underOdds": -105
+        },
+        "espnbet": {
+          "line": 64.5,
+          "overOdds": -110,
+          "underOdds": -110
+        },
+        "bet365": {
+          "line": 64.5,
+          "overOdds": -105,
+          "underOdds": -115
+        }
+      }
+    },
+    {
+      "playerId": "josh-allen",
+      "playerName": "Josh Allen",
+      "team": "BUF",
+      "category": "touchdowns",
+      "market": "passing_touchdowns",
+      "displayName": "Passing Touchdowns",
+      "sportsbooks": {
+        "draftkings": {
+          "line": 1.5,
+          "overOdds": -115,
+          "underOdds": -105
+        },
+        "fanduel": {
+          "line": 1.5,
+          "overOdds": -110,
+          "underOdds": -110
+        },
+        "betmgm": {
+          "line": 1.5,
+          "overOdds": -105,
+          "underOdds": -115
+        },
+        "caesars": {
+          "line": 1.5,
+          "overOdds": -115,
+          "underOdds": -105
+        },
+        "espnbet": {
+          "line": 1.5,
+          "overOdds": -110,
+          "underOdds": -110
+        },
+        "bet365": {
+          "line": 1.5,
+          "overOdds": -105,
+          "underOdds": -115
+        }
+      }
+    }
+  ]
+}

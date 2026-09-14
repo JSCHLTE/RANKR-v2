@@ -1,0 +1,343 @@
+{
+  "season": 2026,
+  "week": 1,
+  "updatedAt": "2026-09-14T12:00:00Z",
+  "isMock": true,
+  "games": [
+    {
+      "eventId": "mock-2026-1-1",
+      "slug": "buf-mia",
+      "away": {
+        "teamId": "BUF",
+        "name": "Buffalo Bills",
+        "abbr": "BUF"
+      },
+      "home": {
+        "teamId": "MIA",
+        "name": "Miami Dolphins",
+        "abbr": "MIA"
+      },
+      "startTime": "2026-09-20T17:00:00Z",
+      "sportsbooks": {
+        "draftkings": {
+          "spread": {
+            "awayLine": -3.5,
+            "homeLine": 3.5,
+            "awayOdds": -115,
+            "homeOdds": -105
+          },
+          "total": {
+            "line": 48.5,
+            "overOdds": -110,
+            "underOdds": -110
+          },
+          "moneyline": {
+            "awayOdds": -170,
+            "homeOdds": 145
+          }
+        },
+        "fanduel": {
+          "spread": {
+            "awayLine": -3,
+            "homeLine": 3,
+            "awayOdds": -110,
+            "homeOdds": -110
+          },
+          "total": {
+            "line": 48.5,
+            "overOdds": -105,
+            "underOdds": -115
+          },
+          "moneyline": {
+            "awayOdds": -168,
+            "homeOdds": 143
+          }
+        },
+        "betmgm": {
+          "spread": {
+            "awayLine": -3.5,
+            "homeLine": 3.5,
+            "awayOdds": -105,
+            "homeOdds": -115
+          },
+          "total": {
+            "line": 48.5,
+            "overOdds": -110,
+            "underOdds": -110
+          },
+          "moneyline": {
+            "awayOdds": -166,
+            "homeOdds": 141
+          }
+        },
+        "caesars": {
+          "spread": {
+            "awayLine": -3.5,
+            "homeLine": 3.5,
+            "awayOdds": -115,
+            "homeOdds": -105
+          },
+          "total": {
+            "line": 49.5,
+            "overOdds": -105,
+            "underOdds": -115
+          },
+          "moneyline": {
+            "awayOdds": -164,
+            "homeOdds": 139
+          }
+        },
+        "espnbet": {
+          "spread": {
+            "awayLine": -3.5,
+            "homeLine": 3.5,
+            "awayOdds": -110,
+            "homeOdds": -110
+          },
+          "total": {
+            "line": 48.5,
+            "overOdds": -110,
+            "underOdds": -110
+          },
+          "moneyline": {
+            "awayOdds": -162,
+            "homeOdds": 137
+          }
+        },
+        "bet365": {
+          "spread": {
+            "awayLine": -3.5,
+            "homeLine": 3.5,
+            "awayOdds": -105,
+            "homeOdds": -115
+          },
+          "total": {
+            "line": 48.5,
+            "overOdds": -105,
+            "underOdds": -115
+          },
+          "moneyline": {
+            "awayOdds": -160,
+            "homeOdds": 135
+          }
+        }
+      }
+    },
+    {
+      "eventId": "mock-2026-1-2",
+      "slug": "det-gb",
+      "away": {
+        "teamId": "DET",
+        "name": "Detroit Lions",
+        "abbr": "DET"
+      },
+      "home": {
+        "teamId": "GB",
+        "name": "Green Bay Packers",
+        "abbr": "GB"
+      },
+      "startTime": "2026-09-20T20:00:00Z",
+      "sportsbooks": {
+        "draftkings": {
+          "spread": {
+            "awayLine": 2.5,
+            "homeLine": -2.5,
+            "awayOdds": -115,
+            "homeOdds": -105
+          },
+          "total": {
+            "line": 46.5,
+            "overOdds": -110,
+            "underOdds": -110
+          },
+          "moneyline": {
+            "awayOdds": 120,
+            "homeOdds": -140
+          }
+        },
+        "fanduel": {
+          "spread": {
+            "awayLine": 3,
+            "homeLine": -3,
+            "awayOdds": -110,
+            "homeOdds": -110
+          },
+          "total": {
+            "line": 46.5,
+            "overOdds": -105,
+            "underOdds": -115
+          },
+          "moneyline": {
+            "awayOdds": 122,
+            "homeOdds": -142
+          }
+        },
+        "betmgm": {
+          "spread": {
+            "awayLine": 2.5,
+            "homeLine": -2.5,
+            "awayOdds": -105,
+            "homeOdds": -115
+          },
+          "total": {
+            "line": 46.5,
+            "overOdds": -110,
+            "underOdds": -110
+          },
+          "moneyline": {
+            "awayOdds": 124,
+            "homeOdds": -144
+          }
+        },
+        "caesars": {
+          "spread": {
+            "awayLine": 2.5,
+            "homeLine": -2.5,
+            "awayOdds": -115,
+            "homeOdds": -105
+          },
+          "total": {
+            "line": 47.5,
+            "overOdds": -105,
+            "underOdds": -115
+          },
+          "moneyline": {
+            "awayOdds": 126,
+            "homeOdds": -146
+          }
+        },
+        "espnbet": {
+          "spread": {
+            "awayLine": 2.5,
+            "homeLine": -2.5,
+            "awayOdds": -110,
+            "homeOdds": -110
+          },
+          "total": {
+            "line": 46.5,
+            "overOdds": -110,
+            "underOdds": -110
+          },
+          "moneyline": {
+            "awayOdds": 128,
+            "homeOdds": -148
+          }
+        },
+        "bet365": {
+          "spread": {
+            "awayLine": 2.5,
+            "homeLine": -2.5,
+            "awayOdds": -105,
+            "homeOdds": -115
+          },
+          "total": {
+            "line": 46.5,
+            "overOdds": -105,
+            "underOdds": -115
+          },
+          "moneyline": {
+            "awayOdds": 130,
+            "homeOdds": -150
+          }
+        }
+      }
+    },
+    {
+      "eventId": "mock-2026-1-3",
+      "slug": "kc-lac",
+      "away": {
+        "teamId": "KC",
+        "name": "Kansas City Chiefs",
+        "abbr": "KC"
+      },
+      "home": {
+        "teamId": "LAC",
+        "name": "Los Angeles Chargers",
+        "abbr": "LAC"
+      },
+      "startTime": "2026-09-20T23:00:00Z",
+      "sportsbooks": {
+        "draftkings": {
+          "spread": {
+            "awayLine": -2.5,
+            "homeLine": 2.5,
+            "awayOdds": -115,
+            "homeOdds": -105
+          },
+          "total": {
+            "line": 44.5,
+            "overOdds": -110,
+            "underOdds": -110
+          },
+          "moneyline": {
+            "awayOdds": -135,
+            "homeOdds": 115
+          }
+        },
+        "fanduel": {
+          "spread": {
+            "awayLine": -2,
+            "homeLine": 2,
+            "awayOdds": -110,
+            "homeOdds": -110
+          },
+          "total": {
+            "line": 44.5,
+            "overOdds": -105,
+            "underOdds": -115
+          },
+          "moneyline": {
+            "awayOdds": -133,
+            "homeOdds": 113
+          }
+        },
+        "betmgm": {
+          "spread": {
+            "awayLine": -2.5,
+            "homeLine": 2.5,
+            "awayOdds": -105,
+            "homeOdds": -115
+          },
+          "total": {
+            "line": 44.5,
+            "overOdds": -110,
+            "underOdds": -110
+          },
+          "moneyline": {
+            "awayOdds": -131,
+            "homeOdds": 111
+          }
+        },
+        "caesars": {
+          "spread": {
+            "awayLine": -2.5,
+            "homeLine": 2.5,
+            "awayOdds": -115,
+            "homeOdds": -105
+          },
+          "total": {
+            "line": 45.5,
+            "overOdds": -105,
+            "underOdds": -115
+          },
+          "moneyline": {
+            "awayOdds": -129,
+            "homeOdds": 109
+          }
+        },
+        "bet365": {
+          "spread": {
+            "awayLine": -2.5,
+            "awayOdds": null,
+            "homeLine": 2.5,
+            "homeOdds": -110
+          },
+          "moneyline": {
+            "awayOdds": -130,
+            "homeOdds": null
+          }
+        }
+      }
+    }
+  ]
+}

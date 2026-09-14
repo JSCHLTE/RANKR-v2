@@ -14,6 +14,7 @@ const links = [
   { label: "Home", href: "/" },
   { label: "Create", href: "/create" },
   { label: "Rankings", href: "/rankings" },
+  { label: "Odds", href: "/odds" },
 ];
 
 export default function Navbar() {
@@ -75,7 +76,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-200 items-center justify-between">
         <Link href="/" aria-label="RANKR home"><img src="/lion-green-long.svg" className="w-32 transition-opacity hover:opacity-80 sm:w-35" draggable="false" alt="RANKR" /></Link>
         <div className="hidden items-center gap-6 md:flex">
-          {navigation.map(link => <Link key={link.href} href={link.href} aria-current={pathname === link.href ? "page" : undefined} onClick={() => setUserMenu(false)} className={`text-sm transition-colors ${pathname === link.href ? "font-medium text-[var(--accent)]" : "text-[var(--text-muted)] hover:text-[var(--foreground)]"}`}>{link.label}</Link>)}
+          {navigation.map(link => <Link key={link.href} href={link.href} aria-current={(pathname === link.href || (link.href === "/odds" && pathname.startsWith("/odds/"))) ? "page" : undefined} onClick={() => setUserMenu(false)} className={`text-sm transition-colors ${(pathname === link.href || (link.href === "/odds" && pathname.startsWith("/odds/"))) ? "font-medium text-[var(--accent)]" : "text-[var(--text-muted)] hover:text-[var(--foreground)]"}`}>{link.label}</Link>)}
           {loading ? <div className="h-10 w-10 animate-pulse rounded-full bg-[var(--surface-hover)]" /> : user && profile ?
             <div className="relative" ref={dropDownRef}>
               <button ref={accountButton} type="button" aria-label="Account options" aria-expanded={userMenu} aria-controls="account-options" onClick={() => setUserMenu(value => !value)} className="block cursor-pointer rounded-full ring-[var(--accent)] ring-offset-2 ring-offset-[var(--background)] focus-visible:outline-none focus-visible:ring-2">
@@ -99,7 +100,7 @@ export default function Navbar() {
           <button autoFocus type="button" onClick={closeMobile} aria-label="Close navigation menu" className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] hover:bg-[var(--surface-hover)]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><path d="m6 6 12 12M18 6 6 18" /></svg></button>
         </div>
         <nav aria-label="Mobile navigation" className="flex flex-col gap-2">
-          {[...links, { label: "Likes", href: "/likes" }, ...(isAdmin(user?.uid) ? [{ label: "Admin", href: "/admin" }] : [])].map(link => <Link key={link.href} href={link.href} onClick={closeMobile} aria-current={pathname === link.href ? "page" : undefined} className={`group flex items-center gap-4 rounded-2xl px-4 py-4 transition-colors ${pathname === link.href ? "bg-[var(--accent)]/10 text-[var(--accent)]" : "hover:bg-[var(--surface-hover)]"}`}><span className="text-xl font-medium tracking-tight">{link.label}</span></Link>)}
+          {[...links, { label: "Likes", href: "/likes" }, ...(isAdmin(user?.uid) ? [{ label: "Admin", href: "/admin" }] : [])].map(link => <Link key={link.href} href={link.href} onClick={closeMobile} aria-current={(pathname === link.href || (link.href === "/odds" && pathname.startsWith("/odds/"))) ? "page" : undefined} className={`group flex items-center gap-4 rounded-2xl px-4 py-4 transition-colors ${(pathname === link.href || (link.href === "/odds" && pathname.startsWith("/odds/"))) ? "bg-[var(--accent)]/10 text-[var(--accent)]" : "hover:bg-[var(--surface-hover)]"}`}><span className="text-xl font-medium tracking-tight">{link.label}</span></Link>)}
         </nav>
         <div className="mt-auto pt-10">
           <div className="border-t border-[var(--border)] pt-5">
