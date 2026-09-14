@@ -7,6 +7,7 @@ import { GameLines } from "@/components/odds/GameLines";
 import { PlayerProps } from "@/components/odds/PlayerProps";
 import { gameTime } from "@/components/odds/OddsValue";
 import { TeamMatchup } from "@/components/odds/TeamMatchup";
+import { AdminOddsSync } from "@/components/odds/AdminOddsSync";
 export const dynamic = "force-dynamic";
 export async function generateMetadata({ params }: { params: Promise<{ season: string; week: string; game: string }> }) {
   const { season, week, game } = await params;
@@ -20,6 +21,6 @@ export default async function GamePage({ params }: { params: Promise<{ season: s
   return <><Link className="mb-6 inline-block text-sm text-[var(--text-muted)] hover:text-[var(--accent)]" href={`/odds/nfl/${season}/${week}`}>← All Week {data.week} games</Link>
     <OddsPageHeader title={<TeamMatchup away={data.away} home={data.home} />} {...data} />
     <p className="mb-2 text-sm">{data.away.name} at {data.home.name}</p><time dateTime={data.startTime} className="mb-6 block text-sm text-[var(--text-muted)]">{gameTime(data.startTime)}</time>
-    <SportsbookFilter /><GameLines books={data.gameOdds} away={data.away.abbr} home={data.home.abbr} /><PlayerProps props={data.playerProps} />
+    <AdminOddsSync key={`${season}-${week}`} season={data.season} week={data.week} /><SportsbookFilter /><GameLines books={data.gameOdds} away={data.away.abbr} home={data.home.abbr} /><PlayerProps props={data.playerProps} />
   </>;
 }
