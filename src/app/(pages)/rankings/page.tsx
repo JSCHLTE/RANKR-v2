@@ -2,11 +2,11 @@ import { db } from "@/lib/firebase-admin";
 import formatTimestamp from "@/hooks/formatTimeStamp";
 import RankingFeed from "./_components/RankingFeed";
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 const Rankings = async () => {
   let loading = true;
-  const snapshot = await db.collection("rankings-meta").get();
+  const snapshot = await db.collection("rankings-meta").where("rankObj.visibility", "==", "PUBLIC").get();
 
   const data = snapshot.docs.map((doc) => {
     const raw = doc.data();

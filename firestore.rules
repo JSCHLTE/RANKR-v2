@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    match /subscriptions/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    match /players/{playerId} {
+      allow read: if true;
+    }
+    match /rankings-meta/{rankingId} {
+      allow read: if resource.data.rankObj.visibility == "PUBLIC"
+        || (request.auth != null && resource.data.author.uid == request.auth.uid);
+      allow write: if false;
+    }
+    // Ranking contents and other collections are served by authorized server routes.
+    // Unmatched paths remain denied to browser clients.
+  }
+}

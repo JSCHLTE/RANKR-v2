@@ -4,6 +4,7 @@ import ProfilePicture from "@/components/profile/ProfilePicture";
 import { RankingCard } from "../../rankings/_components/RankingCard";
 import formatTimestamp from "@/hooks/formatTimeStamp";
 import { RankingMeta } from "@/types/rank";
+import { PrivateRankings } from "@/components/PrivateRankings";
 
 export const dynamic = "force-dynamic";
 
@@ -23,6 +24,7 @@ export default async function UserPage({ params }: { params: Promise<{ slug: str
     .where("author.uid", "==", snapshot.docs[0].id)
     .get();
   const rankings: RankingMeta[] = rankingsSnapshot.docs
+    .filter(doc => doc.data().rankObj?.visibility === "PUBLIC")
     .sort((a, b) => (b.data().createdAt?.toMillis?.() ?? 0) - (a.data().createdAt?.toMillis?.() ?? 0))
     .map(doc => {
       const data = doc.data();
@@ -62,11 +64,12 @@ export default async function UserPage({ params }: { params: Promise<{ slug: str
           </div>
         ) : (
           <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] px-6 py-14 text-center">
-            <p className="font-medium">No rankings yet</p>
-            <p className="mt-2 text-sm text-[var(--text-muted)]">This user hasn’t created any rankings yet.</p>
+            <p className="font-medium">No public rankings yet</p>
+            <p className="mt-2 text-sm text-[var(--text-muted)]">This user hasn’t published any public rankings yet.</p>
           </div>
         )}
       </section>
+      <PrivateRankings profileUid={snapshot.docs[0].id} />
     </main>
   );
 }
