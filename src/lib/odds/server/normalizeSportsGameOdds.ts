@@ -1,6 +1,6 @@
 import type { BookMap, GameMarkets, GameOdds, OddsTeam, PlayerProp, TotalMarket } from "@/types/odds";
 import type { Sportsbook } from "../sportsbooks";
-import { PROVIDER_BOOKS, PROP_MARKETS } from "./providerMapping";
+import { PROVIDER_BOOKS, PROP_MARKETS, YES_NO_PROP_MARKETS } from "./providerMapping";
 import { american, isoDate, numeric, object, requiredObject, requiredString } from "./validation";
 import { OddsSyncError } from "./errors";
 import { weekRange } from "./weekRange";
@@ -65,10 +65,12 @@ export function normalizeSportsGameOdds(events: unknown[], season: number, week:
       const isTeamSide = (statEntityID === "home" || statEntityID === "away") && sideID === statEntityID;
       const gameLine = statID === "points" && ((isTeamSide && (betTypeID === "sp" || betTypeID === "ml")) || (statEntityID === "all" && betTypeID === "ou" && (sideID === "over" || sideID === "under")));
       const definition = typeof statID === "string" && Object.hasOwn(PROP_MARKETS, statID) ? PROP_MARKETS[statID as keyof typeof PROP_MARKETS] : undefined;
+      const yesNoDefinition = betTypeID === "yn" && typeof statID === "string" && Object.hasOwn(YES_NO_PROP_MARKETS, statID) ? YES_NO_PROP_MARKETS[statID as keyof typeof YES_NO_PROP_MARKETS] : undefined;
       const player = typeof statEntityID === "string" ? object(players[statEntityID]) : null;
       const playerTeam = player?.teamID === away.teamId ? away.abbr : player?.teamID === home.teamId ? home.abbr : undefined;
       const isProp = definition && player && playerTeam && typeof player.name === "string" && player.name.trim() && betTypeID === "ou" && (sideID === "over" || sideID === "under");
-      if (!gameLine && !isProp) continue;
+      const isYesNoProp = yesNoDefinition && player && playerTeam && typeof player.name === "string" && player.name.trim() && (sideID === "yes" || sideID === "no");
+      if (!gameLine && !isProp && !isYesNoProp) continue;
       const byBookmaker = market.byBookmaker == null ? {} : requiredObject(market.byBookmaker);
       for (const [providerBook, quoteValue] of Object.entries(byBookmaker)) {
         if (!Object.hasOwn(PROVIDER_BOOKS, providerBook)) continue;
@@ -79,7 +81,16 @@ export function normalizeSportsGameOdds(events: unknown[], season: number, week:
         // v2 retains suspended/closed prices. These must not become active odds.
         if (quote.available !== true || quote.isMainLine === false) continue;
         const odds = american(quote.odds);
-        if (gameLine && betTypeID === "ml" && isTeamSide && odds !== undefined) {
+        if (isYesNoProp && yesNoDefinition && playerTeam && typeof statEntityID === "string" && typeof player.name === "string" && (sideID === "yes" || sideID === "no") && odds !== undefined) {
+          const key = `${statEntityID}:${yesNoDefinition.market}`;
+          let entry = props.get(key);
+          if (!entry) {
+            entry = { prop: { playerId: statEntityID, playerName: player.name, team: playerTeam, ...yesNoDefinition, sportsbooks: {} }, sides: {} };
+            props.set(key, entry);
+          }
+          const target = entry.prop.sportsbooks[book] ??= {};
+          if (sideID === "yes") target.yesOdds = odds; else target.noOdds = odds;
+        } else if (gameLine && betTypeID === "ml" && isTeamSide && odds !== undefined) {
           const target = gameOdds[book] ??= {};
           const moneyline = target.moneyline ??= {};
           if (sideID === "away") moneyline.awayOdds = odds; else moneyline.homeOdds = odds;

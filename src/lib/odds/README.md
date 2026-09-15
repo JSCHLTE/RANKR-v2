@@ -38,7 +38,9 @@ Verified against the current official [OpenAPI schema](https://sportsgameodds.co
 
 Supported player O/U stats: passing yards, attempts, completions, interceptions; rushing yards and attempts; receiving yards and receptions; passing, rushing, receiving, and total touchdowns. Passing touchdowns are grouped under Touchdowns to match the existing categories.
 
-Ignored: unsupported books, alternate lines, first/last/anytime touchdown scorer yes/no markets, half/quarter/regulation-only markets, team props, combination yardage props, defense/kicking props, and any stat/bet type not explicitly mapped. Unknown markets are not forced into a category.
+Anytime TD and First TD use the provider's full-game `touchdowns` and `firstTouchdown` Yes/No markets (`yn-yes` / `yn-no`). Props store `betType: "yn"` and separate `yesOdds`/`noOdds` prices without a line. Consensus averages implied probabilities independently for each available side. Missing No prices are not inferred. Existing O/U props remain compatible; re-sync a week to populate the new markets. The cards and market dropdown display them when quotes are available.
+
+Ignored: unsupported books, alternate lines, last touchdown scorer markets, half/quarter/regulation-only markets, team props, combination yardage props, defense/kicking props, and any stat/bet type not explicitly mapped. Unknown markets are not forced into a category.
 
 ## Season/week boundaries
 

@@ -1,4 +1,4 @@
-import type { BookMap, GameMarkets, OddsPreferences, TotalMarket } from "@/types/odds";
+import type { BookMap, GameMarkets, OddsPreferences, TotalMarket, PlayerMarket } from "@/types/odds";
 import type { Sportsbook } from "./sportsbooks";
 
 const finite = (value: number | null | undefined): value is number => typeof value === "number" && Number.isFinite(value);
@@ -32,6 +32,12 @@ export function consensusTotal(books: BookMap<TotalMarket>, selected: Sportsbook
   const over = consensusLine(values.map(value => ({ line: value.line, odds: value.overOdds })));
   const under = consensusLine(values.map(value => ({ line: value.line, odds: value.underOdds })));
   return { line: over.line, overOdds: over.odds, underOdds: under.odds };
+}
+export function consensusYesNo(books: BookMap<PlayerMarket>, selected: Sportsbook[]): PlayerMarket {
+  return {
+    yesOdds: calculateConsensusOdds(selected.map(book => books[book]?.yesOdds)),
+    noOdds: calculateConsensusOdds(selected.map(book => books[book]?.noOdds)),
+  };
 }
 export function selectGameMarkets(books: BookMap<GameMarkets>, preferences: OddsPreferences): GameMarkets {
   if (preferences.mode === "sportsbook") return books[preferences.sportsbook] ?? {};

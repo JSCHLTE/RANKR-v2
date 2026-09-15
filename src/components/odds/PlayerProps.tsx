@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import type { PlayerProp } from "@/types/odds";
+import type { PlayerProp, PlayerMarket } from "@/types/odds";
 import { SPORTSBOOK_IDS, SPORTSBOOKS } from "@/lib/odds/sportsbooks";
-import { consensusTotal } from "@/lib/odds/consensus";
+import { consensusTotal, consensusYesNo } from "@/lib/odds/consensus";
 import { ConsensusBadge, useOddsPreferences } from "./OddsPreferences";
 import { formatOdds } from "./OddsValue";
 function PropTeam({ team }: { team: string }) {
@@ -24,11 +24,17 @@ function PlayerHeadshot({ sleeperId }: { sleeperId?: string }) {
 }
 function MarketRow({ prop }: { prop: PlayerProp }) {
   const { preferences } = useOddsPreferences();
-  const market = preferences.mode === "consensus" ? consensusTotal(prop.sportsbooks, preferences.includedBooks) : prop.sportsbooks[preferences.sportsbook];
+  const yesNo = prop.betType === "yn";
+  const market: PlayerMarket | null | undefined = preferences.mode === "consensus" ? (yesNo ? consensusYesNo : consensusTotal)(prop.sportsbooks, preferences.includedBooks) : prop.sportsbooks[preferences.sportsbook];
   return <div className="border-t border-[var(--border)] py-3">
     <div className="grid grid-cols-[minmax(0,1fr)_4.5rem_4.5rem] items-center gap-2">
       <h4 className="pr-1 text-sm font-medium">{prop.displayName}</h4>
-      {(["over", "under"] as const).map(side => {
+      {yesNo ? <>
+        {market?.noOdds == null && <span />}
+        {(["yes", "no"] as const).filter(side => side === "yes" || market?.noOdds != null).map(side => <div key={side} aria-label={`${side}: ${formatOdds(side === "yes" ? market?.yesOdds : market?.noOdds)}`} className="rounded-lg border border-[var(--border)] bg-[var(--surface-hover)] px-2 py-1.5 tabular-nums">
+          <p className="text-sm font-semibold">{side.toUpperCase()}</p><p className="mt-0.5 text-xs">{formatOdds(side === "yes" ? market?.yesOdds : market?.noOdds)}</p>
+        </div>)}
+      </> : (["over", "under"] as const).map(side => {
         const odds = side === "over" ? market?.overOdds : market?.underOdds;
         const available = market?.line != null && odds != null;
         return <div key={side} aria-label={`${side === "over" ? "Over" : "Under"}: ${available ? `${market.line}, ${formatOdds(odds)}` : "unavailable"}`} className={`rounded-lg border border-[var(--border)] px-2 py-1.5 tabular-nums ${available ? "bg-[var(--surface-hover)]" : "text-[var(--text-muted)]"}`}>
@@ -37,7 +43,7 @@ function MarketRow({ prop }: { prop: PlayerProp }) {
         </div>;
       })}
     </div>
-    <details><summary className="cursor-pointer text-xs text-[var(--accent)]">Compare all sportsbooks</summary><div className="mt-3 overflow-x-auto" role="region" aria-label={`${prop.playerName} ${prop.displayName} comparison`} tabIndex={0}><table className="w-full min-w-[300px] text-left text-xs"><thead><tr>{["Book", "Line", "Over", "Under"].map(label => <th scope="col" key={label} className="py-2">{label}</th>)}</tr></thead><tbody>{SPORTSBOOK_IDS.map(book => <tr key={book} className="border-t border-[var(--border)]"><th scope="row" className="py-2 font-normal">{SPORTSBOOKS[book].name}</th><td>{prop.sportsbooks[book]?.line ?? "—"}</td><td>{formatOdds(prop.sportsbooks[book]?.overOdds)}</td><td>{formatOdds(prop.sportsbooks[book]?.underOdds)}</td></tr>)}</tbody></table></div></details>
+    <details><summary className="cursor-pointer text-xs text-[var(--accent)]">Compare all sportsbooks</summary><div className="mt-3 overflow-x-auto" role="region" aria-label={`${prop.playerName} ${prop.displayName} comparison`} tabIndex={0}><table className="w-full min-w-[300px] text-left text-xs"><thead><tr>{(yesNo ? ["Book", "Yes", "No"] : ["Book", "Line", "Over", "Under"]).map(label => <th scope="col" key={label} className="py-2">{label}</th>)}</tr></thead><tbody>{SPORTSBOOK_IDS.map(book => <tr key={book} className="border-t border-[var(--border)]"><th scope="row" className="py-2 font-normal">{SPORTSBOOKS[book].name}</th>{yesNo ? <><td>{formatOdds(prop.sportsbooks[book]?.yesOdds)}</td><td>{formatOdds(prop.sportsbooks[book]?.noOdds)}</td></> : <><td>{prop.sportsbooks[book]?.line ?? "—"}</td><td>{formatOdds(prop.sportsbooks[book]?.overOdds)}</td><td>{formatOdds(prop.sportsbooks[book]?.underOdds)}</td></>}</tr>)}</tbody></table></div></details>
   </div>;
 }
 export function PlayerProps({ props }: { props: PlayerProp[] }) {
