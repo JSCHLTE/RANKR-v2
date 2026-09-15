@@ -8,6 +8,6 @@ export interface GameMarkets { spread?: SpreadMarket | null; total?: TotalMarket
 export interface OddsTeam { teamId: string; name: string; abbr: string }
 export interface GameSummary { eventId: string; slug: string; away: OddsTeam; home: OddsTeam; startTime: string; sportsbooks: BookMap<GameMarkets> }
 export interface WeekOdds { season: number; week: number; updatedAt: string; isMock: boolean; games: GameSummary[] }
-export interface PlayerProp { playerId: string; playerName: string; team: string; category: string; market: string; displayName: string; sportsbooks: BookMap<TotalMarket> }
+export interface PlayerProp { playerId: string; sleeperId?: string; playerName: string; team: string; category: string; market: string; displayName: string; sportsbooks: BookMap<TotalMarket> }
 export interface GameOdds extends Omit<GameSummary, "sportsbooks"> { season: number; week: number; updatedAt: string; isMock: boolean; gameOdds: BookMap<GameMarkets>; playerProps: PlayerProp[] }
 export interface OddsPreferences { mode: "consensus" | "sportsbook"; sportsbook: Sportsbook; includedBooks: Sportsbook[] }

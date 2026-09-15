@@ -1,4 +1,6 @@
 import "server-only";
+import players from "../../../../public/data/players_lite.json";
+import { playerHeadshotLookup } from "./playerHeadshots";
 import { SPORTSBOOK_IDS, type Sportsbook } from "../sportsbooks";
 import { fetchNFLEvents, requireSportsGameOddsKey } from "./sportsGameOdds";
 import { normalizeSportsGameOdds } from "./normalizeSportsGameOdds";
@@ -15,6 +17,11 @@ export async function syncOdds(season: number, week: number) {
   const events = await fetchNFLEvents(season, week, fetch, book => unavailableSportsbooks.push(book));
   if (!events.length) throw new OddsSyncError("No NFL events returned for this week. Existing odds were left unchanged.", 422);
   const games = normalizeSportsGameOdds(events, season, week);
+  const findSleeperId = playerHeadshotLookup(players);
+  for (const game of games) for (const prop of game.playerProps) {
+    const sleeperId = findSleeperId(prop.playerName, prop.team);
+    if (sleeperId) prop.sleeperId = sleeperId;
+  }
   const updatedAt = await publishSnapshot(season, week, games, revision);
   const sportsbooksFound = SPORTSBOOK_IDS.filter(book => games.some(game => game.gameOdds[book] || game.playerProps.some(prop => prop.sportsbooks[book])));
   return { success: true, season, week, gamesFetched: events.length, gamesWritten: games.length,

@@ -3,10 +3,12 @@ import { test } from "node:test";
 import { loadTestModule, providerEvent } from "./testHelpers";
 import type { syncOdds } from "./syncOdds";
 import type { NormalizedGame } from "./normalizeSportsGameOdds";
+import players from "../../../../public/data/players_lite.json";
 
 function setup(events: unknown[], failedFetch = false) {
   const calls: string[] = [];
   const pipeline = loadTestModule<{ syncOdds: typeof syncOdds }>("src/lib/odds/server/syncOdds.ts", {
+    "../../../../public/data/players_lite.json": { default: players },
     "./sportsGameOdds": { requireSportsGameOddsKey: () => "test-only", async fetchNFLEvents() {
       calls.push("fetch");
       if (failedFetch) throw new Error("Fetch failed");
@@ -17,6 +19,7 @@ function setup(events: unknown[], failedFetch = false) {
       assert.equal(season, 2026); assert.equal(week, 1);
       assert.equal(revision, "revision-before-fetch");
       assert.equal(games[0].playerProps[0].playerName, "Josh Allen");
+      assert.equal(games[0].playerProps[0].sleeperId, players.find(player => player.search_full_name === "joshallen")?.player_id);
       return "2026-09-14T12:00:00.000Z";
     } },
   });

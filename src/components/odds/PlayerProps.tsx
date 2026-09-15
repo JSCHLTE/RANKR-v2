@@ -1,15 +1,32 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import type { PlayerProp } from "@/types/odds";
 import { PROP_CATEGORIES, SPORTSBOOK_IDS, SPORTSBOOKS } from "@/lib/odds/sportsbooks";
 import { consensusTotal } from "@/lib/odds/consensus";
 import { ConsensusBadge, useOddsPreferences } from "./OddsPreferences";
 import { formatOdds } from "./OddsValue";
+function PropTeam({ team }: { team: string }) {
+  const [failedTeam, setFailedTeam] = useState<string>();
+  return <span className="inline-flex items-center align-middle" role="img" aria-label={team} title={team}>
+    {failedTeam !== team && <Image unoptimized src={`https://sleepercdn.com/images/team_logos/nfl/${team.toLowerCase()}.png`} alt="" width={24} height={24} className="h-6 w-6 shrink-0 object-contain" onError={() => setFailedTeam(team)} />}
+  </span>;
+}
+function PlayerHeadshot({ sleeperId }: { sleeperId?: string }) {
+  const [failedId, setFailedId] = useState<string>();
+  return <span aria-hidden="true" className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-[var(--surface-hover)]">
+    {sleeperId && /^\d+$/.test(sleeperId) && failedId !== sleeperId
+      // Match the rankings CDN images; fixed dimensions prevent layout shifts.
+      // eslint-disable-next-line @next/next/no-img-element
+      ? <img src={`https://sleepercdn.com/content/nfl/players/${sleeperId}.jpg`} alt="" width={44} height={44} loading="lazy" className="h-full w-full object-cover" onError={() => setFailedId(sleeperId)} />
+      : <svg viewBox="0 0 24 24" className="h-7 w-7 text-[var(--text-muted)]" fill="currentColor"><circle cx="12" cy="8" r="4" /><path d="M4 22v-3a8 8 0 0 1 16 0v3z" /></svg>}
+  </span>;
+}
 export function PlayerPropCard({ prop }: { prop: PlayerProp }) {
   const { preferences } = useOddsPreferences();
   const market = preferences.mode === "consensus" ? consensusTotal(prop.sportsbooks, preferences.includedBooks) : prop.sportsbooks[preferences.sportsbook];
   return <article className="rounded-2xl bg-[var(--surface)] p-5">
-    <div className="flex items-start justify-between gap-3"><div><h3 className="font-semibold">{prop.playerName} <span className="text-xs text-[var(--text-muted)]">{prop.team}</span></h3><p className="mt-1 text-sm text-[var(--text-muted)]">{prop.displayName}</p></div><ConsensusBadge /></div>
+    <div className="flex items-start justify-between gap-3"><div className="flex min-w-0 items-center gap-3"><PlayerHeadshot sleeperId={prop.sleeperId} /><div className="min-w-0"><h3 className="font-semibold">{prop.playerName} <PropTeam team={prop.team} /></h3><p className="mt-1 text-sm text-[var(--text-muted)]">{prop.displayName}</p></div></div><ConsensusBadge /></div>
     {market?.line == null ? <p className="my-5 text-sm text-[var(--text-muted)]">Player prop unavailable for this selection.</p> : <div className="my-5 grid grid-cols-3 gap-3 tabular-nums"><div><p className="text-xs text-[var(--text-muted)]">Line</p><p className="mt-1 text-xl font-semibold">{market.line}</p></div><div><p className="text-xs text-[var(--text-muted)]">Over</p><p className="mt-1 text-xl">{formatOdds(market.overOdds)}</p></div><div><p className="text-xs text-[var(--text-muted)]">Under</p><p className="mt-1 text-xl">{formatOdds(market.underOdds)}</p></div></div>}
     <details><summary className="cursor-pointer text-xs text-[var(--accent)]">Compare all sportsbooks</summary><div className="mt-3 overflow-x-auto" role="region" aria-label={`${prop.playerName} ${prop.displayName} comparison`} tabIndex={0}><table className="w-full min-w-[300px] text-left text-xs"><thead><tr>{["Book", "Line", "Over", "Under"].map(label => <th scope="col" key={label} className="py-2">{label}</th>)}</tr></thead><tbody>{SPORTSBOOK_IDS.map(book => <tr key={book} className="border-t border-[var(--border)]"><th scope="row" className="py-2 font-normal">{SPORTSBOOKS[book].name}</th><td>{prop.sportsbooks[book]?.line ?? "—"}</td><td>{formatOdds(prop.sportsbooks[book]?.overOdds)}</td><td>{formatOdds(prop.sportsbooks[book]?.underOdds)}</td></tr>)}</tbody></table></div></details>
   </article>;
