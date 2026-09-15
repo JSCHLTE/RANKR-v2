@@ -3,7 +3,7 @@ import type { Sportsbook } from "../sportsbooks";
 // Verified: https://sportsgameodds.com/docs/data-types/bookmakers (2026-09-14).
 export const PROVIDER_BOOKS = {
   draftkings: "draftkings", fanduel: "fanduel", betmgm: "betmgm",
-  caesars: "caesars", espnbet: "espnbet", bet365: "bet365",
+  caesars: "caesars", espnbet: "espnbet",
 } as const satisfies Record<string, Sportsbook>;
 
 // Full-game O/U markets only. https://sportsgameodds.com/docs/data-types/stats

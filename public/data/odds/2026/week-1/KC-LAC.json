@@ -71,23 +71,6 @@
     "caesars": {
       "spread": {
         "awayLine": -2.5,
-        "homeLine": 2.5,
-        "awayOdds": -115,
-        "homeOdds": -105
-      },
-      "total": {
-        "line": 45.5,
-        "overOdds": -105,
-        "underOdds": -115
-      },
-      "moneyline": {
-        "awayOdds": -129,
-        "homeOdds": 109
-      }
-    },
-    "bet365": {
-      "spread": {
-        "awayLine": -2.5,
         "awayOdds": null,
         "homeLine": 2.5,
         "homeOdds": -110

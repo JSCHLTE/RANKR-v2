@@ -38,7 +38,7 @@ test("fixtures agree with weekly summaries and unavailable books never contribut
     assert.ok(Object.keys(game.gameOdds).every(book => SPORTSBOOK_IDS.some(id => id === book)));
   }
   const partial = week.games[2].sportsbooks;
-  const preferences = { mode: "consensus" as const, sportsbook: "draftkings" as const, includedBooks: ["espnbet", "bet365"] as typeof SPORTSBOOK_IDS };
+  const preferences = { mode: "consensus" as const, sportsbook: "draftkings" as const, includedBooks: ["espnbet", "caesars"] as typeof SPORTSBOOK_IDS };
   const result = selectGameMarkets(partial, preferences);
   assert.equal(result.total?.line, null);
   assert.equal(result.spread?.awayLine, -2.5);

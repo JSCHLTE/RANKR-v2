@@ -26,10 +26,10 @@ The Firestore rules supplied by the owner allow specific existing collections on
 Verified against the current official [OpenAPI schema](https://sportsgameodds.com/openapi.json), [events endpoint](https://sportsgameodds.com/docs/endpoints/getEvents), [bookmaker IDs](https://sportsgameodds.com/docs/data-types/bookmakers), [odds schema](https://sportsgameodds.com/docs/data-types/odds), and [stat IDs](https://sportsgameodds.com/docs/data-types/stats).
 
 - Calls `https://api.sportsgameodds.com/v2/events` server-side using the `x-api-key` header, never a URL key.
-- Filters by `leagueID=NFL`, `type=match`, server-derived date boundaries, six supported bookmaker IDs, and supported full-game oddIDs. `PLAYER_ID` is the documented wildcard for player props.
+- Filters by `leagueID=NFL`, `type=match`, server-derived date boundaries, five supported bookmaker IDs, and supported full-game oddIDs. `PLAYER_ID` is the documented wildcard for player props.
 - Follows `nextCursor`, with a 20-second request timeout and bounded pagination. A failed/malformed/repeated-cursor response aborts without publishing partial results.
 - Does not filter events by odds availability: games with no currently available offers still belong in the week's schedule. Alternate lines and open/close prices are not requested.
-- Maps the documented bookmaker IDs `draftkings`, `fanduel`, `betmgm`, `caesars`, `espnbet`, and `bet365` to the existing RANKR keys in one adapter mapping.
+- Maps the documented bookmaker IDs `draftkings`, `fanduel`, `betmgm`, `caesars`, and `espnbet` to the existing RANKR keys in one adapter mapping.
 - Reads kickoff from `status.startsAt`, teams from `teams.away/home.names` and `teamID`, and player identity/name/team from `players[statEntityID]`.
 - Reads each book's `odds`, `spread`, and `overUnder` fields under `odds[oddID].byBookmaker`, never the provider's `fairOdds` or `bookOdds` consensus.
 - Parses numeric strings carefully. Missing/invalid prices stay absent; zero remains a valid spread. Quotes must have `available: true`; explicitly non-main lines are excluded. [v2 retains unavailable quotes](https://sportsgameodds.com/docs/info/v1-to-v2), so ignoring this field would revive stale prices.
@@ -137,3 +137,11 @@ The normalized types, consensus utilities, Firebase configuration, admin-access 
 - Local production smoke check: unauthenticated sync returned 401.
 - Local production smoke check: the page successfully read Firestore and rendered the unpublished-week state without mock fallback.
 - No live SportsGameOdds pull or odds database write was performed. The first end-to-end pull remains an admin action after configuring the key.
+
+### Subscription coverage fix
+
+SportsGameOdds can return HTTP 400 when a requested sportsbook is unavailable on the configured subscription tier. The client now recognizes that specific provider response, excludes only the identified supported book, and retries before pagination begins. It keeps the bookmaker filter and fails if no supported books remain. Restrictions encountered after pagination begins abort rather than publishing a partial snapshot. Each manual pull starts from all five books, so a future plan upgrade is picked up automatically.
+
+Successful sync responses include `unavailableSportsbooks`; the admin confirmation names books excluded by the plan. Other upstream errors include a safe HTTP status without returning raw provider text or credentials.
+
+The corrected live request returned 16 games and 69 normalized props for 2026 Week 1. This was a read-only API diagnostic; no Firestore writes occurred. Twelve focused regression tests passed, including the new subscription/pagination cases.

@@ -101,23 +101,6 @@
         "awayOdds": -162,
         "homeOdds": 137
       }
-    },
-    "bet365": {
-      "spread": {
-        "awayLine": -3.5,
-        "homeLine": 3.5,
-        "awayOdds": -105,
-        "homeOdds": -115
-      },
-      "total": {
-        "line": 48.5,
-        "overOdds": -105,
-        "underOdds": -115
-      },
-      "moneyline": {
-        "awayOdds": -160,
-        "homeOdds": 135
-      }
     }
   },
   "playerProps": [
@@ -153,11 +136,6 @@
           "line": 268.5,
           "overOdds": -110,
           "underOdds": -110
-        },
-        "bet365": {
-          "line": 278.5,
-          "overOdds": -105,
-          "underOdds": -115
         }
       }
     },
@@ -193,11 +171,6 @@
           "line": 72.5,
           "overOdds": -110,
           "underOdds": -110
-        },
-        "bet365": {
-          "line": 72.5,
-          "overOdds": -105,
-          "underOdds": -115
         }
       }
     },
@@ -233,11 +206,6 @@
           "line": 64.5,
           "overOdds": -110,
           "underOdds": -110
-        },
-        "bet365": {
-          "line": 64.5,
-          "overOdds": -105,
-          "underOdds": -115
         }
       }
     },
@@ -273,11 +241,6 @@
           "line": 1.5,
           "overOdds": -110,
           "underOdds": -110
-        },
-        "bet365": {
-          "line": 1.5,
-          "overOdds": -105,
-          "underOdds": -115
         }
       }
     }

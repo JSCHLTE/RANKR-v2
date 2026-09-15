@@ -103,23 +103,6 @@
             "awayOdds": -162,
             "homeOdds": 137
           }
-        },
-        "bet365": {
-          "spread": {
-            "awayLine": -3.5,
-            "homeLine": 3.5,
-            "awayOdds": -105,
-            "homeOdds": -115
-          },
-          "total": {
-            "line": 48.5,
-            "overOdds": -105,
-            "underOdds": -115
-          },
-          "moneyline": {
-            "awayOdds": -160,
-            "homeOdds": 135
-          }
         }
       }
     },
@@ -222,23 +205,6 @@
             "awayOdds": 128,
             "homeOdds": -148
           }
-        },
-        "bet365": {
-          "spread": {
-            "awayLine": 2.5,
-            "homeLine": -2.5,
-            "awayOdds": -105,
-            "homeOdds": -115
-          },
-          "total": {
-            "line": 46.5,
-            "overOdds": -105,
-            "underOdds": -115
-          },
-          "moneyline": {
-            "awayOdds": 130,
-            "homeOdds": -150
-          }
         }
       }
     },
@@ -309,23 +275,6 @@
           }
         },
         "caesars": {
-          "spread": {
-            "awayLine": -2.5,
-            "homeLine": 2.5,
-            "awayOdds": -115,
-            "homeOdds": -105
-          },
-          "total": {
-            "line": 45.5,
-            "overOdds": -105,
-            "underOdds": -115
-          },
-          "moneyline": {
-            "awayOdds": -129,
-            "homeOdds": 109
-          }
-        },
-        "bet365": {
           "spread": {
             "awayLine": -2.5,
             "awayOdds": null,

@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { isAdmin } from "@/lib/admin-access";
+import { SPORTSBOOK_IDS, SPORTSBOOKS } from "@/lib/odds/sportsbooks";
 
 export function AdminOddsSync({ season, week }: { season: number; week: number }) {
   const { user, loading } = useAuth();
@@ -33,7 +34,10 @@ export function AdminOddsSync({ season, week }: { season: number; week: number }
         errorMessage = "The sync response was incomplete. Refresh to check the latest data.";
         throw new Error();
       }
-      setFeedback({ text: `Odds updated successfully · ${result.gamesWritten} games · ${result.propsWritten} player props`, error: false });
+      const unavailableIds: unknown[] = "unavailableSportsbooks" in result && Array.isArray(result.unavailableSportsbooks) ? result.unavailableSportsbooks : [];
+      const unavailable = SPORTSBOOK_IDS.filter(book => unavailableIds.includes(book)).map(book => SPORTSBOOKS[book].name);
+      const notice = unavailable.length ? ` · Not included in your plan: ${unavailable.join(", ")}` : "";
+      setFeedback({ text: `Odds updated successfully · ${result.gamesWritten} games · ${result.propsWritten} player props${notice}`, error: false });
       router.refresh();
     } catch {
       setFeedback({ text: errorMessage, error: true });
