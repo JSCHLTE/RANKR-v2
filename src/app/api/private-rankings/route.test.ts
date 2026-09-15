@@ -1,3 +1,4 @@
+import { serializeRankrPass } from "../../../lib/rankr-pass";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
@@ -16,6 +17,8 @@ function setup() {
   const exports: { GET?: (req: Request) => Promise<Response> } = {};
   const code = ts.transpileModule(readFileSync(new URL("./route.ts", import.meta.url), "utf8"), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
   vm.runInNewContext(code, { exports, Response, URL, require(name: string) {
+    if (name === "@/lib/rankr-pass") return { serializeRankrPass };
+    if (name === "@/lib/rankr-pass-server") return { withRankrPass: async (rows: unknown[]) => rows };
     if (name === "@/hooks/formatTimeStamp") return { default: () => "—" };
     if (name !== "@/lib/firebase-admin") throw new Error(name);
     return {

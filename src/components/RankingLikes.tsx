@@ -1,4 +1,6 @@
 "use client";
+import RankrPassBadge from "@/components/RankrPassBadge";
+
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
@@ -7,7 +9,7 @@ import { useAuth } from "@/context/AuthContext";
 import { RankingMeta } from "@/types/rank";
 import ProfilePicture from "@/components/profile/ProfilePicture";
 
-interface Liker { uid: string; username: string; displayName: string; pfp: string }
+interface Liker { rankrPass?: import("@/lib/rankr-pass").RankrPass; uid: string; username: string; displayName: string; pfp: string }
 export default function RankingLikes({ meta }: { meta: RankingMeta }) {
   const { user, loading } = useAuth();
   const router = useRouter();
@@ -79,7 +81,7 @@ export default function RankingLikes({ meta }: { meta: RankingMeta }) {
     {error && <p role="alert" className="mt-2 text-xs text-[var(--danger)]">{error}</p>}
     <dialog ref={dialog} aria-labelledby="ranking-likers-title" className="fixed inset-0 m-auto max-h-[80dvh] w-[calc(100%-2rem)] max-w-sm rounded-2xl border border-[var(--border)] bg-[var(--background)] p-5 text-[var(--foreground)] shadow-xl backdrop:bg-black/50 backdrop:backdrop-blur-sm">
       <div className="mb-5 flex items-center justify-between"><h2 id="ranking-likers-title" className="font-semibold">Liked by</h2><button type="button" onClick={() => dialog.current?.close()} aria-label="Close likes" className="h-10 w-10 rounded-full border border-[var(--border)]">×</button></div>
-      {peopleLoading ? <p role="status" className="text-sm text-[var(--text-muted)]">Loading people…</p> : peopleError ? <p role="alert" className="text-sm text-[var(--danger)]">{peopleError}</p> : people?.uid === user?.uid && people?.users.length ? <ul className="space-y-2">{people.users.map(person => <li key={person.uid}><Link href={`/user/${encodeURIComponent(person.username)}`} onClick={() => dialog.current?.close()} className="flex items-center gap-3 rounded-xl p-2 hover:bg-[var(--surface-hover)]"><ProfilePicture src={person.pfp || "/lion-default-pfp.svg"} alt={`${person.displayName || person.username} profile picture`} className="h-10 w-10" /><span className="min-w-0"><span className="block truncate text-sm font-medium">{person.displayName}</span><span className="block truncate text-xs text-[var(--text-muted)]">@{person.username}</span></span></Link></li>)}</ul> : <p className="text-sm text-[var(--text-muted)]">No likes yet.</p>}
+      {peopleLoading ? <p role="status" className="text-sm text-[var(--text-muted)]">Loading people…</p> : peopleError ? <p role="alert" className="text-sm text-[var(--danger)]">{peopleError}</p> : people?.uid === user?.uid && people?.users.length ? <ul className="space-y-2">{people.users.map(person => <li key={person.uid}><Link href={`/user/${encodeURIComponent(person.username)}`} onClick={() => dialog.current?.close()} className="flex items-center gap-3 rounded-xl p-2 hover:bg-[var(--surface-hover)]"><ProfilePicture src={person.pfp || "/lion-default-pfp.svg"} alt={`${person.displayName || person.username} profile picture`} className="h-10 w-10" /><span className="min-w-0"><span className="block truncate text-sm font-medium">{person.displayName} <RankrPassBadge pass={person.rankrPass} /></span><span className="block truncate text-xs text-[var(--text-muted)]">@{person.username}</span></span></Link></li>)}</ul> : <p className="text-sm text-[var(--text-muted)]">No likes yet.</p>}
     </dialog>
   </div>;
 }

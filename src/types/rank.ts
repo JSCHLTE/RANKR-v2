@@ -12,6 +12,7 @@
   }
 
   export interface author {
+    rankrPass?: import("@/lib/rankr-pass").RankrPass;
     displayName: string;
     pfp: string,
     uid: string,

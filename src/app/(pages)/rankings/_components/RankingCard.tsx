@@ -1,3 +1,4 @@
+import RankrPassBadge from "@/components/RankrPassBadge";
 import Link from "next/link";
 import { RankingMeta } from "@/types/rank";
 import RosterTags from "./RosterTags";
@@ -36,7 +37,7 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
               {author.pfp ? <img src={author.pfp} alt={`${author.username}'s profile picture`} className="h-full w-full object-cover" /> : (author.username?.[0]?.toUpperCase() ?? "?")}
             </div>
             <div className="min-w-0">
-              <p className="truncate text-xs font-medium leading-5 text-[var(--foreground)]">{author.displayName || author.username}</p>
+              <p className="truncate text-xs font-medium leading-5 text-[var(--foreground)]">{author.displayName || author.username} <RankrPassBadge pass={author.rankrPass} /></p>
               <p className="truncate text-[11px] leading-4 text-[var(--text-muted)]">@{author.username}</p>
             </div>
           </div>

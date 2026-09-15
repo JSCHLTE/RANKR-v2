@@ -1,4 +1,6 @@
 "use client";
+import RankrPassBadge from "@/components/RankrPassBadge";
+
 
 import { RankingMeta } from "@/types/rank";
 import { useAuth } from "@/context/AuthContext";
@@ -78,7 +80,7 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, isDeleting
                 )}
               </div>
               <span className="text-sm font-medium text-[var(--foreground)]">
-                {author.displayName || author.username}
+                {author.displayName || author.username} <RankrPassBadge pass={author.rankrPass} />
               </span>
             </Link>
 

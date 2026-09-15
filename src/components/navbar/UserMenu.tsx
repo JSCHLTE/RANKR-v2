@@ -1,3 +1,4 @@
+import RankrPassBadge from "@/components/RankrPassBadge";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
@@ -6,6 +7,7 @@ import { logOut } from "@/lib/auth";
 import ProfilePicture from "../profile/ProfilePicture";
 
 interface UserProfile {
+  rankrPass?: import("@/lib/rankr-pass").RankrPass;
   username: string;
   displayName: string;
   pfp: string;
@@ -31,7 +33,7 @@ export const UserMenu = ({ profile, setUserMenu, theme, toggleTheme }: UserMenuP
           className="w-9 h-9"
         />
         <div className="flex flex-col min-w-0">
-          <span className="text-sm font-medium text-[var(--white)] truncate">{profile.displayName}</span>
+          <span className="flex items-center gap-1 text-sm font-medium text-[var(--white)]"><span className="truncate">{profile.displayName}</span><RankrPassBadge pass={profile.rankrPass} /></span>
           <span className="text-xs text-[var(--white)]/40 truncate">@{profile.username}</span>
         </div>
       </div>

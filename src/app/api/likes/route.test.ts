@@ -1,3 +1,4 @@
+import { serializeRankrPass } from "../../../lib/rankr-pass";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
@@ -14,6 +15,8 @@ function setup(failCommit = false) {
   const code = ts.transpileModule(readFileSync(new URL("./route.ts", import.meta.url), "utf8"), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
   vm.runInNewContext(code, { exports, Response, URL, Buffer, console: { error() {} }, require(name: string) {
     if (name === "next/cache") return { revalidatePath() {} };
+    if (name === "@/lib/rankr-pass") return { serializeRankrPass };
+    if (name === "@/lib/rankr-pass-server") return { withRankrPass: async (rows: unknown[]) => rows };
     if (name === "@/hooks/formatTimeStamp") return { default: () => "—" };
     if (name !== "@/lib/firebase-admin") throw new Error(name);
     return {
@@ -70,7 +73,7 @@ test("liker list returns public profile fields only and saved likes belong to ca
   const context = setup();
   await context.put(request("PUT"));
   const response = await context.get(request("GET", "viewer", null, "?rankingId=r1&users=true"));
-  assert.deepEqual((await response.json()).users, [{ uid: "viewer", username: "viewer", displayName: "Viewer", pfp: "" }]);
+  assert.deepEqual((await response.json()).users, [{ uid: "viewer", username: "viewer", displayName: "Viewer", pfp: "", rankrPass: { expiresAt: null } }]);
   assert.equal((await (await context.get(request("GET"))).json()).rankings.length, 1);
   assert.equal((await (await context.get(request("GET", "owner"))).json()).rankings.length, 0);
   context.records.delete("rankings-meta/r1");

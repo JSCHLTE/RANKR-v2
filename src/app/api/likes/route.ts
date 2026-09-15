@@ -1,3 +1,5 @@
+import { serializeRankrPass } from "@/lib/rankr-pass";
+import { withRankrPass } from "@/lib/rankr-pass-server";
 import { auth, db, admin } from "@/lib/firebase-admin";
 import { revalidatePath } from "next/cache";
 import formatTimestamp from "@/hooks/formatTimeStamp";
@@ -33,7 +35,7 @@ export async function GET(req: Request) {
         if (!data || (data.rankObj?.visibility === "PRIVATE" && data.author?.uid !== uid)) return null;
         return { id: doc.id, rankingId: data.rankingId ?? doc.id, author: data.author, rankObj: data.rankObj, likeCount: data.likeCount ?? 0, createdAt: formatTimestamp(data.createdAt), updatedAt: formatTimestamp(data.updatedAt) };
       }));
-      return json({ rankings: rankings.filter(Boolean) });
+      return json({ rankings: await withRankrPass(rankings.filter(ranking => ranking !== null)) });
     }
     validId(rankingId);
     const meta = await db.collection("rankings-meta").doc(rankingId).get();
@@ -46,7 +48,7 @@ export async function GET(req: Request) {
     const users = await Promise.all(likes.docs.map(async like => {
       const user = await db.collection("users").doc(like.data().uid).get();
       const profile = user.data();
-      return profile ? { uid: user.id, username: profile.username, displayName: profile.displayName, pfp: profile.pfp ?? "" } : null;
+      return profile ? { uid: user.id, username: profile.username, displayName: profile.displayName, pfp: profile.pfp ?? "", rankrPass: serializeRankrPass(profile.rankrPass) } : null;
     }));
     return json({ liked, count: data.likeCount ?? 0, users: users.filter(Boolean) });
   } catch (error) { return failure(error); }

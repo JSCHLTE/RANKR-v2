@@ -1,3 +1,5 @@
+import { serializeRankrPass } from "@/lib/rankr-pass";
+import RankrPassBadge from "@/components/RankrPassBadge";
 import { db } from "@/lib/firebase-admin";
 import { notFound } from "next/navigation";
 import ProfilePicture from "@/components/profile/ProfilePicture";
@@ -31,7 +33,7 @@ export default async function UserPage({ params }: { params: Promise<{ slug: str
       return {
         id: doc.id,
         rankingId: data.rankingId ?? doc.id,
-        author: data.author,
+        author: { ...data.author, rankrPass: serializeRankrPass(user.rankrPass) },
         rankObj: data.rankObj,
         likeCount: data.likeCount ?? 0,
         createdAt: formatTimestamp(data.createdAt),
@@ -47,8 +49,8 @@ export default async function UserPage({ params }: { params: Promise<{ slug: str
           className="w-32 h-32 sm:w-40 sm:h-40"
         />
         <div className="flex flex-col justify-center h-full text-center sm:text-left">
-          <h1 className="text-3xl font-bold tracking-tight">
-            {user.displayName}
+          <h1 className="flex items-center justify-center gap-2 text-3xl font-bold tracking-tight sm:justify-start">
+            {user.displayName} <RankrPassBadge pass={serializeRankrPass(user.rankrPass)} size={40} />
           </h1>
           <p className="text-zinc-500 text-lg">@{user.username}</p>
         </div>

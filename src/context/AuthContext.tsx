@@ -1,4 +1,6 @@
 "use client";
+import { serializeRankrPass } from "@/lib/rankr-pass";
+
 
 import { createContext, useContext, useEffect, useState } from "react";
 import { type User } from "firebase/auth";
@@ -24,6 +26,7 @@ const AuthContext = createContext<AuthContextType>({
 });
 
 interface UserProfile {
+  rankrPass?: import("@/lib/rankr-pass").RankrPass;
   username: string,
   displayName: string,
   pfp: string,
@@ -47,7 +50,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         const userDoc = await getDoc(doc(db, "users", user.uid))
         const profileExists = userDoc.exists();
         setHasProfile(profileExists);
-        if (profileExists) setProfile(userDoc.data() as UserProfile);
+        if (profileExists) setProfile({ ...userDoc.data(), rankrPass: serializeRankrPass(userDoc.data()?.rankrPass) } as UserProfile);
       }
 
       setLoading(false);
@@ -60,7 +63,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const userDoc = await getDoc(doc(db, "users", currentUser.uid));
     const profileExists = userDoc.exists();
     setHasProfile(profileExists);
-    if (profileExists) setProfile(userDoc.data() as UserProfile);
+    if (profileExists) setProfile({ ...userDoc.data(), rankrPass: serializeRankrPass(userDoc.data()?.rankrPass) } as UserProfile);
   };
 
 // Effect 2 - runs on pathname change, handles redirects

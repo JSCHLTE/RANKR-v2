@@ -1,3 +1,4 @@
+import { withRankrPass } from "@/lib/rankr-pass-server";
 import { db } from "@/lib/firebase-admin";
 import formatTimestamp from "@/hooks/formatTimeStamp";
 import RankingFeed from "./_components/RankingFeed";
@@ -24,7 +25,7 @@ const Rankings = async () => {
 
   loading = false;
 
-  return <RankingFeed rankings={data} loading={loading} />;
+  return <RankingFeed rankings={await withRankrPass(data)} loading={loading} />;
 };
 
 export default Rankings;

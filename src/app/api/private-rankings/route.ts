@@ -1,3 +1,4 @@
+import { withRankrPass } from "@/lib/rankr-pass-server";
 import { auth, db } from "@/lib/firebase-admin";
 import formatTimestamp from "@/hooks/formatTimeStamp";
 
@@ -27,13 +28,13 @@ export async function GET(req: Request) {
         if (!ranks.exists) return null;
         return { meta: serialize(id, data), ranks: ranks.data()?.ranks ?? [], tiers: ranks.data()?.tiers ?? [] };
       }, { readOnly: true });
-      return result ? json(result) : json({ error: "Ranking not found or unavailable to this account." }, 404);
+      return result ? json({ ...result, meta: (await withRankrPass([result.meta]))[0] }) : json({ error: "Ranking not found or unavailable to this account." }, 404);
     }
     const snapshot = await db.collection("rankings-meta").where("author.uid", "==", uid).get();
     const rankings = snapshot.docs.filter(doc => doc.data().rankObj?.visibility === "PRIVATE")
       .sort((a, b) => (b.data().createdAt?.toMillis?.() ?? 0) - (a.data().createdAt?.toMillis?.() ?? 0))
       .map(doc => serialize(doc.id, doc.data()));
-    return json({ rankings });
+    return json({ rankings: await withRankrPass(rankings) });
   } catch {
     return json({ error: "Unable to load rankings. Please try again." }, 500);
   }

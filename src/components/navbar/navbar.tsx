@@ -1,4 +1,6 @@
 "use client";
+import RankrPassBadge from "@/components/RankrPassBadge";
+
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
@@ -105,7 +107,7 @@ export default function Navbar() {
         <div className="mt-auto pt-10">
           <div className="border-t border-[var(--border)] pt-5">
             {loading ? <div className="h-12 animate-pulse rounded-xl bg-[var(--surface-hover)]" /> : user && profile ? <>
-              <Link href={`/user/${profile.username}`} onClick={closeMobile} className="mb-4 flex items-center gap-3 rounded-xl p-2 hover:bg-[var(--surface-hover)]"><ProfilePicture src={profile.pfp} alt="" className="h-10 w-10" /><div className="min-w-0"><p className="truncate text-sm font-medium">{profile.displayName}</p><p className="truncate text-xs text-[var(--text-muted)]">@{profile.username}</p></div></Link>
+              <Link href={`/user/${profile.username}`} onClick={closeMobile} className="mb-4 flex items-center gap-3 rounded-xl p-2 hover:bg-[var(--surface-hover)]"><ProfilePicture src={profile.pfp} alt="" className="h-10 w-10" /><div className="min-w-0"><p className="flex items-center gap-1 text-sm font-medium"><span className="truncate">{profile.displayName}</span><RankrPassBadge pass={profile.rankrPass} /></p><p className="truncate text-xs text-[var(--text-muted)]">@{profile.username}</p></div></Link>
               <button type="button" onClick={async () => { await logOut(); closeMobile(); }} className="mb-2 w-full cursor-pointer rounded-xl px-3 py-3 text-left text-sm text-[var(--danger)] hover:bg-[var(--danger)]/5">Log out</button>
             </> : <div className="mb-4 grid grid-cols-2 gap-3"><Link href="/login" onClick={closeMobile} className="rounded-xl border border-[var(--border)] px-3 py-3 text-center text-sm font-medium">Log in</Link><Link href="/signup" onClick={closeMobile} className="rounded-xl bg-[var(--accent)] px-3 py-3 text-center text-sm font-medium text-[#0E1116]">Sign up</Link></div>}
             <button type="button" onClick={toggleTheme} className="flex w-full cursor-pointer items-center justify-between rounded-xl px-3 py-3 text-sm text-[var(--text-muted)] hover:bg-[var(--surface-hover)]"><span>Appearance</span><span className="rounded-lg border border-[var(--border)] px-2.5 py-1 text-xs text-[var(--foreground)]">{theme === "dark" ? "Dark" : "Light"}<span aria-hidden="true" className="ml-2">◐</span></span></button>

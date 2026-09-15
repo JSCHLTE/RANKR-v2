@@ -1,3 +1,4 @@
+import { withRankrPass } from "@/lib/rankr-pass-server";
 import { db } from "@/lib/firebase-admin";
 import { notFound } from "next/navigation";
 import formatTimestamp from "@/hooks/formatTimeStamp";
@@ -34,7 +35,7 @@ export default async function RankingsPage({ params }: { params: Promise<{ slug:
 
   return (
     <main className="max-w-5xl mx-auto px-4 mb-10">
-        <RankingView key={slug} meta={meta} ranks={ranks?.ranks ?? []} tiers={ranks?.tiers ?? []} />
+        <RankingView key={slug} meta={(await withRankrPass([meta]))[0]} ranks={ranks?.ranks ?? []} tiers={ranks?.tiers ?? []} />
     </main>
   );
 }
