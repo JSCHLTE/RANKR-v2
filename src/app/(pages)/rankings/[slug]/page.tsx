@@ -34,7 +34,7 @@ export default async function RankingsPage({ params }: { params: Promise<{ slug:
 
   return (
     <main className="max-w-5xl mx-auto px-4 mb-10">
-        <RankingView key={slug} meta={meta} ranks={ranks?.ranks ?? []} />
+        <RankingView key={slug} meta={meta} ranks={ranks?.ranks ?? []} tiers={ranks?.tiers ?? []} />
     </main>
   );
 }

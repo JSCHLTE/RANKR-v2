@@ -1,13 +1,24 @@
 "use client";
 
 import { memo, useCallback, useMemo, useRef, useState } from "react";
-import { DndContext, DragOverlay, closestCenter, KeyboardSensor, MouseSensor, TouchSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { DndContext, DragOverlay, closestCenter, KeyboardSensor, MouseSensor, TouchSensor, useSensor, useSensors, useDroppable } from "@dnd-kit/core";
 import { SortableContext, sortableKeyboardCoordinates, useSortable, verticalListSortingStrategy } from "@dnd-kit/sortable";
 import { restrictToVerticalAxis } from "@dnd-kit/modifiers";
 import { CSS } from "@dnd-kit/utilities";
 import { ResolvedPlayer } from "@/types/player";
 import PlayerRow from "../_components/PlayerRow";
 import { rankBelowPlayer } from "@/lib/ranking-reorder";
+import { tierDropRank, type RankingTier } from "@/lib/ranking-tiers";
+import TierHeader from "./TierHeader";
+
+function SortableTier({ tier, onRename, onRemove }: { tier: RankingTier; onRename: (name: string) => void; onRemove: () => void }) {
+  const { attributes, listeners, setNodeRef, setActivatorNodeRef, transform, transition, isDragging } = useSortable({ id: `tier:${tier.id}` });
+  return <div ref={setNodeRef} style={{ transform: CSS.Transform.toString(transform), transition, opacity: isDragging ? 0.3 : 1 }}><TierHeader tier={tier} onRename={onRename} onRemove={onRemove} handle={<button type="button" ref={setActivatorNodeRef} {...attributes} {...listeners} aria-label={`Move ${tier.name} tier`} className="touch-none cursor-grab px-2 py-1 active:cursor-grabbing">⠿</button>} /></div>;
+}
+function EndTarget() {
+  const { setNodeRef, isOver } = useDroppable({ id: "tiers:end" });
+  return <div ref={setNodeRef} className={`p-4 text-center text-xs text-[var(--text-muted)] ${isOver ? "bg-[var(--accent)]/15" : ""}`}>Drop a tier here to place it after the last player</div>;
+}
 
 interface SortableRowProps extends ResolvedPlayer {
   selected: boolean;
@@ -51,14 +62,24 @@ const SortableRow = memo(function SortableRow({ rank, player, positionalRank, se
 interface Props {
   players: ResolvedPlayer[];
   onMove: (playerId: string, targetRank: number) => void;
+  tiers?: RankingTier[];
+  playerCount?: number;
+  onMoveTier?: (id: string, rank: number, targetTier?: string) => void;
+  onRenameTier?: (id: string, name: string) => void;
+  onRemoveTier?: (id: string) => void;
 }
 
-export default function SortableRankingRows({ players, onMove }: Props) {
+export default function SortableRankingRows({ players, onMove, tiers = [], playerCount = players.length, onMoveTier = () => {}, onRenameTier = () => {}, onRemoveTier = () => {} }: Props) {
   const suppressClick = useRef(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [activeId, setActiveId] = useState<string | null>(null);
   const activePlayer = players.find(({ player }) => player.id === activeId);
-  const itemIds = useMemo(() => players.map(({ player }) => player.id), [players]);
+  const rows = useMemo(() => [
+    ...players.map(entry => ({ id: entry.player.id, rank: entry.rank, entry, tier: undefined as RankingTier | undefined })),
+    ...tiers.map(tier => ({ id: `tier:${tier.id}`, rank: tier.beforeRank, entry: undefined as ResolvedPlayer | undefined, tier })),
+  ].sort((a, b) => a.rank - b.rank || (a.tier ? 0 : 1) - (b.tier ? 0 : 1)), [players, tiers]);
+  const itemIds = useMemo(() => [...rows.map(row => row.id), "tiers:end"], [rows]);
+  const activeTier = tiers.find(tier => `tier:${tier.id}` === activeId);
   const sensors = useSensors(
     useSensor(MouseSensor, { activationConstraint: { distance: 2 } }),
     useSensor(TouchSensor, { activationConstraint: { delay: 150, tolerance: 5 } }),
@@ -99,15 +120,27 @@ export default function SortableRankingRows({ players, onMove }: Props) {
       onDragEnd={({ active, over }) => {
         setActiveId(null);
         if (!over || active.id === over.id) return;
+        const sourceTier = tiers.find(tier => `tier:${tier.id}` === active.id);
+        const targetTier = tiers.find(tier => `tier:${tier.id}` === over.id);
+        if (sourceTier) {
+          const targetPlayer = players.find(({ player }) => player.id === over.id);
+          const rank = over.id === "tiers:end" ? playerCount + 1 : targetTier?.beforeRank ?? (targetPlayer ? tierDropRank(sourceTier.beforeRank, targetPlayer.rank) : undefined);
+          if (rank !== undefined) onMoveTier(sourceTier.id, rank, targetTier?.id);
+          return;
+        }
+        if (targetTier) { onMove(String(active.id), Math.min(targetTier.beforeRank, playerCount)); return; }
+        if (over.id === "tiers:end") { onMove(String(active.id), playerCount); return; }
         // Use the target's overall rank, including when search or position filters hide other players.
         const target = players.find(({ player }) => player.id === over.id);
         if (target) onMove(String(active.id), target.rank);
       }}
     >
       <SortableContext items={itemIds} strategy={verticalListSortingStrategy}>
-        {players.map(entry => <SortableRow key={entry.player.id} {...entry} selected={selectedId === entry.player.id} canInsertBelow={selectedId !== null && selectedId !== entry.player.id && activeId === null} onSelect={selectPlayer} />)}
+        {rows.map(row => row.tier ? <SortableTier key={row.id} tier={row.tier} onRename={name => onRenameTier(row.tier!.id, name)} onRemove={() => onRemoveTier(row.tier!.id)} /> : row.entry && <SortableRow key={row.id} {...row.entry} selected={selectedId === row.id} canInsertBelow={selectedId !== null && selectedId !== row.id && activeId === null} onSelect={selectPlayer} />)}
+        {tiers.length > 0 && <EndTarget />}
       </SortableContext>
       <DragOverlay dropAnimation={null}>
+        {activeTier && <div className="bg-[var(--background)] shadow-lg"><TierHeader tier={activeTier} /></div>}
         {activePlayer && <div className="bg-[var(--surface)] shadow-lg ring-1 ring-[var(--accent)] cursor-grabbing [&_*]:cursor-grabbing select-none">
           <PlayerRow {...activePlayer} />
         </div>}

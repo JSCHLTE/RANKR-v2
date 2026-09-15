@@ -1,6 +1,9 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { Fragment, useState, useMemo } from "react";
+import type { RankingTier } from "@/lib/ranking-tiers";
+import TierHeader from "./TierHeader";
+import { DraftControls, DraftRoster, useDraftMode } from "@/components/DraftMode";
 import { usePlayers } from "@/hooks/usePlayers";
 import { getPositionColors } from "@/constants/positions";
 import SkeletonRow from "../_components/SkeletonRow";
@@ -23,9 +26,14 @@ interface Props {
   isEditing: boolean;
   isSaving: boolean;
   onMove: (playerId: string, targetRank: number) => void;
+  tiers: RankingTier[];
+  onMoveTier: (id: string, rank: number, targetTier?: string) => void;
+  onRenameTier: (id: string, name: string) => void;
+  onRemoveTier: (id: string) => void;
 }
 
-const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
+const RankingList = ({ ranks, author, isEditing, isSaving, onMove, tiers, onMoveTier, onRenameTier, onRemoveTier }: Props) => {
+  const draft = useDraftMode();
   const { players, loading, error } = usePlayers();
   const [search, setSearch] = useState("");
   const [selectedPlayer, setSelectedPlayer] = useState<PlayerLite | null>(null);
@@ -79,9 +87,12 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
       return matchesSearch && matchesPos && (!rookiesOnly || player.yearsExp === 0);
     });
   }, [resolved, search, posFilters, rookiesOnly]);
+  const orderedTiers = useMemo(() => [...tiers].sort((a, b) => a.beforeRank - b.beforeRank), [tiers]);
 
   return (
-    <div className="rounded-lg border border-[var(--border)] bg-[var(--surface)] overflow-hidden">
+    <div className={draft.active ? "grid items-start gap-4 lg:grid-cols-[minmax(0,1fr)_16rem]" : ""}>
+    {draft.active && <div className="sticky top-[73px] z-30 order-first min-w-0 self-start lg:order-last lg:top-24"><DraftRoster players={resolved} /></div>}
+    <div className="min-w-0 rounded-lg border border-[var(--border)] bg-[var(--surface)] overflow-hidden">
 
       {/* Toolbar */}
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 p-3 border-b border-[var(--border)]">
@@ -146,7 +157,7 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
           <div className="flex items-center justify-center py-16 text-sm text-[var(--text-muted)]">
             Failed to load players.
           </div>
-        ) : filtered.length === 0 ? (
+        ) : filtered.length === 0 && !(isEditing && tiers.length) ? (
           <div className="flex flex-col items-center justify-center py-16 gap-2">
             <span className="text-sm text-[var(--text-muted)]">No players found</span>
             {(search || posFilters.length > 0 || rookiesOnly) && (
@@ -160,20 +171,27 @@ const RankingList = ({ ranks, author, isEditing, isSaving, onMove }: Props) => {
           </div>
         ) : (
           isEditing && isOwner && !isSaving ? (
-            <SortableRankingRows key={JSON.stringify([search, posFilters, rookiesOnly])} players={filtered} onMove={onMove} />
-          ) : filtered.map(entry => {
+            <SortableRankingRows key={JSON.stringify([search, posFilters, rookiesOnly])} players={filtered} onMove={onMove} tiers={tiers} playerCount={ranks.length} onMoveTier={onMoveTier} onRenameTier={onRenameTier} onRemoveTier={onRemoveTier} />
+          ) : filtered.map((entry, index) => {
             const canOpen = !isEditing && !["DEF", "DST"].includes(entry.player.position)
               && !entry.player.fantasyPositions?.some(position => ["DEF", "DST"].includes(position));
-            return canOpen ? <div key={entry.player.id} role="button" tabIndex={0} aria-label={`View ${entry.player.fullName} details`}
+            const previousRank = filtered[index - 1]?.rank ?? 0;
+            const isFiltered = !!search || posFilters.length > 0 || rookiesOnly;
+            const activeTier = orderedTiers.findLast(tier => tier.beforeRank <= entry.rank);
+            const previousTier = orderedTiers.findLast(tier => tier.beforeRank <= previousRank);
+            const headers = isFiltered ? (activeTier && activeTier.id !== previousTier?.id ? [activeTier] : []) : orderedTiers.filter(tier => tier.beforeRank > previousRank && tier.beforeRank <= entry.rank);
+            return <Fragment key={entry.player.id}>{headers.map(tier => <TierHeader key={tier.id} tier={tier} />)}{draft.active ? <div className={`flex flex-wrap items-center border-b border-[var(--border)] ${draft.picks[entry.player.id] === "mine" ? "bg-[var(--accent)]/10" : ""}`}><div className={`min-w-0 flex-1 ${draft.picks[entry.player.id] === "other" ? "opacity-40" : ""}`}><PlayerRow {...entry} /></div><DraftControls id={entry.player.id} name={entry.player.fullName} /></div> : canOpen ? <div role="button" tabIndex={0} aria-label={`View ${entry.player.fullName} details`}
               onClick={() => setSelectedPlayer(entry.player)}
               onKeyDown={event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); setSelectedPlayer(entry.player); } }}
               className="focus-visible:outline-2 focus-visible:outline-[var(--accent)] focus-visible:-outline-offset-2">
               <PlayerRow {...entry} />
-            </div> : <PlayerRow key={entry.player.id} {...entry} />;
+            </div> : <PlayerRow {...entry} />}</Fragment>;
           })
         )}
+        {(!isEditing || isSaving) && !loading && !error && !search && !posFilters.length && !rookiesOnly && orderedTiers.filter(tier => tier.beforeRank > (filtered.at(-1)?.rank ?? 0)).map(tier => <TierHeader key={tier.id} tier={tier} />)}
       </div>
-      {selectedPlayer && !isEditing && <PlayerDetailsCard key={selectedPlayer.id} player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />}
+      {selectedPlayer && !isEditing && !draft.active && <PlayerDetailsCard key={selectedPlayer.id} player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />}
+    </div>
     </div>
   );
 };

@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
 import type { RankingMeta } from "@/types/rank";
+import type { RankingTier } from "@/lib/ranking-tiers";
 import RankingView from "@/app/(pages)/rankings/[slug]/RankingView";
 import { RankingCard } from "@/app/(pages)/rankings/_components/RankingCard";
 
-interface Result { meta?: RankingMeta; ranks?: { player_id: string; rank: number }[]; rankings?: RankingMeta[] }
+interface Result { meta?: RankingMeta; ranks?: { player_id: string; rank: number }[]; tiers?: RankingTier[]; rankings?: RankingMeta[] }
 export function PrivateRankings({ rankingId, profileUid }: { rankingId?: string; profileUid?: string }) {
   const { user, loading } = useAuth();
   const [result, setResult] = useState<{ key: string; data?: Result; error?: string }>();
@@ -41,7 +42,7 @@ export function PrivateRankings({ rankingId, profileUid }: { rankingId?: string;
   const current = result?.key === key ? result : undefined;
   if (!current) return <p role="status" className="py-6 text-sm text-[var(--text-muted)]">Loading your private rankings…</p>;
   if (current.error) return <div className="py-6"><p role="alert">{current.error}</p><button type="button" onClick={() => setAttempt(value => value + 1)} className="mt-3 cursor-pointer text-[var(--accent)]">Try again</button></div>;
-  if (rankingId && current.data?.meta) return <RankingView key={key} meta={current.data.meta} ranks={current.data.ranks ?? []} />;
+  if (rankingId && current.data?.meta) return <RankingView key={key} meta={current.data.meta} ranks={current.data.ranks ?? []} tiers={current.data.tiers ?? []} />;
   const rankings = current.data?.rankings ?? [];
   return <section className="mt-8"><h2 className="mb-2 text-xl font-semibold">Your private rankings</h2><p className="mb-5 text-sm text-[var(--text-muted)]">Only you can view and edit these rankings.</p>{rankings.length ? <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">{rankings.map(ranking => <RankingCard key={ranking.id} ranking={ranking} />)}</div> : <p className="text-sm text-[var(--text-muted)]">You haven’t created any private rankings yet.</p>}</section>;
 }

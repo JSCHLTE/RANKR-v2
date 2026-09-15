@@ -42,6 +42,22 @@ function setup(owner = "owner", exists = true) {
 }
 
 const body = { rankingId: "ranking123", name: " New title ", description: "New description", ranks: [{ player_id: "b", rank: 1 }, { player_id: "a", rank: 2 }] };
+
+test("tiers save with player ranks, enforce ownership and reject invalid names", async () => {
+  const tiers = [{ id: "t1", name: " S ", beforeRank: 1, color: 0 }, { id: "t2", name: "A", beforeRank: 3, color: 1 }];
+  const owner = setup();
+  assert.equal((await owner.handler(request("valid", { ...body, tiers }))).status, 200);
+  assert.equal(JSON.stringify(owner.writes[1].data.tiers), JSON.stringify([{ ...tiers[0], name: "S" }, tiers[1]]));
+  const other = setup("other");
+  assert.equal((await other.handler(request("valid", { ...body, tiers }))).status, 403);
+  assert.equal(other.writes.length, 0);
+  const invalid = setup();
+  assert.equal((await invalid.handler(request("valid", { ...body, tiers: [{ ...tiers[0], name: "x".repeat(16) }] }))).status, 400);
+  assert.equal(invalid.writes.length, 0);
+  const cleared = setup();
+  assert.equal((await cleared.handler(request("valid", { ...body, tiers: [] }))).status, 200);
+  assert.equal(JSON.stringify(cleared.writes[1].data.tiers), "[]");
+});
 function request(token = "valid", data: unknown = body) {
   return new Request("http://localhost/api/update-ranking", { method: "PATCH", headers: token ? { authorization: `Bearer ${token}` } : {}, body: JSON.stringify(data) });
 }

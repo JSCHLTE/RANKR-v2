@@ -1,9 +1,11 @@
+import { validTiers, type RankingTier } from "./ranking-tiers";
 export interface RankEntry { player_id: string; rank: number }
 export interface RankingUpdate {
   rankingId: string;
   name: string;
   description: string;
   ranks: RankEntry[];
+  tiers?: RankingTier[];
 }
 
 export function isRankingUpdate(value: unknown): value is RankingUpdate {
@@ -16,7 +18,8 @@ export function isRankingUpdate(value: unknown): value is RankingUpdate {
     && body.ranks.every((entry: RankEntry) => entry && typeof entry.player_id === "string"
       && entry.player_id.length > 0 && Number.isInteger(entry.rank) && entry.rank >= 1 && entry.rank <= body.ranks.length)
     && new Set(body.ranks.map(entry => entry.player_id)).size === body.ranks.length
-    && new Set(body.ranks.map(entry => entry.rank)).size === body.ranks.length;
+    && new Set(body.ranks.map(entry => entry.rank)).size === body.ranks.length
+    && (body.tiers === undefined || validTiers(body.tiers, body.ranks.length));
 }
 
 export function hasSamePlayers(existing: RankEntry[], updated: RankEntry[]): boolean {

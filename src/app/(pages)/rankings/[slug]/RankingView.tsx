@@ -6,14 +6,16 @@ import { useAuth } from "@/context/AuthContext";
 import RankingHeader from "./RankingHeader";
 import RankingList from "./RankingList";
 import { RankingMeta } from "@/types/rank";
+import { nextTier, type RankingTier } from "@/lib/ranking-tiers";
+import { DraftMode } from "@/components/DraftMode";
 
 interface RankEntry { player_id: string; rank: number }
-interface Props { meta: RankingMeta; ranks: RankEntry[] }
+interface Props { meta: RankingMeta; ranks: RankEntry[]; tiers?: RankingTier[] }
 
-const RankingView = ({ meta, ranks }: Props) => {
+const RankingView = ({ meta, ranks, tiers = [] }: Props) => {
   const { user } = useAuth();
   const router = useRouter();
-  const [saved, setSaved] = useState({ meta, ranks });
+  const [saved, setSaved] = useState({ meta, ranks, tiers });
   const [draft, setDraft] = useState(saved);
   const [isEditing, setIsEditing] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
@@ -23,6 +25,33 @@ const RankingView = ({ meta, ranks }: Props) => {
   const canEdit = user?.uid === saved.meta.author.uid;
   const editing = isEditing && canEdit;
   const current = editing ? draft : saved;
+
+  function addTier() {
+    if (!editing || saving.current) return;
+    const id = crypto.randomUUID();
+    setDraft(previous => previous.tiers.length >= 100 ? previous : { ...previous, tiers: [...previous.tiers, { id, ...nextTier(previous.tiers) }] });
+  }
+  function changeTier(id: string, name: string) {
+    if (!editing || saving.current) return;
+    setDraft(previous => ({ ...previous, tiers: previous.tiers.map(tier => tier.id === id ? { ...tier, name: name.slice(0, 15) } : tier) }));
+  }
+  function removeTier(id: string) {
+    if (!editing || saving.current) return;
+    setDraft(previous => ({ ...previous, tiers: previous.tiers.filter(tier => tier.id !== id) }));
+  }
+  function moveTier(id: string, beforeRank: number, targetTier?: string) {
+    if (!editing || saving.current) return;
+    setDraft(previous => {
+      const moving = previous.tiers.find(tier => tier.id === id);
+      if (!moving || beforeRank < 1 || beforeRank > previous.ranks.length + 1) return previous;
+      const ordered = [...previous.tiers].sort((a, b) => a.beforeRank - b.beforeRank);
+      const tiers = ordered.filter(tier => tier.id !== id);
+      const targetIndex = tiers.findIndex(tier => tier.id === targetTier);
+      const wasAbove = ordered.findIndex(tier => tier.id === id) < ordered.findIndex(tier => tier.id === targetTier);
+      tiers.splice(targetIndex < 0 ? tiers.length : targetIndex + (wasAbove ? 1 : 0), 0, { ...moving, beforeRank });
+      return { ...previous, tiers };
+    });
+  }
 
   function movePlayer(playerId: string, targetRank: number) {
     if (!editing || saving.current) return;
@@ -38,6 +67,7 @@ const RankingView = ({ meta, ranks }: Props) => {
 
   async function save() {
     if (!editing || !user || saving.current) return;
+    if (draft.tiers.some(tier => !tier.name.trim())) { setError("Give every tier a name before saving."); return; }
     saving.current = true;
     setIsSaving(true);
     setError("");
@@ -45,11 +75,11 @@ const RankingView = ({ meta, ranks }: Props) => {
       const response = await fetch("/api/update-ranking", {
         method: "PATCH",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${await user.getIdToken()}` },
-        body: JSON.stringify({ rankingId: saved.meta.id, name: draft.meta.rankObj.name, description: draft.meta.rankObj.description ?? "", ranks: draft.ranks }),
+        body: JSON.stringify({ rankingId: saved.meta.id, name: draft.meta.rankObj.name, description: draft.meta.rankObj.description ?? "", ranks: draft.ranks, tiers: draft.tiers }),
       });
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || "Unable to save ranking.");
-      setSaved({ ...draft, meta: { ...draft.meta, updatedAt: result.updatedAt, rankObj: { ...draft.meta.rankObj, name: draft.meta.rankObj.name.trim() } } });
+      setSaved({ ...draft, tiers: draft.tiers.map(tier => ({ ...tier, name: tier.name.trim() })), meta: { ...draft.meta, updatedAt: result.updatedAt, rankObj: { ...draft.meta.rankObj, name: draft.meta.rankObj.name.trim() } } });
       setIsEditing(false);
       router.refresh();
     } catch (error) {
@@ -92,7 +122,10 @@ const RankingView = ({ meta, ranks }: Props) => {
       onChange={(field, value) => setDraft(previous => ({ ...previous, meta: { ...previous.meta, rankObj: { ...previous.meta.rankObj, [field]: value } } }))}
     />
     {error && <p role="alert" className="mb-4 text-sm text-red-400">{error}</p>}
-    <RankingList author={saved.meta.author} ranks={current.ranks} isEditing={editing} isSaving={isSaving} onMove={movePlayer} />
+    {editing && <div className="mb-4 flex items-center gap-3"><button type="button" disabled={isSaving || draft.tiers.length >= 100} onClick={addTier} className="cursor-pointer rounded-lg border border-[var(--border)] px-4 py-2 text-sm text-[var(--accent)] disabled:opacity-50">+ Add tier</button><p className="text-xs text-[var(--text-muted)]">Drag tier headers to set boundaries. Changes apply when you save.</p></div>}
+    <DraftMode rankingId={saved.meta.id} playerIds={current.ranks.map(entry => entry.player_id)} disabled={editing || isDeleting}>
+      <RankingList author={saved.meta.author} ranks={current.ranks} tiers={current.tiers} isEditing={editing} isSaving={isSaving} onMove={movePlayer} onMoveTier={moveTier} onRenameTier={changeTier} onRemoveTier={removeTier} />
+    </DraftMode>
   </>;
 };
 

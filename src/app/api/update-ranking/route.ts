@@ -43,6 +43,7 @@ export async function PATCH(req: Request) {
       });
       transaction.update(ranksRef, {
         ranks: update.ranks.map(({ player_id, rank }) => ({ player_id, rank })).sort((a, b) => a.rank - b.rank),
+        ...(update.tiers !== undefined ? { tiers: update.tiers.map(({ id, name, beforeRank, color }) => ({ id, name: name.trim(), beforeRank, color })) } : {}),
       });
     });
     revalidatePath(`/rankings/${update.rankingId}`);

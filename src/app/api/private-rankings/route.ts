@@ -25,7 +25,7 @@ export async function GET(req: Request) {
         if (!data || data.author?.uid !== uid) return null;
         const ranks = await transaction.get(db.collection("rankings-ranks").doc(id));
         if (!ranks.exists) return null;
-        return { meta: serialize(id, data), ranks: ranks.data()?.ranks ?? [] };
+        return { meta: serialize(id, data), ranks: ranks.data()?.ranks ?? [], tiers: ranks.data()?.tiers ?? [] };
       }, { readOnly: true });
       return result ? json(result) : json({ error: "Ranking not found or unavailable to this account." }, 404);
     }
