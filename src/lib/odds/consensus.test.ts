@@ -26,10 +26,10 @@ test("different prop lines have no combined price, matching lines do", () => {
   assert.deepEqual(consensusTotal({ draftkings: { line: 1.5, overOdds: -110 }, fanduel: { line: 1.5, underOdds: 100 } }, ["draftkings", "fanduel"]), { line: 1.5, overOdds: -110, underOdds: 100 });
 });
 test("fixtures agree with weekly summaries and unavailable books never contribute zeros", () => {
-  const week: WeekOdds = JSON.parse(readFileSync("public/data/odds/2026/week-1/games.json", "utf8"));
+  const week: WeekOdds = JSON.parse(readFileSync("src/lib/odds/fixtures/2026/week-1/games.json", "utf8"));
   assert.equal(week.games.length, 3);
   for (const summary of week.games) {
-    const game: GameOdds = JSON.parse(readFileSync(`public/data/odds/2026/week-1/${summary.slug.toUpperCase()}.json`, "utf8"));
+    const game: GameOdds = JSON.parse(readFileSync(`src/lib/odds/fixtures/2026/week-1/${summary.slug.toUpperCase()}.json`, "utf8"));
     assert.deepEqual(summary.sportsbooks, game.gameOdds);
     assert.equal(summary.eventId, game.eventId);
     assert.equal(game.season, week.season);

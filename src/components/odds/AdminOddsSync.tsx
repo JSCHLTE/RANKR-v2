@@ -6,7 +6,7 @@ import { useAuth } from "@/context/AuthContext";
 import { isAdmin } from "@/lib/admin-access";
 import { SPORTSBOOK_IDS, SPORTSBOOKS } from "@/lib/odds/sportsbooks";
 
-export function AdminOddsSync({ season, week }: { season: number; week: number }) {
+export function AdminOddsSync({ season, week, onUpdated }: { season: number; week: number; onUpdated?: () => void }) {
   const { user, loading } = useAuth();
   const router = useRouter();
   const inFlight = useRef(false);
@@ -38,7 +38,8 @@ export function AdminOddsSync({ season, week }: { season: number; week: number }
       const unavailable = SPORTSBOOK_IDS.filter(book => unavailableIds.includes(book)).map(book => SPORTSBOOKS[book].name);
       const notice = unavailable.length ? ` · Not included in your plan: ${unavailable.join(", ")}` : "";
       setFeedback({ text: `Odds updated successfully · ${result.gamesWritten} games · ${result.propsWritten} player props${notice}`, error: false });
-      router.refresh();
+      if (onUpdated) onUpdated();
+      else router.refresh();
     } catch {
       setFeedback({ text: errorMessage, error: true });
     } finally { inFlight.current = false; setBusy(false); }

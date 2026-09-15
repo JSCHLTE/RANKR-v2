@@ -93,7 +93,7 @@ npm run lint
 npm run build
 ```
 
-Live API-to-Firestore verification requires the owner's configured key and a manual admin pull. The four retained files `public/data/odds/2026/week-1/games.json`, `BUF-MIA.json`, `DET-GB.json`, and `KC-LAC.json` are no longer used by pages. Keep them while the live integration is verified; the existing consensus fixture test still uses them.
+Live API-to-Firestore verification requires the owner's configured key and a manual admin pull. The four retained files `src/lib/odds/fixtures/2026/week-1/games.json`, `BUF-MIA.json`, `DET-GB.json`, and `KC-LAC.json` are no longer used by pages. Keep them while the live integration is verified; the existing consensus fixture test still uses them.
 
 ## Files in this integration
 
@@ -147,3 +147,6 @@ SportsGameOdds can return HTTP 400 when a requested sportsbook is unavailable on
 Successful sync responses include `unavailableSportsbooks`; the admin confirmation names books excluded by the plan. Other upstream errors include a safe HTTP status without returning raw provider text or credentials.
 
 The corrected live request returned 16 games and 69 normalized props for 2026 Week 1. This was a read-only API diagnostic; no Firestore writes occurred. Twelve focused regression tests passed, including the new subscription/pagination cases.
+
+
+Odds pages load through `/api/odds` using a verified Firebase ID token. Weekly summaries require sign-in; individual games require a current RANKR Pass checked from the user document before reading odds. Signed-out visitors redirect to `/signup`; signed-in users without an active pass redirect to `/subscribe` for individual games. Responses are private and no-store. Test fixtures live outside public assets. Deployed Firestore rules must deny direct client reads of odds collections (the Admin SDK API still reads them) and prevent client writes to pass expiry. No Firestore rules are managed by this repository.
