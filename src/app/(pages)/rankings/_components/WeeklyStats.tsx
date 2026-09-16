@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { formatStat, statGrade } from "@/lib/player-yearly-stats";
-import { defaultWeeklySeason, parseWeeklyStats, weeklyColumns, weeklySeasons, weeklyStat, type PlayerWeeklyStats } from "@/lib/player-weekly-stats";
+import { statGrade } from "@/lib/player-yearly-stats";
+import { defaultWeeklySeason, formatWeeklyStat, parseWeeklyStats, weeklyColumns, weeklySeasons, weeklyStat, type PlayerWeeklyStats } from "@/lib/player-weekly-stats";
 import styles from "./PlayerProfile.module.css";
 
 // Weekly files are larger than yearly files; bound the session cache to recent profiles.
@@ -61,7 +61,7 @@ export default function WeeklyStats({ playerId }: { playerId: string }) {
           <tr><th scope="col" className={styles.sticky}>Week · Opponent</th><th scope="col">Team</th>{columns.map(column => <th key={`${column.context}-${column.id}`} scope="col"><abbr title={rows.flatMap(row => row.stats).find(stat => stat.serial_id === column.id && stat.stat_context === column.context)?.description || column.id}>{column.label}</abbr></th>)}</tr>
         </thead><tbody>{rows.map((row, index) => <tr key={`${row.week}-${index}`}>
           <th scope="row" className={styles.sticky}>{row.week}. {row.opponent}{row.upcoming && <span className={styles.scheduled}>Scheduled</span>}</th><td>{row.team?.abbr || "—"}</td>
-          {columns.map(column => { const stat = weeklyStat(row, column); const grade = statGrade(stat); return <td key={`${column.context}-${column.id}`} data-grade={grade} title={`${stat?.description || column.label}${grade === undefined ? "" : ` · ${grades[grade]}`}`}>{formatStat(stat)}</td>; })}
+          {columns.map(column => { const stat = weeklyStat(row, column); const grade = statGrade(stat); return <td key={`${column.context}-${column.id}`} data-grade={grade} title={`${stat?.description || column.label}${grade === undefined ? "" : ` · ${grades[grade]}`}`}>{formatWeeklyStat(stat)}</td>; })}
         </tr>)}</tbody></table>
       </div><p className={styles.footnote}>— = unavailable · Scheduled games have no recorded stats. Colors reflect the supplied performance ranges.</p>
     </>}

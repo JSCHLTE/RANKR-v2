@@ -1,4 +1,4 @@
-import { careerColumns, parseYearlyStats, resolveStat, type PlayerSeason, type PlayerYearlyStats, type StatColumn, type YearlyStat } from "./player-yearly-stats";
+import { careerColumns, formatStat, parseYearlyStats, resolveStat, type PlayerSeason, type PlayerYearlyStats, type StatColumn, type YearlyStat } from "./player-yearly-stats";
 
 export interface PlayerWeek extends PlayerSeason {
   week: number;
@@ -10,6 +10,18 @@ export interface PlayerWeeklyStats {
   playerStats: PlayerWeek[];
 }
 export interface WeeklyColumn extends StatColumn { context: string }
+
+const wholeNumberStats = new Set([
+  "PassingAttempts", "PassingAttemptsInside5", "PassingYards", "PassingTouchdowns", "PassingInterceptions", "PassingSacks",
+  "RushingAttempts", "RushingAttemptsInside5", "RushingYards", "RushingTouchdowns",
+  "ReceivingTargets", "Receptions", "ReceivingYards", "ReceivingTouchdowns", "RoutesRun",
+  "FantasyPointsRankQB", "FantasyPointsRankRB", "FantasyPointsRankWR", "FantasyPointsRankTE",
+]);
+
+export function formatWeeklyStat(stat?: YearlyStat) {
+  // Weekly counts are whole numbers even when the source requests decimal places.
+  return formatStat(stat && wholeNumberStats.has(stat.serial_id) ? { ...stat, display_decimal_places: 0 } : stat);
+}
 
 export function parseWeeklyStats(value: unknown, playerId: string): PlayerWeeklyStats {
   const data = value as { playerInfo: PlayerYearlyStats["playerInfo"]; playerStats: (Omit<PlayerSeason, "stats"> & { week: number; upcoming?: boolean; stats: (Omit<YearlyStat, "value"> & { value: unknown })[] })[] };
