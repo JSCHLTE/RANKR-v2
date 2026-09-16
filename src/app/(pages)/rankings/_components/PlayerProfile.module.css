@@ -21,6 +21,11 @@
 .badge { font-size: 11px; border: 1px solid var(--border); padding: 6px 10px; border-radius: 20px; }
 .tableHint { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
 .tableScroll { overflow-x: auto; padding-bottom: 10px; scrollbar-color: var(--accent) var(--surface-hover); }
+.seasonTabs { max-width: 100%; overflow-x: auto; }
+.seasonTabs button { flex-shrink: 0; }
+.scrollControls { display: flex; align-items: center; gap: 8px; }
+.scrollControls button { width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 10px; color: var(--foreground); background: var(--surface-hover); font-size: 18px; }
+.scheduled { display: block; margin-top: 3px; font-size: 10px; color: var(--text-muted); font-weight: 400; }
 .table { width: 100%; border-collapse: separate; border-spacing: 3px; white-space: nowrap; font-size: 14px; font-variant-numeric: tabular-nums; }
 .table th { text-align: center; font-weight: 550; padding: 7px 9px; }
 .table thead { color: var(--text-muted); font-size: 12px; }

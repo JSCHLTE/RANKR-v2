@@ -5,6 +5,7 @@ import { PlayerLite } from "@/types/player";
 import { getPositionColors } from "@/constants/positions";
 import InjuryInfo from "./InjuryInfo";
 import CareerStats from "./CareerStats";
+import WeeklyStats from "./WeeklyStats";
 import styles from "./PlayerProfile.module.css";
 
 interface Details { full_name?: string; age?: number | null; years_exp?: number | null; college?: string | null; position?: string }
@@ -58,9 +59,7 @@ export default function PlayerDetailsCard({ player, onClose }: { player: PlayerL
       </div>
     </header>
     <div className={styles.tabs} aria-label="Profile view">{["Career", "Seasonal"].map(tab => <button key={tab} type="button" aria-pressed={view === tab} onClick={() => setView(tab)}>{tab}</button>)}</div>
-    {view === "Seasonal" && <section aria-labelledby="weekly-heading" className={`${styles.section} ${styles.weekly}`}>
-      <div><h3 id="weekly-heading">Weekly player logs</h3><p>Weekly game logs will be available soon.</p><p className="mt-3">Explore each season by week and opponent once game logs are available.</p></div><span className={styles.badge}>Coming soon</span>
-    </section>}
+    <div hidden={view !== "Seasonal"}><WeeklyStats key={player.id} playerId={player.id} /></div>
     <div hidden={view !== "Career"}><CareerStats key={player.id} playerId={player.id} /></div>
   </dialog>;
 }
