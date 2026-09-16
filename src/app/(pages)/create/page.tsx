@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import CustomFormatSection from "./_components/CustomFormatSection";
 import { useAuth } from "@/context/AuthContext";
@@ -20,6 +21,26 @@ export default function CreateRankingPage() {
   const submitting = useRef(false);
   const [isCreating, setIsCreating] = useState(false);
   const [error, setError] = useState("");
+  const [usage, setUsage] = useState<{ uid: string; count: number; limit: number }>();
+  const currentUsage = usage?.uid === user?.uid ? usage : undefined;
+  const atLimit = !!currentUsage && currentUsage.count >= currentUsage.limit;
+  useEffect(() => {
+    if (!user) return;
+    const controller = new AbortController();
+    async function loadUsage() {
+      try {
+        const token = await user!.getIdToken();
+        if (controller.signal.aborted) return;
+        const response = await fetch("/api/create-ranking", { headers: { Authorization: `Bearer ${token}` }, cache: "no-store", signal: controller.signal });
+        if (!response.ok) return;
+        const data = await response.json();
+        if (!controller.signal.aborted) setUsage({ uid: user!.uid, count: data.count, limit: data.limit });
+      } catch { /* Creation enforces the limit even if the preview cannot load. */ }
+    }
+    void loadUsage();
+    window.addEventListener("focus", loadUsage);
+    return () => { controller.abort(); window.removeEventListener("focus", loadUsage); };
+  }, [user]);
 
   const [rankObj, setRankObj] = useState<RankObj>({
       name: "",
@@ -51,7 +72,10 @@ export default function CreateRankingPage() {
          },
       });
       const result = await res.json();
-      if (!res.ok) throw new Error(result.error || "Unable to create ranking.");
+      if (!res.ok) {
+        if (result.code === "RANKING_LIMIT_REACHED") setUsage({ uid: user.uid, count: result.count, limit: result.limit });
+        throw new Error(result.error || "Unable to create ranking.");
+      }
       if (typeof result.rankingId !== "string" || !result.rankingId) throw new Error("The server did not return a ranking ID.");
       router.push(`/rankings/${encodeURIComponent(result.rankingId)}`);
     } catch(e: unknown) {
@@ -84,6 +108,11 @@ const updateField = <K extends keyof RankObj>(
       </p>
 
       {/* Ranking Name — REQUIRED */}
+      {currentUsage && <div className="mb-8 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 text-sm">
+        <p className="font-medium">{currentUsage.count} of {currentUsage.limit} rankings used</p>
+        <p className="mt-1 text-[var(--text-muted)]">Public and private rankings count toward your limit. Deleting a ranking frees a slot.</p>
+        {atLimit && <p className="mt-2">{currentUsage.limit === 2 ? <>You’ve reached your free limit. <Link href="/subscribe" className="text-[var(--accent)] underline">Get RANKR Pass for up to 20 rankings</Link>.</> : "You’ve reached your RANKR Pass limit. Delete a ranking to create another."}</p>}
+      </div>}
       <section className="mb-8">
         <label className="block text-sm font-medium mb-2">
           Ranking Name<Required />
@@ -211,10 +240,10 @@ const updateField = <K extends keyof RankObj>(
       {/* Submit */}
       {error && <p role="alert" className="mb-4 text-sm text-red-400">{error}</p>}
       <button
-        disabled={!canSubmit || isCreating}
+        disabled={!canSubmit || isCreating || atLimit}
         onClick={handleCreate}
         className={`w-full py-3 rounded-xl font-semibold text-lg transition-all ${
-          canSubmit && !isCreating
+          canSubmit && !isCreating && !atLimit
             ? "bg-[var(--accent)] text-[var(--background)] hover:opacity-90 cursor-pointer"
             : "bg-[var(--border)] text-[var(--text-muted)] cursor-not-allowed opacity-50"
         }`}

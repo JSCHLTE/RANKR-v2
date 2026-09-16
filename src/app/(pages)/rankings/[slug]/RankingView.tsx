@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import RankingHeader from "./RankingHeader";
@@ -22,7 +23,37 @@ const RankingView = ({ meta, ranks, tiers = [] }: Props) => {
   const [isDeleting, setIsDeleting] = useState(false);
   const saving = useRef(false);
   const [error, setError] = useState("");
-  const canEdit = user?.uid === saved.meta.author.uid;
+  const isOwner = user?.uid === saved.meta.author.uid;
+  const accessKey = `${user?.uid}:${saved.meta.id}`;
+  const [access, setAccess] = useState<{ key: string; canEdit: boolean; isOldest: boolean; expiresAt: number | null; error?: string }>();
+  const currentAccess = access?.key === accessKey ? access : undefined;
+  const canEdit = isOwner && currentAccess?.canEdit === true;
+  useEffect(() => {
+    if (!isOwner || !user) return;
+    const controller = new AbortController();
+    async function checkAccess() {
+      try {
+        const token = await user!.getIdToken();
+        if (controller.signal.aborted) return;
+        const response = await fetch(`/api/update-ranking?id=${encodeURIComponent(saved.meta.id)}`, { headers: { Authorization: `Bearer ${token}` }, cache: "no-store", signal: controller.signal });
+        if (!response.ok) throw new Error("Unable to check editing access. Refresh to try again.");
+        const result = await response.json();
+        if (!controller.signal.aborted) setAccess({ ...result, key: accessKey });
+      } catch (error) {
+        if (!controller.signal.aborted) setAccess({ key: accessKey, canEdit: false, isOldest: false, expiresAt: null, error: error instanceof Error ? error.message : "Unable to check editing access." });
+      }
+    }
+    void checkAccess();
+    window.addEventListener("focus", checkAccess);
+    return () => { controller.abort(); window.removeEventListener("focus", checkAccess); };
+  }, [isOwner, user, saved.meta.id, accessKey]);
+  useEffect(() => {
+    if (!currentAccess?.canEdit || currentAccess.isOldest || !currentAccess.expiresAt) return;
+    const timer = window.setInterval(() => {
+      if (Date.now() >= currentAccess.expiresAt!) setAccess(previous => previous?.key === accessKey ? { ...previous, canEdit: false } : previous);
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [currentAccess, accessKey]);
   const editing = isEditing && canEdit;
   const current = editing ? draft : saved;
 
@@ -78,7 +109,10 @@ const RankingView = ({ meta, ranks, tiers = [] }: Props) => {
         body: JSON.stringify({ rankingId: saved.meta.id, name: draft.meta.rankObj.name, description: draft.meta.rankObj.description ?? "", ranks: draft.ranks, tiers: draft.tiers }),
       });
       const result = await response.json();
-      if (!response.ok) throw new Error(result.error || "Unable to save ranking.");
+      if (!response.ok) {
+        if (result.code === "RANKING_EDIT_LOCKED") setAccess({ key: accessKey, canEdit: false, isOldest: false, expiresAt: null });
+        throw new Error(result.error || "Unable to save ranking.");
+      }
       setSaved({ ...draft, tiers: draft.tiers.map(tier => ({ ...tier, name: tier.name.trim() })), meta: { ...draft.meta, updatedAt: result.updatedAt, rankObj: { ...draft.meta.rankObj, name: draft.meta.rankObj.name.trim() } } });
       setIsEditing(false);
       router.refresh();
@@ -91,7 +125,7 @@ const RankingView = ({ meta, ranks, tiers = [] }: Props) => {
   }
 
   async function deleteRanking() {
-    if (!canEdit || !user || editing || saving.current) return;
+    if (!isOwner || !user || editing || saving.current) return;
     if (!window.confirm(`Are you sure you want to permanently delete "${saved.meta.rankObj.name}"?`)) return;
     saving.current = true;
     setIsDeleting(true);
@@ -115,12 +149,15 @@ const RankingView = ({ meta, ranks, tiers = [] }: Props) => {
 
   return <>
     <RankingHeader meta={current.meta} isEditing={editing} isSaving={isSaving} isDeleting={isDeleting}
-      onEdit={() => { if (canEdit && !saving.current) { setDraft(saved); setError(""); setIsEditing(true); } }}
+      onEdit={canEdit ? () => { if (!saving.current) { setDraft(saved); setError(""); setIsEditing(true); } } : undefined}
       onDelete={deleteRanking}
       onCancel={() => { setDraft(saved); setError(""); setIsEditing(false); }}
       onSave={save}
       onChange={(field, value) => setDraft(previous => ({ ...previous, meta: { ...previous.meta, rankObj: { ...previous.meta.rankObj, [field]: value } } }))}
     />
+    {isOwner && !currentAccess && <p role="status" className="mb-4 text-sm text-[var(--text-muted)]">Checking editing access…</p>}
+    {isOwner && currentAccess?.error && <p role="alert" className="mb-4 text-sm text-red-400">{currentAccess.error}</p>}
+    {isOwner && currentAccess && !currentAccess.canEdit && !currentAccess.error && <p className="mb-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 text-sm">This ranking is view-only. Free accounts can edit their two oldest rankings, including public and private rankings. <Link href="/subscribe" className="text-[var(--accent)] underline">Get RANKR Pass to restore editing.</Link></p>}
     {error && <p role="alert" className="mb-4 text-sm text-red-400">{error}</p>}
     {editing && <div className="mb-4 flex items-center gap-3"><button type="button" disabled={isSaving || draft.tiers.length >= 100} onClick={addTier} className="cursor-pointer rounded-lg border border-[var(--border)] px-4 py-2 text-sm text-[var(--accent)] disabled:opacity-50">+ Add tier</button><p className="text-xs text-[var(--text-muted)]">Drag tier headers to set boundaries. Changes apply when you save.</p></div>}
     <DraftMode rankingId={saved.meta.id} playerIds={current.ranks.map(entry => entry.player_id)} disabled={editing || isDeleting}>

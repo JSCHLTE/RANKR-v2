@@ -6,7 +6,7 @@ import ts from "typescript";
 import * as validation from "../../../lib/ranking-update";
 
 // Execute the real handler with Firebase and Next adapters replaced; no credentials or writes to live data.
-function setup(owner = "owner", exists = true) {
+function setup(owner = "owner", exists = true, canEdit = true) {
   const writes: { ref: string; data: Record<string, unknown> }[] = [];
   const invalidated: string[] = [];
   const timestamp = { serverTimestamp: true };
@@ -16,6 +16,7 @@ function setup(owner = "owner", exists = true) {
   vm.runInNewContext(code, {
     exports, Response, console,
     require: (name: string) => {
+      if (name === "@/lib/ranking-edit-access-server") return { rankingEditAccess: async () => ({ canEdit }) };
       if (name === "@/lib/ranking-update") return validation;
       if (name === "@/hooks/formatTimeStamp") return { default: () => "Sep 8, 2026" };
       if (name === "next/cache") return { revalidatePath: (path: string) => invalidated.push(path) };
@@ -97,4 +98,13 @@ test("owner saves both documents and server timestamp, without overwriting prote
   assert.equal(context.writes[0].data.createdAt, undefined);
   assert.equal(JSON.stringify(context.writes[1].data.ranks), JSON.stringify(body.ranks));
   assert.deepEqual(context.invalidated, ["/rankings/ranking123", "/rankings"]);
+});
+
+test("locked owners cannot change names, player order, or tiers", async () => {
+  const context = setup("owner", true, false);
+  const response = await context.handler(request("valid", { ...body, tiers: [] }));
+  assert.equal(response.status, 403);
+  assert.equal((await response.json()).code, "RANKING_EDIT_LOCKED");
+  assert.equal(context.writes.length, 0);
+  assert.equal(context.invalidated.length, 0);
 });

@@ -104,7 +104,7 @@ const RankingHeader = ({ meta, onEdit, onDelete, isEditing, isSaving, isDeleting
           <>
             <button
               onClick={onEdit}
-              disabled={isDeleting}
+              disabled={isDeleting || !onEdit}
               title="Edit ranking"
               className="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border border-[var(--border)] bg-transparent text-[var(--text-muted)] hover:bg-[var(--surface-hover)] hover:border-[var(--border-hover)] transition-all cursor-pointer"
             >
