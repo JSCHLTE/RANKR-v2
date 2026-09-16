@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import SkeletonCard from "../_components/SkeletonCard";
 import { RankingCard } from "../_components/RankingCard";
 import { RankingMeta } from "@/types/rank";
@@ -8,6 +11,13 @@ interface Props {
 }
 
 const RankingFeed = ({ rankings, loading }: Props) => {
+  const [search, setSearch] = useState("");
+  const query = search.trim().toLowerCase();
+  const filteredRankings = rankings.filter((ranking) =>
+    (ranking.rankObj?.name ?? "").toLowerCase().includes(query) ||
+    (ranking.author?.username ?? "").toLowerCase().includes(query) ||
+    `@${ranking.author?.username ?? ""}`.toLowerCase().includes(query)
+  );
 
   return (
     <div className="min-h-screen bg-[var(--background)] px-4 sm:px-6 py-10">
@@ -21,6 +31,31 @@ const RankingFeed = ({ rankings, loading }: Props) => {
         <p className="mt-1 text-sm text-[var(--text-muted)]">
           Browse rankings shared by the community.
         </p>
+      </div>
+
+      <div className="mb-6">
+        <label htmlFor="rankings-search" className="sr-only">
+          Search rankings by username or ranking title
+        </label>
+        <div className="flex items-center gap-3 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 focus-within:ring-2 focus-within:ring-[var(--accent)]">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="shrink-0 text-[var(--text-muted)]">
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="m16 16 4.5 4.5" />
+          </svg>
+          <input
+            id="rankings-search"
+            type="search"
+            value={search}
+            onChange={(event) => setSearch(event.target.value)}
+            placeholder="Search by username or ranking title"
+            className="min-w-0 w-full bg-transparent py-3 text-sm text-[var(--foreground)] outline-none placeholder:text-[var(--text-muted)]"
+          />
+        </div>
+        {!loading && query && (
+          <p role="status" className="mt-2 text-sm text-[var(--text-muted)]">
+            {filteredRankings.length} {filteredRankings.length === 1 ? "ranking" : "rankings"} found
+          </p>
+        )}
       </div>
 
       {/* Grid */}
@@ -45,9 +80,17 @@ const RankingFeed = ({ rankings, loading }: Props) => {
             Be the first to share a ranking with the community.
           </p>
         </div>
+      ) : filteredRankings.length === 0 ? (
+        <div className="flex flex-col items-center justify-center py-24 text-center gap-3">
+          <p className="text-[15px] font-semibold text-[var(--foreground)]">No matching rankings</p>
+          <p className="text-[13px] text-[var(--text-muted)]">Try a different username or ranking title.</p>
+          <button type="button" onClick={() => setSearch("")} className="rounded-md px-3 py-2 text-sm font-medium text-[var(--foreground)] underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
+            Clear search
+          </button>
+        </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {rankings.map((ranking) => (
+          {filteredRankings.map((ranking) => (
             <RankingCard key={ranking.id} ranking={ranking} />
           ))}
         </div>
