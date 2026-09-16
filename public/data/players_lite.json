@@ -64,22 +64,6 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jaxonsmithnjigba",
-    "first_name": "Jaxon",
-    "last_name": "Smith-Njigba",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "SEA",
-    "player_id": "9488",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
     "search_full_name": "christianmccaffrey",
     "first_name": "Christian",
     "last_name": "McCaffrey",
@@ -88,6 +72,22 @@
     ],
     "team": "SF",
     "player_id": "4034",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jaxonsmithnjigba",
+    "first_name": "Jaxon",
+    "last_name": "Smith-Njigba",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SEA",
+    "player_id": "9488",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -128,38 +128,6 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "ceedeelamb",
-    "first_name": "CeeDee",
-    "last_name": "Lamb",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "DAL",
-    "player_id": "6786",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jamescook",
-    "first_name": "James",
-    "last_name": "Cook",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "BUF",
-    "player_id": "8138",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
     "search_full_name": "justinjefferson",
     "first_name": "Justin",
     "last_name": "Jefferson",
@@ -168,70 +136,6 @@
     ],
     "team": "MIN",
     "player_id": "6794",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "chasebrown",
-    "first_name": "Chase",
-    "last_name": "Brown",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "CIN",
-    "player_id": "9224",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "devonachane",
-    "first_name": "De'Von",
-    "last_name": "Achane",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "MIA",
-    "player_id": "9226",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "omarionhampton",
-    "first_name": "Omarion",
-    "last_name": "Hampton",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "LAC",
-    "player_id": "12507",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "saquonbarkley",
-    "first_name": "Saquon",
-    "last_name": "Barkley",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "PHI",
-    "player_id": "4866",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -256,6 +160,22 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "jamescook",
+    "first_name": "James",
+    "last_name": "Cook",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "BUF",
+    "player_id": "8138",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "ashtonjeanty",
     "first_name": "Ashton",
     "last_name": "Jeanty",
@@ -264,12 +184,44 @@
     ],
     "team": "LV",
     "player_id": "12527",
-    "injury": true,
-    "injury_severity": "medium",
-    "injury_note": "Jeanty injured his right ankle during Raiders practice on August 23 after diving for a pass and landing awkwardly. Although he initially couldn't put much weight on the leg, the injury was later identified as a low-ankle sprain and was not considered long-term.",
-    "injury_name": "Right low-ankle sprain",
-    "injury_expected_return": "Week 1 - 2026",
-    "injury_reinjury_risk": "Medium"
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "chasebrown",
+    "first_name": "Chase",
+    "last_name": "Brown",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CIN",
+    "player_id": "9224",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "ceedeelamb",
+    "first_name": "CeeDee",
+    "last_name": "Lamb",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DAL",
+    "player_id": "6786",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "derrickhenry",
@@ -288,14 +240,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "drakelondon",
-    "first_name": "Drake",
-    "last_name": "London",
+    "search_full_name": "saquonbarkley",
+    "first_name": "Saquon",
+    "last_name": "Barkley",
     "fantasy_positions": [
-      "WR"
+      "RB"
     ],
-    "team": "ATL",
-    "player_id": "8112",
+    "team": "PHI",
+    "player_id": "4866",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -304,36 +256,36 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "ajbrown",
-    "first_name": "A.J.",
-    "last_name": "Brown",
+    "search_full_name": "omarionhampton",
+    "first_name": "Omarion",
+    "last_name": "Hampton",
     "fantasy_positions": [
-      "WR"
+      "RB"
     ],
-    "team": "NE",
-    "player_id": "5859",
-    "injury": true,
-    "injury_severity": "medium",
-    "injury_note": "Brown is expected to miss roughly 4–6 weeks. Because he is on IR, he must miss at least four games, making Week 6 the earliest he can return. High-ankle sprains can affect cutting, acceleration, and explosiveness even after a player returns, so his performance and workload will be worth monitoring initially.",
-    "injury_name": "High-ankle (syndesmosis) sprain",
-    "injury_expected_return": "Week 6 2026",
-    "injury_reinjury_risk": "Medium"
+    "team": "LAC",
+    "player_id": "12507",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "brockbowers",
-    "first_name": "Brock",
-    "last_name": "Bowers",
+    "search_full_name": "devonachane",
+    "first_name": "De'Von",
+    "last_name": "Achane",
     "fantasy_positions": [
-      "TE"
+      "RB"
     ],
-    "team": "LV",
-    "player_id": "11604",
-    "injury": true,
-    "injury_severity": "medium",
-    "injury_note": "Bowers suffered a knee injury during training camp that was diagnosed as a meniscus issue. He underwent a meniscus trim on September 8 and is expected to miss approximately 1–2 games. He did not participate in the Raiders' Wednesday practice ahead of Week 1.",
-    "injury_name": "Knee meniscus",
-    "injury_expected_return": "Week 2–3 2026",
-    "injury_reinjury_risk": "Medium"
+    "team": "MIA",
+    "player_id": "9226",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "maliknabers",
@@ -344,54 +296,6 @@
     ],
     "team": "NYG",
     "player_id": "11632",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "Nabers has made major progress and was a full participant in Giants practice on September 9, including taking contact in pads. Head coach John Harbaugh said he thinks Nabers is ready, although the team is still evaluating him before Week 1 against Dallas. His full participation is a strong indication he's close to game clearance, but returning from ACL reconstruction carries elevated early-season reinjury/compensation risk and his workload could initially be managed.",
-    "injury_name": "Torn right ACL and meniscus",
-    "injury_expected_return": "Week 1 2026",
-    "injury_reinjury_risk": "Medium"
-  },
-  {
-    "search_full_name": "nicocollins",
-    "first_name": "Nico",
-    "last_name": "Collins",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "HOU",
-    "player_id": "7569",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "georgepickens",
-    "first_name": "George",
-    "last_name": "Pickens",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "DAL",
-    "player_id": "8137",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "rasheerice",
-    "first_name": "Rashee",
-    "last_name": "Rice",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "KC",
-    "player_id": "10229",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -416,6 +320,54 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "nicocollins",
+    "first_name": "Nico",
+    "last_name": "Collins",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "HOU",
+    "player_id": "7569",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "drakelondon",
+    "first_name": "Drake",
+    "last_name": "London",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "ATL",
+    "player_id": "8112",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "georgepickens",
+    "first_name": "George",
+    "last_name": "Pickens",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DAL",
+    "player_id": "8137",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "treymcbride",
     "first_name": "Trey",
     "last_name": "McBride",
@@ -432,6 +384,22 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "rasheerice",
+    "first_name": "Rashee",
+    "last_name": "Rice",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "KC",
+    "player_id": "10229",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "jeremiyahlove",
     "first_name": "Jeremiyah",
     "last_name": "Love",
@@ -440,12 +408,12 @@
     ],
     "team": "ARI",
     "player_id": "13287",
-    "injury": true,
-    "injury_severity": "medium",
-    "injury_note": "Love returned to practice as a limited participant on September 9. Cardinals coach Mike LaFleur has expressed optimism about him playing Week 1 against the Chargers and said there was “no limit” from the coaching side. Even if active, the high-ankle sprain and missed practice time could lead Arizona to ease him in alongside Tyler Allgeier.",
-    "injury_name": "High ankle sprain",
-    "injury_expected_return": "Week 1 2026",
-    "injury_reinjury_risk": "Medium"
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
     "search_full_name": "breecehall",
@@ -456,6 +424,70 @@
     ],
     "team": "NYJ",
     "player_id": "8155",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "zayflowers",
+    "first_name": "Zay",
+    "last_name": "Flowers",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BAL",
+    "player_id": "9997",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "brockbowers",
+    "first_name": "Brock",
+    "last_name": "Bowers",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LV",
+    "player_id": "11604",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "javontewilliams",
+    "first_name": "Javonte",
+    "last_name": "Williams",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DAL",
+    "player_id": "7588",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "laddmcconkey",
+    "first_name": "Ladd",
+    "last_name": "McConkey",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LAC",
+    "player_id": "11635",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -496,54 +528,6 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "javontewilliams",
-    "first_name": "Javonte",
-    "last_name": "Williams",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "DAL",
-    "player_id": "7588",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "zayflowers",
-    "first_name": "Zay",
-    "last_name": "Flowers",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "BAL",
-    "player_id": "9997",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jaylenwaddle",
-    "first_name": "Jaylen",
-    "last_name": "Waddle",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "DEN",
-    "player_id": "7526",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
     "search_full_name": "teehiggins",
     "first_name": "Tee",
     "last_name": "Higgins",
@@ -560,110 +544,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "laddmcconkey",
-    "first_name": "Ladd",
-    "last_name": "McConkey",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "LAC",
-    "player_id": "11635",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "joshallen",
-    "first_name": "Josh",
-    "last_name": "Allen",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "BUF",
-    "player_id": "4984",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "travisetienne",
-    "first_name": "Travis",
-    "last_name": "Etienne",
+    "search_full_name": "dandreswift",
+    "first_name": "D'Andre",
+    "last_name": "Swift",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "NO",
-    "player_id": "7543",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "emekaegbuka",
-    "first_name": "Emeka",
-    "last_name": "Egbuka",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "TB",
-    "player_id": "12514",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "colstonloveland",
-    "first_name": "Colston",
-    "last_name": "Loveland",
-    "fantasy_positions": [
-      "TE"
-    ],
     "team": "CHI",
-    "player_id": "12517",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "garrettwilson",
-    "first_name": "Garrett",
-    "last_name": "Wilson",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "NYJ",
-    "player_id": "8146",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tetairoamcmillan",
-    "first_name": "Tetairoa",
-    "last_name": "McMillan",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "CAR",
-    "player_id": "12526",
+    "player_id": "6790",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -688,190 +576,62 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "dandreswift",
-    "first_name": "D'Andre",
-    "last_name": "Swift",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "CHI",
-    "player_id": "6790",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "Cramps",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "camskattebo",
-    "first_name": "Cam",
-    "last_name": "Skattebo",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "NYG",
-    "player_id": "12481",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "lutherburden",
-    "first_name": "Luther",
-    "last_name": "Burden",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "CHI",
-    "player_id": "12519",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "quinshonjudkins",
-    "first_name": "Quinshon",
-    "last_name": "Judkins",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "CLE",
-    "player_id": "12512",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "davidmontgomery",
-    "first_name": "David",
-    "last_name": "Montgomery",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "HOU",
-    "player_id": "5892",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "davanteadams",
-    "first_name": "Davante",
-    "last_name": "Adams",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "LAR",
-    "player_id": "2133",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "bhayshultuten",
-    "first_name": "Bhayshul",
-    "last_name": "Tuten",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "JAX",
-    "player_id": "12490",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jamesonwilliams",
-    "first_name": "Jameson",
-    "last_name": "Williams",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "DET",
-    "player_id": "8148",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jadarianprice",
-    "first_name": "Jadarian",
-    "last_name": "Price",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "SEA",
-    "player_id": "13286",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "terrymclaurin",
-    "first_name": "Terry",
-    "last_name": "McLaurin",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "WAS",
-    "player_id": "5927",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "romeodunze",
-    "first_name": "Rome",
-    "last_name": "Odunze",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "CHI",
-    "player_id": "11620",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "lamarjackson",
-    "first_name": "Lamar",
-    "last_name": "Jackson",
+    "search_full_name": "joshallen",
+    "first_name": "Josh",
+    "last_name": "Allen",
     "fantasy_positions": [
       "QB"
     ],
-    "team": "BAL",
-    "player_id": "4881",
+    "team": "BUF",
+    "player_id": "4984",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "garrettwilson",
+    "first_name": "Garrett",
+    "last_name": "Wilson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYJ",
+    "player_id": "8146",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jaylenwaddle",
+    "first_name": "Jaylen",
+    "last_name": "Waddle",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DEN",
+    "player_id": "7526",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "emekaegbuka",
+    "first_name": "Emeka",
+    "last_name": "Egbuka",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TB",
+    "player_id": "12514",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -896,30 +656,78 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "tylerwarren",
-    "first_name": "Tyler",
-    "last_name": "Warren",
+    "search_full_name": "davidmontgomery",
+    "first_name": "David",
+    "last_name": "Montgomery",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "HOU",
+    "player_id": "5892",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "colstonloveland",
+    "first_name": "Colston",
+    "last_name": "Loveland",
     "fantasy_positions": [
       "TE"
     ],
-    "team": "IND",
-    "player_id": "12518",
-    "injury": true,
+    "team": "CHI",
+    "player_id": "12517",
+    "injury": false,
     "injury_severity": "low",
-    "injury_note": "Warren has recovered well and was not listed on the Colts' Week 1 injury report on September 9. Indianapolis reported that every player on the 53-man roster practiced, and Warren wasn't among the limited players. He appears ready for a normal Week 1 role against Baltimore.",
-    "injury_name": "Right groin/adductor strain",
-    "injury_expected_return": "Week 1 2026",
-    "injury_reinjury_risk": "Low"
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "carnelltate",
-    "first_name": "Carnell",
-    "last_name": "Tate",
+    "search_full_name": "camskattebo",
+    "first_name": "Cam",
+    "last_name": "Skattebo",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NYG",
+    "player_id": "12481",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tetairoamcmillan",
+    "first_name": "Tetairoa",
+    "last_name": "McMillan",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "TEN",
-    "player_id": "13279",
+    "team": "CAR",
+    "player_id": "12526",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "travisetienne",
+    "first_name": "Travis",
+    "last_name": "Etienne",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NO",
+    "player_id": "7543",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -944,14 +752,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "brianthomas",
-    "first_name": "Brian",
-    "last_name": "Thomas",
+    "search_full_name": "bhayshultuten",
+    "first_name": "Bhayshul",
+    "last_name": "Tuten",
     "fantasy_positions": [
-      "WR"
+      "RB"
     ],
     "team": "JAX",
-    "player_id": "11631",
+    "player_id": "12490",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -976,6 +784,54 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "lutherburden",
+    "first_name": "Luther",
+    "last_name": "Burden",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CHI",
+    "player_id": "12519",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jamesonwilliams",
+    "first_name": "Jameson",
+    "last_name": "Williams",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DET",
+    "player_id": "8148",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "lamarjackson",
+    "first_name": "Lamar",
+    "last_name": "Jackson",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "BAL",
+    "player_id": "4881",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "parkerwashington",
     "first_name": "Parker",
     "last_name": "Washington",
@@ -992,14 +848,94 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "marvinharrison",
-    "first_name": "Marvin",
-    "last_name": "Harrison",
+    "search_full_name": "quinshonjudkins",
+    "first_name": "Quinshon",
+    "last_name": "Judkins",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CLE",
+    "player_id": "12512",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jadarianprice",
+    "first_name": "Jadarian",
+    "last_name": "Price",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SEA",
+    "player_id": "13286",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "davanteadams",
+    "first_name": "Davante",
+    "last_name": "Adams",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "ARI",
-    "player_id": "11628",
+    "team": "LAR",
+    "player_id": "2133",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "romeodunze",
+    "first_name": "Rome",
+    "last_name": "Odunze",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CHI",
+    "player_id": "11620",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tylerwarren",
+    "first_name": "Tyler",
+    "last_name": "Warren",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "IND",
+    "player_id": "12518",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "terrymclaurin",
+    "first_name": "Terry",
+    "last_name": "McLaurin",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "WAS",
+    "player_id": "5927",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1024,15 +960,15 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "treveyonhenderson",
-    "first_name": "TreVeyon",
-    "last_name": "Henderson",
+    "search_full_name": "ajbrown",
+    "first_name": "A.J.",
+    "last_name": "Brown",
     "fantasy_positions": [
-      "RB"
+      "WR"
     ],
     "team": "NE",
-    "player_id": "12529",
-    "injury": true,
+    "player_id": "5859",
+    "injury": false,
     "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
@@ -1056,14 +992,78 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "drakemaye",
-    "first_name": "Drake",
-    "last_name": "Maye",
+    "search_full_name": "chubahubbard",
+    "first_name": "Chuba",
+    "last_name": "Hubbard",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CAR",
+    "player_id": "7594",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "calebwilliams",
+    "first_name": "Caleb",
+    "last_name": "Williams",
     "fantasy_positions": [
       "QB"
     ],
+    "team": "CHI",
+    "player_id": "11560",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "carnelltate",
+    "first_name": "Carnell",
+    "last_name": "Tate",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TEN",
+    "player_id": "13279",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "brianthomas",
+    "first_name": "Brian",
+    "last_name": "Thomas",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "JAX",
+    "player_id": "11631",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "treveyonhenderson",
+    "first_name": "TreVeyon",
+    "last_name": "Henderson",
+    "fantasy_positions": [
+      "RB"
+    ],
     "team": "NE",
-    "player_id": "11564",
+    "player_id": "12529",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1088,14 +1088,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jaydendaniels",
-    "first_name": "Jayden",
-    "last_name": "Daniels",
+    "search_full_name": "marvinharrison",
+    "first_name": "Marvin",
+    "last_name": "Harrison",
     "fantasy_positions": [
-      "QB"
+      "WR"
     ],
-    "team": "WAS",
-    "player_id": "11566",
+    "team": "ARI",
+    "player_id": "11628",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1120,30 +1120,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jonathonbrooks",
-    "first_name": "Jonathon",
-    "last_name": "Brooks",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "CAR",
-    "player_id": "11583",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "calebwilliams",
-    "first_name": "Caleb",
-    "last_name": "Williams",
+    "search_full_name": "jaydendaniels",
+    "first_name": "Jayden",
+    "last_name": "Daniels",
     "fantasy_positions": [
       "QB"
     ],
-    "team": "CHI",
-    "player_id": "11560",
+    "team": "WAS",
+    "player_id": "11566",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1160,22 +1144,22 @@
     ],
     "team": "GB",
     "player_id": "9484",
-    "injury": true,
+    "injury": false,
     "injury_severity": "low",
-    "injury_note": "Surgery",
+    "injury_note": "",
     "injury_name": "",
     "injury_expected_return": "",
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "tonypollard",
-    "first_name": "Tony",
-    "last_name": "Pollard",
+    "search_full_name": "stefondiggs",
+    "first_name": "Stefon",
+    "last_name": "Diggs",
     "fantasy_positions": [
-      "RB"
+      "WR"
     ],
-    "team": "TEN",
-    "player_id": "5967",
+    "team": "WAS",
+    "player_id": "2449",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1200,6 +1184,102 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "matthewgolden",
+    "first_name": "Matthew",
+    "last_name": "Golden",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "GB",
+    "player_id": "12501",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "drakemaye",
+    "first_name": "Drake",
+    "last_name": "Maye",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "NE",
+    "player_id": "11564",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "trevorlawrence",
+    "first_name": "Trevor",
+    "last_name": "Lawrence",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "JAX",
+    "player_id": "7523",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jacorycroskeymerritt",
+    "first_name": "Jacory",
+    "last_name": "Croskey-Merritt",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "WAS",
+    "player_id": "12533",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "dkmetcalf",
+    "first_name": "DK",
+    "last_name": "Metcalf",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "PIT",
+    "player_id": "5846",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jordanmason",
+    "first_name": "Jordan",
+    "last_name": "Mason",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "MIN",
+    "player_id": "8408",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "michaelpittman",
     "first_name": "Michael",
     "last_name": "Pittman",
@@ -1208,22 +1288,6 @@
     ],
     "team": "PIT",
     "player_id": "6819",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "marshawnlloyd",
-    "first_name": "MarShawn",
-    "last_name": "Lloyd",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "GB",
-    "player_id": "11581",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1232,14 +1296,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jordanaddison",
-    "first_name": "Jordan",
-    "last_name": "Addison",
+    "search_full_name": "deebosamuel",
+    "first_name": "Deebo",
+    "last_name": "Samuel",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "MIN",
-    "player_id": "9756",
+    "team": "SF",
+    "player_id": "5872",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1248,14 +1312,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "makailemon",
-    "first_name": "Makai",
-    "last_name": "Lemon",
+    "search_full_name": "michaelwilson",
+    "first_name": "Michael",
+    "last_name": "Wilson",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "PHI",
-    "player_id": "13294",
+    "team": "ARI",
+    "player_id": "10232",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1296,22 +1360,6 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "dkmetcalf",
-    "first_name": "DK",
-    "last_name": "Metcalf",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "PIT",
-    "player_id": "5846",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
     "search_full_name": "samlaporta",
     "first_name": "Sam",
     "last_name": "LaPorta",
@@ -1320,22 +1368,6 @@
     ],
     "team": "DET",
     "player_id": "10859",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jkdobbins",
-    "first_name": "J.K.",
-    "last_name": "Dobbins",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "DEN",
-    "player_id": "6806",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1360,46 +1392,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "trevorlawrence",
-    "first_name": "Trevor",
-    "last_name": "Lawrence",
+    "search_full_name": "jkdobbins",
+    "first_name": "J.K.",
+    "last_name": "Dobbins",
     "fantasy_positions": [
-      "QB"
-    ],
-    "team": "JAX",
-    "player_id": "7523",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "stefondiggs",
-    "first_name": "Stefon",
-    "last_name": "Diggs",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "WAS",
-    "player_id": "2449",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "courtlandsutton",
-    "first_name": "Courtland",
-    "last_name": "Sutton",
-    "fantasy_positions": [
-      "WR"
+      "RB"
     ],
     "team": "DEN",
-    "player_id": "5045",
+    "player_id": "6806",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1408,30 +1408,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "chubahubbard",
-    "first_name": "Chuba",
-    "last_name": "Hubbard",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "CAR",
-    "player_id": "7594",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "michaelwilson",
-    "first_name": "Michael",
-    "last_name": "Wilson",
+    "search_full_name": "jordanaddison",
+    "first_name": "Jordan",
+    "last_name": "Addison",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "ARI",
-    "player_id": "10232",
+    "team": "MIN",
+    "player_id": "9756",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1440,14 +1424,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jordanmason",
-    "first_name": "Jordan",
-    "last_name": "Mason",
+    "search_full_name": "kylemonangai",
+    "first_name": "Kyle",
+    "last_name": "Monangai",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "MIN",
-    "player_id": "8408",
+    "team": "CHI",
+    "player_id": "12534",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1456,14 +1440,30 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "justinherbert",
-    "first_name": "Justin",
-    "last_name": "Herbert",
+    "search_full_name": "blakecorum",
+    "first_name": "Blake",
+    "last_name": "Corum",
     "fantasy_positions": [
-      "QB"
+      "RB"
     ],
-    "team": "LAC",
-    "player_id": "6797",
+    "team": "LAR",
+    "player_id": "11586",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jalencoker",
+    "first_name": "Jalen",
+    "last_name": "Coker",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CAR",
+    "player_id": "11646",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1488,30 +1488,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jacorycroskeymerritt",
-    "first_name": "Jacory",
-    "last_name": "Croskey-Merritt",
+    "search_full_name": "jonathonbrooks",
+    "first_name": "Jonathon",
+    "last_name": "Brooks",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "WAS",
-    "player_id": "12533",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "haroldfannin",
-    "first_name": "Harold",
-    "last_name": "Fannin",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "CLE",
-    "player_id": "12506",
+    "team": "CAR",
+    "player_id": "11583",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1520,14 +1504,30 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "kylepitts",
-    "first_name": "Kyle",
-    "last_name": "Pitts",
+    "search_full_name": "tonypollard",
+    "first_name": "Tony",
+    "last_name": "Pollard",
     "fantasy_positions": [
-      "TE"
+      "RB"
     ],
-    "team": "ATL",
-    "player_id": "7553",
+    "team": "TEN",
+    "player_id": "5967",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "justinherbert",
+    "first_name": "Justin",
+    "last_name": "Herbert",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "LAC",
+    "player_id": "6797",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -1552,510 +1552,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "georgekittle",
-    "first_name": "George",
-    "last_name": "Kittle",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "SF",
-    "player_id": "4217",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "Surgery",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "joshdowns",
-    "first_name": "Josh",
-    "last_name": "Downs",
+    "search_full_name": "makailemon",
+    "first_name": "Makai",
+    "last_name": "Lemon",
     "fantasy_positions": [
       "WR"
-    ],
-    "team": "IND",
-    "player_id": "9500",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "blakecorum",
-    "first_name": "Blake",
-    "last_name": "Corum",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "LAR",
-    "player_id": "11586",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kcconcepcion",
-    "first_name": "KC",
-    "last_name": "Concepcion",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "CLE",
-    "player_id": "13298",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "wandalerobinson",
-    "first_name": "Wan'Dale",
-    "last_name": "Robinson",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "TEN",
-    "player_id": "8126",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "rachaadwhite",
-    "first_name": "Rachaad",
-    "last_name": "White",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "WAS",
-    "player_id": "8136",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "matthewgolden",
-    "first_name": "Matthew",
-    "last_name": "Golden",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "GB",
-    "player_id": "12501",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "dezhaunstribling",
-    "first_name": "De'Zhaun",
-    "last_name": "Stribling",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "SF",
-    "player_id": "13417",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jaydenreed",
-    "first_name": "Jayden",
-    "last_name": "Reed",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "GB",
-    "player_id": "10222",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "brockpurdy",
-    "first_name": "Brock",
-    "last_name": "Purdy",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "SF",
-    "player_id": "8183",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kylemonangai",
-    "first_name": "Kyle",
-    "last_name": "Monangai",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "CHI",
-    "player_id": "12534",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jordyntyson",
-    "first_name": "Jordyn",
-    "last_name": "Tyson",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "NO",
-    "player_id": "13281",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "Strain",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kennygainwell",
-    "first_name": "Kenny",
-    "last_name": "Gainwell",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "TB",
-    "player_id": "7567",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "bonix",
-    "first_name": "Bo",
-    "last_name": "Nix",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "DEN",
-    "player_id": "11563",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "xavierworthy",
-    "first_name": "Xavier",
-    "last_name": "Worthy",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "KC",
-    "player_id": "11624",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jaxsondart",
-    "first_name": "Jaxson",
-    "last_name": "Dart",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "NYG",
-    "player_id": "12508",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "patrickmahomes",
-    "first_name": "Patrick",
-    "last_name": "Mahomes",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "KC",
-    "player_id": "4046",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "Surgery",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "joshjacobs",
-    "first_name": "Josh",
-    "last_name": "Jacobs",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "GB",
-    "player_id": "5850",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "deebosamuel",
-    "first_name": "Deebo",
-    "last_name": "Samuel",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "SF",
-    "player_id": "5872",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "matthewstafford",
-    "first_name": "Matthew",
-    "last_name": "Stafford",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "LAR",
-    "player_id": "421",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jaredgoff",
-    "first_name": "Jared",
-    "last_name": "Goff",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "DET",
-    "player_id": "3163",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "aaronjones",
-    "first_name": "Aaron",
-    "last_name": "Jones",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "MIN",
-    "player_id": "4199",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kylermurray",
-    "first_name": "Kyler",
-    "last_name": "Murray",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "MIN",
-    "player_id": "5849",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "romeodoubs",
-    "first_name": "Romeo",
-    "last_name": "Doubs",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "NE",
-    "player_id": "8121",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jakobimeyers",
-    "first_name": "Jakobi",
-    "last_name": "Meyers",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "JAX",
-    "player_id": "5947",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jalencoker",
-    "first_name": "Jalen",
-    "last_name": "Coker",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "CAR",
-    "player_id": "11646",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "denzelboston",
-    "first_name": "Denzel",
-    "last_name": "Boston",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "CLE",
-    "player_id": "13346",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "traviskelce",
-    "first_name": "Travis",
-    "last_name": "Kelce",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "KC",
-    "player_id": "1466",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "mikewashington",
-    "first_name": "Mike",
-    "last_name": "Washington",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "LV",
-    "player_id": "13305",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "chrisrodriguez",
-    "first_name": "Chris",
-    "last_name": "Rodriguez",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "JAX",
-    "player_id": "10219",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jakeferguson",
-    "first_name": "Jake",
-    "last_name": "Ferguson",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "DAL",
-    "player_id": "8110",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "dallasgoedert",
-    "first_name": "Dallas",
-    "last_name": "Goedert",
-    "fantasy_positions": [
-      "TE"
     ],
     "team": "PHI",
-    "player_id": "5022",
+    "player_id": "13294",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2080,14 +1584,446 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "bakermayfield",
-    "first_name": "Baker",
-    "last_name": "Mayfield",
+    "search_full_name": "marshawnlloyd",
+    "first_name": "MarShawn",
+    "last_name": "Lloyd",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "GB",
+    "player_id": "11581",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "isaiahlikely",
+    "first_name": "Isaiah",
+    "last_name": "Likely",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NYG",
+    "player_id": "8131",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "georgekittle",
+    "first_name": "George",
+    "last_name": "Kittle",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "SF",
+    "player_id": "4217",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "brockpurdy",
+    "first_name": "Brock",
+    "last_name": "Purdy",
     "fantasy_positions": [
       "QB"
     ],
+    "team": "SF",
+    "player_id": "8183",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "joshdowns",
+    "first_name": "Josh",
+    "last_name": "Downs",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "IND",
+    "player_id": "9500",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "rachaadwhite",
+    "first_name": "Rachaad",
+    "last_name": "White",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "WAS",
+    "player_id": "8136",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "courtlandsutton",
+    "first_name": "Courtland",
+    "last_name": "Sutton",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DEN",
+    "player_id": "5045",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jaxsondart",
+    "first_name": "Jaxson",
+    "last_name": "Dart",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "NYG",
+    "player_id": "12508",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kcconcepcion",
+    "first_name": "KC",
+    "last_name": "Concepcion",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CLE",
+    "player_id": "13298",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "joshjacobs",
+    "first_name": "Josh",
+    "last_name": "Jacobs",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "GB",
+    "player_id": "5850",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "wandalerobinson",
+    "first_name": "Wan'Dale",
+    "last_name": "Robinson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TEN",
+    "player_id": "8126",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "haroldfannin",
+    "first_name": "Harold",
+    "last_name": "Fannin",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "CLE",
+    "player_id": "12506",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "patrickmahomes",
+    "first_name": "Patrick",
+    "last_name": "Mahomes",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "KC",
+    "player_id": "4046",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "dallasgoedert",
+    "first_name": "Dallas",
+    "last_name": "Goedert",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "PHI",
+    "player_id": "5022",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "xavierworthy",
+    "first_name": "Xavier",
+    "last_name": "Worthy",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "KC",
+    "player_id": "11624",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jaydenreed",
+    "first_name": "Jayden",
+    "last_name": "Reed",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "GB",
+    "player_id": "10222",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kylepitts",
+    "first_name": "Kyle",
+    "last_name": "Pitts",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "ATL",
+    "player_id": "7553",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kennygainwell",
+    "first_name": "Kenny",
+    "last_name": "Gainwell",
+    "fantasy_positions": [
+      "RB"
+    ],
     "team": "TB",
-    "player_id": "4892",
+    "player_id": "7567",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "aaronjones",
+    "first_name": "Aaron",
+    "last_name": "Jones",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "MIN",
+    "player_id": "4199",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "bonix",
+    "first_name": "Bo",
+    "last_name": "Nix",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "DEN",
+    "player_id": "11563",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jaredgoff",
+    "first_name": "Jared",
+    "last_name": "Goff",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "DET",
+    "player_id": "3163",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jordyntyson",
+    "first_name": "Jordyn",
+    "last_name": "Tyson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NO",
+    "player_id": "13281",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "matthewstafford",
+    "first_name": "Matthew",
+    "last_name": "Stafford",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "LAR",
+    "player_id": "421",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kaelonblack",
+    "first_name": "Kaelon",
+    "last_name": "Black",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SF",
+    "player_id": "13414",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jakobimeyers",
+    "first_name": "Jakobi",
+    "last_name": "Meyers",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "JAX",
+    "player_id": "5947",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "chrisrodriguez",
+    "first_name": "Chris",
+    "last_name": "Rodriguez",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "JAX",
+    "player_id": "10219",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "traviskelce",
+    "first_name": "Travis",
+    "last_name": "Kelce",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "KC",
+    "player_id": "1466",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "denzelboston",
+    "first_name": "Denzel",
+    "last_name": "Boston",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CLE",
+    "player_id": "13346",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2112,14 +2048,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jonahcoleman",
-    "first_name": "Jonah",
-    "last_name": "Coleman",
+    "search_full_name": "tylerallgeier",
+    "first_name": "Tyler",
+    "last_name": "Allgeier",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "DEN",
-    "player_id": "13345",
+    "team": "ARI",
+    "player_id": "8132",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2136,6 +2072,294 @@
     ],
     "team": "IND",
     "player_id": "1479",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tylershough",
+    "first_name": "Tyler",
+    "last_name": "Shough",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "NO",
+    "player_id": "12545",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "romeodoubs",
+    "first_name": "Romeo",
+    "last_name": "Doubs",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NE",
+    "player_id": "8121",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jordanlove",
+    "first_name": "Jordan",
+    "last_name": "Love",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "GB",
+    "player_id": "6804",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "bakermayfield",
+    "first_name": "Baker",
+    "last_name": "Mayfield",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "TB",
+    "player_id": "4892",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "mikewashington",
+    "first_name": "Mike",
+    "last_name": "Washington",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "LV",
+    "player_id": "13305",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "khalilshakir",
+    "first_name": "Khalil",
+    "last_name": "Shakir",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BUF",
+    "player_id": "8134",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "juwanjohnson",
+    "first_name": "Juwan",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NO",
+    "player_id": "7002",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jonahcoleman",
+    "first_name": "Jonah",
+    "last_name": "Coleman",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DEN",
+    "player_id": "13345",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "calebdouglas",
+    "first_name": "Caleb",
+    "last_name": "Douglas",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIA",
+    "player_id": "13296",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kylermurray",
+    "first_name": "Kyler",
+    "last_name": "Murray",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "MIN",
+    "player_id": "5849",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "devinsingletary",
+    "first_name": "Devin",
+    "last_name": "Singletary",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NYG",
+    "player_id": "6130",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jakeferguson",
+    "first_name": "Jake",
+    "last_name": "Ferguson",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "DAL",
+    "player_id": "8110",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "markandrews",
+    "first_name": "Mark",
+    "last_name": "Andrews",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "BAL",
+    "player_id": "5012",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "rashidshaheed",
+    "first_name": "Rashid",
+    "last_name": "Shaheed",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SEA",
+    "player_id": "8676",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "malikwillis",
+    "first_name": "Malik",
+    "last_name": "Willis",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "MIA",
+    "player_id": "8161",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "keatonmitchell",
+    "first_name": "Keaton",
+    "last_name": "Mitchell",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "LAC",
+    "player_id": "9511",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "emmettjohnson",
+    "first_name": "Emmett",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "KC",
+    "player_id": "13337",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tankbigsby",
+    "first_name": "Tank",
+    "last_name": "Bigsby",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PHI",
+    "player_id": "9225",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2161,191 +2385,15 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "isaiahlikely",
-    "first_name": "Isaiah",
-    "last_name": "Likely",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "NYG",
-    "player_id": "8131",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jordanlove",
-    "first_name": "Jordan",
-    "last_name": "Love",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "GB",
-    "player_id": "6804",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "khalilshakir",
-    "first_name": "Khalil",
-    "last_name": "Shakir",
+    "search_full_name": "dezhaunstribling",
+    "first_name": "De'Zhaun",
+    "last_name": "Stribling",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "BUF",
-    "player_id": "8134",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "rashidshaheed",
-    "first_name": "Rashid",
-    "last_name": "Shaheed",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "SEA",
-    "player_id": "8676",
+    "team": "SF",
+    "player_id": "13417",
     "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "markandrews",
-    "first_name": "Mark",
-    "last_name": "Andrews",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "BAL",
-    "player_id": "5012",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tylerallgeier",
-    "first_name": "Tyler",
-    "last_name": "Allgeier",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "ARI",
-    "player_id": "8132",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "keatonmitchell",
-    "first_name": "Keaton",
-    "last_name": "Mitchell",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "LAC",
-    "player_id": "9511",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "malikwillis",
-    "first_name": "Malik",
-    "last_name": "Willis",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "MIA",
-    "player_id": "8161",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tylershough",
-    "first_name": "Tyler",
-    "last_name": "Shough",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "NO",
-    "player_id": "12545",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "juwanjohnson",
-    "first_name": "Juwan",
-    "last_name": "Johnson",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "NO",
-    "player_id": "7002",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tankbigsby",
-    "first_name": "Tank",
-    "last_name": "Bigsby",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "PHI",
-    "player_id": "9225",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jalenmcmillan",
-    "first_name": "Jalen",
-    "last_name": "McMillan",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "TB",
-    "player_id": "11618",
-    "injury": true,
     "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
@@ -2369,46 +2417,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "chigokonkwo",
-    "first_name": "Chig",
-    "last_name": "Okonkwo",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "WAS",
-    "player_id": "8210",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "emmettjohnson",
-    "first_name": "Emmett",
-    "last_name": "Johnson",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "KC",
-    "player_id": "13337",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jakobilane",
-    "first_name": "Ja'Kobi",
-    "last_name": "Lane",
+    "search_full_name": "devaughnvele",
+    "first_name": "Devaughn",
+    "last_name": "Vele",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "BAL",
-    "player_id": "13293",
+    "team": "NO",
+    "player_id": "11834",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2449,30 +2465,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "omarcooper",
-    "first_name": "Omar",
-    "last_name": "Cooper",
+    "search_full_name": "chrisbrooks",
+    "first_name": "Chris",
+    "last_name": "Brooks",
     "fantasy_positions": [
-      "WR"
+      "RB"
     ],
-    "team": "NYJ",
-    "player_id": "13276",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "samdarnold",
-    "first_name": "Sam",
-    "last_name": "Darnold",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "SEA",
-    "player_id": "4943",
+    "team": "GB",
+    "player_id": "11370",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2497,30 +2497,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "kayshonboutte",
-    "first_name": "Kayshon",
-    "last_name": "Boutte",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "HOU",
-    "player_id": "9504",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "danieljones",
-    "first_name": "Daniel",
-    "last_name": "Jones",
+    "search_full_name": "bryceyoung",
+    "first_name": "Bryce",
+    "last_name": "Young",
     "fantasy_positions": [
       "QB"
     ],
-    "team": "IND",
-    "player_id": "5870",
+    "team": "CAR",
+    "player_id": "9228",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2529,46 +2513,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "dylansampson",
-    "first_name": "Dylan",
-    "last_name": "Sampson",
+    "search_full_name": "dontayvionwicks",
+    "first_name": "Dontayvion",
+    "last_name": "Wicks",
     "fantasy_positions": [
-      "RB"
+      "WR"
     ],
-    "team": "CLE",
-    "player_id": "12469",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "brianrobinson",
-    "first_name": "Brian",
-    "last_name": "Robinson",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "ATL",
-    "player_id": "8154",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "daltonschultz",
-    "first_name": "Dalton",
-    "last_name": "Schultz",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "HOU",
-    "player_id": "5001",
+    "team": "PHI",
+    "player_id": "9486",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2593,14 +2545,62 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "camward",
-    "first_name": "Cam",
-    "last_name": "Ward",
+    "search_full_name": "brianrobinson",
+    "first_name": "Brian",
+    "last_name": "Robinson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "ATL",
+    "player_id": "8154",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jalenmcmillan",
+    "first_name": "Jalen",
+    "last_name": "McMillan",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TB",
+    "player_id": "11618",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "chigokonkwo",
+    "first_name": "Chig",
+    "last_name": "Okonkwo",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "WAS",
+    "player_id": "8210",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "danieljones",
+    "first_name": "Daniel",
+    "last_name": "Jones",
     "fantasy_positions": [
       "QB"
     ],
-    "team": "TEN",
-    "player_id": "12522",
+    "team": "IND",
+    "player_id": "5870",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2625,22 +2625,6 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "kalebjohnson",
-    "first_name": "Kaleb",
-    "last_name": "Johnson",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "GB",
-    "player_id": "12504",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
     "search_full_name": "kenyonsadiq",
     "first_name": "Kenyon",
     "last_name": "Sadiq",
@@ -2649,22 +2633,6 @@
     ],
     "team": "NYJ",
     "player_id": "13330",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "Surgery",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "bryceyoung",
-    "first_name": "Bryce",
-    "last_name": "Young",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "CAR",
-    "player_id": "9228",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2673,30 +2641,62 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "terranceferguson",
-    "first_name": "Terrance",
-    "last_name": "Ferguson",
+    "search_full_name": "omarcooper",
+    "first_name": "Omar",
+    "last_name": "Cooper",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYJ",
+    "player_id": "13276",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kayshonboutte",
+    "first_name": "Kayshon",
+    "last_name": "Boutte",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "HOU",
+    "player_id": "9504",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kendremiller",
+    "first_name": "Kendre",
+    "last_name": "Miller",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NO",
+    "player_id": "9757",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "daltonschultz",
+    "first_name": "Dalton",
+    "last_name": "Schultz",
     "fantasy_positions": [
       "TE"
     ],
-    "team": "LAR",
-    "player_id": "12487",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "calebdouglas",
-    "first_name": "Caleb",
-    "last_name": "Douglas",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "MIA",
-    "player_id": "13296",
+    "team": "HOU",
+    "player_id": "5001",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2705,31 +2705,15 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "isiahpacheco",
-    "first_name": "Isiah",
-    "last_name": "Pacheco",
+    "search_full_name": "alvinkamara",
+    "first_name": "Alvin",
+    "last_name": "Kamara",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "DET",
-    "player_id": "8205",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "treharris",
-    "first_name": "Tre'",
-    "last_name": "Harris",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "LAC",
-    "player_id": "12509",
-    "injury": true,
+    "team": "NO",
+    "player_id": "4035",
+    "injury": false,
     "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
@@ -2737,14 +2721,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "chrisbrooks",
-    "first_name": "Chris",
-    "last_name": "Brooks",
+    "search_full_name": "camward",
+    "first_name": "Cam",
+    "last_name": "Ward",
     "fantasy_positions": [
-      "RB"
+      "QB"
     ],
-    "team": "GB",
-    "player_id": "11370",
+    "team": "TEN",
+    "player_id": "12522",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2777,198 +2761,6 @@
     ],
     "team": "SEA",
     "player_id": "9753",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "Surgery",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jalennailor",
-    "first_name": "Jalen",
-    "last_name": "Nailor",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "LV",
-    "player_id": "8180",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "ajbarner",
-    "first_name": "AJ",
-    "last_name": "Barner",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "SEA",
-    "player_id": "11603",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kaelonblack",
-    "first_name": "Kaelon",
-    "last_name": "Black",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "SF",
-    "player_id": "13414",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "orondegadsden",
-    "first_name": "Oronde",
-    "last_name": "Gadsden",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "LAC",
-    "player_id": "12493",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "darnellmooney",
-    "first_name": "Darnell",
-    "last_name": "Mooney",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "NYG",
-    "player_id": "7090",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "najeeharris",
-    "first_name": "Najee",
-    "last_name": "Harris",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "NYG",
-    "player_id": "7528",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "nicholassingleton",
-    "first_name": "Nicholas",
-    "last_name": "Singleton",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "TEN",
-    "player_id": "13288",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "malikwashington",
-    "first_name": "Malik",
-    "last_name": "Washington",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "MIA",
-    "player_id": "11610",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tyronetracy",
-    "first_name": "Tyrone",
-    "last_name": "Tracy",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "NYG",
-    "player_id": "11655",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kaytronallen",
-    "first_name": "Kaytron",
-    "last_name": "Allen",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "WAS",
-    "player_id": "13405",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "alvinkamara",
-    "first_name": "Alvin",
-    "last_name": "Kamara",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "NO",
-    "player_id": "4035",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "antoniowilliams",
-    "first_name": "Antonio",
-    "last_name": "Williams",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "WAS",
-    "player_id": "13301",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -2993,158 +2785,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "raydavis",
-    "first_name": "Ray",
-    "last_name": "Davis",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "BUF",
-    "player_id": "11575",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "cyrusallen",
-    "first_name": "Cyrus",
-    "last_name": "Allen",
+    "search_full_name": "treharris",
+    "first_name": "Tre'",
+    "last_name": "Harris",
     "fantasy_positions": [
       "WR"
-    ],
-    "team": "KC",
-    "player_id": "13413",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "ryanflournoy",
-    "first_name": "Ryan",
-    "last_name": "Flournoy",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "DAL",
-    "player_id": "11783",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tankdell",
-    "first_name": "Tank",
-    "last_name": "Dell",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "HOU",
-    "player_id": "9502",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "Surgery",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "calvinridley",
-    "first_name": "Calvin",
-    "last_name": "Ridley",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "TEN",
-    "player_id": "4981",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "chrisbell",
-    "first_name": "Chris",
-    "last_name": "Bell",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "MIA",
-    "player_id": "13311",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "devinsingletary",
-    "first_name": "Devin",
-    "last_name": "Singletary",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "NYG",
-    "player_id": "6130",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "aaronrodgers",
-    "first_name": "Aaron",
-    "last_name": "Rodgers",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "PIT",
-    "player_id": "96",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "germiebernard",
-    "first_name": "Germie",
-    "last_name": "Bernard",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "PIT",
-    "player_id": "13274",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "davidnjoku",
-    "first_name": "David",
-    "last_name": "Njoku",
-    "fantasy_positions": [
-      "TE"
     ],
     "team": "LAC",
-    "player_id": "4033",
+    "player_id": "12509",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -3153,78 +2801,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "malikdavis",
-    "first_name": "Malik",
-    "last_name": "Davis",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "DAL",
-    "player_id": "8800",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "seantucker",
-    "first_name": "Sean",
-    "last_name": "Tucker",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "TB",
-    "player_id": "9506",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "gunnarhelm",
-    "first_name": "Gunnar",
-    "last_name": "Helm",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "TEN",
-    "player_id": "12502",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "zachariahbranch",
-    "first_name": "Zachariah",
-    "last_name": "Branch",
+    "search_full_name": "antoniowilliams",
+    "first_name": "Antonio",
+    "last_name": "Williams",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "ATL",
-    "player_id": "13320",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jerryjeudy",
-    "first_name": "Jerry",
-    "last_name": "Jeudy",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "CLE",
-    "player_id": "6783",
+    "team": "WAS",
+    "player_id": "13301",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -3249,14 +2833,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jauanjennings",
-    "first_name": "Jauan",
-    "last_name": "Jennings",
+    "search_full_name": "jalennailor",
+    "first_name": "Jalen",
+    "last_name": "Nailor",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "MIN",
-    "player_id": "7049",
+    "team": "LV",
+    "player_id": "8180",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -3265,30 +2849,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "kimanividal",
-    "first_name": "Kimani",
-    "last_name": "Vidal",
+    "search_full_name": "isiahpacheco",
+    "first_name": "Isiah",
+    "last_name": "Pacheco",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "LAC",
-    "player_id": "11647",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "isaacteslaa",
-    "first_name": "Isaac",
-    "last_name": "TeSlaa",
-    "fantasy_positions": [
-      "WR"
-    ],
     "team": "DET",
-    "player_id": "12535",
+    "player_id": "8205",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -3297,14 +2865,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "malachifields",
-    "first_name": "Malachi",
-    "last_name": "Fields",
+    "search_full_name": "ajbarner",
+    "first_name": "AJ",
+    "last_name": "Barner",
     "fantasy_positions": [
-      "WR"
+      "TE"
     ],
-    "team": "NYG",
-    "player_id": "13285",
+    "team": "SEA",
+    "player_id": "11603",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -3329,6 +2897,134 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "jakobilane",
+    "first_name": "Ja'Kobi",
+    "last_name": "Lane",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BAL",
+    "player_id": "13293",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "chrisbell",
+    "first_name": "Chris",
+    "last_name": "Bell",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIA",
+    "player_id": "13311",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "aaronrodgers",
+    "first_name": "Aaron",
+    "last_name": "Rodgers",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "PIT",
+    "player_id": "96",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "orondegadsden",
+    "first_name": "Oronde",
+    "last_name": "Gadsden",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LAC",
+    "player_id": "12493",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kalebjohnson",
+    "first_name": "Kaleb",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "GB",
+    "player_id": "12504",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "dylansampson",
+    "first_name": "Dylan",
+    "last_name": "Sampson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CLE",
+    "player_id": "12469",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "malikwashington",
+    "first_name": "Malik",
+    "last_name": "Washington",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIA",
+    "player_id": "11610",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "najeeharris",
+    "first_name": "Najee",
+    "last_name": "Harris",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NYG",
+    "player_id": "7528",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "patfreiermuth",
     "first_name": "Pat",
     "last_name": "Freiermuth",
@@ -3337,6 +3033,438 @@
     ],
     "team": "PIT",
     "player_id": "7600",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "nicholassingleton",
+    "first_name": "Nicholas",
+    "last_name": "Singleton",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "TEN",
+    "player_id": "13288",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "raydavis",
+    "first_name": "Ray",
+    "last_name": "Davis",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "BUF",
+    "player_id": "11575",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kaytronallen",
+    "first_name": "Kaytron",
+    "last_name": "Allen",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "WAS",
+    "player_id": "13405",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "mackhollins",
+    "first_name": "Mack",
+    "last_name": "Hollins",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NE",
+    "player_id": "4177",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "terranceferguson",
+    "first_name": "Terrance",
+    "last_name": "Ferguson",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LAR",
+    "player_id": "12487",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "darnellmooney",
+    "first_name": "Darnell",
+    "last_name": "Mooney",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYG",
+    "player_id": "7090",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "ryanflournoy",
+    "first_name": "Ryan",
+    "last_name": "Flournoy",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DAL",
+    "player_id": "11783",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "samdarnold",
+    "first_name": "Sam",
+    "last_name": "Darnold",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "SEA",
+    "player_id": "4943",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "cyrusallen",
+    "first_name": "Cyrus",
+    "last_name": "Allen",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "KC",
+    "player_id": "13413",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tankdell",
+    "first_name": "Tank",
+    "last_name": "Dell",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "HOU",
+    "player_id": "9502",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "michaelmayer",
+    "first_name": "Michael",
+    "last_name": "Mayer",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LV",
+    "player_id": "9482",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "seantucker",
+    "first_name": "Sean",
+    "last_name": "Tucker",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "TB",
+    "player_id": "9506",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "calvinridley",
+    "first_name": "Calvin",
+    "last_name": "Ridley",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TEN",
+    "player_id": "4981",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kimanividal",
+    "first_name": "Kimani",
+    "last_name": "Vidal",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "LAC",
+    "player_id": "11647",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "malachifields",
+    "first_name": "Malachi",
+    "last_name": "Fields",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYG",
+    "player_id": "13285",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "germiebernard",
+    "first_name": "Germie",
+    "last_name": "Bernard",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "PIT",
+    "player_id": "13274",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "gunnarhelm",
+    "first_name": "Gunnar",
+    "last_name": "Helm",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "TEN",
+    "player_id": "12502",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "patbryant",
+    "first_name": "Pat",
+    "last_name": "Bryant",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DEN",
+    "player_id": "12492",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "davidnjoku",
+    "first_name": "David",
+    "last_name": "Njoku",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "LAC",
+    "player_id": "4033",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jerryjeudy",
+    "first_name": "Jerry",
+    "last_name": "Jeudy",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CLE",
+    "player_id": "6783",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "genosmith",
+    "first_name": "Geno",
+    "last_name": "Smith",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "NYJ",
+    "player_id": "1373",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "zachariahbranch",
+    "first_name": "Zachariah",
+    "last_name": "Branch",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "ATL",
+    "player_id": "13320",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "cadeotton",
+    "first_name": "Cade",
+    "last_name": "Otton",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "TB",
+    "player_id": "8111",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tyronetracy",
+    "first_name": "Tyrone",
+    "last_name": "Tracy",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NYG",
+    "player_id": "11655",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "samajeperine",
+    "first_name": "Samaje",
+    "last_name": "Perine",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CIN",
+    "player_id": "4147",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jauanjennings",
+    "first_name": "Jauan",
+    "last_name": "Jennings",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "MIN",
+    "player_id": "7049",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "isaacteslaa",
+    "first_name": "Isaac",
+    "last_name": "TeSlaa",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DET",
+    "player_id": "12535",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -3377,254 +3505,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "demondclaiborne",
-    "first_name": "Demond",
-    "last_name": "Claiborne",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "MIN",
-    "player_id": "13347",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "genosmith",
-    "first_name": "Geno",
-    "last_name": "Smith",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "NYJ",
-    "player_id": "1373",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "cadeotton",
-    "first_name": "Cade",
-    "last_name": "Otton",
+    "search_full_name": "mikegesicki",
+    "first_name": "Mike",
+    "last_name": "Gesicki",
     "fantasy_positions": [
       "TE"
     ],
-    "team": "TB",
-    "player_id": "8111",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "patbryant",
-    "first_name": "Pat",
-    "last_name": "Bryant",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "DEN",
-    "player_id": "12492",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "dontayvionwicks",
-    "first_name": "Dontayvion",
-    "last_name": "Wicks",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "PHI",
-    "player_id": "9486",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "elijahsarratt",
-    "first_name": "Elijah",
-    "last_name": "Sarratt",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "BAL",
-    "player_id": "13268",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "brashardsmith",
-    "first_name": "Brashard",
-    "last_name": "Smith",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "KC",
-    "player_id": "12455",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "elicayomanor",
-    "first_name": "Elic",
-    "last_name": "Ayomanor",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "TEN",
-    "player_id": "12499",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "dariusslayton",
-    "first_name": "Darius",
-    "last_name": "Slayton",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": null,
-    "player_id": "6149",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tedhurst",
-    "first_name": "Ted",
-    "last_name": "Hurst",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "TB",
-    "player_id": "13317",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "olliegordon",
-    "first_name": "Ollie",
-    "last_name": "Gordon",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "MIA",
-    "player_id": "12495",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "elistowers",
-    "first_name": "Eli",
-    "last_name": "Stowers",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "PHI",
-    "player_id": "13349",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "calvinaustin",
-    "first_name": "Calvin",
-    "last_name": "Austin",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "NYG",
-    "player_id": "8125",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "keoncoleman",
-    "first_name": "Keon",
-    "last_name": "Coleman",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "BUF",
-    "player_id": "11637",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "Sprain",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "lukemccaffrey",
-    "first_name": "Luke",
-    "last_name": "McCaffrey",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "WAS",
-    "player_id": "11650",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "fernandomendoza",
-    "first_name": "Fernando",
-    "last_name": "Mendoza",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "LV",
-    "player_id": "13269",
+    "team": "CIN",
+    "player_id": "4993",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -3649,14 +3537,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "chimeredike",
-    "first_name": "Chimere",
-    "last_name": "Dike",
+    "search_full_name": "georgeholani",
+    "first_name": "George",
+    "last_name": "Holani",
     "fantasy_positions": [
-      "WR"
+      "RB"
     ],
-    "team": "TEN",
-    "player_id": "12540",
+    "team": "SEA",
+    "player_id": "12048",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -3665,14 +3553,126 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "samajeperine",
-    "first_name": "Samaje",
-    "last_name": "Perine",
+    "search_full_name": "demondclaiborne",
+    "first_name": "Demond",
+    "last_name": "Claiborne",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "CIN",
-    "player_id": "4147",
+    "team": "MIN",
+    "player_id": "13347",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "brashardsmith",
+    "first_name": "Brashard",
+    "last_name": "Smith",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "KC",
+    "player_id": "12455",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "emaridemercado",
+    "first_name": "Emari",
+    "last_name": "Demercado",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DAL",
+    "player_id": "11199",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kalifraymond",
+    "first_name": "Kalif",
+    "last_name": "Raymond",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CHI",
+    "player_id": "3634",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "fernandomendoza",
+    "first_name": "Fernando",
+    "last_name": "Mendoza",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "LV",
+    "player_id": "13269",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "elicayomanor",
+    "first_name": "Elic",
+    "last_name": "Ayomanor",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TEN",
+    "player_id": "12499",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tedhurst",
+    "first_name": "Ted",
+    "last_name": "Hurst",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TB",
+    "player_id": "13317",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "elijahsarratt",
+    "first_name": "Elijah",
+    "last_name": "Sarratt",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BAL",
+    "player_id": "13268",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -3689,7 +3689,7 @@
     ],
     "team": "HOU",
     "player_id": "12536",
-    "injury": true,
+    "injury": false,
     "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
@@ -3697,32 +3697,16 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "christiankirk",
-    "first_name": "Christian",
-    "last_name": "Kirk",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "SF",
-    "player_id": "4950",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jamesconner",
-    "first_name": "James",
-    "last_name": "Conner",
+    "search_full_name": "isaacguerendo",
+    "first_name": "Isaac",
+    "last_name": "Guerendo",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "ARI",
-    "player_id": "4137",
-    "injury": true,
-    "injury_severity": "high",
+    "team": "SF",
+    "player_id": "11651",
+    "injury": false,
+    "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
     "injury_expected_return": "",
@@ -3745,302 +3729,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jordanjames",
-    "first_name": "Jordan",
-    "last_name": "James",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "SF",
-    "player_id": "12467",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "sethmcgowan",
-    "first_name": "Seth",
-    "last_name": "McGowan",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "IND",
-    "player_id": "13424",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tezjohnson",
-    "first_name": "Tez",
-    "last_name": "Johnson",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "TB",
-    "player_id": "12485",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "brycelance",
-    "first_name": "Bryce",
-    "last_name": "Lance",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "NO",
-    "player_id": "13420",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "devaughnvele",
-    "first_name": "Devaughn",
-    "last_name": "Vele",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "NO",
-    "player_id": "11834",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "georgeholani",
-    "first_name": "George",
-    "last_name": "Holani",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "SEA",
-    "player_id": "12048",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tyjohnson",
-    "first_name": "Ty",
-    "last_name": "Johnson",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "BUF",
-    "player_id": "6039",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tyquanthornton",
-    "first_name": "Tyquan",
-    "last_name": "Thornton",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "KC",
-    "player_id": "8188",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "toryhorton",
-    "first_name": "Tory",
-    "last_name": "Horton",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "SEA",
-    "player_id": "12497",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kylewilliams",
-    "first_name": "Kyle",
-    "last_name": "Williams",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "NE",
-    "player_id": "12547",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kendremiller",
-    "first_name": "Kendre",
-    "last_name": "Miller",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "NO",
-    "player_id": "9757",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "cedrictillman",
-    "first_name": "Cedric",
-    "last_name": "Tillman",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "NO",
-    "player_id": "10444",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jaydonblue",
-    "first_name": "Jaydon",
-    "last_name": "Blue",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "PHI",
-    "player_id": "12457",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "maxklare",
-    "first_name": "Max",
-    "last_name": "Klare",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "LAR",
-    "player_id": "13278",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "skylerbell",
-    "first_name": "Skyler",
-    "last_name": "Bell",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "BUF",
-    "player_id": "13402",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "adamrandall",
-    "first_name": "Adam",
-    "last_name": "Randall",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "BAL",
-    "player_id": "13302",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "justicehill",
-    "first_name": "Justice",
-    "last_name": "Hill",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "BAL",
-    "player_id": "5995",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "mikegesicki",
-    "first_name": "Mike",
-    "last_name": "Gesicki",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "CIN",
-    "player_id": "4993",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tuatagovailoa",
-    "first_name": "Tua",
-    "last_name": "Tagovailoa",
+    "search_full_name": "drewlock",
+    "first_name": "Drew",
+    "last_name": "Lock",
     "fantasy_positions": [
       "QB"
     ],
-    "team": "ATL",
-    "player_id": "6768",
+    "team": "SEA",
+    "player_id": "5854",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4049,14 +3745,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "rashodbateman",
-    "first_name": "Rashod",
-    "last_name": "Bateman",
+    "search_full_name": "keoncoleman",
+    "first_name": "Keon",
+    "last_name": "Coleman",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "BAL",
-    "player_id": "7571",
+    "team": "BUF",
+    "player_id": "11637",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4081,70 +3777,6 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "isaiahdavis",
-    "first_name": "Isaiah",
-    "last_name": "Davis",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "NYJ",
-    "player_id": "11571",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "andreiiosivas",
-    "first_name": "Andrei",
-    "last_name": "Iosivas",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "CIN",
-    "player_id": "10226",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "isaacguerendo",
-    "first_name": "Isaac",
-    "last_name": "Guerendo",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "SF",
-    "player_id": "11651",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "Surgery",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "emanuelwilson",
-    "first_name": "Emanuel",
-    "last_name": "Wilson",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "SEA",
-    "player_id": "11435",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
     "search_full_name": "cooperkupp",
     "first_name": "Cooper",
     "last_name": "Kupp",
@@ -4153,6 +3785,70 @@
     ],
     "team": "SEA",
     "player_id": "4039",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "calvinaustin",
+    "first_name": "Calvin",
+    "last_name": "Austin",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NYG",
+    "player_id": "8125",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "sethmcgowan",
+    "first_name": "Seth",
+    "last_name": "McGowan",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "IND",
+    "player_id": "13424",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jordanjames",
+    "first_name": "Jordan",
+    "last_name": "James",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SF",
+    "player_id": "12467",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "elistowers",
+    "first_name": "Eli",
+    "last_name": "Stowers",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "PHI",
+    "player_id": "13349",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4177,30 +3873,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "michaelpenix",
-    "first_name": "Michael",
-    "last_name": "Penix",
+    "search_full_name": "lukemccaffrey",
+    "first_name": "Luke",
+    "last_name": "McCaffrey",
     "fantasy_positions": [
-      "QB"
+      "WR"
     ],
-    "team": "ATL",
-    "player_id": "11559",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "Surgery",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "djgiddens",
-    "first_name": "DJ",
-    "last_name": "Giddens",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "IND",
-    "player_id": "12471",
+    "team": "WAS",
+    "player_id": "11650",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4209,15 +3889,447 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "xavierlegette",
-    "first_name": "Xavier",
-    "last_name": "Legette",
+    "search_full_name": "christiankirk",
+    "first_name": "Christian",
+    "last_name": "Kirk",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "CAR",
-    "player_id": "11626",
-    "injury": true,
+    "team": "SF",
+    "player_id": "4950",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "olliegordon",
+    "first_name": "Ollie",
+    "last_name": "Gordon",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "MIA",
+    "player_id": "12495",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "chimeredike",
+    "first_name": "Chimere",
+    "last_name": "Dike",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TEN",
+    "player_id": "12540",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "sionevaki",
+    "first_name": "Sione",
+    "last_name": "Vaki",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "DET",
+    "player_id": "11729",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "justicehill",
+    "first_name": "Justice",
+    "last_name": "Hill",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "BAL",
+    "player_id": "5995",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jaydonblue",
+    "first_name": "Jaydon",
+    "last_name": "Blue",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PHI",
+    "player_id": "12457",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "skylerbell",
+    "first_name": "Skyler",
+    "last_name": "Bell",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BUF",
+    "player_id": "13402",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "toryhorton",
+    "first_name": "Tory",
+    "last_name": "Horton",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SEA",
+    "player_id": "12497",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tezjohnson",
+    "first_name": "Tez",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "TB",
+    "player_id": "12485",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tuatagovailoa",
+    "first_name": "Tua",
+    "last_name": "Tagovailoa",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "ATL",
+    "player_id": "6768",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "isaiahdavis",
+    "first_name": "Isaiah",
+    "last_name": "Davis",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "NYJ",
+    "player_id": "11571",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jamesconner",
+    "first_name": "James",
+    "last_name": "Conner",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "ARI",
+    "player_id": "4137",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tyquanthornton",
+    "first_name": "Tyquan",
+    "last_name": "Thornton",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "KC",
+    "player_id": "8188",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "adamrandall",
+    "first_name": "Adam",
+    "last_name": "Randall",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "BAL",
+    "player_id": "13302",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "demariodouglas",
+    "first_name": "DeMario",
+    "last_name": "Douglas",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NE",
+    "player_id": "9501",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "brycelance",
+    "first_name": "Bryce",
+    "last_name": "Lance",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NO",
+    "player_id": "13420",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "michaelpenix",
+    "first_name": "Michael",
+    "last_name": "Penix",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "ATL",
+    "player_id": "11559",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "cedrictillman",
+    "first_name": "Cedric",
+    "last_name": "Tillman",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NO",
+    "player_id": "10444",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kirkcousins",
+    "first_name": "Kirk",
+    "last_name": "Cousins",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "LV",
+    "player_id": "1166",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "rashodbateman",
+    "first_name": "Rashod",
+    "last_name": "Bateman",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BAL",
+    "player_id": "7571",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "colekmet",
+    "first_name": "Cole",
+    "last_name": "Kmet",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "CHI",
+    "player_id": "6826",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "demarcusrobinson",
+    "first_name": "Demarcus",
+    "last_name": "Robinson",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "SF",
+    "player_id": "3286",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "andreiiosivas",
+    "first_name": "Andrei",
+    "last_name": "Iosivas",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CIN",
+    "player_id": "10226",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tyjohnson",
+    "first_name": "Ty",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "BUF",
+    "player_id": "6039",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "emanuelwilson",
+    "first_name": "Emanuel",
+    "last_name": "Wilson",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "SEA",
+    "player_id": "11435",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "shedeursanders",
+    "first_name": "Shedeur",
+    "last_name": "Sanders",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "CLE",
+    "player_id": "12524",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "deshaunwatson",
+    "first_name": "Deshaun",
+    "last_name": "Watson",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "CLE",
+    "player_id": "4017",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "joshuapalmer",
+    "first_name": "Joshua",
+    "last_name": "Palmer",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "BUF",
+    "player_id": "7670",
+    "injury": false,
     "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
@@ -4249,70 +4361,6 @@
     ],
     "team": "SF",
     "player_id": "6803",
-    "injury": true,
-    "injury_severity": "medium",
-    "injury_note": "Surgery",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "marquisebrown",
-    "first_name": "Marquise",
-    "last_name": "Brown",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "PHI",
-    "player_id": "5848",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kirkcousins",
-    "first_name": "Kirk",
-    "last_name": "Cousins",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "LV",
-    "player_id": "1166",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "deshaunwatson",
-    "first_name": "Deshaun",
-    "last_name": "Watson",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "CLE",
-    "player_id": "4017",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "shedeursanders",
-    "first_name": "Shedeur",
-    "last_name": "Sanders",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "CLE",
-    "player_id": "12524",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4337,134 +4385,6 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "devinneal",
-    "first_name": "Devin",
-    "last_name": "Neal",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": null,
-    "player_id": "12476",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "mackhollins",
-    "first_name": "Mack",
-    "last_name": "Hollins",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "NE",
-    "player_id": "4177",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "konatamumpfield",
-    "first_name": "Konata",
-    "last_name": "Mumpfield",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "LAR",
-    "player_id": "12718",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jaketonges",
-    "first_name": "Jake",
-    "last_name": "Tonges",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "SF",
-    "player_id": "8698",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "olamidezaccheaus",
-    "first_name": "Olamide",
-    "last_name": "Zaccheaus",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "ATL",
-    "player_id": "6271",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "treybenson",
-    "first_name": "Trey",
-    "last_name": "Benson",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "ARI",
-    "player_id": "11589",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "darnellwashington",
-    "first_name": "Darnell",
-    "last_name": "Washington",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "PIT",
-    "player_id": "9479",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tyreekhill",
-    "first_name": "Tyreek",
-    "last_name": "Hill",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": null,
-    "player_id": "3321",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "Hill suffered a devastating left knee dislocation on September 29, 2025, with multiple ligament tears including the ACL. He underwent two surgeries and has spent nearly a year rebuilding strength and explosiveness in the leg.",
-    "injury_name": "Left knee dislocation with multi-ligament tears (including ACL)",
-    "injury_expected_return": "TBD",
-    "injury_reinjury_risk": "High"
-  },
-  {
     "search_full_name": "darrenwaller",
     "first_name": "Darren",
     "last_name": "Waller",
@@ -4473,6 +4393,38 @@
     ],
     "team": "CAR",
     "player_id": "2505",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "djgiddens",
+    "first_name": "DJ",
+    "last_name": "Giddens",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "IND",
+    "player_id": "12471",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "kendrickbourne",
+    "first_name": "Kendrick",
+    "last_name": "Bourne",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "ARI",
+    "player_id": "4454",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4497,15 +4449,15 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "theojohnson",
-    "first_name": "Theo",
-    "last_name": "Johnson",
+    "search_full_name": "treybenson",
+    "first_name": "Trey",
+    "last_name": "Benson",
     "fantasy_positions": [
-      "TE"
+      "RB"
     ],
-    "team": "NYG",
-    "player_id": "11597",
-    "injury": true,
+    "team": "ARI",
+    "player_id": "11589",
+    "injury": false,
     "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
@@ -4513,14 +4465,78 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "masontaylor",
-    "first_name": "Mason",
-    "last_name": "Taylor",
+    "search_full_name": "dariusslayton",
+    "first_name": "Darius",
+    "last_name": "Slayton",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "",
+    "player_id": "6149",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "maxklare",
+    "first_name": "Max",
+    "last_name": "Klare",
     "fantasy_positions": [
       "TE"
     ],
-    "team": "NYJ",
-    "player_id": "12498",
+    "team": "LAR",
+    "player_id": "13278",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "tyreekhill",
+    "first_name": "Tyreek",
+    "last_name": "Hill",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "",
+    "player_id": "3321",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "xavierlegette",
+    "first_name": "Xavier",
+    "last_name": "Legette",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "CAR",
+    "player_id": "11626",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "darnellwashington",
+    "first_name": "Darnell",
+    "last_name": "Washington",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "PIT",
+    "player_id": "9479",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4537,22 +4553,6 @@
     ],
     "team": "JAX",
     "player_id": "12544",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "joshuapalmer",
-    "first_name": "Joshua",
-    "last_name": "Palmer",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "BUF",
-    "player_id": "7670",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4577,14 +4577,30 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "michaelmayer",
-    "first_name": "Michael",
-    "last_name": "Mayer",
+    "search_full_name": "jaketonges",
+    "first_name": "Jake",
+    "last_name": "Tonges",
     "fantasy_positions": [
       "TE"
     ],
-    "team": "LV",
-    "player_id": "9482",
+    "team": "SF",
+    "player_id": "8698",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "theojohnson",
+    "first_name": "Theo",
+    "last_name": "Johnson",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NYG",
+    "player_id": "11597",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4609,6 +4625,54 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "marquisebrown",
+    "first_name": "Marquise",
+    "last_name": "Brown",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "PHI",
+    "player_id": "5848",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "masontaylor",
+    "first_name": "Mason",
+    "last_name": "Taylor",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NYJ",
+    "player_id": "12498",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "carsonwentz",
+    "first_name": "Carson",
+    "last_name": "Wentz",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "MIN",
+    "player_id": "3161",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "macjones",
     "first_name": "Mac",
     "last_name": "Jones",
@@ -4625,14 +4689,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jaylinlane",
-    "first_name": "Jaylin",
-    "last_name": "Lane",
+    "search_full_name": "konatamumpfield",
+    "first_name": "Konata",
+    "last_name": "Mumpfield",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "WAS",
-    "player_id": "12641",
+    "team": "LAR",
+    "player_id": "12718",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4641,14 +4705,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "justinfields",
-    "first_name": "Justin",
-    "last_name": "Fields",
+    "search_full_name": "olamidezaccheaus",
+    "first_name": "Olamide",
+    "last_name": "Zaccheaus",
     "fantasy_positions": [
-      "QB"
+      "WR"
     ],
-    "team": "KC",
-    "player_id": "7591",
+    "team": "ATL",
+    "player_id": "6271",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4657,30 +4721,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "trevoretienne",
-    "first_name": "Trevor",
-    "last_name": "Etienne",
+    "search_full_name": "devinneal",
+    "first_name": "Devin",
+    "last_name": "Neal",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "CAR",
-    "player_id": "12531",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tysimpson",
-    "first_name": "Ty",
-    "last_name": "Simpson",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "LAR",
-    "player_id": "13275",
+    "team": "",
+    "player_id": "12476",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4705,6 +4753,22 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "noahfant",
+    "first_name": "Noah",
+    "last_name": "Fant",
+    "fantasy_positions": [
+      "TE"
+    ],
+    "team": "NO",
+    "player_id": "5857",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "dawsonknox",
     "first_name": "Dawson",
     "last_name": "Knox",
@@ -4721,14 +4785,46 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "colekmet",
-    "first_name": "Cole",
-    "last_name": "Kmet",
+    "search_full_name": "jaylinlane",
+    "first_name": "Jaylin",
+    "last_name": "Lane",
     "fantasy_positions": [
-      "TE"
+      "WR"
     ],
-    "team": "CHI",
-    "player_id": "6826",
+    "team": "WAS",
+    "player_id": "12641",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "cooperrush",
+    "first_name": "Cooper",
+    "last_name": "Rush",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "ATL",
+    "player_id": "4574",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jarquezhunter",
+    "first_name": "Jarquez",
+    "last_name": "Hunter",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "MIA",
+    "player_id": "11569",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4745,54 +4841,6 @@
     ],
     "team": "LV",
     "player_id": "12541",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "oscardelp",
-    "first_name": "Oscar",
-    "last_name": "Delp",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "NO",
-    "player_id": "13319",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "isaiahbond",
-    "first_name": "Isaiah",
-    "last_name": "Bond",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "CLE",
-    "player_id": "12503",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jarquezhunter",
-    "first_name": "Jarquez",
-    "last_name": "Hunter",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": null,
-    "player_id": "11569",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4833,14 +4881,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "demariodouglas",
-    "first_name": "DeMario",
-    "last_name": "Douglas",
+    "search_full_name": "isaiahbond",
+    "first_name": "Isaiah",
+    "last_name": "Bond",
     "fantasy_positions": [
       "WR"
     ],
-    "team": "NE",
-    "player_id": "9501",
+    "team": "CLE",
+    "player_id": "12503",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4849,14 +4897,30 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jalentolbert",
-    "first_name": "Jalen",
-    "last_name": "Tolbert",
+    "search_full_name": "oscardelp",
+    "first_name": "Oscar",
+    "last_name": "Delp",
     "fantasy_positions": [
-      "WR"
+      "TE"
     ],
-    "team": "MIA",
-    "player_id": "8117",
+    "team": "NO",
+    "player_id": "13319",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "justinfields",
+    "first_name": "Justin",
+    "last_name": "Fields",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "KC",
+    "player_id": "7591",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4897,15 +4961,15 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "marvinmims",
-    "first_name": "Marvin",
-    "last_name": "Mims",
+    "search_full_name": "trevoretienne",
+    "first_name": "Trevor",
+    "last_name": "Etienne",
     "fantasy_positions": [
-      "WR"
+      "RB"
     ],
-    "team": "DEN",
-    "player_id": "9494",
-    "injury": true,
+    "team": "CAR",
+    "player_id": "12531",
+    "injury": false,
     "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
@@ -4913,14 +4977,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "emaridemercado",
-    "first_name": "Emari",
-    "last_name": "Demercado",
+    "search_full_name": "jalentolbert",
+    "first_name": "Jalen",
+    "last_name": "Tolbert",
     "fantasy_positions": [
-      "RB"
+      "WR"
     ],
-    "team": "DAL",
-    "player_id": "11199",
+    "team": "MIA",
+    "player_id": "8117",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -4945,15 +5009,47 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "marvinmims",
+    "first_name": "Marvin",
+    "last_name": "Mims",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "DEN",
+    "player_id": "9494",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "jeromeford",
     "first_name": "Jerome",
     "last_name": "Ford",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "WAS",
+    "team": "",
     "player_id": "8143",
-    "injury": true,
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "raheimsanders",
+    "first_name": "Raheim",
+    "last_name": "Sanders",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "CLE",
+    "player_id": "12472",
+    "injury": false,
     "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
@@ -4993,6 +5089,22 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "kylewilliams",
+    "first_name": "Kyle",
+    "last_name": "Williams",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "NE",
+    "player_id": "12547",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "jahandotson",
     "first_name": "Jahan",
     "last_name": "Dotson",
@@ -5009,14 +5121,30 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "noahfant",
-    "first_name": "Noah",
-    "last_name": "Fant",
+    "search_full_name": "tutuatwell",
+    "first_name": "Tutu",
+    "last_name": "Atwell",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LAR",
+    "player_id": "7562",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "lukemusgrave",
+    "first_name": "Luke",
+    "last_name": "Musgrave",
     "fantasy_positions": [
       "TE"
     ],
-    "team": "NO",
-    "player_id": "5857",
+    "team": "GB",
+    "player_id": "9481",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -5057,110 +5185,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "audricestime",
-    "first_name": "Audric",
-    "last_name": "Estime",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "NO",
-    "player_id": "11579",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "lukemusgrave",
-    "first_name": "Luke",
-    "last_name": "Musgrave",
-    "fantasy_positions": [
-      "TE"
-    ],
-    "team": "GB",
-    "player_id": "9481",
-    "injury": true,
-    "injury_severity": "high",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kendrickbourne",
-    "first_name": "Kendrick",
-    "last_name": "Bourne",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "ARI",
-    "player_id": "4454",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "willshipley",
-    "first_name": "Will",
-    "last_name": "Shipley",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "PHI",
-    "player_id": "11577",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tutuatwell",
-    "first_name": "Tutu",
-    "last_name": "Atwell",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "LAR",
-    "player_id": "7562",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kareemhunt",
-    "first_name": "Kareem",
-    "last_name": "Hunt",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": null,
-    "player_id": "4098",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jameiswinston",
-    "first_name": "Jameis",
-    "last_name": "Winston",
+    "search_full_name": "tysimpson",
+    "first_name": "Ty",
+    "last_name": "Simpson",
     "fantasy_positions": [
       "QB"
     ],
-    "team": "NYG",
-    "player_id": "2306",
+    "team": "LAR",
+    "player_id": "13275",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -5185,14 +5217,30 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "jordanwhittington",
-    "first_name": "Jordan",
-    "last_name": "Whittington",
+    "search_full_name": "audricestime",
+    "first_name": "Audric",
+    "last_name": "Estime",
     "fantasy_positions": [
-      "WR"
+      "RB"
     ],
-    "team": "LAR",
-    "player_id": "11623",
+    "team": "NO",
+    "player_id": "11579",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jameiswinston",
+    "first_name": "Jameis",
+    "last_name": "Winston",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "NYG",
+    "player_id": "2306",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -5209,7 +5257,7 @@
     ],
     "team": "WAS",
     "player_id": "2307",
-    "injury": true,
+    "injury": false,
     "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
@@ -5233,14 +5281,46 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "eliheidenreich",
-    "first_name": "Eli",
-    "last_name": "Heidenreich",
+    "search_full_name": "dameonpierce",
+    "first_name": "Dameon",
+    "last_name": "Pierce",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "PIT",
-    "player_id": "13423",
+    "team": "PHI",
+    "player_id": "8129",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "jordanwhittington",
+    "first_name": "Jordan",
+    "last_name": "Whittington",
+    "fantasy_positions": [
+      "WR"
+    ],
+    "team": "LAR",
+    "player_id": "11623",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "willshipley",
+    "first_name": "Will",
+    "last_name": "Shipley",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PHI",
+    "player_id": "11577",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -5257,22 +5337,6 @@
     ],
     "team": "LAC",
     "player_id": "13380",
-    "injury": true,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "jawharjordan",
-    "first_name": "Jawhar",
-    "last_name": "Jordan",
-    "fantasy_positions": [
-      "RB"
-    ],
-    "team": "HOU",
-    "player_id": "11588",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -5289,8 +5353,8 @@
     ],
     "team": "GB",
     "player_id": "12482",
-    "injury": true,
-    "injury_severity": "high",
+    "injury": false,
+    "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
     "injury_expected_return": "",
@@ -5329,6 +5393,22 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "kareemhunt",
+    "first_name": "Kareem",
+    "last_name": "Hunt",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "",
+    "player_id": "4098",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "kavontaeturpin",
     "first_name": "KaVontae",
     "last_name": "Turpin",
@@ -5337,38 +5417,6 @@
     ],
     "team": "DAL",
     "player_id": "8917",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "kalifraymond",
-    "first_name": "Kalif",
-    "last_name": "Raymond",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "CHI",
-    "player_id": "3634",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "joeflacco",
-    "first_name": "Joe",
-    "last_name": "Flacco",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "CIN",
-    "player_id": "19",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -5409,6 +5457,38 @@
     "injury_reinjury_risk": ""
   },
   {
+    "search_full_name": "joeflacco",
+    "first_name": "Joe",
+    "last_name": "Flacco",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "CIN",
+    "player_id": "19",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "eliheidenreich",
+    "first_name": "Eli",
+    "last_name": "Heidenreich",
+    "fantasy_positions": [
+      "RB"
+    ],
+    "team": "PIT",
+    "player_id": "13423",
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
     "search_full_name": "devontezwalker",
     "first_name": "Devontez",
     "last_name": "Walker",
@@ -5417,7 +5497,7 @@
     ],
     "team": "BAL",
     "player_id": "11629",
-    "injury": true,
+    "injury": false,
     "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
@@ -5425,14 +5505,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "dameonpierce",
-    "first_name": "Dameon",
-    "last_name": "Pierce",
+    "search_full_name": "jawharjordan",
+    "first_name": "Jawhar",
+    "last_name": "Jordan",
     "fantasy_positions": [
       "RB"
     ],
-    "team": "PHI",
-    "player_id": "8129",
+    "team": "HOU",
+    "player_id": "11588",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -5489,22 +5569,6 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "demarcusrobinson",
-    "first_name": "Demarcus",
-    "last_name": "Robinson",
-    "fantasy_positions": [
-      "WR"
-    ],
-    "team": "SF",
-    "player_id": "3286",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
     "search_full_name": "theowease",
     "first_name": "Theo",
     "last_name": "Wease",
@@ -5513,22 +5577,6 @@
     ],
     "team": "LAC",
     "player_id": "12860",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "rileyleonard",
-    "first_name": "Riley",
-    "last_name": "Leonard",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "IND",
-    "player_id": "12470",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -5553,14 +5601,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "gardnerminshew",
-    "first_name": "Gardner",
-    "last_name": "Minshew",
+    "search_full_name": "deandrehopkins",
+    "first_name": "DeAndre",
+    "last_name": "Hopkins",
     "fantasy_positions": [
-      "QB"
+      "WR"
     ],
-    "team": "ARI",
-    "player_id": "6011",
+    "team": "",
+    "player_id": "1426",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -5569,14 +5617,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "deandrehopkins",
-    "first_name": "DeAndre",
-    "last_name": "Hopkins",
+    "search_full_name": "rileyleonard",
+    "first_name": "Riley",
+    "last_name": "Leonard",
     "fantasy_positions": [
-      "WR"
+      "QB"
     ],
-    "team": null,
-    "player_id": "1426",
+    "team": "IND",
+    "player_id": "12470",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -5591,24 +5639,8 @@
     "fantasy_positions": [
       "TE"
     ],
-    "team": null,
+    "team": "",
     "player_id": "4381",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
-  },
-  {
-    "search_full_name": "tyrodtaylor",
-    "first_name": "Tyrod",
-    "last_name": "Taylor",
-    "fantasy_positions": [
-      "QB"
-    ],
-    "team": "GB",
-    "player_id": "827",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",
@@ -5623,9 +5655,25 @@
     "fantasy_positions": [
       "WR"
     ],
-    "team": null,
+    "team": "",
     "player_id": "4040",
-    "injury": true,
+    "injury": false,
+    "injury_severity": "low",
+    "injury_note": "",
+    "injury_name": "",
+    "injury_expected_return": "",
+    "injury_reinjury_risk": ""
+  },
+  {
+    "search_full_name": "gardnerminshew",
+    "first_name": "Gardner",
+    "last_name": "Minshew",
+    "fantasy_positions": [
+      "QB"
+    ],
+    "team": "ARI",
+    "player_id": "6011",
+    "injury": false,
     "injury_severity": "low",
     "injury_note": "",
     "injury_name": "",
@@ -5649,14 +5697,14 @@
     "injury_reinjury_risk": ""
   },
   {
-    "search_full_name": "raheimsanders",
-    "first_name": "Raheim",
-    "last_name": "Sanders",
+    "search_full_name": "tyrodtaylor",
+    "first_name": "Tyrod",
+    "last_name": "Taylor",
     "fantasy_positions": [
-      "RB"
+      "QB"
     ],
-    "team": "CLE",
-    "player_id": "12472",
+    "team": "GB",
+    "player_id": "827",
     "injury": false,
     "injury_severity": "low",
     "injury_note": "",

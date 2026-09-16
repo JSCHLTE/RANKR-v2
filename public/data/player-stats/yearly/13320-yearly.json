@@ -1,0 +1,148 @@
+{
+  "playerInfo": {
+    "player_id": 13274,
+    "name": "Zachariah Branch",
+    "position": "WR"
+  },
+  "allYearlyStats": [
+    {
+      "year": 2026,
+      "team": {
+        "team_id": 2,
+        "abbr": "ATL",
+        "city": "Atlanta",
+        "name": "Falcons",
+        "full_name": "Atlanta Falcons",
+        "primary_color": "A71930"
+      },
+      "stats": [
+        {
+          "stat_id": 937,
+          "serial_id": "FantasyPointsPPR",
+          "original_serial_id": "FantasyPointsPPR",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Fantasy Points PPR",
+          "is_highest_best": true,
+          "min_value": 20,
+          "max_value": 53.33333333333333,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "fantasy"
+        },
+        {
+          "stat_id": 1164,
+          "serial_id": "FantasyPointsRankWR",
+          "original_serial_id": "FantasyPointsRankWR",
+          "value": 178,
+          "stat_context": "regular",
+          "description": "Fantasy Points Rank WR",
+          "is_highest_best": false,
+          "min_value": 1,
+          "max_value": 45,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "fantasy"
+        },
+        {
+          "stat_id": 1067,
+          "serial_id": "ReceivingTargets",
+          "original_serial_id": "ReceivingTargets",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Receiving Targets",
+          "is_highest_best": true,
+          "min_value": 11.666666666666666,
+          "max_value": 28.333333333333332,
+          "value_type": "absolute",
+          "position_category": "WR",
+          "stat_category": "receiving"
+        },
+        {
+          "stat_id": 1068,
+          "serial_id": "ReceivingTouchdowns",
+          "original_serial_id": "ReceivingTouchdowns",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Receiving Touchdowns",
+          "is_highest_best": true,
+          "min_value": 0.5,
+          "max_value": 2,
+          "value_type": "absolute",
+          "position_category": "WR",
+          "stat_category": "receiving"
+        },
+        {
+          "stat_id": 1069,
+          "serial_id": "ReceivingYards",
+          "original_serial_id": "ReceivingYards",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Receiving Yards",
+          "is_highest_best": true,
+          "min_value": 83.33333333333333,
+          "max_value": 283.3333333333333,
+          "value_type": "absolute",
+          "position_category": "WR",
+          "stat_category": "receiving"
+        },
+        {
+          "stat_id": 1071,
+          "serial_id": "ReceivingYardsPerTarget",
+          "original_serial_id": "ReceivingYardsPerTarget",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Receiving Yards Per Target",
+          "is_highest_best": true,
+          "min_value": 1,
+          "max_value": 13,
+          "value_type": "absolute",
+          "position_category": "WR",
+          "stat_category": "receiving"
+        },
+        {
+          "stat_id": 1073,
+          "serial_id": "Receptions",
+          "original_serial_id": "Receptions",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Receptions",
+          "is_highest_best": true,
+          "min_value": 6.666666666666666,
+          "max_value": 16.666666666666664,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "receiving"
+        },
+        {
+          "stat_id": 1089,
+          "serial_id": "RushingAttempts",
+          "original_serial_id": "RushingAttempts",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Rushing Attempts",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 3.333333333333333,
+          "value_type": "absolute",
+          "position_category": "RB",
+          "stat_category": "rushing"
+        },
+        {
+          "stat_id": 1093,
+          "serial_id": "RushingYards",
+          "original_serial_id": "RushingYards",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Rushing Yards",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 33.33333333333333,
+          "value_type": "absolute",
+          "position_category": "RB",
+          "stat_category": "rushing"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "playerInfo": {
+    "player_id": 13370,
+    "name": "Seth McGowan",
+    "position": "RB"
+  },
+  "allYearlyStats": [
+    {
+      "year": 2026,
+      "team": {
+        "team_id": 14,
+        "abbr": "IND",
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 937,
+          "serial_id": "FantasyPointsPPR",
+          "original_serial_id": "FantasyPointsPPR",
+          "value": 1,
+          "stat_context": "regular",
+          "description": "Fantasy Points PPR",
+          "is_highest_best": true,
+          "min_value": 16.666666666666664,
+          "max_value": 55,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "fantasy"
+        },
+        {
+          "stat_id": 1163,
+          "serial_id": "FantasyPointsRankRB",
+          "original_serial_id": "FantasyPointsRankRB",
+          "value": 68,
+          "stat_context": "regular",
+          "description": "Fantasy Points Rank RB",
+          "is_highest_best": false,
+          "min_value": 1,
+          "max_value": 40,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "fantasy"
+        },
+        {
+          "stat_id": 1067,
+          "serial_id": "ReceivingTargets",
+          "original_serial_id": "ReceivingTargets",
+          "value": 1,
+          "stat_context": "regular",
+          "description": "Receiving Targets",
+          "is_highest_best": true,
+          "min_value": 4.166666666666666,
+          "max_value": 16.666666666666664,
+          "value_type": "absolute",
+          "position_category": "WR",
+          "stat_category": "receiving"
+        },
+        {
+          "stat_id": 1068,
+          "serial_id": "ReceivingTouchdowns",
+          "original_serial_id": "ReceivingTouchdowns",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Receiving Touchdowns",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 1,
+          "value_type": "absolute",
+          "position_category": "WR",
+          "stat_category": "receiving"
+        },
+        {
+          "stat_id": 1069,
+          "serial_id": "ReceivingYards",
+          "original_serial_id": "ReceivingYards",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Receiving Yards",
+          "is_highest_best": true,
+          "min_value": 16.666666666666664,
+          "max_value": 116.66666666666666,
+          "value_type": "absolute",
+          "position_category": "WR",
+          "stat_category": "receiving"
+        },
+        {
+          "stat_id": 1071,
+          "serial_id": "ReceivingYardsPerTarget",
+          "original_serial_id": "ReceivingYardsPerTarget",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Receiving Yards Per Target",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 8,
+          "value_type": "absolute",
+          "position_category": "WR",
+          "stat_category": "receiving"
+        },
+        {
+          "stat_id": 1073,
+          "serial_id": "Receptions",
+          "original_serial_id": "Receptions",
+          "value": 1,
+          "stat_context": "regular",
+          "description": "Receptions",
+          "is_highest_best": true,
+          "min_value": 2.5,
+          "max_value": 13.333333333333332,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "receiving"
+        },
+        {
+          "stat_id": 1089,
+          "serial_id": "RushingAttempts",
+          "original_serial_id": "RushingAttempts",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Rushing Attempts",
+          "is_highest_best": true,
+          "min_value": 16.666666666666664,
+          "max_value": 55,
+          "value_type": "absolute",
+          "position_category": "RB",
+          "stat_category": "rushing"
+        },
+        {
+          "stat_id": 1089,
+          "serial_id": "RushingAttemptsInside5",
+          "original_serial_id": "RushingAttempts",
+          "value": 0,
+          "stat_context": "inside5",
+          "description": "Rushing attempts inside the 5 yard line (Season)",
+          "is_highest_best": true,
+          "min_value": 0.8333333333333333,
+          "max_value": 3.333333333333333,
+          "value_type": "absolute",
+          "position_category": "RB",
+          "stat_category": "rushing"
+        },
+        {
+          "stat_id": 1091,
+          "serial_id": "RushingTouchdowns",
+          "original_serial_id": "RushingTouchdowns",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Rushing Touchdowns",
+          "is_highest_best": true,
+          "min_value": 0.6666666666666666,
+          "max_value": 2.6666666666666665,
+          "value_type": "absolute",
+          "position_category": "RB",
+          "stat_category": "rushing"
+        },
+        {
+          "stat_id": 1093,
+          "serial_id": "RushingYards",
+          "original_serial_id": "RushingYards",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Rushing Yards",
+          "is_highest_best": true,
+          "min_value": 66.66666666666666,
+          "max_value": 250,
+          "value_type": "absolute",
+          "position_category": "RB",
+          "stat_category": "rushing"
+        },
+        {
+          "stat_id": 1094,
+          "serial_id": "RushingYardsPerAttempt",
+          "original_serial_id": "RushingYardsPerAttempt",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Rushing Yards Per Attempt",
+          "is_highest_best": true,
+          "min_value": 2,
+          "max_value": 5,
+          "value_type": "absolute",
+          "position_category": "RB",
+          "stat_category": "rushing"
+        }
+      ]
+    }
+  ]
+}
