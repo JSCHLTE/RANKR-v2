@@ -1,4 +1,10 @@
 export interface RankingTier { id: string; name: string; beforeRank: number; color: number }
+
+/** getRandomValues also works on HTTP LAN previews, where randomUUID is unavailable. */
+export function createTierId(): string {
+  const bytes = globalThis.crypto.getRandomValues(new Uint8Array(16));
+  return `tier-${Array.from(bytes, byte => byte.toString(16).padStart(2, "0")).join("")}`;
+}
 // Sortable's downward preview shifts the target player above the dragged header.
 // Store the boundary after that player; upward drops remain before the target.
 export function tierDropRank(beforeRank: number, targetPlayerRank: number): number {

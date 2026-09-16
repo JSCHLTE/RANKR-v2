@@ -7,7 +7,7 @@ import { useAuth } from "@/context/AuthContext";
 import RankingHeader from "./RankingHeader";
 import RankingList from "./RankingList";
 import { RankingMeta } from "@/types/rank";
-import { nextTier, type RankingTier } from "@/lib/ranking-tiers";
+import { createTierId, nextTier, type RankingTier } from "@/lib/ranking-tiers";
 import { DraftMode } from "@/components/DraftMode";
 
 interface RankEntry { player_id: string; rank: number }
@@ -59,7 +59,7 @@ const RankingView = ({ meta, ranks, tiers = [] }: Props) => {
 
   function addTier() {
     if (!editing || saving.current) return;
-    const id = crypto.randomUUID();
+    const id = createTierId();
     setDraft(previous => previous.tiers.length >= 100 ? previous : { ...previous, tiers: [...previous.tiers, { id, ...nextTier(previous.tiers) }] });
   }
   function changeTier(id: string, name: string) {

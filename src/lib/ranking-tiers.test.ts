@@ -1,7 +1,21 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { nextTier, validTiers, tierDropRank, type RankingTier } from "./ranking-tiers";
+import { createTierId, nextTier, validTiers, tierDropRank, type RankingTier } from "./ranking-tiers";
 import { isRankingUpdate } from "./ranking-update";
+
+test("tier creation works without randomUUID on HTTP mobile previews", () => {
+  const original = Object.getOwnPropertyDescriptor(globalThis, "crypto");
+  const getRandomValues = globalThis.crypto.getRandomValues.bind(globalThis.crypto);
+  try {
+    Object.defineProperty(globalThis, "crypto", { configurable: true, value: { getRandomValues } });
+    const tiers = Array.from({ length: 100 }, () => ({ id: createTierId(), name: "Tier", beforeRank: 1, color: 0 }));
+    assert.equal(new Set(tiers.map(tier => tier.id)).size, 100);
+    assert.equal(validTiers(tiers, 10), true);
+    assert.equal(isRankingUpdate({ rankingId: "ranking123", name: "Mobile ranking", description: "", ranks: [{ player_id: "a", rank: 1 }], tiers }), true);
+  } finally {
+    if (original) Object.defineProperty(globalThis, "crypto", original);
+  }
+});
 
 test("tier drops match the sortable preview in both directions and at list boundaries", () => {
   // Moving down past Taylor at rank 5 must leave him above the tier.
