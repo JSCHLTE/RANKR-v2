@@ -1,7 +1,9 @@
 import { PlayerLite } from "@/types/player";
+import { formatInjuryLevel, normalizeInjuryLevel } from "@/lib/injury-level";
 
 export function injuryColor(severity: string | null | undefined) {
-  return severity === "low" ? "text-green-400" : severity === "medium" ? "text-yellow-400" : severity === "high" ? "text-red-400" : "text-[var(--text-muted)]";
+  const level = normalizeInjuryLevel(severity);
+  return level === "low" ? "text-green-400" : level === "medium" ? "text-yellow-400" : level === "high" ? "text-red-400" : "text-[var(--text-muted)]";
 }
 
 export default function InjuryInfo({ player }: { player: PlayerLite }) {
@@ -15,7 +17,7 @@ export default function InjuryInfo({ player }: { player: PlayerLite }) {
     </div>
     <dl className="space-y-2 border-t border-[var(--border)] p-4">
       <div className="flex justify-between gap-4"><dt className="text-xs uppercase text-[var(--text-muted)]">Expected return</dt><dd className="text-right font-medium">{player.injuryExpectedReturn?.trim() || "Unknown"}</dd></div>
-      <div className="flex justify-between gap-4"><dt className="text-xs uppercase text-[var(--text-muted)]">Reinjury risk</dt><dd className={`text-right font-medium ${injuryColor(player.injuryReinjuryRisk?.toLowerCase())}`}>{player.injuryReinjuryRisk?.trim() || "Unknown"}</dd></div>
+      <div className="flex justify-between gap-4"><dt className="text-xs uppercase text-[var(--text-muted)]">Reinjury risk</dt><dd className={`text-right font-medium ${injuryColor(player.injuryReinjuryRisk?.toLowerCase())}`}>{formatInjuryLevel(player.injuryReinjuryRisk) || "Unknown"}</dd></div>
     </dl>
     <div className="border-t border-[var(--border)] p-4">
       <p className="mb-2 text-xs font-semibold uppercase text-[var(--text-muted)]">Notes</p>

@@ -440,12 +440,12 @@
     ],
     "team": "BAL",
     "player_id": "9997",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury": true,
+    "injury_severity": "medium",
+    "injury_note": "Flowers aggravated a pre-existing hamstring issue, originally sustained during training camp joint practices with the Minnesota Vikings, during the first half of the Week 1 win over the Indianapolis Colts. He did not practice Thursday (9/17).",
+    "injury_name": "Hamstring",
+    "injury_expected_return": "Week 3",
+    "injury_reinjury_risk": "medium"
   },
   {
     "search_full_name": "brockbowers",
@@ -456,12 +456,12 @@
     ],
     "team": "LV",
     "player_id": "11604",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury": true,
+    "injury_severity": "medium",
+    "injury_note": "Bowers missed Week 1 due to a knee injury that required a meniscus trim procedure performed by Dr. Daniel Cooper in Dallas on September 8, 2026.  The injury was sustained during training camp and diagnosed shortly before the season began. He did not practice Thursday (9/17).",
+    "injury_name": "Meniscus",
+    "injury_expected_return": "Week 3",
+    "injury_reinjury_risk": "medium"
   },
   {
     "search_full_name": "javontewilliams",
@@ -488,12 +488,12 @@
     ],
     "team": "LAC",
     "player_id": "11635",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury": true,
+    "injury_severity": "medium",
+    "injury_note": "Ladd McConkey is currently dealing with a rib injury sustained during the Los Angeles Chargers Week 1 loss to the Arizona Cardinals.  The injury occurred in the third quarter when he took a hard hit from Mack Wilson Sr. while breaking over the middle, causing him to leave the game and miss the fourth quarter. He did not practice Wednesday (9/16).",
+    "injury_name": "Rib",
+    "injury_expected_return": "Week 3",
+    "injury_reinjury_risk": "low"
   },
   {
     "search_full_name": "devontasmith",
@@ -552,11 +552,11 @@
     ],
     "team": "CHI",
     "player_id": "6790",
-    "injury": false,
+    "injury": true,
     "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
+    "injury_note": "Swift is dealing with knee and ankle issues and practiced in a limited fashion Wednesday (9/16). The severity of Swift's issues isn't known, but a limited practice suggests that he's not dealing with anything overly serious.",
+    "injury_name": "Ankle",
+    "injury_expected_return": "Week 2",
     "injury_reinjury_risk": ""
   },
   {
@@ -968,12 +968,12 @@
     ],
     "team": "NE",
     "player_id": "5859",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury": true,
+    "injury_severity": "high",
+    "injury_note": "A.J. Brown is on injured reserve with a right high-ankle sprain he suffered Week 1. An MRI confirmed the diagnosis (no fracture), and no surgery is planned. Brown is expected to miss approximately six weeks.",
+    "injury_name": "Ankle",
+    "injury_expected_return": "Week 7",
+    "injury_reinjury_risk": "low"
   },
   {
     "search_full_name": "jaylenwarren",

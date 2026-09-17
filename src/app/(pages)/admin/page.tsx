@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { LionLoader } from "@/components/LionLoader";
+import { formatInjuryLevel, normalizeInjuryLevel } from "@/lib/injury-level";
 import { isAdmin } from "@/lib/admin-access";
 import { TemplatePlayer, TemplateSnapshot, templateError } from "@/lib/template-data";
 import { normalizePlayers } from "@/lib/normalize-players";
@@ -104,10 +105,17 @@ export default function AdminPage() {
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3"><h2 className="font-semibold">Players ({draft.players.length})</h2><button className={buttonClass} disabled={!!editor} onClick={() => { setCreating(true); setEditor(newPlayer()); }}>New player</button></div>
         {editor ? <div className="space-y-4">
           <div className="grid gap-3 sm:grid-cols-2">
-            {([['player_id', 'Player ID'], ['first_name', 'First name'], ['last_name', 'Last name'], ['team', 'Team'], ['injury_name', 'Injury name'], ['injury_expected_return', 'Expected return'], ['injury_reinjury_risk', 'Reinjury risk']] as const).map(([field, label]) => <label key={field} className="space-y-1 text-xs text-[var(--text-muted)]">{label}<input className={inputClass} disabled={field === "player_id" && !creating} value={editor[field] ?? ""} onChange={event => setEditor({ ...editor, [field]: event.target.value })} /></label>)}
+            {([['player_id', 'Player ID'], ['first_name', 'First name'], ['last_name', 'Last name'], ['team', 'Team'], ['injury_name', 'Injury name'], ['injury_expected_return', 'Expected return']] as const).map(([field, label]) => <label key={field} className="space-y-1 text-xs text-[var(--text-muted)]">{label}<input className={inputClass} disabled={field === "player_id" && !creating} value={editor[field] ?? ""} onChange={event => setEditor({ ...editor, [field]: event.target.value })} /></label>)}
+            <label className="space-y-1 text-xs text-[var(--text-muted)]">Reinjury risk<select className={inputClass} value={formatInjuryLevel(editor.injury_reinjury_risk)} onChange={event => setEditor({ ...editor, injury_reinjury_risk: event.target.value })}>
+              <option value="">Unknown</option>
+              {editor.injury_reinjury_risk && !normalizeInjuryLevel(editor.injury_reinjury_risk) && <option value={editor.injury_reinjury_risk} disabled>{editor.injury_reinjury_risk} (choose a risk level)</option>}
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select></label>
             <label className="space-y-1 text-xs text-[var(--text-muted)]">Positions (comma separated)<input className={inputClass} value={editor.fantasy_positions.join(", ")} onChange={event => setEditor({ ...editor, fantasy_positions: event.target.value.toUpperCase().split(",").map(p => p.trim()) })} /></label>
             <label className="flex items-center gap-2 text-sm"><input type="checkbox" checked={editor.injury ?? false} onChange={event => setEditor({ ...editor, injury: event.target.checked })} />Injured</label>
-            <label className="space-y-1 text-xs text-[var(--text-muted)]">Injury severity<select className={inputClass} value={editor.injury_severity ?? ""} onChange={event => setEditor({ ...editor, injury_severity: event.target.value })}>{["", "low", "medium", "high"].map(value => <option key={value} value={value}>{value || "Unknown"}</option>)}</select></label>
+            <label className="space-y-1 text-xs text-[var(--text-muted)]">Injury severity<select className={inputClass} value={normalizeInjuryLevel(editor.injury_severity) ?? ""} onChange={event => setEditor({ ...editor, injury_severity: event.target.value })}>{["", "low", "medium", "high"].map(value => <option key={value} value={value}>{value ? value[0].toUpperCase() + value.slice(1) : "Unknown"}</option>)}</select></label>
           </div>
           <label className="block space-y-1 text-xs text-[var(--text-muted)]">Injury notes<textarea rows={3} className={inputClass} value={editor.injury_note ?? ""} onChange={event => setEditor({ ...editor, injury_note: event.target.value })} /></label>
           <div className="flex gap-2"><button className={buttonClass} onClick={applyPlayer}>Apply to draft</button><button className={buttonClass} onClick={() => setEditor(null)}>Cancel</button></div>

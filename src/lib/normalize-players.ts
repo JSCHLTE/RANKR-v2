@@ -1,4 +1,5 @@
 import { PlayerLite } from "@/types/player";
+import { normalizeInjuryLevel } from "./injury-level";
 
 interface SourcePlayer {
   player_id: string;
@@ -30,7 +31,7 @@ export function normalizePlayers(source: SourcePlayer[], experience: Record<stri
       yearsExp: typeof player.years_exp === "number" && Number.isInteger(player.years_exp) && player.years_exp >= 0
         ? player.years_exp : experience[player.player_id] ?? null,
       injury: player.injury === true,
-      injurySeverity: player.injury_severity === "low" || player.injury_severity === "medium" || player.injury_severity === "high" ? player.injury_severity : null,
+      injurySeverity: normalizeInjuryLevel(player.injury_severity),
       injuryNote: player.injury_note ?? "",
       injuryName: player.injury_name ?? "",
       injuryExpectedReturn: player.injury_expected_return ?? "",

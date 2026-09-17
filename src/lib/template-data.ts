@@ -1,3 +1,5 @@
+import { normalizeInjuryLevel } from "./injury-level";
+
 export interface TemplatePlayer {
   player_id: string;
   first_name: string;
@@ -34,7 +36,7 @@ export function templateError(value: unknown): string | null {
       if (value !== undefined && (typeof value !== "string" || value.length > 5000)) return `Invalid ${field}.`;
     }
     if (player.injury !== undefined && typeof player.injury !== "boolean") return "Invalid injury flag.";
-    if (player.injury_severity !== undefined && !["", "low", "medium", "high"].includes(player.injury_severity)) return "Invalid injury severity.";
+    if (player.injury_severity !== undefined && player.injury_severity !== "" && !normalizeInjuryLevel(player.injury_severity)) return `Invalid injury severity for ${player.first_name} ${player.last_name}. Choose Low, Medium, High, or Unknown.`;
   }
   const ranked = new Set<string>();
   const numbers = new Set<number>();
