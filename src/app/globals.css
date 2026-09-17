@@ -143,7 +143,14 @@ html {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.lion-loader { animation: lion-loader-pulse 1.6s ease-in-out infinite; }
+@keyframes lion-loader-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .lion-loader { animation: none; }
   #page-content, .mobile-drawer, .mobile-drawer::backdrop { transition: none; }
   .account-dropdown { animation: none; }
 }

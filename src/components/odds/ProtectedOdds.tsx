@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { LionLoader } from "@/components/LionLoader";
 import { useAuth } from "@/context/AuthContext";
 import type { GameOdds, WeekOdds } from "@/types/odds";
 import { hasActiveRankrPass, type RankrPass } from "@/lib/rankr-pass";
@@ -58,7 +59,7 @@ export default function ProtectedOdds({ season, week, game }: { season: string; 
     return () => { clearInterval(timer); window.removeEventListener("focus", check); };
   }, [game, current, router]);
 
-  if (loading || !user || !current) return <p role="status" className="text-sm text-[var(--text-muted)]">Checking access…</p>;
+  if (loading || !user || !current) return <LionLoader label="Loading odds…" />;
   if (current.error) return <div><p role="alert">{current.error}</p><button onClick={() => setAttempt(value => value + 1)} className="mt-3 cursor-pointer text-[var(--accent)]">Try again</button></div>;
   const data = current.data!;
   const sync = <AdminOddsSync season={data.week.season} week={data.week.week} onUpdated={() => setAttempt(value => value + 1)} />;

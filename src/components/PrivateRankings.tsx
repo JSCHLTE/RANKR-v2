@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { LionLoader } from "@/components/LionLoader";
 import { useAuth } from "@/context/AuthContext";
 import type { RankingMeta } from "@/types/rank";
 import type { RankingTier } from "@/lib/ranking-tiers";
@@ -37,10 +38,10 @@ export function PrivateRankings({ rankingId, profileUid }: { rankingId?: string;
   }, [user, loading, allowed, rankingId, key]);
 
   if (profileUid && !allowed) return null;
-  if (loading) return <p role="status" className="py-6 text-sm text-[var(--text-muted)]">Checking access…</p>;
+  if (loading) return <LionLoader label="Loading rankings…" />;
   if (!user) return <div className="py-10"><h1 className="text-2xl font-semibold">Owner access required</h1><p className="mt-3 text-[var(--text-muted)]">Sign in with the account that owns this ranking to view it.</p><Link href="/login" className="mt-4 inline-block text-[var(--accent)]">Sign in</Link></div>;
   const current = result?.key === key ? result : undefined;
-  if (!current) return <p role="status" className="py-6 text-sm text-[var(--text-muted)]">Loading your private rankings…</p>;
+  if (!current) return <LionLoader label="Loading your private rankings…" />;
   if (current.error) return <div className="py-6"><p role="alert">{current.error}</p><button type="button" onClick={() => setAttempt(value => value + 1)} className="mt-3 cursor-pointer text-[var(--accent)]">Try again</button></div>;
   if (rankingId && current.data?.meta) return <RankingView key={key} meta={current.data.meta} ranks={current.data.ranks ?? []} tiers={current.data.tiers ?? []} />;
   const rankings = current.data?.rankings ?? [];

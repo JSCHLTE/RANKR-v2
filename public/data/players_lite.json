@@ -328,12 +328,12 @@
     ],
     "team": "HOU",
     "player_id": "7569",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury": true,
+    "injury_severity": "medium",
+    "injury_note": "Nico Collins is dealing with a hamstring injury sustained during Wednesday’s practice, casting doubt on his availability for the Week 2 matchup against the Cincinnati Bengals.  While team doctors believe the injury is not serious, his status is officially in jeopardy, he did not practice Thursday (9/17).",
+    "injury_name": "Hamstring",
+    "injury_expected_return": "Week 3",
+    "injury_reinjury_risk": "Medium"
   },
   {
     "search_full_name": "drakelondon",

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useAuth } from "@/context/AuthContext";
+import { LionLoader } from "@/components/LionLoader";
 import { isAdmin } from "@/lib/admin-access";
 import { TemplatePlayer, TemplateSnapshot, templateError } from "@/lib/template-data";
 import { normalizePlayers } from "@/lib/normalize-players";
@@ -84,7 +85,7 @@ export default function AdminPage() {
     setDraft(next); setEditor(null); setError(""); setMessage("");
   }
 
-  if (loading) return <main className="mx-auto max-w-5xl p-6">Checking access…</main>;
+  if (loading) return <main className="mx-auto max-w-5xl p-6"><LionLoader label="Loading admin…" /></main>;
   if (!allowed) return <main className="mx-auto max-w-5xl p-6"><h1 className="text-xl font-semibold">Admin access required</h1><p className="mt-2 text-[var(--text-muted)]">Sign in with the authorized admin account.</p></main>;
 
   return <main className="mx-auto max-w-5xl px-4 py-8">
@@ -98,7 +99,7 @@ export default function AdminPage() {
     </div>
     {error && <p role="alert" className="mb-4 text-sm text-red-400">{error}</p>}
     {message && <p role="status" className="mb-4 text-sm text-[var(--accent)]">{message}</p>}
-    {!draft || refreshing ? <p>{error ? "Use Reload to try again." : "Loading template…"}</p> : <fieldset disabled={busy} className="min-w-0 space-y-6">
+    {!draft || refreshing ? error ? <p>Use Reload to try again.</p> : <LionLoader label="Loading template…" /> : <fieldset disabled={busy} className="min-w-0 space-y-6">
       <section className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4">
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3"><h2 className="font-semibold">Players ({draft.players.length})</h2><button className={buttonClass} disabled={!!editor} onClick={() => { setCreating(true); setEditor(newPlayer()); }}>New player</button></div>
         {editor ? <div className="space-y-4">
