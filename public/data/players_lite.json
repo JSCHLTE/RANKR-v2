@@ -1272,12 +1272,12 @@
     ],
     "team": "MIN",
     "player_id": "8408",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury": true,
+    "injury_severity": "high",
+    "injury_note": "Jordan Mason was placed on injured reserve on Wednesday (9/16) with a small fracture in his right thumb that required surgery. His earliest possible return is Week 7 vs. the Colts.",
+    "injury_name": "Thumb",
+    "injury_expected_return": "Week 7",
+    "injury_reinjury_risk": "Low"
   },
   {
     "search_full_name": "michaelpittman",
