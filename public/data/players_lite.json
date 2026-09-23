@@ -1128,12 +1128,12 @@
     ],
     "team": "WAS",
     "player_id": "11566",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury": true,
+    "injury_severity": "high",
+    "injury_note": "Daniels suffered a dislocated left elbow in Week 2 of the 2026 season against the Dallas Cowboys.",
+    "injury_name": "Left Elbow",
+    "injury_expected_return": "TBD",
+    "injury_reinjury_risk": "High"
   },
   {
     "search_full_name": "tuckerkraft",
@@ -1704,11 +1704,11 @@
     ],
     "team": "NYG",
     "player_id": "12508",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
+    "injury": true,
+    "injury_severity": "high",
+    "injury_note": "Dart is expected to undergo season-ending knee surgery after suffering a severe injury during Monday Night Football’s 28-6 loss to the Los Angeles Rams.",
+    "injury_name": "Knee (MCL, PCL, Meniscus)",
+    "injury_expected_return": "2027-28 Season",
     "injury_reinjury_risk": ""
   },
   {

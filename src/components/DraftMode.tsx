@@ -14,7 +14,7 @@ function RosterHeadshot({ id, defense }: { id: string; defense: boolean }) {
   </span>;
 }
 
-const DraftContext = createContext<{ active: boolean; picks: Record<string, DraftPick>; mark: (id: string, pick: DraftPick) => void }>({ active: false, picks: {}, mark: () => {} });
+const DraftContext = createContext<{ active: boolean; picks: Record<string, DraftPick>; mark: (id: string, pick: DraftPick) => void; ready: boolean; disabled: boolean; uid?: string; storageError: boolean; toggle: () => void; reset: () => void }>({ active: false, picks: {}, mark: () => {}, ready: false, disabled: true, storageError: false, toggle: () => {}, reset: () => {} });
 export const useDraftMode = () => useContext(DraftContext);
 
 export function DraftMode({ rankingId, playerIds, disabled, children }: { rankingId: string; playerIds: string[]; disabled: boolean; children: ReactNode }) {
@@ -44,14 +44,20 @@ function DraftSession({ uid, rankingId, playerIds, disabled, children }: { uid?:
   function mark(id: string, pick: DraftPick) {
     if (active && playerIds.includes(id)) setState(previous => togglePick(previous, id, pick));
   }
-  return <DraftContext.Provider value={{ active, picks: active ? state.picks : {}, mark }}>
-    {!disabled && <div className="mb-4 flex flex-wrap items-center gap-3">
-      <AccountAction disabled={!!uid && !ready} onClick={() => setState(previous => ({ ...previous, active: !previous.active }))} className="cursor-pointer rounded-lg border border-[var(--border)] px-4 py-2 text-sm text-[var(--accent)] disabled:opacity-50">{active ? "Exit draft mode" : "Draft mode"}</AccountAction>
-      {active && <button type="button" className="cursor-pointer text-xs text-[var(--text-muted)] underline" onClick={() => { if (window.confirm("Clear all draft picks for this ranking on this device?")) setState({ active: true, picks: {} }); }}>Reset draft</button>}
-      {active && storageError && <p className="w-full text-xs text-[var(--text-muted)]">Browser storage is unavailable. Picks will last only while this page stays open.</p>}
-    </div>}
-    {children}
-  </DraftContext.Provider>;
+  return <DraftContext.Provider value={{ active, picks: active ? state.picks : {}, mark, ready, disabled, uid, storageError,
+    toggle: () => setState(previous => ({ ...previous, active: !previous.active })),
+    reset: () => { if (window.confirm("Clear all draft picks for this ranking on this device?")) setState({ active: true, picks: {} }); },
+  }}>{children}</DraftContext.Provider>;
+}
+
+export function DraftModeButton() {
+  const { active, ready, disabled, uid, storageError, toggle, reset } = useDraftMode();
+  if (disabled) return null;
+  return <div className="flex flex-wrap items-center gap-3">
+    <AccountAction disabled={!!uid && !ready} onClick={toggle} className="cursor-pointer rounded-lg border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-4 py-2 text-sm font-medium text-[var(--accent)] hover:bg-[var(--accent)]/15 disabled:cursor-default disabled:opacity-50">{active ? "Exit draft mode" : "Draft mode"}</AccountAction>
+    {active && <button type="button" className="cursor-pointer text-xs text-[var(--text-muted)] underline" onClick={reset}>Reset draft</button>}
+    {active && storageError && <p className="w-full text-xs text-[var(--text-muted)]">Browser storage is unavailable. Picks will last only while this page stays open.</p>}
+  </div>;
 }
 
 export function DraftControls({ id, name }: { id: string; name: string }) {

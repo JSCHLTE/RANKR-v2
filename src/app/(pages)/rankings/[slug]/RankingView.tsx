@@ -147,7 +147,7 @@ const RankingView = ({ meta, ranks, tiers = [] }: Props) => {
     }
   }
 
-  return <>
+  return <DraftMode rankingId={saved.meta.id} playerIds={current.ranks.map(entry => entry.player_id)} disabled={editing || isDeleting}>
     <RankingHeader meta={current.meta} isEditing={editing} isSaving={isSaving} isDeleting={isDeleting}
       onEdit={canEdit ? () => { if (!saving.current) { setDraft(saved); setError(""); setIsEditing(true); } } : undefined}
       onDelete={deleteRanking}
@@ -160,10 +160,8 @@ const RankingView = ({ meta, ranks, tiers = [] }: Props) => {
     {isOwner && currentAccess && !currentAccess.canEdit && !currentAccess.error && <p className="mb-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 text-sm">This ranking is view-only. Free accounts can edit their two oldest rankings, including public and private rankings. <Link href="/subscribe" className="text-[var(--accent)] underline">Get RANKR Pass to restore editing.</Link></p>}
     {error && <p role="alert" className="mb-4 text-sm text-red-400">{error}</p>}
     {editing && <div className="mb-4 flex items-center gap-3"><button type="button" disabled={isSaving || draft.tiers.length >= 100} onClick={addTier} className="cursor-pointer rounded-lg border border-[var(--border)] px-4 py-2 text-sm text-[var(--accent)] disabled:opacity-50">+ Add tier</button><p className="text-xs text-[var(--text-muted)]">Drag tier headers to set boundaries. Changes apply when you save.</p></div>}
-    <DraftMode rankingId={saved.meta.id} playerIds={current.ranks.map(entry => entry.player_id)} disabled={editing || isDeleting}>
-      <RankingList author={saved.meta.author} ranks={current.ranks} tiers={current.tiers} isEditing={editing} isSaving={isSaving} onMove={movePlayer} onMoveTier={moveTier} onRenameTier={changeTier} onRemoveTier={removeTier} />
-    </DraftMode>
-  </>;
+    <RankingList author={saved.meta.author} ranks={current.ranks} tiers={current.tiers} isEditing={editing} isSaving={isSaving} onMove={movePlayer} onMoveTier={moveTier} onRenameTier={changeTier} onRemoveTier={removeTier} />
+  </DraftMode>;
 };
 
 export default RankingView;
