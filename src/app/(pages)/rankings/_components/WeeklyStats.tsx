@@ -37,6 +37,7 @@ export default function WeeklyStats({ playerId }: { playerId: string }) {
     return () => controller.abort();
   }, [playerId, attempt]);
 
+  const seasons = data ? weeklySeasons(data) : [];
   const year = selectedYear ?? (data ? defaultWeeklySeason(data) : undefined);
   const columns = data && year !== undefined ? weeklyColumns(data, year) : [];
   const rows = data?.playerStats.filter(row => row.year === year).sort((a, b) => a.week - b.week) ?? [];
@@ -48,7 +49,11 @@ export default function WeeklyStats({ playerId }: { playerId: string }) {
   }
   return <section className={styles.section} aria-labelledby="weekly-heading">
     <div className={styles.sectionHeader}><div><p className={styles.eyebrow}>WEEK BY WEEK</p><h3 id="weekly-heading">Player logs</h3></div>
-      {data && <div className={`${styles.tabs} ${styles.seasonTabs}`} aria-label="Weekly log season">{weeklySeasons(data).map(season => <button key={season} type="button" aria-pressed={year === season} onClick={() => { setSelectedYear(season); scroll.current?.scrollTo({ left: 0 }); }}>{season}</button>)}</div>}
+      {seasons.length > 0 && <label className={styles.seasonSelect}>Season
+        <select value={year ?? ""} onChange={event => { setSelectedYear(Number(event.target.value)); scroll.current?.scrollTo({ left: 0 }); }}>
+          {seasons.map(season => <option key={season} value={season}>{season}</option>)}
+        </select>
+      </label>}
     </div>
     {status === "loading" && !data && <div role="status" className={styles.empty}>Loading weekly logs…<div className={styles.skeleton} /><div className={styles.skeleton} /><div className={styles.skeleton} /></div>}
     {(status === "missing" || (status === "ready" && !rows.length)) && <div role="status" className={styles.empty}>Weekly logs aren’t available for this player yet.</div>}
