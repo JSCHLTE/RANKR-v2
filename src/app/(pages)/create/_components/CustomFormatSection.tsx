@@ -105,7 +105,7 @@ const CustomFormatSection = ({ format, updateField }: CustomFormatSectionProps) 
 
   return (
     <div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
 
         {/* STANDARD */}
         <button
@@ -193,7 +193,7 @@ const CustomFormatSection = ({ format, updateField }: CustomFormatSectionProps) 
             Roster Spots
           </p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-6 gap-y-3">
             {POSITIONS.map((pos) => (
               <PositionCounter
                 key={pos}

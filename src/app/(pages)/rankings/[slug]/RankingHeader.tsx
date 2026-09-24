@@ -8,6 +8,7 @@ import Image from "next/image";
 import RankingLikes from "@/components/RankingLikes";
 import { DraftModeButton } from "@/components/DraftMode";
 import RosterTags from "../_components/RosterTags";
+import { scoringLabel } from "@/lib/scoring-label";
 
 interface Props {
   meta: RankingMeta;
@@ -27,7 +28,7 @@ export default function RankingHeader({ meta, onEdit, onDelete, isEditing, isSav
   const { user } = useAuth();
   const { rankObj, author, createdAt, updatedAt } = meta;
   const isOwner = user?.uid === author.uid;
-  const tags = [rankObj.scoring, rankObj.leagueSize ? `${rankObj.leagueSize} Teams` : null].filter(Boolean);
+  const tags = [scoringLabel(rankObj.scoring), rankObj.leagueSize ? `${rankObj.leagueSize} Teams` : null].filter(Boolean);
 
   return <div className="pb-6 pt-6 sm:pt-8">
     <section className="relative isolate overflow-hidden rounded-2xl border border-white/10 bg-[#111b1b] text-slate-100 shadow-[0_18px_50px_rgba(0,0,0,0.12)]">

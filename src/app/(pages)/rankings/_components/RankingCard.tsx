@@ -2,6 +2,7 @@ import RankrPassBadge from "@/components/RankrPassBadge";
 import Link from "next/link";
 import Image from "next/image";
 import { RankFormat, RankingMeta } from "@/types/rank";
+import { scoringLabel } from "@/lib/scoring-label";
 import RosterTags from "./RosterTags";
 
 const CARD_TONES = {
@@ -25,13 +26,12 @@ function cardTone(format: RankFormat | null): keyof typeof CARD_TONES {
   return "green";
 }
 
-export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
+export const RankingCard = ({ ranking, preview = false }: { ranking: RankingMeta; preview?: boolean }) => {
   const { rankObj, createdAt, updatedAt, author, rankingId } = ranking;
-  const tags = [rankObj.leagueSize ? `${rankObj.leagueSize} Teams` : null, rankObj.scoring].filter(Boolean);
+  const tags = [rankObj.leagueSize ? `${rankObj.leagueSize} Teams` : null, scoringLabel(rankObj.scoring)].filter(Boolean);
   const hasUpdatedAt = updatedAt && updatedAt !== "—";
 
-  return (
-    <Link href={`/rankings/${rankingId}`} className="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">
+  const card = (
       <article className={`relative flex h-full min-h-80 flex-col overflow-hidden rounded-2xl border p-5 text-slate-100 shadow-[0_12px_36px_rgba(0,0,0,0.12)] transition-colors duration-200 sm:p-6 ${CARD_TONES[cardTone(rankObj.format)]}`}>
         <div aria-hidden="true" className="pointer-events-none absolute -right-20 -top-24 h-56 w-56 rotate-45 border border-white/5 bg-white/[0.025]" />
         <div className="relative flex flex-1 flex-col">
@@ -78,6 +78,9 @@ export const RankingCard = ({ ranking }: { ranking: RankingMeta }) => {
           </footer>
         </div>
       </article>
-    </Link>
   );
+
+  return preview
+    ? <div className="h-full rounded-2xl">{card}</div>
+    : <Link href={`/rankings/${rankingId}`} className="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]">{card}</Link>;
 };
