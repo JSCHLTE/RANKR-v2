@@ -9,6 +9,7 @@ import RankingLikes from "@/components/RankingLikes";
 import { DraftModeButton } from "@/components/DraftMode";
 import RosterTags from "../_components/RosterTags";
 import { scoringLabel } from "@/lib/scoring-label";
+import { rankingTone } from "@/lib/ranking-tone";
 
 interface Props {
   meta: RankingMeta;
@@ -23,17 +24,32 @@ interface Props {
 }
 
 const actionClass = "inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-xl border border-white/15 bg-black/10 px-4 text-sm font-medium text-slate-100 transition-colors hover:bg-white/10 disabled:cursor-default disabled:opacity-50";
+const HEADER_TONES = {
+  green: {
+    background: "bg-[radial-gradient(ellipse_at_100%_0%,rgba(0,118,65,0.34),transparent_48%),linear-gradient(115deg,#172122_0%,#111a1d_58%,#0a3026_100%)]",
+    decoration: "border-emerald-400/5 bg-emerald-500/[0.035]",
+  },
+  blue: {
+    background: "bg-[radial-gradient(ellipse_at_100%_0%,rgba(15,87,153,0.38),transparent_48%),linear-gradient(115deg,#17202a_0%,#141c26_58%,#10334d_100%)]",
+    decoration: "border-sky-400/10 bg-sky-500/[0.045]",
+  },
+  pink: {
+    background: "bg-[radial-gradient(ellipse_at_100%_0%,rgba(122,48,143,0.36),transparent_48%),linear-gradient(115deg,#211b2b_0%,#1a1a25_58%,#3a1d42_100%)]",
+    decoration: "border-pink-400/10 bg-pink-500/[0.045]",
+  },
+};
 
 export default function RankingHeader({ meta, onEdit, onDelete, isEditing, isSaving, isDeleting, onSave, onCancel, onChange }: Props) {
   const { user } = useAuth();
   const { rankObj, author, createdAt, updatedAt } = meta;
   const isOwner = user?.uid === author.uid;
   const tags = [scoringLabel(rankObj.scoring), rankObj.leagueSize ? `${rankObj.leagueSize} Teams` : null].filter(Boolean);
+  const tone = HEADER_TONES[rankingTone(rankObj.format)];
 
   return <div className="pb-6 pt-6 sm:pt-8">
     <section className="relative isolate overflow-hidden rounded-2xl border border-white/10 bg-[#111b1b] text-slate-100 shadow-[0_18px_50px_rgba(0,0,0,0.12)]">
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_100%_0%,rgba(0,118,65,0.34),transparent_48%),linear-gradient(115deg,#172122_0%,#111a1d_58%,#0a3026_100%)]" />
-      <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-24 h-72 w-72 rotate-45 border border-emerald-400/5 bg-emerald-500/[0.035]" />
+      <div aria-hidden="true" className={`pointer-events-none absolute inset-0 ${tone.background}`} />
+      <div aria-hidden="true" className={`pointer-events-none absolute -right-16 -top-24 h-72 w-72 rotate-45 border ${tone.decoration}`} />
       <div className="relative p-5 sm:p-7">
         <div className="min-w-0">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">

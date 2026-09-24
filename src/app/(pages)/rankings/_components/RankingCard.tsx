@@ -1,8 +1,9 @@
 import RankrPassBadge from "@/components/RankrPassBadge";
 import Link from "next/link";
 import Image from "next/image";
-import { RankFormat, RankingMeta } from "@/types/rank";
+import { RankingMeta } from "@/types/rank";
 import { scoringLabel } from "@/lib/scoring-label";
+import { rankingTone } from "@/lib/ranking-tone";
 import RosterTags from "./RosterTags";
 
 const CARD_TONES = {
@@ -11,28 +12,13 @@ const CARD_TONES = {
   pink: "border-pink-500/20 bg-[radial-gradient(ellipse_at_20%_0%,rgba(122,48,143,0.31),transparent_60%),linear-gradient(145deg,#211b2b,#171e24)] hover:border-pink-400/45",
 };
 
-function cardTone(format: RankFormat | null): keyof typeof CARD_TONES {
-  if (!format) return "green";
-  const qb = format.QB ?? 0;
-  const rb = format.RB ?? 0;
-  const wr = format.WR ?? 0;
-  const te = format.TE ?? 0;
-  const flex = format.FLEX ?? 0;
-  const sflex = format.SFLEX ?? 0;
-
-  if (qb === 1 && rb === 2 && wr === 2 && te === 1 && flex === 0 && sflex === 1) return "pink";
-  if (qb === 1 && rb === 2 && te === 1 && sflex === 0 &&
-    ((wr === 2 && flex === 2) || (wr === 3 && flex === 1))) return "blue";
-  return "green";
-}
-
 export const RankingCard = ({ ranking, preview = false }: { ranking: RankingMeta; preview?: boolean }) => {
   const { rankObj, createdAt, updatedAt, author, rankingId } = ranking;
   const tags = [rankObj.leagueSize ? `${rankObj.leagueSize} Teams` : null, scoringLabel(rankObj.scoring)].filter(Boolean);
   const hasUpdatedAt = updatedAt && updatedAt !== "—";
 
   const card = (
-      <article className={`relative flex h-full min-h-80 flex-col overflow-hidden rounded-2xl border p-5 text-slate-100 shadow-[0_12px_36px_rgba(0,0,0,0.12)] transition-colors duration-200 sm:p-6 ${CARD_TONES[cardTone(rankObj.format)]}`}>
+      <article className={`relative flex h-full min-h-80 flex-col overflow-hidden rounded-2xl border p-5 text-slate-100 shadow-[0_12px_36px_rgba(0,0,0,0.12)] transition-colors duration-200 sm:p-6 ${CARD_TONES[rankingTone(rankObj.format)]}`}>
         <div aria-hidden="true" className="pointer-events-none absolute -right-20 -top-24 h-56 w-56 rotate-45 border border-white/5 bg-white/[0.025]" />
         <div className="relative flex flex-1 flex-col">
           <div className="mb-5 flex items-center justify-between gap-3">
