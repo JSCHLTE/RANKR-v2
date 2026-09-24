@@ -58,12 +58,12 @@ export default function WeeklyStats({ playerId }: { playerId: string }) {
       <div ref={scroll} className={styles.tableScroll} tabIndex={0} role="region" aria-label={`Weekly statistics for ${year}, horizontally scrollable`}>
         <table className={styles.table}><caption className="sr-only">Weekly player logs for {year}, ordered by week</caption><thead>
           <tr><th scope="colgroup" colSpan={2}>Game</th>{groups.map(group => <th key={group.name} scope="colgroup" colSpan={group.count}>{group.name}</th>)}</tr>
-          <tr><th scope="col" className={styles.sticky}>Week · Opponent</th><th scope="col">Team</th>{columns.map(column => <th key={`${column.context}-${column.id}`} scope="col"><abbr title={rows.flatMap(row => row.stats).find(stat => stat.serial_id === column.id && stat.stat_context === column.context)?.description || column.id}>{column.label}</abbr></th>)}</tr>
+          <tr><th scope="col" className={styles.sticky}>Week</th><th scope="col">Team</th>{columns.map(column => <th key={`${column.context}-${column.id}`} scope="col"><abbr title={rows.flatMap(row => row.stats).find(stat => stat.serial_id === column.id && stat.stat_context === column.context)?.description || column.id}>{column.label}</abbr></th>)}</tr>
         </thead><tbody>{rows.map((row, index) => <tr key={`${row.week}-${index}`}>
-          <th scope="row" className={styles.sticky}>{row.week}. {row.opponent}{row.upcoming && <span className={styles.scheduled}>Scheduled</span>}</th><td>{row.team?.abbr || "—"}</td>
+          <th scope="row" className={styles.sticky}>{row.week}. {row.opponent}</th><td>{row.team?.abbr || "—"}</td>
           {columns.map(column => { const stat = weeklyStat(row, column); const grade = statGrade(stat); return <td key={`${column.context}-${column.id}`} data-grade={grade} title={`${stat?.description || column.label}${grade === undefined ? "" : ` · ${grades[grade]}`}`}>{formatWeeklyStat(stat)}</td>; })}
         </tr>)}</tbody></table>
-      </div><p className={styles.footnote}>— = unavailable · Scheduled games have no recorded stats. Colors reflect the supplied performance ranges.</p>
+      </div><p className={styles.footnote}>— = unavailable, including upcoming games. Colors reflect the supplied performance ranges.</p>
     </>}
   </section>;
 }
