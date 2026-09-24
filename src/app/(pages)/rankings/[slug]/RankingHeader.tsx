@@ -33,12 +33,8 @@ export default function RankingHeader({ meta, onEdit, onDelete, isEditing, isSav
     <section className="relative isolate overflow-hidden rounded-2xl border border-white/10 bg-[#111b1b] text-slate-100 shadow-[0_18px_50px_rgba(0,0,0,0.12)]">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_100%_0%,rgba(0,118,65,0.34),transparent_48%),linear-gradient(115deg,#172122_0%,#111a1d_58%,#0a3026_100%)]" />
       <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-24 h-72 w-72 rotate-45 border border-emerald-400/5 bg-emerald-500/[0.035]" />
-      <div className="relative flex flex-col gap-5 p-5 sm:flex-row sm:gap-6 sm:p-7">
-        <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-emerald-500/70 bg-emerald-500/[0.06] sm:h-24 sm:w-24">
-          <Image src="/lion-green-t.svg" alt="Rankr lion" width={76} height={76} className="h-[4.25rem] w-[4.25rem] object-contain sm:h-20 sm:w-20" />
-        </div>
-
-        <div className="min-w-0 flex-1">
+      <div className="relative p-5 sm:p-7">
+        <div className="min-w-0">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
             <div className="min-w-0 flex-1">
               {isEditing && isOwner ? <div className="space-y-2">
