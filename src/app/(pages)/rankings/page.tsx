@@ -19,6 +19,7 @@ const Rankings = async () => {
       rankObj: raw.rankObj ?? null,
       likeCount: raw.likeCount ?? 0,
       createdAt: formatTimestamp(raw.createdAt),
+      createdAtMs: raw.createdAt?.toMillis?.() ?? doc.createTime?.toMillis() ?? 0,
       updatedAt: formatTimestamp(raw.updatedAt),
     };
   });

@@ -34,6 +34,7 @@
     rankingId: string;
     author: author;
     createdAt: string;
+    createdAtMs?: number;
     updatedAt: string;
     rankObj: RankObj;
   }

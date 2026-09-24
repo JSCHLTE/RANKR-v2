@@ -4,7 +4,7 @@ import { getPositionColors } from "@/constants/positions";
 
 const POSITION_ORDER = ["QB", "RB", "WR", "TE", "FLEX", "SFLEX", "K", "DEF", "DST"];
 
-export default function RosterTags({ format, children }: { format: RankFormat | null; children?: ReactNode }) {
+export default function RosterTags({ format, children, onDark = false }: { format: RankFormat | null; children?: ReactNode; onDark?: boolean }) {
   const entries = Object.entries(format ?? {})
     .filter((entry): entry is [string, number] => typeof entry[1] === "number" && entry[1] > 0)
     .sort(([a], [b]) => {
@@ -18,13 +18,13 @@ export default function RosterTags({ format, children }: { format: RankFormat | 
   if (!entries.length && !children) return null;
 
   return <div className="space-y-2">
-    {entries.length > 0 && <p className="text-[10px] font-semibold uppercase tracking-widest text-[var(--text-muted)]">Roster</p>}
+    {entries.length > 0 && <p className={`text-[10px] font-semibold uppercase tracking-widest ${onDark ? "text-slate-300" : "text-[var(--text-muted)]"}`}>Roster</p>}
     <div className="flex flex-wrap gap-1.5">
       {entries.map(([position, count]) => {
         const colors = getPositionColors(position);
         return <span key={position} className={`inline-flex h-7 items-center gap-1.5 rounded-md border px-2.5 text-[11px] leading-none ${colors.bg} ${colors.border}`}>
           <span className={`font-semibold ${colors.text}`}>{position}</span>
-          <span className="font-semibold tabular-nums text-[var(--foreground)]">{count}</span>
+          <span className={`font-semibold tabular-nums ${onDark ? "text-slate-100" : "text-[var(--foreground)]"}`}>{count}</span>
         </span>;
       })}
       {children}
