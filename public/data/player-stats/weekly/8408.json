@@ -52188,6 +52188,26 @@
           "max_value": 40
         },
         {
+          "stat_id": 993,
+          "value": 7,
+          "game_date": "2026-09-13T00:00:00.000Z",
+          "year": 2026,
+          "week": 1,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Juke Rate",
+          "is_highest_best": true,
+          "value_type": "percent",
+          "position_category": "null",
+          "stat_category": "rushing",
+          "serial_id": "JukeRate",
+          "data_type": "decimal",
+          "display_decimal_places": 0,
+          "min_value": 0,
+          "max_value": 35
+        },
+        {
           "stat_id": 1067,
           "value": 0,
           "game_date": "2026-09-13T00:00:00.000Z",
@@ -52346,6 +52366,26 @@
           "display_decimal_places": 2,
           "min_value": 2,
           "max_value": 5
+        },
+        {
+          "stat_id": 1104,
+          "value": 45,
+          "game_date": "2026-09-13T00:00:00.000Z",
+          "year": 2026,
+          "week": 1,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 19468,
+          "description": "Percentage of team offensive snaps played",
+          "is_highest_best": true,
+          "value_type": "percent",
+          "position_category": "null",
+          "stat_category": "rushing",
+          "serial_id": "SnapShare",
+          "data_type": "decimal",
+          "display_decimal_places": 0,
+          "min_value": 0,
+          "max_value": 90
         },
         {
           "stat_id": 937,

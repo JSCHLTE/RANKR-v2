@@ -1,0 +1,2904 @@
+{
+  "started_at": "2026-09-24T09:11:14.833Z",
+  "input": "C:\\Users\\JSchulte\\Desktop\\RANKR_data\\stats\\weekly\\players_lite.json",
+  "output_directory": "C:\\Users\\JSchulte\\Desktop\\RANKR_data\\stats\\weekly\\player-stats\\weekly",
+  "eligible_count": 357,
+  "selected_count": 357,
+  "skipped_without_flock_id": [
+    {
+      "player_id": "11533",
+      "flock_id": "",
+      "name": "Brandon Aubrey"
+    },
+    {
+      "player_id": "3451",
+      "flock_id": "",
+      "name": "Ka'imi Fairbairn"
+    },
+    {
+      "player_id": "8259",
+      "flock_id": "",
+      "name": "Cameron Dicker"
+    },
+    {
+      "player_id": "11786",
+      "flock_id": "",
+      "name": "Cam Little"
+    },
+    {
+      "player_id": "2747",
+      "flock_id": "",
+      "name": "Jason Myers"
+    },
+    {
+      "player_id": "5189",
+      "flock_id": "",
+      "name": "Eddy Pineiro"
+    },
+    {
+      "player_id": "12711",
+      "flock_id": "",
+      "name": "Tyler Loop"
+    },
+    {
+      "player_id": "11539",
+      "flock_id": "",
+      "name": "Jake Bates"
+    },
+    {
+      "player_id": "7839",
+      "flock_id": "",
+      "name": "Evan McPherson"
+    },
+    {
+      "player_id": "6650",
+      "flock_id": "",
+      "name": "Chase McLaughlin"
+    },
+    {
+      "player_id": "12713",
+      "flock_id": "",
+      "name": "Andy Borregales"
+    },
+    {
+      "player_id": "2020",
+      "flock_id": "",
+      "name": "Cairo Santos"
+    },
+    {
+      "player_id": "12015",
+      "flock_id": "",
+      "name": "Harrison Mevis"
+    },
+    {
+      "player_id": "1945",
+      "flock_id": "",
+      "name": "Chris Boswell"
+    },
+    {
+      "player_id": "4227",
+      "flock_id": "",
+      "name": "Harrison Butker"
+    },
+    {
+      "player_id": "11792",
+      "flock_id": "",
+      "name": "Will Reichard"
+    },
+    {
+      "player_id": "3678",
+      "flock_id": "",
+      "name": "Wil Lutz"
+    },
+    {
+      "player_id": "4195",
+      "flock_id": "",
+      "name": "Jake Elliott"
+    },
+    {
+      "player_id": "7042",
+      "flock_id": "",
+      "name": "Tyler Bass"
+    },
+    {
+      "player_id": "6528",
+      "flock_id": "",
+      "name": "Joey Slye"
+    },
+    {
+      "player_id": "10955",
+      "flock_id": "",
+      "name": "Chad Ryland"
+    },
+    {
+      "player_id": "13545",
+      "flock_id": "",
+      "name": "Trey Smack"
+    },
+    {
+      "player_id": "5095",
+      "flock_id": "",
+      "name": "Daniel Carlson"
+    },
+    {
+      "player_id": "12961",
+      "flock_id": "",
+      "name": "Ryan Fitzgerald"
+    },
+    {
+      "player_id": "650",
+      "flock_id": "",
+      "name": "Nick Folk"
+    },
+    {
+      "player_id": "11058",
+      "flock_id": "",
+      "name": "Blake Grupe"
+    },
+    {
+      "player_id": "11653",
+      "flock_id": "",
+      "name": "Charlie Smyth"
+    },
+    {
+      "player_id": "12185",
+      "flock_id": "",
+      "name": "Spencer Shrader"
+    },
+    {
+      "player_id": "13968",
+      "flock_id": "",
+      "name": "Drew Stevens"
+    },
+    {
+      "player_id": "4233",
+      "flock_id": "",
+      "name": "Zane Gonzalez"
+    },
+    {
+      "player_id": "6083",
+      "flock_id": "",
+      "name": "Matt Gay"
+    },
+    {
+      "player_id": "11261",
+      "flock_id": "",
+      "name": "Andre Szmyt"
+    },
+    {
+      "player_id": "13066",
+      "flock_id": "",
+      "name": "Ben Sauls"
+    },
+    {
+      "player_id": "13833",
+      "flock_id": "",
+      "name": "Dominic Zvada"
+    },
+    {
+      "player_id": "7922",
+      "flock_id": "",
+      "name": "Riley Patterson"
+    },
+    {
+      "player_id": "5119",
+      "flock_id": "",
+      "name": "Jason Sanders"
+    },
+    {
+      "player_id": "1433",
+      "flock_id": "",
+      "name": "Brandon McManus"
+    },
+    {
+      "player_id": "10937",
+      "flock_id": "",
+      "name": "Jake Moody"
+    },
+    {
+      "player_id": "4666",
+      "flock_id": "",
+      "name": "Younghoe Koo"
+    },
+    {
+      "player_id": "8258",
+      "flock_id": "",
+      "name": "Cade York"
+    },
+    {
+      "player_id": "13804",
+      "flock_id": "",
+      "name": "Kansei Matsuzawa"
+    },
+    {
+      "player_id": "1348",
+      "flock_id": "",
+      "name": "Dustin Hopkins"
+    },
+    {
+      "player_id": "11145",
+      "flock_id": "",
+      "name": "Tanner Brown"
+    },
+    {
+      "player_id": "11092",
+      "flock_id": "",
+      "name": "B.T. Potter"
+    },
+    {
+      "player_id": "13813",
+      "flock_id": "",
+      "name": "Laith Marjan"
+    },
+    {
+      "player_id": "HOU",
+      "flock_id": "",
+      "name": "Houston Texans"
+    },
+    {
+      "player_id": "LAR",
+      "flock_id": "",
+      "name": "Los Angeles Rams"
+    },
+    {
+      "player_id": "DEN",
+      "flock_id": "",
+      "name": "Denver Broncos"
+    },
+    {
+      "player_id": "SEA",
+      "flock_id": "",
+      "name": "Seattle Seahawks"
+    },
+    {
+      "player_id": "PHI",
+      "flock_id": "",
+      "name": "Philadelphia Eagles"
+    },
+    {
+      "player_id": "MIN",
+      "flock_id": "",
+      "name": "Minnesota Vikings"
+    },
+    {
+      "player_id": "NE",
+      "flock_id": "",
+      "name": "New England Patriots"
+    },
+    {
+      "player_id": "PIT",
+      "flock_id": "",
+      "name": "Pittsburgh Steelers"
+    },
+    {
+      "player_id": "JAX",
+      "flock_id": "",
+      "name": "Jacksonville Jaguars"
+    },
+    {
+      "player_id": "LAC",
+      "flock_id": "",
+      "name": "Los Angeles Chargers"
+    },
+    {
+      "player_id": "BAL",
+      "flock_id": "",
+      "name": "Baltimore Ravens"
+    },
+    {
+      "player_id": "KC",
+      "flock_id": "",
+      "name": "Kansas City Chiefs"
+    },
+    {
+      "player_id": "GB",
+      "flock_id": "",
+      "name": "Green Bay Packers"
+    },
+    {
+      "player_id": "BUF",
+      "flock_id": "",
+      "name": "Buffalo Bills"
+    },
+    {
+      "player_id": "DET",
+      "flock_id": "",
+      "name": "Detroit Lions"
+    },
+    {
+      "player_id": "CLE",
+      "flock_id": "",
+      "name": "Cleveland Browns"
+    },
+    {
+      "player_id": "NO",
+      "flock_id": "",
+      "name": "New Orleans Saints"
+    },
+    {
+      "player_id": "IND",
+      "flock_id": "",
+      "name": "Indianapolis Colts"
+    },
+    {
+      "player_id": "SF",
+      "flock_id": "",
+      "name": "San Francisco 49ers"
+    },
+    {
+      "player_id": "ATL",
+      "flock_id": "",
+      "name": "Atlanta Falcons"
+    },
+    {
+      "player_id": "CHI",
+      "flock_id": "",
+      "name": "Chicago Bears"
+    },
+    {
+      "player_id": "DAL",
+      "flock_id": "",
+      "name": "Dallas Cowboys"
+    },
+    {
+      "player_id": "NYG",
+      "flock_id": "",
+      "name": "New York Giants"
+    },
+    {
+      "player_id": "TB",
+      "flock_id": "",
+      "name": "Tampa Bay Buccaneers"
+    },
+    {
+      "player_id": "CAR",
+      "flock_id": "",
+      "name": "Carolina Panthers"
+    },
+    {
+      "player_id": "TEN",
+      "flock_id": "",
+      "name": "Tennessee Titans"
+    },
+    {
+      "player_id": "CIN",
+      "flock_id": "",
+      "name": "Cincinnati Bengals"
+    },
+    {
+      "player_id": "WAS",
+      "flock_id": "",
+      "name": "Washington Commanders"
+    },
+    {
+      "player_id": "MIA",
+      "flock_id": "",
+      "name": "Miami Dolphins"
+    },
+    {
+      "player_id": "LV",
+      "flock_id": "",
+      "name": "Las Vegas Raiders"
+    },
+    {
+      "player_id": "NYJ",
+      "flock_id": "",
+      "name": "New York Jets"
+    },
+    {
+      "player_id": "ARI",
+      "flock_id": "",
+      "name": "Arizona Cardinals"
+    }
+  ],
+  "downloaded": [
+    {
+      "player_id": "9221",
+      "flock_id": "9221",
+      "name": "Jahmyr Gibbs",
+      "filename": "9221.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "9509",
+      "flock_id": "9509",
+      "name": "Bijan Robinson",
+      "filename": "9509.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "9493",
+      "flock_id": "9493",
+      "name": "Puka Nacua",
+      "filename": "9493.json",
+      "weekly_rows": 64
+    },
+    {
+      "player_id": "7564",
+      "flock_id": "7564",
+      "name": "Ja'Marr Chase",
+      "filename": "7564.json",
+      "weekly_rows": 101
+    },
+    {
+      "player_id": "9488",
+      "flock_id": "9488",
+      "name": "Jaxon Smith-Njigba",
+      "filename": "9488.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "4034",
+      "flock_id": "4034",
+      "name": "Christian McCaffrey",
+      "filename": "4034.json",
+      "weekly_rows": 142
+    },
+    {
+      "player_id": "7547",
+      "flock_id": "7547",
+      "name": "Amon-Ra St. Brown",
+      "filename": "7547.json",
+      "weekly_rows": 103
+    },
+    {
+      "player_id": "6794",
+      "flock_id": "6794",
+      "name": "Justin Jefferson",
+      "filename": "6794.json",
+      "weekly_rows": 112
+    },
+    {
+      "player_id": "8151",
+      "flock_id": "8151",
+      "name": "Kenneth Walker",
+      "filename": "8151.json",
+      "weekly_rows": 84
+    },
+    {
+      "player_id": "6813",
+      "flock_id": "6813",
+      "name": "Jonathan Taylor",
+      "filename": "6813.json",
+      "weekly_rows": 112
+    },
+    {
+      "player_id": "8138",
+      "flock_id": "8138",
+      "name": "James Cook",
+      "filename": "8138.json",
+      "weekly_rows": 85
+    },
+    {
+      "player_id": "9224",
+      "flock_id": "9224",
+      "name": "Chase Brown",
+      "filename": "9224.json",
+      "weekly_rows": 65
+    },
+    {
+      "player_id": "12527",
+      "flock_id": "12527",
+      "name": "Ashton Jeanty",
+      "filename": "12527.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "6786",
+      "flock_id": "6786",
+      "name": "CeeDee Lamb",
+      "filename": "6786.json",
+      "weekly_rows": 117
+    },
+    {
+      "player_id": "4866",
+      "flock_id": "4866",
+      "name": "Saquon Barkley",
+      "filename": "4866.json",
+      "weekly_rows": 137
+    },
+    {
+      "player_id": "3198",
+      "flock_id": "3198",
+      "name": "Derrick Henry",
+      "filename": "3198.json",
+      "weekly_rows": 174
+    },
+    {
+      "player_id": "12507",
+      "flock_id": "12507",
+      "name": "Omarion Hampton",
+      "filename": "12507.json",
+      "weekly_rows": 28
+    },
+    {
+      "player_id": "9226",
+      "flock_id": "9226",
+      "name": "De'Von Achane",
+      "filename": "9226.json",
+      "weekly_rows": 65
+    },
+    {
+      "player_id": "11632",
+      "flock_id": "11632",
+      "name": "Malik Nabers",
+      "filename": "11632.json",
+      "weekly_rows": 39
+    },
+    {
+      "player_id": "8144",
+      "flock_id": "8144",
+      "name": "Chris Olave",
+      "filename": "8144.json",
+      "weekly_rows": 78
+    },
+    {
+      "player_id": "8112",
+      "flock_id": "8112",
+      "name": "Drake London",
+      "filename": "8112.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "7569",
+      "flock_id": "7569",
+      "name": "Nico Collins",
+      "filename": "7569.json",
+      "weekly_rows": 93
+    },
+    {
+      "player_id": "8137",
+      "flock_id": "8137",
+      "name": "George Pickens",
+      "filename": "8137.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "8130",
+      "flock_id": "8130",
+      "name": "Trey McBride",
+      "filename": "8130.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "10229",
+      "flock_id": "10229",
+      "name": "Rashee Rice",
+      "filename": "10229.json",
+      "weekly_rows": 48
+    },
+    {
+      "player_id": "13287",
+      "flock_id": "13242",
+      "name": "Jeremiyah Love",
+      "filename": "13287.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "8155",
+      "flock_id": "8155",
+      "name": "Breece Hall",
+      "filename": "8155.json",
+      "weekly_rows": 76
+    },
+    {
+      "player_id": "9997",
+      "flock_id": "9997",
+      "name": "Zay Flowers",
+      "filename": "9997.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "11604",
+      "flock_id": "11604",
+      "name": "Brock Bowers",
+      "filename": "11604.json",
+      "weekly_rows": 50
+    },
+    {
+      "player_id": "7588",
+      "flock_id": "7588",
+      "name": "Javonte Williams",
+      "filename": "7588.json",
+      "weekly_rows": 89
+    },
+    {
+      "player_id": "11635",
+      "flock_id": "11635",
+      "name": "Ladd McConkey",
+      "filename": "11635.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "7525",
+      "flock_id": "7525",
+      "name": "DeVonta Smith",
+      "filename": "7525.json",
+      "weekly_rows": 103
+    },
+    {
+      "player_id": "8150",
+      "flock_id": "8150",
+      "name": "Kyren Williams",
+      "filename": "8150.json",
+      "weekly_rows": 75
+    },
+    {
+      "player_id": "6801",
+      "flock_id": "6801",
+      "name": "Tee Higgins",
+      "filename": "6801.json",
+      "weekly_rows": 118
+    },
+    {
+      "player_id": "6790",
+      "flock_id": "6790",
+      "name": "D'Andre Swift",
+      "filename": "6790.json",
+      "weekly_rows": 119
+    },
+    {
+      "player_id": "11584",
+      "flock_id": "11584",
+      "name": "Bucky Irving",
+      "filename": "11584.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "8146",
+      "flock_id": "8146",
+      "name": "Garrett Wilson",
+      "filename": "8146.json",
+      "weekly_rows": 78
+    },
+    {
+      "player_id": "4984",
+      "flock_id": "4984",
+      "name": "Josh Allen",
+      "filename": "4984.json",
+      "weekly_rows": 149
+    },
+    {
+      "player_id": "7526",
+      "flock_id": "7526",
+      "name": "Jaylen Waddle",
+      "filename": "7526.json",
+      "weekly_rows": 103
+    },
+    {
+      "player_id": "12514",
+      "flock_id": "12514",
+      "name": "Emeka Egbuka",
+      "filename": "12514.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "8167",
+      "flock_id": "8167",
+      "name": "Christian Watson",
+      "filename": "8167.json",
+      "weekly_rows": 80
+    },
+    {
+      "player_id": "12517",
+      "flock_id": "12517",
+      "name": "Colston Loveland",
+      "filename": "12517.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "5892",
+      "flock_id": "5892",
+      "name": "David Montgomery",
+      "filename": "5892.json",
+      "weekly_rows": 131
+    },
+    {
+      "player_id": "12481",
+      "flock_id": "12481",
+      "name": "Cam Skattebo",
+      "filename": "12481.json",
+      "weekly_rows": 26
+    },
+    {
+      "player_id": "12526",
+      "flock_id": "12526",
+      "name": "Tetairoa McMillan",
+      "filename": "12526.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "7543",
+      "flock_id": "7543",
+      "name": "Travis Etienne",
+      "filename": "7543.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "4983",
+      "flock_id": "4983",
+      "name": "DJ Moore",
+      "filename": "4983.json",
+      "weekly_rows": 151
+    },
+    {
+      "player_id": "12490",
+      "flock_id": "12490",
+      "name": "Bhayshul Tuten",
+      "filename": "12490.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "8148",
+      "flock_id": "8148",
+      "name": "Jameson Williams",
+      "filename": "8148.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "2216",
+      "flock_id": "2216",
+      "name": "Mike Evans",
+      "filename": "2216.json",
+      "weekly_rows": 206
+    },
+    {
+      "player_id": "12519",
+      "flock_id": "12519",
+      "name": "Luther Burden",
+      "filename": "12519.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "4881",
+      "flock_id": "4881",
+      "name": "Lamar Jackson",
+      "filename": "4881.json",
+      "weekly_rows": 151
+    },
+    {
+      "player_id": "9487",
+      "flock_id": "9487",
+      "name": "Parker Washington",
+      "filename": "9487.json",
+      "weekly_rows": 64
+    },
+    {
+      "player_id": "12512",
+      "flock_id": "12512",
+      "name": "Quinshon Judkins",
+      "filename": "12512.json",
+      "weekly_rows": 33
+    },
+    {
+      "player_id": "13286",
+      "flock_id": "13244",
+      "name": "Jadarian Price",
+      "filename": "13286.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "11620",
+      "flock_id": "11620",
+      "name": "Rome Odunze",
+      "filename": "11620.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "12518",
+      "flock_id": "12518",
+      "name": "Tyler Warren",
+      "filename": "12518.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "5927",
+      "flock_id": "5927",
+      "name": "Terry McLaurin",
+      "filename": "5927.json",
+      "weekly_rows": 135
+    },
+    {
+      "player_id": "2133",
+      "flock_id": "2133",
+      "name": "Davante Adams",
+      "filename": "2133.json",
+      "weekly_rows": 215
+    },
+    {
+      "player_id": "7611",
+      "flock_id": "7611",
+      "name": "Rhamondre Stevenson",
+      "filename": "7611.json",
+      "weekly_rows": 101
+    },
+    {
+      "player_id": "5859",
+      "flock_id": "5859",
+      "name": "A.J. Brown",
+      "filename": "5859.json",
+      "weekly_rows": 132
+    },
+    {
+      "player_id": "8228",
+      "flock_id": "8228",
+      "name": "Jaylen Warren",
+      "filename": "8228.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "11560",
+      "flock_id": "11560",
+      "name": "Caleb Williams",
+      "filename": "11560.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "13279",
+      "flock_id": "13265",
+      "name": "Carnell Tate",
+      "filename": "13279.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "11631",
+      "flock_id": "11631",
+      "name": "Brian Thomas",
+      "filename": "11631.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "6770",
+      "flock_id": "6770",
+      "name": "Joe Burrow",
+      "filename": "6770.json",
+      "weekly_rows": 96
+    },
+    {
+      "player_id": "7594",
+      "flock_id": "7594",
+      "name": "Chuba Hubbard",
+      "filename": "7594.json",
+      "weekly_rows": 101
+    },
+    {
+      "player_id": "11628",
+      "flock_id": "11628",
+      "name": "Marvin Harrison",
+      "filename": "11628.json",
+      "weekly_rows": 51
+    },
+    {
+      "player_id": "12529",
+      "flock_id": "12529",
+      "name": "TreVeyon Henderson",
+      "filename": "12529.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "4037",
+      "flock_id": "4037",
+      "name": "Chris Godwin",
+      "filename": "4037.json",
+      "weekly_rows": 154
+    },
+    {
+      "player_id": "11566",
+      "flock_id": "11566",
+      "name": "Jayden Daniels",
+      "filename": "11566.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "9484",
+      "flock_id": "9484",
+      "name": "Tucker Kraft",
+      "filename": "9484.json",
+      "weekly_rows": 60
+    },
+    {
+      "player_id": "2449",
+      "flock_id": "2449",
+      "name": "Stefon Diggs",
+      "filename": "2449.json",
+      "weekly_rows": 189
+    },
+    {
+      "player_id": "12501",
+      "flock_id": "12501",
+      "name": "Matthew Golden",
+      "filename": "12501.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "11564",
+      "flock_id": "11564",
+      "name": "Drake Maye",
+      "filename": "11564.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "7523",
+      "flock_id": "7523",
+      "name": "Trevor Lawrence",
+      "filename": "7523.json",
+      "weekly_rows": 98
+    },
+    {
+      "player_id": "12533",
+      "flock_id": "12533",
+      "name": "Jacory Croskey-Merritt",
+      "filename": "12533.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "6904",
+      "flock_id": "6904",
+      "name": "Jalen Hurts",
+      "filename": "6904.json",
+      "weekly_rows": 119
+    },
+    {
+      "player_id": "5846",
+      "flock_id": "5846",
+      "name": "DK Metcalf",
+      "filename": "5846.json",
+      "weekly_rows": 133
+    },
+    {
+      "player_id": "8408",
+      "flock_id": "8408",
+      "name": "Jordan Mason",
+      "filename": "8408.json",
+      "weekly_rows": 81
+    },
+    {
+      "player_id": "6819",
+      "flock_id": "6819",
+      "name": "Michael Pittman",
+      "filename": "6819.json",
+      "weekly_rows": 116
+    },
+    {
+      "player_id": "5872",
+      "flock_id": "5872",
+      "name": "Deebo Samuel",
+      "filename": "5872.json",
+      "weekly_rows": 132
+    },
+    {
+      "player_id": "9754",
+      "flock_id": "9754",
+      "name": "Quentin Johnston",
+      "filename": "9754.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "10232",
+      "flock_id": "10232",
+      "name": "Michael Wilson",
+      "filename": "10232.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "7021",
+      "flock_id": "7021",
+      "name": "Rico Dowdle",
+      "filename": "7021.json",
+      "weekly_rows": 90
+    },
+    {
+      "player_id": "12489",
+      "flock_id": "12489",
+      "name": "RJ Harvey",
+      "filename": "12489.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "10859",
+      "flock_id": "10859",
+      "name": "Sam LaPorta",
+      "filename": "10859.json",
+      "weekly_rows": 61
+    },
+    {
+      "player_id": "6806",
+      "flock_id": "6806",
+      "name": "J.K. Dobbins",
+      "filename": "6806.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "12534",
+      "flock_id": "2025001",
+      "name": "Kyle Monangai",
+      "filename": "12534.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "9756",
+      "flock_id": "9756",
+      "name": "Jordan Addison",
+      "filename": "9756.json",
+      "weekly_rows": 66
+    },
+    {
+      "player_id": "11586",
+      "flock_id": "11586",
+      "name": "Blake Corum",
+      "filename": "11586.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "11646",
+      "flock_id": "11646",
+      "name": "Jalen Coker",
+      "filename": "11646.json",
+      "weekly_rows": 43
+    },
+    {
+      "player_id": "8142",
+      "flock_id": "8142",
+      "name": "Alec Pierce",
+      "filename": "8142.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "11583",
+      "flock_id": "11583",
+      "name": "Jonathon Brooks",
+      "filename": "11583.json",
+      "weekly_rows": 22
+    },
+    {
+      "player_id": "5967",
+      "flock_id": "5967",
+      "name": "Tony Pollard",
+      "filename": "5967.json",
+      "weekly_rows": 135
+    },
+    {
+      "player_id": "13294",
+      "flock_id": "13266",
+      "name": "Makai Lemon",
+      "filename": "13294.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "6797",
+      "flock_id": "6797",
+      "name": "Justin Herbert",
+      "filename": "6797.json",
+      "weekly_rows": 115
+    },
+    {
+      "player_id": "3294",
+      "flock_id": "3294",
+      "name": "Dak Prescott",
+      "filename": "3294.json",
+      "weekly_rows": 164
+    },
+    {
+      "player_id": "10236",
+      "flock_id": "10236",
+      "name": "Dalton Kincaid",
+      "filename": "10236.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "11581",
+      "flock_id": "11581",
+      "name": "MarShawn Lloyd",
+      "filename": "11581.json",
+      "weekly_rows": 20
+    },
+    {
+      "player_id": "8131",
+      "flock_id": "8131",
+      "name": "Isaiah Likely",
+      "filename": "8131.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "8183",
+      "flock_id": "8183",
+      "name": "Brock Purdy",
+      "filename": "8183.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "4217",
+      "flock_id": "4217",
+      "name": "George Kittle",
+      "filename": "4217.json",
+      "weekly_rows": 153
+    },
+    {
+      "player_id": "9500",
+      "flock_id": "9500",
+      "name": "Josh Downs",
+      "filename": "9500.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "8136",
+      "flock_id": "8136",
+      "name": "Rachaad White",
+      "filename": "8136.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "12508",
+      "flock_id": "12508",
+      "name": "Jaxson Dart",
+      "filename": "12508.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "5045",
+      "flock_id": "5045",
+      "name": "Courtland Sutton",
+      "filename": "5045.json",
+      "weekly_rows": 137
+    },
+    {
+      "player_id": "13298",
+      "flock_id": "13268",
+      "name": "KC Concepcion",
+      "filename": "13298.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "5850",
+      "flock_id": "5850",
+      "name": "Josh Jacobs",
+      "filename": "5850.json",
+      "weekly_rows": 135
+    },
+    {
+      "player_id": "8126",
+      "flock_id": "8126",
+      "name": "Wan'Dale Robinson",
+      "filename": "8126.json",
+      "weekly_rows": 78
+    },
+    {
+      "player_id": "12506",
+      "flock_id": "12506",
+      "name": "Harold Fannin",
+      "filename": "12506.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "5022",
+      "flock_id": "5022",
+      "name": "Dallas Goedert",
+      "filename": "5022.json",
+      "weekly_rows": 138
+    },
+    {
+      "player_id": "11624",
+      "flock_id": "11624",
+      "name": "Xavier Worthy",
+      "filename": "11624.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "10222",
+      "flock_id": "10222",
+      "name": "Jayden Reed",
+      "filename": "10222.json",
+      "weekly_rows": 59
+    },
+    {
+      "player_id": "4046",
+      "flock_id": "4046",
+      "name": "Patrick Mahomes",
+      "filename": "4046.json",
+      "weekly_rows": 164
+    },
+    {
+      "player_id": "7567",
+      "flock_id": "7567",
+      "name": "Kenny Gainwell",
+      "filename": "7567.json",
+      "weekly_rows": 103
+    },
+    {
+      "player_id": "7553",
+      "flock_id": "7553",
+      "name": "Kyle Pitts",
+      "filename": "7553.json",
+      "weekly_rows": 97
+    },
+    {
+      "player_id": "4199",
+      "flock_id": "4199",
+      "name": "Aaron Jones",
+      "filename": "4199.json",
+      "weekly_rows": 159
+    },
+    {
+      "player_id": "11563",
+      "flock_id": "11563",
+      "name": "Bo Nix",
+      "filename": "11563.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "13281",
+      "flock_id": "13264",
+      "name": "Jordyn Tyson",
+      "filename": "13281.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "3163",
+      "flock_id": "3163",
+      "name": "Jared Goff",
+      "filename": "3163.json",
+      "weekly_rows": 183
+    },
+    {
+      "player_id": "421",
+      "flock_id": "421",
+      "name": "Matthew Stafford",
+      "filename": "421.json",
+      "weekly_rows": 283
+    },
+    {
+      "player_id": "13414",
+      "flock_id": "13364",
+      "name": "Kaelon Black",
+      "filename": "13414.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "10219",
+      "flock_id": "10219",
+      "name": "Chris Rodriguez",
+      "filename": "10219.json",
+      "weekly_rows": 61
+    },
+    {
+      "player_id": "5947",
+      "flock_id": "5947",
+      "name": "Jakobi Meyers",
+      "filename": "5947.json",
+      "weekly_rows": 135
+    },
+    {
+      "player_id": "1466",
+      "flock_id": "1466",
+      "name": "Travis Kelce",
+      "filename": "1466.json",
+      "weekly_rows": 220
+    },
+    {
+      "player_id": "13346",
+      "flock_id": "13267",
+      "name": "Denzel Boston",
+      "filename": "13346.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "12474",
+      "flock_id": "12474",
+      "name": "Woody Marks",
+      "filename": "12474.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "8132",
+      "flock_id": "8132",
+      "name": "Tyler Allgeier",
+      "filename": "8132.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "12545",
+      "flock_id": "2025013",
+      "name": "Tyler Shough",
+      "filename": "12545.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "1479",
+      "flock_id": "1479",
+      "name": "Keenan Allen",
+      "filename": "1479.json",
+      "weekly_rows": 223
+    },
+    {
+      "player_id": "8121",
+      "flock_id": "8121",
+      "name": "Romeo Doubs",
+      "filename": "8121.json",
+      "weekly_rows": 85
+    },
+    {
+      "player_id": "6804",
+      "flock_id": "6804",
+      "name": "Jordan Love",
+      "filename": "6804.json",
+      "weekly_rows": 119
+    },
+    {
+      "player_id": "13305",
+      "flock_id": "13262",
+      "name": "Mike Washington",
+      "filename": "13305.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "7002",
+      "flock_id": "7002",
+      "name": "Juwan Johnson",
+      "filename": "7002.json",
+      "weekly_rows": 110
+    },
+    {
+      "player_id": "4892",
+      "flock_id": "4892",
+      "name": "Baker Mayfield",
+      "filename": "4892.json",
+      "weekly_rows": 150
+    },
+    {
+      "player_id": "8134",
+      "flock_id": "8134",
+      "name": "Khalil Shakir",
+      "filename": "8134.json",
+      "weekly_rows": 85
+    },
+    {
+      "player_id": "13345",
+      "flock_id": "13243",
+      "name": "Jonah Coleman",
+      "filename": "13345.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "13296",
+      "flock_id": "13299",
+      "name": "Caleb Douglas",
+      "filename": "13296.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "6130",
+      "flock_id": "6130",
+      "name": "Devin Singletary",
+      "filename": "6130.json",
+      "weekly_rows": 134
+    },
+    {
+      "player_id": "8110",
+      "flock_id": "8110",
+      "name": "Jake Ferguson",
+      "filename": "8110.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "5849",
+      "flock_id": "5849",
+      "name": "Kyler Murray",
+      "filename": "5849.json",
+      "weekly_rows": 113
+    },
+    {
+      "player_id": "8676",
+      "flock_id": "8676",
+      "name": "Rashid Shaheed",
+      "filename": "8676.json",
+      "weekly_rows": 71
+    },
+    {
+      "player_id": "8161",
+      "flock_id": "8161",
+      "name": "Malik Willis",
+      "filename": "8161.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "5012",
+      "flock_id": "5012",
+      "name": "Mark Andrews",
+      "filename": "5012.json",
+      "weekly_rows": 145
+    },
+    {
+      "player_id": "9511",
+      "flock_id": "9511",
+      "name": "Keaton Mitchell",
+      "filename": "9511.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "13337",
+      "flock_id": "13253",
+      "name": "Emmett Johnson",
+      "filename": "13337.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "9225",
+      "flock_id": "9225",
+      "name": "Tank Bigsby",
+      "filename": "9225.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "13417",
+      "flock_id": "13305",
+      "name": "De'Zhaun Stribling",
+      "filename": "13417.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "12530",
+      "flock_id": "12530",
+      "name": "Travis Hunter",
+      "filename": "12530.json",
+      "weekly_rows": 25
+    },
+    {
+      "player_id": "9480",
+      "flock_id": "9480",
+      "name": "Brenton Strange",
+      "filename": "9480.json",
+      "weekly_rows": 64
+    },
+    {
+      "player_id": "11834",
+      "flock_id": "11834",
+      "name": "Devaughn Vele",
+      "filename": "11834.json",
+      "weekly_rows": 49
+    },
+    {
+      "player_id": "9758",
+      "flock_id": "9758",
+      "name": "C.J. Stroud",
+      "filename": "9758.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "10213",
+      "flock_id": "10213",
+      "name": "Tre Tucker",
+      "filename": "10213.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "11370",
+      "flock_id": "11370",
+      "name": "Chris Brooks",
+      "filename": "11370.json",
+      "weekly_rows": 59
+    },
+    {
+      "player_id": "3214",
+      "flock_id": "3214",
+      "name": "Hunter Henry",
+      "filename": "3214.json",
+      "weekly_rows": 164
+    },
+    {
+      "player_id": "9228",
+      "flock_id": "9228",
+      "name": "Bryce Young",
+      "filename": "9228.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "9486",
+      "flock_id": "9486",
+      "name": "Dontayvion Wicks",
+      "filename": "9486.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "9508",
+      "flock_id": "9508",
+      "name": "Tyjae Spears",
+      "filename": "9508.json",
+      "weekly_rows": 65
+    },
+    {
+      "player_id": "8154",
+      "flock_id": "8154",
+      "name": "Brian Robinson",
+      "filename": "8154.json",
+      "weekly_rows": 82
+    },
+    {
+      "player_id": "11618",
+      "flock_id": "11618",
+      "name": "Jalen McMillan",
+      "filename": "11618.json",
+      "weekly_rows": 39
+    },
+    {
+      "player_id": "8210",
+      "flock_id": "8210",
+      "name": "Chig Okonkwo",
+      "filename": "8210.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "5870",
+      "flock_id": "5870",
+      "name": "Daniel Jones",
+      "filename": "5870.json",
+      "weekly_rows": 113
+    },
+    {
+      "player_id": "13330",
+      "flock_id": "13308",
+      "name": "Kenyon Sadiq",
+      "filename": "13330.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "5844",
+      "flock_id": "5844",
+      "name": "T.J. Hockenson",
+      "filename": "5844.json",
+      "weekly_rows": 118
+    },
+    {
+      "player_id": "13276",
+      "flock_id": "13277",
+      "name": "Omar Cooper",
+      "filename": "13276.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "9504",
+      "flock_id": "9504",
+      "name": "Kayshon Boutte",
+      "filename": "9504.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "9757",
+      "flock_id": "9757",
+      "name": "Kendre Miller",
+      "filename": "9757.json",
+      "weekly_rows": 51
+    },
+    {
+      "player_id": "5001",
+      "flock_id": "5001",
+      "name": "Dalton Schultz",
+      "filename": "5001.json",
+      "weekly_rows": 146
+    },
+    {
+      "player_id": "10235",
+      "flock_id": "10235",
+      "name": "Roschon Johnson",
+      "filename": "10235.json",
+      "weekly_rows": 62
+    },
+    {
+      "player_id": "4035",
+      "flock_id": "4035",
+      "name": "Alvin Kamara",
+      "filename": "4035.json",
+      "weekly_rows": 164
+    },
+    {
+      "player_id": "9753",
+      "flock_id": "9753",
+      "name": "Zach Charbonnet",
+      "filename": "9753.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "12522",
+      "flock_id": "12522",
+      "name": "Cam Ward",
+      "filename": "12522.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "11576",
+      "flock_id": "11576",
+      "name": "Braelon Allen",
+      "filename": "11576.json",
+      "weekly_rows": 39
+    },
+    {
+      "player_id": "12509",
+      "flock_id": "12509",
+      "name": "Tre' Harris",
+      "filename": "12509.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "13301",
+      "flock_id": "13275",
+      "name": "Antonio Williams",
+      "filename": "13301.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "8180",
+      "flock_id": "8180",
+      "name": "Jalen Nailor",
+      "filename": "8180.json",
+      "weekly_rows": 79
+    },
+    {
+      "player_id": "8205",
+      "flock_id": "8205",
+      "name": "Isiah Pacheco",
+      "filename": "8205.json",
+      "weekly_rows": 77
+    },
+    {
+      "player_id": "3257",
+      "flock_id": "3257",
+      "name": "Jacoby Brissett",
+      "filename": "3257.json",
+      "weekly_rows": 183
+    },
+    {
+      "player_id": "11603",
+      "flock_id": "11603",
+      "name": "AJ Barner",
+      "filename": "11603.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "13293",
+      "flock_id": "13273",
+      "name": "Ja'Kobi Lane",
+      "filename": "13293.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "13311",
+      "flock_id": "13269",
+      "name": "Chris Bell",
+      "filename": "13311.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "11625",
+      "flock_id": "11625",
+      "name": "Adonai Mitchell",
+      "filename": "11625.json",
+      "weekly_rows": 53
+    },
+    {
+      "player_id": "12493",
+      "flock_id": "12493",
+      "name": "Oronde Gadsden",
+      "filename": "12493.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "12504",
+      "flock_id": "12504",
+      "name": "Kaleb Johnson",
+      "filename": "12504.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "12469",
+      "flock_id": "12469",
+      "name": "Dylan Sampson",
+      "filename": "12469.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "96",
+      "flock_id": "96",
+      "name": "Aaron Rodgers",
+      "filename": "96.json",
+      "weekly_rows": 294
+    },
+    {
+      "player_id": "7528",
+      "flock_id": "7528",
+      "name": "Najee Harris",
+      "filename": "7528.json",
+      "weekly_rows": 89
+    },
+    {
+      "player_id": "11610",
+      "flock_id": "11610",
+      "name": "Malik Washington",
+      "filename": "11610.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "7600",
+      "flock_id": "7600",
+      "name": "Pat Freiermuth",
+      "filename": "7600.json",
+      "weekly_rows": 99
+    },
+    {
+      "player_id": "13288",
+      "flock_id": "13245",
+      "name": "Nicholas Singleton",
+      "filename": "13288.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "13405",
+      "flock_id": "13246",
+      "name": "Kaytron Allen",
+      "filename": "13405.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "11575",
+      "flock_id": "11575",
+      "name": "Ray Davis",
+      "filename": "11575.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "12487",
+      "flock_id": "12487",
+      "name": "Terrance Ferguson",
+      "filename": "12487.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "4177",
+      "flock_id": "4177",
+      "name": "Mack Hollins",
+      "filename": "4177.json",
+      "weekly_rows": 149
+    },
+    {
+      "player_id": "7090",
+      "flock_id": "7090",
+      "name": "Darnell Mooney",
+      "filename": "7090.json",
+      "weekly_rows": 114
+    },
+    {
+      "player_id": "11783",
+      "flock_id": "11783",
+      "name": "Ryan Flournoy",
+      "filename": "11783.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "13413",
+      "flock_id": "13378",
+      "name": "Cyrus Allen",
+      "filename": "13413.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "9502",
+      "flock_id": "9502",
+      "name": "Tank Dell",
+      "filename": "9502.json",
+      "weekly_rows": 45
+    },
+    {
+      "player_id": "4943",
+      "flock_id": "4943",
+      "name": "Sam Darnold",
+      "filename": "4943.json",
+      "weekly_rows": 137
+    },
+    {
+      "player_id": "9482",
+      "flock_id": "9482",
+      "name": "Michael Mayer",
+      "filename": "9482.json",
+      "weekly_rows": 64
+    },
+    {
+      "player_id": "9506",
+      "flock_id": "9506",
+      "name": "Sean Tucker",
+      "filename": "9506.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "4981",
+      "flock_id": "4981",
+      "name": "Calvin Ridley",
+      "filename": "4981.json",
+      "weekly_rows": 114
+    },
+    {
+      "player_id": "11647",
+      "flock_id": "11647",
+      "name": "Kimani Vidal",
+      "filename": "11647.json",
+      "weekly_rows": 49
+    },
+    {
+      "player_id": "13285",
+      "flock_id": "13280",
+      "name": "Malachi Fields",
+      "filename": "13285.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "13274",
+      "flock_id": "13271",
+      "name": "Germie Bernard",
+      "filename": "13274.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "12502",
+      "flock_id": "12502",
+      "name": "Gunnar Helm",
+      "filename": "12502.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "12492",
+      "flock_id": "12492",
+      "name": "Pat Bryant",
+      "filename": "12492.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "6783",
+      "flock_id": "6783",
+      "name": "Jerry Jeudy",
+      "filename": "6783.json",
+      "weekly_rows": 113
+    },
+    {
+      "player_id": "4033",
+      "flock_id": "4033",
+      "name": "David Njoku",
+      "filename": "4033.json",
+      "weekly_rows": 153
+    },
+    {
+      "player_id": "8111",
+      "flock_id": "8111",
+      "name": "Cade Otton",
+      "filename": "8111.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "13320",
+      "flock_id": "13274",
+      "name": "Zachariah Branch",
+      "filename": "13320.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "1373",
+      "flock_id": "1373",
+      "name": "Geno Smith",
+      "filename": "1373.json",
+      "weekly_rows": 231
+    },
+    {
+      "player_id": "11655",
+      "flock_id": "11655",
+      "name": "Tyrone Tracy",
+      "filename": "11655.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "4147",
+      "flock_id": "4147",
+      "name": "Samaje Perine",
+      "filename": "4147.json",
+      "weekly_rows": 154
+    },
+    {
+      "player_id": "12535",
+      "flock_id": "12535",
+      "name": "Isaac TeSlaa",
+      "filename": "12535.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "8172",
+      "flock_id": "8172",
+      "name": "Greg Dulcich",
+      "filename": "8172.json",
+      "weekly_rows": 58
+    },
+    {
+      "player_id": "7049",
+      "flock_id": "7049",
+      "name": "Jauan Jennings",
+      "filename": "7049.json",
+      "weekly_rows": 103
+    },
+    {
+      "player_id": "11627",
+      "flock_id": "11627",
+      "name": "Troy Franklin",
+      "filename": "11627.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "12483",
+      "flock_id": "12483",
+      "name": "Jack Bech",
+      "filename": "12483.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "12048",
+      "flock_id": "12048",
+      "name": "George Holani",
+      "filename": "12048.json",
+      "weekly_rows": 34
+    },
+    {
+      "player_id": "12455",
+      "flock_id": "12455",
+      "name": "Brashard Smith",
+      "filename": "12455.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "11199",
+      "flock_id": "11199",
+      "name": "Emari Demercado",
+      "filename": "11199.json",
+      "weekly_rows": 65
+    },
+    {
+      "player_id": "3634",
+      "flock_id": "3634",
+      "name": "Kalif Raymond",
+      "filename": "3634.json",
+      "weekly_rows": 137
+    },
+    {
+      "player_id": "4993",
+      "flock_id": "4993",
+      "name": "Mike Gesicki",
+      "filename": "4993.json",
+      "weekly_rows": 147
+    },
+    {
+      "player_id": "12499",
+      "flock_id": "12499",
+      "name": "Elic Ayomanor",
+      "filename": "12499.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "13269",
+      "flock_id": "13229",
+      "name": "Fernando Mendoza",
+      "filename": "13269.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "13347",
+      "flock_id": "13247",
+      "name": "Demond Claiborne",
+      "filename": "13347.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "13317",
+      "flock_id": "13285",
+      "name": "Ted Hurst",
+      "filename": "13317.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "13268",
+      "flock_id": "13272",
+      "name": "Elijah Sarratt",
+      "filename": "13268.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "12536",
+      "flock_id": "2025008",
+      "name": "Jaylin Noel",
+      "filename": "12536.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "11651",
+      "flock_id": "11651",
+      "name": "Isaac Guerendo",
+      "filename": "11651.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "8127",
+      "flock_id": "8127",
+      "name": "Charlie Kolar",
+      "filename": "8127.json",
+      "weekly_rows": 73
+    },
+    {
+      "player_id": "11637",
+      "flock_id": "11637",
+      "name": "Keon Coleman",
+      "filename": "11637.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "5854",
+      "flock_id": "5854",
+      "name": "Drew Lock",
+      "filename": "5854.json",
+      "weekly_rows": 124
+    },
+    {
+      "player_id": "4039",
+      "flock_id": "4039",
+      "name": "Cooper Kupp",
+      "filename": "4039.json",
+      "weekly_rows": 148
+    },
+    {
+      "player_id": "13421",
+      "flock_id": "13315",
+      "name": "Eli Raridon",
+      "filename": "13421.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "13424",
+      "flock_id": "13370",
+      "name": "Seth McGowan",
+      "filename": "13424.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "12467",
+      "flock_id": "12467",
+      "name": "Jordan James",
+      "filename": "12467.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "8125",
+      "flock_id": "8125",
+      "name": "Calvin Austin",
+      "filename": "8125.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "13349",
+      "flock_id": "13312",
+      "name": "Eli Stowers",
+      "filename": "13349.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "11650",
+      "flock_id": "11650",
+      "name": "Luke McCaffrey",
+      "filename": "11650.json",
+      "weekly_rows": 44
+    },
+    {
+      "player_id": "4066",
+      "flock_id": "4066",
+      "name": "Evan Engram",
+      "filename": "4066.json",
+      "weekly_rows": 158
+    },
+    {
+      "player_id": "4950",
+      "flock_id": "4950",
+      "name": "Christian Kirk",
+      "filename": "4950.json",
+      "weekly_rows": 134
+    },
+    {
+      "player_id": "12495",
+      "flock_id": "12495",
+      "name": "Ollie Gordon",
+      "filename": "12495.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "12540",
+      "flock_id": "12540",
+      "name": "Chimere Dike",
+      "filename": "12540.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "11729",
+      "flock_id": "11729",
+      "name": "Sione Vaki",
+      "filename": "11729.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "12457",
+      "flock_id": "12457",
+      "name": "Jaydon Blue",
+      "filename": "12457.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "13402",
+      "flock_id": "13276",
+      "name": "Skyler Bell",
+      "filename": "13402.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "12497",
+      "flock_id": "12497",
+      "name": "Tory Horton",
+      "filename": "12497.json",
+      "weekly_rows": 28
+    },
+    {
+      "player_id": "12485",
+      "flock_id": "12485",
+      "name": "Tez Johnson",
+      "filename": "12485.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "5995",
+      "flock_id": "5995",
+      "name": "Justice Hill",
+      "filename": "5995.json",
+      "weekly_rows": 112
+    },
+    {
+      "player_id": "11571",
+      "flock_id": "11571",
+      "name": "Isaiah Davis",
+      "filename": "11571.json",
+      "weekly_rows": 51
+    },
+    {
+      "player_id": "4137",
+      "flock_id": "4137",
+      "name": "James Conner",
+      "filename": "4137.json",
+      "weekly_rows": 146
+    },
+    {
+      "player_id": "6768",
+      "flock_id": "6768",
+      "name": "Tua Tagovailoa",
+      "filename": "6768.json",
+      "weekly_rows": 112
+    },
+    {
+      "player_id": "8188",
+      "flock_id": "8188",
+      "name": "Tyquan Thornton",
+      "filename": "8188.json",
+      "weekly_rows": 68
+    },
+    {
+      "player_id": "13302",
+      "flock_id": "13369",
+      "name": "Adam Randall",
+      "filename": "13302.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "9501",
+      "flock_id": "9501",
+      "name": "DeMario Douglas",
+      "filename": "9501.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "13420",
+      "flock_id": "13284",
+      "name": "Bryce Lance",
+      "filename": "13420.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "11559",
+      "flock_id": "11559",
+      "name": "Michael Penix",
+      "filename": "11559.json",
+      "weekly_rows": 45
+    },
+    {
+      "player_id": "10444",
+      "flock_id": "10444",
+      "name": "Cedric Tillman",
+      "filename": "10444.json",
+      "weekly_rows": 64
+    },
+    {
+      "player_id": "7571",
+      "flock_id": "7571",
+      "name": "Rashod Bateman",
+      "filename": "7571.json",
+      "weekly_rows": 89
+    },
+    {
+      "player_id": "1166",
+      "flock_id": "1166",
+      "name": "Kirk Cousins",
+      "filename": "1166.json",
+      "weekly_rows": 238
+    },
+    {
+      "player_id": "10226",
+      "flock_id": "10226",
+      "name": "Andrei Iosivas",
+      "filename": "10226.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "6826",
+      "flock_id": "6826",
+      "name": "Cole Kmet",
+      "filename": "6826.json",
+      "weekly_rows": 119
+    },
+    {
+      "player_id": "3286",
+      "flock_id": "3286",
+      "name": "Demarcus Robinson",
+      "filename": "3286.json",
+      "weekly_rows": 180
+    },
+    {
+      "player_id": "12524",
+      "flock_id": "12524",
+      "name": "Shedeur Sanders",
+      "filename": "12524.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "6039",
+      "flock_id": "6039",
+      "name": "Ty Johnson",
+      "filename": "6039.json",
+      "weekly_rows": 128
+    },
+    {
+      "player_id": "11435",
+      "flock_id": "11435",
+      "name": "Emanuel Wilson",
+      "filename": "11435.json",
+      "weekly_rows": 63
+    },
+    {
+      "player_id": "4017",
+      "flock_id": "4017",
+      "name": "Deshaun Watson",
+      "filename": "4017.json",
+      "weekly_rows": 116
+    },
+    {
+      "player_id": "6865",
+      "flock_id": "6865",
+      "name": "Colby Parkinson",
+      "filename": "6865.json",
+      "weekly_rows": 110
+    },
+    {
+      "player_id": "7670",
+      "flock_id": "7670",
+      "name": "Joshua Palmer",
+      "filename": "7670.json",
+      "weekly_rows": 98
+    },
+    {
+      "player_id": "6803",
+      "flock_id": "6803",
+      "name": "Brandon Aiyuk",
+      "filename": "6803.json",
+      "weekly_rows": 96
+    },
+    {
+      "player_id": "11643",
+      "flock_id": "11643",
+      "name": "Jaylen Wright",
+      "filename": "11643.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "2505",
+      "flock_id": "2505",
+      "name": "Darren Waller",
+      "filename": "2505.json",
+      "weekly_rows": 141
+    },
+    {
+      "player_id": "12471",
+      "flock_id": "12471",
+      "name": "DJ Giddens",
+      "filename": "12471.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "13272",
+      "flock_id": "13235",
+      "name": "Carson Beck",
+      "filename": "13272.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "11589",
+      "flock_id": "11589",
+      "name": "Trey Benson",
+      "filename": "11589.json",
+      "weekly_rows": 38
+    },
+    {
+      "player_id": "13278",
+      "flock_id": "13309",
+      "name": "Max Klare",
+      "filename": "13278.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "4454",
+      "flock_id": "4454",
+      "name": "Kendrick Bourne",
+      "filename": "4454.json",
+      "weekly_rows": 153
+    },
+    {
+      "player_id": "6149",
+      "flock_id": "6149",
+      "name": "Darius Slayton",
+      "filename": "6149.json",
+      "weekly_rows": 135
+    },
+    {
+      "player_id": "11626",
+      "flock_id": "11626",
+      "name": "Xavier Legette",
+      "filename": "11626.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "3321",
+      "flock_id": "3321",
+      "name": "Tyreek Hill",
+      "filename": "3321.json",
+      "weekly_rows": 152
+    },
+    {
+      "player_id": "9479",
+      "flock_id": "9479",
+      "name": "Darnell Washington",
+      "filename": "9479.json",
+      "weekly_rows": 68
+    },
+    {
+      "player_id": "12544",
+      "flock_id": "2025002",
+      "name": "LeQuint Allen",
+      "filename": "12544.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "8698",
+      "flock_id": "8698",
+      "name": "Jake Tonges",
+      "filename": "8698.json",
+      "weekly_rows": 62
+    },
+    {
+      "player_id": "11597",
+      "flock_id": "11597",
+      "name": "Theo Johnson",
+      "filename": "11597.json",
+      "weekly_rows": 47
+    },
+    {
+      "player_id": "11565",
+      "flock_id": "11565",
+      "name": "J.J. McCarthy",
+      "filename": "11565.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "5848",
+      "flock_id": "5848",
+      "name": "Marquise Brown",
+      "filename": "5848.json",
+      "weekly_rows": 115
+    },
+    {
+      "player_id": "9229",
+      "flock_id": "9229",
+      "name": "Anthony Richardson",
+      "filename": "9229.json",
+      "weekly_rows": 46
+    },
+    {
+      "player_id": "12498",
+      "flock_id": "12498",
+      "name": "Mason Taylor",
+      "filename": "12498.json",
+      "weekly_rows": 34
+    },
+    {
+      "player_id": "12718",
+      "flock_id": "12718",
+      "name": "Konata Mumpfield",
+      "filename": "12718.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "7527",
+      "flock_id": "7527",
+      "name": "Mac Jones",
+      "filename": "7527.json",
+      "weekly_rows": 103
+    },
+    {
+      "player_id": "6271",
+      "flock_id": "6271",
+      "name": "Olamide Zaccheaus",
+      "filename": "6271.json",
+      "weekly_rows": 130
+    },
+    {
+      "player_id": "3161",
+      "flock_id": "3161",
+      "name": "Carson Wentz",
+      "filename": "3161.json",
+      "weekly_rows": 153
+    },
+    {
+      "player_id": "12476",
+      "flock_id": "12476",
+      "name": "Devin Neal",
+      "filename": "12476.json",
+      "weekly_rows": 14
+    },
+    {
+      "player_id": "12521",
+      "flock_id": "12521",
+      "name": "Elijah Arroyo",
+      "filename": "12521.json",
+      "weekly_rows": 31
+    },
+    {
+      "player_id": "5906",
+      "flock_id": "5906",
+      "name": "Dawson Knox",
+      "filename": "5906.json",
+      "weekly_rows": 129
+    },
+    {
+      "player_id": "5857",
+      "flock_id": "5857",
+      "name": "Noah Fant",
+      "filename": "5857.json",
+      "weekly_rows": 135
+    },
+    {
+      "player_id": "12641",
+      "flock_id": "2025010",
+      "name": "Jaylin Lane",
+      "filename": "12641.json",
+      "weekly_rows": 33
+    },
+    {
+      "player_id": "11569",
+      "flock_id": "11569",
+      "name": "Jarquez Hunter",
+      "filename": "11569.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "12541",
+      "flock_id": "12541",
+      "name": "Dont'e Thornton",
+      "filename": "12541.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "4574",
+      "flock_id": "4574",
+      "name": "Cooper Rush",
+      "filename": "4574.json",
+      "weekly_rows": 152
+    },
+    {
+      "player_id": "11600",
+      "flock_id": "11600",
+      "name": "Ja'Tavion Sanders",
+      "filename": "11600.json",
+      "weekly_rows": 51
+    },
+    {
+      "player_id": "13411",
+      "flock_id": "13307",
+      "name": "Zavion Thomas",
+      "filename": "13411.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "12503",
+      "flock_id": "12503",
+      "name": "Isaiah Bond",
+      "filename": "12503.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "13319",
+      "flock_id": "13311",
+      "name": "Oscar Delp",
+      "filename": "13319.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "8135",
+      "flock_id": "8135",
+      "name": "Treylon Burks",
+      "filename": "8135.json",
+      "weekly_rows": 62
+    },
+    {
+      "player_id": "7828",
+      "flock_id": "7828",
+      "name": "Noah Gray",
+      "filename": "7828.json",
+      "weekly_rows": 103
+    },
+    {
+      "player_id": "12531",
+      "flock_id": "2025007",
+      "name": "Trevor Etienne",
+      "filename": "12531.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "7591",
+      "flock_id": "7591",
+      "name": "Justin Fields",
+      "filename": "7591.json",
+      "weekly_rows": 101
+    },
+    {
+      "player_id": "8117",
+      "flock_id": "8117",
+      "name": "Jalen Tolbert",
+      "filename": "8117.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "13400",
+      "flock_id": "13316",
+      "name": "Justin Joly",
+      "filename": "13400.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "9494",
+      "flock_id": "9494",
+      "name": "Marvin Mims",
+      "filename": "9494.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "12472",
+      "flock_id": "12472",
+      "name": "Raheim Sanders",
+      "filename": "12472.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "8143",
+      "flock_id": "8143",
+      "name": "Jerome Ford",
+      "filename": "8143.json",
+      "weekly_rows": 77
+    },
+    {
+      "player_id": "12543",
+      "flock_id": "2025006",
+      "name": "Tahj Brooks",
+      "filename": "12543.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "13289",
+      "flock_id": "13236",
+      "name": "Drew Allar",
+      "filename": "13289.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "12547",
+      "flock_id": "2025009",
+      "name": "Kyle Williams",
+      "filename": "12547.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "8119",
+      "flock_id": "8119",
+      "name": "Jahan Dotson",
+      "filename": "8119.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "7562",
+      "flock_id": "7562",
+      "name": "Tutu Atwell",
+      "filename": "7562.json",
+      "weekly_rows": 88
+    },
+    {
+      "player_id": "9481",
+      "flock_id": "9481",
+      "name": "Luke Musgrave",
+      "filename": "9481.json",
+      "weekly_rows": 54
+    },
+    {
+      "player_id": "13303",
+      "flock_id": "13233",
+      "name": "Cade Klubnik",
+      "filename": "13303.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "13275",
+      "flock_id": "13231",
+      "name": "Ty Simpson",
+      "filename": "13275.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "11439",
+      "flock_id": "11439",
+      "name": "Jaleel McLaughlin",
+      "filename": "11439.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "3271",
+      "flock_id": "3271",
+      "name": "Tyler Higbee",
+      "filename": "3271.json",
+      "weekly_rows": 163
+    },
+    {
+      "player_id": "11579",
+      "flock_id": "11579",
+      "name": "Audric Estime",
+      "filename": "11579.json",
+      "weekly_rows": 22
+    },
+    {
+      "player_id": "2307",
+      "flock_id": "2307",
+      "name": "Marcus Mariota",
+      "filename": "2307.json",
+      "weekly_rows": 182
+    },
+    {
+      "player_id": "2306",
+      "flock_id": "2306",
+      "name": "Jameis Winston",
+      "filename": "2306.json",
+      "weekly_rows": 186
+    },
+    {
+      "player_id": "10871",
+      "flock_id": "10871",
+      "name": "Luke Schoonmaker",
+      "filename": "10871.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "8129",
+      "flock_id": "8129",
+      "name": "Dameon Pierce",
+      "filename": "8129.json",
+      "weekly_rows": 78
+    },
+    {
+      "player_id": "11623",
+      "flock_id": "11623",
+      "name": "Jordan Whittington",
+      "filename": "11623.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "13380",
+      "flock_id": "13286",
+      "name": "Brenen Thompson",
+      "filename": "13380.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "11577",
+      "flock_id": "11577",
+      "name": "Will Shipley",
+      "filename": "11577.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "12482",
+      "flock_id": "12482",
+      "name": "Savion Williams",
+      "filename": "12482.json",
+      "weekly_rows": 34
+    },
+    {
+      "player_id": "13338",
+      "flock_id": "13294",
+      "name": "Kevin Coleman",
+      "filename": "13338.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "10218",
+      "flock_id": "10218",
+      "name": "Xavier Hutchinson",
+      "filename": "10218.json",
+      "weekly_rows": 69
+    },
+    {
+      "player_id": "8917",
+      "flock_id": "8917",
+      "name": "KaVontae Turpin",
+      "filename": "8917.json",
+      "weekly_rows": 86
+    },
+    {
+      "player_id": "7496",
+      "flock_id": "7496",
+      "name": "Nick Westbrook-Ikhine",
+      "filename": "7496.json",
+      "weekly_rows": 115
+    },
+    {
+      "player_id": "4098",
+      "flock_id": "4098",
+      "name": "Kareem Hunt",
+      "filename": "4098.json",
+      "weekly_rows": 127
+    },
+    {
+      "player_id": "13423",
+      "flock_id": "13331",
+      "name": "Eli Heidenreich",
+      "filename": "13423.json",
+      "weekly_rows": 18
+    },
+    {
+      "player_id": "6427",
+      "flock_id": "6427",
+      "name": "Ashton Dulin",
+      "filename": "6427.json",
+      "weekly_rows": 104
+    },
+    {
+      "player_id": "11588",
+      "flock_id": "11588",
+      "name": "Jawhar Jordan",
+      "filename": "11588.json",
+      "weekly_rows": 22
+    },
+    {
+      "player_id": "11629",
+      "flock_id": "11629",
+      "name": "Devontez Walker",
+      "filename": "11629.json",
+      "weekly_rows": 52
+    },
+    {
+      "player_id": "19",
+      "flock_id": "19",
+      "name": "Joe Flacco",
+      "filename": "19.json",
+      "weekly_rows": 287
+    },
+    {
+      "player_id": "11630",
+      "flock_id": "11630",
+      "name": "Roman Wilson",
+      "filename": "11630.json",
+      "weekly_rows": 42
+    },
+    {
+      "player_id": "7587",
+      "flock_id": "7587",
+      "name": "Dyami Brown",
+      "filename": "7587.json",
+      "weekly_rows": 103
+    },
+    {
+      "player_id": "5970",
+      "flock_id": "5970",
+      "name": "Greg Dortch",
+      "filename": "5970.json",
+      "weekly_rows": 90
+    },
+    {
+      "player_id": "12860",
+      "flock_id": "2025022",
+      "name": "Theo Wease",
+      "filename": "12860.json",
+      "weekly_rows": 21
+    },
+    {
+      "player_id": "4054",
+      "flock_id": "4054",
+      "name": "Mo Alie-Cox",
+      "filename": "4054.json",
+      "weekly_rows": 147
+    },
+    {
+      "player_id": "12470",
+      "flock_id": "12470",
+      "name": "Riley Leonard",
+      "filename": "12470.json",
+      "weekly_rows": 35
+    },
+    {
+      "player_id": "1426",
+      "flock_id": "1426",
+      "name": "DeAndre Hopkins",
+      "filename": "1426.json",
+      "weekly_rows": 203
+    },
+    {
+      "player_id": "4381",
+      "flock_id": "4381",
+      "name": "Taysom Hill",
+      "filename": "4381.json",
+      "weekly_rows": 140
+    },
+    {
+      "player_id": "4040",
+      "flock_id": "4040",
+      "name": "JuJu Smith-Schuster",
+      "filename": "4040.json",
+      "weekly_rows": 134
+    },
+    {
+      "player_id": "6011",
+      "flock_id": "6011",
+      "name": "Gardner Minshew",
+      "filename": "6011.json",
+      "weekly_rows": 127
+    },
+    {
+      "player_id": "8122",
+      "flock_id": "8122",
+      "name": "Zonovan Knight",
+      "filename": "8122.json",
+      "weekly_rows": 45
+    },
+    {
+      "player_id": "827",
+      "flock_id": "827",
+      "name": "Tyrod Taylor",
+      "filename": "827.json",
+      "weekly_rows": 252
+    }
+  ],
+  "existing": [],
+  "failed": [],
+  "finished_at": "2026-09-24T09:12:25.434Z",
+  "counts": {
+    "downloaded": 357,
+    "existing": 0,
+    "failed": 0,
+    "skipped_without_flock_id": 77
+  }
+}

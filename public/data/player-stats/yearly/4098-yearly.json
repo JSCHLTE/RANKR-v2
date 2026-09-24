@@ -45,20 +45,6 @@
           "stat_category": "fantasy"
         },
         {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 16,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
-        },
-        {
           "stat_id": 993,
           "serial_id": "JukeRate",
           "original_serial_id": "JukeRate",
@@ -239,6 +225,20 @@
           "value_type": "percent",
           "position_category": "WR",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 16,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -436,7 +436,7 @@
           "stat_id": 1163,
           "serial_id": "FantasyPointsRankRB",
           "original_serial_id": "FantasyPointsRankRB",
-          "value": "2",
+          "value": "5",
           "stat_context": "regular_per_game",
           "description": "Fantasy Points Rank RB (Based on Per-Game Average)",
           "is_highest_best": false,
@@ -486,20 +486,6 @@
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
-        },
-        {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 11,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
         },
         {
           "stat_id": 993,
@@ -682,6 +668,20 @@
           "value_type": "percent",
           "position_category": "WR",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 11,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -879,7 +879,7 @@
           "stat_id": 1163,
           "serial_id": "FantasyPointsRankRB",
           "original_serial_id": "FantasyPointsRankRB",
-          "value": "5",
+          "value": "8",
           "stat_context": "regular_per_game",
           "description": "Fantasy Points Rank RB (Based on Per-Game Average)",
           "is_highest_best": false,
@@ -929,20 +929,6 @@
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
-        },
-        {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 8,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
         },
         {
           "stat_id": 993,
@@ -1125,6 +1111,20 @@
           "value_type": "percent",
           "position_category": "WR",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 8,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -1322,7 +1322,7 @@
           "stat_id": 1163,
           "serial_id": "FantasyPointsRankRB",
           "original_serial_id": "FantasyPointsRankRB",
-          "value": "12",
+          "value": "25",
           "stat_context": "regular_per_game",
           "description": "Fantasy Points Rank RB (Based on Per-Game Average)",
           "is_highest_best": false,
@@ -1372,20 +1372,6 @@
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
-        },
-        {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 16,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
         },
         {
           "stat_id": 993,
@@ -1568,6 +1554,20 @@
           "value_type": "percent",
           "position_category": "WR",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 16,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -1765,7 +1765,7 @@
           "stat_id": 1163,
           "serial_id": "FantasyPointsRankRB",
           "original_serial_id": "FantasyPointsRankRB",
-          "value": "13",
+          "value": "20",
           "stat_context": "regular_per_game",
           "description": "Fantasy Points Rank RB (Based on Per-Game Average)",
           "is_highest_best": false,
@@ -1815,20 +1815,6 @@
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
-        },
-        {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 8,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
         },
         {
           "stat_id": 993,
@@ -2011,6 +1997,20 @@
           "value_type": "percent",
           "position_category": "WR",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 8,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -2208,7 +2208,7 @@
           "stat_id": 1163,
           "serial_id": "FantasyPointsRankRB",
           "original_serial_id": "FantasyPointsRankRB",
-          "value": "17",
+          "value": "21",
           "stat_context": "regular_per_game",
           "description": "Fantasy Points Rank RB (Based on Per-Game Average)",
           "is_highest_best": false,
@@ -2258,20 +2258,6 @@
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
-        },
-        {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 17,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
         },
         {
           "stat_id": 993,
@@ -2454,6 +2440,20 @@
           "value_type": "percent",
           "position_category": "WR",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 17,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -2651,7 +2651,7 @@
           "stat_id": 1163,
           "serial_id": "FantasyPointsRankRB",
           "original_serial_id": "FantasyPointsRankRB",
-          "value": "40",
+          "value": "52",
           "stat_context": "regular_per_game",
           "description": "Fantasy Points Rank RB (Based on Per-Game Average)",
           "is_highest_best": false,
@@ -2701,20 +2701,6 @@
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
-        },
-        {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 15,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
         },
         {
           "stat_id": 993,
@@ -2897,6 +2883,20 @@
           "value_type": "percent",
           "position_category": "WR",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 15,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -3094,7 +3094,7 @@
           "stat_id": 1163,
           "serial_id": "FantasyPointsRankRB",
           "original_serial_id": "FantasyPointsRankRB",
-          "value": "41",
+          "value": "45",
           "stat_context": "regular_per_game",
           "description": "Fantasy Points Rank RB (Based on Per-Game Average)",
           "is_highest_best": false,
@@ -3144,20 +3144,6 @@
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
-        },
-        {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 13,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
         },
         {
           "stat_id": 993,
@@ -3340,6 +3326,20 @@
           "value_type": "percent",
           "position_category": "WR",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 13,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -3589,20 +3589,6 @@
           "stat_category": "fantasy"
         },
         {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 17,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
-        },
-        {
           "stat_id": 993,
           "serial_id": "JukeRate",
           "original_serial_id": "JukeRate",
@@ -3783,6 +3769,20 @@
           "value_type": "percent",
           "position_category": "WR",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 17,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,

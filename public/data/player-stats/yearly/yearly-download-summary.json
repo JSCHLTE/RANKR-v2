@@ -1,0 +1,2113 @@
+{
+  "started_at": "2026-09-24T09:13:27.534Z",
+  "input": "C:\\Users\\JSchulte\\Desktop\\RANKR_data\\stats\\career\\players_lite.json",
+  "output_directory": "C:\\Users\\JSchulte\\Desktop\\RANKR_data\\stats\\career\\player-stats\\yearly",
+  "eligible_count": 357,
+  "selected_count": 357,
+  "skipped_without_flock_id": [
+    {
+      "player_id": "11533",
+      "name": "Brandon Aubrey"
+    },
+    {
+      "player_id": "3451",
+      "name": "Ka'imi Fairbairn"
+    },
+    {
+      "player_id": "8259",
+      "name": "Cameron Dicker"
+    },
+    {
+      "player_id": "11786",
+      "name": "Cam Little"
+    },
+    {
+      "player_id": "2747",
+      "name": "Jason Myers"
+    },
+    {
+      "player_id": "5189",
+      "name": "Eddy Pineiro"
+    },
+    {
+      "player_id": "12711",
+      "name": "Tyler Loop"
+    },
+    {
+      "player_id": "11539",
+      "name": "Jake Bates"
+    },
+    {
+      "player_id": "7839",
+      "name": "Evan McPherson"
+    },
+    {
+      "player_id": "6650",
+      "name": "Chase McLaughlin"
+    },
+    {
+      "player_id": "12713",
+      "name": "Andy Borregales"
+    },
+    {
+      "player_id": "2020",
+      "name": "Cairo Santos"
+    },
+    {
+      "player_id": "12015",
+      "name": "Harrison Mevis"
+    },
+    {
+      "player_id": "1945",
+      "name": "Chris Boswell"
+    },
+    {
+      "player_id": "4227",
+      "name": "Harrison Butker"
+    },
+    {
+      "player_id": "11792",
+      "name": "Will Reichard"
+    },
+    {
+      "player_id": "3678",
+      "name": "Wil Lutz"
+    },
+    {
+      "player_id": "4195",
+      "name": "Jake Elliott"
+    },
+    {
+      "player_id": "7042",
+      "name": "Tyler Bass"
+    },
+    {
+      "player_id": "6528",
+      "name": "Joey Slye"
+    },
+    {
+      "player_id": "10955",
+      "name": "Chad Ryland"
+    },
+    {
+      "player_id": "13545",
+      "name": "Trey Smack"
+    },
+    {
+      "player_id": "5095",
+      "name": "Daniel Carlson"
+    },
+    {
+      "player_id": "12961",
+      "name": "Ryan Fitzgerald"
+    },
+    {
+      "player_id": "650",
+      "name": "Nick Folk"
+    },
+    {
+      "player_id": "11058",
+      "name": "Blake Grupe"
+    },
+    {
+      "player_id": "11653",
+      "name": "Charlie Smyth"
+    },
+    {
+      "player_id": "12185",
+      "name": "Spencer Shrader"
+    },
+    {
+      "player_id": "13968",
+      "name": "Drew Stevens"
+    },
+    {
+      "player_id": "4233",
+      "name": "Zane Gonzalez"
+    },
+    {
+      "player_id": "6083",
+      "name": "Matt Gay"
+    },
+    {
+      "player_id": "11261",
+      "name": "Andre Szmyt"
+    },
+    {
+      "player_id": "13066",
+      "name": "Ben Sauls"
+    },
+    {
+      "player_id": "13833",
+      "name": "Dominic Zvada"
+    },
+    {
+      "player_id": "7922",
+      "name": "Riley Patterson"
+    },
+    {
+      "player_id": "5119",
+      "name": "Jason Sanders"
+    },
+    {
+      "player_id": "1433",
+      "name": "Brandon McManus"
+    },
+    {
+      "player_id": "10937",
+      "name": "Jake Moody"
+    },
+    {
+      "player_id": "4666",
+      "name": "Younghoe Koo"
+    },
+    {
+      "player_id": "8258",
+      "name": "Cade York"
+    },
+    {
+      "player_id": "13804",
+      "name": "Kansei Matsuzawa"
+    },
+    {
+      "player_id": "1348",
+      "name": "Dustin Hopkins"
+    },
+    {
+      "player_id": "11145",
+      "name": "Tanner Brown"
+    },
+    {
+      "player_id": "11092",
+      "name": "B.T. Potter"
+    },
+    {
+      "player_id": "13813",
+      "name": "Laith Marjan"
+    },
+    {
+      "player_id": "HOU",
+      "name": "Houston Texans"
+    },
+    {
+      "player_id": "LAR",
+      "name": "Los Angeles Rams"
+    },
+    {
+      "player_id": "DEN",
+      "name": "Denver Broncos"
+    },
+    {
+      "player_id": "SEA",
+      "name": "Seattle Seahawks"
+    },
+    {
+      "player_id": "PHI",
+      "name": "Philadelphia Eagles"
+    },
+    {
+      "player_id": "MIN",
+      "name": "Minnesota Vikings"
+    },
+    {
+      "player_id": "NE",
+      "name": "New England Patriots"
+    },
+    {
+      "player_id": "PIT",
+      "name": "Pittsburgh Steelers"
+    },
+    {
+      "player_id": "JAX",
+      "name": "Jacksonville Jaguars"
+    },
+    {
+      "player_id": "LAC",
+      "name": "Los Angeles Chargers"
+    },
+    {
+      "player_id": "BAL",
+      "name": "Baltimore Ravens"
+    },
+    {
+      "player_id": "KC",
+      "name": "Kansas City Chiefs"
+    },
+    {
+      "player_id": "GB",
+      "name": "Green Bay Packers"
+    },
+    {
+      "player_id": "BUF",
+      "name": "Buffalo Bills"
+    },
+    {
+      "player_id": "DET",
+      "name": "Detroit Lions"
+    },
+    {
+      "player_id": "CLE",
+      "name": "Cleveland Browns"
+    },
+    {
+      "player_id": "NO",
+      "name": "New Orleans Saints"
+    },
+    {
+      "player_id": "IND",
+      "name": "Indianapolis Colts"
+    },
+    {
+      "player_id": "SF",
+      "name": "San Francisco 49ers"
+    },
+    {
+      "player_id": "ATL",
+      "name": "Atlanta Falcons"
+    },
+    {
+      "player_id": "CHI",
+      "name": "Chicago Bears"
+    },
+    {
+      "player_id": "DAL",
+      "name": "Dallas Cowboys"
+    },
+    {
+      "player_id": "NYG",
+      "name": "New York Giants"
+    },
+    {
+      "player_id": "TB",
+      "name": "Tampa Bay Buccaneers"
+    },
+    {
+      "player_id": "CAR",
+      "name": "Carolina Panthers"
+    },
+    {
+      "player_id": "TEN",
+      "name": "Tennessee Titans"
+    },
+    {
+      "player_id": "CIN",
+      "name": "Cincinnati Bengals"
+    },
+    {
+      "player_id": "WAS",
+      "name": "Washington Commanders"
+    },
+    {
+      "player_id": "MIA",
+      "name": "Miami Dolphins"
+    },
+    {
+      "player_id": "LV",
+      "name": "Las Vegas Raiders"
+    },
+    {
+      "player_id": "NYJ",
+      "name": "New York Jets"
+    },
+    {
+      "player_id": "ARI",
+      "name": "Arizona Cardinals"
+    }
+  ],
+  "downloaded": [
+    {
+      "player_id": "9509",
+      "flock_id": "9509",
+      "filename": "9509-yearly.json"
+    },
+    {
+      "player_id": "9221",
+      "flock_id": "9221",
+      "filename": "9221-yearly.json"
+    },
+    {
+      "player_id": "7564",
+      "flock_id": "7564",
+      "filename": "7564-yearly.json"
+    },
+    {
+      "player_id": "9488",
+      "flock_id": "9488",
+      "filename": "9488-yearly.json"
+    },
+    {
+      "player_id": "9493",
+      "flock_id": "9493",
+      "filename": "9493-yearly.json"
+    },
+    {
+      "player_id": "4034",
+      "flock_id": "4034",
+      "filename": "4034-yearly.json"
+    },
+    {
+      "player_id": "7547",
+      "flock_id": "7547",
+      "filename": "7547-yearly.json"
+    },
+    {
+      "player_id": "6813",
+      "flock_id": "6813",
+      "filename": "6813-yearly.json"
+    },
+    {
+      "player_id": "6794",
+      "flock_id": "6794",
+      "filename": "6794-yearly.json"
+    },
+    {
+      "player_id": "8138",
+      "flock_id": "8138",
+      "filename": "8138-yearly.json"
+    },
+    {
+      "player_id": "8151",
+      "flock_id": "8151",
+      "filename": "8151-yearly.json"
+    },
+    {
+      "player_id": "12527",
+      "flock_id": "12527",
+      "filename": "12527-yearly.json"
+    },
+    {
+      "player_id": "9224",
+      "flock_id": "9224",
+      "filename": "9224-yearly.json"
+    },
+    {
+      "player_id": "6786",
+      "flock_id": "6786",
+      "filename": "6786-yearly.json"
+    },
+    {
+      "player_id": "3198",
+      "flock_id": "3198",
+      "filename": "3198-yearly.json"
+    },
+    {
+      "player_id": "12507",
+      "flock_id": "12507",
+      "filename": "12507-yearly.json"
+    },
+    {
+      "player_id": "4866",
+      "flock_id": "4866",
+      "filename": "4866-yearly.json"
+    },
+    {
+      "player_id": "9226",
+      "flock_id": "9226",
+      "filename": "9226-yearly.json"
+    },
+    {
+      "player_id": "11632",
+      "flock_id": "11632",
+      "filename": "11632-yearly.json"
+    },
+    {
+      "player_id": "8144",
+      "flock_id": "8144",
+      "filename": "8144-yearly.json"
+    },
+    {
+      "player_id": "7569",
+      "flock_id": "7569",
+      "filename": "7569-yearly.json"
+    },
+    {
+      "player_id": "8112",
+      "flock_id": "8112",
+      "filename": "8112-yearly.json"
+    },
+    {
+      "player_id": "8130",
+      "flock_id": "8130",
+      "filename": "8130-yearly.json"
+    },
+    {
+      "player_id": "10229",
+      "flock_id": "10229",
+      "filename": "10229-yearly.json"
+    },
+    {
+      "player_id": "13287",
+      "flock_id": "13242",
+      "filename": "13287-yearly.json"
+    },
+    {
+      "player_id": "8137",
+      "flock_id": "8137",
+      "filename": "8137-yearly.json"
+    },
+    {
+      "player_id": "8155",
+      "flock_id": "8155",
+      "filename": "8155-yearly.json"
+    },
+    {
+      "player_id": "11604",
+      "flock_id": "11604",
+      "filename": "11604-yearly.json"
+    },
+    {
+      "player_id": "9997",
+      "flock_id": "9997",
+      "filename": "9997-yearly.json"
+    },
+    {
+      "player_id": "7588",
+      "flock_id": "7588",
+      "filename": "7588-yearly.json"
+    },
+    {
+      "player_id": "11635",
+      "flock_id": "11635",
+      "filename": "11635-yearly.json"
+    },
+    {
+      "player_id": "7525",
+      "flock_id": "7525",
+      "filename": "7525-yearly.json"
+    },
+    {
+      "player_id": "8150",
+      "flock_id": "8150",
+      "filename": "8150-yearly.json"
+    },
+    {
+      "player_id": "6801",
+      "flock_id": "6801",
+      "filename": "6801-yearly.json"
+    },
+    {
+      "player_id": "6790",
+      "flock_id": "6790",
+      "filename": "6790-yearly.json"
+    },
+    {
+      "player_id": "11584",
+      "flock_id": "11584",
+      "filename": "11584-yearly.json"
+    },
+    {
+      "player_id": "4984",
+      "flock_id": "4984",
+      "filename": "4984-yearly.json"
+    },
+    {
+      "player_id": "8146",
+      "flock_id": "8146",
+      "filename": "8146-yearly.json"
+    },
+    {
+      "player_id": "7526",
+      "flock_id": "7526",
+      "filename": "7526-yearly.json"
+    },
+    {
+      "player_id": "12514",
+      "flock_id": "12514",
+      "filename": "12514-yearly.json"
+    },
+    {
+      "player_id": "8167",
+      "flock_id": "8167",
+      "filename": "8167-yearly.json"
+    },
+    {
+      "player_id": "5892",
+      "flock_id": "5892",
+      "filename": "5892-yearly.json"
+    },
+    {
+      "player_id": "12517",
+      "flock_id": "12517",
+      "filename": "12517-yearly.json"
+    },
+    {
+      "player_id": "12481",
+      "flock_id": "12481",
+      "filename": "12481-yearly.json"
+    },
+    {
+      "player_id": "7543",
+      "flock_id": "7543",
+      "filename": "7543-yearly.json"
+    },
+    {
+      "player_id": "4983",
+      "flock_id": "4983",
+      "filename": "4983-yearly.json"
+    },
+    {
+      "player_id": "12526",
+      "flock_id": "12526",
+      "filename": "12526-yearly.json"
+    },
+    {
+      "player_id": "12490",
+      "flock_id": "12490",
+      "filename": "12490-yearly.json"
+    },
+    {
+      "player_id": "2216",
+      "flock_id": "2216",
+      "filename": "2216-yearly.json"
+    },
+    {
+      "player_id": "8148",
+      "flock_id": "8148",
+      "filename": "8148-yearly.json"
+    },
+    {
+      "player_id": "12519",
+      "flock_id": "12519",
+      "filename": "12519-yearly.json"
+    },
+    {
+      "player_id": "4881",
+      "flock_id": "4881",
+      "filename": "4881-yearly.json"
+    },
+    {
+      "player_id": "9487",
+      "flock_id": "9487",
+      "filename": "9487-yearly.json"
+    },
+    {
+      "player_id": "12512",
+      "flock_id": "12512",
+      "filename": "12512-yearly.json"
+    },
+    {
+      "player_id": "13286",
+      "flock_id": "13244",
+      "filename": "13286-yearly.json"
+    },
+    {
+      "player_id": "11620",
+      "flock_id": "11620",
+      "filename": "11620-yearly.json"
+    },
+    {
+      "player_id": "2133",
+      "flock_id": "2133",
+      "filename": "2133-yearly.json"
+    },
+    {
+      "player_id": "12518",
+      "flock_id": "12518",
+      "filename": "12518-yearly.json"
+    },
+    {
+      "player_id": "5927",
+      "flock_id": "5927",
+      "filename": "5927-yearly.json"
+    },
+    {
+      "player_id": "7611",
+      "flock_id": "7611",
+      "filename": "7611-yearly.json"
+    },
+    {
+      "player_id": "5859",
+      "flock_id": "5859",
+      "filename": "5859-yearly.json"
+    },
+    {
+      "player_id": "8228",
+      "flock_id": "8228",
+      "filename": "8228-yearly.json"
+    },
+    {
+      "player_id": "7594",
+      "flock_id": "7594",
+      "filename": "7594-yearly.json"
+    },
+    {
+      "player_id": "11560",
+      "flock_id": "11560",
+      "filename": "11560-yearly.json"
+    },
+    {
+      "player_id": "13279",
+      "flock_id": "13265",
+      "filename": "13279-yearly.json"
+    },
+    {
+      "player_id": "11631",
+      "flock_id": "11631",
+      "filename": "11631-yearly.json"
+    },
+    {
+      "player_id": "12529",
+      "flock_id": "12529",
+      "filename": "12529-yearly.json"
+    },
+    {
+      "player_id": "6770",
+      "flock_id": "6770",
+      "filename": "6770-yearly.json"
+    },
+    {
+      "player_id": "11628",
+      "flock_id": "11628",
+      "filename": "11628-yearly.json"
+    },
+    {
+      "player_id": "4037",
+      "flock_id": "4037",
+      "filename": "4037-yearly.json"
+    },
+    {
+      "player_id": "11566",
+      "flock_id": "11566",
+      "filename": "11566-yearly.json"
+    },
+    {
+      "player_id": "9484",
+      "flock_id": "9484",
+      "filename": "9484-yearly.json"
+    },
+    {
+      "player_id": "2449",
+      "flock_id": "2449",
+      "filename": "2449-yearly.json"
+    },
+    {
+      "player_id": "6904",
+      "flock_id": "6904",
+      "filename": "6904-yearly.json"
+    },
+    {
+      "player_id": "12501",
+      "flock_id": "12501",
+      "filename": "12501-yearly.json"
+    },
+    {
+      "player_id": "11564",
+      "flock_id": "11564",
+      "filename": "11564-yearly.json"
+    },
+    {
+      "player_id": "7523",
+      "flock_id": "7523",
+      "filename": "7523-yearly.json"
+    },
+    {
+      "player_id": "12533",
+      "flock_id": "12533",
+      "filename": "12533-yearly.json"
+    },
+    {
+      "player_id": "5846",
+      "flock_id": "5846",
+      "filename": "5846-yearly.json"
+    },
+    {
+      "player_id": "8408",
+      "flock_id": "8408",
+      "filename": "8408-yearly.json"
+    },
+    {
+      "player_id": "5872",
+      "flock_id": "5872",
+      "filename": "5872-yearly.json"
+    },
+    {
+      "player_id": "10232",
+      "flock_id": "10232",
+      "filename": "10232-yearly.json"
+    },
+    {
+      "player_id": "9754",
+      "flock_id": "9754",
+      "filename": "9754-yearly.json"
+    },
+    {
+      "player_id": "6819",
+      "flock_id": "6819",
+      "filename": "6819-yearly.json"
+    },
+    {
+      "player_id": "7021",
+      "flock_id": "7021",
+      "filename": "7021-yearly.json"
+    },
+    {
+      "player_id": "10859",
+      "flock_id": "10859",
+      "filename": "10859-yearly.json"
+    },
+    {
+      "player_id": "12489",
+      "flock_id": "12489",
+      "filename": "12489-yearly.json"
+    },
+    {
+      "player_id": "6806",
+      "flock_id": "6806",
+      "filename": "6806-yearly.json"
+    },
+    {
+      "player_id": "12534",
+      "flock_id": "2025001",
+      "filename": "12534-yearly.json"
+    },
+    {
+      "player_id": "11586",
+      "flock_id": "11586",
+      "filename": "11586-yearly.json"
+    },
+    {
+      "player_id": "9756",
+      "flock_id": "9756",
+      "filename": "9756-yearly.json"
+    },
+    {
+      "player_id": "11646",
+      "flock_id": "11646",
+      "filename": "11646-yearly.json"
+    },
+    {
+      "player_id": "11583",
+      "flock_id": "11583",
+      "filename": "11583-yearly.json"
+    },
+    {
+      "player_id": "8142",
+      "flock_id": "8142",
+      "filename": "8142-yearly.json"
+    },
+    {
+      "player_id": "5967",
+      "flock_id": "5967",
+      "filename": "5967-yearly.json"
+    },
+    {
+      "player_id": "6797",
+      "flock_id": "6797",
+      "filename": "6797-yearly.json"
+    },
+    {
+      "player_id": "3294",
+      "flock_id": "3294",
+      "filename": "3294-yearly.json"
+    },
+    {
+      "player_id": "13294",
+      "flock_id": "13266",
+      "filename": "13294-yearly.json"
+    },
+    {
+      "player_id": "10236",
+      "flock_id": "10236",
+      "filename": "10236-yearly.json"
+    },
+    {
+      "player_id": "11581",
+      "flock_id": "11581",
+      "filename": "11581-yearly.json"
+    },
+    {
+      "player_id": "8131",
+      "flock_id": "8131",
+      "filename": "8131-yearly.json"
+    },
+    {
+      "player_id": "4217",
+      "flock_id": "4217",
+      "filename": "4217-yearly.json"
+    },
+    {
+      "player_id": "8183",
+      "flock_id": "8183",
+      "filename": "8183-yearly.json"
+    },
+    {
+      "player_id": "9500",
+      "flock_id": "9500",
+      "filename": "9500-yearly.json"
+    },
+    {
+      "player_id": "5045",
+      "flock_id": "5045",
+      "filename": "5045-yearly.json"
+    },
+    {
+      "player_id": "8136",
+      "flock_id": "8136",
+      "filename": "8136-yearly.json"
+    },
+    {
+      "player_id": "12508",
+      "flock_id": "12508",
+      "filename": "12508-yearly.json"
+    },
+    {
+      "player_id": "13298",
+      "flock_id": "13268",
+      "filename": "13298-yearly.json"
+    },
+    {
+      "player_id": "5850",
+      "flock_id": "5850",
+      "filename": "5850-yearly.json"
+    },
+    {
+      "player_id": "8126",
+      "flock_id": "8126",
+      "filename": "8126-yearly.json"
+    },
+    {
+      "player_id": "12506",
+      "flock_id": "12506",
+      "filename": "12506-yearly.json"
+    },
+    {
+      "player_id": "5022",
+      "flock_id": "5022",
+      "filename": "5022-yearly.json"
+    },
+    {
+      "player_id": "4046",
+      "flock_id": "4046",
+      "filename": "4046-yearly.json"
+    },
+    {
+      "player_id": "11624",
+      "flock_id": "11624",
+      "filename": "11624-yearly.json"
+    },
+    {
+      "player_id": "10222",
+      "flock_id": "10222",
+      "filename": "10222-yearly.json"
+    },
+    {
+      "player_id": "7553",
+      "flock_id": "7553",
+      "filename": "7553-yearly.json"
+    },
+    {
+      "player_id": "7567",
+      "flock_id": "7567",
+      "filename": "7567-yearly.json"
+    },
+    {
+      "player_id": "11563",
+      "flock_id": "11563",
+      "filename": "11563-yearly.json"
+    },
+    {
+      "player_id": "4199",
+      "flock_id": "4199",
+      "filename": "4199-yearly.json"
+    },
+    {
+      "player_id": "3163",
+      "flock_id": "3163",
+      "filename": "3163-yearly.json"
+    },
+    {
+      "player_id": "13281",
+      "flock_id": "13264",
+      "filename": "13281-yearly.json"
+    },
+    {
+      "player_id": "421",
+      "flock_id": "421",
+      "filename": "421-yearly.json"
+    },
+    {
+      "player_id": "13414",
+      "flock_id": "13364",
+      "filename": "13414-yearly.json"
+    },
+    {
+      "player_id": "5947",
+      "flock_id": "5947",
+      "filename": "5947-yearly.json"
+    },
+    {
+      "player_id": "10219",
+      "flock_id": "10219",
+      "filename": "10219-yearly.json"
+    },
+    {
+      "player_id": "1466",
+      "flock_id": "1466",
+      "filename": "1466-yearly.json"
+    },
+    {
+      "player_id": "13346",
+      "flock_id": "13267",
+      "filename": "13346-yearly.json"
+    },
+    {
+      "player_id": "12474",
+      "flock_id": "12474",
+      "filename": "12474-yearly.json"
+    },
+    {
+      "player_id": "8132",
+      "flock_id": "8132",
+      "filename": "8132-yearly.json"
+    },
+    {
+      "player_id": "1479",
+      "flock_id": "1479",
+      "filename": "1479-yearly.json"
+    },
+    {
+      "player_id": "12545",
+      "flock_id": "2025013",
+      "filename": "12545-yearly.json"
+    },
+    {
+      "player_id": "8121",
+      "flock_id": "8121",
+      "filename": "8121-yearly.json"
+    },
+    {
+      "player_id": "6804",
+      "flock_id": "6804",
+      "filename": "6804-yearly.json"
+    },
+    {
+      "player_id": "4892",
+      "flock_id": "4892",
+      "filename": "4892-yearly.json"
+    },
+    {
+      "player_id": "8134",
+      "flock_id": "8134",
+      "filename": "8134-yearly.json"
+    },
+    {
+      "player_id": "13345",
+      "flock_id": "13243",
+      "filename": "13345-yearly.json"
+    },
+    {
+      "player_id": "13305",
+      "flock_id": "13262",
+      "filename": "13305-yearly.json"
+    },
+    {
+      "player_id": "13296",
+      "flock_id": "13299",
+      "filename": "13296-yearly.json"
+    },
+    {
+      "player_id": "7002",
+      "flock_id": "7002",
+      "filename": "7002-yearly.json"
+    },
+    {
+      "player_id": "5849",
+      "flock_id": "5849",
+      "filename": "5849-yearly.json"
+    },
+    {
+      "player_id": "6130",
+      "flock_id": "6130",
+      "filename": "6130-yearly.json"
+    },
+    {
+      "player_id": "5012",
+      "flock_id": "5012",
+      "filename": "5012-yearly.json"
+    },
+    {
+      "player_id": "8161",
+      "flock_id": "8161",
+      "filename": "8161-yearly.json"
+    },
+    {
+      "player_id": "8110",
+      "flock_id": "8110",
+      "filename": "8110-yearly.json"
+    },
+    {
+      "player_id": "8676",
+      "flock_id": "8676",
+      "filename": "8676-yearly.json"
+    },
+    {
+      "player_id": "9511",
+      "flock_id": "9511",
+      "filename": "9511-yearly.json"
+    },
+    {
+      "player_id": "13337",
+      "flock_id": "13253",
+      "filename": "13337-yearly.json"
+    },
+    {
+      "player_id": "9225",
+      "flock_id": "9225",
+      "filename": "9225-yearly.json"
+    },
+    {
+      "player_id": "12530",
+      "flock_id": "12530",
+      "filename": "12530-yearly.json"
+    },
+    {
+      "player_id": "13417",
+      "flock_id": "13305",
+      "filename": "13417-yearly.json"
+    },
+    {
+      "player_id": "9480",
+      "flock_id": "9480",
+      "filename": "9480-yearly.json"
+    },
+    {
+      "player_id": "11834",
+      "flock_id": "11834",
+      "filename": "11834-yearly.json"
+    },
+    {
+      "player_id": "9758",
+      "flock_id": "9758",
+      "filename": "9758-yearly.json"
+    },
+    {
+      "player_id": "10213",
+      "flock_id": "10213",
+      "filename": "10213-yearly.json"
+    },
+    {
+      "player_id": "11370",
+      "flock_id": "11370",
+      "filename": "11370-yearly.json"
+    },
+    {
+      "player_id": "9228",
+      "flock_id": "9228",
+      "filename": "9228-yearly.json"
+    },
+    {
+      "player_id": "3214",
+      "flock_id": "3214",
+      "filename": "3214-yearly.json"
+    },
+    {
+      "player_id": "9486",
+      "flock_id": "9486",
+      "filename": "9486-yearly.json"
+    },
+    {
+      "player_id": "9508",
+      "flock_id": "9508",
+      "filename": "9508-yearly.json"
+    },
+    {
+      "player_id": "8154",
+      "flock_id": "8154",
+      "filename": "8154-yearly.json"
+    },
+    {
+      "player_id": "11618",
+      "flock_id": "11618",
+      "filename": "11618-yearly.json"
+    },
+    {
+      "player_id": "8210",
+      "flock_id": "8210",
+      "filename": "8210-yearly.json"
+    },
+    {
+      "player_id": "5870",
+      "flock_id": "5870",
+      "filename": "5870-yearly.json"
+    },
+    {
+      "player_id": "5844",
+      "flock_id": "5844",
+      "filename": "5844-yearly.json"
+    },
+    {
+      "player_id": "13276",
+      "flock_id": "13277",
+      "filename": "13276-yearly.json"
+    },
+    {
+      "player_id": "13330",
+      "flock_id": "13308",
+      "filename": "13330-yearly.json"
+    },
+    {
+      "player_id": "9504",
+      "flock_id": "9504",
+      "filename": "9504-yearly.json"
+    },
+    {
+      "player_id": "9757",
+      "flock_id": "9757",
+      "filename": "9757-yearly.json"
+    },
+    {
+      "player_id": "5001",
+      "flock_id": "5001",
+      "filename": "5001-yearly.json"
+    },
+    {
+      "player_id": "12522",
+      "flock_id": "12522",
+      "filename": "12522-yearly.json"
+    },
+    {
+      "player_id": "4035",
+      "flock_id": "4035",
+      "filename": "4035-yearly.json"
+    },
+    {
+      "player_id": "10235",
+      "flock_id": "10235",
+      "filename": "10235-yearly.json"
+    },
+    {
+      "player_id": "9753",
+      "flock_id": "9753",
+      "filename": "9753-yearly.json"
+    },
+    {
+      "player_id": "11576",
+      "flock_id": "11576",
+      "filename": "11576-yearly.json"
+    },
+    {
+      "player_id": "12509",
+      "flock_id": "12509",
+      "filename": "12509-yearly.json"
+    },
+    {
+      "player_id": "13301",
+      "flock_id": "13275",
+      "filename": "13301-yearly.json"
+    },
+    {
+      "player_id": "3257",
+      "flock_id": "3257",
+      "filename": "3257-yearly.json"
+    },
+    {
+      "player_id": "8180",
+      "flock_id": "8180",
+      "filename": "8180-yearly.json"
+    },
+    {
+      "player_id": "8205",
+      "flock_id": "8205",
+      "filename": "8205-yearly.json"
+    },
+    {
+      "player_id": "11625",
+      "flock_id": "11625",
+      "filename": "11625-yearly.json"
+    },
+    {
+      "player_id": "11603",
+      "flock_id": "11603",
+      "filename": "11603-yearly.json"
+    },
+    {
+      "player_id": "13293",
+      "flock_id": "13273",
+      "filename": "13293-yearly.json"
+    },
+    {
+      "player_id": "13311",
+      "flock_id": "13269",
+      "filename": "13311-yearly.json"
+    },
+    {
+      "player_id": "12493",
+      "flock_id": "12493",
+      "filename": "12493-yearly.json"
+    },
+    {
+      "player_id": "96",
+      "flock_id": "96",
+      "filename": "96-yearly.json"
+    },
+    {
+      "player_id": "12504",
+      "flock_id": "12504",
+      "filename": "12504-yearly.json"
+    },
+    {
+      "player_id": "12469",
+      "flock_id": "12469",
+      "filename": "12469-yearly.json"
+    },
+    {
+      "player_id": "11610",
+      "flock_id": "11610",
+      "filename": "11610-yearly.json"
+    },
+    {
+      "player_id": "7528",
+      "flock_id": "7528",
+      "filename": "7528-yearly.json"
+    },
+    {
+      "player_id": "7600",
+      "flock_id": "7600",
+      "filename": "7600-yearly.json"
+    },
+    {
+      "player_id": "13288",
+      "flock_id": "13245",
+      "filename": "13288-yearly.json"
+    },
+    {
+      "player_id": "13405",
+      "flock_id": "13246",
+      "filename": "13405-yearly.json"
+    },
+    {
+      "player_id": "11575",
+      "flock_id": "11575",
+      "filename": "11575-yearly.json"
+    },
+    {
+      "player_id": "4177",
+      "flock_id": "4177",
+      "filename": "4177-yearly.json"
+    },
+    {
+      "player_id": "12487",
+      "flock_id": "12487",
+      "filename": "12487-yearly.json"
+    },
+    {
+      "player_id": "7090",
+      "flock_id": "7090",
+      "filename": "7090-yearly.json"
+    },
+    {
+      "player_id": "11783",
+      "flock_id": "11783",
+      "filename": "11783-yearly.json"
+    },
+    {
+      "player_id": "13413",
+      "flock_id": "13378",
+      "filename": "13413-yearly.json"
+    },
+    {
+      "player_id": "4943",
+      "flock_id": "4943",
+      "filename": "4943-yearly.json"
+    },
+    {
+      "player_id": "9502",
+      "flock_id": "9502",
+      "filename": "9502-yearly.json"
+    },
+    {
+      "player_id": "9482",
+      "flock_id": "9482",
+      "filename": "9482-yearly.json"
+    },
+    {
+      "player_id": "9506",
+      "flock_id": "9506",
+      "filename": "9506-yearly.json"
+    },
+    {
+      "player_id": "4981",
+      "flock_id": "4981",
+      "filename": "4981-yearly.json"
+    },
+    {
+      "player_id": "13285",
+      "flock_id": "13280",
+      "filename": "13285-yearly.json"
+    },
+    {
+      "player_id": "11647",
+      "flock_id": "11647",
+      "filename": "11647-yearly.json"
+    },
+    {
+      "player_id": "13274",
+      "flock_id": "13271",
+      "filename": "13274-yearly.json"
+    },
+    {
+      "player_id": "12502",
+      "flock_id": "12502",
+      "filename": "12502-yearly.json"
+    },
+    {
+      "player_id": "12492",
+      "flock_id": "12492",
+      "filename": "12492-yearly.json"
+    },
+    {
+      "player_id": "4033",
+      "flock_id": "4033",
+      "filename": "4033-yearly.json"
+    },
+    {
+      "player_id": "6783",
+      "flock_id": "6783",
+      "filename": "6783-yearly.json"
+    },
+    {
+      "player_id": "13320",
+      "flock_id": "13274",
+      "filename": "13320-yearly.json"
+    },
+    {
+      "player_id": "8111",
+      "flock_id": "8111",
+      "filename": "8111-yearly.json"
+    },
+    {
+      "player_id": "11655",
+      "flock_id": "11655",
+      "filename": "11655-yearly.json"
+    },
+    {
+      "player_id": "1373",
+      "flock_id": "1373",
+      "filename": "1373-yearly.json"
+    },
+    {
+      "player_id": "12535",
+      "flock_id": "12535",
+      "filename": "12535-yearly.json"
+    },
+    {
+      "player_id": "7049",
+      "flock_id": "7049",
+      "filename": "7049-yearly.json"
+    },
+    {
+      "player_id": "4147",
+      "flock_id": "4147",
+      "filename": "4147-yearly.json"
+    },
+    {
+      "player_id": "8172",
+      "flock_id": "8172",
+      "filename": "8172-yearly.json"
+    },
+    {
+      "player_id": "11627",
+      "flock_id": "11627",
+      "filename": "11627-yearly.json"
+    },
+    {
+      "player_id": "4993",
+      "flock_id": "4993",
+      "filename": "4993-yearly.json"
+    },
+    {
+      "player_id": "12483",
+      "flock_id": "12483",
+      "filename": "12483-yearly.json"
+    },
+    {
+      "player_id": "12048",
+      "flock_id": "12048",
+      "filename": "12048-yearly.json"
+    },
+    {
+      "player_id": "13347",
+      "flock_id": "13247",
+      "filename": "13347-yearly.json"
+    },
+    {
+      "player_id": "12455",
+      "flock_id": "12455",
+      "filename": "12455-yearly.json"
+    },
+    {
+      "player_id": "11199",
+      "flock_id": "11199",
+      "filename": "11199-yearly.json"
+    },
+    {
+      "player_id": "13269",
+      "flock_id": "13229",
+      "filename": "13269-yearly.json"
+    },
+    {
+      "player_id": "12499",
+      "flock_id": "12499",
+      "filename": "12499-yearly.json"
+    },
+    {
+      "player_id": "3634",
+      "flock_id": "3634",
+      "filename": "3634-yearly.json"
+    },
+    {
+      "player_id": "13317",
+      "flock_id": "13285",
+      "filename": "13317-yearly.json"
+    },
+    {
+      "player_id": "13268",
+      "flock_id": "13272",
+      "filename": "13268-yearly.json"
+    },
+    {
+      "player_id": "12536",
+      "flock_id": "2025008",
+      "filename": "12536-yearly.json"
+    },
+    {
+      "player_id": "11651",
+      "flock_id": "11651",
+      "filename": "11651-yearly.json"
+    },
+    {
+      "player_id": "8127",
+      "flock_id": "8127",
+      "filename": "8127-yearly.json"
+    },
+    {
+      "player_id": "5854",
+      "flock_id": "5854",
+      "filename": "5854-yearly.json"
+    },
+    {
+      "player_id": "11637",
+      "flock_id": "11637",
+      "filename": "11637-yearly.json"
+    },
+    {
+      "player_id": "13421",
+      "flock_id": "13315",
+      "filename": "13421-yearly.json"
+    },
+    {
+      "player_id": "4039",
+      "flock_id": "4039",
+      "filename": "4039-yearly.json"
+    },
+    {
+      "player_id": "8125",
+      "flock_id": "8125",
+      "filename": "8125-yearly.json"
+    },
+    {
+      "player_id": "13424",
+      "flock_id": "13370",
+      "filename": "13424-yearly.json"
+    },
+    {
+      "player_id": "12467",
+      "flock_id": "12467",
+      "filename": "12467-yearly.json"
+    },
+    {
+      "player_id": "13349",
+      "flock_id": "13312",
+      "filename": "13349-yearly.json"
+    },
+    {
+      "player_id": "4066",
+      "flock_id": "4066",
+      "filename": "4066-yearly.json"
+    },
+    {
+      "player_id": "11650",
+      "flock_id": "11650",
+      "filename": "11650-yearly.json"
+    },
+    {
+      "player_id": "4950",
+      "flock_id": "4950",
+      "filename": "4950-yearly.json"
+    },
+    {
+      "player_id": "12495",
+      "flock_id": "12495",
+      "filename": "12495-yearly.json"
+    },
+    {
+      "player_id": "12540",
+      "flock_id": "12540",
+      "filename": "12540-yearly.json"
+    },
+    {
+      "player_id": "11729",
+      "flock_id": "11729",
+      "filename": "11729-yearly.json"
+    },
+    {
+      "player_id": "5995",
+      "flock_id": "5995",
+      "filename": "5995-yearly.json"
+    },
+    {
+      "player_id": "12457",
+      "flock_id": "12457",
+      "filename": "12457-yearly.json"
+    },
+    {
+      "player_id": "13402",
+      "flock_id": "13276",
+      "filename": "13402-yearly.json"
+    },
+    {
+      "player_id": "12497",
+      "flock_id": "12497",
+      "filename": "12497-yearly.json"
+    },
+    {
+      "player_id": "12485",
+      "flock_id": "12485",
+      "filename": "12485-yearly.json"
+    },
+    {
+      "player_id": "6768",
+      "flock_id": "6768",
+      "filename": "6768-yearly.json"
+    },
+    {
+      "player_id": "11571",
+      "flock_id": "11571",
+      "filename": "11571-yearly.json"
+    },
+    {
+      "player_id": "4137",
+      "flock_id": "4137",
+      "filename": "4137-yearly.json"
+    },
+    {
+      "player_id": "8188",
+      "flock_id": "8188",
+      "filename": "8188-yearly.json"
+    },
+    {
+      "player_id": "13302",
+      "flock_id": "13369",
+      "filename": "13302-yearly.json"
+    },
+    {
+      "player_id": "9501",
+      "flock_id": "9501",
+      "filename": "9501-yearly.json"
+    },
+    {
+      "player_id": "13420",
+      "flock_id": "13284",
+      "filename": "13420-yearly.json"
+    },
+    {
+      "player_id": "11559",
+      "flock_id": "11559",
+      "filename": "11559-yearly.json"
+    },
+    {
+      "player_id": "10444",
+      "flock_id": "10444",
+      "filename": "10444-yearly.json"
+    },
+    {
+      "player_id": "7571",
+      "flock_id": "7571",
+      "filename": "7571-yearly.json"
+    },
+    {
+      "player_id": "1166",
+      "flock_id": "1166",
+      "filename": "1166-yearly.json"
+    },
+    {
+      "player_id": "6826",
+      "flock_id": "6826",
+      "filename": "6826-yearly.json"
+    },
+    {
+      "player_id": "10226",
+      "flock_id": "10226",
+      "filename": "10226-yearly.json"
+    },
+    {
+      "player_id": "6039",
+      "flock_id": "6039",
+      "filename": "6039-yearly.json"
+    },
+    {
+      "player_id": "3286",
+      "flock_id": "3286",
+      "filename": "3286-yearly.json"
+    },
+    {
+      "player_id": "11435",
+      "flock_id": "11435",
+      "filename": "11435-yearly.json"
+    },
+    {
+      "player_id": "4017",
+      "flock_id": "4017",
+      "filename": "4017-yearly.json"
+    },
+    {
+      "player_id": "12524",
+      "flock_id": "12524",
+      "filename": "12524-yearly.json"
+    },
+    {
+      "player_id": "6803",
+      "flock_id": "6803",
+      "filename": "6803-yearly.json"
+    },
+    {
+      "player_id": "6865",
+      "flock_id": "6865",
+      "filename": "6865-yearly.json"
+    },
+    {
+      "player_id": "7670",
+      "flock_id": "7670",
+      "filename": "7670-yearly.json"
+    },
+    {
+      "player_id": "11643",
+      "flock_id": "11643",
+      "filename": "11643-yearly.json"
+    },
+    {
+      "player_id": "12471",
+      "flock_id": "12471",
+      "filename": "12471-yearly.json"
+    },
+    {
+      "player_id": "4454",
+      "flock_id": "4454",
+      "filename": "4454-yearly.json"
+    },
+    {
+      "player_id": "13272",
+      "flock_id": "13235",
+      "filename": "13272-yearly.json"
+    },
+    {
+      "player_id": "2505",
+      "flock_id": "2505",
+      "filename": "2505-yearly.json"
+    },
+    {
+      "player_id": "13278",
+      "flock_id": "13309",
+      "filename": "13278-yearly.json"
+    },
+    {
+      "player_id": "6149",
+      "flock_id": "6149",
+      "filename": "6149-yearly.json"
+    },
+    {
+      "player_id": "11589",
+      "flock_id": "11589",
+      "filename": "11589-yearly.json"
+    },
+    {
+      "player_id": "11626",
+      "flock_id": "11626",
+      "filename": "11626-yearly.json"
+    },
+    {
+      "player_id": "3321",
+      "flock_id": "3321",
+      "filename": "3321-yearly.json"
+    },
+    {
+      "player_id": "9479",
+      "flock_id": "9479",
+      "filename": "9479-yearly.json"
+    },
+    {
+      "player_id": "12544",
+      "flock_id": "2025002",
+      "filename": "12544-yearly.json"
+    },
+    {
+      "player_id": "9229",
+      "flock_id": "9229",
+      "filename": "9229-yearly.json"
+    },
+    {
+      "player_id": "8698",
+      "flock_id": "8698",
+      "filename": "8698-yearly.json"
+    },
+    {
+      "player_id": "11565",
+      "flock_id": "11565",
+      "filename": "11565-yearly.json"
+    },
+    {
+      "player_id": "11597",
+      "flock_id": "11597",
+      "filename": "11597-yearly.json"
+    },
+    {
+      "player_id": "5848",
+      "flock_id": "5848",
+      "filename": "5848-yearly.json"
+    },
+    {
+      "player_id": "12498",
+      "flock_id": "12498",
+      "filename": "12498-yearly.json"
+    },
+    {
+      "player_id": "3161",
+      "flock_id": "3161",
+      "filename": "3161-yearly.json"
+    },
+    {
+      "player_id": "7527",
+      "flock_id": "7527",
+      "filename": "7527-yearly.json"
+    },
+    {
+      "player_id": "12718",
+      "flock_id": "12718",
+      "filename": "12718-yearly.json"
+    },
+    {
+      "player_id": "6271",
+      "flock_id": "6271",
+      "filename": "6271-yearly.json"
+    },
+    {
+      "player_id": "12476",
+      "flock_id": "12476",
+      "filename": "12476-yearly.json"
+    },
+    {
+      "player_id": "12521",
+      "flock_id": "12521",
+      "filename": "12521-yearly.json"
+    },
+    {
+      "player_id": "5857",
+      "flock_id": "5857",
+      "filename": "5857-yearly.json"
+    },
+    {
+      "player_id": "5906",
+      "flock_id": "5906",
+      "filename": "5906-yearly.json"
+    },
+    {
+      "player_id": "12641",
+      "flock_id": "2025010",
+      "filename": "12641-yearly.json"
+    },
+    {
+      "player_id": "4574",
+      "flock_id": "4574",
+      "filename": "4574-yearly.json"
+    },
+    {
+      "player_id": "12541",
+      "flock_id": "12541",
+      "filename": "12541-yearly.json"
+    },
+    {
+      "player_id": "11569",
+      "flock_id": "11569",
+      "filename": "11569-yearly.json"
+    },
+    {
+      "player_id": "11600",
+      "flock_id": "11600",
+      "filename": "11600-yearly.json"
+    },
+    {
+      "player_id": "13319",
+      "flock_id": "13311",
+      "filename": "13319-yearly.json"
+    },
+    {
+      "player_id": "13411",
+      "flock_id": "13307",
+      "filename": "13411-yearly.json"
+    },
+    {
+      "player_id": "12503",
+      "flock_id": "12503",
+      "filename": "12503-yearly.json"
+    },
+    {
+      "player_id": "8135",
+      "flock_id": "8135",
+      "filename": "8135-yearly.json"
+    },
+    {
+      "player_id": "7591",
+      "flock_id": "7591",
+      "filename": "7591-yearly.json"
+    },
+    {
+      "player_id": "7828",
+      "flock_id": "7828",
+      "filename": "7828-yearly.json"
+    },
+    {
+      "player_id": "13400",
+      "flock_id": "13316",
+      "filename": "13400-yearly.json"
+    },
+    {
+      "player_id": "12531",
+      "flock_id": "2025007",
+      "filename": "12531-yearly.json"
+    },
+    {
+      "player_id": "8117",
+      "flock_id": "8117",
+      "filename": "8117-yearly.json"
+    },
+    {
+      "player_id": "9494",
+      "flock_id": "9494",
+      "filename": "9494-yearly.json"
+    },
+    {
+      "player_id": "12472",
+      "flock_id": "12472",
+      "filename": "12472-yearly.json"
+    },
+    {
+      "player_id": "8143",
+      "flock_id": "8143",
+      "filename": "8143-yearly.json"
+    },
+    {
+      "player_id": "12547",
+      "flock_id": "2025009",
+      "filename": "12547-yearly.json"
+    },
+    {
+      "player_id": "12543",
+      "flock_id": "2025006",
+      "filename": "12543-yearly.json"
+    },
+    {
+      "player_id": "13289",
+      "flock_id": "13236",
+      "filename": "13289-yearly.json"
+    },
+    {
+      "player_id": "7562",
+      "flock_id": "7562",
+      "filename": "7562-yearly.json"
+    },
+    {
+      "player_id": "9481",
+      "flock_id": "9481",
+      "filename": "9481-yearly.json"
+    },
+    {
+      "player_id": "13303",
+      "flock_id": "13233",
+      "filename": "13303-yearly.json"
+    },
+    {
+      "player_id": "8119",
+      "flock_id": "8119",
+      "filename": "8119-yearly.json"
+    },
+    {
+      "player_id": "13275",
+      "flock_id": "13231",
+      "filename": "13275-yearly.json"
+    },
+    {
+      "player_id": "11439",
+      "flock_id": "11439",
+      "filename": "11439-yearly.json"
+    },
+    {
+      "player_id": "3271",
+      "flock_id": "3271",
+      "filename": "3271-yearly.json"
+    },
+    {
+      "player_id": "11579",
+      "flock_id": "11579",
+      "filename": "11579-yearly.json"
+    },
+    {
+      "player_id": "2307",
+      "flock_id": "2307",
+      "filename": "2307-yearly.json"
+    },
+    {
+      "player_id": "2306",
+      "flock_id": "2306",
+      "filename": "2306-yearly.json"
+    },
+    {
+      "player_id": "10871",
+      "flock_id": "10871",
+      "filename": "10871-yearly.json"
+    },
+    {
+      "player_id": "8129",
+      "flock_id": "8129",
+      "filename": "8129-yearly.json"
+    },
+    {
+      "player_id": "11623",
+      "flock_id": "11623",
+      "filename": "11623-yearly.json"
+    },
+    {
+      "player_id": "11577",
+      "flock_id": "11577",
+      "filename": "11577-yearly.json"
+    },
+    {
+      "player_id": "13380",
+      "flock_id": "13286",
+      "filename": "13380-yearly.json"
+    },
+    {
+      "player_id": "12482",
+      "flock_id": "12482",
+      "filename": "12482-yearly.json"
+    },
+    {
+      "player_id": "13338",
+      "flock_id": "13294",
+      "filename": "13338-yearly.json"
+    },
+    {
+      "player_id": "10218",
+      "flock_id": "10218",
+      "filename": "10218-yearly.json"
+    },
+    {
+      "player_id": "4098",
+      "flock_id": "4098",
+      "filename": "4098-yearly.json"
+    },
+    {
+      "player_id": "8917",
+      "flock_id": "8917",
+      "filename": "8917-yearly.json"
+    },
+    {
+      "player_id": "7496",
+      "flock_id": "7496",
+      "filename": "7496-yearly.json"
+    },
+    {
+      "player_id": "6427",
+      "flock_id": "6427",
+      "filename": "6427-yearly.json"
+    },
+    {
+      "player_id": "13423",
+      "flock_id": "13331",
+      "filename": "13423-yearly.json"
+    },
+    {
+      "player_id": "19",
+      "flock_id": "19",
+      "filename": "19-yearly.json"
+    },
+    {
+      "player_id": "11629",
+      "flock_id": "11629",
+      "filename": "11629-yearly.json"
+    },
+    {
+      "player_id": "11588",
+      "flock_id": "11588",
+      "filename": "11588-yearly.json"
+    },
+    {
+      "player_id": "7587",
+      "flock_id": "7587",
+      "filename": "7587-yearly.json"
+    },
+    {
+      "player_id": "11630",
+      "flock_id": "11630",
+      "filename": "11630-yearly.json"
+    },
+    {
+      "player_id": "5970",
+      "flock_id": "5970",
+      "filename": "5970-yearly.json"
+    },
+    {
+      "player_id": "12860",
+      "flock_id": "2025022",
+      "filename": "12860-yearly.json"
+    },
+    {
+      "player_id": "4054",
+      "flock_id": "4054",
+      "filename": "4054-yearly.json"
+    },
+    {
+      "player_id": "1426",
+      "flock_id": "1426",
+      "filename": "1426-yearly.json"
+    },
+    {
+      "player_id": "12470",
+      "flock_id": "12470",
+      "filename": "12470-yearly.json"
+    },
+    {
+      "player_id": "4381",
+      "flock_id": "4381",
+      "filename": "4381-yearly.json"
+    },
+    {
+      "player_id": "6011",
+      "flock_id": "6011",
+      "filename": "6011-yearly.json"
+    },
+    {
+      "player_id": "4040",
+      "flock_id": "4040",
+      "filename": "4040-yearly.json"
+    },
+    {
+      "player_id": "8122",
+      "flock_id": "8122",
+      "filename": "8122-yearly.json"
+    },
+    {
+      "player_id": "827",
+      "flock_id": "827",
+      "filename": "827-yearly.json"
+    }
+  ],
+  "existing": [],
+  "failed": [],
+  "finished_at": "2026-09-24T09:14:23.447Z",
+  "counts": {
+    "downloaded": 357,
+    "existing": 0,
+    "failed": 0,
+    "skipped_without_flock_id": 77
+  }
+}

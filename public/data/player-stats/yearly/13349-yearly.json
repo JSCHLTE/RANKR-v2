@@ -24,8 +24,8 @@
           "stat_context": "regular",
           "description": "Fantasy Points PPR",
           "is_highest_best": true,
-          "min_value": 13.333333333333332,
-          "max_value": 40,
+          "min_value": 17.77777777777778,
+          "max_value": 53.33333333333333,
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
@@ -38,8 +38,8 @@
           "stat_context": "regular",
           "description": "Receiving Targets",
           "is_highest_best": true,
-          "min_value": 6.666666666666666,
-          "max_value": 25,
+          "min_value": 8.88888888888889,
+          "max_value": 33.33333333333333,
           "value_type": "absolute",
           "position_category": "WR",
           "stat_category": "receiving"
@@ -52,8 +52,8 @@
           "stat_context": "regular",
           "description": "Receptions",
           "is_highest_best": true,
-          "min_value": 5,
-          "max_value": 16.666666666666664,
+          "min_value": 6.666666666666666,
+          "max_value": 22.22222222222222,
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "receiving"
@@ -66,8 +66,8 @@
           "stat_context": "regular",
           "description": "Receiving Yards",
           "is_highest_best": true,
-          "min_value": 50,
-          "max_value": 200,
+          "min_value": 66.66666666666666,
+          "max_value": 266.66666666666663,
           "value_type": "absolute",
           "position_category": "WR",
           "stat_category": "receiving"
@@ -94,8 +94,8 @@
           "stat_context": "regular",
           "description": "Receiving Touchdowns",
           "is_highest_best": true,
-          "min_value": 0.3333333333333333,
-          "max_value": 1.3333333333333333,
+          "min_value": 0.4444444444444444,
+          "max_value": 1.7777777777777777,
           "value_type": "absolute",
           "position_category": "WR",
           "stat_category": "receiving"
@@ -151,7 +151,7 @@
           "description": "Games",
           "is_highest_best": true,
           "min_value": 0,
-          "max_value": 2.833333333333333,
+          "max_value": 3.7777777777777777,
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "participation"

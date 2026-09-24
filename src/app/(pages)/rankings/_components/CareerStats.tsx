@@ -51,7 +51,7 @@ export default function CareerStats({ playerId }: { playerId: string }) {
           <tr><th scope="col" className={styles.sticky}>Season</th><th scope="col">Team</th>{columns.map(column => <th scope="col" key={column.id}><abbr title={data.allYearlyStats.flatMap(season => season.stats).find(stat => stat.serial_id === column.id)?.description || column.label}>{column.label}</abbr></th>)}</tr>
         </thead><tbody>{[...data.allYearlyStats].sort((a, b) => b.year - a.year).map((season, index) => <tr key={`${season.year}-${index}`}>
           <th scope="row" className={styles.sticky}>{season.year}</th><td>{season.team?.abbr || "—"}</td>
-          {columns.map(column => { const stat = careerStat(season, column, mode); const grade = column.kind === "games" ? undefined : statGrade(stat); return <td key={column.id} data-grade={grade} title={`${stat?.description || column.label}${grade === undefined ? "" : ` · ${grades[grade]}`}`}>{formatStat(stat)}</td>; })}
+          {columns.map(column => { const stat = careerStat(season, column, mode); const grade = column.kind === "games" ? undefined : statGrade(stat); const displayStat = stat && column.id === "RoutesRun" && mode === "Totals" ? { ...stat, display_decimal_places: 0 } : stat; return <td key={column.id} data-grade={grade} title={`${stat?.description || column.label}${grade === undefined ? "" : ` · ${grades[grade]}`}`}>{formatStat(displayStat)}</td>; })}
         </tr>)}</tbody></table>
       </div><p className={styles.footnote}>PPR scoring · GP = games played · — = unavailable. Colors reflect the supplied performance ranges.</p>
     </>}

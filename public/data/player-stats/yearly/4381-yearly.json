@@ -99,6 +99,100 @@
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 5,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
+        },
+        {
+          "stat_id": 937,
+          "serial_id": "FantasyPointsPPR",
+          "original_serial_id": "FantasyPointsPPR",
+          "value": 0,
+          "stat_context": "regular_per_game",
+          "description": "Fantasy Points PPR (Per Game)",
+          "is_highest_best": true,
+          "min_value": 8,
+          "max_value": 16,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "fantasy",
+          "data_type": "decimal",
+          "display_decimal_places": 2
+        },
+        {
+          "stat_id": 1067,
+          "serial_id": "ReceivingTargets",
+          "original_serial_id": "ReceivingTargets",
+          "value": 0,
+          "stat_context": "regular_per_game",
+          "description": "Receiving Targets (Per Game)",
+          "is_highest_best": true,
+          "min_value": 3,
+          "max_value": 8,
+          "value_type": "absolute",
+          "position_category": "WR",
+          "stat_category": "receiving",
+          "data_type": "decimal",
+          "display_decimal_places": 1
+        },
+        {
+          "stat_id": 1068,
+          "serial_id": "ReceivingTouchdowns",
+          "original_serial_id": "ReceivingTouchdowns",
+          "value": 0,
+          "stat_context": "regular_per_game",
+          "description": "Receiving Touchdowns (Per Game)",
+          "is_highest_best": true,
+          "min_value": 0.2,
+          "max_value": 0.7,
+          "value_type": "absolute",
+          "position_category": "WR",
+          "stat_category": "receiving",
+          "data_type": "decimal",
+          "display_decimal_places": 1
+        },
+        {
+          "stat_id": 1069,
+          "serial_id": "ReceivingYards",
+          "original_serial_id": "ReceivingYards",
+          "value": 0,
+          "stat_context": "regular_per_game",
+          "description": "Receiving Yards (Per Game)",
+          "is_highest_best": true,
+          "min_value": 20,
+          "max_value": 70,
+          "value_type": "absolute",
+          "position_category": "WR",
+          "stat_category": "receiving",
+          "data_type": "decimal",
+          "display_decimal_places": 2
+        },
+        {
+          "stat_id": 1073,
+          "serial_id": "Receptions",
+          "original_serial_id": "Receptions",
+          "value": 0,
+          "stat_context": "regular_per_game",
+          "description": "Receptions (Per Game)",
+          "is_highest_best": true,
+          "min_value": 2,
+          "max_value": 7,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "receiving",
+          "data_type": "decimal",
+          "display_decimal_places": 1
         }
       ]
     },
@@ -126,20 +220,6 @@
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
-        },
-        {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 13,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
         },
         {
           "stat_id": 1067,
@@ -240,6 +320,20 @@
           "stat_category": "receiving"
         },
         {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 16,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
+        },
+        {
           "stat_id": 1086,
           "serial_id": "RoutesRun",
           "original_serial_id": "RoutesRun",
@@ -259,7 +353,7 @@
           "stat_id": 937,
           "serial_id": "FantasyPointsPPR",
           "original_serial_id": "FantasyPointsPPR",
-          "value": 2.58,
+          "value": 2.1,
           "stat_context": "regular_per_game",
           "description": "Fantasy Points PPR (Per Game)",
           "is_highest_best": true,
@@ -275,7 +369,7 @@
           "stat_id": 1067,
           "serial_id": "ReceivingTargets",
           "original_serial_id": "ReceivingTargets",
-          "value": 0.5,
+          "value": 0.4,
           "stat_context": "regular_per_game",
           "description": "Receiving Targets (Per Game)",
           "is_highest_best": true,
@@ -307,7 +401,7 @@
           "stat_id": 1069,
           "serial_id": "ReceivingYards",
           "original_serial_id": "ReceivingYards",
-          "value": 0.31,
+          "value": 0.25,
           "stat_context": "regular_per_game",
           "description": "Receiving Yards (Per Game)",
           "is_highest_best": true,
@@ -339,7 +433,7 @@
           "stat_id": 1086,
           "serial_id": "RoutesRun",
           "original_serial_id": "RoutesRun",
-          "value": 2.5,
+          "value": 2.1,
           "stat_context": "regular_per_game",
           "description": "Routes Run (Per Game)",
           "min_value": 15,
@@ -377,20 +471,6 @@
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
-        },
-        {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 16,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
         },
         {
           "stat_id": 1067,
@@ -489,6 +569,20 @@
           "value_type": "percent",
           "position_category": "WR",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 16,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -630,20 +724,6 @@
           "stat_category": "fantasy"
         },
         {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 16,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
-        },
-        {
           "stat_id": 1067,
           "serial_id": "ReceivingTargets",
           "original_serial_id": "ReceivingTargets",
@@ -726,6 +806,20 @@
           "value_type": "percent",
           "position_category": "null",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 16,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -867,20 +961,6 @@
           "stat_category": "fantasy"
         },
         {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 12,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
-        },
-        {
           "stat_id": 1067,
           "serial_id": "ReceivingTargets",
           "original_serial_id": "ReceivingTargets",
@@ -963,6 +1043,20 @@
           "value_type": "percent",
           "position_category": "null",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 12,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -1118,20 +1212,6 @@
           "stat_category": "fantasy"
         },
         {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 16,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
-        },
-        {
           "stat_id": 1067,
           "serial_id": "ReceivingTargets",
           "original_serial_id": "ReceivingTargets",
@@ -1242,6 +1322,20 @@
           "value_type": "absolute",
           "position_category": "WR",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 16,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -1397,20 +1491,6 @@
           "stat_category": "fantasy"
         },
         {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 16,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
-        },
-        {
           "stat_id": 1067,
           "serial_id": "ReceivingTargets",
           "original_serial_id": "ReceivingTargets",
@@ -1493,6 +1573,20 @@
           "value_type": "percent",
           "position_category": "null",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 16,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -1634,20 +1728,6 @@
           "stat_category": "fantasy"
         },
         {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 8,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
-        },
-        {
           "stat_id": 1067,
           "serial_id": "ReceivingTargets",
           "original_serial_id": "ReceivingTargets",
@@ -1730,6 +1810,20 @@
           "value_type": "percent",
           "position_category": "null",
           "stat_category": "receiving"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 8,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 1086,
@@ -1871,20 +1965,6 @@
           "stat_category": "fantasy"
         },
         {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 13,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
-        },
-        {
           "stat_id": 1067,
           "serial_id": "ReceivingTargets",
           "original_serial_id": "ReceivingTargets",
@@ -1969,6 +2049,20 @@
           "stat_category": "receiving"
         },
         {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 13,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
+        },
+        {
           "stat_id": 1086,
           "serial_id": "RoutesRun",
           "original_serial_id": "RoutesRun",
@@ -1988,7 +2082,7 @@
           "stat_id": 937,
           "serial_id": "FantasyPointsPPR",
           "original_serial_id": "FantasyPointsPPR",
-          "value": 3.22,
+          "value": 3.21,
           "stat_context": "regular_per_game",
           "description": "Fantasy Points PPR (Per Game)",
           "is_highest_best": true,

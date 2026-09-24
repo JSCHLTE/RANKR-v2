@@ -3,13 +3,13 @@
     "player_id": 8143,
     "name": "Jerome Ford",
     "position": "RB",
-    "team_abbr": null,
+    "team_abbr": "MIN",
     "headshot_url": "https://flock-yearly-player-images.s3.us-east-2.amazonaws.com/2026/8143_jerome-ford.webp",
-    "team_id": null,
-    "city": null,
-    "team_name": null,
-    "team_full_name": null,
-    "team_color": null,
+    "team_id": 20,
+    "city": "Minnesota",
+    "team_name": "Vikings",
+    "team_full_name": "Minnesota Vikings",
+    "team_color": "4F2683",
     "normalized_position": "RB"
   },
   "playerStats": [
@@ -48798,6 +48798,618 @@
           "data_type": "string"
         }
       ]
+    },
+    {
+      "year": 2026,
+      "week": 1,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs GB",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-09-13T20:25:00.000Z",
+          "year": 2026,
+          "week": 1,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 2,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ CHI",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-09-20T17:00:00.000Z",
+          "year": 2026,
+          "week": 2,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 3,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ TB",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-09-27T20:05:00.000Z",
+          "year": 2026,
+          "week": 3,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 4,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs MIA",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-10-04T20:05:00.000Z",
+          "year": 2026,
+          "week": 4,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 5,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ NO",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-10-11T17:00:00.000Z",
+          "year": 2026,
+          "week": 5,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 6,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "BYE",
+          "min_value": null,
+          "max_value": null,
+          "game_date": null,
+          "year": 2026,
+          "week": 6,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 7,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs IND",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-10-25T17:00:00.000Z",
+          "year": 2026,
+          "week": 7,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 8,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ DET",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-11-01T18:00:00.000Z",
+          "year": 2026,
+          "week": 8,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 9,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs BUF",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-11-10T01:15:00.000Z",
+          "year": 2026,
+          "week": 9,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 10,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ GB",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-11-15T18:00:00.000Z",
+          "year": 2026,
+          "week": 10,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 11,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ SF",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-11-23T01:20:00.000Z",
+          "year": 2026,
+          "week": 11,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 12,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs ATL",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-11-29T18:00:00.000Z",
+          "year": 2026,
+          "week": 12,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 13,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs CAR",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-12-06T21:25:00.000Z",
+          "year": 2026,
+          "week": 13,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 14,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ NE",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-12-11T01:15:00.000Z",
+          "year": 2026,
+          "week": 14,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 15,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs DET",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-12-21T01:20:00.000Z",
+          "year": 2026,
+          "week": 15,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 16,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs WAS",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-12-27T05:00:00.000Z",
+          "year": 2026,
+          "week": 16,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 17,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ NYJ",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2027-01-03T18:00:00.000Z",
+          "year": 2026,
+          "week": 17,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 18,
+      "team": {
+        "team_id": 20,
+        "city": "Minnesota",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "abbr": "MIN",
+        "primary_color": "4F2683"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs CHI",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2027-01-10T05:00:00.000Z",
+          "year": 2026,
+          "week": 18,
+          "stat_context": "regular",
+          "team_id": 20,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
     }
   ]
 }

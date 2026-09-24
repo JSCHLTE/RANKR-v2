@@ -59,20 +59,6 @@
           "stat_category": "fantasy"
         },
         {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 4,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
-        },
-        {
           "stat_id": 1018,
           "serial_id": "PassingAttempts",
           "original_serial_id": "PassingAttempts",
@@ -241,10 +227,24 @@
           "stat_category": "rushing"
         },
         {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 4,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
+        },
+        {
           "stat_id": 937,
           "serial_id": "FantasyPointsPPR",
           "original_serial_id": "FantasyPointsPPR",
-          "value": 18.18,
+          "value": 18.17,
           "stat_context": "regular_per_game",
           "description": "Fantasy Points PPR (Per Game)",
           "is_highest_best": true,
@@ -486,20 +486,6 @@
           "stat_category": "fantasy"
         },
         {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 11,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
-        },
-        {
           "stat_id": 1018,
           "serial_id": "PassingAttempts",
           "original_serial_id": "PassingAttempts",
@@ -666,6 +652,20 @@
           "value_type": "absolute",
           "position_category": "RB",
           "stat_category": "rushing"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 11,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         },
         {
           "stat_id": 937,
@@ -847,7 +847,7 @@
           "stat_id": 1162,
           "serial_id": "FantasyPointsRankQB",
           "original_serial_id": "FantasyPointsRankQB",
-          "value": "20",
+          "value": "21",
           "stat_context": "regular_per_game",
           "description": "Fantasy Points Rank QB (Based on Per-Game Average)",
           "is_highest_best": false,
@@ -911,20 +911,6 @@
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
-        },
-        {
-          "stat_id": 972,
-          "serial_id": "Games",
-          "original_serial_id": "Games",
-          "value": 2,
-          "stat_context": "regular",
-          "description": "Games",
-          "is_highest_best": true,
-          "min_value": 0,
-          "max_value": 17,
-          "value_type": "absolute",
-          "position_category": "null",
-          "stat_category": "participation"
         },
         {
           "stat_id": 1018,
@@ -1095,10 +1081,24 @@
           "stat_category": "rushing"
         },
         {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 2,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 17,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
+        },
+        {
           "stat_id": 937,
           "serial_id": "FantasyPointsPPR",
           "original_serial_id": "FantasyPointsPPR",
-          "value": 1.1,
+          "value": 1.08,
           "stat_context": "regular_per_game",
           "description": "Fantasy Points PPR (Per Game)",
           "is_highest_best": true,
@@ -1305,8 +1305,8 @@
           "stat_context": "regular",
           "description": "Fantasy Points PPR",
           "is_highest_best": true,
-          "min_value": 25,
-          "max_value": 66.66666666666666,
+          "min_value": 33.33333333333333,
+          "max_value": 88.88888888888889,
           "value_type": "absolute",
           "position_category": "null",
           "stat_category": "fantasy"
@@ -1315,7 +1315,7 @@
           "stat_id": 1162,
           "serial_id": "FantasyPointsRankQB",
           "original_serial_id": "FantasyPointsRankQB",
-          "value": 59,
+          "value": 60,
           "stat_context": "regular",
           "description": "Fantasy Points Rank QB",
           "is_highest_best": false,
@@ -1333,8 +1333,8 @@
           "stat_context": "regular",
           "description": "Passing Attempts",
           "is_highest_best": true,
-          "min_value": 58.33333333333333,
-          "max_value": 100,
+          "min_value": 77.77777777777777,
+          "max_value": 133.33333333333331,
           "value_type": "absolute",
           "position_category": "QB",
           "stat_category": "passing"
@@ -1347,8 +1347,8 @@
           "stat_context": "inside5",
           "description": "Passing attempts inside the 5 yard line (Season)",
           "is_highest_best": true,
-          "min_value": 2.5,
-          "max_value": 6.666666666666666,
+          "min_value": 3.333333333333333,
+          "max_value": 8.88888888888889,
           "value_type": "absolute",
           "position_category": "QB",
           "stat_category": "passing"
@@ -1375,8 +1375,8 @@
           "stat_context": "regular",
           "description": "Passing Interceptions",
           "is_highest_best": false,
-          "min_value": 0.6666666666666666,
-          "max_value": 2,
+          "min_value": 0.8888888888888888,
+          "max_value": 2.6666666666666665,
           "value_type": "absolute",
           "position_category": "QB",
           "stat_category": "passing"
@@ -1389,8 +1389,8 @@
           "stat_context": "regular",
           "description": "Passing Sacks",
           "is_highest_best": true,
-          "min_value": 3.333333333333333,
-          "max_value": 7.833333333333333,
+          "min_value": 4.444444444444445,
+          "max_value": 10.444444444444445,
           "value_type": "absolute",
           "position_category": "QB",
           "stat_category": "passing"
@@ -1403,8 +1403,8 @@
           "stat_context": "regular",
           "description": "Passing Touchdowns",
           "is_highest_best": true,
-          "min_value": 2.5,
-          "max_value": 6.666666666666666,
+          "min_value": 3.333333333333333,
+          "max_value": 8.88888888888889,
           "value_type": "absolute",
           "position_category": "QB",
           "stat_category": "passing"
@@ -1417,8 +1417,8 @@
           "stat_context": "regular",
           "description": "Passing Yards",
           "is_highest_best": true,
-          "min_value": 416.66666666666663,
-          "max_value": 833.3333333333333,
+          "min_value": 555.5555555555555,
+          "max_value": 1111.111111111111,
           "value_type": "absolute",
           "position_category": "QB",
           "stat_category": "passing"
@@ -1445,8 +1445,8 @@
           "stat_context": "regular",
           "description": "Rushing Attempts",
           "is_highest_best": true,
-          "min_value": 8.333333333333332,
-          "max_value": 21.666666666666664,
+          "min_value": 11.11111111111111,
+          "max_value": 28.888888888888886,
           "value_type": "absolute",
           "position_category": "RB",
           "stat_category": "rushing"
@@ -1460,7 +1460,7 @@
           "description": "Rushing attempts inside the 5 yard line (Season)",
           "is_highest_best": true,
           "min_value": 0,
-          "max_value": 1.6666666666666665,
+          "max_value": 2.2222222222222223,
           "value_type": "absolute",
           "position_category": "RB",
           "stat_category": "rushing"
@@ -1473,8 +1473,8 @@
           "stat_context": "regular",
           "description": "Rushing Touchdowns",
           "is_highest_best": true,
-          "min_value": 0.6666666666666666,
-          "max_value": 2,
+          "min_value": 0.8888888888888888,
+          "max_value": 2.6666666666666665,
           "value_type": "absolute",
           "position_category": "RB",
           "stat_category": "rushing"
@@ -1487,11 +1487,25 @@
           "stat_context": "regular",
           "description": "Rushing Yards",
           "is_highest_best": true,
-          "min_value": 33.33333333333333,
-          "max_value": 133.33333333333331,
+          "min_value": 44.44444444444444,
+          "max_value": 177.77777777777777,
           "value_type": "absolute",
           "position_category": "RB",
           "stat_category": "rushing"
+        },
+        {
+          "stat_id": 972,
+          "serial_id": "Games",
+          "original_serial_id": "Games",
+          "value": 0,
+          "stat_context": "regular",
+          "description": "Games",
+          "is_highest_best": true,
+          "min_value": 0,
+          "max_value": 3.7777777777777777,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "participation"
         }
       ]
     }

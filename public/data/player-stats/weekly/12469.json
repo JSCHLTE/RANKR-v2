@@ -14284,6 +14284,26 @@
           "max_value": 5
         },
         {
+          "stat_id": 1104,
+          "value": 0,
+          "game_date": "2026-09-13T00:00:00.000Z",
+          "year": 2026,
+          "week": 1,
+          "stat_context": "regular",
+          "team_id": 8,
+          "game_id": 19463,
+          "description": "Percentage of team offensive snaps played",
+          "is_highest_best": true,
+          "value_type": "percent",
+          "position_category": "null",
+          "stat_category": "rushing",
+          "serial_id": "SnapShare",
+          "data_type": "decimal",
+          "display_decimal_places": 0,
+          "min_value": 0,
+          "max_value": 90
+        },
+        {
           "stat_id": 937,
           "value": 0,
           "game_date": "2026-09-13T00:00:00.000Z",

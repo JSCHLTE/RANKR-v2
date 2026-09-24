@@ -3,13 +3,13 @@
     "player_id": 6149,
     "name": "Darius Slayton",
     "position": "WR",
-    "team_abbr": null,
+    "team_abbr": "IND",
     "headshot_url": "https://flock-yearly-player-images.s3.us-east-2.amazonaws.com/2026/6149_darius-slayton.webp",
-    "team_id": null,
-    "city": null,
-    "team_name": null,
-    "team_full_name": null,
-    "team_color": null,
+    "team_id": 14,
+    "city": "Indianapolis",
+    "team_name": "Colts",
+    "team_full_name": "Indianapolis Colts",
+    "team_color": "013369",
     "normalized_position": "WR"
   },
   "playerStats": [
@@ -70773,6 +70773,618 @@
           "data_type": "string"
         }
       ]
+    },
+    {
+      "year": 2026,
+      "week": 1,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs BAL",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-09-13T17:00:00.000Z",
+          "year": 2026,
+          "week": 1,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 2,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ KC",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-09-21T00:20:00.000Z",
+          "year": 2026,
+          "week": 2,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 3,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs HOU",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-09-27T17:00:00.000Z",
+          "year": 2026,
+          "week": 3,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 4,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ WAS",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-10-04T13:30:00.000Z",
+          "year": 2026,
+          "week": 4,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 5,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ PIT",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-10-11T17:00:00.000Z",
+          "year": 2026,
+          "week": 5,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 6,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs TEN",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-10-18T17:00:00.000Z",
+          "year": 2026,
+          "week": 6,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 7,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ MIN",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-10-25T17:00:00.000Z",
+          "year": 2026,
+          "week": 7,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 8,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ JAX",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-11-01T18:00:00.000Z",
+          "year": 2026,
+          "week": 8,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 9,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs DAL",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-11-08T18:00:00.000Z",
+          "year": 2026,
+          "week": 9,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 10,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs MIA",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-11-15T18:00:00.000Z",
+          "year": 2026,
+          "week": 10,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 11,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ HOU",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-11-20T01:15:00.000Z",
+          "year": 2026,
+          "week": 11,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 12,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs NYG",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-11-29T18:00:00.000Z",
+          "year": 2026,
+          "week": 12,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 13,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "BYE",
+          "min_value": null,
+          "max_value": null,
+          "game_date": null,
+          "year": 2026,
+          "week": 13,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 14,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ PHI",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-12-13T18:00:00.000Z",
+          "year": 2026,
+          "week": 14,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 15,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ TEN",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-12-20T18:00:00.000Z",
+          "year": 2026,
+          "week": 15,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 16,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs CIN",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2026-12-27T05:00:00.000Z",
+          "year": 2026,
+          "week": 16,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 17,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "@ CLE",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2027-01-03T18:00:00.000Z",
+          "year": 2026,
+          "week": 17,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
+    },
+    {
+      "year": 2026,
+      "week": 18,
+      "team": {
+        "team_id": 14,
+        "city": "Indianapolis",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "abbr": "IND",
+        "primary_color": "013369"
+      },
+      "stats": [
+        {
+          "stat_id": 0,
+          "value": "vs JAX",
+          "min_value": null,
+          "max_value": null,
+          "game_date": "2027-01-10T05:00:00.000Z",
+          "year": 2026,
+          "week": 18,
+          "stat_context": "regular",
+          "team_id": 14,
+          "game_id": 0,
+          "description": "Opponent team",
+          "is_highest_best": false,
+          "value_type": "absolute",
+          "position_category": "null",
+          "stat_category": "miscellaneous",
+          "serial_id": "opponent",
+          "data_type": "string"
+        }
+      ],
+      "upcoming": true
     }
   ]
 }
