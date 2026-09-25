@@ -56,12 +56,12 @@
     ],
     "team": "LAR",
     "player_id": "9493",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury": true,
+    "injury_severity": "medium",
+    "injury_note": "Nacua popped up on the injury report the week of Sept. 15 with what was initially termed a hip injury, later clarified by coach Sean McVay to actually be groin soreness. He missed Week 2's win over the Giants and remained inactive again at Wednesday's Week 3 practice, prompting McVay to say Thursday that Nacua \"is not making great progress\" toward a return, though he doesn't view it as any sort of long-term threat. With his status still trending in the wrong direction ahead of Sunday Night Football against the Jaguars, his Week 3 availability is very much in doubt, and Davante Adams has stepped up as the clear top receiving option in his absence.",
+    "injury_name": "Groin",
+    "injury_expected_return": "TBD",
+    "injury_reinjury_risk": "Medium"
   },
   {
     "search_full_name": "christianmccaffrey",
@@ -248,12 +248,12 @@
     ],
     "team": "PHI",
     "player_id": "4866",
-    "injury": false,
+    "injury": true,
     "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury_note": "Barkley suffered a stinger on Philadelphia's first offensive play in Week 2 against Tennessee, missing most of the first half before returning after halftime and finishing with four carries for nine yards. He underwent a precautionary MRI, and as of Thursday (9/24) said the results \"went well,\" expecting to play Monday night against the Bears after being seen practicing in a protective shoulder/neck device. He's trending toward a limited practice designation to open the week, with all signs pointing to him suiting up in Week 3, though his workload and practice status will be worth monitoring over the next couple days.",
+    "injury_name": "Stinger (Neck/Shoulder)",
+    "injury_expected_return": "Week 3",
+    "injury_reinjury_risk": "Low"
   },
   {
     "search_full_name": "omarionhampton",
@@ -296,11 +296,11 @@
     ],
     "team": "NYG",
     "player_id": "11632",
-    "injury": false,
+    "injury": true,
     "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
+    "injury_note": "Nabers left Monday night's Week 2 loss to the Rams after appearing to injure his right shoulder on a contested catch attempt, later saying the shoulder \"popped out\" before he \"popped it back in\" himself. He returned to the game after sitting out two series and played the rest of the first half, finishing with just one catch for one yard, and was set to have X-rays to evaluate the extent of the damage. This shoulder issue is unrelated to the torn ACL and meniscus that cost him most of the 2025 season, and no further update on his practice status or Week 3 availability has been reported yet.",
+    "injury_name": "Shoulder",
+    "injury_expected_return": "Week 3",
     "injury_reinjury_risk": ""
   },
   {
@@ -330,9 +330,9 @@
     "player_id": "7569",
     "injury": true,
     "injury_severity": "medium",
-    "injury_note": "Nico Collins is dealing with a hamstring injury sustained during Wednesday’s practice, casting doubt on his availability for the Week 2 matchup against the Cincinnati Bengals.  While team doctors believe the injury is not serious, his status is officially in jeopardy, he did not practice Thursday (9/17).",
+    "injury_note": "Collins suffered a hamstring injury during Wednesday's (9/16) practice and was diagnosed with a Grade 1 strain, which is generally the least severe classification, giving some optimism about his outlook. He was ruled out and missed Houston's Week 2 loss to Cincinnati, and as of Thursday, 9/24, he still hasn't been spotted at the media-access portion of practice since the original injury, putting him in danger of missing another game Sunday against the Colts. A report from Aaron Wilson indicated Collins has a chance to miss two games total, and he'll likely need to show some practice participation by Friday to avoid being ruled out again.",
     "injury_name": "Hamstring",
-    "injury_expected_return": "Week 3",
+    "injury_expected_return": "Week 4",
     "injury_reinjury_risk": "Medium"
   },
   {
@@ -442,9 +442,9 @@
     "player_id": "9997",
     "injury": true,
     "injury_severity": "medium",
-    "injury_note": "Flowers aggravated a pre-existing hamstring issue, originally sustained during training camp joint practices with the Minnesota Vikings, during the first half of the Week 1 win over the Indianapolis Colts. He did not practice Thursday (9/17).",
+    "injury_note": "Flowers aggravated a hamstring injury (an issue that also cost him time in training camp) in Week 1 against the Colts after a huge start (5 catches, 150 yards, TD), and he was downgraded to out and missed Week 2 against the Saints. He returned to practice as a limited participant last Friday, prompting coach Jesse Minter to say he had a \"good shot\" to play in Week 3 against the Cowboys in Brazil, but Flowers has since been held out of practice again on both Wednesday and Thursday this week. With back-to-back DNPs to open Week 3 prep, his status is trending toward more uncertainty, and the recurring nature of the injury raises real concern about reaggravation if he's rushed back.",
     "injury_name": "Hamstring",
-    "injury_expected_return": "Week 3",
+    "injury_expected_return": "TBD",
     "injury_reinjury_risk": "medium"
   },
   {
@@ -457,11 +457,11 @@
     "team": "LV",
     "player_id": "11604",
     "injury": true,
-    "injury_severity": "medium",
-    "injury_note": "Bowers missed Week 1 due to a knee injury that required a meniscus trim procedure performed by Dr. Daniel Cooper in Dallas on September 8, 2026.  The injury was sustained during training camp and diagnosed shortly before the season began. He did not practice Thursday (9/17).",
+    "injury_severity": "low",
+    "injury_note": "Bowers underwent a meniscus trim on his left knee on September 8th after suffering the injury in Week 1, causing him to miss the first two games. He returned to practice as a limited participant and has progressed well, with head coach Klint Kubiak describing him as \"very close\" to returning following Las Vegas' Week 2 win. He's trending toward making his season debut Week 3 against the Saints, with his practice participation this week expected to provide final clarity on his status.",
     "injury_name": "Meniscus",
     "injury_expected_return": "Week 3",
-    "injury_reinjury_risk": "medium"
+    "injury_reinjury_risk": "Low"
   },
   {
     "search_full_name": "javontewilliams",
@@ -488,9 +488,9 @@
     ],
     "team": "LAC",
     "player_id": "11635",
-    "injury": true,
+    "injury": false,
     "injury_severity": "medium",
-    "injury_note": "Ladd McConkey is currently dealing with a rib injury sustained during the Los Angeles Chargers Week 1 loss to the Arizona Cardinals.  The injury occurred in the third quarter when he took a hard hit from Mack Wilson Sr. while breaking over the middle, causing him to leave the game and miss the fourth quarter. He did not practice Wednesday (9/16).",
+    "injury_note": "",
     "injury_name": "Rib",
     "injury_expected_return": "Week 3",
     "injury_reinjury_risk": "low"
@@ -504,12 +504,12 @@
     ],
     "team": "PHI",
     "player_id": "7525",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury": true,
+    "injury_severity": "medium",
+    "injury_note": "Smith popped up on Philadelphia's injury report Thursday (9/24) with a hamstring injury and was a Did Not Participate, though he was seen warming up with the team before sitting out the actual practice work. The issue comes right after a big Week 2 performance (10 catches, 117 yards, TD) and follows a similar hamstring injury he dealt with during training camp, which is a notable concern given the recurrence. His status will be monitored closely through Friday and Saturday practices to gauge his chances of playing Monday night against the Bears, with no severity details reported yet.",
+    "injury_name": "Hamstring",
+    "injury_expected_return": "TBD",
+    "injury_reinjury_risk": "Medium"
   },
   {
     "search_full_name": "kyrenwilliams",
@@ -552,7 +552,7 @@
     ],
     "team": "CHI",
     "player_id": "6790",
-    "injury": true,
+    "injury": false,
     "injury_severity": "low",
     "injury_note": "Swift is dealing with knee and ankle issues and practiced in a limited fashion Wednesday (9/16). The severity of Swift's issues isn't known, but a limited practice suggests that he's not dealing with anything overly serious.",
     "injury_name": "Ankle",
@@ -744,12 +744,12 @@
     ],
     "team": "BUF",
     "player_id": "4983",
-    "injury": false,
+    "injury": true,
     "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury_note": "Moore left Buffalo's Week 2 win over Detroit in the second quarter after landing hard on his shoulder, and it was later revealed he suffered an AC joint sprain that is not considered serious. He's been considered day-to-day since, and the Bills' extended break before their Week 3 game against the Chargers on September 27th gives him extra time to recover and test the shoulder out in practice. Reports indicate the team was pleasantly surprised the injury wasn't more severe, and Moore is expected to work back into practice this week with his status becoming clearer as the Chargers game approaches.",
+    "injury_name": "Shoulder (AC Joint Sprain)",
+    "injury_expected_return": "~ Week 3-4",
+    "injury_reinjury_risk": "Low"
   },
   {
     "search_full_name": "bhayshultuten",
@@ -776,12 +776,12 @@
     ],
     "team": "SF",
     "player_id": "2216",
-    "injury": false,
+    "injury": true,
     "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury_note": "Evans exited San Francisco's Week 2 win over Miami in the fourth quarter with a hip injury after catching three passes for 54 yards, including a 27-yard gain that set up a touchdown. Head coach Kyle Shanahan said the injury didn't appear serious and that Evans could have returned if the game had been closer, but noted he'd \"have to be managed\" during the week. Evans did not practice Wednesday as a precaution, and while Friday's injury report will provide clearer insight, the early outlook points to him being available for Week 3 against the Cardinals.",
+    "injury_name": "Hip",
+    "injury_expected_return": "Week 3",
+    "injury_reinjury_risk": "Low"
   },
   {
     "search_full_name": "lutherburden",
@@ -872,11 +872,11 @@
     ],
     "team": "SEA",
     "player_id": "13286",
-    "injury": false,
+    "injury": true,
     "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
+    "injury_note": "Price exited Seattle's Week 2 win over Arizona in the fourth quarter and headed to the locker room with his pads off, initially reported as a chest injury before head coach Mike Macdonald clarified it's actually a shoulder issue. Macdonald described the injury as \"nothing serious\" and \"intact,\" and doesn't anticipate an extended absence, though no clear timetable for a return has been given. His practice participation as the Seahawks prepare for Week 3 will be the key indicator of his availability, with Emanuel Wilson (21 carries, 92 yards in Week 2) standing to see a bigger workload if Price is held out again.",
+    "injury_name": "Shoulder",
+    "injury_expected_return": "TBD",
     "injury_reinjury_risk": ""
   },
   {
@@ -1016,12 +1016,12 @@
     ],
     "team": "CHI",
     "player_id": "11560",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury": true,
+    "injury_severity": "high",
+    "injury_note": "Williams suffered a right hamstring injury on a non-contact scramble in the fourth quarter of Chicago's Week 2 loss to Minnesota, and was carted off the field in significant pain, though he was able to give a thumbs up to the crowd on his way out. Tests conducted Monday reportedly showed he avoided a major/severe injury, but head coach Ben Johnson labeled him \"week-to-week\" and said he'll likely miss some time, with Williams not expected to practice this week. He's considered unlikely to play in Week 3's Monday night game against the Eagles, with Case Keenum in line to start after backup Tyson Bagent also landed in concussion protocol; notably, Williams has a history with hamstring injuries dating back to a \"pretty severe\" strain in college.",
+    "injury_name": "Hamstring",
+    "injury_expected_return": "TBD",
+    "injury_reinjury_risk": "Medium"
   },
   {
     "search_full_name": "carnelltate",
@@ -1384,12 +1384,12 @@
     ],
     "team": "DEN",
     "player_id": "12489",
-    "injury": false,
+    "injury": true,
     "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury_note": "Harvey suffered the hamstring injury in Week 1 and was ultimately ruled out and inactive for Denver's Week 2 win over Jacksonville after being unable to progress beyond limited practices that week. He's shown clear improvement since, going from a limited practice participant Wednesday to a full participant at Thursday's session ahead of Week 3 against the Rams, which points to him being ready to suit up. He figures to work in a timeshare with J.K. Dobbins (hip, limited/full this week) in Denver's crowded backfield, especially with rookie Jonah Coleman (ankle) trending toward missing the game.",
+    "injury_name": "Hamstring",
+    "injury_expected_return": "Week 3",
+    "injury_reinjury_risk": "Medium"
   },
   {
     "search_full_name": "jkdobbins",
@@ -1400,12 +1400,12 @@
     ],
     "team": "DEN",
     "player_id": "6806",
-    "injury": false,
+    "injury": true,
     "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury_note": "Dobbins exited Denver's Week 2 win over Jacksonville in the second half with a hamstring injury (later also referenced as a hip issue) after carrying 10 times for 36 yards. The Broncos are optimistic it's only a minor injury and didn't send him for an MRI, and he practiced in a limited capacity Wednesday before being upgraded to a full participant Thursday ahead of Week 3 against the Rams. That progression points to him being available Sunday night, likely continuing to split work with RJ Harvey (also trending toward playing) in Denver's banged-up backfield, though Dobbins does carry a lengthy injury history worth monitoring.",
+    "injury_name": "Hamstring",
+    "injury_expected_return": "Week 3",
+    "injury_reinjury_risk": "Medium"
   },
   {
     "search_full_name": "jordanaddison",
@@ -1464,12 +1464,12 @@
     ],
     "team": "CAR",
     "player_id": "11646",
-    "injury": false,
+    "injury": true,
     "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury_note": "Coker rolled his left ankle in Week 1 against the Bears but played through it, and while he was limited in practice ahead of Week 2 he still managed 8 catches for 66 yards on 9 targets in Carolina's win over Atlanta. He was limited again in Wednesday's Week 3 practice and was seen on an exercise bike to start Thursday's session, not appearing in uniform, which points to him being held out as a rest/maintenance measure given the ankle continues to linger. Given he's played through it every week so far with no missed games, he's expected to suit up again for Week 3, though the recurring limitations are worth monitoring.",
+    "injury_name": "Ankle",
+    "injury_expected_return": "~ Week 3-4",
+    "injury_reinjury_risk": "Medium"
   },
   {
     "search_full_name": "alecpierce",
@@ -2200,11 +2200,11 @@
     ],
     "team": "DEN",
     "player_id": "13345",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
+    "injury": true,
+    "injury_severity": "medium",
+    "injury_note": "Coleman, a rookie who broke out with 10 carries for 39 yards, a touchdown, and three catches for 19 yards in Denver's Week 2 win over Jacksonville, sustained the sprain late in that game and was seen limping between victory-formation snaps. He did not practice Wednesday, and there's some concern it could be a high ankle sprain, which would create real doubt about his availability for Sunday night's game against the Rams. He'll likely need to show some practice activity Thursday or Friday to have a chance to suit up, and his situation adds to an already banged-up Broncos backfield that also includes J.K. Dobbins (hip) and RJ Harvey (hamstring), both of whom are considered more likely to play.",
+    "injury_name": "Ankle Sprain",
+    "injury_expected_return": "TBD",
     "injury_reinjury_risk": ""
   },
   {
@@ -2905,12 +2905,12 @@
     ],
     "team": "BAL",
     "player_id": "13293",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
-    "injury_reinjury_risk": ""
+    "injury": true,
+    "injury_severity": "medium",
+    "injury_note": "Lane fractured his wrist in the first half of Baltimore's Week 1 win over the Colts, catching just one pass for 11 yards before being ruled out. He underwent successful surgery and was placed on injured reserve, which requires missing a minimum of four games; head coach Jesse Minter said Lane has \"a really good chance of coming back here pretty quick\" and the team is targeting the minimum IR stay. That timeline would make him eligible to return as early as Baltimore's Week 6 game against the Browns, and there's no indication so far of any setback in his recovery.",
+    "injury_name": "Wrist (Fracture)",
+    "injury_expected_return": "Week 6",
+    "injury_reinjury_risk": "Low"
   },
   {
     "search_full_name": "chrisbell",
@@ -3753,11 +3753,11 @@
     ],
     "team": "BUF",
     "player_id": "11637",
-    "injury": false,
-    "injury_severity": "low",
-    "injury_note": "",
-    "injury_name": "",
-    "injury_expected_return": "",
+    "injury": true,
+    "injury_severity": "medium",
+    "injury_note": "Coleman briefly left Buffalo's Week 2 win over Detroit after his legs got tangled up with a defender, but he returned just two plays later after getting his ankle taped and finished the game. Despite playing through it, the injury has lingered into Week 3 prep. He didn't practice at all on Wednesday and wasn't spotted at the start of Thursday's session either, leaving Buffalo thin at receiver alongside a banged-up DJ Moore (shoulder). He'll likely need to show some practice work Friday to have a chance at suiting up Sunday against the Chargers, with his status for that game currently in real jeopardy.",
+    "injury_name": "Ankle",
+    "injury_expected_return": "TBD",
     "injury_reinjury_risk": ""
   },
   {
