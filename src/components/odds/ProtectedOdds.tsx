@@ -14,6 +14,7 @@ import { AdminOddsSync } from "./AdminOddsSync";
 import { MatchupHeader } from "./MatchupHeader";
 import { GameLines } from "./GameLines";
 import { PlayerProps } from "./PlayerProps";
+import styles from "./oddsOverview.module.css";
 
 interface Result { week: WeekOdds; weeks?: number[]; game?: GameOdds; pass: RankrPass }
 
@@ -67,7 +68,16 @@ export default function ProtectedOdds({ season, week, game }: { season: string; 
     const match = data.game;
     return <><MatchupHeader game={match} games={data.week.games} />{sync}<SportsbookFilter /><GameLines books={match.gameOdds} away={match.away.abbr} home={match.home.abbr} /><PlayerProps props={match.playerProps} /></>;
   }
-  return <><OddsPageHeader title="NFL odds" {...data.week} />{sync}<SportsbookFilter><WeekSelector season={data.week.season} week={data.week.week} weeks={data.weeks ?? []} /></SportsbookFilter>
-    {data.week.games.length ? <div className="grid gap-4 lg:grid-cols-2">{data.week.games.map(match => <GameOddsCard key={match.eventId} game={match} season={data.week.season} week={data.week.week} pass={data.pass} />)}</div> : <p className="rounded-2xl bg-[var(--surface)] p-6">No games available for this week.</p>}
-  </>;
+  return <div className={`odds-overview ${styles.overview}`}>
+    <OddsPageHeader title="Odds" {...data.week} />
+    <div className={styles.toolbar}>
+      <div className={styles.toolbarLeft}>
+        <span className={styles.season} aria-label={`NFL season ${data.week.season}`}>{data.week.season}</span>
+        <WeekSelector season={data.week.season} week={data.week.week} weeks={data.weeks ?? []} className={styles.weekSelect} />
+        <SportsbookFilter className={styles.displayFilter} />
+      </div>
+      <AdminOddsSync season={data.week.season} week={data.week.week} onUpdated={() => setAttempt(value => value + 1)} className={styles.sync} />
+    </div>
+    {data.week.games.length ? <div className={styles.cards}>{data.week.games.map(match => <GameOddsCard key={match.eventId} game={match} season={data.week.season} week={data.week.week} pass={data.pass} />)}</div> : <p className="rounded-2xl bg-[#101b24] p-6">No games available for this week.</p>}
+  </div>;
 }

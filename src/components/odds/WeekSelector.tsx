@@ -4,15 +4,14 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { isAdmin } from "@/lib/admin-access";
 
-export function WeekSelector({ season, week, weeks }: { season: number; week: number; weeks: number[] }) {
+export function WeekSelector({ season, week, weeks, className = "" }: { season: number; week: number; weeks: number[]; className?: string }) {
   const router = useRouter();
   const { user } = useAuth();
   const admin = isAdmin(user?.uid) && season === 2026;
   const selectable = (value: number) => weeks.includes(value) || (admin && value >= 1 && value <= 18);
   const options = [...new Set([...Array.from({ length: 18 }, (_, index) => index + 1), ...weeks, week])].sort((a, b) => a - b);
 
-  return <label className="flex h-[46px] items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] pl-3 text-sm hover:bg-[var(--surface-hover)]">
-    <span className="text-xs text-[var(--text-muted)]">{season}</span>
+  return <label className={`flex h-[46px] items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] pl-3 text-sm hover:bg-[var(--surface-hover)] ${className}`}>
     <select
       aria-label="NFL week"
       value={week}

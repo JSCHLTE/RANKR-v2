@@ -27,7 +27,7 @@ export function OddsPreferencesProvider({ children }: { children: ReactNode }) {
   }
   return <Context.Provider value={{ preferences, update }}>{children}</Context.Provider>;
 }
-export function SportsbookFilter({ children }: { children?: ReactNode }) {
+export function SportsbookFilter({ children, className = "" }: { children?: ReactNode; className?: string }) {
   const { preferences, update } = useOddsPreferences();
   const dropdown = useRef<HTMLDetailsElement>(null);
   const trigger = useRef<HTMLElement>(null);
@@ -54,7 +54,7 @@ export function SportsbookFilter({ children }: { children?: ReactNode }) {
     trigger.current?.focus();
   }
   const selected = preferences.mode === "consensus" ? "consensus" : preferences.sportsbook;
-  return <div className="mb-4 flex flex-wrap items-center justify-end gap-3">
+  return <div className={`mb-4 flex flex-wrap items-center justify-end gap-3 ${className}`}>
     {children}
     <details ref={dropdown} className="group relative text-sm">
       <summary ref={trigger} aria-label={`Odds display: ${selected === "consensus" ? "Consensus" : SPORTSBOOKS[selected].name}`} className="flex cursor-pointer list-none items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 py-2 hover:bg-[var(--surface-hover)] focus-visible:outline-2 focus-visible:outline-[var(--accent)] [&::-webkit-details-marker]:hidden">

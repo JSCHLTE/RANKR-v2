@@ -6,7 +6,7 @@ import { useAuth } from "@/context/AuthContext";
 import { isAdmin } from "@/lib/admin-access";
 import { SPORTSBOOK_IDS, SPORTSBOOKS } from "@/lib/odds/sportsbooks";
 
-export function AdminOddsSync({ season, week, onUpdated }: { season: number; week: number; onUpdated?: () => void }) {
+export function AdminOddsSync({ season, week, onUpdated, className = "" }: { season: number; week: number; onUpdated?: () => void; className?: string }) {
   const { user, loading } = useAuth();
   const router = useRouter();
   const inFlight = useRef(false);
@@ -44,7 +44,7 @@ export function AdminOddsSync({ season, week, onUpdated }: { season: number; wee
       setFeedback({ text: errorMessage, error: true });
     } finally { inFlight.current = false; setBusy(false); }
   }
-  return <div className="mb-4 flex flex-wrap items-center justify-end gap-3">
+  return <div className={`mb-4 flex flex-wrap items-center justify-end gap-3 ${className}`}>
     {feedback && <p role={feedback.error ? "alert" : "status"} className={`text-xs ${feedback.error ? "text-[var(--danger)]" : "text-[var(--text-muted)]"}`}>{feedback.text}</p>}
     <button type="button" disabled={busy} onClick={sync} className="cursor-pointer rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 py-2 text-sm text-[var(--accent)] hover:bg-[var(--surface-hover)] disabled:cursor-wait disabled:opacity-60">{busy ? "Updating odds..." : "Pull Updated Odds"}</button>
   </div>;

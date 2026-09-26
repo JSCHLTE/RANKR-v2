@@ -95,6 +95,16 @@
   color-scheme: dark;
 }
 
+body:has(.odds-overview) {
+  --background: #071018;
+  --foreground: #f3f7f9;
+  --text-muted: #b7cbd7;
+  --border: #263a45;
+  --surface: #101c25;
+  --surface-hover: #172832;
+  background: #071018;
+}
+
 #rankings-sort option {
   background: var(--background);
   color: var(--foreground);
